@@ -1,1 +1,95 @@
-<html><head><meta http-equiv="refresh" content="0;url=/reclink/"></head><body>Redirecting...</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByteVeda Docs</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #1a1a2e;
+      --muted: #555;
+      --card-bg: #f5f5f7;
+      --card-border: #e0e0e0;
+      --accent: #3b82f6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a2e;
+        --text: #e0e0e0;
+        --muted: #999;
+        --card-bg: #242440;
+        --card-border: #333;
+        --accent: #60a5fa;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1.5rem 2rem;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--muted); margin-bottom: 3rem; font-size: 1.1rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 700px;
+    }
+    .card {
+      display: block;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fff;
+      margin-top: 0.75rem;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>ByteVeda</h1>
+  <p class="subtitle">Open-source libraries</p>
+  <div class="grid">
+    <!-- Add new projects by copying a card -->
+    <a class="card" href="/reclink/">
+      <h2>reclink</h2>
+      <p>Blazing-fast fuzzy matching and record linkage, powered by Rust.</p>
+      <span class="tag">Rust + Python</span>
+    </a>
+    <a class="card" href="/taskito/">
+      <h2>taskito</h2>
+      <p>Rust-powered task queue for Python. No broker required.</p>
+      <span class="tag">Rust + Python</span>
+    </a>
+  </div>
+  <footer><a href="https://github.com/ByteVeda">GitHub</a></footer>
+</body>
+</html>
