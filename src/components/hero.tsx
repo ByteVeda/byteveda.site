@@ -55,7 +55,7 @@ export function Hero() {
                   key={cmd}
                   className="absolute inset-0 whitespace-nowrap text-foreground"
                   style={{
-                    animation: `install-cycle ${CYCLE_SECONDS}s ${i * 2}s infinite`,
+                    animation: `install-cycle ${CYCLE_SECONDS}s ${i * 2}s infinite backwards`,
                   }}
                 >
                   {cmd}
