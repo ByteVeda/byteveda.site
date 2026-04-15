@@ -2,9 +2,9 @@ export const site = {
   name: "ByteVeda",
   domain: "byteveda.org",
   url: "https://byteveda.org",
-  tagline: "Fast, open-source tools for high-performance systems.",
+  tagline: "Fast tools for high-performance systems.",
   description:
-    "ByteVeda builds open-source libraries with Rust cores and ergonomic bindings for Python, Java, and beyond — performance-first tools for serious systems.",
+    "ByteVeda builds libraries with Rust cores and ergonomic bindings for Python, Java, and beyond — performance-first tools for serious systems.",
   org: "ByteVeda",
   githubUrl: "https://github.com/ByteVeda",
   docsUrl: "https://docs.byteveda.org",
