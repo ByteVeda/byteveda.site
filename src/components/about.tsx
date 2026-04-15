@@ -11,7 +11,7 @@ const principles = [
     body: "Systems languages for the engine, high-level bindings for the surface. Use the language your team already ships in.",
   },
   {
-    title: "Open source, fully",
+    title: "No strings attached",
     body: "MIT or Apache-2.0. No dual-licensing, no open-core traps. Read the source, fork it, ship it.",
   },
 ];
@@ -26,7 +26,7 @@ export function About() {
             Tools built for engineers who care about speed.
           </h2>
           <p className="mt-6 text-base text-muted-foreground leading-7">
-            {site.name} is a small, independent open-source group. We write the kinds of libraries
+            {site.name} is a small, independent engineering group. We write the kinds of libraries
             we wished existed when we were building our own systems — fast cores, clean APIs, and no
             hidden agenda.
           </p>

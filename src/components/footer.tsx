@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <Wordmark />
             <p className="mt-4 max-w-xs text-muted-foreground text-sm">
-              Open-source libraries for high-performance systems.
+              Rust-powered libraries for serious systems.
             </p>
           </div>
 
