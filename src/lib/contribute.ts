@@ -44,7 +44,7 @@ export const contributeSteps: ContributeStep[] = [
 ];
 
 export const contributeGuideUrl = `${site.githubUrl}/.github/blob/main/CONTRIBUTING.md`;
-export const discussionsUrl = `${site.githubUrl}/discussions`;
+export const discussionsUrl = `${site.githubUrl}/.github/discussions`;
 
 export function avatarUrl(login: string, size = 128): string {
   return `https://github.com/${login}.png?size=${size}`;
