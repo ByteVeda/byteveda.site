@@ -16,6 +16,7 @@ jobs:
   fetch:
     name: Fetch and open PR
     runs-on: ubuntu-latest
+    environment: news-refresh
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
