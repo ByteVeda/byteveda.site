@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-export { ArrowRight, ArrowUpRight, BookText, Moon, Star, Sun } from "lucide-react";
+export { ArrowLeft, ArrowRight, ArrowUpRight, BookText, Moon, Star, Sun } from "lucide-react";
 
 type GithubIconProps = SVGProps<SVGSVGElement> & {
   size?: number;
