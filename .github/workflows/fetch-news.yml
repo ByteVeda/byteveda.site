@@ -11,12 +11,12 @@ concurrency:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   fetch:
     name: Fetch and open PR
     runs-on: ubuntu-latest
+    environment: news-refresh
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
@@ -41,7 +41,7 @@ jobs:
       - name: Open or update pull request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.NEWS_PAT }}
           branch: news/auto-refresh
           base: main
           commit-message: "chore(news): refresh feed"
