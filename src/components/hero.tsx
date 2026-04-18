@@ -21,10 +21,6 @@ export function Hero() {
       />
       <div className="relative mx-auto max-w-6xl px-6 py-28 md:py-36">
         <div className="fade-up max-w-3xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-1 font-mono text-muted-foreground text-xs">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
-            Open source · Rust-powered
-          </div>
           <h1 className="font-semibold text-4xl text-foreground tracking-tight sm:text-5xl md:text-6xl md:leading-[1.05]">
             Fast tools
             <br />
