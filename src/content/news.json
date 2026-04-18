@@ -159,23 +159,20 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:f5e32496c2d5",
+    "id": "mastodon:2b8c2bdfa4d7",
     "kind": "article",
     "source": "mastodon",
-    "title": "Shelly 2.1 Package Manager for Arch Linux Revamps AppImage Support https:// 9to5linux.com/shelly-2-1-packa ge-manager-f…",
-    "url": "https://floss.social/@9to5linux/116424894644217673",
-    "excerpt": "Shelly 2.1 Package Manager for Arch Linux Revamps AppImage Support https:// 9to5linux.com/shelly-2-1-packa ge-manager-for-arch-linux-revamps-appimage-support # Linux # ArchLinux # OpenSource # FreeSo…",
-    "author": "9to5Linux",
-    "publishedAt": "2026-04-18T09:01:49.000Z",
-    "score": 5,
+    "title": "Tip: Is your coding agent stuck on Go 1.23 or Go 1.24 because of its training corpus cut-off date? Teach it about the s…",
+    "url": "https://mas.to/@zekjur/116424770076026532",
+    "excerpt": "Tip: Is your coding agent stuck on Go 1.23 or Go 1.24 because of its training corpus cut-off date? Teach it about the state of the world by summarizing release notes docs like https:// go.dev/doc/go1…",
+    "author": "Michael Stapelberg 🐧🐹😺",
+    "publishedAt": "2026-04-18T08:30:08.000Z",
+    "score": 6,
     "tags": [
-      "linux",
-      "archlinux",
-      "opensource",
-      "freesoftware"
+      "golang"
     ],
     "labels": [
-      "opensource"
+      "go"
     ],
     "mentionsByteveda": false
   },
@@ -188,7 +185,7 @@
     "excerpt": "Some overdue updates from us 😅 - We have a website now, thanks to @ seungjin ! https:// seoul.rs/ - We’ve started uploading our recorded talks from the past few months. Check out our YouTube and sub…",
     "author": "Rust Seoul",
     "publishedAt": "2026-04-18T07:22:25.665Z",
-    "score": 7,
+    "score": 9,
     "tags": [
       "rust",
       "rustlang"
@@ -207,7 +204,7 @@
     "excerpt": "The kernel's stance on AI-assisted patches is now official.",
     "author": "knoppix",
     "publishedAt": "2026-04-18T06:45:16.000Z",
-    "score": 5,
+    "score": 9,
     "tags": [
       "technews",
       "linux",
@@ -230,6 +227,25 @@
       "opensource",
       "ai",
       "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:cdc5787f7ed6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "touch: fire a context menu event on long press by webbeef · Pull Request #43725 · servo/servo",
+    "url": "https://github.com/servo/servo/pull/43725",
+    "excerpt": "This adds support for the standard context menu event on touch platforms. The event triggers if a touch down is held for more than 500ms with a movement of less than 10 CSS pixels\nTesting: backport...",
+    "author": "UndeadLeech",
+    "publishedAt": "2026-04-18T05:18:52.252Z",
+    "score": 5,
+    "tags": [
+      "rust",
+      "servo"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -269,6 +285,25 @@
       "GitHub Blog"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:0ec3cee92d2c",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Reflections on 30 Years of HPC Programming: So many hardware advances, so little adoption of new languages",
+    "url": "https://chapel-lang.org/blog/posts/30years/",
+    "excerpt": "15 points · performance, plt",
+    "author": "fanf",
+    "publishedAt": "2026-04-17T12:40:49.000-05:00",
+    "score": 15,
+    "tags": [
+      "performance",
+      "plt"
+    ],
+    "labels": [
+      "performance"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -328,43 +363,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "reddit:916f96525220",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Opus 4.7 is terrible, and Anthropic has completely dropped the ball",
-    "url": "https://www.reddit.com/r/artificial/comments/1so16hr/opus_47_is_terrible_and_anthropic_has_completely/",
-    "excerpt": "Tried posting this in r/ClaudeAI but it got auto-removed, and I was told to post it in the \"Bugs Megathread.\" Don't really think it should been removed, but whatever, I'll just post it here since I'm…",
-    "author": "JulioMcLaughlin2",
-    "publishedAt": "2026-04-17T13:34:46.000Z",
-    "score": 261,
-    "tags": [
-      "artificial"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "reddit:59c91fdc748c",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Qwen3.6. This is it.",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1so1533/qwen36_this_is_it/",
-    "excerpt": "https://preview.redd.it/nxn2rr15vqvg1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=8ec85d90b1286a6e7813c91a0a83c748e94ca849 I gave it a task to build a tower defense game. use screenshots from t…",
-    "author": "Local-Cardiologist-5",
-    "publishedAt": "2026-04-17T13:33:11.000Z",
-    "score": 856,
-    "tags": [
-      "LocalLLaMA"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "mastodon:3408b6b01fa2",
     "kind": "article",
     "source": "mastodon",
@@ -417,10 +415,10 @@
     "source": "lobsters",
     "title": "An early look at tailscale-rs, a tsnet library in Rust",
     "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
-    "excerpt": "25 points · networking, rust",
+    "excerpt": "26 points · networking, rust",
     "author": "ohrv",
     "publishedAt": "2026-04-17T02:54:45.000-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "networking",
       "rust"
@@ -447,33 +445,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "reddit:4121fc5e73fa",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Reese Witherspoon Doubles Down on Telling Women to Learn AI: Jobs We Hold Are \"Three Times More Likely to Be Automated By AI\"",
-    "url": "https://variety.com/2026/tv/news/reese-witherspoon-ai-jobs-women-1236723992/",
-    "excerpt": "169 upvotes · 88 comments · r/artificial",
-    "author": "ControlCAD",
-    "publishedAt": "2026-04-17T04:34:09.000Z",
-    "score": 169,
-    "tags": [
-      "artificial"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:ae8723c31563",
     "kind": "article",
     "source": "lobsters",
     "title": "Okay, what actually uses Rust",
     "url": "https://blog.goose.love/posts/what-actually-uses-rust/",
-    "excerpt": "41 points · rust",
+    "excerpt": "40 points · rust",
     "author": "blyxyas",
     "publishedAt": "2026-04-16T15:32:27.000-05:00",
-    "score": 41,
+    "score": 40,
     "tags": [
       "rust"
     ],
@@ -488,33 +468,15 @@
     "source": "lobsters",
     "title": "The Claude Coding Vibes Are Getting Worse",
     "url": "https://blog.matthewbrunelle.com/the-claude-coding-vibes-are-getting-worse/",
-    "excerpt": "43 points · programming, vibecoding",
+    "excerpt": "45 points · programming, vibecoding",
     "author": "ciferkey",
     "publishedAt": "2026-04-16T14:16:00.000-05:00",
-    "score": 43,
+    "score": 45,
     "tags": [
       "programming",
       "vibecoding"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "reddit:c1a7178d1a72",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Rust Maintainers Team",
-    "url": "https://rustnl.org/maintainers/",
-    "excerpt": "213 upvotes · 24 comments · r/rust",
-    "author": "jonay20002",
-    "publishedAt": "2026-04-16T18:13:37.000Z",
-    "score": 213,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -577,21 +539,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "reddit:c94ad7cbf51c",
+    "id": "lobsters:98f1850a8d58",
     "kind": "article",
-    "source": "reddit",
-    "title": "More reasons to go local: Claude is beginning to require identity verification, including an valid ID like passport or drivers license and a facial recognition scan.",
-    "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
-    "excerpt": "577 upvotes · 94 comments · r/LocalLLaMA",
-    "author": "fulgencio_batista",
-    "publishedAt": "2026-04-16T15:33:10.000Z",
-    "score": 577,
+    "source": "lobsters",
+    "title": "Announcing Rust 1.95.0",
+    "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
+    "excerpt": "60 points · release, rust",
+    "author": "itamarst",
+    "publishedAt": "2026-04-16T10:14:10.000-05:00",
+    "score": 60,
     "tags": [
-      "LocalLLaMA"
+      "release",
+      "rust"
     ],
     "labels": [
-      "ai",
-      "ml"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -615,22 +577,6 @@
       "ai",
       "python"
     ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "reddit:7392c3db297c",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Dennis Ritchie on the double roles of &amp; and | in Early C",
-    "url": "https://www.lysator.liu.se/c/dmr-on-or.html",
-    "excerpt": "174 upvotes · 30 comments · r/programming",
-    "author": "someone-very-cool",
-    "publishedAt": "2026-04-16T14:20:53.000Z",
-    "score": 174,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -673,25 +619,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "reddit:0fbd2e3ff710",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Qwen3.6-35B-A3B released!",
-    "url": "https://i.redd.it/g6edjlxt0kvg1.jpeg",
-    "excerpt": "2145 upvotes · 677 comments · r/LocalLLaMA",
-    "author": "ResearchCrafty1804",
-    "publishedAt": "2026-04-16T13:27:39.000Z",
-    "score": 2145,
-    "tags": [
-      "LocalLLaMA"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "devto:af7f6becef0f",
     "kind": "article",
     "source": "devto",
@@ -715,24 +642,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "reddit:5d98cd7c28a7",
-    "kind": "article",
-    "source": "reddit",
-    "title": "Rust 1.95.0 is out",
-    "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
-    "excerpt": "811 upvotes · 121 comments · r/rust",
-    "author": "manpacket",
-    "publishedAt": "2026-04-16T12:58:36.000Z",
-    "score": 811,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:761b334747ac",
     "kind": "article",
     "source": "lobsters",
@@ -749,6 +658,101 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:3afdf903f70a",
+    "kind": "article",
+    "source": "devto",
+    "title": "Architecture Documentation as a First-Class Engineering Asset",
+    "url": "https://dev.to/gdg/architecture-documentation-as-a-first-class-engineering-asset-4a1j",
+    "excerpt": "How autonomous AI agents can generate a complete architecture snapshot of your microservices platform...",
+    "author": "Alexander Tyutin",
+    "publishedAt": "2026-04-16T09:49:24Z",
+    "score": 32,
+    "tags": [
+      "architecture",
+      "security",
+      "ai",
+      "agents"
+    ],
+    "labels": [
+      "security",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:cfdeed39e562",
+    "kind": "article",
+    "source": "rss",
+    "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+    "url": "https://huggingface.co/blog/ecom-rlve",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-16T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:48afc81fb0a9",
+    "kind": "article",
+    "source": "rss",
+    "title": "The PR you would have opened yourself",
+    "url": "https://huggingface.co/blog/transformers-to-mlx",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-16T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:cda2d0b1dc42",
+    "kind": "article",
+    "source": "rss",
+    "title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
+    "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-16T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a3407d2a9072",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+    "url": "https://arxiv.org/pdf/2604.04721",
+    "excerpt": "58 points · practices",
+    "author": "krig",
+    "publishedAt": "2026-04-15T13:12:33.000-05:00",
+    "score": 58,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -757,7 +761,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-15T18:54:46Z",
-    "score": 385656,
+    "score": 385665,
     "tags": [
       "Python",
       "books",
@@ -780,7 +784,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-17T05:57:35Z",
-    "score": 292976,
+    "score": 292992,
     "tags": [
       "Python",
       "awesome",
@@ -804,7 +808,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-04-13T22:10:46Z",
-    "score": 219745,
+    "score": 219758,
     "tags": [
       "Python",
       "algorithm",
@@ -836,7 +840,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-17T04:15:47Z",
-    "score": 185826,
+    "score": 185875,
     "tags": [
       "Rust"
     ],
@@ -853,8 +857,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-18T08:56:14Z",
-    "score": 183531,
+    "publishedAt": "2026-04-18T11:47:51Z",
+    "score": 183532,
     "tags": [
       "Python",
       "agentic-ai",
@@ -883,8 +887,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-17T14:36:36Z",
-    "score": 159550,
+    "publishedAt": "2026-04-18T10:50:41Z",
+    "score": 159555,
     "tags": [
       "Python",
       "audio",
@@ -923,7 +927,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-16T08:34:13Z",
-    "score": 155039,
+    "score": 155042,
     "tags": [
       "Java",
       "agent",
@@ -953,8 +957,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-18T01:26:26Z",
-    "score": 147071,
+    "publishedAt": "2026-04-18T11:42:55Z",
+    "score": 147076,
     "tags": [
       "Python",
       "agents",
@@ -979,7 +983,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-04-18T08:14:57Z",
-    "score": 133926,
+    "score": 133941,
     "tags": [
       "Python",
       "agents",
@@ -1018,7 +1022,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-17T21:23:52Z",
-    "score": 132475,
+    "score": 132506,
     "tags": [
       "Python",
       "ai",
@@ -1052,7 +1056,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-14T10:10:14Z",
-    "score": 125408,
+    "score": 125416,
     "tags": [
       "Java",
       "algo",
@@ -1080,8 +1084,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-18T08:18:03Z",
-    "score": 112096,
+    "publishedAt": "2026-04-18T12:21:47Z",
+    "score": 112101,
     "tags": [
       "Rust",
       "compiler",
@@ -1102,7 +1106,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-18T03:19:33Z",
-    "score": 111771,
+    "score": 111826,
     "tags": [
       "Rust",
       "android",
@@ -1138,8 +1142,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-18T08:36:29Z",
-    "score": 106508,
+    "publishedAt": "2026-04-18T11:29:57Z",
+    "score": 106507,
     "tags": [
       "Rust",
       "deno",
@@ -1162,7 +1166,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-18T04:45:58Z",
-    "score": 105584,
+    "score": 105586,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1188,7 +1192,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-17T21:25:53Z",
-    "score": 83470,
+    "score": 83479,
     "tags": [
       "Rust",
       "packaging",
@@ -1232,8 +1236,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-18T08:10:44Z",
-    "score": 79315,
+    "publishedAt": "2026-04-18T11:40:29Z",
+    "score": 79318,
     "tags": [
       "Rust",
       "gpui",
