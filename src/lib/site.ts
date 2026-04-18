@@ -11,7 +11,8 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: "About", href: "#about" },
+  { label: "About", href: "/#about" },
+  { label: "News", href: "/news" },
   { label: "Docs", href: site.docsUrl, external: true },
   { label: "GitHub", href: site.githubUrl, external: true },
 ] as const;
