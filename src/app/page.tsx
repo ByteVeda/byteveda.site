@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { Contribute } from "@/components/contribute";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Navbar } from "@/components/navbar";
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Releases limit={3} />
+        <Contribute />
         <News articleLimit={3} trendingLimit={12} />
       </main>
       <Footer />
