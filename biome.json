@@ -9,6 +9,7 @@
     "ignoreUnknown": true,
     "includes": [
       "src/**",
+      "scripts/**",
       "*.ts",
       "*.tsx",
       "*.mjs",
@@ -17,7 +18,8 @@
       "!.next",
       "!node_modules",
       "!next-env.d.ts",
-      "!pnpm-lock.yaml"
+      "!pnpm-lock.yaml",
+      "!src/content/news.json"
     ]
   },
   "formatter": {
