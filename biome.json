@@ -19,7 +19,7 @@
       "!node_modules",
       "!next-env.d.ts",
       "!pnpm-lock.yaml",
-      "!src/content/news.json"
+      "!src/features/news/data/news.json"
     ]
   },
   "formatter": {

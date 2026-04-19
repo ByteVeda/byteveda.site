@@ -1,5 +1,5 @@
+import { Section } from "@/components/ui";
 import { site } from "@/lib/site";
-import { Section } from "./ui/section";
 
 const principles = [
   {

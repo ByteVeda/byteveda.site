@@ -2,10 +2,10 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useMemo } from "react";
+import { ArrowLeft, ArrowRight } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import type { NewsItem } from "@/lib/news";
+import type { NewsItem } from "../types";
 import { NewsCard } from "./news-card";
-import { ArrowLeft, ArrowRight } from "./ui/icons";
 
 type NewsListProps = {
   items: NewsItem[];

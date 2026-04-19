@@ -1,4 +1,4 @@
-import type { FeedKind } from "@/lib/news";
+import type { FeedKind } from "@/features/news";
 import { config } from "./config";
 import type { NewsItem } from "./types";
 

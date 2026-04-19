@@ -1,4 +1,4 @@
-import { LABELS, type Label } from "@/lib/news";
+import { LABELS, type Label } from "@/features/news";
 
 const KEYWORDS: Record<Label, string[]> = {
   rust: ["rust", "rustlang", "rust-lang", "rustacean"],

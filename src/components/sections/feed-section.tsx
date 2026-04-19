@@ -1,9 +1,7 @@
 import Link from "next/link";
+import { ArrowRight, Section, SectionHeader } from "@/components/ui";
+import { NewsCard, type NewsItem } from "@/features/news";
 import { cn } from "@/lib/cn";
-import type { NewsItem } from "@/lib/news";
-import { NewsCard } from "./news-card";
-import { ArrowRight } from "./ui/icons";
-import { Section, SectionHeader } from "./ui/section";
 
 type Density = "comfortable" | "dense";
 

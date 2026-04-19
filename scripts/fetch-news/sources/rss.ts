@@ -1,5 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
-import type { Label } from "@/lib/news";
+import type { Label } from "@/features/news";
 import { config } from "../config";
 import { fetchText } from "../http";
 import { toLabels } from "../labels";

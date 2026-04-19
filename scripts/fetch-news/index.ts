@@ -14,7 +14,7 @@ import { rssAdapter } from "./sources/rss";
 import type { NewsItem, SourceAdapter } from "./types";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../../src/content/news.json");
+const OUTPUT_PATH = resolve(__dirname, "../../src/features/news/data/news.json");
 
 const adapters: SourceAdapter[] = [
   devtoAdapter,

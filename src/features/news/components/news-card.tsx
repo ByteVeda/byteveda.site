@@ -1,9 +1,8 @@
 import Link from "next/link";
+import { ArrowUpRight, Badge, RelativeTime, Star } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import { type Label, type NewsItem, sourceLabel } from "@/lib/news";
-import { Badge } from "./ui/badge";
-import { ArrowUpRight, Star } from "./ui/icons";
-import { RelativeTime } from "./ui/relative-time";
+import type { Label, NewsItem } from "../types";
+import { sourceLabel } from "../utils";
 
 type NewsCardProps = {
   item: NewsItem;
