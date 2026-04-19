@@ -159,70 +159,35 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:f96ab17947c0",
+    "id": "mastodon:7b74d46cae64",
     "kind": "article",
     "source": "mastodon",
-    "title": "Jackfruit # trees are living climate allies—capturing carbon, cooling landscapes, and enriching # soils . They shelter…",
-    "url": "https://mastodon.social/@2003MugishaPhocit/116429187870239362",
-    "excerpt": "Jackfruit # trees are living climate allies—capturing carbon, cooling landscapes, and enriching # soils . They shelter # biodiversity , feeding # birds , # insects , and people alike with nutrient-ri…",
-    "author": "Green Youth Movement",
-    "publishedAt": "2026-04-19T03:13:38.000Z",
-    "score": 8,
+    "title": "Senior Devops Engineer - Customer Engineering Team at Harness",
+    "url": "https://jobsfordevelopers.com/jobs/senior-devops-engineer-customer-engineering-team-at-harness-io-mar-19-2026-df1c18?utm_source=mastodon.world&utm_medium=social&utm_campaign=posting",
+    "excerpt": "Harness is hiring Senior Devops Engineer - Customer Engineering Team",
+    "author": "Jobs for Developers",
+    "publishedAt": "2026-04-19T04:05:41.000Z",
+    "score": 15,
     "tags": [
-      "trees",
-      "soils",
-      "biodiversity",
-      "birds",
-      "insects",
-      "fruits",
-      "food",
-      "ecosystems",
-      "linux",
-      "photography",
-      "fediverse",
-      "gardening",
-      "climateaction",
-      "plants",
-      "hunger"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:80bd75c50508",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Immich sorting through my photos now. First dump. My little hp elitedesk is cranking at 100% CPU. What a Sunday for it.…",
-    "url": "https://aus.social/@davidmaddock/116428885586019273",
-    "excerpt": "Immich sorting through my photos now. First dump. My little hp elitedesk is cranking at 100% CPU. What a Sunday for it. 😂 Stirling pdf set up too. Homepage also set up. Immich has a looooong way to…",
-    "author": "DM54",
-    "publishedAt": "2026-04-19T01:56:45.000Z",
-    "score": 5,
-    "tags": [
-      "homelab",
-      "linux"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:2b65d18d0c2a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "After the sprint day at DjangoCon Europe 2026 🇬🇷 We went for a long walk through Athens with the Parthenon in the bac…",
-    "url": "https://fosstodon.org/@paulox/116427904052868040",
-    "excerpt": "After the sprint day at DjangoCon Europe 2026 🇬🇷 We went for a long walk through Athens with the Parthenon in the background, then a great dinner with Greek food and one last drink before calling i…",
-    "author": "Paolo Melchiorre",
-    "publishedAt": "2026-04-18T21:47:08.932Z",
-    "score": 8,
-    "tags": [
-      "djangocon",
-      "djangoconeurope",
-      "django",
-      "python"
+      "golang",
+      "python",
+      "api",
+      "ansible",
+      "aws",
+      "azure",
+      "cicd",
+      "gcp",
+      "kubernetes",
+      "terraform",
+      "seniorengineer",
+      "jobalert",
+      "jobsearch",
+      "hiring"
     ],
     "labels": [
-      "python"
+      "go",
+      "python",
+      "devops"
     ],
     "mentionsByteveda": false
   },
@@ -232,10 +197,10 @@
     "source": "lobsters",
     "title": "Hello old new “Projects” directory",
     "url": "https://blog.tenstral.net/2026/04/hello-projects-directory.html",
-    "excerpt": "29 points · linux, programming",
+    "excerpt": "34 points · linux, programming",
     "author": "FedericoSchonborn",
     "publishedAt": "2026-04-18T12:34:40.000-05:00",
-    "score": 29,
+    "score": 34,
     "tags": [
       "linux",
       "programming"
@@ -249,10 +214,10 @@
     "source": "lobsters",
     "title": "Anthropic's Claude Mythos Launch Is Built on Misinformation",
     "url": "https://www.artificialintelligencemadesimple.com/p/anthropics-claude-mythos-launch-is",
-    "excerpt": "18 points · ai, security",
+    "excerpt": "16 points · ai, security",
     "author": "eyberg",
     "publishedAt": "2026-04-18T11:08:31.000-05:00",
-    "score": 18,
+    "score": 16,
     "tags": [
       "ai",
       "security"
@@ -260,25 +225,6 @@
     "labels": [
       "ai",
       "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:864aa41a545a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Both came in at the same time, one from https:// nostarch.com and one from https:// ferris.rs # Rust # RustLang",
-    "url": "https://fosstodon.org/@lexer/116426566152239442",
-    "excerpt": "Both came in at the same time, one from https:// nostarch.com and one from https:// ferris.rs # Rust # RustLang",
-    "author": "aλex",
-    "publishedAt": "2026-04-18T16:06:54.191Z",
-    "score": 7,
-    "tags": [
-      "rust",
-      "rustlang"
-    ],
-    "labels": [
-      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -288,10 +234,10 @@
     "source": "lobsters",
     "title": "How (and why) we rewrote our production C++ frontend infrastructure in Rust",
     "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
-    "excerpt": "27 points · c++, rust, web",
+    "excerpt": "28 points · c++, rust, web",
     "author": "abareplace",
     "publishedAt": "2026-04-18T07:30:57.000-05:00",
-    "score": 27,
+    "score": 28,
     "tags": [
       "c++",
       "rust",
@@ -587,7 +533,7 @@
     "excerpt": "What if your Telegram bot could listen? Not just read text — actually understand voice messages,...",
     "author": "Thor 雷神 Schaeff",
     "publishedAt": "2026-04-16T15:03:04Z",
-    "score": 42,
+    "score": 41,
     "tags": [
       "ai",
       "gemini",
@@ -739,6 +685,57 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Hugging Face:cda2d0b1dc42",
+    "kind": "article",
+    "source": "rss",
+    "title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
+    "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-16T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a3407d2a9072",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+    "url": "https://arxiv.org/pdf/2604.04721",
+    "excerpt": "58 points · practices",
+    "author": "krig",
+    "publishedAt": "2026-04-15T13:12:33.000-05:00",
+    "score": 58,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:a33f7e9579f5",
+    "kind": "article",
+    "source": "rss",
+    "title": "Build a personal organization command center with GitHub Copilot CLI",
+    "url": "https://github.blog/ai-and-ml/github-copilot/build-a-personal-organization-command-center-with-github-copilot-cli/",
+    "excerpt": "What if you could remove the struggle of context switching across several apps, bringing them together into one place? Meet Brittany Ellich , Staff Software Engineer, and the productivity tool she bu…",
+    "author": "Cassidy Williams",
+    "publishedAt": "2026-04-15T17:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -747,7 +744,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-15T18:54:46Z",
-    "score": 385687,
+    "score": 385695,
     "tags": [
       "Python",
       "books",
@@ -769,8 +766,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-04-18T21:36:03Z",
-    "score": 293126,
+    "publishedAt": "2026-04-19T05:45:27Z",
+    "score": 293158,
     "tags": [
       "Python",
       "awesome",
@@ -794,7 +791,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-04-13T22:10:46Z",
-    "score": 219809,
+    "score": 219826,
     "tags": [
       "Python",
       "algorithm",
@@ -826,7 +823,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-17T04:15:47Z",
-    "score": 186068,
+    "score": 186125,
     "tags": [
       "Rust"
     ],
@@ -844,7 +841,7 @@
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
     "publishedAt": "2026-04-19T03:37:07Z",
-    "score": 183543,
+    "score": 183546,
     "tags": [
       "Python",
       "agentic-ai",
@@ -874,7 +871,7 @@
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
     "publishedAt": "2026-04-18T15:53:28Z",
-    "score": 159585,
+    "score": 159599,
     "tags": [
       "Python",
       "audio",
@@ -913,7 +910,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-16T08:34:13Z",
-    "score": 155049,
+    "score": 155053,
     "tags": [
       "Java",
       "agent",
@@ -943,8 +940,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-19T01:28:10Z",
-    "score": 147090,
+    "publishedAt": "2026-04-19T05:03:26Z",
+    "score": 147093,
     "tags": [
       "Python",
       "agents",
@@ -968,8 +965,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-19T01:57:49Z",
-    "score": 133993,
+    "publishedAt": "2026-04-19T07:26:03Z",
+    "score": 134004,
     "tags": [
       "Python",
       "agents",
@@ -1007,8 +1004,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-04-17T21:23:52Z",
-    "score": 132575,
+    "publishedAt": "2026-04-19T06:49:43Z",
+    "score": 132586,
     "tags": [
       "Python",
       "ai",
@@ -1042,7 +1039,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-18T18:23:33Z",
-    "score": 125437,
+    "score": 125441,
     "tags": [
       "Java",
       "algo",
@@ -1071,7 +1068,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-18T03:19:33Z",
-    "score": 112141,
+    "score": 112209,
     "tags": [
       "Rust",
       "android",
@@ -1107,8 +1104,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-19T03:12:08Z",
-    "score": 112118,
+    "publishedAt": "2026-04-19T07:06:38Z",
+    "score": 112119,
     "tags": [
       "Rust",
       "compiler",
@@ -1129,7 +1126,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-04-18T12:59:54Z",
-    "score": 106513,
+    "score": 106512,
     "tags": [
       "Rust",
       "deno",
@@ -1151,8 +1148,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-18T18:36:19Z",
-    "score": 105606,
+    "publishedAt": "2026-04-19T04:12:36Z",
+    "score": 105612,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1178,7 +1175,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-18T22:23:24Z",
-    "score": 83507,
+    "score": 83512,
     "tags": [
       "Rust",
       "packaging",
@@ -1201,7 +1198,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-04-18T07:40:39Z",
-    "score": 80432,
+    "score": 80433,
     "tags": [
       "Java",
       "framework",
@@ -1223,7 +1220,7 @@
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
     "publishedAt": "2026-04-18T20:11:15Z",
-    "score": 79349,
+    "score": 79356,
     "tags": [
       "Rust",
       "gpui",
