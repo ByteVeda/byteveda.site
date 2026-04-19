@@ -18,15 +18,21 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-border/60 border-b bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="flex items-center gap-2 font-mono font-semibold text-foreground text-sm tracking-tight"
-        >
-          <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-accent" />
-          <span>{site.name.toLowerCase()}</span>
-          <span className="text-muted-foreground/60">/</span>
-          <span className="text-muted-foreground">{site.section}</span>
-        </Link>
+        <div className="flex items-center gap-2 font-mono font-semibold text-foreground text-sm tracking-tight">
+          <a
+            href={site.homeUrl}
+            className="flex items-center gap-2 transition-colors hover:text-foreground/80"
+          >
+            <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-accent" />
+            <span>{site.name.toLowerCase()}</span>
+          </a>
+          <span aria-hidden className="text-muted-foreground/60">
+            /
+          </span>
+          <Link href="/" className="text-muted-foreground transition-colors hover:text-foreground">
+            {site.section}
+          </Link>
+        </div>
         <nav className="flex items-center gap-1 text-sm">
           {nav.map((item) => {
             const openInNewTab = "external" in item && item.external;
