@@ -5,12 +5,19 @@ import { NewsCard } from "./news-card";
 
 type NewsProps = {
   articleLimit?: number;
+  mobileArticleLimit?: number;
   trendingLimit?: number;
   showViewAll?: boolean;
 };
 
-export function News({ articleLimit = 3, trendingLimit = 12, showViewAll = true }: NewsProps) {
-  const articles = getArticles(articleLimit);
+export function News({
+  articleLimit = 3,
+  mobileArticleLimit = 5,
+  trendingLimit = 12,
+  showViewAll = true,
+}: NewsProps) {
+  const fetchLimit = Math.max(articleLimit, mobileArticleLimit);
+  const articles = getArticles(fetchLimit);
   const trending = getTrending(trendingLimit);
   if (articles.length === 0 && trending.length === 0) return null;
 
@@ -25,8 +32,8 @@ export function News({ articleLimit = 3, trendingLimit = 12, showViewAll = true 
 
       {articles.length > 0 && (
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.map((item) => (
-            <NewsCard key={item.id} item={item} />
+          {articles.map((item, i) => (
+            <NewsCard key={item.id} item={item} className={i >= articleLimit ? "sm:hidden" : ""} />
           ))}
         </div>
       )}
@@ -44,7 +51,7 @@ export function News({ articleLimit = 3, trendingLimit = 12, showViewAll = true 
       )}
 
       {trending.length > 0 && (
-        <div className="mt-16">
+        <div className="mt-16 hidden sm:block">
           <div className="mb-6 flex items-end justify-between gap-3">
             <div>
               <p className="font-mono text-muted-foreground text-xs uppercase tracking-widest">
