@@ -1,15 +1,20 @@
 import {
+  ArrowUpRight,
+  BookText,
+  Button,
+  GithubIcon,
+  Section,
+  SectionHeader,
+  TerminalChip,
+} from "@/components/ui";
+import {
   avatarUrl,
   contributeGuideUrl,
   contributeSteps,
   discussionsUrl,
   maintainers,
   profileUrl,
-} from "@/lib/contribute";
-import { Button } from "./ui/button";
-import { ArrowUpRight, BookText, GithubIcon } from "./ui/icons";
-import { Section, SectionHeader } from "./ui/section";
-import { TerminalChip } from "./ui/terminal-chip";
+} from "../utils";
 
 export function Contribute() {
   return (

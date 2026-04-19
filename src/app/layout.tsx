@@ -1,6 +1,7 @@
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
+import { Footer, Navbar } from "@/components/layout";
 import { site } from "@/lib/site";
 import { ThemeProvider } from "@/providers/theme-provider";
 import "./globals.css";
@@ -51,7 +52,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

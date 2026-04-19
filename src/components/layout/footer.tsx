@@ -1,7 +1,6 @@
-import { projects } from "@/content/projects";
+import { ExternalLink, Wordmark } from "@/components/ui";
+import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
-import { ExternalLink } from "./ui/external-link";
-import { Wordmark } from "./ui/wordmark";
 
 export function Footer() {
   return (

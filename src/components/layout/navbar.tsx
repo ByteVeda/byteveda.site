@@ -1,9 +1,8 @@
 import Link from "next/link";
+import { ArrowUpRight, Wordmark } from "@/components/ui";
 import { cn } from "@/lib/cn";
 import { nav } from "@/lib/site";
 import { ThemeToggle } from "./theme-toggle";
-import { ArrowUpRight } from "./ui/icons";
-import { Wordmark } from "./ui/wordmark";
 
 export function Navbar() {
   return (

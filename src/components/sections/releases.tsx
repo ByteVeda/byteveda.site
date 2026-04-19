@@ -1,4 +1,4 @@
-import { getReleases } from "@/lib/news";
+import { getReleases } from "@/features/news";
 import { site } from "@/lib/site";
 import { FeedSection } from "./feed-section";
 

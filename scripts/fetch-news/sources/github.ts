@@ -1,4 +1,4 @@
-import { projects } from "@/content/projects";
+import { projects } from "@/lib/projects";
 import { config } from "../config";
 import { fetchJson, HttpError } from "../http";
 import { toLabels } from "../labels";

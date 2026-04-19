@@ -1,10 +1,5 @@
-import { site } from "./site";
-
-export type Maintainer = {
-  login: string;
-  name: string;
-  role: string;
-};
+import { site } from "@/lib/site";
+import type { ContributeStep, Maintainer } from "./types";
 
 export const maintainers: Maintainer[] = [
   {
@@ -13,13 +8,6 @@ export const maintainers: Maintainer[] = [
     role: "Rust cores, language bindings, release engineering",
   },
 ];
-
-export type ContributeStep = {
-  number: string;
-  title: string;
-  description: string;
-  command?: string;
-};
 
 export const contributeSteps: ContributeStep[] = [
   {

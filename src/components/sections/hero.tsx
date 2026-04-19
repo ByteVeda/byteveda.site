@@ -1,6 +1,5 @@
+import { ArrowRight, Button, GithubIcon } from "@/components/ui";
 import { site } from "@/lib/site";
-import { Button } from "./ui/button";
-import { ArrowRight, GithubIcon } from "./ui/icons";
 
 const installs = [
   "pip install taskito",

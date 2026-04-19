@@ -1,9 +1,7 @@
 import Link from "next/link";
-import { getArticles, getTrending } from "@/lib/news";
+import { ArrowRight, Marquee, Section, SectionHeader } from "@/components/ui";
+import { getArticles, getTrending } from "../utils";
 import { NewsCard } from "./news-card";
-import { ArrowRight } from "./ui/icons";
-import { Marquee } from "./ui/marquee";
-import { Section, SectionHeader } from "./ui/section";
 
 type NewsProps = {
   articleLimit?: number;

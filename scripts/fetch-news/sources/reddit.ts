@@ -1,4 +1,4 @@
-import type { Label } from "@/lib/news";
+import type { Label } from "@/features/news";
 import { config } from "../config";
 import { fetchJson } from "../http";
 import { toLabels } from "../labels";

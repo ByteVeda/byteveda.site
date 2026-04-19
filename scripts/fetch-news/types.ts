@@ -1,4 +1,4 @@
-import type { NewsItem, NewsSource } from "@/lib/news";
+import type { NewsItem, NewsSource } from "@/features/news";
 
 export type SourceAdapter = {
   name: string;

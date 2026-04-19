@@ -1,5 +1,5 @@
-import { projects } from "@/content/projects";
-import type { Label } from "@/lib/news";
+import type { Label } from "@/features/news";
+import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 type RssFeed = { name: string; url: string; labels?: Label[] };
