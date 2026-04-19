@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { ArrowUpRight, Wordmark } from "@/components/ui";
 import { nav } from "@/lib/site";
+import { isExternalUrl } from "@/lib/url";
 import { MobileMenu } from "./mobile-menu";
 import { ThemeToggle } from "./theme-toggle";
+
+const linkClass =
+  "inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-muted-foreground transition-colors hover:text-foreground";
 
 export function Navbar() {
   return (
@@ -12,17 +16,31 @@ export function Navbar() {
         <div className="flex items-center gap-1">
           <nav className="hidden items-center gap-1 text-sm sm:flex">
             {nav.map((item) => {
-              const external = "external" in item && item.external;
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  target={external ? "_blank" : undefined}
-                  rel={external ? "noopener noreferrer" : undefined}
-                  className="inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-muted-foreground transition-colors hover:text-foreground"
-                >
+              const openInNewTab = "external" in item && item.external;
+              const label = (
+                <>
                   {item.label}
-                  {external && <ArrowUpRight className="h-3 w-3" strokeWidth={2} />}
+                  {openInNewTab && <ArrowUpRight className="h-3 w-3" strokeWidth={2} />}
+                </>
+              );
+
+              if (isExternalUrl(item.href)) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target={openInNewTab ? "_blank" : undefined}
+                    rel={openInNewTab ? "noopener noreferrer" : undefined}
+                    className={linkClass}
+                  >
+                    {label}
+                  </a>
+                );
+              }
+
+              return (
+                <Link key={item.href} href={item.href} className={linkClass}>
+                  {label}
                 </Link>
               );
             })}
