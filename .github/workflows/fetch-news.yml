@@ -39,7 +39,7 @@ jobs:
           GH_NEWS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Open or update pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.NEWS_PAT }}
           branch: news/auto-refresh
