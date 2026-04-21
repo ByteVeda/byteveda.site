@@ -159,27 +159,20 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:ac6b7696c2ec",
+    "id": "mastodon:97d13cdf0315",
     "kind": "article",
     "source": "mastodon",
-    "title": ":ubuntu: :fedora: Esta semana se lanzan dos versiones importantes de distribuciones: 👉 Ubuntu 26.04 LTS 👉 Fedora 44 ¿…",
-    "url": "https://fosstodon.org/@LinuxActual/116440444276881568",
-    "excerpt": ":ubuntu: :fedora: Esta semana se lanzan dos versiones importantes de distribuciones: 👉 Ubuntu 26.04 LTS 👉 Fedora 44 ¿Cuál probarías? 🤔 :linux: # Ubuntu # Fedora # Linux # GNOME # Tech # TechNews #…",
-    "author": "Linux Actual :linux:",
-    "publishedAt": "2026-04-21T02:56:17.566Z",
-    "score": 6,
+    "title": "How good is # LibreOffice in screenwriting? According to one user on Ask LibreOffice, very good – especially since Mark…",
+    "url": "https://fosstodon.org/@libreoffice/116441606807816061",
+    "excerpt": "How good is # LibreOffice in screenwriting? According to one user on Ask LibreOffice, very good – especially since Markdown support was added: https:// blog.documentfoundation.org/bl og/2026/04/21/us…",
+    "author": "LibreOffice",
+    "publishedAt": "2026-04-21T07:51:56.382Z",
+    "score": 14,
     "tags": [
-      "ubuntu",
-      "fedora",
-      "linux",
-      "gnome",
-      "tech",
-      "technews",
+      "libreoffice",
       "foss",
       "opensource",
-      "os",
-      "software",
-      "softwarelibre"
+      "freesoftware"
     ],
     "labels": [
       "opensource"
@@ -187,36 +180,67 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:89356d924048",
+    "id": "mastodon:20b9ea27fdc9",
     "kind": "article",
     "source": "mastodon",
-    "title": "Green plants in landscapes don't always appear as green - they can range from shades of yellows to shades of blues depe…",
-    "url": "https://universeodon.com/@avidandrew/116440288330766619",
-    "excerpt": "Green plants in landscapes don't always appear as green - they can range from shades of yellows to shades of blues depending on the lighting. In this tutorial, learn how to adjust these important sha…",
-    "author": "Avid Andrew",
-    "publishedAt": "2026-04-21T02:16:38.000Z",
-    "score": 5,
+    "title": "MPs, campaigners warn UK dependence on US tech firms is becoming a national security risk",
+    "url": "https://www.computing.co.uk/news/2026/government/mps-campaigners-warn-uk-dependence-on-us-tech-firms-is-becoming-a-national-security-risk?itc=refresh",
+    "excerpt": "Digital rights campaigners and MPs have warned that the UK’s heavy reliance on a small group of mainly US technology companies represents an economic, security ...",
+    "author": "Open Rights Group",
+    "publishedAt": "2026-04-21T07:40:01.000Z",
+    "score": 11,
     "tags": [
-      "photography",
-      "landscape",
-      "tutorial",
+      "digitalsovereignty",
       "opensource",
-      "artwithopensource",
-      "foss",
-      "fossart",
-      "darktable",
-      "canon",
-      "macro",
-      "camera",
-      "linux",
-      "software",
-      "travelphotography",
-      "freesoftware",
-      "travel",
-      "switzerland"
+      "bigtech",
+      "tech",
+      "ukpolitics",
+      "ukpol",
+      "unplugbigtech"
     ],
     "labels": [
       "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:a6e648436e4a",
+    "kind": "article",
+    "source": "rss",
+    "title": "We still need developer communities",
+    "url": "https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/",
+    "excerpt": "Ryan welcomes Mike Swift, co-founder and CEO of Major League Hacking, to the show to chat about the never-ending need for software developer communities and entry points into programming; MHL’s recen…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-04-21T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:bf0d9f0b673c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Nestled deep in the Highland forests of Scotland lies an abandoned Opel Olympia. Trees and undulating ground surround t…",
+    "url": "https://mstdn.social/@ObsidianUrbex/116440934389926011",
+    "excerpt": "Nestled deep in the Highland forests of Scotland lies an abandoned Opel Olympia. Trees and undulating ground surround the car; it is a considerable distance from the nearest road. A strange scene, bu…",
+    "author": "Obsidian Urbex Photography",
+    "publishedAt": "2026-04-21T05:00:56.000Z",
+    "score": 34,
+    "tags": [
+      "scotland",
+      "highlands",
+      "adventure",
+      "photography",
+      "weirdcarmastodon",
+      "classiccar",
+      "forest",
+      "rust"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -256,26 +280,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7075207ab851",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "We're at the \"it's probably ok to lie to the borrow checker\" level of optimization # rust # rustlang # programming",
-    "url": "https://mastodon.social/@esther_alter/116438083124782014",
-    "excerpt": "We're at the \"it's probably ok to lie to the borrow checker\" level of optimization # rust # rustlang # programming",
-    "author": "Esther Alter",
-    "publishedAt": "2026-04-20T16:55:49.000Z",
-    "score": 13,
-    "tags": [
-      "programming",
-      "rust",
-      "rustlang"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:GitHub Blog:d9bcf36bf529",
     "kind": "article",
     "source": "rss",
@@ -297,10 +301,10 @@
     "source": "lobsters",
     "title": "Your engineering team looks healthy. It probably isn't",
     "url": "https://dbarabashh.com/thoughts-and-experience/your-engineering-team-looks-healthy",
-    "excerpt": "16 points · culture, practices, vibecoding",
+    "excerpt": "17 points · culture, practices, vibecoding",
     "author": "brbash",
     "publishedAt": "2026-04-20T06:05:54.000-05:00",
-    "score": 16,
+    "score": 17,
     "tags": [
       "culture",
       "practices",
@@ -318,7 +322,7 @@
     "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
     "author": "caius",
     "publishedAt": "2026-04-20T03:08:15.000-05:00",
-    "score": 15,
+    "score": 17,
     "tags": [
       "ask",
       "programming"
@@ -332,10 +336,10 @@
     "source": "lobsters",
     "title": "High-performance 2D graphics rendering on the CPU using sparse strips",
     "url": "https://ethz.ch/content/dam/ethz/special-interest/infk/inst-pls/plf-dam/documents/StudentProjects/MasterTheses/2025-Laurenz-Thesis.pdf",
-    "excerpt": "22 points · graphics, pdf, performance, rust",
+    "excerpt": "23 points · graphics, pdf, performance, rust",
     "author": "technetium",
     "publishedAt": "2026-04-19T18:47:02.000-05:00",
-    "score": 22,
+    "score": 23,
     "tags": [
       "graphics",
       "pdf",
@@ -396,7 +400,7 @@
     "excerpt": "This is a submission for Weekend Challenge: Earth Day Edition Fluffer: someone who helps people \"get...",
     "author": "GrahamTheDev",
     "publishedAt": "2026-04-18T22:29:42Z",
-    "score": 45,
+    "score": 47,
     "tags": [
       "devchallenge",
       "weekendchallenge",
@@ -452,10 +456,10 @@
     "source": "lobsters",
     "title": "How (and why) we rewrote our production C++ frontend infrastructure in Rust",
     "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
-    "excerpt": "42 points · c++, rust, web",
+    "excerpt": "43 points · c++, rust, web",
     "author": "abareplace",
     "publishedAt": "2026-04-18T07:30:57.000-05:00",
-    "score": 42,
+    "score": 43,
     "tags": [
       "c++",
       "rust",
@@ -670,7 +674,7 @@
     "excerpt": "If you've spent any time on the internet, you know OpenClaw has been making waves lately. We recently...",
     "author": "Jess Lee",
     "publishedAt": "2026-04-16T15:38:54Z",
-    "score": 130,
+    "score": 137,
     "tags": [
       "devchallenge",
       "openclawchallenge",
@@ -724,25 +728,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:0b85847f9397",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "A time travel debugger for WebAssembly",
-    "url": "https://github.com/friendlymatthew/gabagool/tree/main/gabagool-debug-adapter#gabagool-debug-adapter",
-    "excerpt": "20 points · rust, wasm",
-    "author": "matthewkim",
-    "publishedAt": "2026-04-16T09:10:16.000-05:00",
-    "score": 20,
-    "tags": [
-      "rust",
-      "wasm"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -751,7 +736,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-20T14:04:53Z",
-    "score": 385780,
+    "score": 385789,
     "tags": [
       "Python",
       "books",
@@ -774,7 +759,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-20T15:30:04Z",
-    "score": 293487,
+    "score": 293539,
     "tags": [
       "Python",
       "awesome",
@@ -797,8 +782,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-21T02:28:21Z",
-    "score": 186795,
+    "publishedAt": "2026-04-21T08:01:47Z",
+    "score": 186882,
     "tags": [
       "Rust"
     ],
@@ -815,8 +800,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-21T03:32:09Z",
-    "score": 183615,
+    "publishedAt": "2026-04-21T07:50:44Z",
+    "score": 183620,
     "tags": [
       "Python",
       "agentic-ai",
@@ -845,8 +830,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-21T01:03:03Z",
-    "score": 159664,
+    "publishedAt": "2026-04-21T07:49:04Z",
+    "score": 159683,
     "tags": [
       "Python",
       "audio",
@@ -885,7 +870,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 157884,
+    "score": 157905,
     "tags": [
       "Python",
       "cli",
@@ -910,7 +895,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-16T08:34:13Z",
-    "score": 155094,
+    "score": 155107,
     "tags": [
       "Java",
       "agent",
@@ -940,8 +925,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-21T03:36:23Z",
-    "score": 147174,
+    "publishedAt": "2026-04-21T04:57:57Z",
+    "score": 147188,
     "tags": [
       "Python",
       "agents",
@@ -965,8 +950,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-20T21:58:03Z",
-    "score": 134243,
+    "publishedAt": "2026-04-21T05:43:27Z",
+    "score": 134288,
     "tags": [
       "Python",
       "agents",
@@ -1004,8 +989,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-04-20T09:47:55Z",
-    "score": 132884,
+    "publishedAt": "2026-04-21T08:03:24Z",
+    "score": 132909,
     "tags": [
       "Python",
       "ai",
@@ -1039,7 +1024,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-18T18:23:33Z",
-    "score": 125525,
+    "score": 125535,
     "tags": [
       "Java",
       "algo",
@@ -1068,7 +1053,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-20T02:05:32Z",
-    "score": 112508,
+    "score": 112548,
     "tags": [
       "Rust",
       "android",
@@ -1104,8 +1089,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-21T03:24:44Z",
-    "score": 112169,
+    "publishedAt": "2026-04-21T07:06:57Z",
+    "score": 112177,
     "tags": [
       "Rust",
       "compiler",
@@ -1125,8 +1110,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-20T21:35:11Z",
-    "score": 106537,
+    "publishedAt": "2026-04-21T07:48:20Z",
+    "score": 106540,
     "tags": [
       "Rust",
       "deno",
@@ -1149,7 +1134,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-21T01:19:48Z",
-    "score": 105686,
+    "score": 105699,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1175,7 +1160,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-20T21:08:22Z",
-    "score": 83624,
+    "score": 83637,
     "tags": [
       "Rust",
       "packaging",
@@ -1197,7 +1182,7 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-20T19:01:05Z",
+    "publishedAt": "2026-04-21T04:08:15Z",
     "score": 80449,
     "tags": [
       "Java",
@@ -1219,8 +1204,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-21T03:22:37Z",
-    "score": 79451,
+    "publishedAt": "2026-04-21T08:06:40Z",
+    "score": 79455,
     "tags": [
       "Rust",
       "gpui",
