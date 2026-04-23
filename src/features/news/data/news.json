@@ -159,21 +159,175 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:c25a74664b5a",
+    "id": "mastodon:4d24938a14f3",
     "kind": "article",
     "source": "mastodon",
-    "title": "You're Invited: Celebrate the Fedora Linux 44 Release Party! - Fedora Magazine",
-    "url": "https://fedoramagazine.org/fedora-linux-44-release-party/",
-    "excerpt": "Join the free virtual Fedora Linux 44 Release Party on April 24, 2026! Discover new features, explore Atomic Desktops, and celebrate with us.",
-    "author": "Fedora Project",
-    "publishedAt": "2026-04-23T02:02:25.845Z",
-    "score": 33,
+    "title": "Rebuilding # NixOS on a train is my core memory by now. # linux # travel # tips",
+    "url": "https://fosstodon.org/@rux1/116452765925490155",
+    "excerpt": "Rebuilding # NixOS on a train is my core memory by now. # linux # travel # tips",
+    "author": "Bart Karalus",
+    "publishedAt": "2026-04-23T07:09:51.004Z",
+    "score": 5,
     "tags": [
-      "fedora",
-      "fedora44",
-      "linux"
+      "nixos",
+      "linux",
+      "travel",
+      "tips"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:11021e9443de",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Is there any programming language for backend web-stuff left that hasn't been overrun by the AI weirdos at this point?…",
+    "url": "https://indieweb.social/@skye/116452662537864824",
+    "excerpt": "Is there any programming language for backend web-stuff left that hasn't been overrun by the AI weirdos at this point? PHP (my \"home\") is definitely lost. So is Python. Go appears to be on the verge.…",
+    "author": "Skye",
+    "publishedAt": "2026-04-23T06:43:33.000Z",
+    "score": 8,
+    "tags": [
+      "webdev",
+      "noai",
+      "php",
+      "python",
+      "golang"
+    ],
+    "labels": [
+      "webdev",
+      "python",
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c89e35e583d0",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "OK, here's a # TechieQuestion : if I want to sync directories from a Linux server using a Python script, does it make m…",
+    "url": "https://mas.to/@statsguy/116452579918997302",
+    "excerpt": "OK, here's a # TechieQuestion : if I want to sync directories from a Linux server using a Python script, does it make much difference whether I invoke a shell command with rsync from the Python scrip…",
+    "author": "Adam Jacobs 🇺🇦",
+    "publishedAt": "2026-04-23T06:22:32.000Z",
+    "score": 10,
+    "tags": [
+      "linux",
+      "rsync",
+      "python",
+      "techiequestion"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:34f2b16cb383",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Lost in the forest of Sweden lies an abandoned car junkyard, reclaimed by nature. Rusting in peace, among the spruce fo…",
+    "url": "https://mstdn.social/@ObsidianUrbex/116452552288605345",
+    "excerpt": "Lost in the forest of Sweden lies an abandoned car junkyard, reclaimed by nature. Rusting in peace, among the spruce forests as the decades pass them by and moss colonises faded paintwork. 📷 More ph…",
+    "author": "Obsidian Urbex Photography",
+    "publishedAt": "2026-04-23T06:15:31.000Z",
+    "score": 14,
+    "tags": [
+      "sweden",
+      "classiccars",
+      "lostplaces",
+      "rust",
+      "photography",
+      "explore",
+      "travel",
+      "forest",
+      "abandoned",
+      "weirdcarmastodon"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:90e7f9f045d8",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Forgejo – Beyond coding. We forge.",
+    "url": "https://forgejo.org/",
+    "excerpt": "Forgejo is a self-hosted lightweight software forge. Easy to install and low maintenance, it just does the job.",
+    "author": "🫧 socialcoding..",
+    "publishedAt": "2026-04-23T04:14:24.000Z",
+    "score": 6,
+    "tags": [
+      "gitlab",
+      "forgejo",
+      "golang",
+      "ux",
+      "github",
+      "codeberg"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5c20f315fd5a",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Integrated Data-Driven Multi-Criteria Analysis and Machine Learning Approaches for Assessment of Flood Susceptibility M…",
+    "url": "https://techhub.social/@GregCocks/116452017774255462",
+    "excerpt": "Integrated Data-Driven Multi-Criteria Analysis and Machine Learning Approaches for Assessment of Flood Susceptibility Mapping -- https:// doi.org/10.3390/w18070844 &lt;-- shared paper -- https:// you…",
+    "author": "💧🌏 Greg Cocks",
+    "publishedAt": "2026-04-23T03:59:35.000Z",
+    "score": 5,
+    "tags": [
+      "floodsusceptibility",
+      "floodmapping",
+      "machinelearning",
+      "gis",
+      "remotesensing",
+      "hydrology",
+      "water",
+      "environmentalresearch",
+      "ahp",
+      "fahp",
+      "climatechange",
+      "extremeweather",
+      "GoogleEarthEngine",
+      "spatial",
+      "mapping",
+      "ai",
+      "model",
+      "modeling",
+      "mohmanddam",
+      "swatriver",
+      "pakistan",
+      "criteria",
+      "parameters",
+      "indices",
+      "rainfall",
+      "precipitation",
+      "lulc",
+      "soiltexture",
+      "planning",
+      "policy",
+      "hydrography",
+      "riskmanagement",
+      "risk",
+      "hazard",
+      "flood",
+      "flooding",
+      "mitigation",
+      "watershed",
+      "watermanagement",
+      "resilence"
+    ],
+    "labels": [
+      "ml",
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -195,29 +349,6 @@
     ],
     "labels": [
       "ai",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d05a02a09c53",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I was once in a discussion with policy makers about giving better loan terms based on walkability. Good idea. But they…",
-    "url": "https://hachyderm.io/@natera/116450173588209620",
-    "excerpt": "I was once in a discussion with policy makers about giving better loan terms based on walkability. Good idea. But they were measuring it as a straight-line radius. Draw a circle, count what's inside.…",
-    "author": "Luis Natera",
-    "publishedAt": "2026-04-22T20:10:35.000Z",
-    "score": 6,
-    "tags": [
-      "OSMnx",
-      "openstreetmap",
-      "urbanplanning",
-      "15MinuteCity",
-      "gis",
-      "python"
-    ],
-    "labels": [
       "python"
     ],
     "mentionsByteveda": false
@@ -247,10 +378,10 @@
     "source": "lobsters",
     "title": "The Edge of Safe Rust",
     "url": "https://kyju.org/blog/tokioconf-2026/",
-    "excerpt": "40 points · plt, rust",
+    "excerpt": "43 points · plt, rust",
     "author": "intarga",
     "publishedAt": "2026-04-22T09:02:30.000-05:00",
-    "score": 40,
+    "score": 43,
     "tags": [
       "plt",
       "rust"
@@ -266,10 +397,10 @@
     "source": "lobsters",
     "title": "Markdown (2004)",
     "url": "http://www.aaronsw.com/weblog/001189",
-    "excerpt": "24 points · programming",
+    "excerpt": "26 points · programming",
     "author": "dhruvp",
     "publishedAt": "2026-04-22T07:51:17.000-05:00",
-    "score": 24,
+    "score": 26,
     "tags": [
       "programming"
     ],
@@ -285,7 +416,7 @@
     "excerpt": "Building fast with AI is easy but building something you can actually run, inspect, and trust is...",
     "author": "Julien Avezou",
     "publishedAt": "2026-04-22T12:49:24Z",
-    "score": 27,
+    "score": 28,
     "tags": [
       "buildinpublic",
       "opensource",
@@ -329,7 +460,7 @@
     "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 71,
+    "score": 86,
     "tags": [
       "ai",
       "webdev",
@@ -367,7 +498,7 @@
     "excerpt": "Anthropic built a model so dangerous they refused to release it publicly. Then a Discord group got in...",
     "author": "Om Shree",
     "publishedAt": "2026-04-22T01:28:17Z",
-    "score": 51,
+    "score": 52,
     "tags": [
       "ai",
       "security",
@@ -407,10 +538,10 @@
     "source": "lobsters",
     "title": "I don't want your PRs anymore",
     "url": "https://dpc.pw/posts/i-dont-want-your-prs-anymore/",
-    "excerpt": "33 points · practices, vibecoding",
+    "excerpt": "34 points · practices, vibecoding",
     "author": "dpc_pw",
     "publishedAt": "2026-04-21T15:02:21.000-05:00",
-    "score": 33,
+    "score": 34,
     "tags": [
       "practices",
       "vibecoding"
@@ -518,10 +649,10 @@
     "source": "lobsters",
     "title": "How To Make a Fast Dynamic Language Interpreter",
     "url": "https://zef-lang.dev/implementation",
-    "excerpt": "40 points · compilers, performance, plt",
+    "excerpt": "41 points · compilers, performance, plt",
     "author": "m0th",
     "publishedAt": "2026-04-21T04:37:13.000-05:00",
-    "score": 40,
+    "score": 41,
     "tags": [
       "compilers",
       "performance",
@@ -557,7 +688,7 @@
     "excerpt": "Intro I created an AI avatar, a VRM 3D character that reacts when you chat with AI or...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-04-21T03:36:52Z",
-    "score": 52,
+    "score": 58,
     "tags": [
       "ai",
       "webdev",
@@ -580,7 +711,7 @@
     "excerpt": "You see it everywhere you turn: \"I built this using just AI and im making 10K USD MRR\" \"Just got...",
     "author": "Chocoscoding - Oyeti Timileyin",
     "publishedAt": "2026-04-21T02:51:12Z",
-    "score": 31,
+    "score": 33,
     "tags": [
       "ai",
       "career",
@@ -662,84 +793,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:292d85b6bf3f",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What are you doing this week?",
-    "url": "https://lobste.rs/s/hqvxoj/what_are_you_doing_this_week",
-    "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
-    "author": "caius",
-    "publishedAt": "2026-04-20T03:08:15.000-05:00",
-    "score": 22,
-    "tags": [
-      "ask",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:00064970543f",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "High-performance 2D graphics rendering on the CPU using sparse strips",
-    "url": "https://ethz.ch/content/dam/ethz/special-interest/infk/inst-pls/plf-dam/documents/StudentProjects/MasterTheses/2025-Laurenz-Thesis.pdf",
-    "excerpt": "24 points · graphics, pdf, performance, rust",
-    "author": "technetium",
-    "publishedAt": "2026-04-19T18:47:02.000-05:00",
-    "score": 24,
-    "tags": [
-      "graphics",
-      "pdf",
-      "performance",
-      "rust"
-    ],
-    "labels": [
-      "performance",
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:7dc47dc47251",
-    "kind": "article",
-    "source": "devto",
-    "title": "It Might Already Be Too Late to Fix This",
-    "url": "https://dev.to/konark_13/it-might-already-be-too-late-to-fix-this-1a4m",
-    "excerpt": "This is a submission for Weekend Challenge: Earth Day Edition It might already be too late to fix...",
-    "author": "Konark Sharma",
-    "publishedAt": "2026-04-19T22:48:17Z",
-    "score": 48,
-    "tags": [
-      "devchallenge",
-      "weekendchallenge",
-      "ai",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f01cecc42439",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "SI Units for Request Rate (2024)",
-    "url": "https://entropicthoughts.com/si-units-for-request-rate",
-    "excerpt": "25 points · programming, satire",
-    "author": "noncrab",
-    "publishedAt": "2026-04-19T04:04:50.000-05:00",
-    "score": 25,
-    "tags": [
-      "programming",
-      "satire"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -748,7 +801,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-20T14:04:53Z",
-    "score": 385890,
+    "score": 385898,
     "tags": [
       "Python",
       "books",
@@ -771,7 +824,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 293873,
+    "score": 293918,
     "tags": [
       "Python",
       "awesome",
@@ -794,8 +847,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-23T03:34:10Z",
-    "score": 187583,
+    "publishedAt": "2026-04-23T05:02:09Z",
+    "score": 187658,
     "tags": [
       "Rust"
     ],
@@ -812,7 +865,7 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-23T03:27:47Z",
+    "publishedAt": "2026-04-23T04:25:13Z",
     "score": 183679,
     "tags": [
       "Python",
@@ -842,8 +895,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-23T01:50:52Z",
-    "score": 159773,
+    "publishedAt": "2026-04-23T08:05:57Z",
+    "score": 159779,
     "tags": [
       "Python",
       "audio",
@@ -882,7 +935,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 158183,
+    "score": 158224,
     "tags": [
       "Python",
       "cli",
@@ -907,7 +960,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-22T23:24:23Z",
-    "score": 155158,
+    "score": 155164,
     "tags": [
       "Java",
       "agent",
@@ -937,8 +990,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-23T03:36:55Z",
-    "score": 147271,
+    "publishedAt": "2026-04-23T06:50:22Z",
+    "score": 147283,
     "tags": [
       "Python",
       "agents",
@@ -963,7 +1016,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-04-23T02:42:38Z",
-    "score": 134551,
+    "score": 134585,
     "tags": [
       "Python",
       "agents",
@@ -1002,7 +1055,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-22T23:02:04Z",
-    "score": 133469,
+    "score": 133529,
     "tags": [
       "Python",
       "ai",
@@ -1036,7 +1089,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-18T18:23:33Z",
-    "score": 125585,
+    "score": 125592,
     "tags": [
       "Java",
       "algo",
@@ -1065,7 +1118,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-22T10:06:37Z",
-    "score": 112686,
+    "score": 112698,
     "tags": [
       "Rust",
       "android",
@@ -1101,8 +1154,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-23T01:39:52Z",
-    "score": 112231,
+    "publishedAt": "2026-04-23T05:50:06Z",
+    "score": 112235,
     "tags": [
       "Rust",
       "compiler",
@@ -1122,8 +1175,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-23T00:37:18Z",
-    "score": 106513,
+    "publishedAt": "2026-04-23T07:59:59Z",
+    "score": 106516,
     "tags": [
       "Rust",
       "deno",
@@ -1145,8 +1198,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-23T03:34:13Z",
-    "score": 105771,
+    "publishedAt": "2026-04-23T06:38:08Z",
+    "score": 105776,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1172,7 +1225,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-23T00:54:26Z",
-    "score": 83765,
+    "score": 83767,
     "tags": [
       "Rust",
       "packaging",
@@ -1194,8 +1247,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-23T01:44:17Z",
-    "score": 80474,
+    "publishedAt": "2026-04-23T07:02:06Z",
+    "score": 80478,
     "tags": [
       "Java",
       "framework",
@@ -1216,8 +1269,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-23T02:50:58Z",
-    "score": 79569,
+    "publishedAt": "2026-04-23T08:06:24Z",
+    "score": 79581,
     "tags": [
       "Rust",
       "gpui",
