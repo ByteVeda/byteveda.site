@@ -159,62 +159,46 @@
     "mentionsByteveda": true
   },
   {
-    "id": "hashnode:ce2fd7ab3bb9",
+    "id": "mastodon:46871269d1db",
     "kind": "article",
-    "source": "hashnode",
-    "title": "When the Enterprise Opens Up to Agents, Who Coordinates Them?",
-    "url": "https://kavinkimcreator.hashnode.dev/when-the-enterprise-opens-up-to-agents-who-coordinates-them-1",
-    "excerpt": "Salesforce just opened 27 years of enterprise CRM to any AI agent. Headless 360 launched at TDX with over 60 MCP tools and 30 coding skills. Any agent built with Claude Code, OpenAI Agents SDK, or Cu…",
-    "author": "kavin-kim-creator",
-    "publishedAt": "2026-04-23T14:04:37.368Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "The context section of Kagi Translate is meant to provide additional context to help with getting a translation that fi…",
+    "url": "https://infosec.exchange/@nazgul/116455522041946636",
+    "excerpt": "The context section of Kagi Translate is meant to provide additional context to help with getting a translation that fits the intended context. However, I suspected that meant it was actually a way o…",
+    "author": "Kee Hinckley",
+    "publishedAt": "2026-04-23T18:50:46.000Z",
+    "score": 7,
     "tags": [
+      "llm",
       "ai",
-      "javascript",
-      "programming"
+      "Kagi",
+      "kagitranslate",
+      "translation",
+      "spanish",
+      "python"
     ],
     "labels": [
       "ai",
-      "typescript"
+      "python"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:be86452fd0d6",
+    "id": "mastodon:bc7aae6e5c7d",
     "kind": "article",
-    "source": "hashnode",
-    "title": "I Built an AI Agent That Earns $300/Month — Here's Exactly What I Did",
-    "url": "https://techfind777.hashnode.dev/i-built-an-ai-agent-that-earns-300month-heres-exactly-what-i-did-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "How I went from zero to a passive income stream by applying the same AI Agent frameworks I was consulting on — no VC, no team, just a working script and a Gumroad store.\n\nSix months ago, I told a cli…",
-    "author": "techfind",
-    "publishedAt": "2026-04-23T14:00:04.110Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "Helsing with Jon Gjengset - Rust in Production Podcast | corrode Rust Consulting",
+    "url": "https://corrode.dev/podcast/s06e02-helsing/",
+    "excerpt": "Jon Gjengset is one of the most recognizable names in the Rust community,…",
+    "author": "Matthias Endler",
+    "publishedAt": "2026-04-23T16:27:50.000Z",
+    "score": 9,
     "tags": [
-      "ai",
-      "aiagents",
-      "indiehacker"
+      "rustlang",
+      "rust"
     ],
     "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:30eb6a37900f",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "AI Agent Architecture Diagram: Visualizing Complex Autonomous Systems",
-    "url": "https://thebmai.hashnode.dev/ai-agent-architecture-diagram-visualizing-complex-autonomous-systems",
-    "excerpt": "AI Agent Architecture Diagram: The Blueprint That Actually Works in Production\nLast updated: 2026-04-23\nTL;DR: Most AI agent architecture diagrams fail because they're static pictures, not living blu…",
-    "author": "Nick Biniaminy",
-    "publishedAt": "2026-04-23T14:00:03.256Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "ai-agent"
-    ],
-    "labels": [
-      "ai"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -235,87 +219,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:58e85ddc70ea",
+    "id": "mastodon:77ea8ac70a6f",
     "kind": "article",
-    "source": "hashnode",
-    "title": "The Technical Architecture of Supply Chain Automation",
-    "url": "https://aitechy.hashnode.dev/the-technical-architecture-of-supply-chain-automation",
-    "excerpt": "Supply Chain Automation leverages advanced technologies such as IoT, AI, and machine learning to create a seamless workflow across the entire supply chain. This article will explore the technical arc…",
-    "author": "Jasper.B Stewart",
-    "publishedAt": "2026-04-23T13:58:33.853Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "Pure Borrow: Linear Haskell Meets Rust-Style Borrowing",
+    "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
+    "excerpt": "TL;DR You can now use Rust-style mutable and shared borrows in Linear Haskell, within ST-like linear monad, BO, with pure, type-safe, and leak-freedom support of mutation and concurrency! It comes with flexible feature of multiple aliasing of shared borrows, delimiting lifetime regions, etc!  We are really pleased to announce the acceptance of our work, Pure Borrow, at PLDI 2026 🎉   Paper (Extended Version): [2604.15290] Pure Borrow: Linear Haskell Meets Rust-Style Borrowing Implementation:...",
+    "author": "HaskellOrg",
+    "publishedAt": "2026-04-23T13:53:42.288Z",
+    "score": 7,
     "tags": [
-      "ai",
-      "architecture",
-      "automation",
-      "iot",
-      "tech"
+      "haskell",
+      "rust"
     ],
     "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:c8abff6d75b7",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Understanding Supply Chain Automation and Its Impact",
-    "url": "https://technoai.hashnode.dev/understanding-supply-chain-automation-and-its-impact",
-    "excerpt": "In today's fast-paced commercial environment, businesses must adapt and optimize their supply chain operations to stay competitive. Supply Chain Automation is a technology-driven process that enhance…",
-    "author": "Cheryl D Mahaffey",
-    "publishedAt": "2026-04-23T13:58:30.660Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "automation",
-      "business",
-      "supplychain",
-      "technology"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:f5b729ffc3a4",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Один промпт заменил мне 2 часа работы в день",
-    "url": "https://airozov.hashnode.dev/odin-prompt-zamenil-mne-2-chasa-raboty-v-den-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "Четверг, 14 марта. Время на часах 23:40, а я всё ещё застрял над отчётом для клиента из Штатов. Технические логи превращались в читаемый текст, как автомобиль в болоте - медленно и с сопротивлением.…",
-    "author": "GekaCross",
-    "publishedAt": "2026-04-23T13:58:28.392Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "prompt-engineering"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:8a9671b4dab7",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Intelligent Automation Logistics Case Study: 40% Cost Reduction in 12 Months",
-    "url": "https://technicalaime.hashnode.dev/intelligent-automation-logistics-case-study-40-cost-reduction-in-12-months",
-    "excerpt": "When a mid-sized third-party logistics provider faced mounting competitive pressure and shrinking margins, leadership made a bold decision: transform operations through comprehensive automation or ri…",
-    "author": "Edith Heroux",
-    "publishedAt": "2026-04-23T13:51:34.245Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "businessintelligence",
-      "casestudy",
-      "logistics",
-      "roi"
-    ],
-    "labels": [
-      "ai"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -343,90 +261,47 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:e4f6985c015e",
+    "id": "mastodon:534ab07fe1eb",
     "kind": "article",
     "source": "mastodon",
-    "title": "Der ultimative Guide für Linux-Apps: Entdecken Sie Top-Tools für Office, Grafik &amp; System. Inkl. Flatpak-Tricks, Win…",
-    "url": "https://mastodon.social/@torbenkopp_com/116454304067124999",
-    "excerpt": "Der ultimative Guide für Linux-Apps: Entdecken Sie Top-Tools für Office, Grafik &amp; System. Inkl. Flatpak-Tricks, Windows-Emulation &amp; Profi-Workflows. Kurz &amp; kompakt! https://www. thalia.de…",
-    "author": "Torben Kopp",
-    "publishedAt": "2026-04-23T13:41:01.000Z",
-    "score": 9,
+    "title": "Keeping it old school, Unix style, with inetd services!",
+    "url": "https://mikecoats.com/simple-inetd-services/",
+    "excerpt": "How to build quick and dirty network services, the Unixy, way with the venerable inetd approach.",
+    "author": "Mike Coats 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇪🇺🌍♻️",
+    "publishedAt": "2026-04-23T13:30:55.000Z",
+    "score": 6,
     "tags": [
-      "linux",
-      "office",
-      "tools",
-      "apps",
-      "flatpak",
-      "buch",
-      "writing",
-      "literature",
-      "literatur",
-      "books",
-      "press",
-      "markets",
-      "ai",
-      "technology",
-      "science",
-      "artist",
-      "theatre",
-      "nature",
-      "gaming",
-      "business",
-      "philosophy",
-      "humanities",
-      "ebook"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:440d389074c2",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Open-Source Community Tackling Y2K38 Epoch",
-    "url": "https://news.opensuse.org/2026/01/20/os-community-tackling-y2k38-epoch/",
-    "excerpt": "Just 12 years remain before a fundamental limit in timekeeping threatens to disrupt unprepared computer systems; Y2K38 is the new Y2K, and open-source contri...",
-    "author": "openSUSE Linux",
-    "publishedAt": "2026-04-23T12:25:29.314Z",
-    "score": 13,
-    "tags": [
-      "y2k",
-      "unix",
-      "opensuse",
-      "compilers",
-      "python",
-      "linux"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:a9bf38af5f95",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "small update to Bobby's app icon based on feedback from @ tbernard . # linux # gnome # app # icon # design # rust # sql…",
-    "url": "https://mastodon.social/@hbons/116452954284651331",
-    "excerpt": "small update to Bobby's app icon based on feedback from @ tbernard . # linux # gnome # app # icon # design # rust # sql # sqlite # data",
-    "author": "Hylke Bons 🥜",
-    "publishedAt": "2026-04-23T07:57:45.000Z",
-    "score": 12,
-    "tags": [
-      "linux",
-      "gnome",
-      "app",
-      "icon",
-      "design",
       "rust",
-      "sql",
-      "sqlite",
-      "data"
+      "networking",
+      "linux",
+      "opensource",
+      "rustlang",
+      "software"
     ],
     "labels": [
+      "rust",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:19d684c82412",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Who even uses jemalloc in 2026 anyway? (many major projects)",
+    "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
+    "excerpt": "27 points · c, c++, performance, rust",
+    "author": "eatonphil",
+    "publishedAt": "2026-04-23T05:46:49.000-05:00",
+    "score": 27,
+    "tags": [
+      "c",
+      "c++",
+      "performance",
+      "rust"
+    ],
+    "labels": [
+      "performance",
       "rust"
     ],
     "mentionsByteveda": false
@@ -440,7 +315,7 @@
     "excerpt": "Is there any programming language for backend web-stuff left that hasn't been overrun by the AI weirdos at this point? PHP (my \"home\") is definitely lost. So is Python. Go appears to be on the verge.…",
     "author": "Skye",
     "publishedAt": "2026-04-23T06:43:33.000Z",
-    "score": 23,
+    "score": 26,
     "tags": [
       "webdev",
       "noai",
@@ -484,10 +359,10 @@
     "source": "lobsters",
     "title": "How The Heck Does Shazam Work?",
     "url": "https://perthirtysix.com/how-the-heck-does-shazam-work",
-    "excerpt": "43 points · math, programming",
+    "excerpt": "69 points · math, programming",
     "author": "indigo",
     "publishedAt": "2026-04-22T23:04:05.000-05:00",
-    "score": 43,
+    "score": 69,
     "tags": [
       "math",
       "programming"
@@ -520,10 +395,10 @@
     "source": "lobsters",
     "title": "The Edge of Safe Rust",
     "url": "https://kyju.org/blog/tokioconf-2026/",
-    "excerpt": "47 points · plt, rust",
+    "excerpt": "49 points · plt, rust",
     "author": "intarga",
     "publishedAt": "2026-04-22T09:02:30.000-05:00",
-    "score": 47,
+    "score": 49,
     "tags": [
       "plt",
       "rust"
@@ -539,10 +414,10 @@
     "source": "lobsters",
     "title": "Markdown (2004)",
     "url": "http://www.aaronsw.com/weblog/001189",
-    "excerpt": "28 points · programming",
+    "excerpt": "32 points · programming",
     "author": "dhruvp",
     "publishedAt": "2026-04-22T07:51:17.000-05:00",
-    "score": 28,
+    "score": 32,
     "tags": [
       "programming"
     ],
@@ -558,7 +433,7 @@
     "excerpt": "Building fast with AI is easy but building something you can actually run, inspect, and trust is...",
     "author": "Julien Avezou",
     "publishedAt": "2026-04-22T12:49:24Z",
-    "score": 29,
+    "score": 31,
     "tags": [
       "buildinpublic",
       "opensource",
@@ -578,10 +453,10 @@
     "source": "lobsters",
     "title": "What Async Promised and What it Delivered",
     "url": "https://causality.blog/essays/what-async-promised/",
-    "excerpt": "15 points · programming",
+    "excerpt": "18 points · programming",
     "author": "mpweiher",
     "publishedAt": "2026-04-22T07:17:43.000-05:00",
-    "score": 15,
+    "score": 18,
     "tags": [
       "programming"
     ],
@@ -597,7 +472,7 @@
     "excerpt": "AI tools made developers feel 20% faster. Then researchers measured them at 19% slower. Read that...",
     "author": "Aditya Agarwal",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 27,
+    "score": 28,
     "tags": [
       "discuss",
       "ai",
@@ -640,7 +515,7 @@
     "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 102,
+    "score": 107,
     "tags": [
       "ai",
       "webdev",
@@ -787,6 +662,100 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Hugging Face:24e2166b86b9",
+    "kind": "article",
+    "source": "rss",
+    "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
+    "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-21T10:09:58.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:9ccede99c7cb",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What is your go-to project for learning a new language?",
+    "url": "https://lobste.rs/s/xqmug2/what_is_your_go_project_for_learning_new",
+    "excerpt": "Ive been playing around with learning a lisp language for a while, and I recently decided to go for it and learn [fennel](https://fennel-lang.org/) (as I already am comfortable with lua) just to see…",
+    "author": "Toric",
+    "publishedAt": "2026-04-21T05:09:48.000-05:00",
+    "score": 59,
+    "tags": [
+      "ask",
+      "education",
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:5a399066060c",
+    "kind": "article",
+    "source": "devto",
+    "title": "Claude! Stop Burning Tokens on Your Agent's Tool Output!",
+    "url": "https://dev.to/marcosomma/claude-stop-burning-tokens-on-your-agents-tool-output-1cpl",
+    "excerpt": "A Two-Stage Curator That Pays for Itself I watched Claude Code feed 108,894 bytes of seq 1 20000...",
+    "author": "marcosomma",
+    "publishedAt": "2026-04-21T09:39:42Z",
+    "score": 30,
+    "tags": [
+      "ai",
+      "programming",
+      "tooling",
+      "mcp"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:71df6752630d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How To Make a Fast Dynamic Language Interpreter",
+    "url": "https://zef-lang.dev/implementation",
+    "excerpt": "41 points · compilers, performance, plt",
+    "author": "m0th",
+    "publishedAt": "2026-04-21T04:37:13.000-05:00",
+    "score": 41,
+    "tags": [
+      "compilers",
+      "performance",
+      "plt"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:a6e648436e4a",
+    "kind": "article",
+    "source": "rss",
+    "title": "We still need developer communities",
+    "url": "https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/",
+    "excerpt": "Ryan welcomes Mike Swift, co-founder and CEO of Major League Hacking, to the show to chat about the never-ending need for software developer communities and entry points into programming; MHL’s recen…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-04-21T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -795,7 +764,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-20T14:04:53Z",
-    "score": 385913,
+    "score": 385919,
     "tags": [
       "Python",
       "books",
@@ -818,7 +787,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 293963,
+    "score": 294018,
     "tags": [
       "Python",
       "awesome",
@@ -841,8 +810,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-23T05:02:09Z",
-    "score": 187741,
+    "publishedAt": "2026-04-23T16:01:35Z",
+    "score": 187817,
     "tags": [
       "Rust"
     ],
@@ -859,8 +828,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-23T14:02:06Z",
-    "score": 183683,
+    "publishedAt": "2026-04-23T19:19:43Z",
+    "score": 183688,
     "tags": [
       "Python",
       "agentic-ai",
@@ -889,8 +858,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-23T13:44:49Z",
-    "score": 159815,
+    "publishedAt": "2026-04-23T18:27:21Z",
+    "score": 159824,
     "tags": [
       "Python",
       "audio",
@@ -929,7 +898,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 158260,
+    "score": 158286,
     "tags": [
       "Python",
       "cli",
@@ -954,7 +923,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-22T23:24:23Z",
-    "score": 155178,
+    "score": 155180,
     "tags": [
       "Java",
       "agent",
@@ -984,8 +953,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-23T14:05:12Z",
-    "score": 147293,
+    "publishedAt": "2026-04-23T19:37:04Z",
+    "score": 147302,
     "tags": [
       "Python",
       "agents",
@@ -1009,8 +978,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-23T02:42:38Z",
-    "score": 134635,
+    "publishedAt": "2026-04-23T19:36:01Z",
+    "score": 134661,
     "tags": [
       "Python",
       "agents",
@@ -1049,7 +1018,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-23T10:39:08Z",
-    "score": 133610,
+    "score": 133670,
     "tags": [
       "Python",
       "ai",
@@ -1083,7 +1052,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-18T18:23:33Z",
-    "score": 125598,
+    "score": 125599,
     "tags": [
       "Java",
       "algo",
@@ -1111,8 +1080,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-22T10:06:37Z",
-    "score": 112721,
+    "publishedAt": "2026-04-23T15:52:44Z",
+    "score": 112742,
     "tags": [
       "Rust",
       "android",
@@ -1148,8 +1117,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-23T14:06:42Z",
-    "score": 112246,
+    "publishedAt": "2026-04-23T16:24:27Z",
+    "score": 112260,
     "tags": [
       "Rust",
       "compiler",
@@ -1169,8 +1138,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-23T13:11:32Z",
-    "score": 106517,
+    "publishedAt": "2026-04-23T19:16:44Z",
+    "score": 106520,
     "tags": [
       "Rust",
       "deno",
@@ -1192,8 +1161,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-23T06:38:08Z",
-    "score": 105786,
+    "publishedAt": "2026-04-23T17:09:29Z",
+    "score": 105793,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1218,8 +1187,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-23T10:58:03Z",
-    "score": 83784,
+    "publishedAt": "2026-04-23T19:02:55Z",
+    "score": 83802,
     "tags": [
       "Rust",
       "packaging",
@@ -1242,7 +1211,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-04-23T13:39:39Z",
-    "score": 80481,
+    "score": 80482,
     "tags": [
       "Java",
       "framework",
@@ -1263,8 +1232,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-23T14:06:59Z",
-    "score": 79598,
+    "publishedAt": "2026-04-23T19:34:25Z",
+    "score": 79621,
     "tags": [
       "Rust",
       "gpui",
