@@ -1,5 +1,25 @@
 [
   {
+    "id": "github:90049c8d1b8c",
+    "kind": "release",
+    "source": "github",
+    "title": "taskito v0.11.1",
+    "url": "https://github.com/ByteVeda/taskito/releases/tag/0.11.1",
+    "excerpt": "## What's Changed * fix: post-audit correctness + safety pass by @pratyush618 in https://github.com/ByteVeda/taskito/pull/53 * chore(release): 0.11.1 by @pratyush618 in https://github.com/ByteVeda/ta…",
+    "author": "pratyush618",
+    "publishedAt": "2026-04-24T07:31:47Z",
+    "score": 0,
+    "tags": [
+      "taskito",
+      "release"
+    ],
+    "labels": [
+      "rust",
+      "python"
+    ],
+    "mentionsByteveda": true
+  },
+  {
     "id": "github:dd75e78845ba",
     "kind": "release",
     "source": "github",
@@ -138,26 +158,6 @@
     "mentionsByteveda": true
   },
   {
-    "id": "github:38203df6c4fe",
-    "kind": "release",
-    "source": "github",
-    "title": "taskito 0.10.0",
-    "url": "https://github.com/ByteVeda/taskito/releases/tag/0.10.0",
-    "excerpt": "## What's Changed * feat: smart scheduling — adaptive polling, duration cache, weighted dispatch by @pratyush618 in https://github.com/ByteVeda/taskito/pull/41 * docs: add smart scheduling to 0.9.0 c…",
-    "author": "pratyush618",
-    "publishedAt": "2026-03-24T10:01:15Z",
-    "score": 0,
-    "tags": [
-      "taskito",
-      "release"
-    ],
-    "labels": [
-      "rust",
-      "python"
-    ],
-    "mentionsByteveda": true
-  },
-  {
     "id": "github:d410b1e5a9e5",
     "kind": "release",
     "source": "github",
@@ -178,32 +178,98 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:ee49629d3d41",
+    "id": "rss:Stack Overflow Blog:876efc9914e0",
     "kind": "article",
-    "source": "mastodon",
-    "title": "From ripe red tomatoes in our hands to those still growing in the garden, every stage tells a story of # sustainability…",
-    "url": "https://mastodon.social/@2003MugishaPhocit/116457579517377067",
-    "excerpt": "From ripe red tomatoes in our hands to those still growing in the garden, every stage tells a story of # sustainability . Teaching young people to grow # food in ecofriendly ways protects our # envir…",
-    "author": "MUGISHA PHOCIT",
-    "publishedAt": "2026-04-24T03:34:00.000Z",
-    "score": 6,
+    "source": "rss",
+    "title": "Lights, camera, open source!",
+    "url": "https://stackoverflow.blog/2026/04/24/lights-camera-open-source/",
+    "excerpt": "Ryan is joined on the show by Cult.Repo producers Emma Tracey and Josiah Mcgarvie to discuss making documentaries about open-source software and the people behind the major technologies that uphold t…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-04-24T07:40:00.000Z",
+    "score": 0,
     "tags": [
-      "sustainability",
-      "food",
-      "environment",
-      "photography",
-      "linux",
-      "fediverse",
-      "plants",
-      "climateaction",
-      "gardening",
-      "agriculture",
-      "foodproduction",
-      "hunger",
-      "mastodon",
-      "nature"
+      "Stack Overflow Blog"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b8b53f411eb5",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Marmite 0.3.0 Release Notes",
+    "url": "https://marmite.blog/marmite-0-3-0-release-notes.html",
+    "excerpt": "Marmite 0.3.0 brings build-time syntax highlighting with Arborium, enhanced search with inline match...",
+    "author": "Ian Wagner",
+    "publishedAt": "2026-04-24T03:17:00.910Z",
+    "score": 12,
+    "tags": [
+      "rust",
+      "rustlang"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:128f922c03bf",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Old Locks # old # keyhole # keyholeplates # worn # door # olddoor # detail # wood # balckandwhite # monochrome # metal…",
+    "url": "https://mastodon.social/@jlbouzou/116457409309356545",
+    "excerpt": "Old Locks # old # keyhole # keyholeplates # worn # door # olddoor # detail # wood # balckandwhite # monochrome # metal # locks # rust # rusty # corroded # photography # bnwphotography # blackandwhite…",
+    "author": "Jean-Louis Bouzou",
+    "publishedAt": "2026-04-24T02:50:43.000Z",
+    "score": 15,
+    "tags": [
+      "old",
+      "keyhole",
+      "keyholeplates",
+      "worn",
+      "door",
+      "olddoor",
+      "wood",
+      "balckandwhite",
+      "monochrome",
+      "metal",
+      "locks",
+      "rust",
+      "rusty",
+      "corroded",
+      "photography",
+      "bnwphotography",
+      "blackandwhitephotography",
+      "monochromephotography",
+      "jlbouzou",
+      "detail"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c1b02ba870e3",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Just released Kotoba, a fast, fully offline Japanese–English dictionary, on Flathub. Features: Flexible search (kanji,…",
+    "url": "https://mastodon.social/@haydntrowell/116457195604547444",
+    "excerpt": "Just released Kotoba, a fast, fully offline Japanese–English dictionary, on Flathub. Features: Flexible search (kanji, kana, rōmaji, or English), near instant results, detailed entries (readings, mea…",
+    "author": "Haydn Trowell",
+    "publishedAt": "2026-04-24T01:56:22.000Z",
+    "score": 44,
+    "tags": [
+      "flathub",
+      "gnome",
+      "gtk",
+      "japanese",
+      "linux",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -230,57 +296,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:995a24f3a1a5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Are you in # Auckland ? And do you work in a big office? With # Python ? Could you maybe help the Python NZ Auckland #…",
-    "url": "https://cloudisland.nz/@Firesphere/116456060577801904",
-    "excerpt": "Are you in # Auckland ? And do you work in a big office? With # Python ? Could you maybe help the Python NZ Auckland # meetup by hosting it? If so, please get in touch with the Python NZ committee! Y…",
-    "author": "Simon 🐮:spot:",
-    "publishedAt": "2026-04-23T21:07:43.000Z",
-    "score": 8,
-    "tags": [
-      "auckland",
-      "python",
-      "meetup"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:fc8083bbe9ba",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "We&#39;ve been asking for your support in the # PyOhiothon # fundraiser , but some people might wonder why we need help…",
-    "url": "https://fosstodon.org/@pyohio/116455979288557068",
-    "excerpt": "We&#39;ve been asking for your support in the # PyOhiothon # fundraiser , but some people might wonder why we need help with funding. It&#39;s only fair to let you know some of the costs facing # PyO…",
-    "author": "PyOhio",
-    "publishedAt": "2026-04-23T20:47:03.032Z",
-    "score": 10,
-    "tags": [
-      "pyohiothon",
-      "fundraiser",
-      "pyohio",
-      "python",
-      "conference"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:410aed397038",
     "kind": "article",
     "source": "lobsters",
     "title": "Security issues found within rust-coreutils",
     "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
-    "excerpt": "24 points · rust, security",
+    "excerpt": "33 points · rust, security",
     "author": "hugoarnal",
     "publishedAt": "2026-04-23T12:20:42.000-05:00",
-    "score": 24,
+    "score": 33,
     "tags": [
       "rust",
       "security"
@@ -288,6 +312,26 @@
     "labels": [
       "rust",
       "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:bedce244b7d2",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Serving the For You Feed",
+    "url": "https://atproto.com/blog/serving-the-for-you-feed",
+    "excerpt": "15 points · performance, web",
+    "author": "pushcx",
+    "publishedAt": "2026-04-23T11:23:43.000-05:00",
+    "score": 15,
+    "tags": [
+      "performance",
+      "web"
+    ],
+    "labels": [
+      "performance",
+      "webdev"
     ],
     "mentionsByteveda": false
   },
@@ -313,10 +357,10 @@
     "source": "lobsters",
     "title": "Who even uses jemalloc in 2026 anyway? (many major projects)",
     "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
-    "excerpt": "41 points · c, c++, performance, rust",
+    "excerpt": "46 points · c, c++, performance, rust",
     "author": "eatonphil",
     "publishedAt": "2026-04-23T05:46:49.000-05:00",
-    "score": 41,
+    "score": 46,
     "tags": [
       "c",
       "c++",
@@ -382,15 +426,34 @@
     "source": "lobsters",
     "title": "How The Heck Does Shazam Work?",
     "url": "https://perthirtysix.com/how-the-heck-does-shazam-work",
-    "excerpt": "83 points · math, programming",
+    "excerpt": "90 points · math, programming",
     "author": "indigo",
     "publishedAt": "2026-04-22T23:04:05.000-05:00",
-    "score": 83,
+    "score": 90,
     "tags": [
       "math",
       "programming"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:4a3a5411219d",
+    "kind": "article",
+    "source": "rss",
+    "title": "How to Use Transformers.js in a Chrome Extension",
+    "url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-23T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -439,10 +502,10 @@
     "source": "lobsters",
     "title": "The Edge of Safe Rust",
     "url": "https://kyju.org/blog/tokioconf-2026/",
-    "excerpt": "49 points · plt, rust",
+    "excerpt": "50 points · plt, rust",
     "author": "intarga",
     "publishedAt": "2026-04-22T09:02:30.000-05:00",
-    "score": 49,
+    "score": 50,
     "tags": [
       "plt",
       "rust"
@@ -458,10 +521,10 @@
     "source": "lobsters",
     "title": "Markdown (2004)",
     "url": "http://www.aaronsw.com/weblog/001189",
-    "excerpt": "35 points · programming",
+    "excerpt": "36 points · programming",
     "author": "dhruvp",
     "publishedAt": "2026-04-22T07:51:17.000-05:00",
-    "score": 35,
+    "score": 36,
     "tags": [
       "programming"
     ],
@@ -559,7 +622,7 @@
     "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 120,
+    "score": 122,
     "tags": [
       "ai",
       "webdev",
@@ -619,7 +682,7 @@
     "excerpt": "This is a submission for the OpenClaw Writing Challenge Context This is going to be short...",
     "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
     "publishedAt": "2026-04-21T23:35:31Z",
-    "score": 54,
+    "score": 59,
     "tags": [
       "devchallenge",
       "openclawchallenge",
@@ -725,65 +788,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:9ccede99c7cb",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What is your go-to project for learning a new language?",
-    "url": "https://lobste.rs/s/xqmug2/what_is_your_go_project_for_learning_new",
-    "excerpt": "Ive been playing around with learning a lisp language for a while, and I recently decided to go for it and learn [fennel](https://fennel-lang.org/) (as I already am comfortable with lua) just to see…",
-    "author": "Toric",
-    "publishedAt": "2026-04-21T05:09:48.000-05:00",
-    "score": 59,
-    "tags": [
-      "ask",
-      "education",
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:5a399066060c",
-    "kind": "article",
-    "source": "devto",
-    "title": "Claude! Stop Burning Tokens on Your Agent's Tool Output!",
-    "url": "https://dev.to/marcosomma/claude-stop-burning-tokens-on-your-agents-tool-output-1cpl",
-    "excerpt": "A Two-Stage Curator That Pays for Itself I watched Claude Code feed 108,894 bytes of seq 1 20000...",
-    "author": "marcosomma",
-    "publishedAt": "2026-04-21T09:39:42Z",
-    "score": 30,
-    "tags": [
-      "ai",
-      "programming",
-      "tooling",
-      "mcp"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:71df6752630d",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "How To Make a Fast Dynamic Language Interpreter",
-    "url": "https://zef-lang.dev/implementation",
-    "excerpt": "41 points · compilers, performance, plt",
-    "author": "m0th",
-    "publishedAt": "2026-04-21T04:37:13.000-05:00",
-    "score": 41,
-    "tags": [
-      "compilers",
-      "performance",
-      "plt"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -792,7 +796,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-20T14:04:53Z",
-    "score": 385944,
+    "score": 385955,
     "tags": [
       "Python",
       "books",
@@ -815,7 +819,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 294082,
+    "score": 294120,
     "tags": [
       "Python",
       "awesome",
@@ -838,8 +842,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-23T16:01:35Z",
-    "score": 187928,
+    "publishedAt": "2026-04-24T04:31:51Z",
+    "score": 187988,
     "tags": [
       "Rust"
     ],
@@ -856,8 +860,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-24T03:22:58Z",
-    "score": 183717,
+    "publishedAt": "2026-04-24T08:16:43Z",
+    "score": 183721,
     "tags": [
       "Python",
       "agentic-ai",
@@ -886,8 +890,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-23T20:07:03Z",
-    "score": 159843,
+    "publishedAt": "2026-04-24T07:59:30Z",
+    "score": 159852,
     "tags": [
       "Python",
       "audio",
@@ -926,7 +930,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 158338,
+    "score": 158359,
     "tags": [
       "Python",
       "cli",
@@ -951,7 +955,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-22T23:24:23Z",
-    "score": 155182,
+    "score": 155184,
     "tags": [
       "Java",
       "agent",
@@ -981,8 +985,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-24T03:33:06Z",
-    "score": 147322,
+    "publishedAt": "2026-04-24T04:18:21Z",
+    "score": 147331,
     "tags": [
       "Python",
       "agents",
@@ -1007,7 +1011,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-04-23T23:36:38Z",
-    "score": 134712,
+    "score": 134750,
     "tags": [
       "Python",
       "agents",
@@ -1045,8 +1049,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-04-23T10:39:08Z",
-    "score": 133760,
+    "publishedAt": "2026-04-24T08:07:27Z",
+    "score": 133794,
     "tags": [
       "Python",
       "ai",
@@ -1080,7 +1084,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-04-18T18:23:33Z",
-    "score": 125606,
+    "score": 125615,
     "tags": [
       "Java",
       "algo",
@@ -1108,8 +1112,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-24T00:23:44Z",
-    "score": 112781,
+    "publishedAt": "2026-04-24T06:35:58Z",
+    "score": 112793,
     "tags": [
       "Rust",
       "android",
@@ -1145,8 +1149,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-24T03:24:34Z",
-    "score": 112272,
+    "publishedAt": "2026-04-24T07:16:25Z",
+    "score": 112279,
     "tags": [
       "Rust",
       "compiler",
@@ -1166,8 +1170,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-23T22:20:52Z",
-    "score": 106522,
+    "publishedAt": "2026-04-24T07:34:16Z",
+    "score": 106519,
     "tags": [
       "Rust",
       "deno",
@@ -1189,8 +1193,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-23T17:09:29Z",
-    "score": 105809,
+    "publishedAt": "2026-04-24T07:57:41Z",
+    "score": 105818,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1215,8 +1219,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-23T21:36:48Z",
-    "score": 83826,
+    "publishedAt": "2026-04-24T06:50:03Z",
+    "score": 83842,
     "tags": [
       "Rust",
       "packaging",
@@ -1238,8 +1242,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-23T13:39:39Z",
-    "score": 80483,
+    "publishedAt": "2026-04-24T06:42:08Z",
+    "score": 80484,
     "tags": [
       "Java",
       "framework",
@@ -1260,8 +1264,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-24T03:23:14Z",
-    "score": 79664,
+    "publishedAt": "2026-04-24T08:20:07Z",
+    "score": 79672,
     "tags": [
       "Rust",
       "gpui",
