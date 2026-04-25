@@ -117,3 +117,26 @@ body {
     transform: translateY(-4px);
   }
 }
+
+@keyframes notebook-ticker-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.notebook-ticker-track {
+  animation: notebook-ticker-x var(--ticker-duration, 80s) linear infinite;
+}
+
+.notebook-ticker:hover .notebook-ticker-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notebook-ticker-track {
+    animation: none;
+  }
+}
