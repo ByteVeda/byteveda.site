@@ -65,52 +65,48 @@ export default function NewsPage() {
   const items = getArticles();
 
   return (
-    <div className="notebook">
-      <div className="notebook-paper">
-        <div className="mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-28">
-          <header className="flex items-start justify-between gap-10">
-            <div className="flex-1">
-              <p className="notebook-mono flex items-center gap-2 text-[11px] text-muted-foreground uppercase tracking-[0.18em]">
-                <span>§ 02</span>
-                <span aria-hidden>·</span>
-                <span>lab notebook</span>
-              </p>
+    <div className="mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-28">
+      <header className="flex items-start justify-between gap-10">
+        <div className="flex-1">
+          <p className="notebook-mono flex items-center gap-2 text-[11px] text-muted-foreground uppercase tracking-[0.18em]">
+            <span>§ 02</span>
+            <span aria-hidden>·</span>
+            <span>lab notebook</span>
+          </p>
 
-              <h1 className="notebook-headline mt-6 font-medium text-6xl text-foreground leading-[0.95] md:text-7xl">
-                News
-              </h1>
+          <h1 className="notebook-headline mt-6 font-medium text-6xl text-foreground leading-[0.95] md:text-7xl">
+            News
+          </h1>
 
-              <p className="notebook-serif mt-5 flex items-baseline gap-3 text-[15px] text-muted-foreground italic">
-                <span aria-hidden className="text-muted-foreground/60">
-                  ───
-                </span>
-                from the community
-              </p>
+          <p className="notebook-serif mt-5 flex items-baseline gap-3 text-[15px] text-muted-foreground italic">
+            <span aria-hidden className="text-muted-foreground/60">
+              ───
+            </span>
+            from the community
+          </p>
 
-              <p className="notebook-serif mt-8 max-w-2xl text-[17px] text-foreground/85 leading-[1.7]">
-                Articles and discussions from across the open-source ecosystem — aggregated from
-                dev.to, Hacker News, Reddit, Lobsters, Hashnode, Mastodon, and engineering blogs,
-                with a side of release notes and trending repositories. Refreshed every few hours.
-              </p>
-            </div>
-
-            <CatalogFigure />
-          </header>
-
-          <hr className="mt-14 border-border" aria-hidden />
-
-          <div className="mt-14">
-            <Suspense fallback={<NewsListFallback />}>
-              <NewsList items={items} pageSize={PAGE_SIZE} />
-            </Suspense>
-          </div>
-
-          <footer className="notebook-mono mt-20 flex items-center justify-between border-border border-t pt-6 text-[10px] text-muted-foreground tracking-[0.18em]">
-            <span>BYTEVEDA — LAB NOTEBOOK</span>
-            <span>NEWS / § 02</span>
-          </footer>
+          <p className="notebook-serif mt-8 max-w-2xl text-[17px] text-foreground/85 leading-[1.7]">
+            Articles and discussions from across the open-source ecosystem — aggregated from dev.to,
+            Hacker News, Reddit, Lobsters, Hashnode, Mastodon, and engineering blogs, with a side of
+            release notes and trending repositories. Refreshed every few hours.
+          </p>
         </div>
+
+        <CatalogFigure />
+      </header>
+
+      <hr className="mt-14 border-border" aria-hidden />
+
+      <div className="mt-14">
+        <Suspense fallback={<NewsListFallback />}>
+          <NewsList items={items} pageSize={PAGE_SIZE} />
+        </Suspense>
       </div>
+
+      <footer className="notebook-mono mt-20 flex items-center justify-between border-border border-t pt-6 text-[10px] text-muted-foreground tracking-[0.18em]">
+        <span>BYTEVEDA — LAB NOTEBOOK</span>
+        <span>NEWS / § 02</span>
+      </footer>
     </div>
   );
 }

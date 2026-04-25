@@ -2,7 +2,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Serif } from "next/font/google";
-import { Footer, Navbar } from "@/components/layout";
+import { Footer, Navbar, NotebookFrame } from "@/components/layout";
 import { site } from "@/lib/site";
 import { ThemeProvider } from "@/providers/theme-provider";
 import "./globals.css";
@@ -96,9 +96,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <NotebookFrame>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </NotebookFrame>
         </ThemeProvider>
         <script
           type="application/ld+json"
