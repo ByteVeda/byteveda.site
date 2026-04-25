@@ -73,7 +73,7 @@ export default function NewsPage() {
       <header className="flex items-start justify-between gap-10">
         <div className="flex-1">
           <p className="notebook-mono flex items-center gap-2 text-[11px] text-muted-foreground uppercase tracking-[0.18em]">
-            <span>§ 02</span>
+            <span>§ 01</span>
             <span aria-hidden>·</span>
             <span>lab notebook</span>
           </p>
@@ -109,7 +109,7 @@ export default function NewsPage() {
 
       <footer className="notebook-mono mt-20 flex items-center justify-between border-border border-t pt-6 text-[10px] text-muted-foreground tracking-[0.18em]">
         <span>BYTEVEDA — LAB NOTEBOOK</span>
-        <span>NEWS / § 02</span>
+        <span>NEWS / § 01</span>
       </footer>
     </div>
   );
