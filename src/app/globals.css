@@ -101,26 +101,6 @@ body {
   color: #0a0a0a;
 }
 
-.dot-grid {
-  background-image: radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);
-  background-size: 24px 24px;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-up {
-  animation: fade-up 0.6s ease-out both;
-}
-
 @keyframes install-cycle {
   0% {
     opacity: 0;
@@ -135,28 +115,5 @@ body {
   100% {
     opacity: 0;
     transform: translateY(-4px);
-  }
-}
-
-@keyframes marquee-x {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee-track {
-  animation: marquee-x var(--marquee-duration, 40s) linear infinite;
-}
-
-.marquee-container:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
   }
 }
