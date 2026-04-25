@@ -36,12 +36,7 @@ export function NotebookSection({
       className={cn("scroll-mt-16", bordered && "border-border border-b", className)}
       {...rest}
     >
-      <div
-        className={cn(
-          "mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-24",
-          containerClassName,
-        )}
-      >
+      <div className={cn("mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-24", containerClassName)}>
         <header className="flex items-start justify-between gap-10">
           <div className="min-w-0 flex-1">
             <p className="notebook-mono flex items-center gap-2 text-[11px] text-muted-foreground uppercase tracking-[0.18em]">

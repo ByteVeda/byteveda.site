@@ -87,7 +87,7 @@ export function Hero() {
               in.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-baseline gap-x-6 gap-y-3 notebook-serif text-[15px]">
+            <div className="notebook-serif mt-9 flex flex-wrap items-baseline gap-x-6 gap-y-3 text-[15px]">
               <a
                 href={site.docsUrl}
                 target="_blank"
@@ -106,7 +106,7 @@ export function Hero() {
               </a>
             </div>
 
-            <div className="mt-10 inline-flex items-center gap-3 border-accent/40 border-l-2 bg-muted/40 py-2 pr-6 pl-4 notebook-mono text-[13px]">
+            <div className="notebook-mono mt-10 inline-flex items-center gap-3 border-accent/40 border-l-2 bg-muted/40 py-2 pr-6 pl-4 text-[13px]">
               <span className="select-none text-accent">$</span>
               <div
                 className="relative h-5 overflow-hidden"
