@@ -178,24 +178,132 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:60a3f280f521",
+    "id": "mastodon:86c90d092efa",
     "kind": "article",
     "source": "mastodon",
-    "title": "Can I trust health advice from an AI chatbot?",
-    "url": "https://www.bbc.co.uk/news/articles/clyepyy82kxo",
-    "excerpt": "Abi has had very mixed results when asking a chatbot for guidance about her health issues.",
-    "author": "Philip C James",
-    "publishedAt": "2026-04-25T06:37:06.000Z",
+    "title": "Number go up",
+    "url": "https://www.motherjones.com/politics/2026/04/number-go-up/",
+    "excerpt": "Our charts tell the story of oligarchy in overdrive.",
+    "author": "Kim Perales",
+    "publishedAt": "2026-04-25T13:21:37.000Z",
     "score": 6,
     "tags": [
-      "techbros",
-      "broligarchs",
+      "meta",
+      "tech",
+      "ai",
+      "lobbying",
+      "oligarchs",
+      "bribery",
+      "uspol"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:63a265837f93",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "The bright # LLM future, next part. git.gentoo.org is now effectively dead, being DDoS-ed by almost a million different…",
+    "url": "https://social.treehouse.systems/@mgorny/116465292654071299",
+    "excerpt": "The bright # LLM future, next part. git.gentoo.org is now effectively dead, being DDoS-ed by almost a million different IPs every day. Most of them are just performing a single request at a totally r…",
+    "author": "Jesus Michał \"Le Sigh\" 🏔 (he)",
+    "publishedAt": "2026-04-25T12:15:33.000Z",
+    "score": 15,
+    "tags": [
       "llm",
-      "aislop",
+      "gentoo",
+      "noai",
+      "nollm",
       "ai"
     ],
     "labels": [
       "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:bddb744e055c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "GitHub - valpackett/awesome-gtk: List of awesome GTK (3/4) applications",
+    "url": "https://github.com/valpackett/awesome-gtk",
+    "excerpt": "List of awesome GTK (3/4) applications. Contribute to valpackett/awesome-gtk development by creating an account on GitHub.",
+    "author": "Monoka",
+    "publishedAt": "2026-04-25T11:25:17.000Z",
+    "score": 5,
+    "tags": [
+      "gtk3",
+      "gtk4",
+      "python",
+      "rust",
+      "vala",
+      "c",
+      "gjs",
+      "javascript",
+      "typescript",
+      "cplusplus",
+      "go",
+      "csharp",
+      "java",
+      "lua",
+      "swift",
+      "kotlin",
+      "perl",
+      "haskell",
+      "crystal",
+      "d",
+      "fortran",
+      "scheme",
+      "clojurescript",
+      "zig",
+      "libadwaita",
+      "gtk",
+      "opensource",
+      "programminglanguage",
+      "floss",
+      "linux",
+      "gnome"
+    ],
+    "labels": [
+      "python",
+      "rust",
+      "typescript"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:36ba86d51ff9",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Senior Software Engineer - Web Platform at Discord",
+    "url": "https://jobsfordevelopers.com/jobs/senior-software-engineer-web-platform-at-discord-com-feb-4-2026-f1df4b?utm_source=mastodon.world&utm_medium=social&utm_campaign=posting",
+    "excerpt": "Discord is hiring Senior Software Engineer - Web Platform",
+    "author": "Jobs for Developers",
+    "publishedAt": "2026-04-25T08:05:45.000Z",
+    "score": 17,
+    "tags": [
+      "golang",
+      "javascript",
+      "kotlin",
+      "python",
+      "rust",
+      "swift",
+      "typescript",
+      "react",
+      "reactnative",
+      "node",
+      "cicd",
+      "seniorengineer",
+      "jobalert",
+      "jobsearch",
+      "hiring"
+    ],
+    "labels": [
+      "go",
+      "typescript",
+      "java"
     ],
     "mentionsByteveda": false
   },
@@ -223,106 +331,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:52853deb6338",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I was bored the other night and wrote the simplest # Python script to just randomly choose &quot;a&quot; or &quot;b&quo…",
-    "url": "https://fosstodon.org/@knasman/116462476666346287",
-    "excerpt": "I was bored the other night and wrote the simplest # Python script to just randomly choose &quot;a&quot; or &quot;b&quot; and print it in a slow stream to the console. It&#39;s been going for days. I…",
-    "author": "Keith Nasman",
-    "publishedAt": "2026-04-25T00:19:25.149Z",
-    "score": 5,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:1cb53a004975",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Announcing Rust 1.95.0 | Rust Blog",
-    "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
-    "excerpt": "Empowering everyone to build reliable and efficient software.",
-    "author": "nrc",
-    "publishedAt": "2026-04-24T21:16:40.000Z",
-    "score": 13,
-    "tags": [
-      "rustlang",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:6f34297fb4e3",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Andy Balaam",
-    "url": "https://video.infosec.exchange/a/andybalaam/videos",
-    "excerpt": "Rust, Scheme Lisp, Raspberry Pi, Android, Python, C++, JavaScript, Git, even Java.  So long as it's programming, I'm happy.",
-    "author": "Fedi.Video",
-    "publishedAt": "2026-04-24T18:56:08.000Z",
-    "score": 17,
-    "tags": [
-      "featuredpeertube",
-      "programming",
-      "coding",
-      "softwaredevelopment",
-      "rust",
-      "rustlang",
-      "dev",
-      "peertube"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d41a9f432d9c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "With no end in sight for the global memory crisis, has anyone considered optimizing the kernel for rotational HDDs sinc…",
-    "url": "https://ioc.exchange/@indietechnews/116461110782727708",
-    "excerpt": "With no end in sight for the global memory crisis, has anyone considered optimizing the kernel for rotational HDDs since SSDs are absurdly overpriced? For instance * overcommit memory doesn't make co…",
-    "author": "The Subliminal Press",
-    "publishedAt": "2026-04-24T18:32:03.000Z",
-    "score": 6,
-    "tags": [
-      "rustlang",
-      "memorycrisis",
-      "ssd",
-      "hhd",
-      "ram",
-      "rampocalypse",
-      "ChipsAct",
-      "rust",
-      "ai",
-      "digitaldemocracy",
-      "tech"
-    ],
-    "labels": [
-      "rust",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:fc329bc7eae6",
     "kind": "article",
     "source": "lobsters",
     "title": "Hire based on the conversation about code, not the code itself",
     "url": "https://dbarabashh.com/thoughts-and-experience/hire-for-the-conversation-not-the-code",
-    "excerpt": "31 points · practices",
+    "excerpt": "34 points · practices",
     "author": "brbash",
     "publishedAt": "2026-04-24T05:23:05.000-05:00",
-    "score": 31,
+    "score": 34,
     "tags": [
       "practices"
     ],
@@ -338,7 +355,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 45,
+    "score": 52,
     "tags": [
       "ai",
       "career",
@@ -395,7 +412,7 @@
     "excerpt": "What are some developer tools that have treated Markdown as more than a documentation format ?\r\n\r\nA good example is I believe is Obsidian where the underlying files are just Markdown, but the product…",
     "author": "dhruvp",
     "publishedAt": "2026-04-23T20:59:16.000-05:00",
-    "score": 41,
+    "score": 42,
     "tags": [
       "ask",
       "programming"
@@ -502,10 +519,10 @@
     "source": "lobsters",
     "title": "Who even uses jemalloc in 2026 anyway? (many major projects)",
     "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
-    "excerpt": "55 points · c, c++, performance, rust",
+    "excerpt": "56 points · c, c++, performance, rust",
     "author": "eatonphil",
     "publishedAt": "2026-04-23T05:46:49.000-05:00",
-    "score": 55,
+    "score": 56,
     "tags": [
       "c",
       "c++",
@@ -524,10 +541,10 @@
     "source": "lobsters",
     "title": "How The Heck Does Shazam Work?",
     "url": "https://perthirtysix.com/how-the-heck-does-shazam-work",
-    "excerpt": "102 points · math, programming",
+    "excerpt": "104 points · math, programming",
     "author": "indigo",
     "publishedAt": "2026-04-22T23:04:05.000-05:00",
-    "score": 102,
+    "score": 104,
     "tags": [
       "math",
       "programming"
@@ -658,10 +675,10 @@
     "source": "lobsters",
     "title": "What Async Promised and What it Delivered",
     "url": "https://causality.blog/essays/what-async-promised/",
-    "excerpt": "19 points · programming",
+    "excerpt": "20 points · programming",
     "author": "mpweiher",
     "publishedAt": "2026-04-22T07:17:43.000-05:00",
-    "score": 19,
+    "score": 20,
     "tags": [
       "programming"
     ],
@@ -677,7 +694,7 @@
     "excerpt": "AI tools made developers feel 20% faster. Then researchers measured them at 19% slower. Read that...",
     "author": "Aditya Agarwal",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 28,
+    "score": 29,
     "tags": [
       "discuss",
       "ai",
@@ -720,7 +737,7 @@
     "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 142,
+    "score": 148,
     "tags": [
       "ai",
       "webdev",
@@ -772,6 +789,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:fa59412454db",
+    "kind": "article",
+    "source": "devto",
+    "title": "Unpopular Opinion: Do not use OpenClaw...not yet.",
+    "url": "https://dev.to/francistrdev/unpopular-opinion-do-not-use-openclawnot-yet-5foe",
+    "excerpt": "This is a submission for the OpenClaw Writing Challenge Context This is going to be short...",
+    "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
+    "publishedAt": "2026-04-21T23:35:31Z",
+    "score": 67,
+    "tags": [
+      "devchallenge",
+      "openclawchallenge",
+      "discuss",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -780,7 +818,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386004,
+    "score": 386019,
     "tags": [
       "Python",
       "books",
@@ -803,7 +841,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294264,
+    "score": 294307,
     "tags": [
       "Python",
       "awesome",
@@ -826,8 +864,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-25T03:01:28Z",
-    "score": 188207,
+    "publishedAt": "2026-04-25T13:16:08Z",
+    "score": 188284,
     "tags": [
       "Rust"
     ],
@@ -845,7 +883,7 @@
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
     "publishedAt": "2026-04-25T07:21:20Z",
-    "score": 183740,
+    "score": 183750,
     "tags": [
       "Python",
       "agentic-ai",
@@ -875,7 +913,7 @@
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
     "publishedAt": "2026-04-25T04:00:30Z",
-    "score": 159901,
+    "score": 159914,
     "tags": [
       "Python",
       "audio",
@@ -914,7 +952,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 158475,
+    "score": 158525,
     "tags": [
       "Python",
       "cli",
@@ -939,7 +977,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-22T23:24:23Z",
-    "score": 155202,
+    "score": 155209,
     "tags": [
       "Java",
       "agent",
@@ -970,7 +1008,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-04-25T00:43:30Z",
-    "score": 147340,
+    "score": 147346,
     "tags": [
       "Python",
       "agents",
@@ -994,8 +1032,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-24T19:46:58Z",
-    "score": 134823,
+    "publishedAt": "2026-04-25T08:20:40Z",
+    "score": 134861,
     "tags": [
       "Python",
       "agents",
@@ -1034,7 +1072,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 133970,
+    "score": 134017,
     "tags": [
       "Python",
       "ai",
@@ -1067,8 +1105,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-25T04:46:06Z",
-    "score": 112862,
+    "publishedAt": "2026-04-25T07:47:44Z",
+    "score": 112877,
     "tags": [
       "Rust",
       "android",
@@ -1104,8 +1142,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-25T06:41:56Z",
-    "score": 112308,
+    "publishedAt": "2026-04-25T13:26:02Z",
+    "score": 112321,
     "tags": [
       "Rust",
       "compiler",
@@ -1125,8 +1163,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-25T07:36:07Z",
-    "score": 106524,
+    "publishedAt": "2026-04-25T13:15:53Z",
+    "score": 106528,
     "tags": [
       "Rust",
       "deno",
@@ -1149,7 +1187,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-24T07:57:41Z",
-    "score": 105849,
+    "score": 105855,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1175,7 +1213,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-24T23:48:57Z",
-    "score": 83887,
+    "score": 83899,
     "tags": [
       "Rust",
       "packaging",
@@ -1197,8 +1235,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-25T06:50:50Z",
-    "score": 80494,
+    "publishedAt": "2026-04-25T09:47:57Z",
+    "score": 80495,
     "tags": [
       "Java",
       "framework",
@@ -1219,8 +1257,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-25T07:17:58Z",
-    "score": 79736,
+    "publishedAt": "2026-04-25T11:26:26Z",
+    "score": 79748,
     "tags": [
       "Rust",
       "gpui",
@@ -1241,8 +1279,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-25T07:24:04Z",
-    "score": 77750,
+    "publishedAt": "2026-04-25T13:36:09Z",
+    "score": 77820,
     "tags": [
       "Rust"
     ],
