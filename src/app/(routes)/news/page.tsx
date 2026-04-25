@@ -33,26 +33,30 @@ function CatalogFigure() {
   return (
     <figure className="hidden flex-shrink-0 text-muted-foreground md:block">
       <svg
-        viewBox="0 0 120 96"
+        viewBox="0 0 144 120"
         fill="none"
         stroke="currentColor"
         strokeWidth={1}
-        strokeLinecap="square"
-        strokeLinejoin="miter"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         role="img"
-        aria-label="A stack of three offset paper sheets"
-        className="h-24 w-30"
+        aria-label="A stack of notebook pages with handwritten lines and a folded corner"
+        className="h-30 w-36"
       >
-        <title>A stack of three offset paper sheets</title>
-        <rect x="22" y="14" width="76" height="60" />
-        <rect x="14" y="22" width="76" height="60" />
-        <rect x="6" y="30" width="76" height="60" />
-        <line x1="14" y1="44" x2="74" y2="44" />
-        <line x1="14" y1="52" x2="68" y2="52" />
-        <line x1="14" y1="60" x2="74" y2="60" />
-        <line x1="14" y1="68" x2="50" y2="68" />
-        <line x1="14" y1="76" x2="68" y2="76" />
-        <line x1="14" y1="84" x2="40" y2="84" />
+        <title>A stack of notebook pages with handwritten lines and a folded corner</title>
+        <rect x="38" y="14" width="86" height="80" />
+        <rect x="28" y="22" width="86" height="80" />
+        <path d="M 16 30 L 96 30 L 108 42 L 108 110 L 16 110 Z" />
+        <path d="M 96 30 L 96 42 L 108 42" opacity="0.55" />
+        <line x1="26" y1="30" x2="26" y2="110" opacity="0.4" />
+        <line x1="32" y1="48" x2="92" y2="48" />
+        <line x1="32" y1="56" x2="86" y2="56" />
+        <line x1="32" y1="64" x2="100" y2="64" />
+        <line x1="32" y1="72" x2="76" y2="72" />
+        <line x1="32" y1="80" x2="92" y2="80" />
+        <line x1="32" y1="88" x2="58" y2="88" />
+        <line x1="32" y1="96" x2="84" y2="96" />
+        <line x1="32" y1="104" x2="46" y2="104" />
       </svg>
       <figcaption className="notebook-mono mt-2 text-[10px] text-muted-foreground tracking-wide">
         FIG.1 — the catalog
