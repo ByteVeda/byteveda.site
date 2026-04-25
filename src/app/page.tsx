@@ -7,7 +7,7 @@ export default function Home() {
       <Hero />
       <About />
       <Releases limit={3} />
-      <News articleLimit={3} trendingLimit={12} />
+      <News articleLimit={3} />
     </>
   );
 }

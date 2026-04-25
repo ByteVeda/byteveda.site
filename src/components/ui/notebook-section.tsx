@@ -1,7 +1,7 @@
 import type { HTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-type NotebookSectionProps = HTMLAttributes<HTMLElement> & {
+type NotebookSectionProps = Omit<HTMLAttributes<HTMLElement>, "title"> & {
   id?: string;
   index: string;
   eyebrow: string;
