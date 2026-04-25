@@ -3,6 +3,7 @@ export * from "./button";
 export * from "./external-link";
 export * from "./icons";
 export * from "./marquee";
+export * from "./notebook-section";
 export * from "./relative-time";
 export * from "./section";
 export * from "./terminal-chip";
