@@ -5,11 +5,11 @@ import { site } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="mt-auto border-border border-t">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="mx-auto max-w-5xl px-6 py-14 md:px-10">
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <Wordmark />
-            <p className="mt-4 max-w-xs text-muted-foreground text-sm">
+            <p className="notebook-serif mt-4 max-w-xs text-[15px] text-muted-foreground italic leading-7">
               Rust-powered libraries for serious systems.
             </p>
           </div>
@@ -17,7 +17,7 @@ export function Footer() {
           <FooterColumn title="Tools">
             {projects.map((p) => (
               <li key={p.slug}>
-                <ExternalLink href={p.docsUrl ?? p.repoUrl} className="text-sm">
+                <ExternalLink href={p.docsUrl ?? p.repoUrl} className="notebook-serif text-[15px]">
                   {p.name}
                 </ExternalLink>
               </li>
@@ -26,23 +26,23 @@ export function Footer() {
 
           <FooterColumn title="Resources">
             <li>
-              <ExternalLink href={site.docsUrl} className="text-sm">
+              <ExternalLink href={site.docsUrl} className="notebook-serif text-[15px]">
                 Documentation
               </ExternalLink>
             </li>
             <li>
-              <ExternalLink href={site.githubUrl} className="text-sm">
+              <ExternalLink href={site.githubUrl} className="notebook-serif text-[15px]">
                 GitHub organization
               </ExternalLink>
             </li>
           </FooterColumn>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-border border-t pt-6 text-muted-foreground text-xs sm:flex-row sm:items-center">
+        <div className="notebook-mono mt-12 flex flex-col items-start justify-between gap-3 border-border border-t pt-6 text-[10px] text-muted-foreground tracking-[0.18em] sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} {site.name}. Released under MIT and Apache-2.0 licenses.
+            © {new Date().getFullYear()} {site.name.toUpperCase()} — MIT / APACHE-2.0
           </p>
-          <p className="font-mono">{site.domain}</p>
+          <p>{site.domain}</p>
         </div>
       </div>
     </footer>
@@ -52,7 +52,7 @@ export function Footer() {
 function FooterColumn({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h4 className="font-mono text-muted-foreground text-xs uppercase tracking-widest">{title}</h4>
+      <h4 className="notebook-smallcaps text-[13px] text-foreground">{title}</h4>
       <ul className="mt-4 space-y-2">{children}</ul>
     </div>
   );
