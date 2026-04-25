@@ -178,23 +178,21 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:86c90d092efa",
+    "id": "mastodon:565243630dd8",
     "kind": "article",
     "source": "mastodon",
-    "title": "Number go up",
-    "url": "https://www.motherjones.com/politics/2026/04/number-go-up/",
-    "excerpt": "Our charts tell the story of oligarchy in overdrive.",
-    "author": "Kim Perales",
-    "publishedAt": "2026-04-25T13:21:37.000Z",
-    "score": 6,
+    "title": "When the AI Cloud Comes for Texas Water",
+    "url": "https://www.texasobserver.org/texas-legislature-data-center-boom-water/",
+    "excerpt": "Legislators are (sort of) beginning to grapple with the grim costs that come with the state’s data center boom.",
+    "author": "Texas Observer",
+    "publishedAt": "2026-04-25T19:02:02.000Z",
+    "score": 5,
     "tags": [
-      "meta",
-      "tech",
+      "environment",
       "ai",
-      "lobbying",
-      "oligarchs",
-      "bribery",
-      "uspol"
+      "tech",
+      "water",
+      "texas"
     ],
     "labels": [
       "ai"
@@ -202,24 +200,61 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:63a265837f93",
+    "id": "mastodon:182e98bcdfec",
     "kind": "article",
     "source": "mastodon",
-    "title": "The bright # LLM future, next part. git.gentoo.org is now effectively dead, being DDoS-ed by almost a million different…",
-    "url": "https://social.treehouse.systems/@mgorny/116465292654071299",
-    "excerpt": "The bright # LLM future, next part. git.gentoo.org is now effectively dead, being DDoS-ed by almost a million different IPs every day. Most of them are just performing a single request at a totally r…",
-    "author": "Jesus Michał \"Le Sigh\" 🏔 (he)",
-    "publishedAt": "2026-04-25T12:15:33.000Z",
-    "score": 15,
+    "title": "System76’s Carl Richell says Colorado SB51 has gained a strong open-source exemption after passing a House committee. h…",
+    "url": "https://mastodon.social/@linuxiac/116466820248950653",
+    "excerpt": "System76’s Carl Richell says Colorado SB51 has gained a strong open-source exemption after passing a House committee. https:// linuxiac.com/colorado-adds-ope n-source-exemption-to-age-attestation-bil…",
+    "author": "Linuxiac",
+    "publishedAt": "2026-04-25T18:44:02.000Z",
+    "score": 5,
     "tags": [
-      "llm",
-      "gentoo",
-      "noai",
-      "nollm",
-      "ai"
+      "linux",
+      "opensource",
+      "foss"
     ],
     "labels": [
-      "ai"
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b0c41098b5e4",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "# Netzkunst # Netzfund # Linux # freebsd",
+    "url": "https://digitalcourage.social/@krzym/116466815895415508",
+    "excerpt": "# Netzkunst # Netzfund # Linux # freebsd",
+    "author": "00101010",
+    "publishedAt": "2026-04-25T18:42:56.000Z",
+    "score": 6,
+    "tags": [
+      "netzkunst",
+      "netzfund",
+      "linux",
+      "freebsd"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:a940f13de051",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "After five months of (on and off) development, I'm glad to announce niri v26.04! It comes packed with features: - windo…",
+    "url": "https://mastodon.online/@YaLTeR/116465762766335906",
+    "excerpt": "After five months of (on and off) development, I'm glad to announce niri v26.04! It comes packed with features: - window blur, of course, in all its variations - mouse cursor in window screencasts -…",
+    "author": "Ivan Molodetskikh",
+    "publishedAt": "2026-04-25T14:15:07.000Z",
+    "score": 117,
+    "tags": [
+      "niri",
+      "wayland",
+      "rust"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -232,7 +267,7 @@
     "excerpt": "List of awesome GTK (3/4) applications. Contribute to valpackett/awesome-gtk development by creating an account on GitHub.",
     "author": "Monoka",
     "publishedAt": "2026-04-25T11:25:17.000Z",
-    "score": 5,
+    "score": 6,
     "tags": [
       "gtk3",
       "gtk4",
@@ -274,6 +309,22 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:bb7f3e3d198b",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Avoid Shipping Your Org Chart",
+    "url": "https://chronicbuildfailure.co/how-to-avoid-shipping-your-org-chart-c086effe751c",
+    "excerpt": "15 points · practices",
+    "author": "binarycleric",
+    "publishedAt": "2026-04-25T05:05:46.000-05:00",
+    "score": 15,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:36ba86d51ff9",
     "kind": "article",
     "source": "mastodon",
@@ -308,38 +359,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:3fb59ffea6ca",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "GPT-5.5 (Spud) Deep Dive: First From-Scratch Base Model Since GPT-4.5, and Why Most Users Won't Notice",
-    "url": "https://sangrok.hashnode.dev/gpt-55-spud-deep-dive-first-from-scratch-base-model-since-gpt-45-and-why-most-users-wont-notice",
-    "excerpt": "GPT-5.5 (Spud) Deep Dive: First From-Scratch Base Model Since GPT-4.5\nOpenAI released GPT-5.5 (internal codename \"Spud\") on April 23, 2026, with API access following on April 24. On the surface this…",
-    "author": "Rok Jung",
-    "publishedAt": "2026-04-25T04:36:33.484Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "gpt-5",
-      "llm",
-      "machine-learning",
-      "openai"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:fc329bc7eae6",
     "kind": "article",
     "source": "lobsters",
     "title": "Hire based on the conversation about code, not the code itself",
     "url": "https://dbarabashh.com/thoughts-and-experience/hire-for-the-conversation-not-the-code",
-    "excerpt": "34 points · practices",
+    "excerpt": "35 points · practices",
     "author": "brbash",
     "publishedAt": "2026-04-24T05:23:05.000-05:00",
-    "score": 34,
+    "score": 35,
     "tags": [
       "practices"
     ],
@@ -355,7 +383,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 52,
+    "score": 56,
     "tags": [
       "ai",
       "career",
@@ -389,10 +417,10 @@
     "source": "lobsters",
     "title": "Pure Borrow: Linear Haskell Meets Rust-Style Borrowing",
     "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
-    "excerpt": "25 points · haskell, plt, rust",
+    "excerpt": "26 points · haskell, plt, rust",
     "author": "stevan",
     "publishedAt": "2026-04-24T02:01:08.000-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "haskell",
       "plt",
@@ -412,7 +440,7 @@
     "excerpt": "What are some developer tools that have treated Markdown as more than a documentation format ?\r\n\r\nA good example is I believe is Obsidian where the underlying files are just Markdown, but the product…",
     "author": "dhruvp",
     "publishedAt": "2026-04-23T20:59:16.000-05:00",
-    "score": 42,
+    "score": 43,
     "tags": [
       "ask",
       "programming"
@@ -694,7 +722,7 @@
     "excerpt": "AI tools made developers feel 20% faster. Then researchers measured them at 19% slower. Read that...",
     "author": "Aditya Agarwal",
     "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 29,
+    "score": 30,
     "tags": [
       "discuss",
       "ai",
@@ -716,7 +744,7 @@
     "excerpt": "This is a submission for the OpenClaw Challenge. What I Built PlanetLedger is a...",
     "author": "ujja",
     "publishedAt": "2026-04-22T08:52:17Z",
-    "score": 35,
+    "score": 36,
     "tags": [
       "devchallenge",
       "openclawchallenge",
@@ -737,7 +765,7 @@
     "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 148,
+    "score": 155,
     "tags": [
       "ai",
       "webdev",
@@ -767,49 +795,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:c68e8e96139a",
-    "kind": "article",
-    "source": "devto",
-    "title": "Anthropic's Most Dangerous Model Just Got Accessed by People Who Weren't Supposed to Have It",
-    "url": "https://dev.to/om_shree_0709/anthropics-most-dangerous-model-just-got-accessed-by-people-who-werent-supposed-to-have-it-14dn",
-    "excerpt": "Anthropic built a model so dangerous they refused to release it publicly. Then a Discord group got in...",
-    "author": "Om Shree",
-    "publishedAt": "2026-04-22T01:28:17Z",
-    "score": 62,
-    "tags": [
-      "ai",
-      "security",
-      "discuss",
-      "claude"
-    ],
-    "labels": [
-      "ai",
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:fa59412454db",
-    "kind": "article",
-    "source": "devto",
-    "title": "Unpopular Opinion: Do not use OpenClaw...not yet.",
-    "url": "https://dev.to/francistrdev/unpopular-opinion-do-not-use-openclawnot-yet-5foe",
-    "excerpt": "This is a submission for the OpenClaw Writing Challenge Context This is going to be short...",
-    "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
-    "publishedAt": "2026-04-21T23:35:31Z",
-    "score": 67,
-    "tags": [
-      "devchallenge",
-      "openclawchallenge",
-      "discuss",
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -818,7 +803,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386019,
+    "score": 386029,
     "tags": [
       "Python",
       "books",
@@ -841,7 +826,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294307,
+    "score": 294345,
     "tags": [
       "Python",
       "awesome",
@@ -864,8 +849,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-25T13:16:08Z",
-    "score": 188284,
+    "publishedAt": "2026-04-25T19:03:20Z",
+    "score": 188333,
     "tags": [
       "Rust"
     ],
@@ -882,8 +867,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-25T07:21:20Z",
-    "score": 183750,
+    "publishedAt": "2026-04-25T16:12:35Z",
+    "score": 183754,
     "tags": [
       "Python",
       "agentic-ai",
@@ -913,7 +898,7 @@
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
     "publishedAt": "2026-04-25T04:00:30Z",
-    "score": 159914,
+    "score": 159922,
     "tags": [
       "Python",
       "audio",
@@ -952,7 +937,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-19T21:37:26Z",
-    "score": 158525,
+    "score": 158565,
     "tags": [
       "Python",
       "cli",
@@ -976,8 +961,8 @@
     "url": "https://github.com/Snailclimb/JavaGuide",
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
-    "publishedAt": "2026-04-22T23:24:23Z",
-    "score": 155209,
+    "publishedAt": "2026-04-25T16:01:15Z",
+    "score": 155211,
     "tags": [
       "Java",
       "agent",
@@ -1007,8 +992,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-25T00:43:30Z",
-    "score": 147346,
+    "publishedAt": "2026-04-25T15:09:47Z",
+    "score": 147351,
     "tags": [
       "Python",
       "agents",
@@ -1033,7 +1018,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-04-25T08:20:40Z",
-    "score": 134861,
+    "score": 134890,
     "tags": [
       "Python",
       "agents",
@@ -1072,7 +1057,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134017,
+    "score": 134077,
     "tags": [
       "Python",
       "ai",
@@ -1106,7 +1091,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-25T07:47:44Z",
-    "score": 112877,
+    "score": 112893,
     "tags": [
       "Rust",
       "android",
@@ -1142,8 +1127,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-25T13:26:02Z",
-    "score": 112321,
+    "publishedAt": "2026-04-25T17:09:17Z",
+    "score": 112328,
     "tags": [
       "Rust",
       "compiler",
@@ -1163,8 +1148,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-25T13:15:53Z",
-    "score": 106528,
+    "publishedAt": "2026-04-25T18:49:50Z",
+    "score": 106530,
     "tags": [
       "Rust",
       "deno",
@@ -1187,7 +1172,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-24T07:57:41Z",
-    "score": 105855,
+    "score": 105861,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1213,7 +1198,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-24T23:48:57Z",
-    "score": 83899,
+    "score": 83912,
     "tags": [
       "Rust",
       "packaging",
@@ -1236,7 +1221,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-04-25T09:47:57Z",
-    "score": 80495,
+    "score": 80497,
     "tags": [
       "Java",
       "framework",
@@ -1257,8 +1242,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-25T11:26:26Z",
-    "score": 79748,
+    "publishedAt": "2026-04-25T16:17:24Z",
+    "score": 79769,
     "tags": [
       "Rust",
       "gpui",
@@ -1279,8 +1264,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-25T13:36:09Z",
-    "score": 77820,
+    "publishedAt": "2026-04-25T18:58:31Z",
+    "score": 77870,
     "tags": [
       "Rust"
     ],
