@@ -178,6 +178,44 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:b98402564b56",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I'm having a hard time deciding which self-hosted photo management app I should use. The current candidates are Immich,…",
+    "url": "https://mastodon.social/@lenzgr/116472464513913253",
+    "excerpt": "I'm having a hard time deciding which self-hosted photo management app I should use. The current candidates are Immich, Photoprism and Ente. I have a pretty large photo collection in a fairly flat di…",
+    "author": "Lenz Grimmer",
+    "publishedAt": "2026-04-26T18:39:27.000Z",
+    "score": 18,
+    "tags": [
+      "selfhosting",
+      "photography",
+      "opensource"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e397e49dc2d6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Hey fediverse, I have a question about # rust ; I'm thinking about learning a bit more of it, but I would like to use i…",
+    "url": "https://chaos.social/@marmarta/116471349410149174",
+    "excerpt": "Hey fediverse, I have a question about # rust ; I'm thinking about learning a bit more of it, but I would like to use it with Qt Widgets. Is it possible? Does it work well? Are there like big missing…",
+    "author": "marmarta",
+    "publishedAt": "2026-04-26T13:55:52.000Z",
+    "score": 8,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:e940ae926779",
     "kind": "article",
     "source": "mastodon",
@@ -186,7 +224,7 @@
     "excerpt": "👈 Boop! Photo of me booping a giant bucket wheel excavator right on the bucket-snoot. The scale of these machines is mind-blowing! A mechanical monster that once tore through the Earth strip mining…",
     "author": "Obsidian Urbex Photography",
     "publishedAt": "2026-04-26T13:10:39.000Z",
-    "score": 13,
+    "score": 75,
     "tags": [
       "germany",
       "rust",
@@ -203,54 +241,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7e3c370ef367",
+    "id": "lobsters:165adce5e5b2",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Before involving young people in # gardening and # sustainability work, we must first equip them with knowledge and gui…",
-    "url": "https://mastodon.social/@2003MugishaPhocit/116471162851635694",
-    "excerpt": "Before involving young people in # gardening and # sustainability work, we must first equip them with knowledge and guidance. Understanding why sustainability matters turns simple actions into meanin…",
-    "author": "MUGISHA PHOCIT",
-    "publishedAt": "2026-04-26T13:08:25.000Z",
-    "score": 7,
+    "source": "lobsters",
+    "title": "The fastest Linux timestamps",
+    "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
+    "excerpt": "16 points · linux, performance",
+    "author": "hmpc",
+    "publishedAt": "2026-04-26T08:01:54.000-05:00",
+    "score": 16,
     "tags": [
-      "gardening",
-      "sustainability",
-      "environment",
-      "fediverse",
-      "climateaction",
-      "agriculture",
-      "foodproduction",
-      "photography",
       "linux",
-      "mastodon",
-      "hunger",
-      "socialimpact",
-      "ecology",
-      "biodiversity",
-      "plants",
-      "nature"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:53c923e60cf0",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "How is the audio generated?",
-    "url": "https://codeberg.org/LibreLingoRelive/LibreLingoRelive/issues/2",
-    "excerpt": "Hey there,\n\nI'm struggling to understand how the audios are being generated....\n\nFrom what I understand so far. This part from the ```course.yaml``` of each course is being used.\n\n```\nSettings:\n  Audio:\n    Enabled: True\n    TTS:\n      - Provider: Polly\n        Voice: Vicki\n        E...",
-    "author": "citizenk4te",
-    "publishedAt": "2026-04-26T10:50:55.000Z",
-    "score": 20,
-    "tags": [
-      "opensource",
-      "python",
-      "followerpower"
+      "performance"
     ],
     "labels": [
-      "opensource",
-      "python"
+      "performance"
     ],
     "mentionsByteveda": false
   },
@@ -260,10 +265,10 @@
     "source": "lobsters",
     "title": "A breakthrough in C/C++ dependency management",
     "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "28 points · c, c++, programming, satire",
+    "excerpt": "35 points · c, c++, programming, satire",
     "author": "lcamtuf",
     "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 28,
+    "score": 35,
     "tags": [
       "c",
       "c++",
@@ -279,35 +284,15 @@
     "source": "lobsters",
     "title": "Hyper-DERP: C++/io_uring DERP relay - Same throughput as Tailscale's derper, half the cores",
     "url": "https://hyper-derp.dev/blog/hyper-derp-announcement/",
-    "excerpt": "16 points · performance",
+    "excerpt": "17 points · performance",
     "author": "knl",
     "publishedAt": "2026-04-25T14:48:15.000-05:00",
-    "score": 16,
+    "score": 17,
     "tags": [
       "performance"
     ],
     "labels": [
       "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:a940f13de051",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "After five months of (on and off) development, I'm glad to announce niri v26.04! It comes packed with features: - windo…",
-    "url": "https://mastodon.online/@YaLTeR/116465762766335906",
-    "excerpt": "After five months of (on and off) development, I'm glad to announce niri v26.04! It comes packed with features: - window blur, of course, in all its variations - mouse cursor in window screencasts -…",
-    "author": "Ivan Molodetskikh",
-    "publishedAt": "2026-04-25T14:15:07.000Z",
-    "score": 232,
-    "tags": [
-      "niri",
-      "wayland",
-      "rust"
-    ],
-    "labels": [
-      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -317,10 +302,10 @@
     "source": "lobsters",
     "title": "Comparing compression tools",
     "url": "https://www.arp242.net/cmp-compress.html",
-    "excerpt": "16 points · performance",
+    "excerpt": "18 points · performance",
     "author": "ugur",
     "publishedAt": "2026-04-25T07:17:49.000-05:00",
-    "score": 16,
+    "score": 18,
     "tags": [
       "performance"
     ],
@@ -335,10 +320,10 @@
     "source": "lobsters",
     "title": "Avoid Shipping Your Org Chart",
     "url": "https://chronicbuildfailure.co/how-to-avoid-shipping-your-org-chart-c086effe751c",
-    "excerpt": "24 points · practices",
+    "excerpt": "27 points · practices",
     "author": "binarycleric",
     "publishedAt": "2026-04-25T05:05:46.000-05:00",
-    "score": 24,
+    "score": 27,
     "tags": [
       "practices"
     ],
@@ -786,7 +771,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386055,
+    "score": 386073,
     "tags": [
       "Python",
       "books",
@@ -809,7 +794,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294462,
+    "score": 294493,
     "tags": [
       "Python",
       "awesome",
@@ -832,8 +817,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-26T13:33:08Z",
-    "score": 188500,
+    "publishedAt": "2026-04-26T19:01:25Z",
+    "score": 188553,
     "tags": [
       "Rust"
     ],
@@ -851,7 +836,7 @@
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
     "publishedAt": "2026-04-26T06:36:45Z",
-    "score": 183772,
+    "score": 183782,
     "tags": [
       "Python",
       "agentic-ai",
@@ -881,7 +866,7 @@
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
     "publishedAt": "2026-04-26T13:00:40Z",
-    "score": 159939,
+    "score": 159948,
     "tags": [
       "Python",
       "audio",
@@ -920,7 +905,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155226,
+    "score": 155232,
     "tags": [
       "Java",
       "agent",
@@ -950,8 +935,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-26T00:47:39Z",
-    "score": 147370,
+    "publishedAt": "2026-04-26T18:55:51Z",
+    "score": 147379,
     "tags": [
       "Python",
       "agents",
@@ -975,8 +960,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-26T08:27:36Z",
-    "score": 134979,
+    "publishedAt": "2026-04-26T19:11:28Z",
+    "score": 135002,
     "tags": [
       "Python",
       "agents",
@@ -1015,7 +1000,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134204,
+    "score": 134252,
     "tags": [
       "Python",
       "ai",
@@ -1049,7 +1034,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-04-23T17:07:20Z",
-    "score": 124100,
+    "score": 124224,
     "tags": [
       "Python",
       "agent-skills"
@@ -1067,8 +1052,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-26T13:28:05Z",
-    "score": 112925,
+    "publishedAt": "2026-04-26T14:46:41Z",
+    "score": 112940,
     "tags": [
       "Rust",
       "android",
@@ -1104,8 +1089,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-26T13:14:40Z",
-    "score": 112344,
+    "publishedAt": "2026-04-26T17:15:34Z",
+    "score": 112352,
     "tags": [
       "Rust",
       "compiler",
@@ -1125,8 +1110,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-26T12:56:52Z",
-    "score": 106543,
+    "publishedAt": "2026-04-26T18:59:00Z",
+    "score": 106547,
     "tags": [
       "Rust",
       "deno",
@@ -1149,7 +1134,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-24T07:57:41Z",
-    "score": 105882,
+    "score": 105886,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1175,7 +1160,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-26T12:13:23Z",
-    "score": 83952,
+    "score": 83962,
     "tags": [
       "Rust",
       "packaging",
@@ -1197,7 +1182,7 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-25T09:47:57Z",
+    "publishedAt": "2026-04-26T15:59:30Z",
     "score": 80498,
     "tags": [
       "Java",
@@ -1219,8 +1204,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-26T08:15:54Z",
-    "score": 79804,
+    "publishedAt": "2026-04-26T17:20:36Z",
+    "score": 79812,
     "tags": [
       "Rust",
       "gpui",
@@ -1241,8 +1226,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-26T13:09:58Z",
-    "score": 77999,
+    "publishedAt": "2026-04-26T18:52:38Z",
+    "score": 78036,
     "tags": [
       "Rust"
     ],
