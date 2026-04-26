@@ -6,7 +6,7 @@ import { MobileMenu } from "./mobile-menu";
 import { ThemeToggle } from "./theme-toggle";
 
 const linkClass =
-  "inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-muted-foreground transition-colors hover:text-foreground";
+  "notebook-serif inline-flex items-center gap-1 px-3 py-1.5 text-[15px] text-muted-foreground transition-colors hover:text-foreground";
 
 export function Navbar() {
   return (

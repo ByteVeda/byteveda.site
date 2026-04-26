@@ -29,6 +29,59 @@
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-plex-serif);
+  --font-notebook-mono: var(--font-plex-mono);
+}
+
+.notebook {
+  --background: #faf6ec;
+  --foreground: #1f1c17;
+  --muted: #f3ede0;
+  --muted-foreground: #5a5345;
+  --border: #d6cdb8;
+  --accent: #2a4d8f;
+  --rule-faint: rgba(31, 28, 23, 0.06);
+}
+
+.dark .notebook {
+  --background: #1a1815;
+  --foreground: #ede6d2;
+  --muted: #221f1b;
+  --muted-foreground: #9a9180;
+  --border: #3a342c;
+  --accent: #6a8fd8;
+  --rule-faint: rgba(237, 230, 210, 0.06);
+}
+
+.notebook {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.notebook-paper {
+  background-image:
+    linear-gradient(to right, var(--rule-faint) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--rule-faint) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.notebook-headline {
+  font-family: var(--font-serif), ui-serif, Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+.notebook-serif {
+  font-family: var(--font-serif), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+.notebook-mono {
+  font-family: var(--font-notebook-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.notebook-smallcaps {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  font-variant: all-small-caps;
+  letter-spacing: 0.08em;
 }
 
 html {
@@ -48,26 +101,6 @@ body {
   color: #0a0a0a;
 }
 
-.dot-grid {
-  background-image: radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);
-  background-size: 24px 24px;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-up {
-  animation: fade-up 0.6s ease-out both;
-}
-
 @keyframes install-cycle {
   0% {
     opacity: 0;
@@ -85,7 +118,7 @@ body {
   }
 }
 
-@keyframes marquee-x {
+@keyframes notebook-ticker-x {
   from {
     transform: translateX(0);
   }
@@ -94,16 +127,16 @@ body {
   }
 }
 
-.marquee-track {
-  animation: marquee-x var(--marquee-duration, 40s) linear infinite;
+.notebook-ticker-track {
+  animation: notebook-ticker-x var(--ticker-duration, 80s) linear infinite;
 }
 
-.marquee-container:hover .marquee-track {
+.notebook-ticker:hover .notebook-ticker-track {
   animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track {
+  .notebook-ticker-track {
     animation: none;
   }
 }

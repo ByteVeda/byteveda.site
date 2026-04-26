@@ -7,6 +7,7 @@ export {
   BookText,
   Menu,
   Moon,
+  Search,
   Star,
   Sun,
   X,

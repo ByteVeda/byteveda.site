@@ -2,145 +2,249 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useMemo } from "react";
-import { ArrowLeft, ArrowRight } from "@/components/ui";
 import { cn } from "@/lib/cn";
-import type { NewsItem } from "../types";
-import { NewsCard } from "./news-card";
+import type { Label, NewsItem, NewsSource } from "../types";
+import { LABELS, NEWS_SOURCES } from "../types";
+import { NewsEntry } from "./news-entry";
+import type { Filters } from "./news-filters";
+import { NewsFilters } from "./news-filters";
 
 type NewsListProps = {
   items: NewsItem[];
   pageSize?: number;
 };
 
-type PageEntry = { key: string; value: number | "…" };
+function readSet<T extends string>(raw: string | null, valid: readonly T[]): Set<T> {
+  if (!raw) return new Set();
+  const allowed = valid as readonly string[];
+  return new Set(
+    raw
+      .split(",")
+      .map((v) => v.trim())
+      .filter((v): v is T => allowed.includes(v)),
+  );
+}
 
-function pageNumbers(current: number, total: number): PageEntry[] {
-  if (total <= 7) {
-    return Array.from({ length: total }, (_, i) => ({
-      key: String(i + 1),
-      value: i + 1,
-    }));
+function setToParam(values: Set<string>): string | null {
+  return values.size === 0 ? null : Array.from(values).join(",");
+}
+
+function matchesFilters(item: NewsItem, f: Filters): boolean {
+  if (f.featured && !item.mentionsByteveda) return false;
+  if (f.sources.size > 0 && !f.sources.has(item.source)) return false;
+  if (f.labels.size > 0 && !item.labels.some((l) => f.labels.has(l))) return false;
+  const q = f.q.trim().toLowerCase();
+  if (q) {
+    const hay = `${item.title} ${item.excerpt ?? ""} ${item.author ?? ""}`.toLowerCase();
+    if (!hay.includes(q)) return false;
   }
-  const out: PageEntry[] = [{ key: "1", value: 1 }];
-  const start = Math.max(2, current - 1);
-  const end = Math.min(total - 1, current + 1);
-  if (start > 2) out.push({ key: "ellipsis-left", value: "…" });
-  for (let i = start; i <= end; i += 1) out.push({ key: String(i), value: i });
-  if (end < total - 1) out.push({ key: "ellipsis-right", value: "…" });
-  out.push({ key: String(total), value: total });
-  return out;
+  return true;
 }
 
 export function NewsList({ items, pageSize = 9 }: NewsListProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+  const filters: Filters = useMemo(
+    () => ({
+      q: searchParams.get("q") ?? "",
+      sources: readSet(searchParams.get("src"), NEWS_SOURCES),
+      labels: readSet(searchParams.get("lbl"), LABELS),
+      featured: searchParams.get("featured") === "1",
+    }),
+    [searchParams],
+  );
+
+  const filtered = useMemo(
+    () => items.filter((item) => matchesFilters(item, filters)),
+    [items, filters],
+  );
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
   const requested = Number(searchParams.get("page") ?? "1");
   const page = Number.isFinite(requested) ? Math.min(Math.max(1, requested), totalPages) : 1;
 
+  const startIndex = (page - 1) * pageSize;
+
   const visible = useMemo(
-    () => items.slice((page - 1) * pageSize, page * pageSize),
-    [items, page, pageSize],
+    () => filtered.slice(startIndex, startIndex + pageSize),
+    [filtered, startIndex, pageSize],
   );
 
-  const pages = useMemo(() => pageNumbers(page, totalPages), [page, totalPages]);
+  const updateParams = useCallback(
+    (
+      mutate: (params: URLSearchParams) => void,
+      opts: { resetPage?: boolean; scroll?: boolean } = {},
+    ) => {
+      const params = new URLSearchParams(searchParams.toString());
+      mutate(params);
+      if (opts.resetPage) params.delete("page");
+      const qs = params.toString();
+      router.push(qs ? `/news?${qs}` : "/news", { scroll: false });
+      if (opts.scroll && typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    },
+    [router, searchParams],
+  );
 
   const goTo = useCallback(
     (next: number) => {
       const target = Math.min(Math.max(1, next), totalPages);
-      const params = new URLSearchParams(searchParams.toString());
-      if (target === 1) params.delete("page");
-      else params.set("page", String(target));
-      const qs = params.toString();
-      router.push(qs ? `/news?${qs}` : "/news", { scroll: false });
-      if (typeof window !== "undefined") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      updateParams(
+        (p) => {
+          if (target === 1) p.delete("page");
+          else p.set("page", String(target));
+        },
+        { scroll: true },
+      );
     },
-    [router, searchParams, totalPages],
+    [totalPages, updateParams],
   );
+
+  const handleSearchChange = useCallback(
+    (q: string) => {
+      updateParams(
+        (p) => {
+          if (q.trim() === "") p.delete("q");
+          else p.set("q", q);
+        },
+        { resetPage: true },
+      );
+    },
+    [updateParams],
+  );
+
+  const toggleInSet = useCallback(
+    <T extends string>(key: string, value: T, current: Set<T>) => {
+      const next = new Set(current);
+      if (next.has(value)) next.delete(value);
+      else next.add(value);
+      updateParams(
+        (p) => {
+          const serialized = setToParam(next);
+          if (serialized === null) p.delete(key);
+          else p.set(key, serialized);
+        },
+        { resetPage: true },
+      );
+    },
+    [updateParams],
+  );
+
+  const handleToggleSource = useCallback(
+    (source: NewsSource) => toggleInSet("src", source, filters.sources),
+    [filters.sources, toggleInSet],
+  );
+
+  const handleToggleLabel = useCallback(
+    (label: Label) => toggleInSet("lbl", label, filters.labels),
+    [filters.labels, toggleInSet],
+  );
+
+  const handleToggleFeatured = useCallback(() => {
+    updateParams(
+      (p) => {
+        if (filters.featured) p.delete("featured");
+        else p.set("featured", "1");
+      },
+      { resetPage: true },
+    );
+  }, [filters.featured, updateParams]);
+
+  const handleClear = useCallback(() => {
+    updateParams(
+      (p) => {
+        p.delete("q");
+        p.delete("src");
+        p.delete("lbl");
+        p.delete("featured");
+      },
+      { resetPage: true },
+    );
+  }, [updateParams]);
 
   if (items.length === 0) {
     return (
-      <p className="mt-12 font-mono text-muted-foreground text-sm">
-        Nothing here yet. The feed refreshes every few hours — check back soon.
+      <p className="notebook-serif mt-12 text-base text-muted-foreground italic">
+        Nothing in the catalog yet. The feed refreshes every few hours — check back soon.
       </p>
     );
   }
 
   return (
-    <>
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {visible.map((item) => (
-          <NewsCard key={item.id} item={item} />
-        ))}
-      </div>
+    <div className="space-y-10">
+      <NewsFilters
+        items={items}
+        filters={filters}
+        totalCount={items.length}
+        filteredCount={filtered.length}
+        onSearchChange={handleSearchChange}
+        onToggleSource={handleToggleSource}
+        onToggleLabel={handleToggleLabel}
+        onToggleFeatured={handleToggleFeatured}
+        onClear={handleClear}
+      />
+
+      <div aria-hidden className="border-border border-t" />
+
+      {filtered.length === 0 ? (
+        <p className="notebook-serif text-base text-muted-foreground italic">
+          No entries match these filters.{" "}
+          <button
+            type="button"
+            onClick={handleClear}
+            className="text-accent underline decoration-1 underline-offset-4 transition-colors hover:text-foreground"
+          >
+            clear filters
+          </button>
+        </p>
+      ) : (
+        <ol className="divide-y divide-border">
+          {visible.map((item, i) => (
+            <NewsEntry key={item.id} item={item} index={startIndex + i + 1} />
+          ))}
+        </ol>
+      )}
 
       {totalPages > 1 && (
         <nav
           aria-label="News pagination"
-          className="mt-10 flex flex-wrap items-center justify-between gap-4"
+          className="notebook-mono flex items-center justify-between border-border border-t pt-6 text-[12px] tabular-nums"
         >
           <button
             type="button"
             onClick={() => goTo(page - 1)}
             disabled={page === 1}
             className={cn(
-              "inline-flex h-9 items-center gap-1.5 rounded-md border border-border px-3 font-mono text-muted-foreground text-sm",
-              "transition-colors hover:border-accent/40 hover:text-foreground",
-              "disabled:pointer-events-none disabled:opacity-40",
+              "transition-colors",
+              page === 1
+                ? "pointer-events-none text-muted-foreground/40"
+                : "text-accent hover:underline hover:underline-offset-4",
             )}
           >
-            <ArrowLeft className="h-3.5 w-3.5" strokeWidth={2} />
-            Prev
+            ← previous
           </button>
 
-          <ul className="flex items-center gap-1.5">
-            {pages.map((entry) =>
-              entry.value === "…" ? (
-                <li
-                  key={entry.key}
-                  aria-hidden
-                  className="px-1 font-mono text-muted-foreground text-sm"
-                >
-                  …
-                </li>
-              ) : (
-                <li key={entry.key}>
-                  <button
-                    type="button"
-                    onClick={() => goTo(entry.value as number)}
-                    aria-current={entry.value === page ? "page" : undefined}
-                    className={cn(
-                      "h-9 min-w-9 rounded-md border px-2 font-mono text-sm tabular-nums transition-colors",
-                      entry.value === page
-                        ? "border-accent/40 bg-accent/10 text-foreground"
-                        : "border-border text-muted-foreground hover:border-accent/40 hover:text-foreground",
-                    )}
-                  >
-                    {entry.value}
-                  </button>
-                </li>
-              ),
-            )}
-          </ul>
+          <span className="text-muted-foreground">
+            p. {page} / {totalPages}
+          </span>
 
           <button
             type="button"
             onClick={() => goTo(page + 1)}
             disabled={page === totalPages}
             className={cn(
-              "inline-flex h-9 items-center gap-1.5 rounded-md border border-border px-3 font-mono text-muted-foreground text-sm",
-              "transition-colors hover:border-accent/40 hover:text-foreground",
-              "disabled:pointer-events-none disabled:opacity-40",
+              "transition-colors",
+              page === totalPages
+                ? "pointer-events-none text-muted-foreground/40"
+                : "text-accent hover:underline hover:underline-offset-4",
             )}
           >
-            Next
-            <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
+            next →
           </button>
         </nav>
       )}
-    </>
+    </div>
   );
 }
