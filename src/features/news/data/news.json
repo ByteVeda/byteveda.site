@@ -178,22 +178,152 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:d4a071bb9bc2",
+    "id": "mastodon:c4848fa499f3",
     "kind": "article",
     "source": "mastodon",
-    "title": "Join us on Tuesday 30 June in Utrecht (NL) for the # APELLConference 2026! Discussing EU # OpenSource at Scale! Registe…",
-    "url": "https://eupolicy.social/@apell/116477084414762205",
-    "excerpt": "Join us on Tuesday 30 June in Utrecht (NL) for the # APELLConference 2026! Discussing EU # OpenSource at Scale! Register for your ticket now: https:// apell.info/conference",
-    "author": "APELL",
-    "publishedAt": "2026-04-27T14:14:21.000Z",
-    "score": 5,
+    "title": "BREAKING: # Canonical says it's going all in on # AI in # Ubuntu # Linux -- time to look for alternatives They wrote a…",
+    "url": "https://mastodon.laurenweinstein.org/@lauren/116478300860640213",
+    "excerpt": "BREAKING: # Canonical says it's going all in on # AI in # Ubuntu # Linux -- time to look for alternatives They wrote a long post explaining their reasoning and plans. Lots and lots of words. Perhaps…",
+    "author": "Lauren Weinstein",
+    "publishedAt": "2026-04-27T19:23:43.000Z",
+    "score": 9,
     "tags": [
-      "apellconference",
-      "opensource"
+      "canonical",
+      "ai",
+      "ubuntu",
+      "linux"
     ],
     "labels": [
-      "opensource"
+      "ai"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b916ee5903c4",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "RE: https:// mastodon.social/@andrewnez/116 478133377243019 Workflow security continues to be a common cause of comprom…",
+    "url": "https://mastodon.social/@sethmlarson/116478299133984513",
+    "excerpt": "RE: https:// mastodon.social/@andrewnez/116 478133377243019 Workflow security continues to be a common cause of compromises of open source projects. If you're using GitHub Actions and don't want this…",
+    "author": "Seth Larson",
+    "publishedAt": "2026-04-27T19:23:16.000Z",
+    "score": 5,
+    "tags": [
+      "github",
+      "actions",
+      "security",
+      "oss",
+      "opensource",
+      "python"
+    ],
+    "labels": [
+      "security",
+      "opensource",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ece71b57cc3e",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Anthropic secretly installs spyware when you install Claude Desktop — That Privacy Guy!",
+    "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware",
+    "excerpt": "Anthropic's Claude Desktop silently installs a Native Messaging bridge into seven Chromium browsers, including browsers Anthropic's own documentation says it does not support, and browsers the user has not even installed.",
+    "author": "MissConstrue",
+    "publishedAt": "2026-04-27T18:36:01.000Z",
+    "score": 12,
+    "tags": [
+      "infosec",
+      "claude",
+      "ai",
+      "llm",
+      "security",
+      "browsers"
+    ],
+    "labels": [
+      "security",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b0c57139eedb",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Firefox is quietly experimenting with Brave’s ad-blocking engine",
+    "url": "https://cyberinsider.com/firefox-is-quietly-experimenting-with-braves-ad-blocking-engine/",
+    "excerpt": "Mozilla is experimenting with Brave’s ad-blocking engine in Firefox, signaling a potential shift in how the browser handles ads and trackers.",
+    "author": "knoppix",
+    "publishedAt": "2026-04-27T18:25:17.000Z",
+    "score": 8,
+    "tags": [
+      "technews",
+      "firefox",
+      "mozilla",
+      "brave",
+      "adblocking",
+      "privacy",
+      "security",
+      "foss",
+      "opensource",
+      "browsers",
+      "tracking",
+      "rust",
+      "cybersecurity",
+      "web",
+      "browser",
+      "ad"
+    ],
+    "labels": [
+      "security",
+      "opensource",
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:f2bc9f3b0071",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Don't rust your life away. # grickledoodle # wizardofoz # tinman # rust # sloth # cartoon # art # drawing # funny # sad…",
+    "url": "https://mstdn.social/@grickle/116477501599567479",
+    "excerpt": "Don't rust your life away. # grickledoodle # wizardofoz # tinman # rust # sloth # cartoon # art # drawing # funny # sad # humor",
+    "author": "Grickle",
+    "publishedAt": "2026-04-27T16:00:27.000Z",
+    "score": 121,
+    "tags": [
+      "grickledoodle",
+      "wizardofoz",
+      "TinMan",
+      "rust",
+      "sloth",
+      "cartoon",
+      "art",
+      "drawing",
+      "funny",
+      "sad",
+      "humor"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:56eb77a0a63e",
+    "kind": "article",
+    "source": "rss",
+    "title": "GitHub Copilot is moving to usage-based billing",
+    "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+    "excerpt": "TL;DR: Today, we are announcing that all GitHub Copilot plans will transition to usage-based billing on June 1, 2026 . Instead of counting premium requests, every Copilot plan will include a monthly…",
+    "author": "Mario Rodriguez",
+    "publishedAt": "2026-04-27T15:58:22.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -221,27 +351,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:69954d76192a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# LibreOffice is available in over 120 languages – but for some, our community needs help, such as with Swahili: https:…",
-    "url": "https://fosstodon.org/@libreoffice/116477032224719814",
-    "excerpt": "# LibreOffice is available in over 120 languages – but for some, our community needs help, such as with Swahili: https:// blog.documentfoundation.org/bl og/2026/04/27/help-us-to-improve-libreoffices-…",
-    "author": "LibreOffice",
-    "publishedAt": "2026-04-27T14:01:05.345Z",
-    "score": 25,
-    "tags": [
-      "libreoffice",
-      "foss",
-      "opensource",
-      "freesoftware"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:Stack Overflow Blog:71b04f6d53b3",
     "kind": "article",
     "source": "rss",
@@ -258,65 +367,24 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7ac2d0f9863d",
+    "id": "mastodon:ca2f24af7475",
     "kind": "article",
     "source": "mastodon",
-    "title": "Self hosting apps for Python people - Talk Python Live Stream",
-    "url": "https://www.youtube.com/watch?v=1iAQRY7hiVA",
-    "excerpt": "We are live on YouTube in 15 minutes. Join us and be part of the show with @ mkennedy and Alex Kretzschmar. # python # podcast Topic: Self hosting apps for Python people https://www. youtube.com/watc…",
-    "author": "Talk Python Podcast",
-    "publishedAt": "2026-04-27T13:53:31.793Z",
+    "title": "[$] Zig explores structured concurrency Version 0.16.0 of the Zig programming language was recently announced, and with…",
+    "url": "https://fedi.lwn.net/@lwn/116476999138938393",
+    "excerpt": "[$] Zig explores structured concurrency Version 0.16.0 of the Zig programming language was recently announced, and with it an expanded version of the new Io interface that we covered in December. The…",
+    "author": "LWN.net",
+    "publishedAt": "2026-04-27T13:52:40.000Z",
     "score": 5,
     "tags": [
+      "lwn",
+      "linux",
+      "rust",
       "python",
-      "podcast"
+      "zig"
     ],
     "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:1da3e9359273",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Claude Design is a \"clock time\" solution for a \"calendar time\" problem",
-    "url": "https://productpicnic.beehiiv.com/p/claude-design-is-a-clock-time-solution-for-a-calendar-time-problem",
-    "excerpt": "Orgs are betting that they can substitute sense-making with faster artifact delivery. Users are paying the price.",
-    "author": "Pavel A. Samsonov",
-    "publishedAt": "2026-04-27T13:39:09.000Z",
-    "score": 11,
-    "tags": [
-      "ux",
-      "uxdesign",
-      "ai",
-      "llm",
-      "tech",
-      "softwaredevelopment",
-      "design"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:0fe2953ad14d",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "dear # python folx does anyone have experience writing # django apps using async views and async ORM operations? doesn'…",
-    "url": "https://chaos.social/@catileptic/116476678557922818",
-    "excerpt": "dear # python folx does anyone have experience writing # django apps using async views and async ORM operations? doesn't have to be production stuff, can be a personal project. any take-aways, lesson…",
-    "author": "Alex / catileptic",
-    "publishedAt": "2026-04-27T12:31:08.000Z",
-    "score": 14,
-    "tags": [
-      "python",
-      "django",
-      "async",
-      "fastapi"
-    ],
-    "labels": [
+      "rust",
       "python"
     ],
     "mentionsByteveda": false
@@ -327,10 +395,10 @@
     "source": "lobsters",
     "title": "Niri v26.04",
     "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
-    "excerpt": "19 points · linux, release, rust",
+    "excerpt": "54 points · linux, release, rust",
     "author": "ana_glz",
     "publishedAt": "2026-04-27T05:51:27.000-05:00",
-    "score": 19,
+    "score": 54,
     "tags": [
       "linux",
       "release",
@@ -350,7 +418,7 @@
     "excerpt": "ABOUT DASH0\n\nJoin Dash0 and help us define the future of observability. We are OpenTelemetry-native, building a delightful, simple, and AI-centric platform that eliminates vendor lock-in and meaningless toil. Shape a product that developers love—all with transparent pricing and cost-control built in.\n\n\nTHE OPPORTUNITY\n\nDash0 is building the observability platform that developers actually want to use — OpenTelemetry-native, transparent, and designed to eliminate the lock-in and complexity that define the incumbent players. As we expand engineering capacity globally, we're looking for a Mid-Level Platform Engineer to join our growing team in the Sydney area.\n\nThis role is fully remote, but you'll be based in the Sydney, Australia area to collaborate regularly in person with the existing regional team member. You'll work across infrastructure, automation, and reliability — owning foundational systems that let our product teams move fast without breaking things. If you're a few years into your platform engineering career and ready to take on real ownership in a fast-moving environment, this is the right next step.\n\nWhat You'll Do\n\n - Build and maintain CI/CD pipelines and deployment automation to support continuous, high-quality software delivery\n\n - Provision and manage cloud infrastructure using Terraform, keeping things scalable, secure, and well-documented\n\n - Partner with product engineering teams to design resilient, cloud-native solutions and review code for quality and standards adherence\n\n - Monitor, troubleshoot, and improve platform performance and availability — including on-call coverage when needed\n\n - Embed security best practices into platform design, from access controls and encryption through to deployment pipelines\n\n - Contribute to platform architecture decisions and help evolve our infrastructure as the product and team scale\n\n - Write and maintain technical documentation: architecture diagrams, runbooks, and infrastructure standards\n\nWhat You Bring\n\n - 3–5 years of platform, infrastructure, or DevOps engineering experience\n\n - Solid Go (GoLang) programming skills — you're writing and reviewing production Go code, not just reading it\n\n - Hands-on experience with Terraform or comparable infrastructure-as-code tooling\n\n - Working knowledge of containerization and orchestration (Docker, Kubernetes)\n\n - Experience building and operating CI/CD pipelines in a cloud environment (AWS, GCP, or Azure)\n\n - Strong async communication skills — you're comfortable working across time zones and explaining infrastructure decisions to non-infrastructure engineers\n\n - Based in the Sydney, Australia area with the ability to meet the local team in person regularly\n\nNice to Have\n\n - Experience with observability tooling, monitoring platforms, or OpenTelemetry instrumentation\n\n - Familiarity with security compliance frameworks relevant to SaaS platforms (e.g., SOC 2, ISO 27001)\n\n - Experience in a high-growth, venture-backed startup environment\n\nWhy Dash0\n\nThis is a unique opportunity to help build a generational company. Dash0 is backed by top-tier investors including Balderton Capital, Accel and Cherry Ventures and led by a founding team with decades of experience in observability. We're in the middle of a massive growth phase after our Series B — and we're just getting started.\n\nIf you're looking for a place where a great product meets great people, where momentum is real and your impact is visible from day one — this is it.\n\nWhat we offer:\n\n - Competitive salary & meaningful equity participation — you'll own part of what you're building\n\n - Flexible, remote-first work environment with offices in New York, Amsterdam, and Munich\n\n - €60/month phone & internet allowance\n\n - Location-specific benefits\n\n - Collaborative, fast-moving team culture with a builder mindset\n\n - Clear path for career growth and development\n\n - Direct access to founders and leadership",
     "author": "joschi",
     "publishedAt": "2026-04-27T10:47:01.000Z",
-    "score": 10,
+    "score": 11,
     "tags": [
       "sre",
       "observability",
@@ -388,15 +456,36 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:686f404ee477",
+    "kind": "article",
+    "source": "devto",
+    "title": "15 Essential Sections Every README Needs: Give Your Project What It Deserves",
+    "url": "https://dev.to/georgekobaidze/15-essential-sections-every-readme-needs-give-your-project-what-it-deserves-fie",
+    "excerpt": "Table of Contents Overview README Files Are Never Perfect The Primary Purpose of README...",
+    "author": "Giorgi Kobaidze",
+    "publishedAt": "2026-04-26T14:31:29Z",
+    "score": 33,
+    "tags": [
+      "documentation",
+      "opensource",
+      "tutorial",
+      "development"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:165adce5e5b2",
     "kind": "article",
     "source": "lobsters",
     "title": "The fastest Linux timestamps",
     "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
-    "excerpt": "43 points · linux, performance",
+    "excerpt": "44 points · linux, performance",
     "author": "hmpc",
     "publishedAt": "2026-04-26T08:01:54.000-05:00",
-    "score": 43,
+    "score": 44,
     "tags": [
       "linux",
       "performance"
@@ -412,10 +501,10 @@
     "source": "lobsters",
     "title": "A breakthrough in C/C++ dependency management",
     "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "59 points · c, c++, programming, satire",
+    "excerpt": "60 points · c, c++, programming, satire",
     "author": "lcamtuf",
     "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 59,
+    "score": 60,
     "tags": [
       "c",
       "c++",
@@ -502,7 +591,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 66,
+    "score": 71,
     "tags": [
       "ai",
       "career",
@@ -706,61 +795,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:f1a6d6856751",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "How The Heck Does Shazam Work?",
-    "url": "https://perthirtysix.com/how-the-heck-does-shazam-work",
-    "excerpt": "105 points · math, programming",
-    "author": "indigo",
-    "publishedAt": "2026-04-22T23:04:05.000-05:00",
-    "score": 105,
-    "tags": [
-      "math",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:4a3a5411219d",
-    "kind": "article",
-    "source": "rss",
-    "title": "How to Use Transformers.js in a Chrome Extension",
-    "url": "https://huggingface.co/blog/transformersjs-chrome-extension",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-23T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:f43124cab998",
-    "kind": "article",
-    "source": "rss",
-    "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
-    "url": "https://huggingface.co/blog/nvidia/gemma4",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-22T15:40:50.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -769,7 +803,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386236,
+    "score": 386273,
     "tags": [
       "Python",
       "books",
@@ -791,8 +825,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294631,
+    "publishedAt": "2026-04-27T15:58:22Z",
+    "score": 294678,
     "tags": [
       "Python",
       "awesome",
@@ -816,7 +850,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-27T09:29:34Z",
-    "score": 188760,
+    "score": 188791,
     "tags": [
       "Rust"
     ],
@@ -833,8 +867,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-27T14:18:18Z",
-    "score": 183814,
+    "publishedAt": "2026-04-27T19:39:47Z",
+    "score": 183824,
     "tags": [
       "Python",
       "agentic-ai",
@@ -863,8 +897,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-27T14:16:50Z",
-    "score": 159991,
+    "publishedAt": "2026-04-27T17:50:47Z",
+    "score": 159996,
     "tags": [
       "Python",
       "audio",
@@ -903,7 +937,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155251,
+    "score": 155252,
     "tags": [
       "Java",
       "agent",
@@ -933,8 +967,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-27T14:24:07Z",
-    "score": 147418,
+    "publishedAt": "2026-04-27T19:43:06Z",
+    "score": 147426,
     "tags": [
       "Python",
       "agents",
@@ -958,8 +992,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-27T13:48:13Z",
-    "score": 135104,
+    "publishedAt": "2026-04-27T19:08:12Z",
+    "score": 135128,
     "tags": [
       "Python",
       "agents",
@@ -998,7 +1032,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134426,
+    "score": 134464,
     "tags": [
       "Python",
       "ai",
@@ -1032,7 +1066,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-04-23T17:07:20Z",
-    "score": 124700,
+    "score": 124782,
     "tags": [
       "Python",
       "agent-skills"
@@ -1050,8 +1084,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-27T11:44:36Z",
-    "score": 113002,
+    "publishedAt": "2026-04-27T14:37:22Z",
+    "score": 113008,
     "tags": [
       "Rust",
       "android",
@@ -1087,8 +1121,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-27T13:18:31Z",
-    "score": 112374,
+    "publishedAt": "2026-04-27T17:55:13Z",
+    "score": 112385,
     "tags": [
       "Rust",
       "compiler",
@@ -1108,8 +1142,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-27T14:21:12Z",
-    "score": 106554,
+    "publishedAt": "2026-04-27T19:36:32Z",
+    "score": 106556,
     "tags": [
       "Rust",
       "deno",
@@ -1131,8 +1165,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-27T07:48:04Z",
-    "score": 105915,
+    "publishedAt": "2026-04-27T17:40:01Z",
+    "score": 105921,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1157,8 +1191,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-27T13:58:41Z",
-    "score": 84014,
+    "publishedAt": "2026-04-27T19:27:47Z",
+    "score": 84019,
     "tags": [
       "Rust",
       "packaging",
@@ -1202,8 +1236,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-27T14:24:01Z",
-    "score": 79873,
+    "publishedAt": "2026-04-27T19:44:11Z",
+    "score": 79886,
     "tags": [
       "Rust",
       "gpui",
@@ -1224,8 +1258,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-27T14:09:16Z",
-    "score": 78243,
+    "publishedAt": "2026-04-27T19:44:15Z",
+    "score": 78272,
     "tags": [
       "Rust"
     ],
