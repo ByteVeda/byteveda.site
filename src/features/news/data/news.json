@@ -178,6 +178,28 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:7bd41dbf74c9",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "D7VK 1.8 further improves retro Direct3D games on Linux",
+    "url": "https://www.gamingonlinux.com/2026/04/d7vk-1-8-further-improves-retro-direct3d-games-on-linux/",
+    "excerpt": "D7VK 1.8 is out now bringing more enhancements for many retro Direct3D Windows games on Linux, thanks to new features and bug fixes.",
+    "author": "Liam @ GamingOnLinux 🐧🎮",
+    "publishedAt": "2026-04-27T08:11:23.000Z",
+    "score": 11,
+    "tags": [
+      "linux",
+      "retrogaming",
+      "linuxgaming",
+      "opensource",
+      "d7vk"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "hashnode:1da5c3bea3ea",
     "kind": "article",
     "source": "hashnode",
@@ -209,7 +231,7 @@
     "excerpt": "I want recommendations for Lispy languages that are embeddable easily in rust (have a crate I can use) and aren't LLM infested top pick could be what I use for scripting in Pengin (my PSX game engine…",
     "author": "Silly Fae Squiggles",
     "publishedAt": "2026-04-26T22:50:09.390Z",
-    "score": 8,
+    "score": 10,
     "tags": [
       "rust",
       "lisp",
@@ -224,60 +246,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:be2211e99f3a",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Tokenmaxxing and the Dangerous Illusion of AI Productivity",
-    "url": "https://blog.ytosko.dev/tokenmaxxing-and-the-dangerous-illusion-of-ai-productivity",
-    "excerpt": "Tokenmaxxing and the Dangerous Illusion of AI Productivity\nA strange new workplace trend is emerging across AI driven companies, and it has little to do with real innovation. Dubbed tokenmaxxing, the…",
-    "author": "Saiki Sarkar",
-    "publishedAt": "2026-04-26T22:31:27.695Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "blogging",
-      "devops",
-      "llm",
-      "seo"
-    ],
-    "labels": [
-      "ai",
-      "devops"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:c9e9a61fb57c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "AI Cannot Self Improve and Math behind PROVES IT! - devsimsek's Blog",
-    "url": "https://smsk.dev/2026/04/26/ai-cannot-self-improve-and-math-behind-proves-it/",
-    "excerpt": "A new arXiv paper formally proves that recursive self-improvement in LLMs is mathematically impossible - the mechanism everyone believed would lead to superintelligence is actually a one-way ticket to model collapse. Let's unpack it.",
-    "author": "devsimsek",
-    "publishedAt": "2026-04-26T19:01:57.000Z",
-    "score": 62,
-    "tags": [
-      "ai",
-      "machinelearning",
-      "llm",
-      "research"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:165adce5e5b2",
     "kind": "article",
     "source": "lobsters",
     "title": "The fastest Linux timestamps",
     "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
-    "excerpt": "28 points · linux, performance",
+    "excerpt": "35 points · linux, performance",
     "author": "hmpc",
     "publishedAt": "2026-04-26T08:01:54.000-05:00",
-    "score": 28,
+    "score": 35,
     "tags": [
       "linux",
       "performance"
@@ -293,10 +270,10 @@
     "source": "lobsters",
     "title": "A breakthrough in C/C++ dependency management",
     "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "53 points · c, c++, programming, satire",
+    "excerpt": "56 points · c, c++, programming, satire",
     "author": "lcamtuf",
     "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 53,
+    "score": 56,
     "tags": [
       "c",
       "c++",
@@ -312,10 +289,10 @@
     "source": "lobsters",
     "title": "Hyper-DERP: C++/io_uring DERP relay - Same throughput as Tailscale's derper, half the cores",
     "url": "https://hyper-derp.dev/blog/hyper-derp-announcement/",
-    "excerpt": "17 points · performance",
+    "excerpt": "18 points · performance",
     "author": "knl",
     "publishedAt": "2026-04-25T14:48:15.000-05:00",
-    "score": 17,
+    "score": 18,
     "tags": [
       "performance"
     ],
@@ -383,7 +360,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 59,
+    "score": 62,
     "tags": [
       "ai",
       "career",
@@ -757,6 +734,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:5e666abec47c",
+    "kind": "article",
+    "source": "devto",
+    "title": "If AI Existed in 2011, Would We Still Have the Modern Web?",
+    "url": "https://dev.to/sylwia-lask/if-ai-existed-in-2011-would-we-still-have-the-modern-web-408g",
+    "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
+    "author": "Sylwia Laskowska",
+    "publishedAt": "2026-04-22T08:04:46Z",
+    "score": 191,
+    "tags": [
+      "ai",
+      "webdev",
+      "discuss",
+      "programming"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -765,7 +764,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386124,
+    "score": 386187,
     "tags": [
       "Python",
       "books",
@@ -788,7 +787,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294539,
+    "score": 294580,
     "tags": [
       "Python",
       "awesome",
@@ -811,8 +810,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-27T03:31:44Z",
-    "score": 188631,
+    "publishedAt": "2026-04-27T08:32:06Z",
+    "score": 188712,
     "tags": [
       "Rust"
     ],
@@ -829,8 +828,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-27T03:57:15Z",
-    "score": 183798,
+    "publishedAt": "2026-04-27T08:37:43Z",
+    "score": 183808,
     "tags": [
       "Python",
       "agentic-ai",
@@ -859,8 +858,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-26T13:00:40Z",
-    "score": 159961,
+    "publishedAt": "2026-04-27T08:35:54Z",
+    "score": 159977,
     "tags": [
       "Python",
       "audio",
@@ -899,7 +898,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155237,
+    "score": 155243,
     "tags": [
       "Java",
       "agent",
@@ -930,7 +929,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-04-27T03:54:34Z",
-    "score": 147397,
+    "score": 147409,
     "tags": [
       "Python",
       "agents",
@@ -954,8 +953,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-26T19:13:21Z",
-    "score": 135039,
+    "publishedAt": "2026-04-27T06:27:02Z",
+    "score": 135069,
     "tags": [
       "Python",
       "agents",
@@ -994,7 +993,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134320,
+    "score": 134368,
     "tags": [
       "Python",
       "ai",
@@ -1028,7 +1027,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-04-23T17:07:20Z",
-    "score": 124381,
+    "score": 124523,
     "tags": [
       "Python",
       "agent-skills"
@@ -1046,8 +1045,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-27T00:31:35Z",
-    "score": 112965,
+    "publishedAt": "2026-04-27T05:11:55Z",
+    "score": 112979,
     "tags": [
       "Rust",
       "android",
@@ -1083,8 +1082,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-27T03:29:42Z",
-    "score": 112364,
+    "publishedAt": "2026-04-27T08:14:56Z",
+    "score": 112368,
     "tags": [
       "Rust",
       "compiler",
@@ -1104,8 +1103,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-26T19:27:33Z",
-    "score": 106552,
+    "publishedAt": "2026-04-27T08:33:43Z",
+    "score": 106553,
     "tags": [
       "Rust",
       "deno",
@@ -1127,8 +1126,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-27T02:30:16Z",
-    "score": 105897,
+    "publishedAt": "2026-04-27T07:48:04Z",
+    "score": 105901,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1154,7 +1153,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-27T00:48:33Z",
-    "score": 83979,
+    "score": 83991,
     "tags": [
       "Rust",
       "packaging",
@@ -1198,8 +1197,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-26T20:14:56Z",
-    "score": 79832,
+    "publishedAt": "2026-04-27T08:37:04Z",
+    "score": 79850,
     "tags": [
       "Rust",
       "gpui",
@@ -1220,8 +1219,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-27T03:55:13Z",
-    "score": 78111,
+    "publishedAt": "2026-04-27T08:38:01Z",
+    "score": 78182,
     "tags": [
       "Rust"
     ],
