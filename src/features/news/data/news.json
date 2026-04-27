@@ -178,21 +178,18 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:7bd41dbf74c9",
+    "id": "mastodon:d4a071bb9bc2",
     "kind": "article",
     "source": "mastodon",
-    "title": "D7VK 1.8 further improves retro Direct3D games on Linux",
-    "url": "https://www.gamingonlinux.com/2026/04/d7vk-1-8-further-improves-retro-direct3d-games-on-linux/",
-    "excerpt": "D7VK 1.8 is out now bringing more enhancements for many retro Direct3D Windows games on Linux, thanks to new features and bug fixes.",
-    "author": "Liam @ GamingOnLinux 🐧🎮",
-    "publishedAt": "2026-04-27T08:11:23.000Z",
-    "score": 11,
+    "title": "Join us on Tuesday 30 June in Utrecht (NL) for the # APELLConference 2026! Discussing EU # OpenSource at Scale! Registe…",
+    "url": "https://eupolicy.social/@apell/116477084414762205",
+    "excerpt": "Join us on Tuesday 30 June in Utrecht (NL) for the # APELLConference 2026! Discussing EU # OpenSource at Scale! Register for your ticket now: https:// apell.info/conference",
+    "author": "APELL",
+    "publishedAt": "2026-04-27T14:14:21.000Z",
+    "score": 5,
     "tags": [
-      "linux",
-      "retrogaming",
-      "linuxgaming",
-      "opensource",
-      "d7vk"
+      "apellconference",
+      "opensource"
     ],
     "labels": [
       "opensource"
@@ -200,48 +197,193 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:1da5c3bea3ea",
+    "id": "hashnode:c7806040affb",
     "kind": "article",
     "source": "hashnode",
-    "title": "markitdown: Convert Any Document to Markdown for LLMs",
-    "url": "https://effloow.hashnode.dev/microsoft-markitdown-document-processing-llm-guide-2026",
-    "excerpt": "Your RAG pipeline's retrieval accuracy lives or dies by what you feed it. A PDF dropped into a context window as raw bytes, or a PPTX file the LLM has never seen before — neither works. What you actu…",
-    "author": "Jangwook Kim",
-    "publishedAt": "2026-04-27T00:17:06.195Z",
+    "title": "Should I use TypeScript or stay with JavaScript for a side project? — I asked 11 frontier LLMs",
+    "url": "https://yanmiayn-blog.hashnode.dev/should-i-use-typescript-or-stay-with-javascript-for-a-side-project-i-asked-11-frontier-llms",
+    "excerpt": "I run Consensus Engine — a tool that asks the same question to 11 frontier LLMs in parallel and synthesizes their answers into a single decision. Here's what they said about: Should I use TypeScript…",
+    "author": "Yunchae Lee",
+    "publishedAt": "2026-04-27T14:03:53.286Z",
     "score": 1,
     "tags": [
-      "markitdown",
-      "document-processing",
+      "ai",
+      "devjournal",
       "llm",
       "python",
-      "rag"
+      "webdev"
     ],
     "labels": [
       "ai",
+      "python",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:69954d76192a",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "# LibreOffice is available in over 120 languages – but for some, our community needs help, such as with Swahili: https:…",
+    "url": "https://fosstodon.org/@libreoffice/116477032224719814",
+    "excerpt": "# LibreOffice is available in over 120 languages – but for some, our community needs help, such as with Swahili: https:// blog.documentfoundation.org/bl og/2026/04/27/help-us-to-improve-libreoffices-…",
+    "author": "LibreOffice",
+    "publishedAt": "2026-04-27T14:01:05.345Z",
+    "score": 25,
+    "tags": [
+      "libreoffice",
+      "foss",
+      "opensource",
+      "freesoftware"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:71b04f6d53b3",
+    "kind": "article",
+    "source": "rss",
+    "title": "Welcome to the “find out” stage of AI",
+    "url": "https://stackoverflow.blog/2026/04/27/welcome-to-the-find-out-stage-of-ai/",
+    "excerpt": "AI companies are looking a little different after going through renewal cycle.",
+    "author": "Ryan Donovan",
+    "publishedAt": "2026-04-27T13:56:07.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:7ac2d0f9863d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Self hosting apps for Python people - Talk Python Live Stream",
+    "url": "https://www.youtube.com/watch?v=1iAQRY7hiVA",
+    "excerpt": "We are live on YouTube in 15 minutes. Join us and be part of the show with @ mkennedy and Alex Kretzschmar. # python # podcast Topic: Self hosting apps for Python people https://www. youtube.com/watc…",
+    "author": "Talk Python Podcast",
+    "publishedAt": "2026-04-27T13:53:31.793Z",
+    "score": 5,
+    "tags": [
+      "python",
+      "podcast"
+    ],
+    "labels": [
       "python"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:edc20062e7f7",
+    "id": "mastodon:1da3e9359273",
     "kind": "article",
     "source": "mastodon",
-    "title": "I want recommendations for Lispy languages that are embeddable easily in rust (have a crate I can use) and aren't LLM i…",
-    "url": "https://transfem.social/notes/aljxe166gjav02sr",
-    "excerpt": "I want recommendations for Lispy languages that are embeddable easily in rust (have a crate I can use) and aren't LLM infested top pick could be what I use for scripting in Pengin (my PSX game engine…",
-    "author": "Silly Fae Squiggles",
-    "publishedAt": "2026-04-26T22:50:09.390Z",
-    "score": 10,
+    "title": "Claude Design is a \"clock time\" solution for a \"calendar time\" problem",
+    "url": "https://productpicnic.beehiiv.com/p/claude-design-is-a-clock-time-solution-for-a-calendar-time-problem",
+    "excerpt": "Orgs are betting that they can substitute sense-making with faster artifact delivery. Users are paying the price.",
+    "author": "Pavel A. Samsonov",
+    "publishedAt": "2026-04-27T13:39:09.000Z",
+    "score": 11,
     "tags": [
-      "rust",
-      "lisp",
-      "noai",
-      "scripting",
-      "gamedev",
-      "DuckDuckFedi"
+      "ux",
+      "uxdesign",
+      "ai",
+      "llm",
+      "tech",
+      "softwaredevelopment",
+      "design"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:0fe2953ad14d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "dear # python folx does anyone have experience writing # django apps using async views and async ORM operations? doesn'…",
+    "url": "https://chaos.social/@catileptic/116476678557922818",
+    "excerpt": "dear # python folx does anyone have experience writing # django apps using async views and async ORM operations? doesn't have to be production stuff, can be a personal project. any take-aways, lesson…",
+    "author": "Alex / catileptic",
+    "publishedAt": "2026-04-27T12:31:08.000Z",
+    "score": 14,
+    "tags": [
+      "python",
+      "django",
+      "async",
+      "fastapi"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:e4c67ea3b225",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Niri v26.04",
+    "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
+    "excerpt": "19 points · linux, release, rust",
+    "author": "ana_glz",
+    "publishedAt": "2026-04-27T05:51:27.000-05:00",
+    "score": 19,
+    "tags": [
+      "linux",
+      "release",
+      "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:656c7aaa6ec6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Platform Engineer",
+    "url": "https://jobs.ashbyhq.com/dash0/c71c1a08-d9ea-4229-b7c9-a3ac9eabc95c",
+    "excerpt": "ABOUT DASH0\n\nJoin Dash0 and help us define the future of observability. We are OpenTelemetry-native, building a delightful, simple, and AI-centric platform that eliminates vendor lock-in and meaningless toil. Shape a product that developers love—all with transparent pricing and cost-control built in.\n\n\nTHE OPPORTUNITY\n\nDash0 is building the observability platform that developers actually want to use — OpenTelemetry-native, transparent, and designed to eliminate the lock-in and complexity that define the incumbent players. As we expand engineering capacity globally, we're looking for a Mid-Level Platform Engineer to join our growing team in the Sydney area.\n\nThis role is fully remote, but you'll be based in the Sydney, Australia area to collaborate regularly in person with the existing regional team member. You'll work across infrastructure, automation, and reliability — owning foundational systems that let our product teams move fast without breaking things. If you're a few years into your platform engineering career and ready to take on real ownership in a fast-moving environment, this is the right next step.\n\nWhat You'll Do\n\n - Build and maintain CI/CD pipelines and deployment automation to support continuous, high-quality software delivery\n\n - Provision and manage cloud infrastructure using Terraform, keeping things scalable, secure, and well-documented\n\n - Partner with product engineering teams to design resilient, cloud-native solutions and review code for quality and standards adherence\n\n - Monitor, troubleshoot, and improve platform performance and availability — including on-call coverage when needed\n\n - Embed security best practices into platform design, from access controls and encryption through to deployment pipelines\n\n - Contribute to platform architecture decisions and help evolve our infrastructure as the product and team scale\n\n - Write and maintain technical documentation: architecture diagrams, runbooks, and infrastructure standards\n\nWhat You Bring\n\n - 3–5 years of platform, infrastructure, or DevOps engineering experience\n\n - Solid Go (GoLang) programming skills — you're writing and reviewing production Go code, not just reading it\n\n - Hands-on experience with Terraform or comparable infrastructure-as-code tooling\n\n - Working knowledge of containerization and orchestration (Docker, Kubernetes)\n\n - Experience building and operating CI/CD pipelines in a cloud environment (AWS, GCP, or Azure)\n\n - Strong async communication skills — you're comfortable working across time zones and explaining infrastructure decisions to non-infrastructure engineers\n\n - Based in the Sydney, Australia area with the ability to meet the local team in person regularly\n\nNice to Have\n\n - Experience with observability tooling, monitoring platforms, or OpenTelemetry instrumentation\n\n - Familiarity with security compliance frameworks relevant to SaaS platforms (e.g., SOC 2, ISO 27001)\n\n - Experience in a high-growth, venture-backed startup environment\n\nWhy Dash0\n\nThis is a unique opportunity to help build a generational company. Dash0 is backed by top-tier investors including Balderton Capital, Accel and Cherry Ventures and led by a founding team with decades of experience in observability. We're in the middle of a massive growth phase after our Series B — and we're just getting started.\n\nIf you're looking for a place where a great product meets great people, where momentum is real and your impact is visible from day one — this is it.\n\nWhat we offer:\n\n - Competitive salary & meaningful equity participation — you'll own part of what you're building\n\n - Flexible, remote-first work environment with offices in New York, Amsterdam, and Munich\n\n - €60/month phone & internet allowance\n\n - Location-specific benefits\n\n - Collaborative, fast-moving team culture with a builder mindset\n\n - Clear path for career growth and development\n\n - Direct access to founders and leadership",
+    "author": "joschi",
+    "publishedAt": "2026-04-27T10:47:01.000Z",
+    "score": 10,
+    "tags": [
+      "sre",
+      "observability",
+      "getfedihired",
+      "FediHire",
+      "o11y",
+      "otel",
+      "opentelemetry",
+      "k8s",
+      "golang"
+    ],
+    "labels": [
+      "devops",
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:e548e0e285fc",
+    "kind": "article",
+    "source": "rss",
+    "title": "How to build scalable web apps with OpenAI's Privacy Filter",
+    "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-27T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -251,10 +393,10 @@
     "source": "lobsters",
     "title": "The fastest Linux timestamps",
     "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
-    "excerpt": "35 points · linux, performance",
+    "excerpt": "43 points · linux, performance",
     "author": "hmpc",
     "publishedAt": "2026-04-26T08:01:54.000-05:00",
-    "score": 35,
+    "score": 43,
     "tags": [
       "linux",
       "performance"
@@ -270,10 +412,10 @@
     "source": "lobsters",
     "title": "A breakthrough in C/C++ dependency management",
     "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "56 points · c, c++, programming, satire",
+    "excerpt": "59 points · c, c++, programming, satire",
     "author": "lcamtuf",
     "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 56,
+    "score": 59,
     "tags": [
       "c",
       "c++",
@@ -307,10 +449,10 @@
     "source": "lobsters",
     "title": "Comparing compression tools",
     "url": "https://www.arp242.net/cmp-compress.html",
-    "excerpt": "18 points · performance",
+    "excerpt": "17 points · performance",
     "author": "ugur",
     "publishedAt": "2026-04-25T07:17:49.000-05:00",
-    "score": 18,
+    "score": 17,
     "tags": [
       "performance"
     ],
@@ -360,7 +502,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 62,
+    "score": 66,
     "tags": [
       "ai",
       "career",
@@ -459,6 +601,29 @@
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:47020b4744b7",
+    "kind": "article",
+    "source": "devto",
+    "title": "How My Coworker Who Didn't Know 'cd' Shipped to Production",
+    "url": "https://dev.to/mattstratton/how-my-coworker-who-didnt-know-cd-shipped-to-production-3j6j",
+    "excerpt": "The agent isn't the hard part. The scaffolding around it is. Here's how we built ours so a non-engineer could ship to production safely.",
+    "author": "Matty Stratton",
+    "publishedAt": "2026-04-23T20:30:39Z",
+    "score": 25,
+    "tags": [
+      "webdev",
+      "ai",
+      "devops",
+      "productivity"
+    ],
+    "labels": [
+      "webdev",
+      "ai",
+      "devops"
     ],
     "mentionsByteveda": false
   },
@@ -596,166 +761,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:9d01440f9e3d",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Using LLMs to find Python C-extension bugs",
-    "url": "https://lwn.net/SubscriberLink/1067234/e5312bed2037a102/",
-    "excerpt": "15 points · python, security, vibecoding",
-    "author": "equeue",
-    "publishedAt": "2026-04-22T10:00:19.000-05:00",
-    "score": 15,
-    "tags": [
-      "python",
-      "security",
-      "vibecoding"
-    ],
-    "labels": [
-      "python",
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:99561d7e5c56",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The Edge of Safe Rust",
-    "url": "https://kyju.org/blog/tokioconf-2026/",
-    "excerpt": "51 points · plt, rust",
-    "author": "intarga",
-    "publishedAt": "2026-04-22T09:02:30.000-05:00",
-    "score": 51,
-    "tags": [
-      "plt",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:0fc92a969c7b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Markdown (2004)",
-    "url": "http://www.aaronsw.com/weblog/001189",
-    "excerpt": "37 points · programming",
-    "author": "dhruvp",
-    "publishedAt": "2026-04-22T07:51:17.000-05:00",
-    "score": 37,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:fa788aa1e88b",
-    "kind": "article",
-    "source": "devto",
-    "title": "Building a coding course generator in public #2: what I learned",
-    "url": "https://dev.to/javz/building-a-coding-course-generator-in-public-2-what-i-learned-49o6",
-    "excerpt": "Building fast with AI is easy but building something you can actually run, inspect, and trust is...",
-    "author": "Julien Avezou",
-    "publishedAt": "2026-04-22T12:49:24Z",
-    "score": 34,
-    "tags": [
-      "buildinpublic",
-      "opensource",
-      "ai",
-      "webdev"
-    ],
-    "labels": [
-      "opensource",
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:b152daa61e0b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What Async Promised and What it Delivered",
-    "url": "https://causality.blog/essays/what-async-promised/",
-    "excerpt": "21 points · programming",
-    "author": "mpweiher",
-    "publishedAt": "2026-04-22T07:17:43.000-05:00",
-    "score": 21,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:c5d69f710616",
-    "kind": "article",
-    "source": "devto",
-    "title": "AI made devs feel 20% faster but measured 19% slower. Nobody's ready for that conversation.",
-    "url": "https://dev.to/adioof/ai-made-devs-feel-20-faster-but-measured-19-slower-nobodys-ready-for-that-conversation-1ki8",
-    "excerpt": "AI tools made developers feel 20% faster. Then researchers measured them at 19% slower. Read that...",
-    "author": "Aditya Agarwal",
-    "publishedAt": "2026-04-22T10:11:49Z",
-    "score": 31,
-    "tags": [
-      "discuss",
-      "ai",
-      "productivity",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:3ccc8d9e8fda",
-    "kind": "article",
-    "source": "devto",
-    "title": "I built my own event bus for a sustainability app — here's what I learned about agent automation using OpenClaw",
-    "url": "https://dev.to/ujja/i-built-my-own-event-bus-for-a-sustainability-app-heres-what-i-learned-about-agent-automation-2cfl",
-    "excerpt": "This is a submission for the OpenClaw Challenge. What I Built PlanetLedger is a...",
-    "author": "ujja",
-    "publishedAt": "2026-04-22T08:52:17Z",
-    "score": 36,
-    "tags": [
-      "devchallenge",
-      "openclawchallenge",
-      "ai",
-      "eventdriven"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:5e666abec47c",
-    "kind": "article",
-    "source": "devto",
-    "title": "If AI Existed in 2011, Would We Still Have the Modern Web?",
-    "url": "https://dev.to/sylwia-lask/if-ai-existed-in-2011-would-we-still-have-the-modern-web-408g",
-    "excerpt": "Imagine it’s 2011. The web is mostly server-rendered PHP templates, maybe a bit of jQuery if you’re...",
-    "author": "Sylwia Laskowska",
-    "publishedAt": "2026-04-22T08:04:46Z",
-    "score": 191,
-    "tags": [
-      "ai",
-      "webdev",
-      "discuss",
-      "programming"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -764,7 +769,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386187,
+    "score": 386236,
     "tags": [
       "Python",
       "books",
@@ -787,7 +792,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-24T16:23:22Z",
-    "score": 294580,
+    "score": 294631,
     "tags": [
       "Python",
       "awesome",
@@ -810,8 +815,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-27T08:32:06Z",
-    "score": 188712,
+    "publishedAt": "2026-04-27T09:29:34Z",
+    "score": 188760,
     "tags": [
       "Rust"
     ],
@@ -828,8 +833,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-27T08:37:43Z",
-    "score": 183808,
+    "publishedAt": "2026-04-27T14:18:18Z",
+    "score": 183814,
     "tags": [
       "Python",
       "agentic-ai",
@@ -858,8 +863,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-27T08:35:54Z",
-    "score": 159977,
+    "publishedAt": "2026-04-27T14:16:50Z",
+    "score": 159991,
     "tags": [
       "Python",
       "audio",
@@ -898,7 +903,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155243,
+    "score": 155251,
     "tags": [
       "Java",
       "agent",
@@ -928,8 +933,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-27T03:54:34Z",
-    "score": 147409,
+    "publishedAt": "2026-04-27T14:24:07Z",
+    "score": 147418,
     "tags": [
       "Python",
       "agents",
@@ -953,8 +958,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-27T06:27:02Z",
-    "score": 135069,
+    "publishedAt": "2026-04-27T13:48:13Z",
+    "score": 135104,
     "tags": [
       "Python",
       "agents",
@@ -993,7 +998,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134368,
+    "score": 134426,
     "tags": [
       "Python",
       "ai",
@@ -1027,7 +1032,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-04-23T17:07:20Z",
-    "score": 124523,
+    "score": 124700,
     "tags": [
       "Python",
       "agent-skills"
@@ -1045,8 +1050,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-27T05:11:55Z",
-    "score": 112979,
+    "publishedAt": "2026-04-27T11:44:36Z",
+    "score": 113002,
     "tags": [
       "Rust",
       "android",
@@ -1082,8 +1087,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-27T08:14:56Z",
-    "score": 112368,
+    "publishedAt": "2026-04-27T13:18:31Z",
+    "score": 112374,
     "tags": [
       "Rust",
       "compiler",
@@ -1103,8 +1108,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-27T08:33:43Z",
-    "score": 106553,
+    "publishedAt": "2026-04-27T14:21:12Z",
+    "score": 106554,
     "tags": [
       "Rust",
       "deno",
@@ -1127,7 +1132,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-27T07:48:04Z",
-    "score": 105901,
+    "score": 105915,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1152,8 +1157,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-27T00:48:33Z",
-    "score": 83991,
+    "publishedAt": "2026-04-27T13:58:41Z",
+    "score": 84014,
     "tags": [
       "Rust",
       "packaging",
@@ -1175,8 +1180,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-26T19:23:11Z",
-    "score": 80496,
+    "publishedAt": "2026-04-27T09:52:44Z",
+    "score": 80499,
     "tags": [
       "Java",
       "framework",
@@ -1197,8 +1202,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-27T08:37:04Z",
-    "score": 79850,
+    "publishedAt": "2026-04-27T14:24:01Z",
+    "score": 79873,
     "tags": [
       "Rust",
       "gpui",
@@ -1219,8 +1224,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-27T08:38:01Z",
-    "score": 78182,
+    "publishedAt": "2026-04-27T14:09:16Z",
+    "score": 78243,
     "tags": [
       "Rust"
     ],
