@@ -178,24 +178,76 @@
     "mentionsByteveda": true
   },
   {
-    "id": "hashnode:2515ce274d88",
+    "id": "mastodon:6e5e377a5dc4",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Data augmentation using synthetic data for time series classification with deepresidual networks",
-    "url": "https://paperium.hashnode.dev/data-augmentation-using-synthetic-data-for-time-series-classification-with-deepresidual-networks",
-    "excerpt": "DTW-based Augmentation for Time-Series Classification: A Critical Review Context and Research Goals At first glance this work addresses a concrete gap: the sparse use of principled data augmentation…",
-    "author": "Paperium net",
-    "publishedAt": "2026-04-28T03:30:15.047Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "Zahlen zur Nutzung von Windows & Co.: Der Bund bleibt primär proprietär",
+    "url": "https://www.heise.de/news/Zahlen-zur-Nutzung-von-Windows-Co-Der-Bund-bleibt-primaer-proprietaer-11274587.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege&utm_source=mastodon",
+    "excerpt": "Von digitaler Souveränität sind die Bundesbehörden weiterhin weit entfernt – Alternativsoftware zu US-Anbietern bleibt eine Ausnahme.",
+    "author": "heise online",
+    "publishedAt": "2026-04-28T08:23:00.000Z",
+    "score": 5,
     "tags": [
-      "ai",
-      "deeplearning",
-      "computerscience",
-      "machinelearning"
+      "betriebssystem",
+      "bundesregierung",
+      "digitalesouveranitat",
+      "it",
+      "linux",
+      "macos",
+      "windows",
+      "wirtschaft",
+      "news"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:5517e6341c91",
+    "kind": "article",
+    "source": "rss",
+    "title": "Your LLM issues are really data issues",
+    "url": "https://stackoverflow.blog/2026/04/28/your-llm-issues-are-really-data-issues/",
+    "excerpt": "Ryan welcomes Harsha Chintalapani, co-founder and CTO at Collate and co-creator of Open Metadata, to the show to discuss why AI and LLMs struggle with real-time, structured production data.",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-04-28T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:971799bcaf7f",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Zeitenwende: Natürliche Sprache wird zur neuen Bedienoberfläche Ende 2011 habe ich hier im Blog über Siri und KI-System…",
+    "url": "https://stefanpfeiffer.blog/2026/04/28/zeitenwende-naturliche-sprache-wird-zur-neuen-bedienoberflache/",
+    "excerpt": "Zeitenwende: Natürliche Sprache wird zur neuen Bedienoberfläche Ende 2011 habe ich hier im Blog über Siri und KI-Systeme für Unternehmen geschrieben : Nach Tastatur, Maus und Touchscreen wird Sprache…",
+    "author": "StefanPfeiffer.Blog",
+    "publishedAt": "2026-04-28T06:51:12.000Z",
+    "score": 15,
+    "tags": [
+      "allgemein",
+      "anthropic",
+      "apple",
+      "chatgpt",
+      "claude",
+      "datenschutz",
+      "digitalesouveranitat",
+      "gemini",
+      "google",
+      "ki",
+      "kiagenten",
+      "llm",
+      "mistralai",
+      "openai",
+      "siri",
+      "sprachassistenten",
+      "wirtschaft"
     ],
     "labels": [
-      "ai",
-      "ml"
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -219,80 +271,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:a0cc961f10c0",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python Tip #117 (of 365): Consider sys.argv before argparse If you just need to accept a single argument to your CLI pr…",
-    "url": "https://mastodon.social/@treyhunner/116479317417979362",
-    "excerpt": "Python Tip #117 (of 365): Consider sys.argv before argparse If you just need to accept a single argument to your CLI program, using sys.argv is simple: try: [path] = sys.arg[1:] except ValueError: pr…",
-    "author": "Trey Hunner 🐍",
-    "publishedAt": "2026-04-27T23:42:14.000Z",
-    "score": 5,
-    "tags": [
-      "python",
-      "dailypythontip"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:6234a82225f5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Let's talk CLI/TUI and Developer Workflows! I’m looking to refresh my local toolkit and I’m curious: what are the absol…",
-    "url": "https://allovertheplace.ca/@RareBird15/116479004158971551",
-    "excerpt": "Let's talk CLI/TUI and Developer Workflows! I’m looking to refresh my local toolkit and I’m curious: what are the absolute \"must-have\" CLI or TUI programs in your current rotation? Whether it's a spe…",
-    "author": "Lanie",
-    "publishedAt": "2026-04-27T22:22:34.000Z",
-    "score": 29,
-    "tags": [
-      "cli",
-      "tui",
-      "terminal",
-      "opensource",
-      "foss",
-      "programming",
-      "devtools",
-      "linux",
-      "sysadmin",
-      "workflow",
-      "python",
-      "backend",
-      "archlinux",
-      "keyboarddriven",
-      "accessibility",
-      "softwaredevelopment",
-      "techtalk"
-    ],
-    "labels": [
-      "opensource",
-      "python",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ff087f738630",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Tracking Issue for `LintDiagnostic` migration · Issue #153099 · rust-lang/rust",
-    "url": "https://github.com/rust-lang/rust/issues/153099",
-    "excerpt": "This is a tracking issue for the LintDiagnostic migration that @GuillaumeGomez and I are doing. Mostly meant to be a place we can put ideas and keep track of what is left to do. Implementation hist...",
-    "author": "Guillaume Gomez",
-    "publishedAt": "2026-04-27T22:08:03.000Z",
-    "score": 11,
-    "tags": [
-      "rust",
-      "rustlang"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "mastodon:d4bad70e8c10",
     "kind": "article",
     "source": "mastodon",
@@ -301,7 +279,7 @@
     "excerpt": "A new arXiv paper formally proves that recursive self-improvement in LLMs is mathematically impossible - the mechanism everyone believed would lead to superintelligence is actually a one-way ticket to model collapse. Let's unpack it.",
     "author": "Natanox 🇺🇦🇵🇸",
     "publishedAt": "2026-04-27T20:50:27.000Z",
-    "score": 11,
+    "score": 14,
     "tags": [
       "ai",
       "llm",
@@ -403,10 +381,10 @@
     "source": "lobsters",
     "title": "Niri v26.04",
     "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
-    "excerpt": "82 points · linux, release, rust",
+    "excerpt": "90 points · linux, release, rust",
     "author": "ana_glz",
     "publishedAt": "2026-04-27T05:51:27.000-05:00",
-    "score": 82,
+    "score": 90,
     "tags": [
       "linux",
       "release",
@@ -445,15 +423,32 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:8f652e1c1057",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this week?",
+    "url": "https://lobste.rs/s/kjk44q/what_are_you_doing_this_week",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-04-27T05:43:00.000-05:00",
+    "score": 15,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:7c3d218fff02",
     "kind": "article",
     "source": "lobsters",
     "title": "httpxyz one month in",
     "url": "https://tildeweb.nl/~michiel/httpxyz-one-month-in.html",
-    "excerpt": "22 points · python",
+    "excerpt": "23 points · python",
     "author": "knl",
     "publishedAt": "2026-04-27T05:32:05.000-05:00",
-    "score": 22,
+    "score": 23,
     "tags": [
       "python"
     ],
@@ -468,10 +463,10 @@
     "source": "lobsters",
     "title": "The gold standard of optimization: A look under the hood of RollerCoaster Tycoon",
     "url": "https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/",
-    "excerpt": "18 points · games, performance, programming",
+    "excerpt": "19 points · games, performance, programming",
     "author": "topicpartition",
     "publishedAt": "2026-04-27T03:52:04.000-05:00",
-    "score": 18,
+    "score": 19,
     "tags": [
       "games",
       "performance",
@@ -510,7 +505,7 @@
     "excerpt": "Table of Contents Overview README Files Are Never Perfect The Primary Purpose of README...",
     "author": "Giorgi Kobaidze",
     "publishedAt": "2026-04-26T14:31:29Z",
-    "score": 39,
+    "score": 42,
     "tags": [
       "documentation",
       "opensource",
@@ -528,10 +523,10 @@
     "source": "lobsters",
     "title": "The fastest Linux timestamps",
     "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
-    "excerpt": "47 points · linux, performance",
+    "excerpt": "50 points · linux, performance",
     "author": "hmpc",
     "publishedAt": "2026-04-26T08:01:54.000-05:00",
-    "score": 47,
+    "score": 50,
     "tags": [
       "linux",
       "performance"
@@ -618,10 +613,10 @@
     "source": "lobsters",
     "title": "Hire based on the conversation about code, not the code itself",
     "url": "https://dbarabashh.com/thoughts-and-experience/hire-for-the-conversation-not-the-code",
-    "excerpt": "38 points · practices",
+    "excerpt": "37 points · practices",
     "author": "brbash",
     "publishedAt": "2026-04-24T05:23:05.000-05:00",
-    "score": 38,
+    "score": 37,
     "tags": [
       "practices"
     ],
@@ -637,7 +632,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 76,
+    "score": 80,
     "tags": [
       "ai",
       "career",
@@ -748,7 +743,7 @@
     "excerpt": "The agent isn't the hard part. The scaffolding around it is. Here's how we built ours so a non-engineer could ship to production safely.",
     "author": "Matty Stratton",
     "publishedAt": "2026-04-23T20:30:39Z",
-    "score": 27,
+    "score": 29,
     "tags": [
       "webdev",
       "ai",
@@ -791,7 +786,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386304,
+    "score": 386316,
     "tags": [
       "Python",
       "books",
@@ -814,7 +809,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 294734,
+    "score": 294766,
     "tags": [
       "Python",
       "awesome",
@@ -837,8 +832,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-27T09:29:34Z",
-    "score": 188852,
+    "publishedAt": "2026-04-28T07:01:23Z",
+    "score": 188901,
     "tags": [
       "Rust"
     ],
@@ -855,8 +850,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-28T03:28:36Z",
-    "score": 183837,
+    "publishedAt": "2026-04-28T08:26:20Z",
+    "score": 183843,
     "tags": [
       "Python",
       "agentic-ai",
@@ -885,8 +880,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-28T02:56:25Z",
-    "score": 160010,
+    "publishedAt": "2026-04-28T08:36:29Z",
+    "score": 160028,
     "tags": [
       "Python",
       "audio",
@@ -925,7 +920,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155264,
+    "score": 155273,
     "tags": [
       "Java",
       "agent",
@@ -956,7 +951,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 153538,
+    "score": 153601,
     "tags": [
       "Python",
       "awesome",
@@ -977,8 +972,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-28T03:31:57Z",
-    "score": 147440,
+    "publishedAt": "2026-04-28T04:43:59Z",
+    "score": 147450,
     "tags": [
       "Python",
       "agents",
@@ -1003,7 +998,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-04-27T19:08:12Z",
-    "score": 135174,
+    "score": 135192,
     "tags": [
       "Python",
       "agents",
@@ -1042,7 +1037,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134515,
+    "score": 134558,
     "tags": [
       "Python",
       "ai",
@@ -1075,8 +1070,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-28T03:04:29Z",
-    "score": 113024,
+    "publishedAt": "2026-04-28T07:49:04Z",
+    "score": 113045,
     "tags": [
       "Rust",
       "android",
@@ -1112,8 +1107,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-28T01:08:46Z",
-    "score": 112390,
+    "publishedAt": "2026-04-28T07:33:07Z",
+    "score": 112397,
     "tags": [
       "Rust",
       "compiler",
@@ -1133,8 +1128,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-28T03:48:39Z",
-    "score": 106559,
+    "publishedAt": "2026-04-28T07:27:25Z",
+    "score": 106563,
     "tags": [
       "Rust",
       "deno",
@@ -1157,7 +1152,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-27T17:40:01Z",
-    "score": 105931,
+    "score": 105943,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1183,7 +1178,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-27T23:24:02Z",
-    "score": 84037,
+    "score": 84051,
     "tags": [
       "Rust",
       "packaging",
@@ -1206,7 +1201,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-04-27T09:52:44Z",
-    "score": 80502,
+    "score": 80504,
     "tags": [
       "Java",
       "framework",
@@ -1227,8 +1222,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-28T00:26:42Z",
-    "score": 79905,
+    "publishedAt": "2026-04-28T08:36:52Z",
+    "score": 79920,
     "tags": [
       "Rust",
       "gpui",
@@ -1249,8 +1244,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-28T04:02:31Z",
-    "score": 78350,
+    "publishedAt": "2026-04-28T08:26:28Z",
+    "score": 78413,
     "tags": [
       "Rust"
     ],
