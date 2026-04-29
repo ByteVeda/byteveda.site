@@ -178,69 +178,176 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:dac764c5f8b9",
+    "id": "mastodon:f618fea75257",
     "kind": "article",
     "source": "mastodon",
-    "title": "The Fedora Linux 44 Release is Here! - Fedora Magazine",
-    "url": "https://fedoramagazine.org/announcing-fedora-linux-44/",
-    "excerpt": "I’m excited to announce that Fedora Linux 44 is here! Keep reading to discover highlights of Fedora Linux 44, or if you are ready, just jump right in and give Fedora Linux 44 a try!",
-    "author": "Fedora Project",
-    "publishedAt": "2026-04-28T14:34:46.443Z",
-    "score": 30,
+    "title": "After 2 Weeks of Delay, Fedora 44 is Finally Here!",
+    "url": "https://itsfoss.com/news/fedora-44-release/",
+    "excerpt": "It's good to fix bugs rather than rushing for the release.",
+    "author": "It's FOSS",
+    "publishedAt": "2026-04-29T08:03:01.000Z",
+    "score": 7,
     "tags": [
-      "fedora",
       "linux",
-      "opensource",
-      "gnome",
-      "kde"
+      "fedora"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:926594bdbb4b",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Circulant and Toeplitz matrices in compressed sensing",
+    "url": "https://paperium.hashnode.dev/circulant-and-toeplitz-matrices-in-compressed-sensing",
+    "excerpt": "Random Circulant and Toeplitz Sensing: a Critical Appraisal Context and objectives At first glance the work under review reframes a familiar compressed sensing problem in a more structured sensing se…",
+    "author": "Paperium net",
+    "publishedAt": "2026-04-29T07:20:15.073Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "deeplearning",
+      "computerscience",
+      "machinelearning"
     ],
     "labels": [
-      "opensource"
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:b21b342a170c",
+    "id": "mastodon:fb6eed2996dd",
     "kind": "article",
     "source": "mastodon",
-    "title": "Buchkritik: KI-Funktionen für eigene Python-Schöpfungen",
-    "url": "https://www.heise.de/tests/Buchkritik-KI-Funktionen-fuer-eigene-Python-Schoepfungen-11177247.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege&utm_source=mastodon",
-    "excerpt": "Michael Weigend zeigt, wie man sich den Komfort künstlicher Intelligenz in eigenen Anwendungen zunutze macht, aber selbst die Herrschaft über den Code behält.",
-    "author": "c't Magazin",
-    "publishedAt": "2026-04-28T13:03:00.000Z",
+    "title": "&quot;… between our controlled Rust environment and the messy, chaotic outside world, where paths, bytes, strings, and…",
+    "url": "https://fosstodon.org/@slink/116486258791687186",
+    "excerpt": "&quot;… between our controlled Rust environment and the messy, chaotic outside world, where paths, bytes, strings, and syscalls are all tangled up in one eternal ball of sadness.&quot; dear # rust en…",
+    "author": "Nils Goroll 🕊️:vinylcache:",
+    "publishedAt": "2026-04-29T05:07:31.583Z",
     "score": 5,
     "tags": [
-      "journal",
-      "python",
-      "news"
+      "rust"
     ],
     "labels": [
-      "python"
+      "rust"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:20c561c9c569",
+    "id": "mastodon:7c88ecf9a4ee",
     "kind": "article",
     "source": "mastodon",
-    "title": "“Even if it’s at the cost of missing some of the talks, as a volunteer you are where the action is and you have a chanc…",
-    "url": "https://fosstodon.org/@europython/116482458271858783",
-    "excerpt": "“Even if it’s at the cost of missing some of the talks, as a volunteer you are where the action is and you have a chance to get more experiences out of the conference.” Read our full interview with @…",
-    "author": "EuroPython",
-    "publishedAt": "2026-04-28T13:01:00.255Z",
-    "score": 5,
+    "title": "Bugs Rust Won't Catch | corrode Rust Consulting",
+    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
+    "excerpt": "In April 2026, Canonical disclosed 44 CVEs in uutils, the Rust reimplementation of GNU coreutil…",
+    "author": "alios",
+    "publishedAt": "2026-04-29T04:53:57.000Z",
+    "score": 10,
     "tags": [
-      "europython",
-      "conference",
-      "volunteers",
-      "python",
-      "contributors",
-      "europython2025",
-      "opensource"
+      "rustlang",
+      "rust",
+      "syscalls"
     ],
     "labels": [
-      "python",
-      "opensource"
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:7607861a938a",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "I Built My Own Hair Electrolysis Machine",
+    "url": "https://www.scd31.com/posts/diy-hair-electrolysis-machine",
+    "excerpt": "44 points · hardware, rust",
+    "author": "sloanelybutsurely",
+    "publishedAt": "2026-04-28T16:18:39.000-05:00",
+    "score": 44,
+    "tags": [
+      "hardware",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:a4318660ab44",
+    "kind": "article",
+    "source": "rss",
+    "title": "GitHub for Beginners: Getting started with Markdown",
+    "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
+    "excerpt": "Welcome back to GitHub for Beginners. We&rsquo;ve covered a wide range of topics so far this season, including GitHub Issues and Projects , GitHub Actions , security, and GitHub Pages. Now we&rsquo;r…",
+    "author": "Kedasha Kerr",
+    "publishedAt": "2026-04-28T18:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:5b7c46b20d14",
+    "kind": "article",
+    "source": "rss",
+    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-28T15:58:57.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:36a108a844f7",
+    "kind": "article",
+    "source": "rss",
+    "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+    "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+    "excerpt": "On March 4, 2026, we received a vulnerability report through our Bug Bounty program from researchers at Wiz describing a critical remote code execution vulnerability affecting github.com, GitHub Ente…",
+    "author": "Alexis Wales",
+    "publishedAt": "2026-04-28T15:30:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:4b49c2921ae7",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "AI Cannot Self Improve and Math behind PROVES IT! - devsimsek's Blog",
+    "url": "https://smsk.dev/2026/04/26/ai-cannot-self-improve-and-math-behind-proves-it/",
+    "excerpt": "A new arXiv paper formally proves that recursive self-improvement in LLMs is mathematically impossible - the mechanism everyone believed would lead to superintelligence is actually a one-way ticket to model collapse. Let's unpack it.",
+    "author": "Dam Alex",
+    "publishedAt": "2026-04-28T13:41:30.000Z",
+    "score": 8,
+    "tags": [
+      "ai",
+      "llm",
+      "machinelearning",
+      "math",
+      "ml",
+      "proof",
+      "research",
+      "rsi",
+      "singularity"
+    ],
+    "labels": [
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -250,7 +357,7 @@
     "source": "rss",
     "title": "Turning scattered knowledge into trusted intelligence: Stack Internal 2026.3",
     "url": "https://stackoverflow.blog/2026/04/28/turn-scattered-knowledge-into-trusted-intelligence/",
-    "excerpt": "Ingestion is now generally available in Stack Internal as part of the 2026.3 release, allowing you to transform content siloed across your tools into structured, verified knowledge that&#x27;s ready…",
+    "excerpt": "Now generally available in the 2026.3 release, Ingestion transforms siloed content into structured, verified knowledge—optimized for both your teams and AI.",
     "author": "Natalie Rotnov",
     "publishedAt": "2026-04-28T13:00:00.000Z",
     "score": 0,
@@ -277,56 +384,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:4bbaee208b0b",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "AI-Weekly for Tuesday, April 28, 2026 - Issue 214 By Aaron Di Blasi, Publisher | Courtesy of the PWD Media Co-Op https:…",
-    "url": "https://mastodon.accessinformationnews.com/@news/116481746764825956",
-    "excerpt": "AI-Weekly for Tuesday, April 28, 2026 - Issue 214 By Aaron Di Blasi, Publisher | Courtesy of the PWD Media Co-Op https:// ai-weekly.ai/newsletter-04-28- 2026/ ✨ The Week's News in Artificial Intellig…",
-    "author": "Access Information News ♿",
-    "publishedAt": "2026-04-28T10:00:03.000Z",
-    "score": 5,
-    "tags": [
-      "ai",
-      "news",
-      "ainews",
-      "artificialintelligence",
-      "aiweekly",
-      "technology",
-      "tech",
-      "technews",
-      "techtrends",
-      "machinelearning",
-      "robotics",
-      "datascience",
-      "airesearch",
-      "futuretech"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:49495f50bad5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Learning Rust. I'm Feeling the same than in the 90s when I was learning C. # rust",
-    "url": "https://genomic.social/@yokofakun/116481437069725651",
-    "excerpt": "Learning Rust. I'm Feeling the same than in the 90s when I was learning C. # rust",
-    "author": "Pierre Lindenbaum",
-    "publishedAt": "2026-04-28T08:41:17.000Z",
-    "score": 10,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:Stack Overflow Blog:5517e6341c91",
     "kind": "article",
     "source": "rss",
@@ -343,39 +400,23 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:634ffa2a29b1",
+    "id": "lobsters:e1c91acd5566",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Totally missed opportunity by the # rust community to refer to itself as \"Rustaceans\" instead of \"Cargo Cult\".",
-    "url": "https://chaos.social/@citizen428/116481158779091525",
-    "excerpt": "Totally missed opportunity by the # rust community to refer to itself as \"Rustaceans\" instead of \"Cargo Cult\".",
-    "author": "Michael Kohl 🇦🇹🇹🇭",
-    "publishedAt": "2026-04-28T07:30:31.000Z",
-    "score": 9,
+    "source": "lobsters",
+    "title": "How I Broke the Anti-Bot Behind Nike, Kick, and Twitch",
+    "url": "https://emro.cat/blog/how-i-broke-the-anti-bot-behind-nike-kick-and-twitch/",
+    "excerpt": "20 points · javascript, reversing, rust",
+    "author": "vaguelytagged",
+    "publishedAt": "2026-04-27T20:52:15.000-05:00",
+    "score": 20,
     "tags": [
+      "javascript",
+      "reversing",
       "rust"
     ],
     "labels": [
+      "typescript",
       "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:efd836dfee62",
-    "kind": "article",
-    "source": "rss",
-    "title": "Adaptive Ultrasound Imaging with Physics-Informed NV-Raw2Insights-US AI",
-    "url": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-28T00:28:13.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -385,10 +426,10 @@
     "source": "lobsters",
     "title": "Using Rust to Build a $1 Handheld Gaming Console",
     "url": "https://chrisdell.info/using-rust-to-build-a-1-dollar-handheld-gaming-console/",
-    "excerpt": "21 points · rust",
+    "excerpt": "31 points · rust",
     "author": "kianryan",
     "publishedAt": "2026-04-27T16:50:13.000-05:00",
-    "score": 21,
+    "score": 31,
     "tags": [
       "rust"
     ],
@@ -435,10 +476,10 @@
     "source": "lobsters",
     "title": "Niri v26.04",
     "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
-    "excerpt": "106 points · linux, release, rust",
+    "excerpt": "111 points · linux, release, rust",
     "author": "ana_glz",
     "publishedAt": "2026-04-27T05:51:27.000-05:00",
-    "score": 106,
+    "score": 111,
     "tags": [
       "linux",
       "release",
@@ -524,6 +565,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:36152a3d1593",
+    "kind": "article",
+    "source": "devto",
+    "title": "The Real Token Economy Is Not About Spending Less. It Is About Thinking Smaller.",
+    "url": "https://dev.to/marcosomma/the-real-token-economy-is-not-about-spending-less-it-is-about-thinking-smaller-3j3e",
+    "excerpt": "I saw a video today that made me laugh, then made me a bit worried. It was one of those jokes that...",
+    "author": "marcosomma",
+    "publishedAt": "2026-04-26T22:46:01Z",
+    "score": 25,
+    "tags": [
+      "ai",
+      "agents",
+      "programming",
+      "productivity"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "devto:686f404ee477",
     "kind": "article",
     "source": "devto",
@@ -532,7 +594,7 @@
     "excerpt": "Table of Contents Overview README Files Are Never Perfect The Primary Purpose of README...",
     "author": "Giorgi Kobaidze",
     "publishedAt": "2026-04-26T14:31:29Z",
-    "score": 57,
+    "score": 80,
     "tags": [
       "documentation",
       "opensource",
@@ -550,10 +612,10 @@
     "source": "lobsters",
     "title": "The fastest Linux timestamps",
     "url": "https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/",
-    "excerpt": "51 points · linux, performance",
+    "excerpt": "53 points · linux, performance",
     "author": "hmpc",
     "publishedAt": "2026-04-26T08:01:54.000-05:00",
-    "score": 51,
+    "score": 53,
     "tags": [
       "linux",
       "performance"
@@ -569,10 +631,10 @@
     "source": "lobsters",
     "title": "A breakthrough in C/C++ dependency management",
     "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "60 points · c, c++, programming, satire",
+    "excerpt": "61 points · c, c++, programming, satire",
     "author": "lcamtuf",
     "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 60,
+    "score": 61,
     "tags": [
       "c",
       "c++",
@@ -659,7 +721,7 @@
     "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
     "author": "Harsh",
     "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 83,
+    "score": 97,
     "tags": [
       "ai",
       "career",
@@ -672,78 +734,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:876efc9914e0",
-    "kind": "article",
-    "source": "rss",
-    "title": "Lights, camera, open source!",
-    "url": "https://stackoverflow.blog/2026/04/24/lights-camera-open-source/",
-    "excerpt": "Ryan is joined on the show by Cult.Repo producers Emma Tracey and Josiah McGarvie to discuss making documentaries about open-source software and the people behind the major technologies that uphold t…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-04-24T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:5929be3f36cb",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Pure Borrow: Linear Haskell Meets Rust-Style Borrowing",
-    "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
-    "excerpt": "26 points · haskell, plt, rust",
-    "author": "stevan",
-    "publishedAt": "2026-04-24T02:01:08.000-05:00",
-    "score": 26,
-    "tags": [
-      "haskell",
-      "plt",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:ffc38b0e33d0",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What are the best developer tools built around Markdown?",
-    "url": "https://lobste.rs/s/g9jlyl/what_are_best_developer_tools_built",
-    "excerpt": "What are some developer tools that have treated Markdown as more than a documentation format ?\r\n\r\nA good example is I believe is Obsidian where the underlying files are just Markdown, but the product…",
-    "author": "dhruvp",
-    "publishedAt": "2026-04-23T20:59:16.000-05:00",
-    "score": 46,
-    "tags": [
-      "ask",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:b2ff62f993e1",
-    "kind": "article",
-    "source": "rss",
-    "title": "DeepSeek-V4: a million-token context that agents can actually use",
-    "url": "https://huggingface.co/blog/deepseekv4",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-24T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -752,7 +742,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386427,
+    "score": 386858,
     "tags": [
       "Python",
       "books",
@@ -775,7 +765,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 294816,
+    "score": 294962,
     "tags": [
       "Python",
       "awesome",
@@ -798,8 +788,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-28T13:12:43Z",
-    "score": 188971,
+    "publishedAt": "2026-04-29T08:24:39Z",
+    "score": 189122,
     "tags": [
       "Rust"
     ],
@@ -816,8 +806,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-28T14:16:40Z",
-    "score": 183848,
+    "publishedAt": "2026-04-29T08:28:11Z",
+    "score": 183870,
     "tags": [
       "Python",
       "agentic-ai",
@@ -846,8 +836,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-28T11:40:47Z",
-    "score": 160040,
+    "publishedAt": "2026-04-29T08:12:19Z",
+    "score": 160075,
     "tags": [
       "Python",
       "audio",
@@ -886,7 +876,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155283,
+    "score": 155299,
     "tags": [
       "Java",
       "agent",
@@ -917,7 +907,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 153660,
+    "score": 153810,
     "tags": [
       "Python",
       "awesome",
@@ -938,8 +928,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-28T14:34:15Z",
-    "score": 147467,
+    "publishedAt": "2026-04-29T05:39:01Z",
+    "score": 147499,
     "tags": [
       "Python",
       "agents",
@@ -963,8 +953,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-28T14:27:25Z",
-    "score": 135231,
+    "publishedAt": "2026-04-29T03:38:48Z",
+    "score": 135321,
     "tags": [
       "Python",
       "agents",
@@ -1003,7 +993,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134598,
+    "score": 134731,
     "tags": [
       "Python",
       "ai",
@@ -1036,8 +1026,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-28T12:31:46Z",
-    "score": 113060,
+    "publishedAt": "2026-04-29T05:15:21Z",
+    "score": 113125,
     "tags": [
       "Rust",
       "android",
@@ -1073,8 +1063,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-28T14:03:45Z",
-    "score": 112402,
+    "publishedAt": "2026-04-29T07:41:12Z",
+    "score": 112417,
     "tags": [
       "Rust",
       "compiler",
@@ -1094,8 +1084,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-28T14:26:28Z",
-    "score": 106566,
+    "publishedAt": "2026-04-29T08:26:42Z",
+    "score": 106569,
     "tags": [
       "Rust",
       "deno",
@@ -1117,8 +1107,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-28T13:22:23Z",
-    "score": 105958,
+    "publishedAt": "2026-04-29T04:48:42Z",
+    "score": 105979,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1143,8 +1133,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-28T14:23:41Z",
-    "score": 84072,
+    "publishedAt": "2026-04-29T01:00:31Z",
+    "score": 84119,
     "tags": [
       "Rust",
       "packaging",
@@ -1166,8 +1156,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-28T11:55:08Z",
-    "score": 80509,
+    "publishedAt": "2026-04-28T14:55:55Z",
+    "score": 80525,
     "tags": [
       "Java",
       "framework",
@@ -1188,8 +1178,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-28T14:39:55Z",
-    "score": 79940,
+    "publishedAt": "2026-04-29T08:28:21Z",
+    "score": 80008,
     "tags": [
       "Rust",
       "gpui",
@@ -1210,8 +1200,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-28T14:36:11Z",
-    "score": 78519,
+    "publishedAt": "2026-04-29T08:18:48Z",
+    "score": 78737,
     "tags": [
       "Rust"
     ],
