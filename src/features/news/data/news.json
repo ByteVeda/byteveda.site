@@ -178,37 +178,40 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:f618fea75257",
+    "id": "mastodon:4cad53e546d2",
     "kind": "article",
     "source": "mastodon",
-    "title": "After 2 Weeks of Delay, Fedora 44 is Finally Here!",
-    "url": "https://itsfoss.com/news/fedora-44-release/",
-    "excerpt": "It's good to fix bugs rather than rushing for the release.",
-    "author": "It's FOSS",
-    "publishedAt": "2026-04-29T08:03:01.000Z",
-    "score": 7,
+    "title": "I Asked AI to Count My Carbs 27,000 Times. It Couldn’t Give Me the Same Answer Twice. | Diabettech - Diabetes and Technology",
+    "url": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/",
+    "excerpt": "Ask ChatGPT to estimate the carbs in your lunch. Now ask it again. And again. Five hundred times. You’d expect the same answer each time. It’s the same photo, the same model, the same question. But you won’t get the same answer. Not even close — and the differences are large enough to cause a",
+    "author": "dallo",
+    "publishedAt": "2026-04-29T14:02:00.000Z",
+    "score": 5,
     "tags": [
-      "linux",
-      "fedora"
+      "slop",
+      "technology",
+      "health",
+      "ai",
+      "llm"
     ],
-    "labels": [],
+    "labels": [
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:926594bdbb4b",
+    "id": "hashnode:582f7e55052d",
     "kind": "article",
     "source": "hashnode",
-    "title": "Circulant and Toeplitz matrices in compressed sensing",
-    "url": "https://paperium.hashnode.dev/circulant-and-toeplitz-matrices-in-compressed-sensing",
-    "excerpt": "Random Circulant and Toeplitz Sensing: a Critical Appraisal Context and objectives At first glance the work under review reframes a familiar compressed sensing problem in a more structured sensing se…",
-    "author": "Paperium net",
-    "publishedAt": "2026-04-29T07:20:15.073Z",
+    "title": "KARL: RL Framework Cuts LLM Hallucinations Without Accuracy Loss",
+    "url": "https://gentic-news.hashnode.dev/karl-rl-framework-cuts-llm-hallucinations-without-accuracy-loss",
+    "excerpt": "KARL introduces a reinforcement learning framework that dynamically estimates an LLM's knowledge boundary to reward abstention only when appropriate, achieving a superior accuracy-hallucination trade…",
+    "author": "gentic news",
+    "publishedAt": "2026-04-29T14:01:16.410Z",
     "score": 1,
     "tags": [
-      "ai",
-      "deeplearning",
-      "computerscience",
-      "machinelearning"
+      "artificial-intelligence",
+      "machine-learning"
     ],
     "labels": [
       "ai",
@@ -217,37 +220,84 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:fb6eed2996dd",
+    "id": "mastodon:064886eb9f97",
     "kind": "article",
     "source": "mastodon",
-    "title": "&quot;… between our controlled Rust environment and the messy, chaotic outside world, where paths, bytes, strings, and…",
-    "url": "https://fosstodon.org/@slink/116486258791687186",
-    "excerpt": "&quot;… between our controlled Rust environment and the messy, chaotic outside world, where paths, bytes, strings, and syscalls are all tangled up in one eternal ball of sadness.&quot; dear # rust en…",
-    "author": "Nils Goroll 🕊️:vinylcache:",
-    "publishedAt": "2026-04-29T05:07:31.583Z",
-    "score": 5,
+    "title": "Je recherche toujours quelque chose autour de Lyon, avec du télétravail 3 à 5 jours par semaine, dans le web, avec de l…",
+    "url": "https://pouet.chapril.org/@flohw/116488150985833782",
+    "excerpt": "Je recherche toujours quelque chose autour de Lyon, avec du télétravail 3 à 5 jours par semaine, dans le web, avec de l'éco conception, si possible en scop. Je suis dev senior/lead dev Symfony/Angula…",
+    "author": "Flohw",
+    "publishedAt": "2026-04-29T13:08:44.000Z",
+    "score": 6,
     "tags": [
-      "rust"
+      "python",
+      "jechercheunjob",
+      "symfony",
+      "angular",
+      "scop",
+      "teletravail",
+      "tsa",
+      "linux",
+      "opensource",
+      "lyon"
     ],
     "labels": [
-      "rust"
+      "python",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7c88ecf9a4ee",
+    "id": "mastodon:8d866125b126",
     "kind": "article",
     "source": "mastodon",
-    "title": "Bugs Rust Won't Catch | corrode Rust Consulting",
-    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "excerpt": "In April 2026, Canonical disclosed 44 CVEs in uutils, the Rust reimplementation of GNU coreutil…",
-    "author": "alios",
-    "publishedAt": "2026-04-29T04:53:57.000Z",
-    "score": 10,
+    "title": "🌐🤖 AI Track Spotlight: At # PyConUS 2026, Fabio Pliger shows us how to run # AI models in the browser using # Python…",
+    "url": "https://fosstodon.org/@pycon/116488002608511369",
+    "excerpt": "🌐🤖 AI Track Spotlight: At # PyConUS 2026, Fabio Pliger shows us how to run # AI models in the browser using # Python as a sandboxed runtime in &quot;Distributing AI with Python in the Browser: Edge…",
+    "author": "PyCon US",
+    "publishedAt": "2026-04-29T12:31:00.117Z",
+    "score": 5,
     "tags": [
-      "rustlang",
-      "rust",
-      "syscalls"
+      "pyconus",
+      "ai",
+      "python"
+    ],
+    "labels": [
+      "ai",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:965ed74eb512",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Why I Still Reach for Lisp (& Scheme) Instead of Haskell",
+    "url": "https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html",
+    "excerpt": "After reading the original article https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/\r\n\r\nI realized it really resonated with me and was actu…",
+    "author": "jjba23",
+    "publishedAt": "2026-04-29T03:43:45.000-05:00",
+    "score": 18,
+    "tags": [
+      "haskell",
+      "lisp",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:bf0b4f9a9d84",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Bugs Rust Won't Catch",
+    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
+    "excerpt": "17 points · rust",
+    "author": "PuercoPop",
+    "publishedAt": "2026-04-28T23:17:13.000-05:00",
+    "score": 17,
+    "tags": [
+      "rust"
     ],
     "labels": [
       "rust"
@@ -260,10 +310,10 @@
     "source": "lobsters",
     "title": "I Built My Own Hair Electrolysis Machine",
     "url": "https://www.scd31.com/posts/diy-hair-electrolysis-machine",
-    "excerpt": "44 points · hardware, rust",
+    "excerpt": "64 points · hardware, rust",
     "author": "sloanelybutsurely",
     "publishedAt": "2026-04-28T16:18:39.000-05:00",
-    "score": 44,
+    "score": 64,
     "tags": [
       "hardware",
       "rust"
@@ -325,29 +375,45 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:4b49c2921ae7",
+    "id": "devto:da7329aff704",
     "kind": "article",
-    "source": "mastodon",
-    "title": "AI Cannot Self Improve and Math behind PROVES IT! - devsimsek's Blog",
-    "url": "https://smsk.dev/2026/04/26/ai-cannot-self-improve-and-math-behind-proves-it/",
-    "excerpt": "A new arXiv paper formally proves that recursive self-improvement in LLMs is mathematically impossible - the mechanism everyone believed would lead to superintelligence is actually a one-way ticket to model collapse. Let's unpack it.",
-    "author": "Dam Alex",
-    "publishedAt": "2026-04-28T13:41:30.000Z",
-    "score": 8,
+    "source": "devto",
+    "title": "Automation is a trade-off",
+    "url": "https://dev.to/suesmith/automation-is-a-trade-off-2fh8",
+    "excerpt": "A couple of years ago I wrote a post about abstractions. I’m revisiting it here with AI-assisted...",
+    "author": "Sue Smith",
+    "publishedAt": "2026-04-28T15:06:42Z",
+    "score": 38,
     "tags": [
       "ai",
-      "llm",
-      "machinelearning",
-      "math",
-      "ml",
-      "proof",
-      "research",
-      "rsi",
-      "singularity"
+      "webdev",
+      "lowcode",
+      "automation"
     ],
     "labels": [
       "ai",
-      "ml"
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:922aa2383d48",
+    "kind": "article",
+    "source": "devto",
+    "title": "How I used Gemini CLI to orchestrate a complex RAG migration",
+    "url": "https://dev.to/googleai/how-i-used-gemini-cli-to-orchestrate-a-complex-rag-migration-43ga",
+    "excerpt": "Building a complex, multi-phase cloud project like a RAG migration is as much about orchestration as...",
+    "author": "Remigiusz Samborski",
+    "publishedAt": "2026-04-28T13:02:03Z",
+    "score": 39,
+    "tags": [
+      "gemini",
+      "agents",
+      "programming",
+      "ai"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -365,6 +431,27 @@
       "Stack Overflow Blog"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:f9b892b91d14",
+    "kind": "article",
+    "source": "devto",
+    "title": "Are We Using AI at the Wrong Scale?",
+    "url": "https://dev.to/kernelpryanic/are-we-using-ai-at-the-wrong-scale-2klo",
+    "excerpt": "We open our IDE and let a model running somewhere in the cloud read our entire codebase to add a null...",
+    "author": "Kernel Pryanic",
+    "publishedAt": "2026-04-28T11:07:28Z",
+    "score": 44,
+    "tags": [
+      "ai",
+      "discuss",
+      "llm",
+      "software"
+    ],
+    "labels": [
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -421,6 +508,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:461a447f2c76",
+    "kind": "article",
+    "source": "devto",
+    "title": "ML acceleration guide: TPUs vs GPUs",
+    "url": "https://dev.to/gde/ml-acceleration-guide-tpus-vs-gpus-16oh",
+    "excerpt": "There’s a lot of hype around GPUs and NVIDIA, but how much do you know about TPUs? Article...",
+    "author": "Glen Yu",
+    "publishedAt": "2026-04-28T00:16:10Z",
+    "score": 25,
+    "tags": [
+      "tpu",
+      "gpu",
+      "machinelearning",
+      "tpusprint"
+    ],
+    "labels": [
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:4fb2a51ec7de",
     "kind": "article",
     "source": "lobsters",
@@ -435,6 +543,26 @@
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:983bd4ef5799",
+    "kind": "article",
+    "source": "devto",
+    "title": "G̶o̶d̶ ̶i̶s̶ ̶m̶y̶ ̶C̶o̶p̶i̶l̶o̶t̶ Copilot is my new god",
+    "url": "https://dev.to/drhyde/god-is-my-copilot-copilot-is-my-new-god-5h6i",
+    "excerpt": "I spent some time this weekend noodling around with Github Copilot, using the copilot-cli tool. A...",
+    "author": "David Cantrell",
+    "publishedAt": "2026-04-27T17:06:51Z",
+    "score": 30,
+    "tags": [
+      "ai",
+      "programming",
+      "githubcopilot"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -476,10 +604,10 @@
     "source": "lobsters",
     "title": "Niri v26.04",
     "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
-    "excerpt": "111 points · linux, release, rust",
+    "excerpt": "112 points · linux, release, rust",
     "author": "ana_glz",
     "publishedAt": "2026-04-27T05:51:27.000-05:00",
-    "score": 111,
+    "score": 112,
     "tags": [
       "linux",
       "release",
@@ -573,7 +701,7 @@
     "excerpt": "I saw a video today that made me laugh, then made me a bit worried. It was one of those jokes that...",
     "author": "marcosomma",
     "publishedAt": "2026-04-26T22:46:01Z",
-    "score": 25,
+    "score": 26,
     "tags": [
       "ai",
       "agents",
@@ -594,7 +722,7 @@
     "excerpt": "Table of Contents Overview README Files Are Never Perfect The Primary Purpose of README...",
     "author": "Giorgi Kobaidze",
     "publishedAt": "2026-04-26T14:31:29Z",
-    "score": 80,
+    "score": 92,
     "tags": [
       "documentation",
       "opensource",
@@ -626,114 +754,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:73bcd7f37ca2",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "A breakthrough in C/C++ dependency management",
-    "url": "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management",
-    "excerpt": "61 points · c, c++, programming, satire",
-    "author": "lcamtuf",
-    "publishedAt": "2026-04-25T19:08:22.000-05:00",
-    "score": 61,
-    "tags": [
-      "c",
-      "c++",
-      "programming",
-      "satire"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:5f93da91b146",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Hyper-DERP: C++/io_uring DERP relay - Same throughput as Tailscale's derper, half the cores",
-    "url": "https://hyper-derp.dev/blog/hyper-derp-announcement/",
-    "excerpt": "18 points · performance",
-    "author": "knl",
-    "publishedAt": "2026-04-25T14:48:15.000-05:00",
-    "score": 18,
-    "tags": [
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:21028a2456dc",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Comparing compression tools",
-    "url": "https://www.arp242.net/cmp-compress.html",
-    "excerpt": "17 points · performance",
-    "author": "ugur",
-    "publishedAt": "2026-04-25T07:17:49.000-05:00",
-    "score": 17,
-    "tags": [
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:bb7f3e3d198b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Avoid Shipping Your Org Chart",
-    "url": "https://chronicbuildfailure.co/how-to-avoid-shipping-your-org-chart-c086effe751c",
-    "excerpt": "28 points · practices",
-    "author": "binarycleric",
-    "publishedAt": "2026-04-25T05:05:46.000-05:00",
-    "score": 28,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:fc329bc7eae6",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Hire based on the conversation about code, not the code itself",
-    "url": "https://dbarabashh.com/thoughts-and-experience/hire-for-the-conversation-not-the-code",
-    "excerpt": "37 points · practices",
-    "author": "brbash",
-    "publishedAt": "2026-04-24T05:23:05.000-05:00",
-    "score": 37,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:ef4000dda3f6",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Used to Love Coding. Now I Just Prompt.",
-    "url": "https://dev.to/harsh2644/i-used-to-love-coding-now-i-just-prompt-550l",
-    "excerpt": "Last weekend, I opened my laptop. No deadline. No client. No pressure. Just me, my keyboard, and a...",
-    "author": "Harsh",
-    "publishedAt": "2026-04-24T09:50:38Z",
-    "score": 97,
-    "tags": [
-      "ai",
-      "career",
-      "discuss",
-      "productivity"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -742,7 +762,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 386858,
+    "score": 386997,
     "tags": [
       "Python",
       "books",
@@ -765,7 +785,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 294962,
+    "score": 295004,
     "tags": [
       "Python",
       "awesome",
@@ -788,8 +808,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-29T08:24:39Z",
-    "score": 189122,
+    "publishedAt": "2026-04-29T14:03:15Z",
+    "score": 189177,
     "tags": [
       "Rust"
     ],
@@ -806,8 +826,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-29T08:28:11Z",
-    "score": 183870,
+    "publishedAt": "2026-04-29T14:26:35Z",
+    "score": 183874,
     "tags": [
       "Python",
       "agentic-ai",
@@ -836,8 +856,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-29T08:12:19Z",
-    "score": 160075,
+    "publishedAt": "2026-04-29T14:28:43Z",
+    "score": 160080,
     "tags": [
       "Python",
       "audio",
@@ -876,7 +896,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155299,
+    "score": 155316,
     "tags": [
       "Java",
       "agent",
@@ -907,7 +927,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 153810,
+    "score": 153881,
     "tags": [
       "Python",
       "awesome",
@@ -928,8 +948,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-29T05:39:01Z",
-    "score": 147499,
+    "publishedAt": "2026-04-29T14:28:17Z",
+    "score": 147508,
     "tags": [
       "Python",
       "agents",
@@ -953,8 +973,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-29T03:38:48Z",
-    "score": 135321,
+    "publishedAt": "2026-04-29T08:47:21Z",
+    "score": 135349,
     "tags": [
       "Python",
       "agents",
@@ -993,7 +1013,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134731,
+    "score": 134776,
     "tags": [
       "Python",
       "ai",
@@ -1027,7 +1047,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-29T05:15:21Z",
-    "score": 113125,
+    "score": 113144,
     "tags": [
       "Rust",
       "android",
@@ -1063,8 +1083,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-29T07:41:12Z",
-    "score": 112417,
+    "publishedAt": "2026-04-29T14:02:13Z",
+    "score": 112424,
     "tags": [
       "Rust",
       "compiler",
@@ -1084,8 +1104,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-29T08:26:42Z",
-    "score": 106569,
+    "publishedAt": "2026-04-29T14:23:58Z",
+    "score": 106568,
     "tags": [
       "Rust",
       "deno",
@@ -1107,8 +1127,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-29T04:48:42Z",
-    "score": 105979,
+    "publishedAt": "2026-04-29T13:20:48Z",
+    "score": 105995,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1133,8 +1153,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-29T01:00:31Z",
-    "score": 84119,
+    "publishedAt": "2026-04-29T14:23:26Z",
+    "score": 84136,
     "tags": [
       "Rust",
       "packaging",
@@ -1156,8 +1176,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-28T14:55:55Z",
-    "score": 80525,
+    "publishedAt": "2026-04-29T11:25:59Z",
+    "score": 80527,
     "tags": [
       "Java",
       "framework",
@@ -1178,8 +1198,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-29T08:28:21Z",
-    "score": 80008,
+    "publishedAt": "2026-04-29T14:13:24Z",
+    "score": 80027,
     "tags": [
       "Rust",
       "gpui",
@@ -1200,8 +1220,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-29T08:18:48Z",
-    "score": 78737,
+    "publishedAt": "2026-04-29T14:17:12Z",
+    "score": 78833,
     "tags": [
       "Rust"
     ],
