@@ -178,46 +178,39 @@
     "mentionsByteveda": true
   },
   {
-    "id": "hashnode:a75906f06b07",
+    "id": "rss:Stack Overflow Blog:759ae0bd62cc",
     "kind": "article",
-    "source": "hashnode",
-    "title": "The Thing Everyone Gets Wrong About AI Coding Costs (Including Me)",
-    "url": "https://yuyuyao-blog.hashnode.dev/the-thing-everyone-gets-wrong-about-ai-coding-costs-including-me",
-    "excerpt": "I spent three months convinced I was being smart about AI coding costs. I wasn't. Here's the uncomfortable truth I discovered after switching to pay-per-use pricing—and why most developers are making…",
-    "author": "yaoyaoxu10086",
-    "publishedAt": "2026-04-30T04:02:53.438Z",
-    "score": 1,
+    "source": "rss",
+    "title": "The Worst Coder in the World goes agentic: building a leaderboard cracking AI",
+    "url": "https://stackoverflow.blog/2026/04/30/worst-coder-in-the-world-goes-agentic/",
+    "excerpt": "Agents are everywhere, so isn&#x27;t it fitting that the Worst Coder in the World goes agentic? A coding newbie explores the challenges and rewards of building an agent for work—and trying to learn a…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-04-30T16:00:00.000Z",
+    "score": 0,
     "tags": [
-      "programming",
-      "ai",
-      "webdev",
-      "opensource",
-      "javascript"
+      "Stack Overflow Blog"
     ],
-    "labels": [
-      "ai",
-      "webdev",
-      "opensource"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:26a3f60ef098",
+    "id": "devto:530b95de7071",
     "kind": "article",
-    "source": "mastodon",
-    "title": "warp/crates/warp_terminal/src/model/ansi/control_sequence_parameters.rs at master · warpdotdev/warp",
-    "url": "https://github.com/warpdotdev/warp/blob/master/crates/warp_terminal/src/model/ansi/control_sequence_parameters.rs#L15",
-    "excerpt": "Warp is an agentic development environment, born out of the terminal. - warpdotdev/warp",
-    "author": "UndeadLeech",
-    "publishedAt": "2026-04-30T01:20:28.454Z",
+    "source": "devto",
+    "title": "How I Used AI to Fix Our E2E Test Architecture",
+    "url": "https://dev.to/debs_obrien/how-i-used-ai-to-fix-our-e2e-test-architecture-444a",
+    "excerpt": "I joined a project with an existing Playwright E2E test suite, 38 spec files, ~165 tests, around...",
+    "author": "Debbie O'Brien",
+    "publishedAt": "2026-04-29T18:28:37Z",
     "score": 29,
     "tags": [
-      "rust",
-      "warp",
-      "alacritty"
+      "testing",
+      "e2e",
+      "playwright",
+      "ai"
     ],
     "labels": [
-      "rust"
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -265,10 +258,10 @@
     "source": "lobsters",
     "title": "Zed is 1.0",
     "url": "https://zed.dev/blog/zed-1-0",
-    "excerpt": "85 points · editors, rust",
+    "excerpt": "87 points · editors, rust",
     "author": "notmeta",
     "publishedAt": "2026-04-29T09:40:20.000-05:00",
-    "score": 85,
+    "score": 87,
     "tags": [
       "editors",
       "rust"
@@ -284,10 +277,10 @@
     "source": "lobsters",
     "title": "Blessed Syntax and Ergonomics",
     "url": "https://www.gingerbill.org/article/2026/04/29/blessed-syntax-and-ergonomics/",
-    "excerpt": "20 points · plt, programming",
+    "excerpt": "24 points · plt, programming",
     "author": "gingerBill",
     "publishedAt": "2026-04-29T07:24:02.000-05:00",
-    "score": 20,
+    "score": 24,
     "tags": [
       "plt",
       "programming"
@@ -301,10 +294,10 @@
     "source": "lobsters",
     "title": "Stable specialization in Rust",
     "url": "https://goldstein.lol/posts/stable-specialization/",
-    "excerpt": "33 points · rust",
+    "excerpt": "35 points · rust",
     "author": "morj",
     "publishedAt": "2026-04-29T04:10:49.000-05:00",
-    "score": 33,
+    "score": 35,
     "tags": [
       "rust"
     ],
@@ -322,7 +315,7 @@
     "excerpt": "After reading the original article https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/\r\n\r\nI realized it really resonated with me and was actu…",
     "author": "jjba23",
     "publishedAt": "2026-04-29T03:43:45.000-05:00",
-    "score": 53,
+    "score": 57,
     "tags": [
       "haskell",
       "lisp",
@@ -337,10 +330,10 @@
     "source": "lobsters",
     "title": "Bugs Rust Won't Catch",
     "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "excerpt": "63 points · rust",
+    "excerpt": "70 points · rust",
     "author": "PuercoPop",
     "publishedAt": "2026-04-28T23:17:13.000-05:00",
-    "score": 63,
+    "score": 70,
     "tags": [
       "rust"
     ],
@@ -374,10 +367,10 @@
     "source": "lobsters",
     "title": "I Built My Own Hair Electrolysis Machine",
     "url": "https://www.scd31.com/posts/diy-hair-electrolysis-machine",
-    "excerpt": "91 points · hardware, rust",
+    "excerpt": "97 points · hardware, rust",
     "author": "sloanelybutsurely",
     "publishedAt": "2026-04-28T16:18:39.000-05:00",
-    "score": 91,
+    "score": 97,
     "tags": [
       "hardware",
       "rust"
@@ -468,7 +461,7 @@
     "excerpt": "A couple of years ago I wrote a post about abstractions. I’m revisiting it here with AI-assisted...",
     "author": "Sue Smith",
     "publishedAt": "2026-04-28T15:06:42Z",
-    "score": 43,
+    "score": 44,
     "tags": [
       "ai",
       "webdev",
@@ -527,7 +520,7 @@
     "excerpt": "We open our IDE and let a model running somewhere in the cloud read our entire codebase to add a null...",
     "author": "Kernel Pryanic",
     "publishedAt": "2026-04-28T11:07:28Z",
-    "score": 54,
+    "score": 55,
     "tags": [
       "ai",
       "discuss",
@@ -744,7 +737,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 387360,
+    "score": 387410,
     "tags": [
       "Python",
       "books",
@@ -767,7 +760,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 295145,
+    "score": 295201,
     "tags": [
       "Python",
       "awesome",
@@ -790,8 +783,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-30T08:32:26Z",
-    "score": 189308,
+    "publishedAt": "2026-04-30T14:02:20Z",
+    "score": 189365,
     "tags": [
       "Rust"
     ],
@@ -808,8 +801,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-30T08:27:03Z",
-    "score": 183891,
+    "publishedAt": "2026-04-30T14:18:15Z",
+    "score": 183898,
     "tags": [
       "Python",
       "agentic-ai",
@@ -838,8 +831,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-30T07:55:38Z",
-    "score": 160111,
+    "publishedAt": "2026-04-30T14:19:23Z",
+    "score": 160118,
     "tags": [
       "Python",
       "audio",
@@ -878,7 +871,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155343,
+    "score": 155353,
     "tags": [
       "Java",
       "agent",
@@ -909,7 +902,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 154000,
+    "score": 154071,
     "tags": [
       "Python",
       "awesome",
@@ -930,8 +923,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-04-30T03:50:29Z",
-    "score": 147526,
+    "publishedAt": "2026-04-30T14:10:54Z",
+    "score": 147545,
     "tags": [
       "Python",
       "agents",
@@ -955,8 +948,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-30T07:04:32Z",
-    "score": 135453,
+    "publishedAt": "2026-04-30T14:18:58Z",
+    "score": 135474,
     "tags": [
       "Python",
       "agents",
@@ -995,7 +988,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134881,
+    "score": 134936,
     "tags": [
       "Python",
       "ai",
@@ -1028,8 +1021,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-30T08:01:50Z",
-    "score": 113192,
+    "publishedAt": "2026-04-30T13:44:05Z",
+    "score": 113214,
     "tags": [
       "Rust",
       "android",
@@ -1065,8 +1058,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-30T08:30:55Z",
-    "score": 112435,
+    "publishedAt": "2026-04-30T13:37:53Z",
+    "score": 112444,
     "tags": [
       "Rust",
       "compiler",
@@ -1086,8 +1079,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-30T07:30:46Z",
-    "score": 106565,
+    "publishedAt": "2026-04-30T14:14:29Z",
+    "score": 106569,
     "tags": [
       "Rust",
       "deno",
@@ -1109,8 +1102,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-04-30T03:01:41Z",
-    "score": 106024,
+    "publishedAt": "2026-04-30T14:04:43Z",
+    "score": 106039,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1135,8 +1128,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-04-29T21:23:08Z",
-    "score": 84173,
+    "publishedAt": "2026-04-30T14:11:08Z",
+    "score": 84186,
     "tags": [
       "Rust",
       "packaging",
@@ -1158,8 +1151,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-30T07:31:10Z",
-    "score": 80577,
+    "publishedAt": "2026-04-30T14:22:19Z",
+    "score": 80709,
     "tags": [
       "Rust",
       "gpui",
@@ -1180,8 +1173,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-04-29T11:25:59Z",
-    "score": 80534,
+    "publishedAt": "2026-04-30T12:45:41Z",
+    "score": 80537,
     "tags": [
       "Java",
       "framework",
@@ -1202,8 +1195,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-30T08:32:19Z",
-    "score": 79027,
+    "publishedAt": "2026-04-30T14:22:22Z",
+    "score": 79087,
     "tags": [
       "Rust"
     ],
