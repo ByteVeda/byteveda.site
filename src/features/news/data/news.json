@@ -178,42 +178,46 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:a3e70c99ce15",
+    "id": "hashnode:a75906f06b07",
     "kind": "article",
-    "source": "mastodon",
-    "title": "My new gateway running on a Raspberry Pi. No UI, no apps, just plug it in and it works like an appliance. This is Chrom…",
-    "url": "https://mastodon.social/@nickbearded/116491612994081032",
-    "excerpt": "My new gateway running on a Raspberry Pi. No UI, no apps, just plug it in and it works like an appliance. This is Chrome with zero extensions on a news site usually full of ads, banners and videos… n…",
-    "author": "nickbearded",
-    "publishedAt": "2026-04-30T03:49:10.000Z",
-    "score": 6,
+    "source": "hashnode",
+    "title": "The Thing Everyone Gets Wrong About AI Coding Costs (Including Me)",
+    "url": "https://yuyuyao-blog.hashnode.dev/the-thing-everyone-gets-wrong-about-ai-coding-costs-including-me",
+    "excerpt": "I spent three months convinced I was being smart about AI coding costs. I wasn't. Here's the uncomfortable truth I discovered after switching to pay-per-use pricing—and why most developers are making…",
+    "author": "yaoyaoxu10086",
+    "publishedAt": "2026-04-30T04:02:53.438Z",
+    "score": 1,
     "tags": [
-      "privacy",
-      "selfhosted",
-      "raspberrypi",
-      "networking",
-      "iot",
-      "linux"
+      "programming",
+      "ai",
+      "webdev",
+      "opensource",
+      "javascript"
     ],
-    "labels": [],
+    "labels": [
+      "ai",
+      "webdev",
+      "opensource"
+    ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:2a1fb8c936e7",
+    "id": "mastodon:26a3f60ef098",
     "kind": "article",
     "source": "mastodon",
-    "title": "Python Tip #119 (of 365): Don't just rely on the built-in types for argparse's type parameter You can create your own a…",
-    "url": "https://mastodon.social/@treyhunner/116490892790185437",
-    "excerpt": "Python Tip #119 (of 365): Don't just rely on the built-in types for argparse's type parameter You can create your own argparse \"type\" with a callable that accepts a string and returns the parsed obje…",
-    "author": "Trey Hunner 🐍",
-    "publishedAt": "2026-04-30T00:46:00.000Z",
-    "score": 6,
+    "title": "warp/crates/warp_terminal/src/model/ansi/control_sequence_parameters.rs at master · warpdotdev/warp",
+    "url": "https://github.com/warpdotdev/warp/blob/master/crates/warp_terminal/src/model/ansi/control_sequence_parameters.rs#L15",
+    "excerpt": "Warp is an agentic development environment, born out of the terminal. - warpdotdev/warp",
+    "author": "UndeadLeech",
+    "publishedAt": "2026-04-30T01:20:28.454Z",
+    "score": 29,
     "tags": [
-      "python",
-      "dailypythontip"
+      "rust",
+      "warp",
+      "alacritty"
     ],
     "labels": [
-      "python"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -233,33 +237,6 @@
     "labels": [
       "ai",
       "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:abbbde323f4c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "AI Cannot Self Improve and Math behind PROVES IT! - devsimsek's Blog",
-    "url": "https://smsk.dev/2026/04/26/ai-cannot-self-improve-and-math-behind-proves-it/",
-    "excerpt": "A new arXiv paper formally proves that recursive self-improvement in LLMs is mathematically impossible - the mechanism everyone believed would lead to superintelligence is actually a one-way ticket to model collapse. Let's unpack it.",
-    "author": "Pol Dellaiera",
-    "publishedAt": "2026-04-29T16:36:58.000Z",
-    "score": 14,
-    "tags": [
-      "singularity",
-      "rsi",
-      "research",
-      "proof",
-      "ml",
-      "math",
-      "machinelearning",
-      "llm",
-      "ai"
-    ],
-    "labels": [
-      "ml",
-      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -288,10 +265,10 @@
     "source": "lobsters",
     "title": "Zed is 1.0",
     "url": "https://zed.dev/blog/zed-1-0",
-    "excerpt": "77 points · editors, rust",
+    "excerpt": "85 points · editors, rust",
     "author": "notmeta",
     "publishedAt": "2026-04-29T09:40:20.000-05:00",
-    "score": 77,
+    "score": 85,
     "tags": [
       "editors",
       "rust"
@@ -307,10 +284,10 @@
     "source": "lobsters",
     "title": "Blessed Syntax and Ergonomics",
     "url": "https://www.gingerbill.org/article/2026/04/29/blessed-syntax-and-ergonomics/",
-    "excerpt": "17 points · plt, programming",
+    "excerpt": "20 points · plt, programming",
     "author": "gingerBill",
     "publishedAt": "2026-04-29T07:24:02.000-05:00",
-    "score": 17,
+    "score": 20,
     "tags": [
       "plt",
       "programming"
@@ -324,10 +301,10 @@
     "source": "lobsters",
     "title": "Stable specialization in Rust",
     "url": "https://goldstein.lol/posts/stable-specialization/",
-    "excerpt": "29 points · rust",
+    "excerpt": "33 points · rust",
     "author": "morj",
     "publishedAt": "2026-04-29T04:10:49.000-05:00",
-    "score": 29,
+    "score": 33,
     "tags": [
       "rust"
     ],
@@ -345,7 +322,7 @@
     "excerpt": "After reading the original article https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/\r\n\r\nI realized it really resonated with me and was actu…",
     "author": "jjba23",
     "publishedAt": "2026-04-29T03:43:45.000-05:00",
-    "score": 49,
+    "score": 53,
     "tags": [
       "haskell",
       "lisp",
@@ -360,10 +337,10 @@
     "source": "lobsters",
     "title": "Bugs Rust Won't Catch",
     "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "excerpt": "59 points · rust",
+    "excerpt": "63 points · rust",
     "author": "PuercoPop",
     "publishedAt": "2026-04-28T23:17:13.000-05:00",
-    "score": 59,
+    "score": 63,
     "tags": [
       "rust"
     ],
@@ -397,10 +374,10 @@
     "source": "lobsters",
     "title": "I Built My Own Hair Electrolysis Machine",
     "url": "https://www.scd31.com/posts/diy-hair-electrolysis-machine",
-    "excerpt": "86 points · hardware, rust",
+    "excerpt": "91 points · hardware, rust",
     "author": "sloanelybutsurely",
     "publishedAt": "2026-04-28T16:18:39.000-05:00",
-    "score": 86,
+    "score": 91,
     "tags": [
       "hardware",
       "rust"
@@ -419,7 +396,7 @@
     "excerpt": "Google has just announced the release of Gemma 4! This new generation of open models brings...",
     "author": "Shir Meir Lador",
     "publishedAt": "2026-04-28T19:54:21Z",
-    "score": 44,
+    "score": 50,
     "tags": [
       "gemma",
       "machinelearning",
@@ -491,7 +468,7 @@
     "excerpt": "A couple of years ago I wrote a post about abstractions. I’m revisiting it here with AI-assisted...",
     "author": "Sue Smith",
     "publishedAt": "2026-04-28T15:06:42Z",
-    "score": 41,
+    "score": 43,
     "tags": [
       "ai",
       "webdev",
@@ -513,7 +490,7 @@
     "excerpt": "Building a complex, multi-phase cloud project like a RAG migration is as much about orchestration as...",
     "author": "Remigiusz Samborski",
     "publishedAt": "2026-04-28T13:02:03Z",
-    "score": 40,
+    "score": 41,
     "tags": [
       "gemini",
       "agents",
@@ -550,7 +527,7 @@
     "excerpt": "We open our IDE and let a model running somewhere in the cloud read our entire codebase to add a null...",
     "author": "Kernel Pryanic",
     "publishedAt": "2026-04-28T11:07:28Z",
-    "score": 53,
+    "score": 54,
     "tags": [
       "ai",
       "discuss",
@@ -680,7 +657,7 @@
     "excerpt": "I spent some time this weekend noodling around with Github Copilot, using the copilot-cli tool. A...",
     "author": "David Cantrell",
     "publishedAt": "2026-04-27T17:06:51Z",
-    "score": 30,
+    "score": 33,
     "tags": [
       "ai",
       "programming",
@@ -741,6 +718,24 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:7c3d218fff02",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "httpxyz one month in",
+    "url": "https://tildeweb.nl/~michiel/httpxyz-one-month-in.html",
+    "excerpt": "26 points · python",
+    "author": "knl",
+    "publishedAt": "2026-04-27T05:32:05.000-05:00",
+    "score": 26,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -749,7 +744,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-04-24T13:32:32Z",
-    "score": 387257,
+    "score": 387360,
     "tags": [
       "Python",
       "books",
@@ -772,7 +767,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 295105,
+    "score": 295145,
     "tags": [
       "Python",
       "awesome",
@@ -795,8 +790,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-04-30T03:32:12Z",
-    "score": 189270,
+    "publishedAt": "2026-04-30T08:32:26Z",
+    "score": 189308,
     "tags": [
       "Rust"
     ],
@@ -813,8 +808,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-04-30T03:40:43Z",
-    "score": 183888,
+    "publishedAt": "2026-04-30T08:27:03Z",
+    "score": 183891,
     "tags": [
       "Python",
       "agentic-ai",
@@ -843,8 +838,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-04-30T03:10:53Z",
-    "score": 160100,
+    "publishedAt": "2026-04-30T07:55:38Z",
+    "score": 160111,
     "tags": [
       "Python",
       "audio",
@@ -883,7 +878,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-04-25T16:01:15Z",
-    "score": 155332,
+    "score": 155343,
     "tags": [
       "Java",
       "agent",
@@ -914,7 +909,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 153952,
+    "score": 154000,
     "tags": [
       "Python",
       "awesome",
@@ -936,7 +931,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-04-30T03:50:29Z",
-    "score": 147520,
+    "score": 147526,
     "tags": [
       "Python",
       "agents",
@@ -960,8 +955,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-30T01:46:25Z",
-    "score": 135422,
+    "publishedAt": "2026-04-30T07:04:32Z",
+    "score": 135453,
     "tags": [
       "Python",
       "agents",
@@ -1000,7 +995,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-04-24T10:07:14Z",
-    "score": 134852,
+    "score": 134881,
     "tags": [
       "Python",
       "ai",
@@ -1033,8 +1028,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-04-29T15:11:28Z",
-    "score": 113175,
+    "publishedAt": "2026-04-30T08:01:50Z",
+    "score": 113192,
     "tags": [
       "Rust",
       "android",
@@ -1070,8 +1065,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-04-30T01:19:45Z",
-    "score": 112433,
+    "publishedAt": "2026-04-30T08:30:55Z",
+    "score": 112435,
     "tags": [
       "Rust",
       "compiler",
@@ -1091,8 +1086,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-04-30T03:43:43Z",
-    "score": 106562,
+    "publishedAt": "2026-04-30T07:30:46Z",
+    "score": 106565,
     "tags": [
       "Rust",
       "deno",
@@ -1115,7 +1110,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-04-30T03:01:41Z",
-    "score": 106016,
+    "score": 106024,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1141,7 +1136,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-04-29T21:23:08Z",
-    "score": 84160,
+    "score": 84173,
     "tags": [
       "Rust",
       "packaging",
@@ -1156,28 +1151,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bafe5a24351b",
-    "kind": "trending",
-    "source": "github",
-    "title": "spring-projects/spring-boot",
-    "url": "https://github.com/spring-projects/spring-boot",
-    "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
-    "author": "spring-projects",
-    "publishedAt": "2026-04-29T11:25:59Z",
-    "score": 80530,
-    "tags": [
-      "Java",
-      "framework",
-      "java",
-      "spring",
-      "spring-boot"
-    ],
-    "labels": [
-      "java"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:2c0d1b24ea73",
     "kind": "trending",
     "source": "github",
@@ -1185,8 +1158,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-29T17:21:23Z",
-    "score": 80468,
+    "publishedAt": "2026-04-30T07:31:10Z",
+    "score": 80577,
     "tags": [
       "Rust",
       "gpui",
@@ -1200,6 +1173,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:bafe5a24351b",
+    "kind": "trending",
+    "source": "github",
+    "title": "spring-projects/spring-boot",
+    "url": "https://github.com/spring-projects/spring-boot",
+    "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+    "author": "spring-projects",
+    "publishedAt": "2026-04-29T11:25:59Z",
+    "score": 80534,
+    "tags": [
+      "Java",
+      "framework",
+      "java",
+      "spring",
+      "spring-boot"
+    ],
+    "labels": [
+      "java"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:83c4d873e34c",
     "kind": "trending",
     "source": "github",
@@ -1207,8 +1202,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-04-30T03:58:53Z",
-    "score": 78962,
+    "publishedAt": "2026-04-30T08:32:19Z",
+    "score": 79027,
     "tags": [
       "Rust"
     ],
