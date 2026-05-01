@@ -178,50 +178,73 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:fa92bb97e83b",
+    "id": "mastodon:789a51781093",
     "kind": "article",
     "source": "mastodon",
-    "title": "Launching my BashCoreGee OS live (bashcore.org) through my custom Raspberry Pi gateway, I think I’ve found the perfect…",
-    "url": "https://mastodon.social/@nickbearded/116498289982817125",
-    "excerpt": "Launching my BashCoreGee OS live (bashcore.org) through my custom Raspberry Pi gateway, I think I’ve found the perfect privacy combo. Tested all four vanilla browsers on Gee: LibreWolf and Mullvad bl…",
-    "author": "nickbearded",
-    "publishedAt": "2026-05-01T08:07:12.000Z",
-    "score": 8,
+    "title": "Upgrading the last # Fedora device here to # Fedora44 , the device being a HP Stream laptop that I inherited. Only 4 GB…",
+    "url": "https://bsd.network/@claudiom/116499542106517881",
+    "excerpt": "Upgrading the last # Fedora device here to # Fedora44 , the device being a HP Stream laptop that I inherited. Only 4 GB of RAM and a 32 GB eMMC, but it works decently with MATE Desktop, especially fo…",
+    "author": "ClaudioM",
+    "publishedAt": "2026-05-01T13:25:38.000Z",
+    "score": 5,
     "tags": [
-      "privacy",
-      "bashcore",
-      "perfectcombo",
-      "raspberrypi",
-      "linux",
-      "selfhosted",
-      "gateway",
-      "iot",
-      "homelab",
-      "networking",
-      "ad",
-      "adblock",
-      "sbc"
+      "fedora",
+      "fedora44",
+      "linux"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:177d2d084994",
+    "id": "mastodon:1a5d25e6374c",
     "kind": "article",
     "source": "mastodon",
-    "title": "Proton Drive",
-    "url": "https://drive.proton.me/urls/EG60KWHEDG#7P2AL5m6PPzT",
-    "excerpt": "Securely store, share, and access your important files and photos. Anytime, anywhere.",
-    "author": "Matt Burgess",
-    "publishedAt": "2026-05-01T07:54:45.000Z",
-    "score": 16,
+    "title": "I'm currently working on a new feature: ttp check-leak. 🔍 It will allow you to verify perform real-time IP and DNS lea…",
+    "url": "https://mastodon.social/@onyks/116499011132008651",
+    "excerpt": "I'm currently working on a new feature: ttp check-leak. 🔍 It will allow you to verify perform real-time IP and DNS leak tests to ensure all traffic is correctly routed through the Tor network. Thank…",
+    "author": "onyks",
+    "publishedAt": "2026-05-01T11:10:36.000Z",
+    "score": 5,
     "tags": [
-      "digitalsovereignty",
-      "europe",
-      "tech",
-      "opensource"
+      "tor",
+      "linux",
+      "privacy",
+      "cybersecurity",
+      "python",
+      "opensource",
+      "networking",
+      "foss",
+      "buildinpublic",
+      "selfhosted"
     ],
     "labels": [
+      "security",
+      "python",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:0360e6b170fb",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "GitHub - qarmin/czkawka: Multi functional app to find duplicates, empty folders, similar images etc.",
+    "url": "https://github.com/qarmin/czkawka",
+    "excerpt": "Multi functional app to find duplicates, empty folders, similar images etc. - qarmin/czkawka",
+    "author": "radiotux",
+    "publishedAt": "2026-05-01T09:00:32.000Z",
+    "score": 8,
+    "tags": [
+      "shipit",
+      "rust",
+      "opensource",
+      "cleanup",
+      "linux",
+      "techtipp",
+      "fruhjahrsputz"
+    ],
+    "labels": [
+      "rust",
       "opensource"
     ],
     "mentionsByteveda": false
@@ -240,26 +263,6 @@
       "Stack Overflow Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:95fd80eb87f7",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I built a little tool that helps you decide how much effort to invest in PRs and issues. Pass it a GitHub username, and…",
-    "url": "https://fosstodon.org/@ehmatthes/116497168404524786",
-    "excerpt": "I built a little tool that helps you decide how much effort to invest in PRs and issues. Pass it a GitHub username, and it will summarize some information about that user. If you&#39;re in a local pr…",
-    "author": "Eric Matthes",
-    "publishedAt": "2026-05-01T03:21:59.063Z",
-    "score": 10,
-    "tags": [
-      "python",
-      "opensource"
-    ],
-    "labels": [
-      "python",
-      "opensource"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -305,10 +308,10 @@
     "source": "lobsters",
     "title": "If I Could Make My Own GitHub",
     "url": "https://matduggan.com/if-i-could-make-my-own-github/",
-    "excerpt": "18 points · programming",
+    "excerpt": "28 points · programming",
     "author": "robalex",
     "publishedAt": "2026-04-30T18:11:52.000-05:00",
-    "score": 18,
+    "score": 28,
     "tags": [
       "programming"
     ],
@@ -369,47 +372,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:81ae8cd1d4e6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "RE: https:// mas.to/@alternativeto/11649213 9535862729 I don't know what to think of this. Blender was one of the last…",
-    "url": "https://graphics.social/@metin/116494347722837694",
-    "excerpt": "RE: https:// mas.to/@alternativeto/11649213 9535862729 I don't know what to think of this. Blender was one of the last creative tools not infected by \"AI\". Maybe LLMs can handle tedious tasks, but I'…",
-    "author": "Metin Seven 🎨",
-    "publishedAt": "2026-04-30T15:24:38.000Z",
-    "score": 37,
-    "tags": [
-      "blender",
-      "blender3d",
-      "b3d",
-      "3d",
-      "tech",
-      "technology",
-      "bigtech",
-      "it",
-      "ai",
-      "artificialintelligence",
-      "llm",
-      "llms",
-      "ml",
-      "machinelearning",
-      "genai",
-      "generativeAI",
-      "aiagent",
-      "aislop",
-      "fuckai",
-      "fuck_ai",
-      "enshittification",
-      "anthropic",
-      "claude"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "hashnode:cc08fe6d6702",
     "kind": "article",
     "source": "hashnode",
@@ -437,34 +399,16 @@
     "source": "lobsters",
     "title": "You can beat the binary search",
     "url": "https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/",
-    "excerpt": "43 points · performance",
+    "excerpt": "49 points · performance",
     "author": "gabeio",
     "publishedAt": "2026-04-30T09:54:15.000-05:00",
-    "score": 43,
+    "score": 49,
     "tags": [
       "performance"
     ],
     "labels": [
       "performance"
     ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:b7867bf646b6",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Amber-Lang 0.6.0 - New release, check what's new",
-    "url": "https://docs.amber-lang.com/getting_started/whats_new",
-    "excerpt": "As per title finally after more then 6 months we are releasing the new 0.6.0 release!\r\n\r\nIn this release we put a lot of effort on looking on feedbacks after the Fosdem talks and reception we got on…",
-    "author": "Mte90",
-    "publishedAt": "2026-04-30T04:00:30.000-05:00",
-    "score": 15,
-    "tags": [
-      "linux",
-      "programming",
-      "unix"
-    ],
-    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -494,7 +438,7 @@
     "excerpt": "TLDR - I wanted to upgrade my coding-from-my-phone workflow. I found Paseo, forked it, and used AI...",
     "author": "Ryan Swift",
     "publishedAt": "2026-04-29T19:02:07Z",
-    "score": 26,
+    "score": 31,
     "tags": [
       "ai",
       "agents",
@@ -516,7 +460,7 @@
     "excerpt": "I joined a project with an existing Playwright E2E test suite, 38 spec files, ~165 tests, around...",
     "author": "Debbie O'Brien",
     "publishedAt": "2026-04-29T18:28:37Z",
-    "score": 31,
+    "score": 37,
     "tags": [
       "testing",
       "e2e",
@@ -572,10 +516,10 @@
     "source": "lobsters",
     "title": "Zed is 1.0",
     "url": "https://zed.dev/blog/zed-1-0",
-    "excerpt": "98 points · editors, rust",
+    "excerpt": "100 points · editors, rust",
     "author": "notmeta",
     "publishedAt": "2026-04-29T09:40:20.000-05:00",
-    "score": 98,
+    "score": 100,
     "tags": [
       "editors",
       "rust"
@@ -592,7 +536,7 @@
     "title": "Everyone's Talking About Gemini. The Real Story at Google Cloud NEXT '26 Was GKE Agent Sandbox.",
     "url": "https://dev.to/sreejit_caab72e273a4faa1f/everyones-talking-about-gemini-the-real-story-at-google-cloud-next-26-was-gke-agent-sandbox-19g2",
     "excerpt": "Google Cloud NEXT '26 had one clear headline: the Gemini Enterprise Agent Platform. A full-stack...",
-    "author": "Sreejit",
+    "author": "Sreejit Pradhan",
     "publishedAt": "2026-04-29T13:46:47Z",
     "score": 37,
     "tags": [
@@ -615,7 +559,7 @@
     "excerpt": "In-house AI agents are seductive but fragile. Here's the case for using agents to explore and concrete workflows to ship",
     "author": "arunkant",
     "publishedAt": "2026-04-29T12:42:21Z",
-    "score": 30,
+    "score": 31,
     "tags": [
       "saas",
       "ai",
@@ -774,6 +718,41 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Hugging Face:5b7c46b20d14",
+    "kind": "article",
+    "source": "rss",
+    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-04-28T15:58:57.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:36a108a844f7",
+    "kind": "article",
+    "source": "rss",
+    "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+    "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+    "excerpt": "On March 4, 2026, we received a vulnerability report through our Bug Bounty program from researchers at Wiz describing a critical remote code execution vulnerability affecting github.com, GitHub Ente…",
+    "author": "Alexis Wales",
+    "publishedAt": "2026-04-28T15:30:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:03bcb55f8165",
     "kind": "trending",
     "source": "github",
@@ -782,7 +761,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-04-27T15:58:22Z",
-    "score": 295339,
+    "score": 295385,
     "tags": [
       "Python",
       "awesome",
@@ -806,7 +785,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-30T21:49:51Z",
-    "score": 189460,
+    "score": 189497,
     "tags": [
       "Rust"
     ],
@@ -823,8 +802,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-01T07:57:08Z",
-    "score": 183921,
+    "publishedAt": "2026-05-01T12:00:24Z",
+    "score": 183928,
     "tags": [
       "Python",
       "agentic-ai",
@@ -853,8 +832,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-01T08:14:23Z",
-    "score": 160133,
+    "publishedAt": "2026-05-01T13:44:01Z",
+    "score": 160142,
     "tags": [
       "Python",
       "audio",
@@ -893,7 +872,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-30T22:23:21Z",
-    "score": 159962,
+    "score": 160007,
     "tags": [
       "Python",
       "cli",
@@ -918,7 +897,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-01T00:55:00Z",
-    "score": 155356,
+    "score": 155359,
     "tags": [
       "Java",
       "agent",
@@ -949,7 +928,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 154184,
+    "score": 154224,
     "tags": [
       "Python",
       "awesome",
@@ -971,7 +950,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-05-01T04:12:19Z",
-    "score": 147580,
+    "score": 147588,
     "tags": [
       "Python",
       "agents",
@@ -995,8 +974,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-04-30T21:57:57Z",
-    "score": 135544,
+    "publishedAt": "2026-05-01T13:40:14Z",
+    "score": 135561,
     "tags": [
       "Python",
       "agents",
@@ -1035,7 +1014,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-05-01T02:21:15Z",
-    "score": 135028,
+    "score": 135060,
     "tags": [
       "Python",
       "ai",
@@ -1069,7 +1048,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-04-30T13:44:05Z",
-    "score": 113258,
+    "score": 113274,
     "tags": [
       "Rust",
       "android",
@@ -1105,8 +1084,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-01T07:47:41Z",
-    "score": 112458,
+    "publishedAt": "2026-05-01T12:25:13Z",
+    "score": 112460,
     "tags": [
       "Rust",
       "compiler",
@@ -1126,8 +1105,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-01T08:21:20Z",
-    "score": 106576,
+    "publishedAt": "2026-05-01T13:35:17Z",
+    "score": 106577,
     "tags": [
       "Rust",
       "deno",
@@ -1149,8 +1128,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-01T02:35:25Z",
-    "score": 106065,
+    "publishedAt": "2026-05-01T12:49:49Z",
+    "score": 106073,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1175,8 +1154,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-01T03:21:18Z",
-    "score": 84220,
+    "publishedAt": "2026-05-01T13:43:18Z",
+    "score": 84230,
     "tags": [
       "Rust",
       "packaging",
@@ -1198,8 +1177,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-04-30T20:29:04Z",
-    "score": 80967,
+    "publishedAt": "2026-05-01T12:25:21Z",
+    "score": 81045,
     "tags": [
       "Rust",
       "gpui",
@@ -1220,8 +1199,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-05-01T04:26:57Z",
-    "score": 80542,
+    "publishedAt": "2026-05-01T10:46:02Z",
+    "score": 80541,
     "tags": [
       "Java",
       "framework",
@@ -1242,8 +1221,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-01T08:22:16Z",
-    "score": 79243,
+    "publishedAt": "2026-05-01T13:34:03Z",
+    "score": 79317,
     "tags": [
       "Rust"
     ],
