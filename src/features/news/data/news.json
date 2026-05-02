@@ -178,15 +178,78 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:d6f538af9c4d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I've released Pequod, a colour palette for prose and code, and it's now on CRAN, PyPI, and the VS Code Marketplace. War…",
+    "url": "https://social.tiagojct.eu/@tiagojct/116501684880077652",
+    "excerpt": "I've released Pequod, a colour palette for prose and code, and it's now on CRAN, PyPI, and the VS Code Marketplace. Warm paper to deep ink, with eight accent hues named after the crew of Melville's w…",
+    "author": "Tiago Jacinto",
+    "publishedAt": "2026-05-01T22:30:35.000Z",
+    "score": 5,
+    "tags": [
+      "pequod",
+      "rstats",
+      "python",
+      "dataviz",
+      "accessibility",
+      "foss",
+      "science",
+      "academia",
+      "a11y"
+    ],
+    "labels": [
+      "python",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:6d251a15d4dc",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "PyCon US is approaching alarmingly fast! Did you know that anyone can host open spaces there? Well guess what, I'm gonn…",
+    "url": "https://hachyderm.io/@pythonbynight/116501415326175992",
+    "excerpt": "PyCon US is approaching alarmingly fast! Did you know that anyone can host open spaces there? Well guess what, I'm gonna host one called: PyCon With 💗ART What's it about? Are you an artist? Yes, you…",
+    "author": "Mario Munoz",
+    "publishedAt": "2026-05-01T21:22:01.000Z",
+    "score": 19,
+    "tags": [
+      "pyconus",
+      "python",
+      "longbeach"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:ac7d7f59acd7",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Inverse Sapir-Whorf and programming languages",
+    "url": "https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/",
+    "excerpt": "20 points · programming",
+    "author": "spookylukey",
+    "publishedAt": "2026-05-01T15:56:02.000-05:00",
+    "score": 20,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:c50722158254",
     "kind": "article",
     "source": "lobsters",
     "title": "Why I Don’t Vibe Code",
     "url": "https://jacobharr.is/personal/i-dont-vibe-code",
-    "excerpt": "31 points · practices, vibecoding",
+    "excerpt": "49 points · practices, vibecoding",
     "author": "lollipopman",
     "publishedAt": "2026-05-01T09:22:46.000-05:00",
-    "score": 31,
+    "score": 49,
     "tags": [
       "practices",
       "vibecoding"
@@ -219,7 +282,7 @@
     "excerpt": "In case you were wondering: # gokrazy kernels are not vulnerable to copy.fail because they do not include the vulnerable code 🥳 In any case, 7.0.3 is available, so maybe update regardless (it’s alwa…",
     "author": "Michael Stapelberg 🐧🐹😺",
     "publishedAt": "2026-05-01T12:29:08.000Z",
-    "score": 13,
+    "score": 15,
     "tags": [
       "golang",
       "linux",
@@ -239,7 +302,7 @@
     "excerpt": "Multi functional app to find duplicates, empty folders, similar images etc. - qarmin/czkawka",
     "author": "radiotux",
     "publishedAt": "2026-05-01T09:00:32.000Z",
-    "score": 8,
+    "score": 9,
     "tags": [
       "shipit",
       "rust",
@@ -280,7 +343,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-05-01T01:49:12.000-05:00",
-    "score": 17,
+    "score": 20,
     "tags": [
       "ask",
       "programming"
@@ -294,10 +357,10 @@
     "source": "lobsters",
     "title": "Porting microgpt to Futhark, Part I",
     "url": "https://www.kmjn.org/notes/microgpt_futhark.html",
-    "excerpt": "26 points · ai, plt",
+    "excerpt": "29 points · ai, plt",
     "author": "mjn",
     "publishedAt": "2026-04-30T19:34:31.000-05:00",
-    "score": 26,
+    "score": 29,
     "tags": [
       "ai",
       "plt"
@@ -331,10 +394,10 @@
     "source": "lobsters",
     "title": "If I Could Make My Own GitHub",
     "url": "https://matduggan.com/if-i-could-make-my-own-github/",
-    "excerpt": "43 points · programming",
+    "excerpt": "48 points · programming",
     "author": "robalex",
     "publishedAt": "2026-04-30T18:11:52.000-05:00",
-    "score": 43,
+    "score": 48,
     "tags": [
       "programming"
     ],
@@ -350,7 +413,7 @@
     "excerpt": "We're all learning how to code with agents. If you're \"in the bubble\" it can feel like everyone is...",
     "author": "Ryan Swift",
     "publishedAt": "2026-04-30T16:27:59Z",
-    "score": 36,
+    "score": 38,
     "tags": [
       "ai",
       "agents",
@@ -400,10 +463,10 @@
     "source": "lobsters",
     "title": "You can beat the binary search",
     "url": "https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/",
-    "excerpt": "53 points · performance",
+    "excerpt": "57 points · performance",
     "author": "gabeio",
     "publishedAt": "2026-04-30T09:54:15.000-05:00",
-    "score": 53,
+    "score": 57,
     "tags": [
       "performance"
     ],
@@ -517,10 +580,10 @@
     "source": "lobsters",
     "title": "Zed is 1.0",
     "url": "https://zed.dev/blog/zed-1-0",
-    "excerpt": "101 points · editors, rust",
+    "excerpt": "102 points · editors, rust",
     "author": "notmeta",
     "publishedAt": "2026-04-29T09:40:20.000-05:00",
-    "score": 101,
+    "score": 102,
     "tags": [
       "editors",
       "rust"
@@ -631,10 +694,10 @@
     "source": "lobsters",
     "title": "Bugs Rust Won't Catch",
     "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "excerpt": "75 points · rust",
+    "excerpt": "77 points · rust",
     "author": "PuercoPop",
     "publishedAt": "2026-04-28T23:17:13.000-05:00",
-    "score": 75,
+    "score": 77,
     "tags": [
       "rust"
     ],
@@ -668,72 +731,16 @@
     "source": "lobsters",
     "title": "I Built My Own Hair Electrolysis Machine",
     "url": "https://www.scd31.com/posts/diy-hair-electrolysis-machine",
-    "excerpt": "100 points · hardware, rust",
+    "excerpt": "101 points · hardware, rust",
     "author": "sloanelybutsurely",
     "publishedAt": "2026-04-28T16:18:39.000-05:00",
-    "score": 100,
+    "score": 101,
     "tags": [
       "hardware",
       "rust"
     ],
     "labels": [
       "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:dbd6ad05aca9",
-    "kind": "article",
-    "source": "devto",
-    "title": "Fine-Tuning Gemma 4 with Cloud Run Jobs: Serverless GPUs (NVIDIA RTX 6000 Pro) for pet breed classification 🐈🐕",
-    "url": "https://dev.to/googleai/fine-tuning-gemma-4-with-cloud-run-jobs-serverless-gpus-nvidia-rtx-6000-pro-for-pet-breed-45ib",
-    "excerpt": "Google has just announced the release of Gemma 4! This new generation of open models brings...",
-    "author": "Shir Meir Lador",
-    "publishedAt": "2026-04-28T19:54:21Z",
-    "score": 52,
-    "tags": [
-      "gemma",
-      "machinelearning",
-      "googlecloud",
-      "cloudrun"
-    ],
-    "labels": [
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:a4318660ab44",
-    "kind": "article",
-    "source": "rss",
-    "title": "GitHub for Beginners: Getting started with Markdown",
-    "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
-    "excerpt": "Welcome back to GitHub for Beginners. We&rsquo;ve covered a wide range of topics so far this season, including GitHub Issues and Projects , GitHub Actions , security, and GitHub Pages. Now we&rsquo;r…",
-    "author": "Kedasha Kerr",
-    "publishedAt": "2026-04-28T18:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:5b7c46b20d14",
-    "kind": "article",
-    "source": "rss",
-    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
-    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-28T15:58:57.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -746,7 +753,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-01T18:32:32Z",
-    "score": 295429,
+    "score": 295481,
     "tags": [
       "Python",
       "awesome",
@@ -770,7 +777,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-30T21:49:51Z",
-    "score": 189527,
+    "score": 189557,
     "tags": [
       "Rust"
     ],
@@ -787,8 +794,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-01T18:51:03Z",
-    "score": 183938,
+    "publishedAt": "2026-05-01T23:42:38Z",
+    "score": 183943,
     "tags": [
       "Python",
       "agentic-ai",
@@ -817,8 +824,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-01T17:49:59Z",
-    "score": 160148,
+    "publishedAt": "2026-05-02T01:38:06Z",
+    "score": 160158,
     "tags": [
       "Python",
       "audio",
@@ -857,7 +864,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-30T22:23:21Z",
-    "score": 160059,
+    "score": 160103,
     "tags": [
       "Python",
       "cli",
@@ -882,7 +889,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-01T00:55:00Z",
-    "score": 155363,
+    "score": 155362,
     "tags": [
       "Java",
       "agent",
@@ -913,7 +920,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 154253,
+    "score": 154297,
     "tags": [
       "Python",
       "awesome",
@@ -934,8 +941,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-01T18:57:37Z",
-    "score": 147596,
+    "publishedAt": "2026-05-02T00:49:50Z",
+    "score": 147607,
     "tags": [
       "Python",
       "agents",
@@ -959,8 +966,8 @@
     "url": "https://github.com/langchain-ai/langchain",
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
-    "publishedAt": "2026-05-01T19:19:35Z",
-    "score": 135591,
+    "publishedAt": "2026-05-01T21:59:57Z",
+    "score": 135607,
     "tags": [
       "Python",
       "agents",
@@ -999,7 +1006,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-05-01T02:21:15Z",
-    "score": 135107,
+    "score": 135140,
     "tags": [
       "Python",
       "ai",
@@ -1033,7 +1040,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-01T16:45:22Z",
-    "score": 113286,
+    "score": 113306,
     "tags": [
       "Rust",
       "android",
@@ -1069,8 +1076,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-01T18:20:55Z",
-    "score": 112466,
+    "publishedAt": "2026-05-01T22:41:53Z",
+    "score": 112471,
     "tags": [
       "Rust",
       "compiler",
@@ -1091,7 +1098,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-05-01T19:29:32Z",
-    "score": 106588,
+    "score": 106594,
     "tags": [
       "Rust",
       "deno",
@@ -1113,8 +1120,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-01T19:02:10Z",
-    "score": 106089,
+    "publishedAt": "2026-05-01T21:42:25Z",
+    "score": 106103,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1139,8 +1146,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-01T13:43:18Z",
-    "score": 84244,
+    "publishedAt": "2026-05-01T20:25:10Z",
+    "score": 84255,
     "tags": [
       "Rust",
       "packaging",
@@ -1162,8 +1169,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-01T17:56:32Z",
-    "score": 81115,
+    "publishedAt": "2026-05-01T22:37:26Z",
+    "score": 81175,
     "tags": [
       "Rust",
       "gpui",
@@ -1184,8 +1191,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-05-01T10:46:02Z",
-    "score": 80543,
+    "publishedAt": "2026-05-02T00:48:47Z",
+    "score": 80545,
     "tags": [
       "Java",
       "framework",
@@ -1206,8 +1213,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-01T19:33:54Z",
-    "score": 79382,
+    "publishedAt": "2026-05-02T03:28:35Z",
+    "score": 79425,
     "tags": [
       "Rust"
     ],
