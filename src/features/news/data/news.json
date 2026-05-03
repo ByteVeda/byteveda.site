@@ -1,5 +1,25 @@
 [
   {
+    "id": "github:02510c77eade",
+    "kind": "release",
+    "source": "github",
+    "title": "taskito v0.12.0",
+    "url": "https://github.com/ByteVeda/taskito/releases/tag/0.12.0",
+    "excerpt": "## What's Changed * chore: migrate dashboard from npm to pnpm by @pratyush618 in https://github.com/ByteVeda/taskito/pull/55 * refactor(async): enforce async-separation + arun_worker kwarg parity by…",
+    "author": "pratyush618",
+    "publishedAt": "2026-05-02T22:50:11Z",
+    "score": 0,
+    "tags": [
+      "taskito",
+      "release"
+    ],
+    "labels": [
+      "rust",
+      "python"
+    ],
+    "mentionsByteveda": true
+  },
+  {
     "id": "github:90049c8d1b8c",
     "kind": "release",
     "source": "github",
@@ -138,26 +158,6 @@
     "mentionsByteveda": true
   },
   {
-    "id": "github:f3080a8da2af",
-    "kind": "release",
-    "source": "github",
-    "title": "taskito v0.10.1",
-    "url": "https://github.com/ByteVeda/taskito/releases/tag/0.10.1",
-    "excerpt": "## What's Changed * chore: bump version to 0.10.1 by @pratyush618 in https://github.com/ByteVeda/taskito/pull/47 **Full Changelog**: https://github.com/ByteVeda/taskito/compare/0.10.0...0.10.1",
-    "author": "pratyush618",
-    "publishedAt": "2026-03-24T10:26:19Z",
-    "score": 0,
-    "tags": [
-      "taskito",
-      "release"
-    ],
-    "labels": [
-      "rust",
-      "python"
-    ],
-    "mentionsByteveda": true
-  },
-  {
     "id": "github:d410b1e5a9e5",
     "kind": "release",
     "source": "github",
@@ -178,23 +178,346 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:4eacdd2b0231",
+    "id": "hashnode:9b66bcfc97aa",
     "kind": "article",
-    "source": "mastodon",
-    "title": "It is a bank holiday weekend so my wife is building houses and meddling with lives in Sims 4 and and I am building city…",
-    "url": "https://mastodon.social/@Lazarou/116506567952212424",
-    "excerpt": "It is a bank holiday weekend so my wife is building houses and meddling with lives in Sims 4 and and I am building city blocks and utopias in Sim City 4 Can your wonderful AI bring our two games toge…",
-    "author": "Lazarou Monkey Terror 🚀💙🌈",
-    "publishedAt": "2026-05-02T19:12:24.000Z",
-    "score": 5,
+    "source": "hashnode",
+    "title": "How to Build a Local Agentic Search Pipeline That Actually Gets Facts Right",
+    "url": "https://alan-west.hashnode.dev/how-to-build-a-local-agentic-search-pipeline-that-actually-gets-facts-right",
+    "excerpt": "If you've spent any time building with local LLMs, you've probably hit the same wall I have: your model confidently tells you something that is completely, verifiably wrong. Ask it about a recent API…",
+    "author": "Alan West",
+    "publishedAt": "2026-05-03T04:01:58.703Z",
+    "score": 1,
     "tags": [
-      "gaming",
       "ai",
-      "sims4",
-      "simcity4"
+      "llm",
+      "machinelearning",
+      "opensource"
+    ],
+    "labels": [
+      "ai",
+      "ml",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:95c6561f4298",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Recurrent Convolutional Neural Networks for Scene Parsing",
+    "url": "https://paperium.hashnode.dev/recurrent-convolutional-neural-networks-for-scene-parsing",
+    "excerpt": "Recasting Scene Parsing through Recurrent Convolution Framing and motivation At first glance the problem addressed—labeling every pixel in an image—sounds straightforward, yet it hinges on modeling c…",
+    "author": "Paperium net",
+    "publishedAt": "2026-05-03T03:50:15.462Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "deeplearning",
+      "computerscience",
+      "machinelearning"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:2639bd4a5d8b",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Cursor SDK vs Browserbase vs OpenAI Apps SDK: 3 Substrates",
+    "url": "https://computeleap.hashnode.dev/cursor-sdk-vs-browserbase-vs-openai-apps-sdk-3-substrates",
+    "excerpt": "In the last five days, the agent-runtime question went from \"which model do I use?\" to \"which substrate do I deploy on?\" That is a structural shift, and it is being driven by three near-simultaneous…",
+    "author": "Max Quimby",
+    "publishedAt": "2026-05-03T03:46:40.006Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "aiagents",
+      "cursor",
+      "openai"
     ],
     "labels": [
       "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:d4a1f65c387e",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Sunday Reset: 5 Lessons From a Week of Building Two Products in Parallel",
+    "url": "https://speed-enginner.hashnode.dev/sunday-reset-5-lessons-from-a-week-of-building-two-products-in-parallel",
+    "excerpt": "Sundays at my desk look the same: coffee, no Slack, and a notebook open to two questions.\n\nWhat did I actually ship this week?\nWhat slowed me down — and how do I avoid it next week?\n\nI run two SaaS p…",
+    "author": "speed engineer",
+    "publishedAt": "2026-05-03T03:40:29.721Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "indiehackers",
+      "productivity",
+      "saas"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:1707edaf58ba",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Inside the Claude Code Post-Mortem: 50+ Fixes, Verified",
+    "url": "https://computeleap.hashnode.dev/inside-the-claude-code-post-mortem-50-fixes-verified",
+    "excerpt": "On April 23, Boris Cherny — Anthropic's Claude Code lead — published a post-mortem on the recent quality complaints and pinned it to the top of the @bcherny feed. The tweet pulled 3.3k likes and 606k…",
+    "author": "Max Quimby",
+    "publishedAt": "2026-05-03T03:37:48.403Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "anthropic",
+      "claudecode",
+      "devops"
+    ],
+    "labels": [
+      "ai",
+      "devops"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:4216c6fc0fe2",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Another paper has shown that students who use ChatGPT remember significantly less than students who don't. This tech is…",
+    "url": "https://mastodon.social/@aicaution/116508549802249293",
+    "excerpt": "Another paper has shown that students who use ChatGPT remember significantly less than students who don't. This tech is being pushed in schools because it creates a generation of users unable to thin…",
+    "author": "PACES Vancouver",
+    "publishedAt": "2026-05-03T03:36:25.000Z",
+    "score": 6,
+    "tags": [
+      "ai",
+      "noai",
+      "education",
+      "chatgpt",
+      "science"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:c75753098de2",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "6 Months of AI Receptionists in Production: What We Learned | Optimizing Front-Desk Workflows for Dental Clinics",
+    "url": "https://ai-businessman.hashnode.dev/6-months-of-ai-receptionists-in-production--what-we-learned---optimizing-front-desk-workflows-for-de",
+    "excerpt": "6 Months of AI Receptionists in Production: What We Learned | Optimizing Front-Desk Workflows for Dental Clinics\nIntroduction: A Call to Action Against Missed Opportunities\nIn today's digital age, ev…",
+    "author": "Factor Mind",
+    "publishedAt": "2026-05-03T03:30:24.901Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "automation",
+      "saas"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:32add34ca2b5",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Qwen3 的 5 个隐藏用法让我放弃了 Claude 订阅，每月省下 200 美元",
+    "url": "https://art-dev.hashnode.dev/qwen3-5-claude-200",
+    "excerpt": "Qwen3：这5个隐藏功能让我放弃了订阅 Claude，每月省下 200 美元\n你们有没有这种感觉——每个月的 AI 订阅费像流水一样。\nClaude Team 每月 $30，ChatGPT Plus $20，GitHub Copilot $19……一个月轻松烧掉 $70-200 美元，关键是：这些钱花出去，你的数据也同步送出去了。\n直到我深度研究了 Qwen3 的生态圈，我发现了一套完全免费、…",
+    "author": "韩笙",
+    "publishedAt": "2026-05-03T03:09:55.796Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "github",
+      "programming",
+      "tutorial"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:697173c16526",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Qwen3's 5 Hidden Capabilities That 90% of Developers Are Completely Missing",
+    "url": "https://art-dev.hashnode.dev/qwen3s-5-hidden-capabilities-that-90-of-developers-are-completely-missing",
+    "excerpt": "Qwen3's 5 Hidden Capabilities That 90% of Developers Are Completely Missing\nIf you've been following open-source LLM developments in 2026, you've probably noticed Qwen3 popping up everywhere. With 27…",
+    "author": "韩笙",
+    "publishedAt": "2026-05-03T03:09:54.204Z",
+    "score": 1,
+    "tags": [
+      "ai",
+      "github",
+      "programming",
+      "tutorial"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e695ca99dd93",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Hi everyone! I’m new here, moving from mainstream socials to find some cool people. 🤘 I'm a tech enthusiast, but I spe…",
+    "url": "https://mstdn.social/@fotiskavv/116507789509325927",
+    "excerpt": "Hi everyone! I’m new here, moving from mainstream socials to find some cool people. 🤘 I'm a tech enthusiast, but I spend my time: 🐧 On Linux &amp; Python scripting (exploring LLMs). 🎸 Blasting Hea…",
+    "author": "Fotis",
+    "publishedAt": "2026-05-03T00:23:04.000Z",
+    "score": 40,
+    "tags": [
+      "introduction",
+      "newhere",
+      "linux",
+      "python",
+      "heavymetal",
+      "tech",
+      "Darkvibes",
+      "fediverse"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "hashnode:8e8c9ad6b7ad",
+    "kind": "article",
+    "source": "hashnode",
+    "title": "Building a Location-First Learning Agent to Explore Context, Memory, and Consciousness",
+    "url": "https://zacharysturman.hashnode.dev/building-a-location-first-learning-agent-to-explore-context-memory-and-consciousness",
+    "excerpt": "Maybe recognition is less about detached labels than it is about where something is, what surrounds it, and how that context gets reinforced. That is what pushed me to build this repo. I wanted a sma…",
+    "author": "Zachary Sturman",
+    "publishedAt": "2026-05-02T22:56:39.419Z",
+    "score": 1,
+    "tags": [
+      "adaptive",
+      "ai",
+      "cli",
+      "learning",
+      "location",
+      "ml",
+      "python",
+      "sensor",
+      "state-management",
+      "synthetic-memory"
+    ],
+    "labels": [
+      "ai",
+      "ml",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c618d49bb221",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Technical Assessment: HTML5, CSS3, JavaScript &amp; jQuery Multiple choice quiz about all aspects of HTML5, CSS3, JavaS…",
+    "url": "https://defcon.social/@BCWHQuiz/116506892310870485",
+    "excerpt": "Technical Assessment: HTML5, CSS3, JavaScript &amp; jQuery Multiple choice quiz about all aspects of HTML5, CSS3, JavaScript &amp; jQuery. # CyberSecurity # PowerShell # CFML # AI # Networking # SQL…",
+    "author": "Black Cat White Hat Security",
+    "publishedAt": "2026-05-02T20:34:54.000Z",
+    "score": 5,
+    "tags": [
+      "cybersecurity",
+      "powershell",
+      "cfml",
+      "ai",
+      "networking",
+      "sql",
+      "cloud",
+      "grc",
+      "gaming",
+      "technology",
+      "python",
+      "zerotrust",
+      "devsecops",
+      "FinOps",
+      "programming"
+    ],
+    "labels": [
+      "security",
+      "ai",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:8157a95a89d0",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "In my # homelab I have built a private cloud. I have been able to get a # haproxy load balancer created in under a minu…",
+    "url": "https://mastodon.social/@nwcs/116506886904672788",
+    "excerpt": "In my # homelab I have built a private cloud. I have been able to get a # haproxy load balancer created in under a minute. Plan on adding others in the future but it's nice seeing it all come togethe…",
+    "author": "NWCS",
+    "publishedAt": "2026-05-02T20:33:31.000Z",
+    "score": 5,
+    "tags": [
+      "homelab",
+      "haproxy",
+      "golang",
+      "minnesota",
+      "noai",
+      "selfhosting",
+      "technology",
+      "virtualization"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:9670dd0addeb",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "NHS Goes To War Against Open Source",
+    "url": "https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/",
+    "excerpt": "53 points · ai, security",
+    "author": "agoose77",
+    "publishedAt": "2026-05-02T13:13:57.000-05:00",
+    "score": 53,
+    "tags": [
+      "ai",
+      "security"
+    ],
+    "labels": [
+      "ai",
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:394b74d1d1b1",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "PEP 661 – Sentinel Values, accepted 5 years later",
+    "url": "https://peps.python.org/pep-0661/",
+    "excerpt": "25 points · python",
+    "author": "azhenley",
+    "publishedAt": "2026-05-02T12:26:59.000-05:00",
+    "score": 25,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -207,7 +530,7 @@
     "excerpt": "Today I learned you could do: `go build -gcflags=\"-m -m\"` to get escape analysis information. Is this what people commonly use in performance work when writing functions? Is there a better way? Is th…",
     "author": "James Just James",
     "publishedAt": "2026-05-02T17:22:11.000Z",
-    "score": 5,
+    "score": 6,
     "tags": [
       "golang"
     ],
@@ -217,37 +540,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:0d42d055c4a4",
+    "id": "lobsters:83b19a9ccb77",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Pontoon Remains # pontoon # remains # seascape # sea # rust # rusty # supports # worn # structure # decayed # photograp…",
-    "url": "https://mastodon.social/@jlbouzou/116504805668137738",
-    "excerpt": "Pontoon Remains # pontoon # remains # seascape # sea # rust # rusty # supports # worn # structure # decayed # photography # blackandwhitephotography # bnwphotography # monochrome # seascapephotograph…",
-    "author": "Jean-Louis Bouzou",
-    "publishedAt": "2026-05-02T11:44:14.000Z",
-    "score": 13,
+    "source": "lobsters",
+    "title": "Protect Your Shed",
+    "url": "https://dylanbutler.dev/blog/protect-your-shed/",
+    "excerpt": "17 points · practices, programming",
+    "author": "deejayy",
+    "publishedAt": "2026-05-02T05:29:49.000-05:00",
+    "score": 17,
     "tags": [
-      "pontoon",
-      "remains",
-      "seascape",
-      "sea",
-      "rust",
-      "rusty",
-      "supports",
-      "worn",
-      "structure",
-      "decayed",
-      "photography",
-      "blackandwhitephotography",
-      "bnwphotography",
-      "monochrome",
-      "seascapephotography",
-      "jlbouzou",
-      "seacapephotography"
+      "practices",
+      "programming"
     ],
-    "labels": [
-      "rust"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -256,10 +562,10 @@
     "source": "lobsters",
     "title": "Inverse Sapir-Whorf and programming languages",
     "url": "https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/",
-    "excerpt": "49 points · programming",
+    "excerpt": "54 points · programming",
     "author": "spookylukey",
     "publishedAt": "2026-05-01T15:56:02.000-05:00",
-    "score": 49,
+    "score": 54,
     "tags": [
       "programming"
     ],
@@ -272,10 +578,10 @@
     "source": "lobsters",
     "title": "Why I Don’t Vibe Code",
     "url": "https://jacobharr.is/personal/i-dont-vibe-code",
-    "excerpt": "72 points · practices, vibecoding",
+    "excerpt": "74 points · practices, vibecoding",
     "author": "lollipopman",
     "publishedAt": "2026-05-01T09:22:46.000-05:00",
-    "score": 72,
+    "score": 74,
     "tags": [
       "practices",
       "vibecoding"
@@ -344,7 +650,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-05-01T01:49:12.000-05:00",
-    "score": 24,
+    "score": 25,
     "tags": [
       "ask",
       "programming"
@@ -477,278 +783,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:d17f4c1f84ed",
-    "kind": "article",
-    "source": "devto",
-    "title": "OpenAI Tells You What You Spent. Not Where. So I Built a Dashboard.",
-    "url": "https://dev.to/alimafana/openai-tells-you-what-you-spent-not-where-so-i-built-a-dashboard-b6",
-    "excerpt": "OpenAI's billing page shows total spend. It doesn't show which feature, which tenant, or which conversation caused it. I built a 3-file monitoring system that does — and the first time I opened it, I…",
-    "author": "Ali Afana",
-    "publishedAt": "2026-04-30T12:14:54Z",
-    "score": 29,
-    "tags": [
-      "ai",
-      "webdev",
-      "openai",
-      "monitoring"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:The Rust Blog:a5000b30d8f7",
-    "kind": "article",
-    "source": "rss",
-    "title": "Announcing Google Summer of Code 2026 selected projects",
-    "url": "https://blog.rust-lang.org/2026/04/30/gsoc-2026-selected-projects/",
-    "excerpt": "As previously announced , the Rust Project is participating in Google Summer of Code (GSoC) 2026. GSoC is a global program organized by Google that is designed to bring new contributors to the world…",
-    "author": "Jakub Beránek",
-    "publishedAt": "2026-04-30T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "The Rust Blog"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:122f2d796a5c",
-    "kind": "article",
-    "source": "devto",
-    "title": "Forking Paseo: Mobile vibe coding for me",
-    "url": "https://dev.to/thisisryanswift/forking-paseo-mobile-vibe-coding-for-me-48pa",
-    "excerpt": "TLDR - I wanted to upgrade my coding-from-my-phone workflow. I found Paseo, forked it, and used AI...",
-    "author": "Ryan Swift",
-    "publishedAt": "2026-04-29T19:02:07Z",
-    "score": 31,
-    "tags": [
-      "ai",
-      "agents",
-      "vibecoding",
-      "opensource"
-    ],
-    "labels": [
-      "ai",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:530b95de7071",
-    "kind": "article",
-    "source": "devto",
-    "title": "How I Used AI to Fix Our E2E Test Architecture",
-    "url": "https://dev.to/debs_obrien/how-i-used-ai-to-fix-our-e2e-test-architecture-444a",
-    "excerpt": "I joined a project with an existing Playwright E2E test suite, 38 spec files, ~165 tests, around...",
-    "author": "Debbie O'Brien",
-    "publishedAt": "2026-04-29T18:28:37Z",
-    "score": 40,
-    "tags": [
-      "testing",
-      "e2e",
-      "playwright",
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:1280d7239d11",
-    "kind": "article",
-    "source": "rss",
-    "title": "AI evals are becoming the new compute bottleneck",
-    "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-29T16:45:09.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:6af9b6a70003",
-    "kind": "article",
-    "source": "rss",
-    "title": "Granite 4.1 LLMs: How They’re Built",
-    "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-29T15:01:48.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:7d3ce0c1707c",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Zed is 1.0",
-    "url": "https://zed.dev/blog/zed-1-0",
-    "excerpt": "103 points · editors, rust",
-    "author": "notmeta",
-    "publishedAt": "2026-04-29T09:40:20.000-05:00",
-    "score": 103,
-    "tags": [
-      "editors",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:a4aef88f4c1f",
-    "kind": "article",
-    "source": "devto",
-    "title": "Everyone's Talking About Gemini. The Real Story at Google Cloud NEXT '26 Was GKE Agent Sandbox.",
-    "url": "https://dev.to/sreejit_caab72e273a4faa1f/everyones-talking-about-gemini-the-real-story-at-google-cloud-next-26-was-gke-agent-sandbox-19g2",
-    "excerpt": "Google Cloud NEXT '26 had one clear headline: the Gemini Enterprise Agent Platform. A full-stack...",
-    "author": "Sreejit Pradhan",
-    "publishedAt": "2026-04-29T13:46:47Z",
-    "score": 39,
-    "tags": [
-      "cloudnextchallenge",
-      "googlecloud",
-      "ai",
-      "devchallenge"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:9ea3be9032f6",
-    "kind": "article",
-    "source": "devto",
-    "title": "Why I'm Building SaaS in 2026",
-    "url": "https://dev.to/arunkant/why-im-building-saas-in-2026-55hn",
-    "excerpt": "In-house AI agents are seductive but fragile. Here's the case for using agents to explore and concrete workflows to ship",
-    "author": "arunkant",
-    "publishedAt": "2026-04-29T12:42:21Z",
-    "score": 32,
-    "tags": [
-      "saas",
-      "ai",
-      "agents",
-      "workflows"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:548b8040c6f5",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Blessed Syntax and Ergonomics",
-    "url": "https://www.gingerbill.org/article/2026/04/29/blessed-syntax-and-ergonomics/",
-    "excerpt": "25 points · plt, programming",
-    "author": "gingerBill",
-    "publishedAt": "2026-04-29T07:24:02.000-05:00",
-    "score": 25,
-    "tags": [
-      "plt",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:7e173a6c0043",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Stable specialization in Rust",
-    "url": "https://goldstein.lol/posts/stable-specialization/",
-    "excerpt": "38 points · rust",
-    "author": "morj",
-    "publishedAt": "2026-04-29T04:10:49.000-05:00",
-    "score": 38,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:965ed74eb512",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Why I Still Reach for Lisp (& Scheme) Instead of Haskell",
-    "url": "https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html",
-    "excerpt": "After reading the original article https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/\r\n\r\nI realized it really resonated with me and was actu…",
-    "author": "jjba23",
-    "publishedAt": "2026-04-29T03:43:45.000-05:00",
-    "score": 65,
-    "tags": [
-      "haskell",
-      "lisp",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:bf0b4f9a9d84",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Bugs Rust Won't Catch",
-    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "excerpt": "80 points · rust",
-    "author": "PuercoPop",
-    "publishedAt": "2026-04-28T23:17:13.000-05:00",
-    "score": 80,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:a89e6f10b7ac",
-    "kind": "article",
-    "source": "rss",
-    "title": "DeepInfra on Hugging Face Inference Providers 🔥",
-    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-04-29T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -757,7 +791,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-02T11:14:19Z",
-    "score": 430136,
+    "score": 430196,
     "tags": [
       "Python",
       "api",
@@ -789,7 +823,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-01T18:32:32Z",
-    "score": 295609,
+    "score": 295675,
     "tags": [
       "Python",
       "awesome",
@@ -813,7 +847,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-04-30T21:49:51Z",
-    "score": 189662,
+    "score": 189695,
     "tags": [
       "Rust"
     ],
@@ -830,8 +864,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-02T15:32:06Z",
-    "score": 183941,
+    "publishedAt": "2026-05-02T23:36:34Z",
+    "score": 183947,
     "tags": [
       "Python",
       "agentic-ai",
@@ -861,7 +895,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-04-30T22:23:21Z",
-    "score": 160214,
+    "score": 160259,
     "tags": [
       "Python",
       "cli",
@@ -885,8 +919,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-02T11:41:22Z",
-    "score": 160181,
+    "publishedAt": "2026-05-02T22:37:53Z",
+    "score": 160189,
     "tags": [
       "Python",
       "audio",
@@ -956,7 +990,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-04-28T00:48:03Z",
-    "score": 154411,
+    "score": 154444,
     "tags": [
       "Python",
       "awesome",
@@ -977,8 +1011,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-02T04:14:21Z",
-    "score": 147629,
+    "publishedAt": "2026-05-03T01:49:31Z",
+    "score": 147638,
     "tags": [
       "Python",
       "agents",
@@ -1003,7 +1037,7 @@
     "excerpt": "The agent engineering platform",
     "author": "langchain-ai",
     "publishedAt": "2026-05-02T08:33:02Z",
-    "score": 135634,
+    "score": 135651,
     "tags": [
       "Python",
       "agents",
@@ -1041,8 +1075,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-01T16:45:22Z",
-    "score": 113338,
+    "publishedAt": "2026-05-03T03:37:12Z",
+    "score": 113373,
     "tags": [
       "Rust",
       "android",
@@ -1078,8 +1112,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-02T17:43:02Z",
-    "score": 112485,
+    "publishedAt": "2026-05-03T03:24:52Z",
+    "score": 112487,
     "tags": [
       "Rust",
       "compiler",
@@ -1099,8 +1133,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-02T19:10:11Z",
-    "score": 106604,
+    "publishedAt": "2026-05-03T04:01:07Z",
+    "score": 106603,
     "tags": [
       "Rust",
       "deno",
@@ -1123,7 +1157,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-02T08:21:12Z",
-    "score": 106129,
+    "score": 106138,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1149,7 +1183,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-05-02T16:10:54Z",
-    "score": 84264,
+    "score": 84277,
     "tags": [
       "Rust",
       "packaging",
@@ -1171,8 +1205,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-02T17:21:32Z",
-    "score": 81297,
+    "publishedAt": "2026-05-02T22:32:48Z",
+    "score": 81355,
     "tags": [
       "Rust",
       "gpui",
@@ -1194,7 +1228,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-05-02T06:15:04Z",
-    "score": 80553,
+    "score": 80552,
     "tags": [
       "Java",
       "framework",
@@ -1215,8 +1249,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-02T19:10:41Z",
-    "score": 79544,
+    "publishedAt": "2026-05-03T04:06:07Z",
+    "score": 79614,
     "tags": [
       "Rust"
     ],
