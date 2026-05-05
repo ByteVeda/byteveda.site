@@ -178,6 +178,69 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:ff4242c27b2c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "How should we deal with zero-effort AI PRs? · Issue #6954 · openstreetmap/openstreetmap-website",
+    "url": "https://github.com/openstreetmap/openstreetmap-website/issues/6954#:~:text=Last%20year,%20I%20renamed%20iD%E2%80%99s%20%E2%80%9Cgood%20first%20issue%E2%80%9D%20label%20to%20%E2%80%9Cnew%20contributor%20opportunity%E2%80%9D,%20after%20we%20also%20noticed%20newcomers%20picking%20them%20up%20within%20hours%20or%20even%20minutes,%20too%20fast%20to%20be%20intentional%20visitors%20to%20the%20repository.%20We%20found%20that%20at%20least%20one%20site%20was%20gamifying%20good%20first%20issues%20across%20a%20massive%20number%20of%20GitHub%20repos.%20It%20was%20incentivizing%20the%20sort%20of%20drive-by%20PRs%20we%20frown%20upon.",
+    "excerpt": "I'm finding the number of zero-effort AI PRs to be getting a bit tiresome. I'm not against people using AI to help them write code (I use claude myself, and find it useful) and I'm not against new ...",
+    "author": "Amᵃᵖanda | map data witch",
+    "publishedAt": "2026-05-05T07:54:47.000Z",
+    "score": 6,
+    "tags": [
+      "ai",
+      "llm",
+      "slop"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:93c084700b1e",
+    "kind": "article",
+    "source": "rss",
+    "title": "What (un)exactly do you mean by semantic search?",
+    "url": "https://stackoverflow.blog/2026/05/05/what-un-exactly-do-you-mean-by-semantic-search/",
+    "excerpt": "Ryan welcomes Bryan O’Grady, Head of Field Research and Solutions Architecture at Qdrant, to discuss the differences between traditional text search engines powered by Lucene and modern vector databa…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-05-05T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:a233ee703a69",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Raise MemoryError on Argon2 allocation failure by alex · Pull Request #14782 · pyca/cryptography",
+    "url": "https://github.com/pyca/cryptography/pull/14782",
+    "excerpt": "Closes #14778.\nArgon2 derivations that exceed available memory (e.g. when running under mlockall with a low max-locked-memory ulimit, or when given an unreasonably large memory_cost) currently surf...",
+    "author": "Jesus Michał \"Le Sigh\" 🏔 (he)",
+    "publishedAt": "2026-05-05T05:25:48.000Z",
+    "score": 68,
+    "tags": [
+      "python",
+      "cryptography",
+      "rustlang",
+      "security",
+      "ai",
+      "llm",
+      "noai",
+      "nollm"
+    ],
+    "labels": [
+      "python",
+      "rust",
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:bdf393e1b650",
     "kind": "article",
     "source": "mastodon",
@@ -220,35 +283,13 @@
     "excerpt": "Python Tip #124 (of 365): Don't be afraid to return early when it simplifies your code. In the 1960's, \"structured programming\" promoted \"single-entry single-exit\" code. . The idea that \"each functio…",
     "author": "Trey Hunner 🐍",
     "publishedAt": "2026-05-05T03:00:13.000Z",
-    "score": 9,
+    "score": 11,
     "tags": [
       "python",
       "dailypythontip"
     ],
     "labels": [
       "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:9b43b5c28368",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I recently got a Raspberry Pi 5. I have it basically set up headless so I can ssh into it. My thought is to set it up a…",
-    "url": "https://sunny.garden/@attksthdrknss/116519125305355792",
-    "excerpt": "I recently got a Raspberry Pi 5. I have it basically set up headless so I can ssh into it. My thought is to set it up as a little home server. I want to use it to learn Python better, so I will likel…",
-    "author": "dAVE Inden || attks th drknss",
-    "publishedAt": "2026-05-05T00:25:54.000Z",
-    "score": 8,
-    "tags": [
-      "raspberrypi",
-      "fedihelp",
-      "python",
-      "docker"
-    ],
-    "labels": [
-      "python",
-      "devops"
     ],
     "mentionsByteveda": false
   },
@@ -277,7 +318,7 @@
     "excerpt": "Lately, I’ve been reflecting on something: The question for most developers is no longer \"Are you...",
     "author": "Julien Avezou",
     "publishedAt": "2026-05-04T14:47:35Z",
-    "score": 36,
+    "score": 47,
     "tags": [
       "ai",
       "productivity",
@@ -295,10 +336,10 @@
     "source": "lobsters",
     "title": "Async Rust never left the MVP state",
     "url": "https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state",
-    "excerpt": "68 points · rust",
+    "excerpt": "84 points · rust",
     "author": "radim",
     "publishedAt": "2026-05-04T09:26:01.000-05:00",
-    "score": 68,
+    "score": 84,
     "tags": [
       "rust"
     ],
@@ -313,10 +354,10 @@
     "source": "lobsters",
     "title": "oops, cubic macro",
     "url": "https://bal-e.org/blog/2026/oops-cubic-macro/",
-    "excerpt": "28 points · rust",
+    "excerpt": "30 points · rust",
     "author": "polywolf",
     "publishedAt": "2026-05-04T08:17:06.000-05:00",
-    "score": 28,
+    "score": 30,
     "tags": [
       "rust"
     ],
@@ -431,7 +472,7 @@
     "excerpt": "I have been meaning to upgrade my personal site to Astro 6 for a while. The release notes sat in my...",
     "author": "Harshil Agrawal",
     "publishedAt": "2026-05-03T13:05:28Z",
-    "score": 37,
+    "score": 38,
     "tags": [
       "ai",
       "devjournal",
@@ -451,10 +492,10 @@
     "source": "lobsters",
     "title": "Open Source Does Not Imply Open Community",
     "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community/",
-    "excerpt": "82 points · programming",
+    "excerpt": "83 points · programming",
     "author": "fab23",
     "publishedAt": "2026-05-02T17:06:04.000-05:00",
-    "score": 82,
+    "score": 83,
     "tags": [
       "programming"
     ],
@@ -707,40 +748,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:759ae0bd62cc",
-    "kind": "article",
-    "source": "rss",
-    "title": "The Worst Coder in the World goes agentic: building a leaderboard cracking AI",
-    "url": "https://stackoverflow.blog/2026/04/30/worst-coder-in-the-world-goes-agentic/",
-    "excerpt": "Agents are everywhere, so isn&#x27;t it fitting that the Worst Coder in the World goes agentic? A coding newbie explores the challenges and rewards of building an agent for work—and trying to learn a…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-04-30T16:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:3d6a37bcc70e",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "You can beat the binary search",
-    "url": "https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/",
-    "excerpt": "60 points · performance",
-    "author": "gabeio",
-    "publishedAt": "2026-04-30T09:54:15.000-05:00",
-    "score": 60,
-    "tags": [
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -749,7 +756,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-02T11:14:19Z",
-    "score": 431498,
+    "score": 431676,
     "tags": [
       "Python",
       "api",
@@ -780,8 +787,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-05-04T13:25:36Z",
-    "score": 295996,
+    "publishedAt": "2026-05-05T06:42:10Z",
+    "score": 296040,
     "tags": [
       "Python",
       "awesome",
@@ -805,7 +812,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-05-04T18:10:39Z",
-    "score": 220740,
+    "score": 220752,
     "tags": [
       "Python",
       "algorithm",
@@ -837,7 +844,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-04T22:02:13Z",
-    "score": 190045,
+    "score": 190084,
     "tags": [
       "Rust"
     ],
@@ -854,8 +861,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-05T03:27:34Z",
-    "score": 183992,
+    "publishedAt": "2026-05-05T08:22:47Z",
+    "score": 183998,
     "tags": [
       "Python",
       "agentic-ai",
@@ -885,7 +892,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-05-03T22:19:09Z",
-    "score": 160579,
+    "score": 160602,
     "tags": [
       "Python",
       "cli",
@@ -909,8 +916,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-04T15:48:04Z",
-    "score": 160248,
+    "publishedAt": "2026-05-05T08:24:14Z",
+    "score": 160254,
     "tags": [
       "Python",
       "audio",
@@ -949,7 +956,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-05T00:01:49Z",
-    "score": 155399,
+    "score": 155405,
     "tags": [
       "Java",
       "agent",
@@ -979,8 +986,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-05T02:16:13Z",
-    "score": 147688,
+    "publishedAt": "2026-05-05T06:03:32Z",
+    "score": 147690,
     "tags": [
       "Python",
       "agents",
@@ -1005,7 +1012,7 @@
     "excerpt": "The agent engineering platform. Available in TypeScript!",
     "author": "langchain-ai",
     "publishedAt": "2026-05-04T10:14:29Z",
-    "score": 135780,
+    "score": 135804,
     "tags": [
       "Python",
       "agents",
@@ -1045,7 +1052,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-04T08:50:42Z",
-    "score": 113503,
+    "score": 113515,
     "tags": [
       "Rust",
       "android",
@@ -1081,8 +1088,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-05T03:21:42Z",
-    "score": 112531,
+    "publishedAt": "2026-05-05T07:17:39Z",
+    "score": 112537,
     "tags": [
       "Rust",
       "compiler",
@@ -1102,8 +1109,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-04T23:01:55Z",
-    "score": 106610,
+    "publishedAt": "2026-05-05T08:19:18Z",
+    "score": 106613,
     "tags": [
       "Rust",
       "deno",
@@ -1126,7 +1133,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-05T02:37:07Z",
-    "score": 106201,
+    "score": 106210,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1177,8 +1184,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-05T02:33:34Z",
-    "score": 84359,
+    "publishedAt": "2026-05-05T07:22:29Z",
+    "score": 84364,
     "tags": [
       "Rust",
       "packaging",
@@ -1200,8 +1207,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-05T03:29:19Z",
-    "score": 81664,
+    "publishedAt": "2026-05-05T08:24:15Z",
+    "score": 81693,
     "tags": [
       "Rust",
       "gpui",
@@ -1223,7 +1230,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-05-04T22:47:52Z",
-    "score": 80559,
+    "score": 80561,
     "tags": [
       "Java",
       "framework",
