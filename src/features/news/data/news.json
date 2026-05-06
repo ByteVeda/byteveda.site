@@ -178,29 +178,75 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:efc0639b82b6",
+    "id": "mastodon:54f56ef9acb0",
     "kind": "article",
     "source": "mastodon",
-    "title": "High Energy Magic - Status",
-    "url": "https://status.highenergymagic.net/",
-    "excerpt": "Status of High Energy Magic services",
-    "author": "Ra (Freyja) (it/its)𒀭𒈹𒍠𒊩",
-    "publishedAt": "2026-05-06T08:07:13.000Z",
-    "score": 10,
+    "title": "Via @ isotopp : 32.7 days of some form of # GitHub downtime in the past 170 days, as tracked by https:// red-squares.ci…",
+    "url": "https://mastodon.phoenixtrap.com/@mjg/116528048694895527",
+    "excerpt": "Via @ isotopp : 32.7 days of some form of # GitHub downtime in the past 170 days, as tracked by https:// red-squares.cian.lol . No, it doesn’t include scheduled service windows. My self-hosted # Forg…",
+    "author": "Mark Gardner",
+    "publishedAt": "2026-05-06T14:15:14.000Z",
+    "score": 6,
     "tags": [
-      "fedihired",
-      "infosec",
-      "cybersecurity",
-      "linux",
-      "unix",
-      "docker",
-      "sre",
-      "devops",
-      "getfedihired"
+      "github",
+      "forgejo",
+      "softwareengineering",
+      "softwaredevelopment",
+      "opensource",
+      "sre"
     ],
     "labels": [
-      "security",
+      "opensource",
       "devops"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:f8dc545c29ac",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Calling tinkerers, hardware hackers, and mesh enthusiasts: I have the following components: Raspberry PI Zero 2 W BME28…",
+    "url": "https://social.bitsnbytes.dev/@cdp1337/116527528259755922",
+    "excerpt": "Calling tinkerers, hardware hackers, and mesh enthusiasts: I have the following components: Raspberry PI Zero 2 W BME280 (temp/humidity/pressure) 128x64 OLED display Heltec V3 loaded with MeshCore I…",
+    "author": "Charlie",
+    "publishedAt": "2026-05-06T12:02:53.000Z",
+    "score": 11,
+    "tags": [
+      "meshcore",
+      "meshtastic",
+      "raspberrypi",
+      "weather",
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b650ac5bb74e",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Are you an MSc student looking for a thesis topic? Interested in Greenland/Antarctica atmosphere and ice sheet processe…",
+    "url": "https://fediscience.org/@Ruth_Mottram/116526976433626543",
+    "excerpt": "Are you an MSc student looking for a thesis topic? Interested in Greenland/Antarctica atmosphere and ice sheet processes? Background in meteorology, geography, earth science or physics (or other quan…",
+    "author": "Ruth Mottram",
+    "publishedAt": "2026-05-06T09:42:33.000Z",
+    "score": 74,
+    "tags": [
+      "mscthesis",
+      "academicchatter",
+      "greenland",
+      "antarctica",
+      "climatechange",
+      "meteorology",
+      "wx",
+      "glaciology",
+      "machinelearning",
+      "climatemodelling"
+    ],
+    "labels": [
+      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -213,7 +259,7 @@
     "excerpt": "# coreutils # Linux # Rust",
     "author": "Klaus Frank",
     "publishedAt": "2026-05-06T07:51:33.000Z",
-    "score": 6,
+    "score": 7,
     "tags": [
       "coreutils",
       "linux",
@@ -225,46 +271,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:31c929ece271",
+    "id": "rss:Hugging Face:351d00366b56",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Chrome Installs 4 GB Gemini Nano Without Asking",
-    "url": "https://awesomeagents.ai/news/chrome-gemini-nano-silent-install/",
-    "excerpt": "Google Chrome silently installs a 4 GB Gemini Nano model file on user devices with no consent prompt and re-downloads it if you delete it.",
-    "author": "Luca Sironi",
-    "publishedAt": "2026-05-06T07:11:46.000Z",
-    "score": 10,
+    "source": "rss",
+    "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-05-06T00:00:00.000Z",
+    "score": 0,
     "tags": [
-      "llm",
-      "chrome"
+      "Hugging Face"
     ],
     "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d83e8be5cfe8",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "RustNet v1.3.0 is out! 🎉 A major UI refresh, plus reverse DNS by default and QUIC parser hardening. - Revamped tabs, s…",
-    "url": "https://mastodon.social/@DomCyrus/116525805039267288",
-    "excerpt": "RustNet v1.3.0 is out! 🎉 A major UI refresh, plus reverse DNS by default and QUIC parser hardening. - Revamped tabs, stats panel and details view - Per-field colors with a 3-tier hierarchy - Status…",
-    "author": ":rocinante:",
-    "publishedAt": "2026-05-06T04:44:39.000Z",
-    "score": 9,
-    "tags": [
-      "rust",
-      "rustlang",
-      "opensource",
-      "networking",
-      "tui",
-      "linux",
-      "terminal"
-    ],
-    "labels": [
-      "rust",
-      "opensource"
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -274,10 +295,10 @@
     "source": "lobsters",
     "title": "krabby: making a fast Rust compiler",
     "url": "https://bal-e.org/speed/krabby/",
-    "excerpt": "18 points · compilers, rust",
+    "excerpt": "27 points · compilers, rust",
     "author": "aw1621107",
     "publishedAt": "2026-05-05T17:22:30.000-05:00",
-    "score": 18,
+    "score": 27,
     "tags": [
       "compilers",
       "rust"
@@ -296,7 +317,7 @@
     "excerpt": "I just came back from maternity leave. And honestly? I felt like I'd missed a decade in six months. I...",
     "author": "Rohini Gaonkar",
     "publishedAt": "2026-05-05T18:38:06Z",
-    "score": 36,
+    "score": 38,
     "tags": [
       "ai",
       "beginners",
@@ -314,10 +335,10 @@
     "source": "lobsters",
     "title": "One week of view_types",
     "url": "https://scrabsha.dev/articles/one-week-of-view-types.html",
-    "excerpt": "19 points · plt, rust",
+    "excerpt": "23 points · plt, rust",
     "author": "ana_glz",
     "publishedAt": "2026-05-05T10:53:32.000-05:00",
-    "score": 19,
+    "score": 23,
     "tags": [
       "plt",
       "rust"
@@ -389,7 +410,7 @@
     "excerpt": "Three years ago, if you asked me \"what do you do?\" I had an answer I'm a software developer. I write...",
     "author": "Harsh",
     "publishedAt": "2026-05-05T10:52:28Z",
-    "score": 57,
+    "score": 66,
     "tags": [
       "ai",
       "career",
@@ -481,10 +502,10 @@
     "source": "lobsters",
     "title": "Async Rust never left the MVP state",
     "url": "https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state",
-    "excerpt": "120 points · rust",
+    "excerpt": "123 points · rust",
     "author": "radim",
     "publishedAt": "2026-05-04T09:26:01.000-05:00",
-    "score": 120,
+    "score": 123,
     "tags": [
       "rust"
     ],
@@ -499,10 +520,10 @@
     "source": "lobsters",
     "title": "oops, cubic macro",
     "url": "https://bal-e.org/blog/2026/oops-cubic-macro/",
-    "excerpt": "33 points · rust",
+    "excerpt": "34 points · rust",
     "author": "polywolf",
     "publishedAt": "2026-05-04T08:17:06.000-05:00",
-    "score": 33,
+    "score": 34,
     "tags": [
       "rust"
     ],
@@ -679,7 +700,7 @@
     "excerpt": "The bare-minimum AI coding workflow—pick the right model, plan first, write AGENTS.md for agents not humans, and cross-check across LLMs before you blame the tool.",
     "author": "Ashley Childress",
     "publishedAt": "2026-05-02T19:30:01Z",
-    "score": 62,
+    "score": 85,
     "tags": [
       "ai",
       "agents",
@@ -744,22 +765,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:ac7d7f59acd7",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Inverse Sapir-Whorf and programming languages",
-    "url": "https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/",
-    "excerpt": "59 points · programming",
-    "author": "spookylukey",
-    "publishedAt": "2026-05-01T15:56:02.000-05:00",
-    "score": 59,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -768,7 +773,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-05T21:42:46Z",
-    "score": 432474,
+    "score": 432602,
     "tags": [
       "Python",
       "api",
@@ -800,7 +805,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-05T13:27:47Z",
-    "score": 387785,
+    "score": 387802,
     "tags": [
       "Python",
       "books",
@@ -823,7 +828,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-05T06:42:10Z",
-    "score": 296159,
+    "score": 296204,
     "tags": [
       "Python",
       "awesome",
@@ -847,7 +852,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-05-04T18:10:39Z",
-    "score": 220808,
+    "score": 220809,
     "tags": [
       "Python",
       "algorithm",
@@ -879,7 +884,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-06T06:41:27Z",
-    "score": 190279,
+    "score": 190342,
     "tags": [
       "Rust"
     ],
@@ -896,8 +901,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-06T08:35:56Z",
-    "score": 184019,
+    "publishedAt": "2026-05-06T14:21:35Z",
+    "score": 184029,
     "tags": [
       "Python",
       "agentic-ai",
@@ -927,7 +932,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-05-05T22:54:26Z",
-    "score": 160742,
+    "score": 160788,
     "tags": [
       "Python",
       "cli",
@@ -951,8 +956,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-06T08:35:12Z",
-    "score": 160296,
+    "publishedAt": "2026-05-06T14:14:41Z",
+    "score": 160306,
     "tags": [
       "Python",
       "audio",
@@ -991,7 +996,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-05T00:01:49Z",
-    "score": 155428,
+    "score": 155440,
     "tags": [
       "Java",
       "agent",
@@ -1021,8 +1026,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-06T04:53:03Z",
-    "score": 147753,
+    "publishedAt": "2026-05-06T14:39:00Z",
+    "score": 147768,
     "tags": [
       "Python",
       "agents",
@@ -1046,8 +1051,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-05T13:35:41Z",
-    "score": 113580,
+    "publishedAt": "2026-05-06T14:05:11Z",
+    "score": 113596,
     "tags": [
       "Rust",
       "android",
@@ -1083,8 +1088,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-06T06:55:54Z",
-    "score": 112556,
+    "publishedAt": "2026-05-06T13:58:57Z",
+    "score": 112564,
     "tags": [
       "Rust",
       "compiler",
@@ -1104,8 +1109,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-06T08:39:49Z",
-    "score": 106603,
+    "publishedAt": "2026-05-06T14:36:06Z",
+    "score": 106604,
     "tags": [
       "Rust",
       "deno",
@@ -1127,8 +1132,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-05T22:33:46Z",
-    "score": 106245,
+    "publishedAt": "2026-05-06T13:10:13Z",
+    "score": 106262,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1154,7 +1159,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-05-03T15:11:20Z",
-    "score": 93972,
+    "score": 93973,
     "tags": [
       "Java",
       "awesome-list",
@@ -1180,7 +1185,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-05-06T01:35:32Z",
-    "score": 84419,
+    "score": 84441,
     "tags": [
       "Rust",
       "packaging",
@@ -1202,8 +1207,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-06T08:32:17Z",
-    "score": 81895,
+    "publishedAt": "2026-05-06T14:30:05Z",
+    "score": 81935,
     "tags": [
       "Rust",
       "gpui",
@@ -1225,7 +1230,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-05-06T08:16:52Z",
-    "score": 80564,
+    "score": 80562,
     "tags": [
       "Java",
       "framework",
