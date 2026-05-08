@@ -178,91 +178,172 @@
     "mentionsByteveda": true
   },
   {
-    "id": "hashnode:869ce2d7362e",
+    "id": "mastodon:4710dca2b959",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Doubt Solver for NCERT Problems — All Classes All Subjects Solved by AI",
-    "url": "https://easelearnai.hashnode.dev/doubt-solver-for-ncert-problems-all-classes-all-subjects-solved-by-ai-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "AI Tutor for CBSE Board Exams 2026 — Complete Study Guide\nCBSE board exams are predictable. The same topics, same patterns, every year. An AI tutor helps you exploit these patterns.\nHow an AI Tutor H…",
-    "author": "Rahul Jaiswal",
-    "publishedAt": "2026-05-07T03:55:42.611Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "How To Enable Switching Between Windows within GNOME",
+    "url": "https://www.adamsdesk.com/posts/gnome-window-switching-keyboard-shortcut/",
+    "excerpt": "Follow these instructions on how to enable ALT + TAB keyboard shortcut to have window based switching without grouping by application in GNOME Shell.",
+    "author": "Adam",
+    "publishedAt": "2026-05-07T19:11:21.323Z",
+    "score": 5,
     "tags": [
-      "ai",
-      "all-subjects",
-      "doubt-solver",
-      "india",
-      "ncert"
+      "blog",
+      "archlinux",
+      "gnome",
+      "linux",
+      "technology",
+      "100DaysToOffload"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:4c120c6511e2",
+    "kind": "article",
+    "source": "rss",
+    "title": "Agent pull requests are everywhere. Here&#8217;s how to review them.",
+    "url": "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/",
+    "excerpt": "You&rsquo;ve probably already approved one without realizing it. The tests passed. The code was clean. You merged it. But it was agent-generated&mdash;and that ease of approval is exactly the problem…",
+    "author": "Andrea Griffiths",
+    "publishedAt": "2026-05-07T19:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:91e140faf169",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Library dependency version specifiers aren't for fixing vulnerabilities",
+    "url": "https://sethmlarson.dev/library-version-specifiers-not-for-vulnerabilities",
+    "excerpt": "Let's say you are the maintainer of a Python library that depends on another \nPython library like “urllib3”.\nBecause you want to make sure users receive a compatible version\nof urllib3 you add a ve...",
+    "author": "Seth Larson",
+    "publishedAt": "2026-05-07T17:11:56.000Z",
+    "score": 28,
+    "tags": [
+      "python",
+      "security",
+      "oss",
+      "opensource",
+      "vulnerability"
     ],
     "labels": [
-      "ai"
+      "python",
+      "security",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:c51944b2386e",
+    "id": "mastodon:55e5b5540bc3",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Doubt Solver for School Homework — AI Helps Complete Assignments Faster",
-    "url": "https://ai-2026.hashnode.dev/doubt-solver-for-school-homework-ai-helps-complete-assignments-faster-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "AI Tutor for Students Who Study at Night — Solve Doubts at 2 AM\nMost students study at night. Most tutors are asleep. An AI tutor fixes this.\nThe Night Study Problem\nYou are solving problems at 11 PM…",
-    "author": "Aditiya Samay",
-    "publishedAt": "2026-05-07T03:46:00.404Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "🎉 Go 1.26.3 and 1.25.10 are released! 🔐 Security: Includes 11 security fixes to the standard library and the toolchai…",
+    "url": "https://hachyderm.io/@golang/116534252497857496",
+    "excerpt": "🎉 Go 1.26.3 and 1.25.10 are released! 🔐 Security: Includes 11 security fixes to the standard library and the toolchain. 📡 Announcement: https:// groups.google.com/g/golang-ann ounce/c/qcCIEXso47M/…",
+    "author": "golang",
+    "publishedAt": "2026-05-07T16:32:57.000Z",
+    "score": 9,
     "tags": [
-      "ai",
-      "assignments",
-      "doubt-solver",
-      "homework",
-      "india"
+      "golang"
     ],
     "labels": [
-      "ai"
+      "go"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:e9b8bf4554e7",
+    "id": "mastodon:66c50d0e9796",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Robust breast cancer detection in mammography and digital breast tomosynthesisusing annotation-efficient deep learning approach",
-    "url": "https://paperium.hashnode.dev/robust-breast-cancer-detection-in-mammography-and-digital-breast-tomosynthesisusing-annotation-efficient-deep-learning-approach",
-    "excerpt": "Deep learning for mammographic cancer detection: an interpretive review Context and objectives At first glance the work under review tackles a familiar but stubborn problem: improving the accuracy an…",
-    "author": "Paperium net",
-    "publishedAt": "2026-05-07T03:40:18.328Z",
-    "score": 1,
+    "source": "mastodon",
+    "title": "NLnet Labs with Arya Khanna and Martin Hoffmann - Rust in Production Podcast | corrode Rust Consulting",
+    "url": "https://corrode.dev/podcast/s06e03-nlnet-labs/",
+    "excerpt": "Every time you load a website, send an email, or up…",
+    "author": "Matthias Endler",
+    "publishedAt": "2026-05-07T16:16:12.000Z",
+    "score": 19,
     "tags": [
-      "ai",
-      "deeplearning",
-      "computerscience",
-      "machinelearning"
+      "rustlang",
+      "rust"
     ],
     "labels": [
-      "ai",
-      "ml"
+      "rust"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:00d0c6d5d633",
+    "id": "rss:Mozilla Hacks:ce4a5c4f662d",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Doubt Solver for NCERT Problems — All Classes All Subjects Solved by AI",
-    "url": "https://easelearnai.hashnode.dev/doubt-solver-for-ncert-problems-all-classes-all-subjects-solved-by-ai-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "AI Tutor for CBSE Board Exams 2026 — Complete Study Guide\nCBSE board exams are predictable. The same topics, same patterns, every year. An AI tutor helps you exploit these patterns.\nHow an AI Tutor H…",
-    "author": "Rahul Jaiswal",
-    "publishedAt": "2026-05-07T03:39:30.139Z",
-    "score": 1,
+    "source": "rss",
+    "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+    "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+    "excerpt": "@media all and (min-width: 640px) { .post p, .post ul, .post ol, .post dl, .post pre { max-width: initial; } .post table td, .post table th { vertical-align: top; } } Two weeks ago we announced that…",
+    "author": "Brian Grinstead",
+    "publishedAt": "2026-05-07T16:01:21.000Z",
+    "score": 0,
     "tags": [
-      "ai",
-      "all-subjects",
-      "doubt-solver",
-      "india",
-      "ncert"
+      "Mozilla Hacks"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:45fbca6cdb78",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "We’re rethinking the conference # Hackathon format by launching a HaCLAthon (C=Collaborative, L=Long-term, A=Asynchrono…",
+    "url": "https://himself.alexanderdunkel.com/@alex/116533019090542147",
+    "excerpt": "We’re rethinking the conference # Hackathon format by launching a HaCLAthon (C=Collaborative, L=Long-term, A=Asynchronous) [1] for the # IOER 2026 conference. [2] The goal is a living # JupyterBook t…",
+    "author": "Alexander Dunkel",
+    "publishedAt": "2026-05-07T11:19:17.000Z",
+    "score": 5,
+    "tags": [
+      "hackathon",
+      "ioer",
+      "JupyterBook",
+      "datascience",
+      "git",
+      "jupytext",
+      "golang",
+      "dsgvo",
+      "decapcms",
+      "gitlab",
+      "jupyter4nfdi",
+      "docker",
+      "openscience",
+      "opendata",
+      "sustainability",
+      "jupyter",
+      "devops",
+      "gis",
+      "infrastructure",
+      "haclathon"
     ],
     "labels": [
-      "ai"
+      "go",
+      "devops"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:5ef1fb21d1c0",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Programming Still Sucks",
+    "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
+    "excerpt": "42 points · culture, practices",
+    "author": "dubiouslittlecreature",
+    "publishedAt": "2026-05-07T02:03:27.000-05:00",
+    "score": 42,
+    "tags": [
+      "culture",
+      "practices"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -290,82 +371,17 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:b128ccff55bd",
+    "id": "rss:Python Insider:6357001ff46e",
     "kind": "article",
-    "source": "hashnode",
-    "title": "Unlocking Growth Through Content Affiliate Marketing: A Comprehensive Guide | Optimize Your Online Presence with Smart Partnerships",
-    "url": "https://ai-businessman.hashnode.dev/unlocking-growth-through-content-affiliate-marketing--a-comprehensive-guide---optimize-your-online-p",
-    "excerpt": "Unlocking Growth Through Content Affiliate Marketing: A Comprehensive Guide | Optimize Your Online Presence with Smart Partnerships\nIntroduction\nIn today's digital age, content affiliate marketing ha…",
-    "author": "Factor Mind",
-    "publishedAt": "2026-05-07T03:30:50.732Z",
-    "score": 1,
+    "source": "rss",
+    "title": "Python 3.15.0 beta 1 is here!",
+    "url": "https://blog.python.org/2026/05/python-3150-beta-1/",
+    "excerpt": "The propreantepenultimate 3.15 beta is out!",
+    "author": "Hugo van Kemenade",
+    "publishedAt": "2026-05-07T00:00:00.000Z",
+    "score": 0,
     "tags": [
-      "ai",
-      "automation",
-      "saas"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:abb1e0b3c5b3",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Doubt Solver for School Homework — AI Helps Complete Assignments Faster",
-    "url": "https://ai-2026.hashnode.dev/doubt-solver-for-school-homework-ai-helps-complete-assignments-faster-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "AI Tutor for Students Who Study at Night — Solve Doubts at 2 AM\nMost students study at night. Most tutors are asleep. An AI tutor fixes this.\nThe Night Study Problem\nYou are solving problems at 11 PM…",
-    "author": "Aditiya Samay",
-    "publishedAt": "2026-05-07T03:29:44.415Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "assignments",
-      "doubt-solver",
-      "homework",
-      "india"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "hashnode:a9635787dbe3",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "Doubt Solver for NCERT Problems — All Classes All Subjects Solved by AI",
-    "url": "https://easelearnai.hashnode.dev/doubt-solver-for-ncert-problems-all-classes-all-subjects-solved-by-ai-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
-    "excerpt": "AI Tutor for CBSE Board Exams 2026 — Complete Study Guide\nCBSE board exams are predictable. The same topics, same patterns, every year. An AI tutor helps you exploit these patterns.\nHow an AI Tutor H…",
-    "author": "Rahul Jaiswal",
-    "publishedAt": "2026-05-07T03:23:05.906Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "all-subjects",
-      "doubt-solver",
-      "india",
-      "ncert"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:2890e7febe95",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python Tip #126 (of 365): Prefer to return expressions instead of variables If a variable name would make the meaning o…",
-    "url": "https://mastodon.social/@treyhunner/116530876892315524",
-    "excerpt": "Python Tip #126 (of 365): Prefer to return expressions instead of variables If a variable name would make the meaning of the expression more understandable, ask yourself \"does my function name convey…",
-    "author": "Trey Hunner 🐍",
-    "publishedAt": "2026-05-07T02:14:29.000Z",
-    "score": 6,
-    "tags": [
-      "python",
-      "dailypythontip"
+      "Python Insider"
     ],
     "labels": [
       "python"
@@ -373,22 +389,24 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:cdbed8f498e2",
+    "id": "lobsters:af3060304a19",
     "kind": "article",
-    "source": "mastodon",
-    "title": "RE: https:// wandering.shop/@LAcon/11652870 9912868061 I’m proud that my work ( https:// nomnom.fans/ ) is helping to m…",
-    "url": "https://wandering.shop/@offby1/116530740645057750",
-    "excerpt": "RE: https:// wandering.shop/@LAcon/11652870 9912868061 I’m proud that my work ( https:// nomnom.fans/ ) is helping to make the # HugoAwards happen again this year. When you vote in the Hugo Awards, o…",
-    "author": "Chris is.",
-    "publishedAt": "2026-05-07T01:39:50.000Z",
-    "score": 20,
+    "source": "lobsters",
+    "title": "Google’s Prompt API",
+    "url": "https://wil.to/posts/googles-prompt-api/",
+    "excerpt": "19 points · ai, javascript, web",
+    "author": "outervale",
+    "publishedAt": "2026-05-06T18:45:14.000-05:00",
+    "score": 19,
     "tags": [
-      "hugoawards",
-      "python",
-      "django"
+      "ai",
+      "javascript",
+      "web"
     ],
     "labels": [
-      "python"
+      "ai",
+      "typescript",
+      "webdev"
     ],
     "mentionsByteveda": false
   },
@@ -406,28 +424,6 @@
       "GitHub Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:87e9d3c93795",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "etter: Natural language location – Spatialists – geospatial news",
-    "url": "https://spatialists.ch/posts/2026/05/06-etter-natural-language-location/",
-    "excerpt": "etter is a new open‑source #Python package that turns natural language location queries into GeoJSON geometries, focusing purely on the spatial component of the query. It supports multilingual input, a range of spatial relations, and integrates with common geodata sources and #LLMs. #NLP",
-    "author": "Spatialists",
-    "publishedAt": "2026-05-06T20:59:50.000Z",
-    "score": 5,
-    "tags": [
-      "python",
-      "gis",
-      "gischat",
-      "geospatial",
-      "swissgis"
-    ],
-    "labels": [
-      "python"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -453,7 +449,7 @@
     "id": "rss:Stack Overflow Blog:19722ff52b25",
     "kind": "article",
     "source": "rss",
-    "title": "How we replaced NGINX-Ingress at Stack Overflow",
+    "title": "How we replaced Ingress-NGINX at Stack Overflow",
     "url": "https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/",
     "excerpt": "Ingress-NGINX had been handling our traffic routing since moving to Kubernetes, but when it was announced it would be retired, we were forced to consider a new traffic routing solution.",
     "author": "Michael Frank",
@@ -466,6 +462,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:ad2d4dbbc80d",
+    "kind": "article",
+    "source": "devto",
+    "title": "AI vs Non-AI: Building the Same Project Twice",
+    "url": "https://dev.to/nandofm/ai-vs-non-ai-building-the-same-project-twice-4073",
+    "excerpt": "When I was implementing my weather station system, I asked myself: what if I built it again but this...",
+    "author": "Fernando Fornieles",
+    "publishedAt": "2026-05-06T17:33:24Z",
+    "score": 34,
+    "tags": [
+      "ai",
+      "softwareengineering",
+      "discuss",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "devto:69fb6bccdd1d",
     "kind": "article",
     "source": "devto",
@@ -474,7 +491,7 @@
     "excerpt": "I want an AI agent that works for me. I want it to search up the latest news, and I want it to...",
     "author": "Erik Hanchett",
     "publishedAt": "2026-05-06T16:00:47Z",
-    "score": 30,
+    "score": 40,
     "tags": [
       "aws",
       "ai",
@@ -484,6 +501,107 @@
     "labels": [
       "ai"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:14ef3188e773",
+    "kind": "article",
+    "source": "devto",
+    "title": "Amazon Bedrock AgentCore Harness runs your agent. ShapeV2 controls what it's allowed to do",
+    "url": "https://dev.to/aws-builders/agentcore-harness-runs-your-agent-shapev2-controls-what-its-allowed-to-do-32ab",
+    "excerpt": "Amazon Web Services (AWS) just shipped Amazon Bedrock AgentCore harness harness in public preview. It...",
+    "author": "Alexey Vidanov",
+    "publishedAt": "2026-05-06T14:58:05Z",
+    "score": 31,
+    "tags": [
+      "ai",
+      "aws",
+      "python",
+      "agents"
+    ],
+    "labels": [
+      "ai",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:e62bf60d5d07",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Open weights are quietly closing up - and that's a problem",
+    "url": "https://martinalderson.com/posts/open-weights-are-quietly-closing-up/",
+    "excerpt": "43 points · ai",
+    "author": "martinald",
+    "publishedAt": "2026-05-06T09:47:37.000-05:00",
+    "score": 43,
+    "tags": [
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:4555b141d518",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Programmed an AI in 6502 Assembly - It Worked",
+    "url": "https://dev.to/newellpaul/i-programmed-an-ai-in-6502-assembly-it-worked-gpi",
+    "excerpt": "In 1975 the 6502 processed 8-bit values through memory and control flow. A Claude Code skill now uses...",
+    "author": "Paul Newell",
+    "publishedAt": "2026-05-06T12:21:00Z",
+    "score": 48,
+    "tags": [
+      "ai",
+      "webdev",
+      "programming",
+      "productivity"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:f2bb45cfb992",
+    "kind": "article",
+    "source": "devto",
+    "title": "A much faster mgsub",
+    "url": "https://dev.to/pofigster/a-much-faster-mgsub-46f",
+    "excerpt": "Celebrating a new release of the 1154th most download R package!",
+    "author": "Mark",
+    "publishedAt": "2026-05-06T12:00:00Z",
+    "score": 29,
+    "tags": [
+      "opensource",
+      "performance",
+      "programming",
+      "showdev"
+    ],
+    "labels": [
+      "opensource",
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:2afa25dd3efb",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Programming Is Real Engineering, And AI Proves It",
+    "url": "https://jerf.org/iri/post/2026/programming_is_engineering/",
+    "excerpt": "16 points · practices, vibecoding",
+    "author": "abhin4v",
+    "publishedAt": "2026-05-06T04:13:55.000-05:00",
+    "score": 16,
+    "tags": [
+      "practices",
+      "vibecoding"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -511,10 +629,10 @@
     "source": "lobsters",
     "title": "krabby: making a fast Rust compiler",
     "url": "https://bal-e.org/speed/krabby/",
-    "excerpt": "36 points · compilers, rust",
+    "excerpt": "37 points · compilers, rust",
     "author": "aw1621107",
     "publishedAt": "2026-05-05T17:22:30.000-05:00",
-    "score": 36,
+    "score": 37,
     "tags": [
       "compilers",
       "rust"
@@ -533,7 +651,7 @@
     "excerpt": "I just came back from maternity leave. And honestly? I felt like I'd missed a decade in six months. I...",
     "author": "Rohini Gaonkar",
     "publishedAt": "2026-05-05T18:38:06Z",
-    "score": 47,
+    "score": 53,
     "tags": [
       "ai",
       "beginners",
@@ -581,6 +699,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:eb727042dcea",
+    "kind": "article",
+    "source": "devto",
+    "title": "Wormhole4j v0.3.0: Supports Multi-threaded Concurrency",
+    "url": "https://dev.to/komamitsu/wormhole4j-v030-supports-multi-threaded-concurrency-2fjb",
+    "excerpt": "Introduction Wormhole4j is a Java implementation of the Wormhole index, an ordered...",
+    "author": "Mitsunori Komatsu",
+    "publishedAt": "2026-05-05T15:06:12Z",
+    "score": 30,
+    "tags": [
+      "java",
+      "map",
+      "performance",
+      "datastructure"
+    ],
+    "labels": [
+      "java",
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:GitHub Blog:30a6c60710e7",
     "kind": "article",
     "source": "rss",
@@ -597,23 +737,22 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:18e1e96c4337",
+    "id": "lobsters:a0c200beb930",
     "kind": "article",
-    "source": "devto",
-    "title": "The Next Casualty of the GenAI Revolution",
-    "url": "https://dev.to/aws/the-next-casualty-of-the-genai-revolution-3in7",
-    "excerpt": "I was at an event this morning where someone said something that really resonated with me. \"The new...",
-    "author": "Maish Saidel-Keesing",
-    "publishedAt": "2026-05-05T13:25:34Z",
-    "score": 39,
+    "source": "lobsters",
+    "title": "Behavior-Oriented Concurrency for Python: Lock-less, Deadlock-free, Ownership-based",
+    "url": "https://microsoft.github.io/bocpy/",
+    "excerpt": "16 points · plt, python, vibecoding",
+    "author": "eatonphil",
+    "publishedAt": "2026-05-05T09:00:58.000-05:00",
+    "score": 16,
     "tags": [
-      "ai",
-      "cloud",
-      "aws",
-      "genai"
+      "plt",
+      "python",
+      "vibecoding"
     ],
     "labels": [
-      "ai"
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -626,7 +765,7 @@
     "excerpt": "Three years ago, if you asked me \"what do you do?\" I had an answer I'm a software developer. I write...",
     "author": "Harsh",
     "publishedAt": "2026-05-05T10:52:28Z",
-    "score": 84,
+    "score": 107,
     "tags": [
       "ai",
       "career",
@@ -639,139 +778,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:93c084700b1e",
-    "kind": "article",
-    "source": "rss",
-    "title": "What (un)exactly do you mean by semantic search?",
-    "url": "https://stackoverflow.blog/2026/05/05/what-un-exactly-do-you-mean-by-semantic-search/",
-    "excerpt": "Ryan welcomes Brian O’Grady, Head of Field Research and Solutions Architecture at Qdrant, to discuss the differences between traditional text search engines powered by Lucene and modern vector databa…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-05-05T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:25905859c80a",
-    "kind": "article",
-    "source": "devto",
-    "title": "VR Coding for the AI Coding Era - Monitoring 5 AI Agents at Once",
-    "url": "https://dev.to/samchon/vr-coding-for-the-ai-coding-era-watching-5-ai-agents-at-once-53gj",
-    "excerpt": "TL;DR AI coding creates dead time. While one agent is thinking, building, or testing,...",
-    "author": "Jeongho Nam",
-    "publishedAt": "2026-05-04T16:52:20Z",
-    "score": 38,
-    "tags": [
-      "ai",
-      "vr",
-      "productivity",
-      "programming"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:45a489221d5a",
-    "kind": "article",
-    "source": "rss",
-    "title": "Register now for OpenClaw: After Hours @ GitHub",
-    "url": "https://github.blog/open-source/register-now-for-openclaw-after-hours-github/",
-    "excerpt": "OpenClaw , one of the fastest-growing open source projects, has already picked up over 350,000 stars and an early community of builders exploring what agentic systems can actually do in practice. Tha…",
-    "author": "Lee Reilly",
-    "publishedAt": "2026-05-04T15:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:a45da25f1e2f",
-    "kind": "article",
-    "source": "devto",
-    "title": "The 4 Cognitive Archetypes of Developers Using AI",
-    "url": "https://dev.to/javz/the-4-cognitive-archetypes-of-developers-using-ai-382n",
-    "excerpt": "Lately, I’ve been reflecting on something: The question for most developers is no longer \"Are you...",
-    "author": "Julien Avezou",
-    "publishedAt": "2026-05-04T14:47:35Z",
-    "score": 82,
-    "tags": [
-      "ai",
-      "productivity",
-      "learning",
-      "softwareengineering"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:8eef40b793cf",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Async Rust never left the MVP state",
-    "url": "https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state",
-    "excerpt": "124 points · rust",
-    "author": "radim",
-    "publishedAt": "2026-05-04T09:26:01.000-05:00",
-    "score": 124,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:20482727abca",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "oops, cubic macro",
-    "url": "https://bal-e.org/blog/2026/oops-cubic-macro/",
-    "excerpt": "34 points · rust",
-    "author": "polywolf",
-    "publishedAt": "2026-05-04T08:17:06.000-05:00",
-    "score": 34,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:65263521f655",
-    "kind": "article",
-    "source": "devto",
-    "title": "Managing 150+ AI Agent Skills at Scale — What Broke, What I Built",
-    "url": "https://dev.to/vystartasv/managing-150-ai-agent-skills-at-scale-what-broke-what-i-built-1e73",
-    "excerpt": "By Vilius Vystartas | May 2026 I run a lot of AI agents. Not chatbots — autonomous agents. Cron jobs...",
-    "author": "Vilius",
-    "publishedAt": "2026-05-04T12:16:27Z",
-    "score": 30,
-    "tags": [
-      "ai",
-      "python",
-      "opensource",
-      "sqlite"
-    ],
-    "labels": [
-      "ai",
-      "python",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -780,7 +786,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-06T21:59:59Z",
-    "score": 432797,
+    "score": 433022,
     "tags": [
       "Python",
       "api",
@@ -812,7 +818,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-07T01:36:45Z",
-    "score": 387818,
+    "score": 387871,
     "tags": [
       "Python",
       "books",
@@ -834,8 +840,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-05-05T06:42:10Z",
-    "score": 296277,
+    "publishedAt": "2026-05-07T13:14:48Z",
+    "score": 296397,
     "tags": [
       "Python",
       "awesome",
@@ -859,7 +865,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-05-04T18:10:39Z",
-    "score": 220820,
+    "score": 220845,
     "tags": [
       "Python",
       "algorithm",
@@ -891,7 +897,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-06T06:41:27Z",
-    "score": 190420,
+    "score": 190561,
     "tags": [
       "Rust"
     ],
@@ -908,8 +914,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-07T02:45:35Z",
-    "score": 184039,
+    "publishedAt": "2026-05-07T19:51:36Z",
+    "score": 184054,
     "tags": [
       "Python",
       "agentic-ai",
@@ -939,7 +945,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-05-05T22:54:26Z",
-    "score": 160864,
+    "score": 160969,
     "tags": [
       "Python",
       "cli",
@@ -963,8 +969,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-07T02:55:35Z",
-    "score": 160326,
+    "publishedAt": "2026-05-07T19:50:10Z",
+    "score": 160365,
     "tags": [
       "Python",
       "audio",
@@ -1002,8 +1008,8 @@
     "url": "https://github.com/Snailclimb/JavaGuide",
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
-    "publishedAt": "2026-05-05T00:01:49Z",
-    "score": 155445,
+    "publishedAt": "2026-05-07T14:54:19Z",
+    "score": 155463,
     "tags": [
       "Java",
       "agent",
@@ -1033,8 +1039,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-07T01:07:13Z",
-    "score": 147790,
+    "publishedAt": "2026-05-07T19:44:10Z",
+    "score": 147821,
     "tags": [
       "Python",
       "agents",
@@ -1058,8 +1064,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-06T14:05:11Z",
-    "score": 113631,
+    "publishedAt": "2026-05-07T15:59:43Z",
+    "score": 113679,
     "tags": [
       "Rust",
       "android",
@@ -1095,8 +1101,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-07T02:06:53Z",
-    "score": 112579,
+    "publishedAt": "2026-05-07T19:46:00Z",
+    "score": 112610,
     "tags": [
       "Rust",
       "compiler",
@@ -1116,8 +1122,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-07T03:03:27Z",
-    "score": 106603,
+    "publishedAt": "2026-05-07T19:43:05Z",
+    "score": 106610,
     "tags": [
       "Rust",
       "deno",
@@ -1140,7 +1146,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-07T01:45:12Z",
-    "score": 106281,
+    "score": 106316,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1166,7 +1172,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-05-03T15:11:20Z",
-    "score": 93976,
+    "score": 93972,
     "tags": [
       "Java",
       "awesome-list",
@@ -1191,8 +1197,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-07T02:01:44Z",
-    "score": 84452,
+    "publishedAt": "2026-05-07T18:20:29Z",
+    "score": 84504,
     "tags": [
       "Rust",
       "packaging",
@@ -1214,8 +1220,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-06T22:41:48Z",
-    "score": 82030,
+    "publishedAt": "2026-05-07T19:29:55Z",
+    "score": 82143,
     "tags": [
       "Rust",
       "gpui",
@@ -1229,24 +1235,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bafe5a24351b",
+    "id": "github-trending:83c4d873e34c",
     "kind": "trending",
     "source": "github",
-    "title": "spring-projects/spring-boot",
-    "url": "https://github.com/spring-projects/spring-boot",
-    "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
-    "author": "spring-projects",
-    "publishedAt": "2026-05-06T08:16:52Z",
-    "score": 80568,
+    "title": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "excerpt": "Lightweight coding agent that runs in your terminal",
+    "author": "openai",
+    "publishedAt": "2026-05-07T19:51:07Z",
+    "score": 80676,
     "tags": [
-      "Java",
-      "framework",
-      "java",
-      "spring",
-      "spring-boot"
+      "Rust"
     ],
     "labels": [
-      "java"
+      "rust"
     ],
     "mentionsByteveda": false
   }
