@@ -212,29 +212,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "hashnode:fa8065cf034f",
-    "kind": "article",
-    "source": "hashnode",
-    "title": "AI Is Breaking Two Vulnerability Cultures — And Vibe Coders Are About to Get Caught in the Middle",
-    "url": "https://layerzero.hashnode.dev/ai-is-breaking-two-vulnerability-cultures-and-vibe-coders-are-about-to-get-caught-in-the-middle",
-    "excerpt": "Two security cultures used to coexist quietly. AI just broke both of them in the same quarter — and if you ship with Claude, Cursor, or Copilot, you are standing exactly where the fallout lands.\nThis…",
-    "author": "Byakko",
-    "publishedAt": "2026-05-09T00:20:59.553Z",
-    "score": 1,
-    "tags": [
-      "ai",
-      "devops",
-      "security",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "devops",
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "hashnode:a8f2eb691dc1",
     "kind": "article",
     "source": "hashnode",
@@ -253,26 +230,6 @@
     "labels": [
       "ai",
       "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:53c8f5dccbe7",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Unit Testing TkInter Apps (Shallow Thoughts)",
-    "url": "https://shallowsky.com/blog/programming/tkinter-unittest.html",
-    "excerpt": "I&#39;ve been spending a lot of time this past week learning how to write unit tests for # Python # TkInter GUI apps, something I&#39;ve been wanting for quite a long time. I couldn&#39;t find much i…",
-    "author": "Akkana Peck",
-    "publishedAt": "2026-05-08T19:58:24.282Z",
-    "score": 16,
-    "tags": [
-      "python",
-      "tkinter",
-      "testing"
-    ],
-    "labels": [
-      "python"
     ],
     "mentionsByteveda": false
   },
@@ -322,10 +279,10 @@
     "source": "lobsters",
     "title": "What We Lost the Last Time Code Got Cheap",
     "url": "https://www.poppastring.com/blog/what-we-lost-the-last-time-code-got-cheap",
-    "excerpt": "21 points · practices, vibecoding",
+    "excerpt": "26 points · practices, vibecoding",
     "author": "rwdf",
     "publishedAt": "2026-05-08T11:55:25.000-05:00",
-    "score": 21,
+    "score": 26,
     "tags": [
       "practices",
       "vibecoding"
@@ -342,7 +299,7 @@
     "excerpt": "Love it! Well said! # golang # programming https:// blainsmith.com/articles/just-f ucking-use-go/",
     "author": "MysticBasil 🇺🇦",
     "publishedAt": "2026-05-08T16:48:37.000Z",
-    "score": 7,
+    "score": 8,
     "tags": [
       "golang",
       "programming"
@@ -366,28 +323,6 @@
       "GitHub Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d08f43c96671",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Now that Piper TTS has made it to iOS and is relatively stable on newer devices, I'd like to create a Community hub of…",
-    "url": "https://dragonscave.space/@ZBennoui/116539832364703442",
-    "excerpt": "Now that Piper TTS has made it to iOS and is relatively stable on newer devices, I'd like to create a Community hub of sorts, where people can upload voices they've created for it. To go along with t…",
-    "author": "Zach Bennoui",
-    "publishedAt": "2026-05-08T16:11:59.000Z",
-    "score": 13,
-    "tags": [
-      "tts",
-      "opensource",
-      "piper",
-      "machinelearning"
-    ],
-    "labels": [
-      "opensource",
-      "ml"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -515,10 +450,10 @@
     "source": "lobsters",
     "title": "Why Don’t Lowercase Letters Come Right After Uppercase Letters in ASCII?",
     "url": "https://tylerhillery.com/blog/why-dont-lowercase-chars-come-after-upper/",
-    "excerpt": "51 points · historical, programming",
+    "excerpt": "52 points · historical, programming",
     "author": "alpaylan",
     "publishedAt": "2026-05-07T17:13:16.000-05:00",
-    "score": 51,
+    "score": 52,
     "tags": [
       "historical",
       "programming"
@@ -535,7 +470,7 @@
     "excerpt": "The results are in! We are thrilled to announce the winners of the OpenClaw Challenge. Over the past...",
     "author": "Jess Lee",
     "publishedAt": "2026-05-07T21:27:14Z",
-    "score": 68,
+    "score": 70,
     "tags": [
       "devchallenge",
       "openclawchallenge",
@@ -759,6 +694,64 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Stack Overflow Blog:19722ff52b25",
+    "kind": "article",
+    "source": "rss",
+    "title": "How we replaced Ingress-NGINX at Stack Overflow",
+    "url": "https://stackoverflow.blog/2026/05/06/how-we-replaced-nginx-ingress-at-stack-overflow/",
+    "excerpt": "Ingress-NGINX had been handling our traffic routing since moving to Kubernetes, but when it was announced it would be retired, we were forced to consider a new traffic routing solution.",
+    "author": "Michael Frank",
+    "publishedAt": "2026-05-06T18:47:46.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:ad2d4dbbc80d",
+    "kind": "article",
+    "source": "devto",
+    "title": "AI vs Non-AI: Building the Same Project Twice",
+    "url": "https://dev.to/nandofm/ai-vs-non-ai-building-the-same-project-twice-4073",
+    "excerpt": "When I was implementing my weather station system, I asked myself: what if I built it again but this...",
+    "author": "Fernando Fornieles",
+    "publishedAt": "2026-05-06T17:33:24Z",
+    "score": 38,
+    "tags": [
+      "ai",
+      "softwareengineering",
+      "discuss",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:69fb6bccdd1d",
+    "kind": "article",
+    "source": "devto",
+    "title": "Build Your Own AI Butler - A Scheduled Agent That Runs Itself!",
+    "url": "https://dev.to/aws/build-your-own-ai-butler-a-scheduled-agent-that-runs-itself-3dmk",
+    "excerpt": "I want an AI agent that works for me. I want it to search up the latest news, and I want it to...",
+    "author": "Erik Hanchett",
+    "publishedAt": "2026-05-06T16:00:47Z",
+    "score": 56,
+    "tags": [
+      "aws",
+      "ai",
+      "agents",
+      "tutorial"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -767,7 +760,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-08T06:18:53Z",
-    "score": 433366,
+    "score": 433414,
     "tags": [
       "Python",
       "api",
@@ -799,7 +792,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-07T01:36:45Z",
-    "score": 387927,
+    "score": 387931,
     "tags": [
       "Python",
       "books",
@@ -822,7 +815,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-07T13:14:48Z",
-    "score": 296629,
+    "score": 296664,
     "tags": [
       "Python",
       "awesome",
@@ -846,7 +839,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-05-04T18:10:39Z",
-    "score": 220885,
+    "score": 220880,
     "tags": [
       "Python",
       "algorithm",
@@ -877,8 +870,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-05-06T06:41:27Z",
-    "score": 190754,
+    "publishedAt": "2026-05-09T06:52:55Z",
+    "score": 190789,
     "tags": [
       "Rust"
     ],
@@ -895,8 +888,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-09T03:52:52Z",
-    "score": 184102,
+    "publishedAt": "2026-05-09T06:07:38Z",
+    "score": 184105,
     "tags": [
       "Python",
       "agentic-ai",
@@ -926,7 +919,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-05-05T22:54:26Z",
-    "score": 161169,
+    "score": 161212,
     "tags": [
       "Python",
       "cli",
@@ -950,8 +943,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-08T19:23:28Z",
-    "score": 160405,
+    "publishedAt": "2026-05-09T04:14:52Z",
+    "score": 160408,
     "tags": [
       "Python",
       "audio",
@@ -990,7 +983,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-08T16:02:35Z",
-    "score": 155504,
+    "score": 155510,
     "tags": [
       "Java",
       "agent",
@@ -1020,7 +1013,7 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-09T03:43:53Z",
+    "publishedAt": "2026-05-09T05:11:17Z",
     "score": 147874,
     "tags": [
       "Python",
@@ -1046,7 +1039,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-08T15:31:55Z",
-    "score": 113751,
+    "score": 113767,
     "tags": [
       "Rust",
       "android",
@@ -1082,7 +1075,7 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-09T03:03:39Z",
+    "publishedAt": "2026-05-09T07:33:35Z",
     "score": 112627,
     "tags": [
       "Rust",
@@ -1103,8 +1096,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-09T02:09:58Z",
-    "score": 106617,
+    "publishedAt": "2026-05-09T08:08:36Z",
+    "score": 106622,
     "tags": [
       "Rust",
       "deno",
@@ -1127,7 +1120,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-09T03:06:54Z",
-    "score": 106366,
+    "score": 106375,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1178,8 +1171,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-09T01:46:02Z",
-    "score": 84599,
+    "publishedAt": "2026-05-09T05:15:14Z",
+    "score": 84609,
     "tags": [
       "Rust",
       "packaging",
@@ -1201,8 +1194,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-09T02:49:35Z",
-    "score": 82264,
+    "publishedAt": "2026-05-09T05:41:31Z",
+    "score": 82276,
     "tags": [
       "Rust",
       "gpui",
@@ -1223,8 +1216,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-09T03:52:49Z",
-    "score": 81066,
+    "publishedAt": "2026-05-09T07:40:00Z",
+    "score": 81145,
     "tags": [
       "Rust"
     ],
