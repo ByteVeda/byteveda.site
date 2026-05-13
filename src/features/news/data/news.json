@@ -218,6 +218,136 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:d820d4483037",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "If you drop (or throw) your new Steam Controller it will scream at you",
+    "url": "https://www.gamingonlinux.com/2026/05/if-you-drop-or-throw-your-new-steam-controller-it-will-scream-at-you/",
+    "excerpt": "Ah the Wilhelm scream, we've all heard it right? Well, Valve snuck a little Easter Egg into the new Steam Controller when you drop it.",
+    "author": "Liam @ GamingOnLinux 🐧🎮",
+    "publishedAt": "2026-05-13T08:44:20.000Z",
+    "score": 49,
+    "tags": [
+      "steamcontroller",
+      "linux",
+      "steamos",
+      "valve",
+      "pcgaming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:fb24b5bfeda0",
+    "kind": "article",
+    "source": "mastodon",
+    "title": ":tux: Während wir gerade alle feiern, wie geil # Linux inzwischen ist und ich gerade ein butterweich laufendes Resident…",
+    "url": "https://fedifreu.de/@cryptgoat/116566353335717468",
+    "excerpt": ":tux: Während wir gerade alle feiern, wie geil # Linux inzwischen ist und ich gerade ein butterweich laufendes Resident Evil Requiem auf meinem Linux-PC zu Ende gespielt habe, flutet # Apple den # No…",
+    "author": "CryptGoat",
+    "publishedAt": "2026-05-13T08:36:37.000Z",
+    "score": 67,
+    "tags": [
+      "samsung",
+      "xiaomi",
+      "linux",
+      "apple",
+      "notebook",
+      "microsoft",
+      "surface",
+      "google",
+      "chromebook",
+      "android",
+      "macbook",
+      "macbookneo",
+      "windows",
+      "laptop",
+      "pc",
+      "smartphone",
+      "foss",
+      "freesoftware",
+      "openbsd",
+      "freebsd",
+      "freiesoftware"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:54ab74d41892",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "dEQP-GLES3, old etnaviv compiler vs new one: +6140 passes, −3004 crashes. 🚀 # etnaviv # mesa3d # rust # mntreform # li…",
+    "url": "https://fosstodon.org/@austriancoder/116566343925954893",
+    "excerpt": "dEQP-GLES3, old etnaviv compiler vs new one: +6140 passes, −3004 crashes. 🚀 # etnaviv # mesa3d # rust # mntreform # librem5",
+    "author": "Christian Gmeiner",
+    "publishedAt": "2026-05-13T08:34:13.756Z",
+    "score": 5,
+    "tags": [
+      "etnaviv",
+      "mesa3d",
+      "rust",
+      "mntreform",
+      "librem5"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:8f78d0dddf37",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Piper Thunstrom (@pathunstrom@ngmx.com)",
+    "url": "https://ngmx.com/@pathunstrom/116565726550598652",
+    "excerpt": "Content warning: llms, the horrors",
+    "author": "Karsten Schmidt",
+    "publishedAt": "2026-05-13T08:11:45.000Z",
+    "score": 8,
+    "tags": [
+      "llm",
+      "ai",
+      "gallup",
+      "statistics",
+      "poll"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:441085ac59c6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "On my way ✈️ to Long Beach 🇺🇸 from Rome 🇮🇹 See you all there in only 12 hours 👋 # PyConUS # PyCon # PyConUS2026 #…",
+    "url": "https://fosstodon.org/@paulox/116566144366091904",
+    "excerpt": "On my way ✈️ to Long Beach 🇺🇸 from Rome 🇮🇹 See you all there in only 12 hours 👋 # PyConUS # PyCon # PyConUS2026 # Python # OpenSource # Community # Conference # Italy # ItaAirways # US",
+    "author": "Paolo Melchiorre",
+    "publishedAt": "2026-05-13T07:43:28.714Z",
+    "score": 9,
+    "tags": [
+      "pyconus",
+      "pycon",
+      "pyconus2026",
+      "python",
+      "opensource",
+      "community",
+      "conference",
+      "italy",
+      "ItaAirways",
+      "us"
+    ],
+    "labels": [
+      "python",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:Stack Overflow Blog:a8dd40b5634e",
     "kind": "article",
     "source": "rss",
@@ -231,46 +361,6 @@
       "Stack Overflow Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:10cfbfaff150",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Interview with GNOME and KDE on the Future of Linux Apps",
-    "url": "https://www.youtube.com/watch?v=v0P0bue8AKM",
-    "excerpt": "@ AleixPol and I were on a podcast by @ MichaelTunnell talking about @ LAS ! Check us out! 🙂 https://www. youtube.com/watch?v=v0P0bue8AKM Thanks for having us on! # events # linux # opensource # gno…",
-    "author": "Sriram \"sri\" Ramkrishna -  😼",
-    "publishedAt": "2026-05-13T03:09:20.000Z",
-    "score": 8,
-    "tags": [
-      "events",
-      "linux",
-      "opensource",
-      "gnome",
-      "kde"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:01f1cb6c6db6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I tried to resize a one-dimensional image (list of 8-bit greyscale values) in Python by implementing linear interpolati…",
-    "url": "https://tech.lgbt/@0x10f/116564028840569829",
-    "excerpt": "I tried to resize a one-dimensional image (list of 8-bit greyscale values) in Python by implementing linear interpolation. However, the results (centre) don't match GNU Image Manipulation Program's l…",
-    "author": "0x10f/kalle/qalle",
-    "publishedAt": "2026-05-12T22:45:28.000Z",
-    "score": 6,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -299,44 +389,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:cc0d0e3aab14",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "How can # Rust be zero-cost abstraction if people be asking AI in plain english to write them Rust code that shit is co…",
-    "url": "https://woof.tech/@meluzzy/116563132053880005",
-    "excerpt": "How can # Rust be zero-cost abstraction if people be asking AI in plain english to write them Rust code that shit is cost like 5000 tokens and that's like as much carbon emissions as Katie Perry taki…",
-    "author": "LUZZY the bun",
-    "publishedAt": "2026-05-12T18:57:24.000Z",
-    "score": 16,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:5902944b83f8",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "[PATCH 0/4] s390: enable Rust support and add required arch glue - Jan Polensky",
-    "url": "https://lore.kernel.org/rust-for-linux/20260512105920.2426293-1-japo@linux.ibm.com/",
-    "excerpt": "https:// lore.kernel.org/rust-for-linux /20260512105920.2426293-1-japo@linux.ibm.com/ # Rust for # Linux support patchset for s390 😯 # RustLang",
-    "author": "Esteban Küber :rust:",
-    "publishedAt": "2026-05-12T18:41:36.000Z",
-    "score": 7,
-    "tags": [
-      "rust",
-      "linux",
-      "rustlang"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:GitHub Blog:af4a4bbb1070",
     "kind": "article",
     "source": "rss",
@@ -350,28 +402,6 @@
       "GitHub Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:85b4142603a8",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "TinyFeeds is getting there! - Parallelized loading of feeds - Author and title information displayed - Tracks what you&…",
-    "url": "https://fosstodon.org/@alextheuxguy/116562804295238881",
-    "excerpt": "TinyFeeds is getting there! - Parallelized loading of feeds - Author and title information displayed - Tracks what you&#39;ve read in a plain text file # Rust # CodeByHand # Linux # RSS # NoLLMs",
-    "author": "Alex White",
-    "publishedAt": "2026-05-12T17:34:03.275Z",
-    "score": 7,
-    "tags": [
-      "rust",
-      "codebyhand",
-      "linux",
-      "rss",
-      "nollms"
-    ],
-    "labels": [
-      "rust"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -407,6 +437,26 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:79ceaf73e6bf",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Killing a `Cow` made my JSON formatter 42% faster",
+    "url": "https://jacobasper.com/blog/killing-a-cow-made-my-json-formatter-42-percent-faster/",
+    "excerpt": "19 points · performance, rust",
+    "author": "abnercoimbre",
+    "publishedAt": "2026-05-12T10:10:13.000-05:00",
+    "score": 19,
+    "tags": [
+      "performance",
+      "rust"
+    ],
+    "labels": [
+      "performance",
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:GitHub Blog:213186c8239e",
     "kind": "article",
     "source": "rss",
@@ -423,41 +473,34 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:489778593f2c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "After 2 years (on- and off part-time work) I&#39;ve released # ior v1.0.0! A (mainly I/O) syscall tracer with live flam…",
-    "url": "https://fosstodon.org/@snonux/116561780882188030",
-    "excerpt": "After 2 years (on- and off part-time work) I&#39;ve released # ior v1.0.0! A (mainly I/O) syscall tracer with live flamegraph TUI! https:// foo.zone/gemfeed/2026-05-08-un veiling-ior-ng-part-1.html #…",
-    "author": "Paul Buetow",
-    "publishedAt": "2026-05-12T13:13:47.231Z",
-    "score": 5,
-    "tags": [
-      "ior",
-      "bpf",
-      "ebpf",
-      "golang",
-      "syscall",
-      "tracing"
-    ],
-    "labels": [
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:823490fa07d4",
     "kind": "article",
     "source": "lobsters",
     "title": "Learning Software Architecture",
     "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
-    "excerpt": "34 points · practices, programming",
+    "excerpt": "37 points · practices, programming",
     "author": "natfu",
     "publishedAt": "2026-05-12T06:50:34.000-05:00",
-    "score": 34,
+    "score": 37,
     "tags": [
       "practices",
       "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:7689b3feb847",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Unison In Anger",
+    "url": "https://blog.feld.me/posts/2026/05/unison-in-anger/",
+    "excerpt": "15 points · practices",
+    "author": "qiu",
+    "publishedAt": "2026-05-12T05:44:19.000-05:00",
+    "score": 15,
+    "tags": [
+      "practices"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -518,6 +561,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:70d23ac46ff2",
+    "kind": "article",
+    "source": "devto",
+    "title": "My fully offline AI-assisted Linux development machine",
+    "url": "https://dev.to/deepu105/my-fully-offline-ai-assisted-linux-development-machine-3lnl",
+    "excerpt": "My Arch Linux, Niri, and local AI coding setup on the ASUS ROG Flow Z13",
+    "author": "Deepu K Sasidharan",
+    "publishedAt": "2026-05-11T20:47:59Z",
+    "score": 25,
+    "tags": [
+      "linux",
+      "archlinux",
+      "development",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:8777ecc4ed0c",
     "kind": "article",
     "source": "lobsters",
@@ -543,7 +607,7 @@
     "excerpt": "Is AI that toxic ex you just can’t forget about and can’t move on from? For every task you get...",
     "author": "Konark Sharma",
     "publishedAt": "2026-05-11T18:09:56Z",
-    "score": 58,
+    "score": 59,
     "tags": [
       "ai",
       "webdev",
@@ -649,6 +713,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:f58ef165c1fc",
+    "kind": "article",
+    "source": "devto",
+    "title": "⚔️ Go vs Java: The Minimalist vs The Enterprise Veteran",
+    "url": "https://dev.to/adamthedeveloper/go-vs-java-the-minimalist-vs-the-enterprise-veteran-1gg3",
+    "excerpt": "No sides. No agenda. Just two languages walking into a bar and us watching what happens. ...",
+    "author": "Adam - The Developer",
+    "publishedAt": "2026-05-11T06:12:47Z",
+    "score": 26,
+    "tags": [
+      "programming",
+      "java",
+      "go",
+      "productivity"
+    ],
+    "labels": [
+      "java",
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:fa58fd73a4ee",
     "kind": "article",
     "source": "lobsters",
@@ -726,57 +812,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:485068bcf8d2",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Flipping the bozo bit on flips the learning off",
-    "url": "https://surfingcomplexity.blog/2026/05/09/flipping-the-bozo-bit-on-flips-the-learning-off/",
-    "excerpt": "33 points · practices",
-    "author": "eatonphil",
-    "publishedAt": "2026-05-09T22:14:27.000-05:00",
-    "score": 33,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Python Insider:7464853afe32",
-    "kind": "article",
-    "source": "rss",
-    "title": "Python 3.14.5 is out!",
-    "url": "https://blog.python.org/2026/05/python-3145-is-out/",
-    "excerpt": "A special release with a new (old) garbage collector.",
-    "author": "Hugo van Kemenade",
-    "publishedAt": "2026-05-10T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Python Insider"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:77c6342763c7",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What We Lost the Last Time Code Got Cheap",
-    "url": "https://www.poppastring.com/blog/what-we-lost-the-last-time-code-got-cheap",
-    "excerpt": "37 points · practices, vibecoding",
-    "author": "rwdf",
-    "publishedAt": "2026-05-08T11:55:25.000-05:00",
-    "score": 37,
-    "tags": [
-      "practices",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -785,7 +820,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-12T04:34:58Z",
-    "score": 434598,
+    "score": 434701,
     "tags": [
       "Python",
       "api",
@@ -817,7 +852,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-12T18:22:15Z",
-    "score": 388152,
+    "score": 388172,
     "tags": [
       "Python",
       "books",
@@ -840,7 +875,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-12T02:36:10Z",
-    "score": 297350,
+    "score": 297392,
     "tags": [
       "Python",
       "awesome",
@@ -864,7 +899,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-11T14:32:32Z",
-    "score": 191247,
+    "score": 191283,
     "tags": [
       "Rust"
     ],
@@ -881,8 +916,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-13T03:08:26Z",
-    "score": 184261,
+    "publishedAt": "2026-05-13T08:41:29Z",
+    "score": 184275,
     "tags": [
       "Python",
       "agentic-ai",
@@ -911,8 +946,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-13T03:40:15Z",
-    "score": 160539,
+    "publishedAt": "2026-05-13T09:13:21Z",
+    "score": 160561,
     "tags": [
       "Python",
       "audio",
@@ -951,7 +986,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-11T20:24:44Z",
-    "score": 155608,
+    "score": 155619,
     "tags": [
       "Java",
       "agent",
@@ -982,7 +1017,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-05-13T01:05:36Z",
-    "score": 148032,
+    "score": 148047,
     "tags": [
       "Python",
       "agents",
@@ -1006,8 +1041,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-13T03:49:22Z",
-    "score": 147242,
+    "publishedAt": "2026-05-13T07:32:31Z",
+    "score": 147704,
     "tags": [
       "Python",
       "ai",
@@ -1041,8 +1076,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-05-13T03:44:13Z",
-    "score": 136832,
+    "publishedAt": "2026-05-13T07:02:13Z",
+    "score": 136859,
     "tags": [
       "Python",
       "ai",
@@ -1075,8 +1110,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-12T08:24:50Z",
-    "score": 114042,
+    "publishedAt": "2026-05-13T06:59:48Z",
+    "score": 114061,
     "tags": [
       "Rust",
       "android",
@@ -1112,8 +1147,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-13T04:07:32Z",
-    "score": 112740,
+    "publishedAt": "2026-05-13T09:01:07Z",
+    "score": 112745,
     "tags": [
       "Rust",
       "compiler",
@@ -1133,8 +1168,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-13T03:54:19Z",
-    "score": 106662,
+    "publishedAt": "2026-05-13T08:46:12Z",
+    "score": 106666,
     "tags": [
       "Rust",
       "deno",
@@ -1156,8 +1191,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-12T21:05:08Z",
-    "score": 106550,
+    "publishedAt": "2026-05-13T08:04:06Z",
+    "score": 106560,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1209,7 +1244,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-05-13T00:00:13Z",
-    "score": 84818,
+    "score": 84837,
     "tags": [
       "Rust",
       "packaging",
@@ -1231,8 +1266,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-13T02:08:54Z",
-    "score": 82614,
+    "publishedAt": "2026-05-13T09:17:33Z",
+    "score": 82634,
     "tags": [
       "Rust",
       "gpui",
@@ -1253,8 +1288,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-13T04:05:50Z",
-    "score": 82188,
+    "publishedAt": "2026-05-13T08:59:05Z",
+    "score": 82268,
     "tags": [
       "Rust"
     ],
