@@ -218,6 +218,62 @@
     "mentionsByteveda": true
   },
   {
+    "id": "rss:Stack Overflow Blog:a8dd40b5634e",
+    "kind": "article",
+    "source": "rss",
+    "title": "How Braze’s CTO is rethinking engineering for the agentic area",
+    "url": "https://stackoverflow.blog/2026/05/13/rethinking-engineering-for-the-agentic-area/",
+    "excerpt": "Jon Hyman, co-founder and CTO of Braze, shares how he&#x27;s led the company&#x27;s engineering organization over nearly 15 years of growth — and how they transformed into an AI-first team in just a…",
+    "author": "Eira May",
+    "publishedAt": "2026-05-13T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:10cfbfaff150",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Interview with GNOME and KDE on the Future of Linux Apps",
+    "url": "https://www.youtube.com/watch?v=v0P0bue8AKM",
+    "excerpt": "@ AleixPol and I were on a podcast by @ MichaelTunnell talking about @ LAS ! Check us out! 🙂 https://www. youtube.com/watch?v=v0P0bue8AKM Thanks for having us on! # events # linux # opensource # gno…",
+    "author": "Sriram \"sri\" Ramkrishna -  😼",
+    "publishedAt": "2026-05-13T03:09:20.000Z",
+    "score": 8,
+    "tags": [
+      "events",
+      "linux",
+      "opensource",
+      "gnome",
+      "kde"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:01f1cb6c6db6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I tried to resize a one-dimensional image (list of 8-bit greyscale values) in Python by implementing linear interpolati…",
+    "url": "https://tech.lgbt/@0x10f/116564028840569829",
+    "excerpt": "I tried to resize a one-dimensional image (list of 8-bit greyscale values) in Python by implementing linear interpolation. However, the results (centre) don't match GNU Image Manipulation Program's l…",
+    "author": "0x10f/kalle/qalle",
+    "publishedAt": "2026-05-12T22:45:28.000Z",
+    "score": 6,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:8c47bfb43b6d",
     "kind": "article",
     "source": "mastodon",
@@ -226,7 +282,7 @@
     "excerpt": "RE: https:// zirk.us/@MidniteMikeWrites/116 523605434204476 I didn’t set out to write about LLMs but felt compelled to given the media’s abject failure to explain the tech. I think there’s still a ne…",
     "author": "Mike @ Misaligned Markets",
     "publishedAt": "2026-05-12T19:49:47.000Z",
-    "score": 5,
+    "score": 8,
     "tags": [
       "technology",
       "research",
@@ -243,26 +299,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:1d5e0cc2272c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Having a Review # Agent for your Coding Agent makes absolutely no sense to me. Why can't the Coding Agent produce corre…",
-    "url": "https://mastodon.social/@TheFox21/116563206335760711",
-    "excerpt": "Having a Review # Agent for your Coding Agent makes absolutely no sense to me. Why can't the Coding Agent produce correct source code in the first place? Feels like pure # LLM bullshit. # AI",
-    "author": "Christian Mayer",
-    "publishedAt": "2026-05-12T19:16:17.000Z",
-    "score": 12,
-    "tags": [
-      "agent",
-      "llm",
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "mastodon:cc0d0e3aab14",
     "kind": "article",
     "source": "mastodon",
@@ -271,7 +307,7 @@
     "excerpt": "How can # Rust be zero-cost abstraction if people be asking AI in plain english to write them Rust code that shit is cost like 5000 tokens and that's like as much carbon emissions as Katie Perry taki…",
     "author": "LUZZY the bun",
     "publishedAt": "2026-05-12T18:57:24.000Z",
-    "score": 14,
+    "score": 16,
     "tags": [
       "rust"
     ],
@@ -301,63 +337,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:9208a21f13cc",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "The Game II: The Prison Can you escape from the Prison? # CyberSecurity # PowerShell # CFML # AI # Networking # SQL # C…",
-    "url": "https://defcon.social/@BCWHQuiz/116563061853990652",
-    "excerpt": "The Game II: The Prison Can you escape from the Prison? # CyberSecurity # PowerShell # CFML # AI # Networking # SQL # Cloud # GRC # Gaming # Technology # Python # ZeroTrust # DevSecOps # FinOps # Pro…",
-    "author": "Black Cat White Hat Security",
-    "publishedAt": "2026-05-12T18:39:33.000Z",
-    "score": 5,
-    "tags": [
-      "cybersecurity",
-      "powershell",
-      "cfml",
-      "ai",
-      "networking",
-      "sql",
-      "cloud",
-      "grc",
-      "gaming",
-      "technology",
-      "python",
-      "zerotrust",
-      "devsecops",
-      "FinOps",
-      "programming"
-    ],
-    "labels": [
-      "security",
-      "ai",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d33c5a3a40f3",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "RE: https:// fosstodon.org/@pycon/116538489 589981492 This talk from @ andrewnez grows more and more important as the d…",
-    "url": "https://mastodon.social/@sethmlarson/116562958786085641",
-    "excerpt": "RE: https:// fosstodon.org/@pycon/116538489 589981492 This talk from @ andrewnez grows more and more important as the days go on... it's a must watch! # Python # PyPI # PyConUS # PyConUS2026 # securi…",
-    "author": "Seth Larson",
-    "publishedAt": "2026-05-12T18:13:20.000Z",
-    "score": 7,
-    "tags": [
-      "python",
-      "pypi",
-      "pyconus",
-      "pyconus2026",
-      "security"
-    ],
-    "labels": [
-      "python",
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:GitHub Blog:af4a4bbb1070",
     "kind": "article",
     "source": "rss",
@@ -382,7 +361,7 @@
     "excerpt": "TinyFeeds is getting there! - Parallelized loading of feeds - Author and title information displayed - Tracks what you&#39;ve read in a plain text file # Rust # CodeByHand # Linux # RSS # NoLLMs",
     "author": "Alex White",
     "publishedAt": "2026-05-12T17:34:03.275Z",
-    "score": 5,
+    "score": 7,
     "tags": [
       "rust",
       "codebyhand",
@@ -393,6 +372,22 @@
     "labels": [
       "rust"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:fd32ee5fdc3b",
+    "kind": "article",
+    "source": "rss",
+    "title": "You Shipped It Fast. But Did You Ship It Right?",
+    "url": "https://stackoverflow.blog/2026/05/12/you-shipped-it-fast-but-did-you-ship-it-right/",
+    "excerpt": "Why AI-accelerated teams keep breaking production — and what the ones that don&#x27;t are doing differently",
+    "author": "Priya Gopalsamy",
+    "publishedAt": "2026-05-12T16:41:40.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -428,15 +423,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "mastodon:489778593f2c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "After 2 years (on- and off part-time work) I&#39;ve released # ior v1.0.0! A (mainly I/O) syscall tracer with live flam…",
+    "url": "https://fosstodon.org/@snonux/116561780882188030",
+    "excerpt": "After 2 years (on- and off part-time work) I&#39;ve released # ior v1.0.0! A (mainly I/O) syscall tracer with live flamegraph TUI! https:// foo.zone/gemfeed/2026-05-08-un veiling-ior-ng-part-1.html #…",
+    "author": "Paul Buetow",
+    "publishedAt": "2026-05-12T13:13:47.231Z",
+    "score": 5,
+    "tags": [
+      "ior",
+      "bpf",
+      "ebpf",
+      "golang",
+      "syscall",
+      "tracing"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:823490fa07d4",
     "kind": "article",
     "source": "lobsters",
     "title": "Learning Software Architecture",
     "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
-    "excerpt": "27 points · practices, programming",
+    "excerpt": "34 points · practices, programming",
     "author": "natfu",
     "publishedAt": "2026-05-12T06:50:34.000-05:00",
-    "score": 27,
+    "score": 34,
     "tags": [
       "practices",
       "programming"
@@ -485,10 +503,10 @@
     "source": "lobsters",
     "title": "Zig vs Rust in 2026",
     "url": "https://zackoverflow.dev/writing/zig-vs-rust-in-2026/",
-    "excerpt": "41 points · rust, vibecoding, zig",
+    "excerpt": "43 points · rust, vibecoding, zig",
     "author": "jado",
     "publishedAt": "2026-05-11T16:54:04.000-05:00",
-    "score": 41,
+    "score": 43,
     "tags": [
       "rust",
       "vibecoding",
@@ -505,10 +523,10 @@
     "source": "lobsters",
     "title": "Fighting Hyrum's Law in LLVM",
     "url": "https://maskray.me/blog/2026-05-10-fighting-hyrums-law-in-llvm",
-    "excerpt": "24 points · compilers, practices",
+    "excerpt": "25 points · compilers, practices",
     "author": "aengelke",
     "publishedAt": "2026-05-11T13:30:09.000-05:00",
-    "score": 24,
+    "score": 25,
     "tags": [
       "compilers",
       "practices"
@@ -525,7 +543,7 @@
     "excerpt": "Is AI that toxic ex you just can’t forget about and can’t move on from? For every task you get...",
     "author": "Konark Sharma",
     "publishedAt": "2026-05-11T18:09:56Z",
-    "score": 49,
+    "score": 58,
     "tags": [
       "ai",
       "webdev",
@@ -555,22 +573,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:e5ecfdede266",
-    "kind": "article",
-    "source": "rss",
-    "title": "OAuth 2.0 – Device flow explained for Engineers, especially for Backend Engineers",
-    "url": "https://stackoverflow.blog/2026/05/11/oauth-2-0-device-flow-explained-for-engineers-especially-for-backend-engineers/",
-    "excerpt": null,
-    "author": "Srikanth Srinivas",
-    "publishedAt": "2026-05-11T16:11:05.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:GitHub Blog:91e1570cb842",
     "kind": "article",
     "source": "rss",
@@ -582,22 +584,6 @@
     "score": 0,
     "tags": [
       "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:53065365692d",
-    "kind": "article",
-    "source": "rss",
-    "title": "Introducing the Heap, the software engineering blog for everyone",
-    "url": "https://stackoverflow.blog/2026/05/11/introducing-the-heap-the-software-engineering-blog-for-everyone/",
-    "excerpt": "If you’ve got something you’ve been dying to share with the Stack Overflow community but don’t quite have a place to share it, we&#x27;ve got you.",
-    "author": "Ryan Donovan",
-    "publishedAt": "2026-05-11T14:03:48.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -647,10 +633,10 @@
     "source": "lobsters",
     "title": "Ratty: A terminal emulator with inline 3D graphics",
     "url": "https://ratty-term.org/",
-    "excerpt": "56 points · graphics, rust, show, vibecoding",
+    "excerpt": "57 points · graphics, rust, show, vibecoding",
     "author": "orhun",
     "publishedAt": "2026-05-11T05:10:49.000-05:00",
-    "score": 56,
+    "score": 57,
     "tags": [
       "graphics",
       "rust",
@@ -799,7 +785,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-12T04:34:58Z",
-    "score": 434475,
+    "score": 434598,
     "tags": [
       "Python",
       "api",
@@ -831,7 +817,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-12T18:22:15Z",
-    "score": 388141,
+    "score": 388152,
     "tags": [
       "Python",
       "books",
@@ -854,7 +840,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-12T02:36:10Z",
-    "score": 297289,
+    "score": 297350,
     "tags": [
       "Python",
       "awesome",
@@ -878,7 +864,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-11T14:32:32Z",
-    "score": 191205,
+    "score": 191247,
     "tags": [
       "Rust"
     ],
@@ -895,8 +881,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-12T19:30:45Z",
-    "score": 184240,
+    "publishedAt": "2026-05-13T03:08:26Z",
+    "score": 184261,
     "tags": [
       "Python",
       "agentic-ai",
@@ -925,8 +911,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-12T18:09:46Z",
-    "score": 160531,
+    "publishedAt": "2026-05-13T03:40:15Z",
+    "score": 160539,
     "tags": [
       "Python",
       "audio",
@@ -965,7 +951,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-11T20:24:44Z",
-    "score": 155605,
+    "score": 155608,
     "tags": [
       "Java",
       "agent",
@@ -995,8 +981,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-12T20:04:31Z",
-    "score": 148022,
+    "publishedAt": "2026-05-13T01:05:36Z",
+    "score": 148032,
     "tags": [
       "Python",
       "agents",
@@ -1020,8 +1006,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-12T19:58:14Z",
-    "score": 146683,
+    "publishedAt": "2026-05-13T03:49:22Z",
+    "score": 147242,
     "tags": [
       "Python",
       "ai",
@@ -1055,8 +1041,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-05-12T17:52:31Z",
-    "score": 136783,
+    "publishedAt": "2026-05-13T03:44:13Z",
+    "score": 136832,
     "tags": [
       "Python",
       "ai",
@@ -1090,7 +1076,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-12T08:24:50Z",
-    "score": 114017,
+    "score": 114042,
     "tags": [
       "Rust",
       "android",
@@ -1126,8 +1112,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-12T19:47:38Z",
-    "score": 112734,
+    "publishedAt": "2026-05-13T04:07:32Z",
+    "score": 112740,
     "tags": [
       "Rust",
       "compiler",
@@ -1147,8 +1133,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-12T19:26:36Z",
-    "score": 106654,
+    "publishedAt": "2026-05-13T03:54:19Z",
+    "score": 106662,
     "tags": [
       "Rust",
       "deno",
@@ -1170,8 +1156,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-12T03:23:13Z",
-    "score": 106544,
+    "publishedAt": "2026-05-12T21:05:08Z",
+    "score": 106550,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1197,7 +1183,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-05-08T14:26:45Z",
-    "score": 93986,
+    "score": 93985,
     "tags": [
       "Java",
       "awesome-list",
@@ -1222,8 +1208,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-12T19:50:41Z",
-    "score": 84803,
+    "publishedAt": "2026-05-13T00:00:13Z",
+    "score": 84818,
     "tags": [
       "Rust",
       "packaging",
@@ -1245,8 +1231,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-12T20:00:13Z",
-    "score": 82581,
+    "publishedAt": "2026-05-13T02:08:54Z",
+    "score": 82614,
     "tags": [
       "Rust",
       "gpui",
@@ -1267,8 +1253,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-12T19:50:52Z",
-    "score": 82125,
+    "publishedAt": "2026-05-13T04:05:50Z",
+    "score": 82188,
     "tags": [
       "Rust"
     ],
