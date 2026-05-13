@@ -218,60 +218,112 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:d820d4483037",
+    "id": "mastodon:b2f51dbf5cc7",
     "kind": "article",
     "source": "mastodon",
-    "title": "If you drop (or throw) your new Steam Controller it will scream at you",
-    "url": "https://www.gamingonlinux.com/2026/05/if-you-drop-or-throw-your-new-steam-controller-it-will-scream-at-you/",
-    "excerpt": "Ah the Wilhelm scream, we've all heard it right? Well, Valve snuck a little Easter Egg into the new Steam Controller when you drop it.",
-    "author": "Liam @ GamingOnLinux 🐧🎮",
-    "publishedAt": "2026-05-13T08:44:20.000Z",
-    "score": 49,
+    "title": "The Game III: The Incinerator Legacy syntax is the only thing standing between you and the next level. Are your CF skil…",
+    "url": "https://defcon.social/@BCWHQuiz/116567773469667661",
+    "excerpt": "The Game III: The Incinerator Legacy syntax is the only thing standing between you and the next level. Are your CF skills sharp enough or will you end up in the Incinerator? # CyberSecurity # PowerSh…",
+    "author": "Black Cat White Hat Security",
+    "publishedAt": "2026-05-13T14:37:46.000Z",
+    "score": 5,
     "tags": [
-      "steamcontroller",
-      "linux",
-      "steamos",
-      "valve",
-      "pcgaming"
+      "cybersecurity",
+      "powershell",
+      "cfml",
+      "ai",
+      "networking",
+      "sql",
+      "cloud",
+      "grc",
+      "gaming",
+      "technology",
+      "python",
+      "zerotrust",
+      "devsecops",
+      "FinOps",
+      "programming"
     ],
-    "labels": [],
+    "labels": [
+      "security",
+      "ai",
+      "python"
+    ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:fb24b5bfeda0",
+    "id": "mastodon:e4ac20b3171b",
     "kind": "article",
     "source": "mastodon",
-    "title": ":tux: Während wir gerade alle feiern, wie geil # Linux inzwischen ist und ich gerade ein butterweich laufendes Resident…",
-    "url": "https://fedifreu.de/@cryptgoat/116566353335717468",
-    "excerpt": ":tux: Während wir gerade alle feiern, wie geil # Linux inzwischen ist und ich gerade ein butterweich laufendes Resident Evil Requiem auf meinem Linux-PC zu Ende gespielt habe, flutet # Apple den # No…",
-    "author": "CryptGoat",
-    "publishedAt": "2026-05-13T08:36:37.000Z",
-    "score": 67,
+    "title": "Meet ✨️️ Resolute Raccoon ✨️, the unyielding problem solver. 🗝️ 🌿 :blobcat: Created with Krita and Blender within 56…",
+    "url": "https://mastodon.social/@sylvia_ritter/116567660470656582",
+    "excerpt": "Meet ✨️️ Resolute Raccoon ✨️, the unyielding problem solver. 🗝️ 🌿 :blobcat: Created with Krita and Blender within 56 days. Inspired by the Ubuntu release name 26.04 LTS. # art # mastoart # fediart…",
+    "author": "Sylvia Ritter",
+    "publishedAt": "2026-05-13T14:09:02.000Z",
+    "score": 48,
     "tags": [
-      "samsung",
-      "xiaomi",
+      "art",
+      "mastoart",
+      "fediart",
+      "raccoon",
+      "animals",
+      "krita",
+      "blender3d",
+      "digitalart",
+      "noai",
+      "nature",
+      "night",
+      "rust",
       "linux",
-      "apple",
-      "notebook",
-      "microsoft",
-      "surface",
-      "google",
-      "chromebook",
-      "android",
-      "macbook",
-      "macbookneo",
-      "windows",
-      "laptop",
-      "pc",
-      "smartphone",
-      "foss",
-      "freesoftware",
-      "openbsd",
-      "freebsd",
-      "freiesoftware"
+      "wallpaper"
     ],
     "labels": [
-      "opensource"
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:9b0f3e63d177",
+    "kind": "article",
+    "source": "devto",
+    "title": "React is Overkill: Why Python + HTMX is Dominating in 2026",
+    "url": "https://dev.to/syedahmershah/react-is-overkill-why-python-htmx-is-dominating-in-2026-17ib",
+    "excerpt": "Last year I spent forty minutes setting up a React project for an internal admin dashboard. Just the...",
+    "author": "Syed Ahmer Shah",
+    "publishedAt": "2026-05-13T09:28:52Z",
+    "score": 85,
+    "tags": [
+      "python",
+      "react",
+      "javascript",
+      "discuss"
+    ],
+    "labels": [
+      "python",
+      "webdev",
+      "typescript"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:4dbfa00645d7",
+    "kind": "article",
+    "source": "devto",
+    "title": "From Rank 6,000,000 to 26,000: 1.5 Years, 1040 LeetCode Problems, and a Surprise Package That Changed Everything",
+    "url": "https://dev.to/hadil/from-rank-6000000-to-26000-15-years-1040-leetcode-problems-and-a-surprise-package-that-43e2",
+    "excerpt": "I didn’t realize I was starting a 1.5-year journey when I opened my first LeetCode problem. It...",
+    "author": "Hadil Ben Abdallah",
+    "publishedAt": "2026-05-13T09:00:09Z",
+    "score": 32,
+    "tags": [
+      "programming",
+      "leetcode",
+      "python",
+      "javascript"
+    ],
+    "labels": [
+      "python",
+      "typescript"
     ],
     "mentionsByteveda": false
   },
@@ -284,7 +336,7 @@
     "excerpt": "dEQP-GLES3, old etnaviv compiler vs new one: +6140 passes, −3004 crashes. 🚀 # etnaviv # mesa3d # rust # mntreform # librem5",
     "author": "Christian Gmeiner",
     "publishedAt": "2026-05-13T08:34:13.756Z",
-    "score": 5,
+    "score": 17,
     "tags": [
       "etnaviv",
       "mesa3d",
@@ -294,56 +346,6 @@
     ],
     "labels": [
       "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:8f78d0dddf37",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Piper Thunstrom (@pathunstrom@ngmx.com)",
-    "url": "https://ngmx.com/@pathunstrom/116565726550598652",
-    "excerpt": "Content warning: llms, the horrors",
-    "author": "Karsten Schmidt",
-    "publishedAt": "2026-05-13T08:11:45.000Z",
-    "score": 8,
-    "tags": [
-      "llm",
-      "ai",
-      "gallup",
-      "statistics",
-      "poll"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:441085ac59c6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "On my way ✈️ to Long Beach 🇺🇸 from Rome 🇮🇹 See you all there in only 12 hours 👋 # PyConUS # PyCon # PyConUS2026 #…",
-    "url": "https://fosstodon.org/@paulox/116566144366091904",
-    "excerpt": "On my way ✈️ to Long Beach 🇺🇸 from Rome 🇮🇹 See you all there in only 12 hours 👋 # PyConUS # PyCon # PyConUS2026 # Python # OpenSource # Community # Conference # Italy # ItaAirways # US",
-    "author": "Paolo Melchiorre",
-    "publishedAt": "2026-05-13T07:43:28.714Z",
-    "score": 9,
-    "tags": [
-      "pyconus",
-      "pycon",
-      "pyconus2026",
-      "python",
-      "opensource",
-      "community",
-      "conference",
-      "italy",
-      "ItaAirways",
-      "us"
-    ],
-    "labels": [
-      "python",
-      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -364,27 +366,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:8c47bfb43b6d",
+    "id": "lobsters:bae011c8713e",
     "kind": "article",
-    "source": "mastodon",
-    "title": "RE: https:// zirk.us/@MidniteMikeWrites/116 523605434204476 I didn’t set out to write about LLMs but felt compelled to…",
-    "url": "https://zirk.us/@MidniteMikeWrites/116563338042659851",
-    "excerpt": "RE: https:// zirk.us/@MidniteMikeWrites/116 523605434204476 I didn’t set out to write about LLMs but felt compelled to given the media’s abject failure to explain the tech. I think there’s still a ne…",
-    "author": "Mike @ Misaligned Markets",
-    "publishedAt": "2026-05-12T19:49:47.000Z",
-    "score": 8,
+    "source": "lobsters",
+    "title": "what 262,715 regex questions on stack overflow haven't answered",
+    "url": "https://iev.ee/blog/what-262715-regex-questions-havent-answered/",
+    "excerpt": "52 points · compsci, performance",
+    "author": "bradlarsen",
+    "publishedAt": "2026-05-12T22:12:22.000-05:00",
+    "score": 52,
     "tags": [
-      "technology",
-      "research",
-      "sts",
-      "computerscience",
-      "ai",
-      "datascience",
-      "machinelearning"
+      "compsci",
+      "performance"
     ],
     "labels": [
-      "ai",
-      "ml"
+      "performance"
     ],
     "mentionsByteveda": false
   },
@@ -437,15 +433,34 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:2fca3e628227",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "All the ways to mock your Rust code",
+    "url": "https://blog.appliedcomputing.io/p/all-the-ways-to-mock-your-rust-code",
+    "excerpt": "17 points · rust, testing",
+    "author": "drmorr",
+    "publishedAt": "2026-05-12T10:17:25.000-05:00",
+    "score": 17,
+    "tags": [
+      "rust",
+      "testing"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:79ceaf73e6bf",
     "kind": "article",
     "source": "lobsters",
     "title": "Killing a `Cow` made my JSON formatter 42% faster",
     "url": "https://jacobasper.com/blog/killing-a-cow-made-my-json-formatter-42-percent-faster/",
-    "excerpt": "19 points · performance, rust",
+    "excerpt": "21 points · performance, rust",
     "author": "abnercoimbre",
     "publishedAt": "2026-05-12T10:10:13.000-05:00",
-    "score": 19,
+    "score": 21,
     "tags": [
       "performance",
       "rust"
@@ -478,10 +493,10 @@
     "source": "lobsters",
     "title": "Learning Software Architecture",
     "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
-    "excerpt": "37 points · practices, programming",
+    "excerpt": "39 points · practices, programming",
     "author": "natfu",
     "publishedAt": "2026-05-12T06:50:34.000-05:00",
-    "score": 37,
+    "score": 39,
     "tags": [
       "practices",
       "programming"
@@ -546,10 +561,10 @@
     "source": "lobsters",
     "title": "Zig vs Rust in 2026",
     "url": "https://zackoverflow.dev/writing/zig-vs-rust-in-2026/",
-    "excerpt": "43 points · rust, vibecoding, zig",
+    "excerpt": "42 points · rust, vibecoding, zig",
     "author": "jado",
     "publishedAt": "2026-05-11T16:54:04.000-05:00",
-    "score": 43,
+    "score": 42,
     "tags": [
       "rust",
       "vibecoding",
@@ -569,7 +584,7 @@
     "excerpt": "My Arch Linux, Niri, and local AI coding setup on the ASUS ROG Flow Z13",
     "author": "Deepu K Sasidharan",
     "publishedAt": "2026-05-11T20:47:59Z",
-    "score": 25,
+    "score": 28,
     "tags": [
       "linux",
       "archlinux",
@@ -587,10 +602,10 @@
     "source": "lobsters",
     "title": "Fighting Hyrum's Law in LLVM",
     "url": "https://maskray.me/blog/2026-05-10-fighting-hyrums-law-in-llvm",
-    "excerpt": "25 points · compilers, practices",
+    "excerpt": "26 points · compilers, practices",
     "author": "aengelke",
     "publishedAt": "2026-05-11T13:30:09.000-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "compilers",
       "practices"
@@ -607,7 +622,7 @@
     "excerpt": "Is AI that toxic ex you just can’t forget about and can’t move on from? For every task you get...",
     "author": "Konark Sharma",
     "publishedAt": "2026-05-11T18:09:56Z",
-    "score": 59,
+    "score": 65,
     "tags": [
       "ai",
       "webdev",
@@ -697,10 +712,10 @@
     "source": "lobsters",
     "title": "Ratty: A terminal emulator with inline 3D graphics",
     "url": "https://ratty-term.org/",
-    "excerpt": "57 points · graphics, rust, show, vibecoding",
+    "excerpt": "58 points · graphics, rust, show, vibecoding",
     "author": "orhun",
     "publishedAt": "2026-05-11T05:10:49.000-05:00",
-    "score": 57,
+    "score": 58,
     "tags": [
       "graphics",
       "rust",
@@ -721,7 +736,7 @@
     "excerpt": "No sides. No agenda. Just two languages walking into a bar and us watching what happens. ...",
     "author": "Adam - The Developer",
     "publishedAt": "2026-05-11T06:12:47Z",
-    "score": 26,
+    "score": 30,
     "tags": [
       "programming",
       "java",
@@ -790,28 +805,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:72a8fd86fbc6",
-    "kind": "article",
-    "source": "devto",
-    "title": "How Python's GIL actually works (and when it bites you)",
-    "url": "https://dev.to/lovestaco/how-pythons-gil-actually-works-and-when-it-bites-you-3f2",
-    "excerpt": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
-    "author": "Athreya aka Maneshwar",
-    "publishedAt": "2026-05-10T10:17:16Z",
-    "score": 45,
-    "tags": [
-      "webdev",
-      "productivity",
-      "programming",
-      "python"
-    ],
-    "labels": [
-      "webdev",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -820,7 +813,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-12T04:34:58Z",
-    "score": 434701,
+    "score": 434793,
     "tags": [
       "Python",
       "api",
@@ -852,7 +845,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-12T18:22:15Z",
-    "score": 388172,
+    "score": 388197,
     "tags": [
       "Python",
       "books",
@@ -875,7 +868,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-12T02:36:10Z",
-    "score": 297392,
+    "score": 297433,
     "tags": [
       "Python",
       "awesome",
@@ -899,7 +892,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-11T14:32:32Z",
-    "score": 191283,
+    "score": 191312,
     "tags": [
       "Rust"
     ],
@@ -916,8 +909,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-13T08:41:29Z",
-    "score": 184275,
+    "publishedAt": "2026-05-13T14:23:57Z",
+    "score": 184287,
     "tags": [
       "Python",
       "agentic-ai",
@@ -946,8 +939,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-13T09:13:21Z",
-    "score": 160561,
+    "publishedAt": "2026-05-13T15:01:25Z",
+    "score": 160569,
     "tags": [
       "Python",
       "audio",
@@ -986,7 +979,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-11T20:24:44Z",
-    "score": 155619,
+    "score": 155630,
     "tags": [
       "Java",
       "agent",
@@ -1009,31 +1002,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:3c2f23bd9712",
-    "kind": "trending",
-    "source": "github",
-    "title": "langflow-ai/langflow",
-    "url": "https://github.com/langflow-ai/langflow",
-    "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-    "author": "langflow-ai",
-    "publishedAt": "2026-05-13T01:05:36Z",
-    "score": 148047,
-    "tags": [
-      "Python",
-      "agents",
-      "chatgpt",
-      "generative-ai",
-      "large-language-models",
-      "multiagent",
-      "react-flow"
-    ],
-    "labels": [
-      "python",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:c80311475bba",
     "kind": "trending",
     "source": "github",
@@ -1041,8 +1009,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-13T07:32:31Z",
-    "score": 147704,
+    "publishedAt": "2026-05-13T14:55:26Z",
+    "score": 148179,
     "tags": [
       "Python",
       "ai",
@@ -1069,6 +1037,31 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:3c2f23bd9712",
+    "kind": "trending",
+    "source": "github",
+    "title": "langflow-ai/langflow",
+    "url": "https://github.com/langflow-ai/langflow",
+    "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "author": "langflow-ai",
+    "publishedAt": "2026-05-13T15:08:33Z",
+    "score": 148065,
+    "tags": [
+      "Python",
+      "agents",
+      "chatgpt",
+      "generative-ai",
+      "large-language-models",
+      "multiagent",
+      "react-flow"
+    ],
+    "labels": [
+      "python",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:211ac45fa0ae",
     "kind": "trending",
     "source": "github",
@@ -1076,8 +1069,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-05-13T07:02:13Z",
-    "score": 136859,
+    "publishedAt": "2026-05-13T15:07:57Z",
+    "score": 136901,
     "tags": [
       "Python",
       "ai",
@@ -1110,8 +1103,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-13T06:59:48Z",
-    "score": 114061,
+    "publishedAt": "2026-05-13T10:43:56Z",
+    "score": 114087,
     "tags": [
       "Rust",
       "android",
@@ -1147,8 +1140,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-13T09:01:07Z",
-    "score": 112745,
+    "publishedAt": "2026-05-13T13:52:48Z",
+    "score": 112747,
     "tags": [
       "Rust",
       "compiler",
@@ -1168,7 +1161,7 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-13T08:46:12Z",
+    "publishedAt": "2026-05-13T14:56:28Z",
     "score": 106666,
     "tags": [
       "Rust",
@@ -1192,7 +1185,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-13T08:04:06Z",
-    "score": 106560,
+    "score": 106576,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1218,7 +1211,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-05-08T14:26:45Z",
-    "score": 93985,
+    "score": 93984,
     "tags": [
       "Java",
       "awesome-list",
@@ -1243,8 +1236,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-13T00:00:13Z",
-    "score": 84837,
+    "publishedAt": "2026-05-13T14:04:50Z",
+    "score": 84854,
     "tags": [
       "Rust",
       "packaging",
@@ -1266,8 +1259,8 @@
     "url": "https://github.com/zed-industries/zed",
     "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
     "author": "zed-industries",
-    "publishedAt": "2026-05-13T09:17:33Z",
-    "score": 82634,
+    "publishedAt": "2026-05-13T15:04:34Z",
+    "score": 82661,
     "tags": [
       "Rust",
       "gpui",
@@ -1288,8 +1281,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-13T08:59:05Z",
-    "score": 82268,
+    "publishedAt": "2026-05-13T15:11:54Z",
+    "score": 82331,
     "tags": [
       "Rust"
     ],
