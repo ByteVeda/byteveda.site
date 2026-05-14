@@ -218,38 +218,20 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:efd0a62fc2c7",
+    "id": "mastodon:50aa316b818d",
     "kind": "article",
     "source": "mastodon",
-    "title": "A couple go to Python debugging aids of mine, first is breaking into the debugger. import pdb; pdb.set_trace() The seco…",
-    "url": "https://flyovercountry.social/@encthenet/116570093185614700",
-    "excerpt": "A couple go to Python debugging aids of mine, first is breaking into the debugger. import pdb; pdb.set_trace() The second is: ``` def printtb(fun): import functools @functools.wraps(fun) def wrapper(…",
-    "author": "John-Mark Gurney",
-    "publishedAt": "2026-05-14T00:27:42.000Z",
+    "title": "Savepoint: A CLI for TDD",
+    "url": "https://www.youtube.com/watch?v=ZBa3BK4Efcw",
+    "excerpt": ":youtube_logo: New video! I've just published a tiny command-line tool called Savepoint. It's a command watcher that commits when you fix errors, automating a TDD workflow. I hope it's handy! (it's e…",
+    "author": ":youtube_logo: No Boilerplate",
+    "publishedAt": "2026-05-14T07:46:17.000Z",
     "score": 5,
     "tags": [
-      "python"
+      "rust"
     ],
     "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:cb230a09e6d7",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Useless Python Survey",
-    "url": "https://secretcodes.dev/surveys/useless-python-survey/",
-    "excerpt": "Useless survey about Python. Not used for anything except for Mariatta's entertainment and learning.",
-    "author": "Mariatta 🤦🏻‍♀️ :python:",
-    "publishedAt": "2026-05-13T23:04:33.734Z",
-    "score": 5,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -303,20 +285,63 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:bb05a5447764",
+    "kind": "article",
+    "source": "devto",
+    "title": "Lambda Just Got a File System. I Put AI Agents on It.",
+    "url": "https://dev.to/aws/lambda-just-got-a-file-system-i-put-ai-agents-on-it-1ej8",
+    "excerpt": "You've written this code before. An S3 event fires, your Lambda function wakes up, and the first...",
+    "author": "Eric D Johnson",
+    "publishedAt": "2026-05-13T15:50:28Z",
+    "score": 31,
+    "tags": [
+      "serverless",
+      "aws",
+      "lambda",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:1c630d1adf35",
     "kind": "article",
     "source": "lobsters",
     "title": "Lua as a practical \"soft-bedrock\" language",
     "url": "https://portal.mozz.us/gemini/zaibatsu.circumlunar.space/users/solderpunk/gemlog/lua-as-a-practical-soft-bedrock-language.gmi",
-    "excerpt": "15 points · lua, practices",
+    "excerpt": "17 points · lua, practices",
     "author": "dzwdz",
     "publishedAt": "2026-05-13T09:59:59.000-05:00",
-    "score": 15,
+    "score": 17,
     "tags": [
       "lua",
       "practices"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:b06ad4e399cd",
+    "kind": "article",
+    "source": "devto",
+    "title": "How to Save Bloated MCP with Code Mode",
+    "url": "https://dev.to/zenstack/how-to-save-bloated-mcp-with-code-mode-33e3",
+    "excerpt": "Is MCP Dead Because of Agent Skills? It sometimes feels like AI is not just disrupting the...",
+    "author": "JS",
+    "publishedAt": "2026-05-13T12:36:32Z",
+    "score": 63,
+    "tags": [
+      "ai",
+      "webdev",
+      "agents",
+      "database"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -328,7 +353,7 @@
     "excerpt": "Last year I spent forty minutes setting up a React project for an internal admin dashboard. Just the...",
     "author": "Syed Ahmer Shah",
     "publishedAt": "2026-05-13T09:28:52Z",
-    "score": 123,
+    "score": 125,
     "tags": [
       "python",
       "react",
@@ -386,10 +411,10 @@
     "source": "lobsters",
     "title": "what 262,715 regex questions on stack overflow haven't answered",
     "url": "https://iev.ee/blog/what-262715-regex-questions-havent-answered/",
-    "excerpt": "83 points · compsci, performance",
+    "excerpt": "85 points · compsci, performance",
     "author": "bradlarsen",
     "publishedAt": "2026-05-12T22:12:22.000-05:00",
-    "score": 83,
+    "score": 85,
     "tags": [
       "compsci",
       "performance"
@@ -453,10 +478,10 @@
     "source": "lobsters",
     "title": "All the ways to mock your Rust code",
     "url": "https://blog.appliedcomputing.io/p/all-the-ways-to-mock-your-rust-code",
-    "excerpt": "18 points · rust, testing",
+    "excerpt": "19 points · rust, testing",
     "author": "drmorr",
     "publishedAt": "2026-05-12T10:17:25.000-05:00",
-    "score": 18,
+    "score": 19,
     "tags": [
       "rust",
       "testing"
@@ -472,10 +497,10 @@
     "source": "lobsters",
     "title": "Killing a `Cow` made my JSON formatter 42% faster",
     "url": "https://jacobasper.com/blog/killing-a-cow-made-my-json-formatter-42-percent-faster/",
-    "excerpt": "22 points · performance, rust",
+    "excerpt": "23 points · performance, rust",
     "author": "abnercoimbre",
     "publishedAt": "2026-05-12T10:10:13.000-05:00",
-    "score": 22,
+    "score": 23,
     "tags": [
       "performance",
       "rust"
@@ -508,10 +533,10 @@
     "source": "lobsters",
     "title": "Learning Software Architecture",
     "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
-    "excerpt": "39 points · practices, programming",
+    "excerpt": "40 points · practices, programming",
     "author": "natfu",
     "publishedAt": "2026-05-12T06:50:34.000-05:00",
-    "score": 39,
+    "score": 40,
     "tags": [
       "practices",
       "programming"
@@ -599,7 +624,7 @@
     "excerpt": "My Arch Linux, Niri, and local AI coding setup on the ASUS ROG Flow Z13",
     "author": "Deepu K Sasidharan",
     "publishedAt": "2026-05-11T20:47:59Z",
-    "score": 31,
+    "score": 33,
     "tags": [
       "linux",
       "archlinux",
@@ -764,28 +789,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:f58ef165c1fc",
-    "kind": "article",
-    "source": "devto",
-    "title": "⚔️ Go vs Java: The Minimalist vs The Enterprise Veteran",
-    "url": "https://dev.to/adamthedeveloper/go-vs-java-the-minimalist-vs-the-enterprise-veteran-1gg3",
-    "excerpt": "No sides. No agenda. Just two languages walking into a bar and us watching what happens. ...",
-    "author": "Adam - The Developer",
-    "publishedAt": "2026-05-11T06:12:47Z",
-    "score": 30,
-    "tags": [
-      "programming",
-      "java",
-      "go",
-      "productivity"
-    ],
-    "labels": [
-      "java",
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -794,7 +797,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-12T04:34:58Z",
-    "score": 434878,
+    "score": 434923,
     "tags": [
       "Python",
       "api",
@@ -826,7 +829,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-12T18:22:15Z",
-    "score": 388237,
+    "score": 388258,
     "tags": [
       "Python",
       "books",
@@ -849,7 +852,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-12T02:36:10Z",
-    "score": 297510,
+    "score": 297534,
     "tags": [
       "Python",
       "awesome",
@@ -872,8 +875,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-05-11T14:32:32Z",
-    "score": 191354,
+    "publishedAt": "2026-05-14T08:45:48Z",
+    "score": 191379,
     "tags": [
       "Rust"
     ],
@@ -890,8 +893,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-14T02:10:32Z",
-    "score": 184290,
+    "publishedAt": "2026-05-14T06:46:43Z",
+    "score": 184293,
     "tags": [
       "Python",
       "agentic-ai",
@@ -920,8 +923,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-14T01:25:19Z",
-    "score": 160584,
+    "publishedAt": "2026-05-14T08:47:09Z",
+    "score": 160595,
     "tags": [
       "Python",
       "audio",
@@ -960,7 +963,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-11T20:24:44Z",
-    "score": 155649,
+    "score": 155664,
     "tags": [
       "Java",
       "agent",
@@ -990,8 +993,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-14T02:56:08Z",
-    "score": 148972,
+    "publishedAt": "2026-05-14T08:31:12Z",
+    "score": 149367,
     "tags": [
       "Python",
       "ai",
@@ -1026,7 +1029,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-05-14T01:58:04Z",
-    "score": 148073,
+    "score": 148078,
     "tags": [
       "Python",
       "agents",
@@ -1050,8 +1053,8 @@
     "url": "https://github.com/open-webui/open-webui",
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
-    "publishedAt": "2026-05-14T04:08:55Z",
-    "score": 136964,
+    "publishedAt": "2026-05-14T05:12:43Z",
+    "score": 136999,
     "tags": [
       "Python",
       "ai",
@@ -1084,8 +1087,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-14T02:42:07Z",
-    "score": 114116,
+    "publishedAt": "2026-05-14T08:43:41Z",
+    "score": 114135,
     "tags": [
       "Rust",
       "android",
@@ -1121,8 +1124,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-14T03:20:03Z",
-    "score": 112753,
+    "publishedAt": "2026-05-14T08:44:47Z",
+    "score": 112757,
     "tags": [
       "Rust",
       "compiler",
@@ -1142,8 +1145,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-14T04:07:50Z",
-    "score": 106663,
+    "publishedAt": "2026-05-14T08:49:09Z",
+    "score": 106668,
     "tags": [
       "Rust",
       "deno",
@@ -1165,8 +1168,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-13T16:19:58Z",
-    "score": 106594,
+    "publishedAt": "2026-05-14T05:34:02Z",
+    "score": 106605,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1192,7 +1195,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-05-08T14:26:45Z",
-    "score": 93987,
+    "score": 93985,
     "tags": [
       "Java",
       "awesome-list",
@@ -1210,6 +1213,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:63ca8b29c9e2",
+    "kind": "trending",
+    "source": "github",
+    "title": "oven-sh/bun",
+    "url": "https://github.com/oven-sh/bun",
+    "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+    "author": "oven-sh",
+    "publishedAt": "2026-05-14T08:49:16Z",
+    "score": 90022,
+    "tags": [
+      "Rust",
+      "bun",
+      "bundler",
+      "javascript",
+      "javascriptcore",
+      "jsx",
+      "nodejs",
+      "npm",
+      "react",
+      "transpiler",
+      "typescript",
+      "zig",
+      "ziglang"
+    ],
+    "labels": [
+      "rust",
+      "typescript",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:86c534825d0f",
     "kind": "trending",
     "source": "github",
@@ -1217,8 +1252,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-14T00:56:21Z",
-    "score": 84882,
+    "publishedAt": "2026-05-14T04:16:39Z",
+    "score": 84894,
     "tags": [
       "Rust",
       "packaging",
@@ -1233,42 +1268,37 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:2c0d1b24ea73",
+    "id": "github-trending:ac8bd99b3786",
     "kind": "trending",
     "source": "github",
-    "title": "zed-industries/zed",
-    "url": "https://github.com/zed-industries/zed",
-    "excerpt": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-    "author": "zed-industries",
-    "publishedAt": "2026-05-14T01:27:16Z",
-    "score": 82703,
+    "title": "macrozheng/mall",
+    "url": "https://github.com/macrozheng/mall",
+    "excerpt": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。",
+    "author": "macrozheng",
+    "publishedAt": "2026-05-14T08:32:05Z",
+    "score": 83603,
     "tags": [
-      "Rust",
-      "gpui",
-      "rust-lang",
-      "text-editor",
-      "zed"
+      "Java",
+      "docker",
+      "elasticsearch",
+      "elk",
+      "java",
+      "mongodb",
+      "mybatis",
+      "mysql",
+      "rabbitmq",
+      "redis",
+      "spring",
+      "spring-boot",
+      "spring-cloud",
+      "spring-security",
+      "springboot",
+      "springcloud",
+      "swagger-ui"
     ],
     "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "github-trending:83c4d873e34c",
-    "kind": "trending",
-    "source": "github",
-    "title": "openai/codex",
-    "url": "https://github.com/openai/codex",
-    "excerpt": "Lightweight coding agent that runs in your terminal",
-    "author": "openai",
-    "publishedAt": "2026-05-14T04:03:21Z",
-    "score": 82442,
-    "tags": [
-      "Rust"
-    ],
-    "labels": [
-      "rust"
+      "java",
+      "devops"
     ],
     "mentionsByteveda": false
   }
