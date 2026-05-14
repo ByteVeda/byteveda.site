@@ -218,16 +218,64 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:50aa316b818d",
+    "id": "mastodon:e875c3ee763b",
     "kind": "article",
     "source": "mastodon",
-    "title": "Savepoint: A CLI for TDD",
-    "url": "https://www.youtube.com/watch?v=ZBa3BK4Efcw",
-    "excerpt": ":youtube_logo: New video! I've just published a tiny command-line tool called Savepoint. It's a command watcher that commits when you fix errors, automating a TDD workflow. I hope it's handy! (it's e…",
-    "author": ":youtube_logo: No Boilerplate",
-    "publishedAt": "2026-05-14T07:46:17.000Z",
-    "score": 5,
+    "title": "Try out GRASS for conda today! # conda # python # geospatial # hydrology # gis # foss # osgeo # thatwaseasy",
+    "url": "https://fosstodon.org/@grassgis/116573288166552480",
+    "excerpt": "Try out GRASS for conda today! # conda # python # geospatial # hydrology # gis # foss # osgeo # thatwaseasy",
+    "author": "GRASS",
+    "publishedAt": "2026-05-14T14:00:14.457Z",
+    "score": 6,
     "tags": [
+      "conda",
+      "python",
+      "geospatial",
+      "hydrology",
+      "gis",
+      "foss",
+      "osgeo",
+      "thatwaseasy"
+    ],
+    "labels": [
+      "python",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5651e662c5da",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Is your company currently hiring for a role that includes using Rust? Reply with a link to the opening and any relevant…",
+    "url": "https://mastodon.social/@rustaceans/116573279424823500",
+    "excerpt": "Is your company currently hiring for a role that includes using Rust? Reply with a link to the opening and any relevant context. If you're not, we'd appreciate a repost for visibility # rust # rustla…",
+    "author": "Rust Bytes 🦀",
+    "publishedAt": "2026-05-14T13:58:01.000Z",
+    "score": 9,
+    "tags": [
+      "rust",
+      "rustlang",
+      "programming"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:dd7f11aaebe2",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Rewrite Bun in Rust by Jarred-Sumner · Pull Request #30412 · oven-sh/bun",
+    "url": "https://github.com/oven-sh/bun/pull/30412",
+    "excerpt": "Blog post with details coming soon.\nIt passes Bun's pre-existing test suite on all platforms (and fixes several memory leaks and flaky tests), the binary size shrinks by 3 MB - 8 MB, the benchm...",
+    "author": "Tomasz Nurkiewicz",
+    "publishedAt": "2026-05-14T10:14:06.317Z",
+    "score": 8,
+    "tags": [
+      "bun",
+      "zig",
       "rust"
     ],
     "labels": [
@@ -236,31 +284,53 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:9fcedfd01637",
+    "id": "mastodon:0a643508fc74",
     "kind": "article",
     "source": "mastodon",
-    "title": "AI doesn’t create bias, it inherits it – how do we ensure fairness when it comes to automated decisions? # AI # Tech #…",
-    "url": "https://mastodon.world/@The14/116569222806109762",
-    "excerpt": "AI doesn’t create bias, it inherits it – how do we ensure fairness when it comes to automated decisions? # AI # Tech # MachineLearning # Ethics # Bias # Automation # DataScience # DigitalRights # Hum…",
-    "author": "The-14",
-    "publishedAt": "2026-05-13T20:46:21.000Z",
-    "score": 5,
+    "title": "What I like and dislike about Go – PHP Developer",
+    "url": "https://www.phpdeveloper.org.uk/what-i-like-and-dislike-about-go/",
+    "excerpt": "New tech blog post: What I like and dislike about Go https://www. phpdeveloper.org.uk/what-i-lik e-and-dislike-about-go/ # golang",
+    "author": "Paul",
+    "publishedAt": "2026-05-14T08:47:21.000Z",
+    "score": 7,
     "tags": [
-      "ai",
-      "tech",
-      "machinelearning",
-      "ethics",
-      "bias",
-      "automation",
-      "datascience",
-      "digitalrights",
-      "humanrights",
-      "innovation",
-      "data",
-      "aiethics",
-      "algorithms",
-      "aibias",
-      "fairness"
+      "golang"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:ba49cdd7bcae",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "httpx2 - Fork by Pydantic",
+    "url": "https://tildeweb.nl/~michiel/httpx2.html",
+    "excerpt": "15 points · python",
+    "author": "rslabbert",
+    "publishedAt": "2026-05-13T19:49:20.000-05:00",
+    "score": 15,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:f6eafc08e75f",
+    "kind": "article",
+    "source": "rss",
+    "title": "Unlocking asynchronicity in continuous batching",
+    "url": "https://huggingface.co/blog/continuous_async",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-05-14T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
     ],
     "labels": [
       "ai",
@@ -293,7 +363,7 @@
     "excerpt": "You've written this code before. An S3 event fires, your Lambda function wakes up, and the first...",
     "author": "Eric D Johnson",
     "publishedAt": "2026-05-13T15:50:28Z",
-    "score": 31,
+    "score": 32,
     "tags": [
       "serverless",
       "aws",
@@ -311,10 +381,10 @@
     "source": "lobsters",
     "title": "Lua as a practical \"soft-bedrock\" language",
     "url": "https://portal.mozz.us/gemini/zaibatsu.circumlunar.space/users/solderpunk/gemlog/lua-as-a-practical-soft-bedrock-language.gmi",
-    "excerpt": "17 points · lua, practices",
+    "excerpt": "22 points · lua, practices",
     "author": "dzwdz",
     "publishedAt": "2026-05-13T09:59:59.000-05:00",
-    "score": 17,
+    "score": 22,
     "tags": [
       "lua",
       "practices"
@@ -353,7 +423,7 @@
     "excerpt": "Last year I spent forty minutes setting up a React project for an internal admin dashboard. Just the...",
     "author": "Syed Ahmer Shah",
     "publishedAt": "2026-05-13T09:28:52Z",
-    "score": 125,
+    "score": 134,
     "tags": [
       "python",
       "react",
@@ -376,7 +446,7 @@
     "excerpt": "I didn’t realize I was starting a 1.5-year journey when I opened my first LeetCode problem. It...",
     "author": "Hadil Ben Abdallah",
     "publishedAt": "2026-05-13T09:00:09Z",
-    "score": 40,
+    "score": 41,
     "tags": [
       "programming",
       "leetcode",
@@ -411,10 +481,10 @@
     "source": "lobsters",
     "title": "what 262,715 regex questions on stack overflow haven't answered",
     "url": "https://iev.ee/blog/what-262715-regex-questions-havent-answered/",
-    "excerpt": "85 points · compsci, performance",
+    "excerpt": "93 points · compsci, performance",
     "author": "bradlarsen",
     "publishedAt": "2026-05-12T22:12:22.000-05:00",
-    "score": 85,
+    "score": 93,
     "tags": [
       "compsci",
       "performance"
@@ -533,10 +603,10 @@
     "source": "lobsters",
     "title": "Learning Software Architecture",
     "url": "https://matklad.github.io/2026/05/12/software-architecture.html",
-    "excerpt": "40 points · practices, programming",
+    "excerpt": "41 points · practices, programming",
     "author": "natfu",
     "publishedAt": "2026-05-12T06:50:34.000-05:00",
-    "score": 40,
+    "score": 41,
     "tags": [
       "practices",
       "programming"
@@ -624,7 +694,7 @@
     "excerpt": "My Arch Linux, Niri, and local AI coding setup on the ASUS ROG Flow Z13",
     "author": "Deepu K Sasidharan",
     "publishedAt": "2026-05-11T20:47:59Z",
-    "score": 33,
+    "score": 34,
     "tags": [
       "linux",
       "archlinux",
@@ -662,7 +732,7 @@
     "excerpt": "Is AI that toxic ex you just can’t forget about and can’t move on from? For every task you get...",
     "author": "Konark Sharma",
     "publishedAt": "2026-05-11T18:09:56Z",
-    "score": 68,
+    "score": 71,
     "tags": [
       "ai",
       "webdev",
@@ -708,87 +778,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:84e8db0642a8",
-    "kind": "article",
-    "source": "devto",
-    "title": "The missing layer in prompt engineering: thinking quality",
-    "url": "https://dev.to/javz/the-missing-layer-in-prompt-engineering-thinking-quality-2n3j",
-    "excerpt": "I've seen countless prompting trends and prompt packs to use but most discussions around prompt...",
-    "author": "Julien Avezou",
-    "publishedAt": "2026-05-11T12:45:04Z",
-    "score": 50,
-    "tags": [
-      "ai",
-      "softwareengineering",
-      "productivity",
-      "learning"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:edc23d8cd6b6",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Programmable Whitelist-based Configs: Embedding Rye in Go",
-    "url": "https://ryelang.org/blog/posts/whitelist-config-with-rye/",
-    "excerpt": "19 points · programming",
-    "author": "refaktor",
-    "publishedAt": "2026-05-11T05:57:56.000-05:00",
-    "score": 19,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:bc8cf4fe66b5",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Tested PaioClaw — Here's What Happened When I Pushed It to Its Limits",
-    "url": "https://dev.to/harsh2644/i-tested-paioclaw-heres-what-happened-when-i-pushed-it-to-its-limits-iok",
-    "excerpt": "Most AI tools will do whatever you ask. That sounds like a feature. After spending a week testing...",
-    "author": "Harsh",
-    "publishedAt": "2026-05-11T10:35:02Z",
-    "score": 28,
-    "tags": [
-      "ai",
-      "security",
-      "programming",
-      "python"
-    ],
-    "labels": [
-      "ai",
-      "security",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:7ba008e9efb9",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Ratty: A terminal emulator with inline 3D graphics",
-    "url": "https://ratty-term.org/",
-    "excerpt": "58 points · graphics, rust, show, vibecoding",
-    "author": "orhun",
-    "publishedAt": "2026-05-11T05:10:49.000-05:00",
-    "score": 58,
-    "tags": [
-      "graphics",
-      "rust",
-      "show",
-      "vibecoding"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -797,7 +786,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-12T04:34:58Z",
-    "score": 434923,
+    "score": 434973,
     "tags": [
       "Python",
       "api",
@@ -829,7 +818,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-12T18:22:15Z",
-    "score": 388258,
+    "score": 388273,
     "tags": [
       "Python",
       "books",
@@ -852,7 +841,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-12T02:36:10Z",
-    "score": 297534,
+    "score": 297593,
     "tags": [
       "Python",
       "awesome",
@@ -875,8 +864,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-05-14T08:45:48Z",
-    "score": 191379,
+    "publishedAt": "2026-05-14T13:16:33Z",
+    "score": 191420,
     "tags": [
       "Rust"
     ],
@@ -893,8 +882,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-14T06:46:43Z",
-    "score": 184293,
+    "publishedAt": "2026-05-14T11:23:20Z",
+    "score": 184295,
     "tags": [
       "Python",
       "agentic-ai",
@@ -923,8 +912,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-14T08:47:09Z",
-    "score": 160595,
+    "publishedAt": "2026-05-14T14:14:17Z",
+    "score": 160605,
     "tags": [
       "Python",
       "audio",
@@ -963,7 +952,7 @@
     "excerpt": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "author": "Snailclimb",
     "publishedAt": "2026-05-11T20:24:44Z",
-    "score": 155664,
+    "score": 155668,
     "tags": [
       "Java",
       "agent",
@@ -993,8 +982,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-14T08:31:12Z",
-    "score": 149367,
+    "publishedAt": "2026-05-14T14:31:46Z",
+    "score": 149820,
     "tags": [
       "Python",
       "ai",
@@ -1028,8 +1017,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-14T01:58:04Z",
-    "score": 148078,
+    "publishedAt": "2026-05-14T14:29:38Z",
+    "score": 148084,
     "tags": [
       "Python",
       "agents",
@@ -1054,7 +1043,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-05-14T05:12:43Z",
-    "score": 136999,
+    "score": 137049,
     "tags": [
       "Python",
       "ai",
@@ -1088,7 +1077,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-14T08:43:41Z",
-    "score": 114135,
+    "score": 114164,
     "tags": [
       "Rust",
       "android",
@@ -1124,8 +1113,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-14T08:44:47Z",
-    "score": 112757,
+    "publishedAt": "2026-05-14T14:37:03Z",
+    "score": 112760,
     "tags": [
       "Rust",
       "compiler",
@@ -1145,8 +1134,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-14T08:49:09Z",
-    "score": 106668,
+    "publishedAt": "2026-05-14T14:33:59Z",
+    "score": 106675,
     "tags": [
       "Rust",
       "deno",
@@ -1168,8 +1157,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-05-14T05:34:02Z",
-    "score": 106605,
+    "publishedAt": "2026-05-14T14:37:03Z",
+    "score": 106622,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1220,8 +1209,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-05-14T08:49:16Z",
-    "score": 90022,
+    "publishedAt": "2026-05-14T14:36:19Z",
+    "score": 90164,
     "tags": [
       "Rust",
       "bun",
@@ -1252,8 +1241,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-14T04:16:39Z",
-    "score": 84894,
+    "publishedAt": "2026-05-14T14:22:36Z",
+    "score": 84910,
     "tags": [
       "Rust",
       "packaging",
@@ -1276,7 +1265,7 @@
     "excerpt": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。",
     "author": "macrozheng",
     "publishedAt": "2026-05-14T08:32:05Z",
-    "score": 83603,
+    "score": 83608,
     "tags": [
       "Java",
       "docker",
