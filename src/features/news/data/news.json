@@ -218,20 +218,37 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:22c297b9a250",
+    "id": "rss:Stack Overflow Blog:d4b1e49e7282",
+    "kind": "article",
+    "source": "rss",
+    "title": "Do you have what it takes to run AI in production?",
+    "url": "https://stackoverflow.blog/2026/05/26/do-you-have-what-it-takes-to-run-ai-in-production/",
+    "excerpt": "From the floor of HumanX, Ryan Donovan is joined by Peter Salanki, CTO and co-founder of CoreWeave, to chat about what it really takes to run AI in production; the growing importance of observability…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-05-26T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:de5c40d1e818",
     "kind": "article",
     "source": "mastodon",
-    "title": "Die Open Source Community bricht zusammen",
-    "url": "https://www.youtube.com/watch?v=yi1QiqlB1Q4",
-    "excerpt": "Wer # OpenSource benutzt (und alle, die das hier lesen, benutzen OpenSource), sollte dieses Video gesehen haben! Bitte 40 Minuten Lebenszeit einplanen, nicht gleich nach der ersten nicht genehmen Aus…",
-    "author": "Stefan Münz",
-    "publishedAt": "2026-05-25T19:29:19.000Z",
+    "title": "In # CambridgeMA , someone set out some free computer programming and CS books today, including a few \"bibles\". It's be…",
+    "url": "https://mastodon.online/@neilvandyke/116637465956886682",
+    "excerpt": "In # CambridgeMA , someone set out some free computer programming and CS books today, including a few \"bibles\". It's beside the Broadway sidewalk, in front of Joan Lorentz Park and the main public li…",
+    "author": "Neil Van Dyke",
+    "publishedAt": "2026-05-25T22:01:29.000Z",
     "score": 5,
     "tags": [
-      "opensource"
+      "cambridgema",
+      "rust"
     ],
     "labels": [
-      "opensource"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -270,60 +287,39 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:c3085bed4d3a",
+    "id": "lobsters:f7e8519c5598",
     "kind": "article",
-    "source": "mastodon",
-    "title": "People in the # Python ecosystem, has there ever been a developer survey that gathered data about the *usage* of static…",
-    "url": "https://phpc.social/@Girgias/116636167691122951",
-    "excerpt": "People in the # Python ecosystem, has there ever been a developer survey that gathered data about the *usage* of static analysis tools in the Python community? Frustratingly the JetBrains developer s…",
-    "author": "Gina Peter Banyard",
-    "publishedAt": "2026-05-25T16:31:19.000Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas",
+    "url": "http://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+    "excerpt": "43 points · ai, philosophy",
+    "author": "pyfisch",
+    "publishedAt": "2026-05-25T12:07:48.000-05:00",
+    "score": 43,
     "tags": [
-      "python"
+      "ai",
+      "philosophy"
     ],
     "labels": [
-      "python"
+      "ai"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:87b56713bd0f",
+    "id": "lobsters:380b873c575a",
     "kind": "article",
-    "source": "mastodon",
-    "title": "I&#39;m trying to do a little work on gh-profiler each day, to keep some of the momentum from PyCon. 0.6.3 makes format…",
-    "url": "https://fosstodon.org/@ehmatthes/116636157000828165",
-    "excerpt": "I&#39;m trying to do a little work on gh-profiler each day, to keep some of the momentum from PyCon. 0.6.3 makes formatting more consistent across full and concise summaries, and aligns output more c…",
-    "author": "Eric Matthes",
-    "publishedAt": "2026-05-25T16:28:36.736Z",
-    "score": 10,
+    "source": "lobsters",
+    "title": "Using AI to write better code more slowly",
+    "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+    "excerpt": "40 points · practices, vibecoding",
+    "author": "nolan",
+    "publishedAt": "2026-05-25T11:19:14.000-05:00",
+    "score": 40,
     "tags": [
-      "python",
-      "opensource"
+      "practices",
+      "vibecoding"
     ],
-    "labels": [
-      "python",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:275d4c52dd1a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# RustAllHands 2026 was amazing 🤩 Wonderful to spend a couple of days with these lovely people. In spite of all the fu…",
-    "url": "https://hachyderm.io/@ciura_victor/116636147968606213",
-    "excerpt": "# RustAllHands 2026 was amazing 🤩 Wonderful to spend a couple of days with these lovely people. In spite of all the fun, we managed to do some great work, too - # Rust Project goals are progressing…",
-    "author": "Victor Ciura",
-    "publishedAt": "2026-05-25T16:26:18.000Z",
-    "score": 7,
-    "tags": [
-      "rustallhands",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -343,33 +339,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:e21a75866a5b",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "In # Python , super() searches the MRO until it finds a match: class GP: def x(self): return f&#39;In GP&#39; class P(G…",
-    "url": "https://fosstodon.org/@Reuven/116635927215376755",
-    "excerpt": "In # Python , super() searches the MRO until it finds a match: class GP: def x(self): return f&#39;In GP&#39; class P(GP): pass class C(P): def x(self): r = super().x() return f&#39;Child got &quot;{…",
-    "author": "Reuven M. Lerner",
-    "publishedAt": "2026-05-25T15:30:10.488Z",
-    "score": 5,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:b86ef7ac641c",
     "kind": "article",
     "source": "lobsters",
     "title": "Scoped Error in Rust",
     "url": "https://kanru.info/scoped-error/",
-    "excerpt": "23 points · rust",
+    "excerpt": "27 points · rust",
     "author": "hongminhee",
     "publishedAt": "2026-05-25T01:51:29.000-05:00",
-    "score": 23,
+    "score": 27,
     "tags": [
       "rust"
     ],
@@ -384,10 +362,10 @@
     "source": "lobsters",
     "title": "The Eternal Sloptember",
     "url": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
-    "excerpt": "63 points · culture, programming, vibecoding",
+    "excerpt": "64 points · culture, programming, vibecoding",
     "author": "rcalixte",
     "publishedAt": "2026-05-24T19:35:59.000-05:00",
-    "score": 63,
+    "score": 64,
     "tags": [
       "culture",
       "programming",
@@ -457,55 +435,15 @@
     "source": "lobsters",
     "title": "The Soul of Maintaining a New Machine",
     "url": "https://books.worksinprogress.co/book/maintenance-of-everything/communities-of-practice/the-soul-of-maintaining-a-new-machine/3",
-    "excerpt": "19 points · historical, practices",
+    "excerpt": "21 points · historical, practices",
     "author": "jfred",
     "publishedAt": "2026-05-24T16:00:34.000-05:00",
-    "score": 19,
+    "score": 21,
     "tags": [
       "historical",
       "practices"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:b5de6c14f3da",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Got D3 rendering the charts. The design isn&#39;t set in stone, but I like it so far. # GoLang # D3 # htmx # templ # HT…",
-    "url": "https://fosstodon.org/@blainsmith/116630696397095599",
-    "excerpt": "Got D3 rendering the charts. The design isn&#39;t set in stone, but I like it so far. # GoLang # D3 # htmx # templ # HTTP",
-    "author": "B",
-    "publishedAt": "2026-05-24T17:19:54.536Z",
-    "score": 5,
-    "tags": [
-      "golang",
-      "d3",
-      "htmx",
-      "templ",
-      "http"
-    ],
-    "labels": [
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:94c59e98b0d5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "New blog post 🥳 How my minimal, memory-safe # golang rsync steers clear of vulnerabilities Back in January 2025, multi…",
-    "url": "https://mas.to/@zekjur/116630070199293997",
-    "excerpt": "New blog post 🥳 How my minimal, memory-safe # golang rsync steers clear of vulnerabilities Back in January 2025, multiple different security researchers published a total of 6 security vulnerabiliti…",
-    "author": "Michael Stapelberg 🐧🐹😺",
-    "publishedAt": "2026-05-24T14:40:39.000Z",
-    "score": 18,
-    "tags": [
-      "golang"
-    ],
-    "labels": [
-      "go"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -552,7 +490,7 @@
     "excerpt": "Big improvements incoming 👋 Finding the right balance for a feed algorithm is historically really...",
     "author": "Ben Halpern",
     "publishedAt": "2026-05-22T16:27:19Z",
-    "score": 78,
+    "score": 79,
     "tags": [
       "gemini",
       "ai",
@@ -640,7 +578,7 @@
     "excerpt": "7000+ dev developers shared their thoughts about AI in the recent State of Web Dev AI survey.",
     "author": "Sacha Greif",
     "publishedAt": "2026-05-22T06:49:44Z",
-    "score": 60,
+    "score": 61,
     "tags": [
       "ai",
       "javascript",
@@ -781,25 +719,62 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:d353474e3996",
-    "kind": "trending",
-    "source": "github",
-    "title": "EbookFoundation/free-programming-books",
-    "url": "https://github.com/EbookFoundation/free-programming-books",
-    "excerpt": ":books: Freely available programming books",
-    "author": "EbookFoundation",
-    "publishedAt": "2026-05-19T12:29:12Z",
-    "score": 388976,
+    "id": "devto:3979faab26ee",
+    "kind": "article",
+    "source": "devto",
+    "title": "Frameworks Are No Longer Being Designed Only for Humans",
+    "url": "https://dev.to/hemapriya_kanagala/frameworks-are-no-longer-being-designed-only-for-humans-13de",
+    "excerpt": "This is a submission for the Google I/O Writing Challenge TL;DR After watching the Google I/O 2026...",
+    "author": "Hemapriya Kanagala",
+    "publishedAt": "2026-05-21T13:25:43Z",
+    "score": 34,
     "tags": [
-      "Python",
-      "books",
-      "education",
-      "hacktoberfest",
-      "list",
-      "resource"
+      "devchallenge",
+      "googleiochallenge",
+      "ai",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:4516439617d6",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Python 3.15: features that didn't make the headlines",
+    "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
+    "excerpt": "38 points · python",
+    "author": "hoistbypetard",
+    "publishedAt": "2026-05-21T08:16:44.000-05:00",
+    "score": 38,
+    "tags": [
+      "python"
     ],
     "labels": [
       "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:e1f5b4fac361",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Used to Get Excited About New Tools Now I Feel Tired.",
+    "url": "https://dev.to/harsh2644/i-used-to-get-excited-about-new-tools-now-i-feel-tired-1e18",
+    "excerpt": "A new AI model dropped last week. Twitter exploded LinkedIn was a wall of hot takes My feed filled...",
+    "author": "Harsh",
+    "publishedAt": "2026-05-21T10:19:01Z",
+    "score": 74,
+    "tags": [
+      "ai",
+      "mentalhealth",
+      "programming",
+      "career"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -812,7 +787,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-24T07:25:04Z",
-    "score": 299551,
+    "score": 299605,
     "tags": [
       "Python",
       "awesome",
@@ -836,7 +811,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-05-22T11:51:35Z",
-    "score": 221389,
+    "score": 221392,
     "tags": [
       "Python",
       "algorithm",
@@ -867,8 +842,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-05-25T19:39:36Z",
-    "score": 192486,
+    "publishedAt": "2026-05-26T04:10:07Z",
+    "score": 192515,
     "tags": [
       "Rust"
     ],
@@ -885,8 +860,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-25T19:02:25Z",
-    "score": 184542,
+    "publishedAt": "2026-05-26T00:02:23Z",
+    "score": 184554,
     "tags": [
       "Python",
       "agentic-ai",
@@ -915,8 +890,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-25T17:11:48Z",
-    "score": 167058,
+    "publishedAt": "2026-05-26T04:04:17Z",
+    "score": 167536,
     "tags": [
       "Python",
       "ai",
@@ -950,8 +925,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-05-24T23:07:43Z",
-    "score": 165600,
+    "publishedAt": "2026-05-25T23:21:37Z",
+    "score": 165691,
     "tags": [
       "Python",
       "cli",
@@ -975,8 +950,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-25T18:39:48Z",
-    "score": 160951,
+    "publishedAt": "2026-05-26T03:10:05Z",
+    "score": 160953,
     "tags": [
       "Python",
       "audio",
@@ -1014,8 +989,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-05-25T19:47:23Z",
-    "score": 148741,
+    "publishedAt": "2026-05-26T04:01:11Z",
+    "score": 148750,
     "tags": [
       "Python",
       "agents",
@@ -1032,6 +1007,40 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:211ac45fa0ae",
+    "kind": "trending",
+    "source": "github",
+    "title": "open-webui/open-webui",
+    "url": "https://github.com/open-webui/open-webui",
+    "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "author": "open-webui",
+    "publishedAt": "2026-05-25T16:15:05Z",
+    "score": 138646,
+    "tags": [
+      "Python",
+      "ai",
+      "llm",
+      "llm-ui",
+      "llm-webui",
+      "llms",
+      "mcp",
+      "ollama",
+      "ollama-webui",
+      "open-webui",
+      "openai",
+      "openapi",
+      "rag",
+      "self-hosted",
+      "ui",
+      "webui"
+    ],
+    "labels": [
+      "python",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:1a7aeb8bfed5",
     "kind": "trending",
     "source": "github",
@@ -1039,8 +1048,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-05-25T08:01:35Z",
-    "score": 114913,
+    "publishedAt": "2026-05-26T03:45:23Z",
+    "score": 114931,
     "tags": [
       "Rust",
       "android",
@@ -1076,8 +1085,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-25T18:54:30Z",
-    "score": 113097,
+    "publishedAt": "2026-05-26T02:39:48Z",
+    "score": 113115,
     "tags": [
       "Rust",
       "compiler",
@@ -1098,7 +1107,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-24T12:57:07Z",
-    "score": 107088,
+    "score": 107103,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1123,8 +1132,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-25T19:32:34Z",
-    "score": 106862,
+    "publishedAt": "2026-05-26T04:19:55Z",
+    "score": 106867,
     "tags": [
       "Rust",
       "deno",
@@ -1146,8 +1155,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-05-25T19:50:12Z",
-    "score": 92523,
+    "publishedAt": "2026-05-26T04:21:12Z",
+    "score": 92532,
     "tags": [
       "Rust",
       "bun",
@@ -1178,8 +1187,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-25T19:53:41Z",
-    "score": 85565,
+    "publishedAt": "2026-05-26T03:55:49Z",
+    "score": 85682,
     "tags": [
       "Rust"
     ],
@@ -1196,8 +1205,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-25T18:56:26Z",
-    "score": 85484,
+    "publishedAt": "2026-05-26T00:56:45Z",
+    "score": 85494,
     "tags": [
       "Rust",
       "packaging",
@@ -1220,7 +1229,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-05-25T15:17:23Z",
-    "score": 80718,
+    "score": 80722,
     "tags": [
       "Java",
       "framework",
@@ -1241,8 +1250,8 @@
     "url": "https://github.com/elastic/elasticsearch",
     "excerpt": "Free and Open Source, Distributed, RESTful Search Engine",
     "author": "elastic",
-    "publishedAt": "2026-05-25T18:20:25Z",
-    "score": 76763,
+    "publishedAt": "2026-05-26T01:40:02Z",
+    "score": 76762,
     "tags": [
       "Java",
       "elasticsearch",
