@@ -218,63 +218,159 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:2736880f7735",
+    "id": "mastodon:fcd91edccae0",
     "kind": "article",
     "source": "mastodon",
-    "title": "Today I&#39;m helping my friend Piero Savastano as talk manager at PyCon Italia. Piero is presenting his talk in Italia…",
-    "url": "https://fosstodon.org/@paulox/116657295012616805",
-    "excerpt": "Today I&#39;m helping my friend Piero Savastano as talk manager at PyCon Italia. Piero is presenting his talk in Italian, &quot;Stregatto 2.0&quot;, about Cheshire Cat AI, an AI agent framework born…",
-    "author": "Paolo Melchiorre @PyCon Italia",
-    "publishedAt": "2026-05-29T10:04:17.200Z",
+    "title": "At work during a presentation by our data-team (BI, data visualization, ...) about their way of working, someone asked…",
+    "url": "https://mastodon.social/@futtta/116659356552370458",
+    "excerpt": "At work during a presentation by our data-team (BI, data visualization, ...) about their way of working, someone asked to what extent LLM's will have an impact. I braced myself for the answer, but ac…",
+    "author": "frank goossens 🇧🇪🇪🇺",
+    "publishedAt": "2026-05-29T18:48:33.000Z",
     "score": 5,
     "tags": [
-      "PyConItalia",
-      "python",
+      "bi",
       "ai",
-      "pycon"
+      "llm",
+      "noai",
+      "data"
     ],
     "labels": [
-      "python",
       "ai"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:40c8e8e5b68c",
+    "id": "mastodon:7ac9c6052068",
     "kind": "article",
     "source": "mastodon",
-    "title": "Heute mal wieder drei Stunden damit verbracht, ein Problem zu debuggen, das sich am Ende als fehlendes Komma in der Con…",
-    "url": "https://norden.social/@reeeen/116657281718689252",
-    "excerpt": "Heute mal wieder drei Stunden damit verbracht, ein Problem zu debuggen, das sich am Ende als fehlendes Komma in der Config entpuppt hat. 🫠 YAML ist halt die Rache des Universums an Entwicklern, die…",
-    "author": "⚓💾 Tueddelmors 💾⚓",
-    "publishedAt": "2026-05-29T10:00:54.000Z",
-    "score": 6,
+    "title": "@ pycon @ BajoranEngineer @ djangoconeurope Dawn’s keynote was a great way to close the second day of PyCon Italia 2026…",
+    "url": "https://fosstodon.org/@paulox/116659287949298902",
+    "excerpt": "@ pycon @ BajoranEngineer @ djangoconeurope Dawn’s keynote was a great way to close the second day of PyCon Italia 2026. The talk sparked lots of questions from the audience, and the discussion could…",
+    "author": "Paolo Melchiorre @PyCon Italia",
+    "publishedAt": "2026-05-29T18:31:07.000Z",
+    "score": 8,
     "tags": [
-      "devlife",
-      "opensource",
-      "yaml"
+      "PyConItalia",
+      "python",
+      "community"
     ],
     "labels": [
-      "opensource"
+      "python"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:540c37e5bda7",
+    "id": "mastodon:9995adea6ad6",
     "kind": "article",
     "source": "mastodon",
-    "title": "So - nach langem Zögern habe ich nun endlich mal # Linux Mint auf einem alten Laptop Leonovo i5 installiert. Ich würde…",
-    "url": "https://bildung.social/@stefanfassnacht/116657263796401286",
-    "excerpt": "So - nach langem Zögern habe ich nun endlich mal # Linux Mint auf einem alten Laptop Leonovo i5 installiert. Ich würde mich als technikaffin beschreiben mit Fokus auf der Anwenderebene, weniger im Ad…",
-    "author": "Stefan Fassnacht",
-    "publishedAt": "2026-05-29T09:56:20.000Z",
+    "title": "Proposition: if # Python vulnerabilities aren't going to get fixed upstream in a timely manner, and they almost all occ…",
+    "url": "https://mastodon.social/@wollman/116659238036456703",
+    "excerpt": "Proposition: if # Python vulnerabilities aren't going to get fixed upstream in a timely manner, and they almost all occur in \"batteries\", # FreeBSD should just remove the affected code from its packa…",
+    "author": "Garrett Wollman",
+    "publishedAt": "2026-05-29T18:18:25.000Z",
+    "score": 11,
+    "tags": [
+      "python",
+      "freebsd"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:fc9fb6e34938",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Python Tip #149 (of 365): Sort by specific attributes with operator.attrgetter. Have an iterable of dataclasses, namedt…",
+    "url": "https://mastodon.social/@treyhunner/116659205000592346",
+    "excerpt": "Python Tip #149 (of 365): Sort by specific attributes with operator.attrgetter. Have an iterable of dataclasses, namedtuples, or some other record-like object? Want to sort them by a specific attribu…",
+    "author": "Trey Hunner 🐍",
+    "publishedAt": "2026-05-29T18:10:01.000Z",
+    "score": 7,
+    "tags": [
+      "python",
+      "dailypythontip"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:1130ff6710f3",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "bijou64: A variable-length integer encoding",
+    "url": "https://www.inkandswitch.com/tangents/bijou64/",
+    "excerpt": "31 points · performance, programming",
+    "author": "justinweiss",
+    "publishedAt": "2026-05-29T10:02:24.000-05:00",
+    "score": 31,
+    "tags": [
+      "performance",
+      "programming"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:240a824bd270",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Can someone recommend an mDNS responder crate, that integrates nicely with no_std and embassy_net? I tried to integrate…",
+    "url": "https://chaos.social/@dickenhobelix/116658235331092554",
+    "excerpt": "Can someone recommend an mDNS responder crate, that integrates nicely with no_std and embassy_net? I tried to integrate edge-mdns, but failed to wire edge_nal_std into embassy_net 😬 Guess my rust sk…",
+    "author": "Dickenhobelix",
+    "publishedAt": "2026-05-29T14:03:25.000Z",
     "score": 6,
     "tags": [
-      "linux",
-      "windows",
-      "FediLZ"
+      "rust",
+      "embassy",
+      "embedded",
+      "fedihelp",
+      "repostwelcome"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:64bd638db98e",
+    "kind": "article",
+    "source": "rss",
+    "title": "Best of the Heap: First post of the past​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿‌‍​﻿‍​‌‍‌‍​﻿​‌​﻿‌‍​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿‌​​﻿​‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍​‍‌‍‌​​﻿‍‌​﻿​​​‍﻿‌​﻿‌﻿​﻿‌‌‌‍​‌​﻿​﻿​﻿‍‌​﻿​‌​﻿​‍‌‍‌​​﻿​‌​﻿‌​​﻿‌‌​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿‌‍​﻿‍​‌‍‌‍​﻿​‌​﻿‌‍​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿‌​​﻿​‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍​‍‌‍‌​​﻿‍‌​﻿​​​‍﻿‌​﻿‌﻿​﻿‌‌‌‍​‌​﻿​﻿​﻿‍‌​﻿​‌​﻿​‍‌‍‌​​﻿​‌​﻿‌​​﻿‌‌​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/05/29/best-of-the-heap-first-post-of-the-past/",
+    "excerpt": "Let&#x27;s take a moment to shout out all the articles we’re seen posted so far and encourage folks reading to reach out about your own.​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌ ​ ‌‍​‌‌‍ ‍‌‍‍‌…",
+    "author": "Ryan Donovan",
+    "publishedAt": "2026-05-29T14:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:d9640b091cc2",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Leaving performance on the table",
+    "url": "https://fzakaria.com/2026/05/23/leaving-performance-on-the-table",
+    "excerpt": "23 points · compilers, performance",
+    "author": "confusedalex",
+    "publishedAt": "2026-05-29T04:18:06.000-05:00",
+    "score": 23,
+    "tags": [
+      "compilers",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -294,15 +390,34 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Hugging Face:357d064be869",
+    "kind": "article",
+    "source": "rss",
+    "title": "Profiling in PyTorch (Part 1): A Beginner's Guide to torch.profiler",
+    "url": "https://huggingface.co/blog/torch-profiler",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-05-29T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:5da80db3caf0",
     "kind": "article",
     "source": "lobsters",
     "title": "One year of Roto, the compiled scripting language for Rust",
     "url": "https://blog.nlnetlabs.nl/one-year-of-roto-the-compiled-scripting-language-for-rust/",
-    "excerpt": "34 points · rust",
+    "excerpt": "47 points · rust",
     "author": "fanf",
     "publishedAt": "2026-05-28T16:01:28.000-05:00",
-    "score": 34,
+    "score": 47,
     "tags": [
       "rust"
     ],
@@ -317,10 +432,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.96.0",
     "url": "https://blog.rust-lang.org/2026/05/28/Rust-1.96.0/",
-    "excerpt": "51 points · release, rust",
+    "excerpt": "65 points · release, rust",
     "author": "theelx",
     "publishedAt": "2026-05-28T14:28:08.000-05:00",
-    "score": 51,
+    "score": 65,
     "tags": [
       "release",
       "rust"
@@ -368,10 +483,10 @@
     "source": "lobsters",
     "title": "jjc: Non-interactive hunk-level operations for Jujutsu",
     "url": "https://tangled.org/akashina.tngl.sh/jjc",
-    "excerpt": "24 points · rust, vcs",
+    "excerpt": "30 points · rust, vcs",
     "author": "op",
     "publishedAt": "2026-05-28T10:59:46.000-05:00",
-    "score": 24,
+    "score": 30,
     "tags": [
       "rust",
       "vcs"
@@ -390,7 +505,7 @@
     "excerpt": "AI wrote the code in 30 seconds Three lines A simple function I prompted it generated I copied It...",
     "author": "Harsh",
     "publishedAt": "2026-05-28T14:53:02Z",
-    "score": 27,
+    "score": 34,
     "tags": [
       "ai",
       "programming",
@@ -403,15 +518,36 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:b53fbd7cc9a4",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Built an MCP Agent Framework for My B.Tech Major Project. It Got 750+ npm Downloads in Week One. Here's the Comeback Story.",
+    "url": "https://dev.to/om_shree_0709/i-built-an-mcp-agent-framework-for-my-btech-major-project-it-got-750-npm-downloads-in-week-one-14f1",
+    "excerpt": "This is a submission for the GitHub Finish-Up-A-Thon Challenge What I Built Last...",
+    "author": "Om Shree",
+    "publishedAt": "2026-05-28T13:40:00Z",
+    "score": 26,
+    "tags": [
+      "githubcopilot",
+      "githubchallenge",
+      "mcp",
+      "opensource"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:f5afd1f34d04",
     "kind": "article",
     "source": "lobsters",
     "title": "Package managers that package package managers",
     "url": "https://nesbitt.io/2026/05/28/package-managers-that-package-package-managers.html",
-    "excerpt": "22 points · compsci, linux, practices",
+    "excerpt": "24 points · compsci, linux, practices",
     "author": "jzb",
     "publishedAt": "2026-05-28T08:04:36.000-05:00",
-    "score": 22,
+    "score": 24,
     "tags": [
       "compsci",
       "linux",
@@ -444,10 +580,10 @@
     "source": "lobsters",
     "title": "Rust (and Slint) on a jailbroken Kindle",
     "url": "https://sverre.me/blog/rust-on-kindle/",
-    "excerpt": "32 points · rust",
+    "excerpt": "34 points · rust",
     "author": "wezm",
     "publishedAt": "2026-05-27T18:46:37.000-05:00",
-    "score": 32,
+    "score": 34,
     "tags": [
       "rust"
     ],
@@ -519,7 +655,7 @@
     "excerpt": "JSNation is coming soon, and besides my talk (I’ll drop the link in the comments so I don’t spam you...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-05-27T07:11:18Z",
-    "score": 102,
+    "score": 116,
     "tags": [
       "discuss",
       "ai"
@@ -538,7 +674,7 @@
     "excerpt": "Developers are so opinionated that it's difficult to pin down one favourite tool !",
     "author": "dhruvp",
     "publishedAt": "2026-05-27T00:40:47.000-05:00",
-    "score": 117,
+    "score": 118,
     "tags": [
       "ask",
       "programming"
@@ -574,10 +710,10 @@
     "source": "lobsters",
     "title": "Theseus: translating win32 to wasm",
     "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
-    "excerpt": "19 points · rust, wasm, windows",
+    "excerpt": "20 points · rust, wasm, windows",
     "author": "wezm",
     "publishedAt": "2026-05-26T20:45:01.000-05:00",
-    "score": 19,
+    "score": 20,
     "tags": [
       "rust",
       "wasm",
@@ -643,137 +779,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:6f9c9b06514c",
-    "kind": "article",
-    "source": "devto",
-    "title": "An LLM API call, in 4 GIFs",
-    "url": "https://dev.to/jasmin/an-llm-api-call-in-4-gifs-33b1",
-    "excerpt": "This is the first post of series Building TinyAgent where we are going to build a small agent from...",
-    "author": "Jasmin Virdi",
-    "publishedAt": "2026-05-26T20:52:22Z",
-    "score": 47,
-    "tags": [
-      "llm",
-      "javascript",
-      "ai",
-      "beginners"
-    ],
-    "labels": [
-      "ai",
-      "typescript"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:8918b875eabc",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Folding in Parallel",
-    "url": "https://okmij.org/ftp/Algorithms/map-monoid-reduce.html",
-    "excerpt": "29 points · math, programming",
-    "author": "slightknack",
-    "publishedAt": "2026-05-26T14:24:03.000-05:00",
-    "score": 29,
-    "tags": [
-      "math",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:ee3ce41de274",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Building an AsyncIO executor for the 3DS",
-    "url": "https://blog.cat-girl.gay/3ds-async-part-one/",
-    "excerpt": "36 points · rust",
-    "author": "tendstofortytwo",
-    "publishedAt": "2026-05-26T10:01:02.000-05:00",
-    "score": 36,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:d4b1e49e7282",
-    "kind": "article",
-    "source": "rss",
-    "title": "Do you have what it takes to run AI in production?​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​‍​﻿‌‌​﻿‌‌‌‍‌‍​﻿‌​​﻿​‌‌‍​‍‌‍‌​​‍﻿‌‌‍‌‍‌‍​‍​﻿‍‌​﻿​﻿​‍﻿‌​﻿‌​‌‍​‍​﻿‍​​﻿​​​‍﻿‌‌‍​‌​﻿​‍​﻿‌‌‌‍​‌​‍﻿‌​﻿​‌‌‍​﻿‌‍​‌‌‍​﻿​﻿‌﻿‌‍‌​‌‍​‌‌‍​‍​﻿‌﻿‌‍​‍​﻿​​‌‍‌​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​‍​﻿‌‌​﻿‌‌‌‍‌‍​﻿‌​​﻿​‌‌‍​‍‌‍‌​​‍﻿‌‌‍‌‍‌‍​‍​﻿‍‌​﻿​﻿​‍﻿‌​﻿‌​‌‍​‍​﻿‍​​﻿​​​‍﻿‌‌‍​‌​﻿​‍​﻿‌‌‌‍​‌​‍﻿‌​﻿​‌‌‍​﻿‌‍​‌‌‍​﻿​﻿‌﻿‌‍‌​‌‍​‌‌‍​‍​﻿‌﻿‌‍​‍​﻿​​‌‍‌​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/05/26/do-you-have-what-it-takes-to-run-ai-in-production/",
-    "excerpt": "From the floor of HumanX, Ryan Donovan is joined by Peter Salanki, CTO and co-founder of CoreWeave, to chat about what it really takes to run AI in production; the growing importance of observability…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-05-26T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:08951af1b3d3",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The pressure",
-    "url": "https://daniel.haxx.se/blog/2026/05/26/the-pressure/",
-    "excerpt": "190 points · culture, programming",
-    "author": "andrewnez",
-    "publishedAt": "2026-05-26T01:47:38.000-05:00",
-    "score": 190,
-    "tags": [
-      "culture",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:5c212b816b84",
-    "kind": "article",
-    "source": "devto",
-    "title": "The Quiet AI War Inside Your Browser",
-    "url": "https://dev.to/obetomuniz/the-quiet-ai-war-inside-your-browser-22hd",
-    "excerpt": "Google shipped the Prompt API in Chrome 148 on May 5, 2026. Mozilla objected. Apple's WebKit team...",
-    "author": "Beto Muniz",
-    "publishedAt": "2026-05-25T22:09:47Z",
-    "score": 25,
-    "tags": [
-      "ai",
-      "frontend",
-      "browser",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:fd62b10275ca",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Performance of Rust language",
-    "url": "https://github.com/yugr/rust-slides",
-    "excerpt": "16 points · c++, rust",
-    "author": "dgv",
-    "publishedAt": "2026-05-25T14:00:03.000-05:00",
-    "score": 16,
-    "tags": [
-      "c++",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -782,7 +787,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-05-28T21:09:30Z",
-    "score": 437726,
+    "score": 437786,
     "tags": [
       "Python",
       "api",
@@ -814,7 +819,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-27T16:36:59Z",
-    "score": 389121,
+    "score": 389151,
     "tags": [
       "Python",
       "books",
@@ -837,7 +842,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-29T04:06:38Z",
-    "score": 300155,
+    "score": 300236,
     "tags": [
       "Python",
       "awesome",
@@ -861,7 +866,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-29T08:11:02Z",
-    "score": 192790,
+    "score": 192834,
     "tags": [
       "Rust"
     ],
@@ -878,8 +883,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-05-29T09:22:54Z",
-    "score": 184630,
+    "publishedAt": "2026-05-29T20:05:18Z",
+    "score": 184642,
     "tags": [
       "Python",
       "agentic-ai",
@@ -908,8 +913,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-05-29T09:24:49Z",
-    "score": 172238,
+    "publishedAt": "2026-05-29T20:33:42Z",
+    "score": 172721,
     "tags": [
       "Python",
       "ai",
@@ -944,7 +949,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-05-25T23:21:37Z",
-    "score": 166448,
+    "score": 166514,
     "tags": [
       "Python",
       "cli",
@@ -968,8 +973,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-05-29T10:11:04Z",
-    "score": 161041,
+    "publishedAt": "2026-05-29T19:40:51Z",
+    "score": 161048,
     "tags": [
       "Python",
       "audio",
@@ -1008,7 +1013,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-05-29T03:35:49Z",
-    "score": 159197,
+    "score": 159257,
     "tags": [
       "Python",
       "awesome",
@@ -1030,7 +1035,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-05-29T09:52:42Z",
-    "score": 115160,
+    "score": 115190,
     "tags": [
       "Rust",
       "android",
@@ -1066,8 +1071,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-05-29T09:59:06Z",
-    "score": 113177,
+    "publishedAt": "2026-05-29T20:35:34Z",
+    "score": 113194,
     "tags": [
       "Rust",
       "compiler",
@@ -1088,7 +1093,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-05-29T02:10:02Z",
-    "score": 107230,
+    "score": 107251,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1113,8 +1118,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-05-29T10:09:37Z",
-    "score": 106893,
+    "publishedAt": "2026-05-29T20:21:44Z",
+    "score": 106895,
     "tags": [
       "Rust",
       "deno",
@@ -1136,8 +1141,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-05-29T10:09:25Z",
-    "score": 92626,
+    "publishedAt": "2026-05-29T20:36:34Z",
+    "score": 92636,
     "tags": [
       "Rust",
       "bun",
@@ -1168,8 +1173,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-05-29T10:03:13Z",
-    "score": 86818,
+    "publishedAt": "2026-05-29T20:35:13Z",
+    "score": 86913,
     "tags": [
       "Rust"
     ],
@@ -1186,8 +1191,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-05-29T08:28:13Z",
-    "score": 85690,
+    "publishedAt": "2026-05-29T20:34:38Z",
+    "score": 85713,
     "tags": [
       "Rust",
       "packaging",
@@ -1209,7 +1214,7 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-05-29T09:47:10Z",
+    "publishedAt": "2026-05-29T10:42:05Z",
     "score": 80721,
     "tags": [
       "Java",
@@ -1231,8 +1236,8 @@
     "url": "https://github.com/elastic/elasticsearch",
     "excerpt": "Free and Open Source, Distributed, RESTful Search Engine",
     "author": "elastic",
-    "publishedAt": "2026-05-29T10:12:08Z",
-    "score": 76759,
+    "publishedAt": "2026-05-29T19:59:23Z",
+    "score": 76761,
     "tags": [
       "Java",
       "elasticsearch",
