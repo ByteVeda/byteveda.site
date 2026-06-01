@@ -218,24 +218,22 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:fdf1c06248c6",
+    "id": "mastodon:d1856b02d8aa",
     "kind": "article",
     "source": "mastodon",
-    "title": "When will AI boom crash? # AI # llm # genai # poll",
-    "url": "https://chaos.social/@wmd/116676087698182854",
-    "excerpt": "When will AI boom crash? # AI # llm # genai # poll",
-    "author": "🌈☔🌦️🍄🌱🍉",
-    "publishedAt": "2026-06-01T17:43:30.000Z",
-    "score": 10,
+    "title": "Poor man's calc (more like bc wrapper): ``` calc () { echo \"$@\" | tr -d ',₹' | bc -l } ``` The `tr -d ',₹'` used to rem…",
+    "url": "https://mastodon.social/@nixCraft/116676863836752523",
+    "excerpt": "Poor man's calc (more like bc wrapper): ``` calc () { echo \"$@\" | tr -d ',₹' | bc -l } ``` The `tr -d ',₹'` used to remove unwanted stuff that i often copy from emails or pdf and then pass everything…",
+    "author": "nixCraft 🐧",
+    "publishedAt": "2026-06-01T21:00:53.000Z",
+    "score": 6,
     "tags": [
-      "ai",
-      "llm",
-      "genai",
-      "poll"
+      "unix",
+      "linux",
+      "tips",
+      "tricks"
     ],
-    "labels": [
-      "ai"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -279,32 +277,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:f66cabed880e",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Some news I&#39;m excited to finally share... @ foxleytalent is SPONSORING DjangoCon US again this year. That&#39;s 4 y…",
-    "url": "https://fosstodon.org/@jong0uld/116675459855568556",
-    "excerpt": "Some news I&#39;m excited to finally share... @ foxleytalent is SPONSORING DjangoCon US again this year. That&#39;s 4 years running now. 🦄🦊🇺🇲 To go with this announcement, I&#39;ve written a blog…",
-    "author": "Jon Gould",
-    "publishedAt": "2026-06-01T15:03:50.710Z",
-    "score": 6,
-    "tags": [
-      "python",
-      "django",
-      "djangocon",
-      "djangoconUS",
-      "djangocommunity",
-      "pythonrecruiter",
-      "djangorecruiter",
-      "pyconus",
-      "pythoncommunity"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "mastodon:9d5a32897bf7",
     "kind": "article",
     "source": "mastodon",
@@ -313,7 +285,7 @@
     "excerpt": "A living directory of ways communities resist AI harms—and build alternatives worth fighting for.",
     "author": "Metin Seven 🎨",
     "publishedAt": "2026-06-01T14:53:46.000Z",
-    "score": 19,
+    "score": 25,
     "tags": [
       "tech",
       "technology",
@@ -375,10 +347,10 @@
     "source": "lobsters",
     "title": "Announcing Zstandard in Rust",
     "url": "https://trifectatech.org/blog/announcing-zstandard-in-rust/",
-    "excerpt": "36 points · rust",
+    "excerpt": "61 points · rust",
     "author": "jmillikin",
     "publishedAt": "2026-06-01T08:11:00.000-05:00",
-    "score": 36,
+    "score": 61,
     "tags": [
       "rust"
     ],
@@ -407,22 +379,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:9dcd879a58b9",
+    "id": "lobsters:51f8ad0038b6",
     "kind": "article",
-    "source": "mastodon",
-    "title": "JUST IN: Rust-lang/rust is adding an official LLM policy: require disclosure, human originality, and understanding of c…",
-    "url": "https://mastodon.social/@rustaceans/116674549073494268",
-    "excerpt": "JUST IN: Rust-lang/rust is adding an official LLM policy: require disclosure, human originality, and understanding of changes to curb low-effort AI-generated PRs. # rustlang # rust",
-    "author": "Rust Bytes 🦀",
-    "publishedAt": "2026-06-01T11:12:13.000Z",
-    "score": 10,
+    "source": "lobsters",
+    "title": "What are you doing this week?",
+    "url": "https://lobste.rs/s/degtqh/what_are_you_doing_this_week",
+    "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
+    "author": "caius",
+    "publishedAt": "2026-06-01T04:57:04.000-05:00",
+    "score": 17,
     "tags": [
-      "rustlang",
-      "rust"
+      "ask",
+      "programming"
     ],
-    "labels": [
-      "rust"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -450,10 +420,10 @@
     "source": "lobsters",
     "title": "It's Not Just X. It's Y",
     "url": "https://mail.cyberneticforests.com/its-not-just-data-its-post-training/",
-    "excerpt": "48 points · ai, vibecoding",
+    "excerpt": "52 points · ai, vibecoding",
     "author": "Yogthos",
     "publishedAt": "2026-05-31T22:33:55.000-05:00",
-    "score": 48,
+    "score": 52,
     "tags": [
       "ai",
       "vibecoding"
@@ -491,10 +461,10 @@
     "source": "lobsters",
     "title": "I found a seashell in the middle of the desert",
     "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert#i-found-a-seashell-in-the-middle-of-the-desert",
-    "excerpt": "50 points · programming",
+    "excerpt": "51 points · programming",
     "author": "anex9d",
     "publishedAt": "2026-05-31T07:57:16.000-05:00",
-    "score": 50,
+    "score": 51,
     "tags": [
       "programming"
     ],
@@ -735,10 +705,10 @@
     "source": "lobsters",
     "title": "One year of Roto, the compiled scripting language for Rust",
     "url": "https://blog.nlnetlabs.nl/one-year-of-roto-the-compiled-scripting-language-for-rust/",
-    "excerpt": "54 points · rust",
+    "excerpt": "55 points · rust",
     "author": "fanf",
     "publishedAt": "2026-05-28T16:01:28.000-05:00",
-    "score": 54,
+    "score": 55,
     "tags": [
       "rust"
     ],
@@ -818,6 +788,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:2ac25aeceba5",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Spent 10x Longer Debugging AI Code Than Writing It",
+    "url": "https://dev.to/harsh2644/i-spent-10x-longer-debugging-ai-code-than-writing-it-15h4",
+    "excerpt": "AI wrote the code in 30 seconds Three lines A simple function I prompted it generated I copied It...",
+    "author": "Harsh",
+    "publishedAt": "2026-05-28T14:53:02Z",
+    "score": 60,
+    "tags": [
+      "ai",
+      "programming",
+      "productivity",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -826,7 +817,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-06-01T13:37:54Z",
-    "score": 438426,
+    "score": 438472,
     "tags": [
       "Python",
       "api",
@@ -858,7 +849,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-05-30T10:02:17Z",
-    "score": 389342,
+    "score": 389352,
     "tags": [
       "Python",
       "books",
@@ -881,7 +872,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-05-30T15:33:05Z",
-    "score": 300751,
+    "score": 300764,
     "tags": [
       "Python",
       "awesome",
@@ -897,6 +888,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:f02f99f2874d",
+    "kind": "trending",
+    "source": "github",
+    "title": "TheAlgorithms/Python",
+    "url": "https://github.com/TheAlgorithms/Python",
+    "excerpt": "All Algorithms implemented in Python",
+    "author": "TheAlgorithms",
+    "publishedAt": "2026-06-01T19:33:28Z",
+    "score": 221554,
+    "tags": [
+      "Python",
+      "algorithm",
+      "algorithm-competitions",
+      "algorithms-implemented",
+      "algos",
+      "community-driven",
+      "education",
+      "hacktoberfest",
+      "interview",
+      "learn",
+      "practice",
+      "python",
+      "searches",
+      "sorting-algorithms",
+      "sorts"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:996ec6ea0cd3",
     "kind": "trending",
     "source": "github",
@@ -905,7 +928,7 @@
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
     "publishedAt": "2026-05-29T08:11:02Z",
-    "score": 193072,
+    "score": 193081,
     "tags": [
       "Rust"
     ],
@@ -922,8 +945,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-01T16:22:45Z",
-    "score": 184694,
+    "publishedAt": "2026-06-01T18:18:40Z",
+    "score": 184701,
     "tags": [
       "Python",
       "agentic-ai",
@@ -953,7 +976,7 @@
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
     "publishedAt": "2026-06-01T16:57:11Z",
-    "score": 175791,
+    "score": 175912,
     "tags": [
       "Python",
       "ai",
@@ -987,8 +1010,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-01T17:47:24Z",
-    "score": 161162,
+    "publishedAt": "2026-06-01T21:39:01Z",
+    "score": 161169,
     "tags": [
       "Python",
       "audio",
@@ -1027,7 +1050,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-05-29T03:35:49Z",
-    "score": 159635,
+    "score": 159645,
     "tags": [
       "Python",
       "awesome",
@@ -1041,31 +1064,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:3c2f23bd9712",
-    "kind": "trending",
-    "source": "github",
-    "title": "langflow-ai/langflow",
-    "url": "https://github.com/langflow-ai/langflow",
-    "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-    "author": "langflow-ai",
-    "publishedAt": "2026-06-01T18:11:50Z",
-    "score": 149011,
-    "tags": [
-      "Python",
-      "agents",
-      "chatgpt",
-      "generative-ai",
-      "large-language-models",
-      "multiagent",
-      "react-flow"
-    ],
-    "labels": [
-      "python",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:1a7aeb8bfed5",
     "kind": "trending",
     "source": "github",
@@ -1074,7 +1072,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-06-01T08:27:10Z",
-    "score": 115332,
+    "score": 115338,
     "tags": [
       "Rust",
       "android",
@@ -1110,8 +1108,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-01T17:36:19Z",
-    "score": 113291,
+    "publishedAt": "2026-06-01T21:18:51Z",
+    "score": 113296,
     "tags": [
       "Rust",
       "compiler",
@@ -1132,7 +1130,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-06-01T15:30:48Z",
-    "score": 107339,
+    "score": 107344,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1157,7 +1155,7 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-01T18:12:29Z",
+    "publishedAt": "2026-06-01T21:40:32Z",
     "score": 106929,
     "tags": [
       "Rust",
@@ -1180,8 +1178,8 @@
     "url": "https://github.com/iluwatar/java-design-patterns",
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
-    "publishedAt": "2026-06-01T18:13:52Z",
-    "score": 94093,
+    "publishedAt": "2026-06-01T18:29:36Z",
+    "score": 94092,
     "tags": [
       "Java",
       "awesome-list",
@@ -1206,8 +1204,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-01T18:09:36Z",
-    "score": 92710,
+    "publishedAt": "2026-06-01T21:41:47Z",
+    "score": 92714,
     "tags": [
       "Rust",
       "bun",
@@ -1239,7 +1237,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-06-01T15:30:29Z",
-    "score": 87845,
+    "score": 87871,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1278,8 +1276,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-01T18:14:44Z",
-    "score": 87626,
+    "publishedAt": "2026-06-01T21:40:51Z",
+    "score": 87643,
     "tags": [
       "Rust"
     ],
