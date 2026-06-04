@@ -218,122 +218,41 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:65239df3388d",
+    "id": "mastodon:512338f70551",
     "kind": "article",
     "source": "mastodon",
-    "title": "Question for the Linux folks: Is there a way to schedule a shutdown at the time when it's no longer inhibited via syste…",
-    "url": "https://ruhr.social/@mic/116682553656818649",
-    "excerpt": "Question for the Linux folks: Is there a way to schedule a shutdown at the time when it's no longer inhibited via systemd-inhibit? I want the backup to continue, but I do not want the machine to stay…",
-    "author": "mic",
-    "publishedAt": "2026-06-02T21:07:53.000Z",
-    "score": 7,
-    "tags": [
-      "linux",
-      "systemd",
-      "inhibit",
-      "sysadmin"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d22595a429bd",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I Tried This Open Source ChatGPT Alternative on Linux, But Went Back to Ollama",
-    "url": "https://itsfoss.com/jan-ai/",
-    "excerpt": "Or should I call it \"a little Jan\"?",
-    "author": "ricardo :mastodon:",
-    "publishedAt": "2026-06-02T20:32:18.716Z",
+    "title": "📢 ATTENTION, ATTENTION 📢 We're launching 🚀 the Open Processing Model (OPM) project, bringing the TEI Processing Mode…",
+    "url": "https://social.e-editiones.org/@eeditiones/116691008163625183",
+    "excerpt": "📢 ATTENTION, ATTENTION 📢 We're launching 🚀 the Open Processing Model (OPM) project, bringing the TEI Processing Model into Python 🐍 workflows while working closely with the # TEI to help shape it…",
+    "author": "e-editiones",
+    "publishedAt": "2026-06-04T08:57:59.000Z",
     "score": 8,
     "tags": [
-      "chatgpt",
-      "linux",
-      "ollama"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:84edc7749941",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Concerns about AI code in the kernel",
-    "url": "https://lore.kernel.org/lkml/e12330b9-c29e-45ca-9375-9e3d13426d85@horse64.org/T/",
-    "excerpt": "@ Em0nM4stodon What I find interesting that no anti AI distro has jumped in here: https:// lore.kernel.org/lkml/e12330b9- c29e-45ca-9375-9e3d13426d85@horse64.org/T/ (I actually asked some of them to…",
-    "author": "ell1e coding things",
-    "publishedAt": "2026-06-02T19:13:51.000Z",
-    "score": 10,
-    "tags": [
-      "noai",
-      "linux",
-      "llm",
-      "slop"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:c712e04948fe",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "jhpratt - Overview",
-    "url": "https://github.com/jhpratt",
-    "excerpt": "Contributor to Rust's compiler and standard library. Maintainer of Rust crates with over 3.0 billion downloads. Third degree black belt 🥋 - jhpratt",
-    "author": "Jacob Pratt",
-    "publishedAt": "2026-06-02T19:03:09.000Z",
-    "score": 18,
-    "tags": [
-      "rust",
-      "rustlang",
-      "programming",
-      "FediHire",
-      "getfedihired"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:e0d348f9fb85",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Rust May Limit AI-Generated Work in Its Core Repository",
-    "url": "https://linuxiac.com/rust-may-limit-ai-generated-work-in-its-core-repository/",
-    "excerpt": "A draft policy for rust-lang/rust sets boundaries for LLM use, including disclosure rules and bans on AI-created core content.",
-    "author": "jbz",
-    "publishedAt": "2026-06-02T19:00:07.000Z",
-    "score": 5,
-    "tags": [
-      "rust",
-      "ai",
-      "vibecoding",
-      "opensource"
-    ],
-    "labels": [
-      "rust",
-      "ai",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:12eadd5ced49",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python 3.15.0 beta 2 is here!",
-    "url": "https://discuss.python.org/t/python-3-15-0-beta-2-is-here/107610",
-    "excerpt": "Here comes the antepenultimate beta.    This is a beta preview of Python 3.15  Python 3.15 is still in development. This release, 3.15.0b2, is the second of four planned beta releases.  Beta release previews are intended to give the wider community the opportunity to test new features and bug fixes and to prepare their projects to support the new feature release.  We strongly encourage maintainers of third-party Python projects to test with 3.15 during the beta phase and report issues found to t...",
-    "author": "Hugo van Kemenade",
-    "publishedAt": "2026-06-02T18:49:50.000Z",
-    "score": 16,
-    "tags": [
-      "python315",
+      "tei",
+      "digitalhumanities",
+      "opensource",
       "python",
-      "release"
+      "scholarlyediting"
+    ],
+    "labels": [
+      "opensource",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:3bd0f8e36fc5",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Change Log - Plumbum: Shell Combinators",
+    "url": "https://plumbum.readthedocs.io/en/latest/changelog.html",
+    "excerpt": "Plumbum 2.0 - the Python shell script helper library, is out, with async, full static typing, more pathlib API, no pywin32 dep, lazy imports, and much more! https:// plumbum.readthedocs.io/en/late st…",
+    "author": "Henry³",
+    "publishedAt": "2026-06-04T04:27:55.391Z",
+    "score": 11,
+    "tags": [
+      "python",
+      "newrelease"
     ],
     "labels": [
       "python"
@@ -341,55 +260,199 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:57a76a0c69c1",
+    "id": "devto:ccb6371e90e0",
+    "kind": "article",
+    "source": "devto",
+    "title": "Am I Becoming Too Slow for the AI World?",
+    "url": "https://dev.to/marcosomma/am-i-becoming-too-slow-for-the-ai-world-1904",
+    "excerpt": "The AI world is full of old infrastructure with stochastic organs. That sentence probably explains...",
+    "author": "marcosomma",
+    "publishedAt": "2026-06-03T17:30:38Z",
+    "score": 26,
+    "tags": [
+      "ai",
+      "programming",
+      "productivity",
+      "career"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:660ef8dc3554",
     "kind": "article",
     "source": "mastodon",
-    "title": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI | TechCrunch",
-    "url": "https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/",
-    "excerpt": "The caveat is that one of the world's most famous living directors is using the tech solely for storyboarding.",
-    "author": "Metin Seven 🎨",
-    "publishedAt": "2026-06-02T18:27:55.000Z",
-    "score": 6,
+    "title": "This is my goal for now. And it seems like everything is working! # openbsd # golang",
+    "url": "https://hachyderm.io/@lobocode/116687078279764967",
+    "excerpt": "This is my goal for now. And it seems like everything is working! # openbsd # golang",
+    "author": "lobo :nix_snowflake_logo:",
+    "publishedAt": "2026-06-03T16:18:33.000Z",
+    "score": 7,
     "tags": [
-      "film",
-      "films",
-      "movie",
-      "movies",
-      "cinema",
-      "cinemastodon",
-      "tech",
-      "technology",
-      "bigtech",
-      "it",
-      "ai",
-      "artificialintelligence",
-      "llm",
-      "llms",
-      "ml",
-      "machinelearning",
-      "genai",
-      "generativeAI",
-      "aiagent",
-      "aislop",
-      "fuckai",
-      "fuck_ai",
-      "enshittification",
-      "microslop",
-      "microsoft",
-      "copilot",
-      "meta",
-      "google",
-      "nvidia",
-      "gemini",
-      "openai",
-      "chatgpt",
-      "anthropic",
-      "claude"
+      "openbsd",
+      "golang"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:e4174910abde",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Parsing XML EXIF from .avif files (plus a rant)",
+    "url": "https://sheep.horse/2026/6/parsing_xml_exif_from_.avif_files_(plus_a_rant).html",
+    "excerpt": "21 points · python, web",
+    "author": "AndrewStephens",
+    "publishedAt": "2026-06-03T10:22:33.000-05:00",
+    "score": 21,
+    "tags": [
+      "python",
+      "web"
+    ],
+    "labels": [
+      "python",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:1bbf094d3c5b",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "mimalloc: A new, high-performance, scalable memory allocator for the modern era",
+    "url": "https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/",
+    "excerpt": "19 points · c, performance",
+    "author": "eatonphil",
+    "publishedAt": "2026-06-03T08:36:27.000-05:00",
+    "score": 19,
+    "tags": [
+      "c",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:bc0be78cdc6b",
+    "kind": "article",
+    "source": "rss",
+    "title": "Direct Preference Optimization Beyond Chatbots",
+    "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-03T12:55:11.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
     ],
     "labels": [
       "ai",
       "ml"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:272a1225d602",
+    "kind": "article",
+    "source": "devto",
+    "title": "Is This How We'll Build Websites Soon? (webMCP Live Demo 🚀)",
+    "url": "https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33",
+    "excerpt": "A few years ago, we started adapting our websites for mobile devices. Then we adapted them for...",
+    "author": "Sylwia Laskowska",
+    "publishedAt": "2026-06-03T07:11:55Z",
+    "score": 58,
+    "tags": [
+      "javascript",
+      "react",
+      "mcp",
+      "ai"
+    ],
+    "labels": [
+      "typescript",
+      "webdev",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:799726310b5a",
+    "kind": "article",
+    "source": "rss",
+    "title": "Adding MCP Tools to Reachy Mini",
+    "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-03T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:6e277851302d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Oils - Reviewing Our NLnet Grants After 4 Years",
+    "url": "https://oils.pub/blog/2026/06/grants.html",
+    "excerpt": "43 points · programming, unix",
+    "author": "andyc",
+    "publishedAt": "2026-06-02T15:57:41.000-05:00",
+    "score": 43,
+    "tags": [
+      "programming",
+      "unix"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:639aa8b151e4",
+    "kind": "article",
+    "source": "devto",
+    "title": "Surviving the eviction: How to build interrupt-resilient AI workloads on GKE",
+    "url": "https://dev.to/googlecloud/surviving-the-eviction-how-to-build-interrupt-resilient-ai-workloads-on-gke-5581",
+    "excerpt": "Learn strategies for building interrupt-resilient AI workloads on Google Kubernetes Engine (GKE).",
+    "author": "Olivier Bourgeois",
+    "publishedAt": "2026-06-02T20:02:20Z",
+    "score": 25,
+    "tags": [
+      "kubernetes",
+      "ai",
+      "gke",
+      "googlecloud"
+    ],
+    "labels": [
+      "devops",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:3c49f3ceb8bf",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "revo, the programming language",
+    "url": "https://gills.pages.dev/revo/",
+    "excerpt": "56 points · programming, zig",
+    "author": "alurm",
+    "publishedAt": "2026-06-02T12:39:22.000-05:00",
+    "score": 56,
+    "tags": [
+      "programming",
+      "zig"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -414,15 +477,38 @@
     "source": "lobsters",
     "title": "iddqd, or the hardest kind of unsafe Rust",
     "url": "https://oxide.computer/blog/iddqd-unsafe",
-    "excerpt": "20 points · rust",
+    "excerpt": "70 points · rust",
     "author": "sunshowers",
     "publishedAt": "2026-06-02T11:20:18.000-05:00",
-    "score": 20,
+    "score": 70,
     "tags": [
       "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:e5766a9d0fbb",
+    "kind": "article",
+    "source": "devto",
+    "title": "I distilled a 7B vision model into a 2B one for screenshots — and the 7B teacher scored worse",
+    "url": "https://dev.to/p0rt/i-distilled-a-7b-vision-model-into-a-2b-one-for-screenshots-and-the-7b-teacher-scored-worse-3akh",
+    "excerpt": "A hands-on knowledge-distillation project: Qwen2-VL-7B → 2B for UI-screenshot understanding, trained, evaluated and benchmarked end-to-end on an M4 Pro. 2.4× faster — and why the teacher lost on ROUG…",
+    "author": "Sergei Parfenov",
+    "publishedAt": "2026-06-02T15:36:21Z",
+    "score": 28,
+    "tags": [
+      "machinelearning",
+      "python",
+      "llm",
+      "deeplearning"
+    ],
+    "labels": [
+      "ml",
+      "python",
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -451,10 +537,10 @@
     "source": "lobsters",
     "title": "Memory safety is a matter of life and death",
     "url": "https://joshlf.com/posts/memory-safety-life-and-death/",
-    "excerpt": "19 points · rust",
+    "excerpt": "22 points · rust",
     "author": "jswrenn",
     "publishedAt": "2026-06-02T09:07:42.000-05:00",
-    "score": 19,
+    "score": 22,
     "tags": [
       "rust"
     ],
@@ -464,15 +550,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:3f9d8306af03",
+    "kind": "article",
+    "source": "devto",
+    "title": "Your AI Agent Isn't Failing Because It Hallucinates — It's Failing Because of Rate Limits",
+    "url": "https://dev.to/p0rt/your-ai-agent-isnt-failing-because-it-hallucinates-its-failing-because-of-rate-limits-2d60",
+    "excerpt": "The dominant production failure mode for LLM agents in 2026 isn't bad reasoning — it's capacity. Here's what the data shows, why nobody demos it, and the capacity-engineering patterns that actually k…",
+    "author": "Sergei Parfenov",
+    "publishedAt": "2026-06-02T13:09:00Z",
+    "score": 26,
+    "tags": [
+      "ai",
+      "llm",
+      "devops",
+      "machinelearning"
+    ],
+    "labels": [
+      "ai",
+      "devops",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:922b62071f17",
     "kind": "article",
     "source": "lobsters",
     "title": "rustc_codegen_jvm: Rust compiler backend to emit JVM bytecode",
     "url": "https://github.com/IntegralPilot/rustc_codegen_jvm",
-    "excerpt": "17 points · java, rust",
+    "excerpt": "22 points · java, rust",
     "author": "vi_mi",
     "publishedAt": "2026-06-02T05:15:20.000-05:00",
-    "score": 17,
+    "score": 22,
     "tags": [
       "java",
       "rust"
@@ -505,14 +614,35 @@
     "source": "lobsters",
     "title": "kelvin versioning",
     "url": "https://wiki.xxiivv.com/site/kelvin_versioning.html",
-    "excerpt": "18 points · practices",
+    "excerpt": "23 points · practices",
     "author": "hugoarnal",
     "publishedAt": "2026-06-02T02:12:34.000-05:00",
-    "score": 18,
+    "score": 23,
     "tags": [
       "practices"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:968d53bc9e86",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Thought AI Would Make Me Code Faster. Then I Spent 6 Hours Debugging One Line.",
+    "url": "https://dev.to/trojanmocx/i-thought-ai-would-make-me-code-faster-then-i-spent-6-hours-debugging-one-line-3ffh",
+    "excerpt": "Everyone keeps saying AI will replace developers. Meanwhile I was sitting at 3:17 AM staring at a bug...",
+    "author": "TROJAN",
+    "publishedAt": "2026-06-02T05:16:18Z",
+    "score": 41,
+    "tags": [
+      "discuss",
+      "ai",
+      "programming",
+      "productivity"
+    ],
+    "labels": [
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -548,6 +678,27 @@
     ],
     "labels": [
       "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:6a4f4454dc7a",
+    "kind": "article",
+    "source": "devto",
+    "title": "Debloating The AI-Grown Codebase",
+    "url": "https://dev.to/maximsaplin/debloating-the-ai-grown-codebase-2om",
+    "excerpt": "The use of AI Agents creates a distinctive smell... One can tell the GH Repo owner was high on...",
+    "author": "Maxim Saplin",
+    "publishedAt": "2026-06-01T17:22:48Z",
+    "score": 29,
+    "tags": [
+      "ai",
+      "programming",
+      "agents",
+      "claude"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -595,10 +746,10 @@
     "source": "lobsters",
     "title": "Announcing Zstandard in Rust",
     "url": "https://trifectatech.org/blog/announcing-zstandard-in-rust/",
-    "excerpt": "99 points · rust",
+    "excerpt": "105 points · rust",
     "author": "jmillikin",
     "publishedAt": "2026-06-01T08:11:00.000-05:00",
-    "score": 99,
+    "score": 105,
     "tags": [
       "rust"
     ],
@@ -616,7 +767,7 @@
     "excerpt": "Over the past few months, I’ve increasingly noticed something through my network: more people from...",
     "author": "Julien Avezou",
     "publishedAt": "2026-06-01T12:43:53Z",
-    "score": 37,
+    "score": 46,
     "tags": [
       "ai",
       "vibecoding",
@@ -637,184 +788,9 @@
     "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
     "author": "caius",
     "publishedAt": "2026-06-01T04:57:04.000-05:00",
-    "score": 20,
+    "score": 21,
     "tags": [
       "ask",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:262bf0b3a84a",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Five Years of Trying to Add Recursion to lychee",
-    "url": "https://endler.dev/2026/lychee-recursion/",
-    "excerpt": "15 points · distributed, rust, web",
-    "author": "vbernat",
-    "publishedAt": "2026-06-01T01:12:21.000-05:00",
-    "score": 15,
-    "tags": [
-      "distributed",
-      "rust",
-      "web"
-    ],
-    "labels": [
-      "rust",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:7c8c63c46b4b",
-    "kind": "article",
-    "source": "rss",
-    "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
-    "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-06-01T04:44:55.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:ccaa9e678fd3",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "It's Not Just X. It's Y",
-    "url": "https://mail.cyberneticforests.com/its-not-just-data-its-post-training/",
-    "excerpt": "61 points · ai, vibecoding",
-    "author": "Yogthos",
-    "publishedAt": "2026-05-31T22:33:55.000-05:00",
-    "score": 61,
-    "tags": [
-      "ai",
-      "vibecoding"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:a036e2c4b716",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Added a 71-Line Black Box to My Python Agent, Then Queried the $200 Crash With DuckDB",
-    "url": "https://dev.to/tahosin/i-added-a-71-line-black-box-to-my-python-agent-then-queried-the-200-crash-with-duckdb-4h18",
-    "excerpt": "A practical Python pattern for recording agent tool calls, sanitizing traces, stopping runaway runs, and querying failures with DuckDB.",
-    "author": "S M Tahosin",
-    "publishedAt": "2026-05-31T16:54:50Z",
-    "score": 54,
-    "tags": [
-      "python",
-      "ai",
-      "debugging",
-      "tutorial"
-    ],
-    "labels": [
-      "python",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:ff39a75c9da4",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "I found a seashell in the middle of the desert",
-    "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert#i-found-a-seashell-in-the-middle-of-the-desert",
-    "excerpt": "54 points · programming",
-    "author": "anex9d",
-    "publishedAt": "2026-05-31T07:57:16.000-05:00",
-    "score": 54,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:7de7584adfe6",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The S in interoperability",
-    "url": "https://frederikbraun.de/the-s-in-interoperability.html",
-    "excerpt": "25 points · practices, security",
-    "author": "freddyb",
-    "publishedAt": "2026-05-31T04:13:13.000-05:00",
-    "score": 25,
-    "tags": [
-      "practices",
-      "security"
-    ],
-    "labels": [
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:2517a1488a6e",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "A New Design for Pretty Printer Implementations in Rust",
-    "url": "https://blog.wybxc.cc/blog/pretty-printer-pye/",
-    "excerpt": "26 points · performance, rust",
-    "author": "asb",
-    "publishedAt": "2026-05-30T16:55:47.000-05:00",
-    "score": 26,
-    "tags": [
-      "performance",
-      "rust"
-    ],
-    "labels": [
-      "performance",
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:77cae0b84667",
-    "kind": "article",
-    "source": "devto",
-    "title": "Your AI Agent Should Text You First",
-    "url": "https://dev.to/nimay_04/your-ai-agent-should-text-you-first-2b3b",
-    "excerpt": "A practical, slightly opinionated Hermes Agent use case: an always-on chief of staff that remembers your work, schedules itself, uses tools, and reports back with receipts.",
-    "author": "Nimesh Kulkarni",
-    "publishedAt": "2026-05-30T18:48:07Z",
-    "score": 32,
-    "tags": [
-      "hermesagentchallenge",
-      "ai",
-      "opensource",
-      "productivity"
-    ],
-    "labels": [
-      "ai",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:285e56110e50",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Voxel Space",
-    "url": "https://s-macke.github.io/VoxelSpace/",
-    "excerpt": "18 points · graphics, programming",
-    "author": "Yogthos",
-    "publishedAt": "2026-05-30T12:29:47.000-05:00",
-    "score": 18,
-    "tags": [
-      "graphics",
       "programming"
     ],
     "labels": [],
@@ -828,8 +804,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-06-01T13:37:54Z",
-    "score": 438847,
+    "publishedAt": "2026-06-03T21:39:19Z",
+    "score": 439248,
     "tags": [
       "Python",
       "api",
@@ -860,8 +836,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-05-30T10:02:17Z",
-    "score": 389502,
+    "publishedAt": "2026-06-03T21:12:20Z",
+    "score": 389647,
     "tags": [
       "Python",
       "books",
@@ -883,8 +859,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-06-02T09:23:11Z",
-    "score": 300934,
+    "publishedAt": "2026-06-04T04:35:12Z",
+    "score": 301173,
     "tags": [
       "Python",
       "awesome",
@@ -908,7 +884,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-06-01T19:33:28Z",
-    "score": 221589,
+    "score": 221629,
     "tags": [
       "Python",
       "algorithm",
@@ -939,8 +915,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-05-29T08:11:02Z",
-    "score": 193162,
+    "publishedAt": "2026-06-04T09:32:41Z",
+    "score": 193237,
     "tags": [
       "Rust"
     ],
@@ -957,8 +933,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-02T20:30:13Z",
-    "score": 184714,
+    "publishedAt": "2026-06-04T10:01:07Z",
+    "score": 184746,
     "tags": [
       "Python",
       "agentic-ai",
@@ -987,8 +963,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-02T21:04:39Z",
-    "score": 177229,
+    "publishedAt": "2026-06-04T10:05:32Z",
+    "score": 179994,
     "tags": [
       "Python",
       "ai",
@@ -1022,8 +998,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-02T19:39:45Z",
-    "score": 161208,
+    "publishedAt": "2026-06-04T10:10:02Z",
+    "score": 161267,
     "tags": [
       "Python",
       "audio",
@@ -1062,7 +1038,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-05-29T03:35:49Z",
-    "score": 159790,
+    "score": 160012,
     "tags": [
       "Python",
       "awesome",
@@ -1083,8 +1059,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-06-02T15:36:21Z",
-    "score": 115393,
+    "publishedAt": "2026-06-04T06:04:10Z",
+    "score": 115537,
     "tags": [
       "Rust",
       "android",
@@ -1120,8 +1096,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-02T21:11:35Z",
-    "score": 113336,
+    "publishedAt": "2026-06-04T09:35:58Z",
+    "score": 113391,
     "tags": [
       "Rust",
       "compiler",
@@ -1141,8 +1117,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-06-02T03:45:21Z",
-    "score": 107388,
+    "publishedAt": "2026-06-04T09:51:36Z",
+    "score": 107469,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1167,8 +1143,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-02T21:21:02Z",
-    "score": 106931,
+    "publishedAt": "2026-06-04T09:45:57Z",
+    "score": 106940,
     "tags": [
       "Rust",
       "deno",
@@ -1190,8 +1166,8 @@
     "url": "https://github.com/iluwatar/java-design-patterns",
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
-    "publishedAt": "2026-06-02T18:02:04Z",
-    "score": 94098,
+    "publishedAt": "2026-06-03T18:03:41Z",
+    "score": 94106,
     "tags": [
       "Java",
       "awesome-list",
@@ -1216,8 +1192,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-02T21:19:36Z",
-    "score": 92743,
+    "publishedAt": "2026-06-04T09:56:34Z",
+    "score": 92785,
     "tags": [
       "Rust",
       "bun",
@@ -1248,8 +1224,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-02T14:17:42Z",
-    "score": 89233,
+    "publishedAt": "2026-06-04T07:20:05Z",
+    "score": 91286,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1288,8 +1264,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-02T21:18:42Z",
-    "score": 87984,
+    "publishedAt": "2026-06-04T09:22:04Z",
+    "score": 88512,
     "tags": [
       "Rust"
     ],
@@ -1306,8 +1282,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-06-02T17:44:24Z",
-    "score": 80751,
+    "publishedAt": "2026-06-04T08:03:28Z",
+    "score": 80769,
     "tags": [
       "Java",
       "framework",
