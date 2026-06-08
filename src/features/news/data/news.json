@@ -218,129 +218,14 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:015ed9b8b158",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Train up a child the right way he should go,even if he is old will never depart from it. Let us train young people abou…",
-    "url": "https://mastodon.social/@2003MugishaPhocit/116706398686370723",
-    "excerpt": "Train up a child the right way he should go,even if he is old will never depart from it. Let us train young people about food production such that even at their old age they will produce food hence p…",
-    "author": "MUGISHA PHOCIT",
-    "publishedAt": "2026-06-07T02:11:59.000Z",
-    "score": 5,
-    "tags": [
-      "fediverse",
-      "linux",
-      "gardening",
-      "mastodon",
-      "foodsecurity",
-      "diet",
-      "nutrition",
-      "farming",
-      "plants",
-      "agriculture",
-      "economics",
-      "hunger",
-      "health",
-      "climateaction",
-      "sustainability",
-      "food",
-      "environment",
-      "ecosystem",
-      "socialimpact",
-      "crops"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:3e0459b641aa",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# Linux people need to understand: nobody moves to Linux because they want, but because they need to. That “need” is a…",
-    "url": "https://mastodon.social/@darkghosthunter/116706301325226201",
-    "excerpt": "# Linux people need to understand: nobody moves to Linux because they want, but because they need to. That “need” is a breaking # Windows update, or a slow computer, 99% of the time. The sooner they…",
-    "author": ".:\\dGh/:.",
-    "publishedAt": "2026-06-07T01:47:14.000Z",
-    "score": 5,
-    "tags": [
-      "linux",
-      "windows",
-      "foss",
-      "oss",
-      "opensource"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:6faff733b106",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "ntsc-rs - an accurate VHS video effect",
-    "url": "https://ntsc.rs/",
-    "excerpt": "16 points · graphics, programming",
-    "author": "Yogthos",
-    "publishedAt": "2026-06-06T15:18:32.000-05:00",
-    "score": 16,
-    "tags": [
-      "graphics",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:db5166fbbc21",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Architect, Software Engineering at Credera",
-    "url": "https://jobsfordevelopers.com/jobs/architect-software-engineering-at-credera-com-jan-25-2026-ac7eeb?utm_source=mastodon.world&utm_medium=social&utm_campaign=posting",
-    "excerpt": "Credera is hiring Architect, Software Engineering",
-    "author": "Jobs for Developers",
-    "publishedAt": "2026-06-06T20:05:15.000Z",
-    "score": 23,
-    "tags": [
-      "java",
-      "javascript",
-      "python",
-      "ruby",
-      "rust",
-      "scala",
-      "dotnet",
-      "angular",
-      "react",
-      "springboot",
-      "cypress",
-      "aws",
-      "azure",
-      "cicd",
-      "docker",
-      "gcp",
-      "kubernetes",
-      "terraform",
-      "solutionsarchitect",
-      "jobalert",
-      "jobsearch",
-      "hiring"
-    ],
-    "labels": [
-      "java",
-      "typescript",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:47468f27f93c",
+    "id": "rss:Hugging Face:59e293add022",
     "kind": "article",
     "source": "rss",
-    "title": "Five labs, five minds: building a multi-model finance drama on small models",
-    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+    "title": "Amazing Digital Dentures (a failed project)",
+    "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
     "excerpt": null,
     "author": "Hugging Face",
-    "publishedAt": "2026-06-06T19:02:33.000Z",
+    "publishedAt": "2026-06-07T19:44:27.000Z",
     "score": 0,
     "tags": [
       "Hugging Face"
@@ -352,27 +237,171 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:f672bf1e4d07",
+    "id": "mastodon:ac8c06f62eb8",
     "kind": "article",
     "source": "mastodon",
-    "title": "Coreutils für Windows: ls, cp und find nativ unter Windows",
-    "url": "https://rueegger.me/microsoft-coreutils-windows/",
-    "excerpt": "Microsoft liefert mit Coreutils für Windows die Unix-Tools nativ aus. Wie das MultiCall-Binary und der find-Shim funktionieren, im Detail erklärt.",
-    "author": "Samuel",
-    "publishedAt": "2026-06-06T18:12:34.000Z",
-    "score": 13,
+    "title": "Linux Mint &lt;-&gt; RAID 1 &lt;-&gt; Synology Wenn ich die nächsten Tage ein wenig Luft habe, schreibe ich dazu einen…",
+    "url": "https://bildung.social/@_DigitalWriter_/116710431614790459",
+    "excerpt": "Linux Mint &lt;-&gt; RAID 1 &lt;-&gt; Synology Wenn ich die nächsten Tage ein wenig Luft habe, schreibe ich dazu einen kleinen Artikel ... # nas # synology # linux",
+    "author": "Herbert Hertramph",
+    "publishedAt": "2026-06-07T19:17:37.000Z",
+    "score": 8,
     "tags": [
-      "linux",
-      "windows",
-      "coreutils",
-      "rust",
-      "opensource",
-      "microsoft"
+      "nas",
+      "synology",
+      "linux"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:81cd115ac237",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Python Tip #158 (of 365): If you had to choose, prefer automated tests over type annotations. Of course... you don't ne…",
+    "url": "https://mastodon.social/@treyhunner/116710071386871785",
+    "excerpt": "Python Tip #158 (of 365): If you had to choose, prefer automated tests over type annotations. Of course... you don't need to choose. You can have both! A type checker can tell you that your function…",
+    "author": "Trey Hunner 🐍",
+    "publishedAt": "2026-06-07T17:46:00.000Z",
+    "score": 5,
+    "tags": [
+      "python",
+      "dailypythontip"
     ],
     "labels": [
-      "rust",
-      "opensource"
+      "python"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:940f088b02cf",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Microsoft wants safer C# without turning it into Rust",
+    "url": "https://www.theregister.com/devops/2026/05/26/microsoft-wants-safer-c-without-turning-it-into-rust/5246359",
+    "excerpt": "Unsafe bits get a warning label in planned low-level coding shake-up",
+    "author": "jbz",
+    "publishedAt": "2026-06-07T17:01:13.000Z",
+    "score": 5,
+    "tags": [
+      "csharp",
+      "rust",
+      "plt"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c79018bb2c01",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "It has been about 24 hours since https:// probes.dev went into private beta and the metrics have shown nothing exciting…",
+    "url": "https://fosstodon.org/@blainsmith/116709853490621237",
+    "excerpt": "It has been about 24 hours since https:// probes.dev went into private beta and the metrics have shown nothing exciting. It is just humming along. # GoLang # HTTP # Monitoring # BuildInPublic",
+    "author": "B",
+    "publishedAt": "2026-06-07T16:50:35.930Z",
+    "score": 5,
+    "tags": [
+      "golang",
+      "http",
+      "monitoring",
+      "buildinpublic"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:56e45b08790c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Most developers think learning # Rust is about performance. I think that&#39;s only one of the benefits though. The rea…",
+    "url": "https://fosstodon.org/@bbelderbos/116709738131070098",
+    "excerpt": "Most developers think learning # Rust is about performance. I think that&#39;s only one of the benefits though. The real benefit for me is what happens when the compiler starts arguing with you. For…",
+    "author": "Bob Belderbos",
+    "publishedAt": "2026-06-07T16:21:15.683Z",
+    "score": 8,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:169605f63b50",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "The User Doesn't Care - But you should",
+    "url": "https://lewiscampbell.tech/blog/260607.html",
+    "excerpt": "27 points · practices",
+    "author": "nickmonad",
+    "publishedAt": "2026-06-07T06:48:48.000-05:00",
+    "score": 27,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f905c4ea85f3",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How LLMs Actually Work",
+    "url": "https://0xkato.xyz/how-llms-actually-work/",
+    "excerpt": "33 points · ai",
+    "author": "dgv",
+    "publishedAt": "2026-06-06T19:53:58.000-05:00",
+    "score": 33,
+    "tags": [
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:fdbcdc5331c8",
+    "kind": "article",
+    "source": "devto",
+    "title": "De 6 horas para 40 segundos: como um índice de banco de dados salvou um job crítico de produção",
+    "url": "https://dev.to/he4rt/de-6-horas-para-40-segundos-como-um-indice-de-banco-de-dados-salvou-um-job-critico-de-producao-c90",
+    "excerpt": "De 6 horas para 40 segundos: como um índice de banco de dados salvou um job crítico de...",
+    "author": "Fernando Andrade",
+    "publishedAt": "2026-06-06T20:19:13Z",
+    "score": 40,
+    "tags": [
+      "database",
+      "braziliandevs",
+      "performance",
+      "career"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:6faff733b106",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "ntsc-rs - an accurate VHS video effect",
+    "url": "https://ntsc.rs/",
+    "excerpt": "23 points · graphics, programming",
+    "author": "Yogthos",
+    "publishedAt": "2026-06-06T15:18:32.000-05:00",
+    "score": 23,
+    "tags": [
+      "graphics",
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -381,10 +410,10 @@
     "source": "lobsters",
     "title": "Life is too short for a slow terminal",
     "url": "https://mijndertstuij.nl/posts/life-is-too-short-for-a-slow-terminal/",
-    "excerpt": "60 points · linux, performance",
+    "excerpt": "74 points · linux, performance",
     "author": "npiazza",
     "publishedAt": "2026-06-06T07:40:37.000-05:00",
-    "score": 60,
+    "score": 74,
     "tags": [
       "linux",
       "performance"
@@ -400,10 +429,10 @@
     "source": "lobsters",
     "title": "If LLMs Have Human-Like Attributes, Then So Does Age of Empires II",
     "url": "https://arxiv.org/pdf/2605.31514",
-    "excerpt": "25 points · ai, pdf",
+    "excerpt": "35 points · ai, pdf",
     "author": "onbjerg",
     "publishedAt": "2026-06-06T07:31:19.000-05:00",
-    "score": 25,
+    "score": 35,
     "tags": [
       "ai",
       "pdf"
@@ -437,10 +466,10 @@
     "source": "lobsters",
     "title": "Stop Using Conventional Commits",
     "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
-    "excerpt": "203 points · practices",
+    "excerpt": "212 points · practices",
     "author": "dryya",
     "publishedAt": "2026-06-05T13:40:29.000-05:00",
-    "score": 203,
+    "score": 212,
     "tags": [
       "practices"
     ],
@@ -492,7 +521,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-06-05T03:57:48.000-05:00",
-    "score": 16,
+    "score": 17,
     "tags": [
       "ask",
       "programming"
@@ -522,10 +551,10 @@
     "source": "lobsters",
     "title": "Code is Cheap(er)",
     "url": "https://htmx.org/essays/code-is-cheap/",
-    "excerpt": "73 points · practices, vibecoding",
+    "excerpt": "75 points · practices, vibecoding",
     "author": "facundoolano",
     "publishedAt": "2026-06-04T20:24:45.000-05:00",
-    "score": 73,
+    "score": 75,
     "tags": [
       "practices",
       "vibecoding"
@@ -539,10 +568,10 @@
     "source": "lobsters",
     "title": "A faster bump allocator for rust",
     "url": "https://owen.cafe/posts/stumpalo/",
-    "excerpt": "91 points · performance, rust",
+    "excerpt": "93 points · performance, rust",
     "author": "atocanist",
     "publishedAt": "2026-06-04T16:27:13.000-05:00",
-    "score": 91,
+    "score": 93,
     "tags": [
       "performance",
       "rust"
@@ -631,10 +660,10 @@
     "source": "lobsters",
     "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
     "url": "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against",
-    "excerpt": "18 points · practices, vibecoding",
+    "excerpt": "19 points · practices, vibecoding",
     "author": "eatonphil",
     "publishedAt": "2026-06-04T07:33:04.000-05:00",
-    "score": 18,
+    "score": 19,
     "tags": [
       "practices",
       "vibecoding"
@@ -689,7 +718,7 @@
     "excerpt": "Here's a thing that happens on every team I've been on. Sprint ends. Someone schedules the retro....",
     "author": "Varshith V Hegde",
     "publishedAt": "2026-06-04T02:32:36Z",
-    "score": 33,
+    "score": 38,
     "tags": [
       "webdev",
       "opensource",
@@ -730,7 +759,7 @@
     "excerpt": "The AI world is full of old infrastructure with stochastic organs. That sentence probably explains...",
     "author": "marcosomma",
     "publishedAt": "2026-06-03T17:30:38Z",
-    "score": 60,
+    "score": 68,
     "tags": [
       "ai",
       "programming",
@@ -743,85 +772,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:e4174910abde",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Parsing XML EXIF from .avif files (plus a rant)",
-    "url": "https://sheep.horse/2026/6/parsing_xml_exif_from_.avif_files_(plus_a_rant).html",
-    "excerpt": "27 points · python, web",
-    "author": "AndrewStephens",
-    "publishedAt": "2026-06-03T10:22:33.000-05:00",
-    "score": 27,
-    "tags": [
-      "python",
-      "web"
-    ],
-    "labels": [
-      "python",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:c9a046b26efe",
-    "kind": "article",
-    "source": "devto",
-    "title": "Every tool seems to have a coding agent horned in these days..... I don't think that makes sense.",
-    "url": "https://dev.to/ben/every-tool-seems-to-have-a-coding-agent-horned-in-these-days-i-dont-think-that-makes-sense-3db",
-    "excerpt": "A post by Ben Halpern",
-    "author": "Ben Halpern",
-    "publishedAt": "2026-06-03T13:46:51Z",
-    "score": 31,
-    "tags": [
-      "agents",
-      "ai",
-      "discuss",
-      "tooling"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:1bbf094d3c5b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "mimalloc: A new, high-performance, scalable memory allocator for the modern era",
-    "url": "https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/",
-    "excerpt": "23 points · c, performance",
-    "author": "eatonphil",
-    "publishedAt": "2026-06-03T08:36:27.000-05:00",
-    "score": 23,
-    "tags": [
-      "c",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:bc0be78cdc6b",
-    "kind": "article",
-    "source": "rss",
-    "title": "Direct Preference Optimization Beyond Chatbots",
-    "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-06-03T12:55:11.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -829,8 +779,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-06-07T03:40:13Z",
-    "score": 439853,
+    "publishedAt": "2026-06-07T07:41:36Z",
+    "score": 439995,
     "tags": [
       "Python",
       "api",
@@ -862,7 +812,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-06-04T15:50:01Z",
-    "score": 389799,
+    "score": 389833,
     "tags": [
       "Python",
       "books",
@@ -885,7 +835,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-06-06T19:22:46Z",
-    "score": 301680,
+    "score": 301786,
     "tags": [
       "Python",
       "awesome",
@@ -909,7 +859,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-06-01T19:33:28Z",
-    "score": 221723,
+    "score": 221739,
     "tags": [
       "Python",
       "algorithm",
@@ -940,8 +890,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-06-06T09:16:59Z",
-    "score": 193399,
+    "publishedAt": "2026-06-07T16:37:42Z",
+    "score": 193426,
     "tags": [
       "Rust"
     ],
@@ -958,8 +908,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-07T03:08:59Z",
-    "score": 184924,
+    "publishedAt": "2026-06-07T19:39:31Z",
+    "score": 185733,
     "tags": [
       "Python",
       "ai",
@@ -993,8 +943,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-06T23:45:12Z",
-    "score": 184803,
+    "publishedAt": "2026-06-07T17:40:11Z",
+    "score": 184820,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1024,7 +974,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-06-06T21:24:54Z",
-    "score": 168684,
+    "score": 168923,
     "tags": [
       "Python",
       "cli",
@@ -1048,8 +998,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-06T19:44:57Z",
-    "score": 161364,
+    "publishedAt": "2026-06-07T08:55:03Z",
+    "score": 161391,
     "tags": [
       "Python",
       "audio",
@@ -1088,7 +1038,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-06-06T00:51:08Z",
-    "score": 115725,
+    "score": 115770,
     "tags": [
       "Rust",
       "android",
@@ -1124,8 +1074,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-07T01:04:21Z",
-    "score": 113635,
+    "publishedAt": "2026-06-07T19:22:16Z",
+    "score": 113669,
     "tags": [
       "Rust",
       "compiler",
@@ -1145,8 +1095,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-06-07T04:30:50Z",
-    "score": 107571,
+    "publishedAt": "2026-06-07T13:49:18Z",
+    "score": 107588,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1171,8 +1121,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-07T04:23:29Z",
-    "score": 106985,
+    "publishedAt": "2026-06-07T19:42:49Z",
+    "score": 107010,
     "tags": [
       "Rust",
       "deno",
@@ -1187,32 +1137,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:16906210b22d",
-    "kind": "trending",
-    "source": "github",
-    "title": "iluwatar/java-design-patterns",
-    "url": "https://github.com/iluwatar/java-design-patterns",
-    "excerpt": "Design patterns implemented in Java",
-    "author": "iluwatar",
-    "publishedAt": "2026-06-06T19:14:52Z",
-    "score": 94102,
-    "tags": [
-      "Java",
-      "awesome-list",
-      "design-patterns",
-      "hacktoberfest",
-      "java",
-      "principles",
-      "snippets",
-      "snippets-collection",
-      "snippets-library"
-    ],
-    "labels": [
-      "java"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:f0f9a9d19b4d",
     "kind": "trending",
     "source": "github",
@@ -1220,8 +1144,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-06T17:56:54Z",
-    "score": 93558,
+    "publishedAt": "2026-06-07T12:57:25Z",
+    "score": 94115,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1253,6 +1177,32 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:16906210b22d",
+    "kind": "trending",
+    "source": "github",
+    "title": "iluwatar/java-design-patterns",
+    "url": "https://github.com/iluwatar/java-design-patterns",
+    "excerpt": "Design patterns implemented in Java",
+    "author": "iluwatar",
+    "publishedAt": "2026-06-07T16:32:31Z",
+    "score": 94102,
+    "tags": [
+      "Java",
+      "awesome-list",
+      "design-patterns",
+      "hacktoberfest",
+      "java",
+      "principles",
+      "snippets",
+      "snippets-collection",
+      "snippets-library"
+    ],
+    "labels": [
+      "java"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:63ca8b29c9e2",
     "kind": "trending",
     "source": "github",
@@ -1260,8 +1210,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-07T04:52:00Z",
-    "score": 92887,
+    "publishedAt": "2026-06-07T19:41:56Z",
+    "score": 92920,
     "tags": [
       "Rust",
       "bun",
@@ -1292,8 +1242,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-07T01:52:36Z",
-    "score": 89187,
+    "publishedAt": "2026-06-07T18:57:22Z",
+    "score": 89335,
     "tags": [
       "Rust"
     ],
@@ -1311,7 +1261,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-06-04T08:03:28Z",
-    "score": 80804,
+    "score": 80826,
     "tags": [
       "Java",
       "framework",
