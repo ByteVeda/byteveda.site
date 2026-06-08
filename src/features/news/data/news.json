@@ -218,6 +218,28 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:82332e7bf9af",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Today I was dealing with Tahoe on a Macbook after almost ten years away. I say unironically: commercial operating syste…",
+    "url": "https://fediscience.org/@jameshowell/116712438635578937",
+    "excerpt": "Today I was dealing with Tahoe on a Macbook after almost ten years away. I say unironically: commercial operating systems represent crimes against humanity. People pay for this? Windows and Mac users…",
+    "author": "James Endres Howell",
+    "publishedAt": "2026-06-08T03:48:02.000Z",
+    "score": 22,
+    "tags": [
+      "freesoftware",
+      "softwarelibre",
+      "mac",
+      "windows",
+      "linux"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:Hugging Face:59e293add022",
     "kind": "article",
     "source": "rss",
@@ -237,59 +259,22 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ac8c06f62eb8",
+    "id": "mastodon:b9174c41f6fa",
     "kind": "article",
     "source": "mastodon",
-    "title": "Linux Mint &lt;-&gt; RAID 1 &lt;-&gt; Synology Wenn ich die nächsten Tage ein wenig Luft habe, schreibe ich dazu einen…",
-    "url": "https://bildung.social/@_DigitalWriter_/116710431614790459",
-    "excerpt": "Linux Mint &lt;-&gt; RAID 1 &lt;-&gt; Synology Wenn ich die nächsten Tage ein wenig Luft habe, schreibe ich dazu einen kleinen Artikel ... # nas # synology # linux",
-    "author": "Herbert Hertramph",
-    "publishedAt": "2026-06-07T19:17:37.000Z",
-    "score": 8,
+    "title": "Changed up SQLite from `PRAGMA syncronization = FULL` to `PRAGMA syncronization = NORMAL` and got an immediate result.…",
+    "url": "https://fosstodon.org/@blainsmith/116710461122808993",
+    "excerpt": "Changed up SQLite from `PRAGMA syncronization = FULL` to `PRAGMA syncronization = NORMAL` and got an immediate result. Litestream is still doing its thing in the background as well to ensure changes…",
+    "author": "B",
+    "publishedAt": "2026-06-07T19:25:07.661Z",
+    "score": 6,
     "tags": [
-      "nas",
-      "synology",
-      "linux"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:81cd115ac237",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python Tip #158 (of 365): If you had to choose, prefer automated tests over type annotations. Of course... you don't ne…",
-    "url": "https://mastodon.social/@treyhunner/116710071386871785",
-    "excerpt": "Python Tip #158 (of 365): If you had to choose, prefer automated tests over type annotations. Of course... you don't need to choose. You can have both! A type checker can tell you that your function…",
-    "author": "Trey Hunner 🐍",
-    "publishedAt": "2026-06-07T17:46:00.000Z",
-    "score": 5,
-    "tags": [
-      "python",
-      "dailypythontip"
+      "sqlite",
+      "golang",
+      "litestream"
     ],
     "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:940f088b02cf",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Microsoft wants safer C# without turning it into Rust",
-    "url": "https://www.theregister.com/devops/2026/05/26/microsoft-wants-safer-c-without-turning-it-into-rust/5246359",
-    "excerpt": "Unsafe bits get a warning label in planned low-level coding shake-up",
-    "author": "jbz",
-    "publishedAt": "2026-06-07T17:01:13.000Z",
-    "score": 5,
-    "tags": [
-      "csharp",
-      "rust",
-      "plt"
-    ],
-    "labels": [
-      "rust"
+      "go"
     ],
     "mentionsByteveda": false
   },
@@ -302,7 +287,7 @@
     "excerpt": "It has been about 24 hours since https:// probes.dev went into private beta and the metrics have shown nothing exciting. It is just humming along. # GoLang # HTTP # Monitoring # BuildInPublic",
     "author": "B",
     "publishedAt": "2026-06-07T16:50:35.930Z",
-    "score": 5,
+    "score": 6,
     "tags": [
       "golang",
       "http",
@@ -315,33 +300,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:56e45b08790c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Most developers think learning # Rust is about performance. I think that&#39;s only one of the benefits though. The rea…",
-    "url": "https://fosstodon.org/@bbelderbos/116709738131070098",
-    "excerpt": "Most developers think learning # Rust is about performance. I think that&#39;s only one of the benefits though. The real benefit for me is what happens when the compiler starts arguing with you. For…",
-    "author": "Bob Belderbos",
-    "publishedAt": "2026-06-07T16:21:15.683Z",
-    "score": 8,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:169605f63b50",
     "kind": "article",
     "source": "lobsters",
     "title": "The User Doesn't Care - But you should",
     "url": "https://lewiscampbell.tech/blog/260607.html",
-    "excerpt": "27 points · practices",
+    "excerpt": "44 points · practices",
     "author": "nickmonad",
     "publishedAt": "2026-06-07T06:48:48.000-05:00",
-    "score": 27,
+    "score": 44,
     "tags": [
       "practices"
     ],
@@ -354,10 +321,10 @@
     "source": "lobsters",
     "title": "How LLMs Actually Work",
     "url": "https://0xkato.xyz/how-llms-actually-work/",
-    "excerpt": "33 points · ai",
+    "excerpt": "50 points · ai",
     "author": "dgv",
     "publishedAt": "2026-06-06T19:53:58.000-05:00",
-    "score": 33,
+    "score": 50,
     "tags": [
       "ai"
     ],
@@ -405,15 +372,34 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:18acdc375e39",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "A Little Explanation of Little's Law",
+    "url": "https://rugu.dev/en/blog/littles-law/",
+    "excerpt": "16 points · performance, practices",
+    "author": "ugur",
+    "publishedAt": "2026-06-06T13:38:04.000-05:00",
+    "score": 16,
+    "tags": [
+      "performance",
+      "practices"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:a1f20c5a200d",
     "kind": "article",
     "source": "lobsters",
     "title": "Life is too short for a slow terminal",
     "url": "https://mijndertstuij.nl/posts/life-is-too-short-for-a-slow-terminal/",
-    "excerpt": "74 points · linux, performance",
+    "excerpt": "77 points · linux, performance",
     "author": "npiazza",
     "publishedAt": "2026-06-06T07:40:37.000-05:00",
-    "score": 74,
+    "score": 77,
     "tags": [
       "linux",
       "performance"
@@ -466,10 +452,10 @@
     "source": "lobsters",
     "title": "Stop Using Conventional Commits",
     "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
-    "excerpt": "212 points · practices",
+    "excerpt": "215 points · practices",
     "author": "dryya",
     "publishedAt": "2026-06-05T13:40:29.000-05:00",
-    "score": 212,
+    "score": 215,
     "tags": [
       "practices"
     ],
@@ -642,7 +628,7 @@
     "excerpt": "A visual, beginner-friendly Java 25 experiment that explains virtual threads, blocking work, carrier threads, and the production rules that matter.",
     "author": "S M Tahosin",
     "publishedAt": "2026-06-04T14:51:01Z",
-    "score": 62,
+    "score": 67,
     "tags": [
       "java",
       "beginners",
@@ -718,7 +704,7 @@
     "excerpt": "Here's a thing that happens on every team I've been on. Sprint ends. Someone schedules the retro....",
     "author": "Varshith V Hegde",
     "publishedAt": "2026-06-04T02:32:36Z",
-    "score": 38,
+    "score": 40,
     "tags": [
       "webdev",
       "opensource",
@@ -759,7 +745,7 @@
     "excerpt": "The AI world is full of old infrastructure with stochastic organs. That sentence probably explains...",
     "author": "marcosomma",
     "publishedAt": "2026-06-03T17:30:38Z",
-    "score": 68,
+    "score": 70,
     "tags": [
       "ai",
       "programming",
@@ -772,6 +758,26 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:e4174910abde",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Parsing XML EXIF from .avif files (plus a rant)",
+    "url": "https://sheep.horse/2026/6/parsing_xml_exif_from_.avif_files_(plus_a_rant).html",
+    "excerpt": "27 points · python, web",
+    "author": "AndrewStephens",
+    "publishedAt": "2026-06-03T10:22:33.000-05:00",
+    "score": 27,
+    "tags": [
+      "python",
+      "web"
+    ],
+    "labels": [
+      "python",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -780,7 +786,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-06-07T07:41:36Z",
-    "score": 439995,
+    "score": 440081,
     "tags": [
       "Python",
       "api",
@@ -812,7 +818,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-06-04T15:50:01Z",
-    "score": 389833,
+    "score": 389856,
     "tags": [
       "Python",
       "books",
@@ -835,7 +841,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-06-06T19:22:46Z",
-    "score": 301786,
+    "score": 301838,
     "tags": [
       "Python",
       "awesome",
@@ -851,38 +857,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:f02f99f2874d",
-    "kind": "trending",
-    "source": "github",
-    "title": "TheAlgorithms/Python",
-    "url": "https://github.com/TheAlgorithms/Python",
-    "excerpt": "All Algorithms implemented in Python",
-    "author": "TheAlgorithms",
-    "publishedAt": "2026-06-01T19:33:28Z",
-    "score": 221739,
-    "tags": [
-      "Python",
-      "algorithm",
-      "algorithm-competitions",
-      "algorithms-implemented",
-      "algos",
-      "community-driven",
-      "education",
-      "hacktoberfest",
-      "interview",
-      "learn",
-      "practice",
-      "python",
-      "searches",
-      "sorting-algorithms",
-      "sorts"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:996ec6ea0cd3",
     "kind": "trending",
     "source": "github",
@@ -890,8 +864,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
     "author": "ultraworkers",
-    "publishedAt": "2026-06-07T16:37:42Z",
-    "score": 193426,
+    "publishedAt": "2026-06-08T01:13:25Z",
+    "score": 193449,
     "tags": [
       "Rust"
     ],
@@ -908,8 +882,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-07T19:39:31Z",
-    "score": 185733,
+    "publishedAt": "2026-06-08T04:59:16Z",
+    "score": 186251,
     "tags": [
       "Python",
       "ai",
@@ -943,8 +917,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-07T17:40:11Z",
-    "score": 184820,
+    "publishedAt": "2026-06-08T03:38:54Z",
+    "score": 184832,
     "tags": [
       "Python",
       "agentic-ai",
@@ -974,7 +948,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-06-06T21:24:54Z",
-    "score": 168923,
+    "score": 169037,
     "tags": [
       "Python",
       "cli",
@@ -998,8 +972,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-07T08:55:03Z",
-    "score": 161391,
+    "publishedAt": "2026-06-07T19:56:34Z",
+    "score": 161404,
     "tags": [
       "Python",
       "audio",
@@ -1030,6 +1004,31 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:3c2f23bd9712",
+    "kind": "trending",
+    "source": "github",
+    "title": "langflow-ai/langflow",
+    "url": "https://github.com/langflow-ai/langflow",
+    "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "author": "langflow-ai",
+    "publishedAt": "2026-06-08T02:37:07Z",
+    "score": 149383,
+    "tags": [
+      "Python",
+      "agents",
+      "chatgpt",
+      "generative-ai",
+      "large-language-models",
+      "multiagent",
+      "react-flow"
+    ],
+    "labels": [
+      "python",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:1a7aeb8bfed5",
     "kind": "trending",
     "source": "github",
@@ -1038,7 +1037,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-06-06T00:51:08Z",
-    "score": 115770,
+    "score": 115787,
     "tags": [
       "Rust",
       "android",
@@ -1074,8 +1073,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-07T19:22:16Z",
-    "score": 113669,
+    "publishedAt": "2026-06-08T04:53:57Z",
+    "score": 113683,
     "tags": [
       "Rust",
       "compiler",
@@ -1096,7 +1095,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-06-07T13:49:18Z",
-    "score": 107588,
+    "score": 107604,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1121,8 +1120,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-07T19:42:49Z",
-    "score": 107010,
+    "publishedAt": "2026-06-08T04:37:00Z",
+    "score": 107015,
     "tags": [
       "Rust",
       "deno",
@@ -1144,8 +1143,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-07T12:57:25Z",
-    "score": 94115,
+    "publishedAt": "2026-06-08T04:44:28Z",
+    "score": 94451,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1185,7 +1184,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-06-07T16:32:31Z",
-    "score": 94102,
+    "score": 94101,
     "tags": [
       "Java",
       "awesome-list",
@@ -1210,8 +1209,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-07T19:41:56Z",
-    "score": 92920,
+    "publishedAt": "2026-06-08T04:26:18Z",
+    "score": 92929,
     "tags": [
       "Rust",
       "bun",
@@ -1242,8 +1241,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-07T18:57:22Z",
-    "score": 89335,
+    "publishedAt": "2026-06-08T04:41:51Z",
+    "score": 89438,
     "tags": [
       "Rust"
     ],
@@ -1261,7 +1260,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-06-04T08:03:28Z",
-    "score": 80826,
+    "score": 80825,
     "tags": [
       "Java",
       "framework",
