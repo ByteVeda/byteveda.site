@@ -218,68 +218,118 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:afbcc79ddbcf",
+    "id": "mastodon:c11916f6241d",
     "kind": "article",
     "source": "mastodon",
-    "title": "Warner Crocker – Medium",
-    "url": "https://medium.com/@WarnerCrocker",
-    "excerpt": "Read writing from Warner Crocker on Medium. Gadfly. Flying through life as a gadget geek and theatre artist...commenting along the way. Mastodon: https://mastodon.social/deck/@WarnerCrocker",
-    "author": "Life on the Wicked Stage: Act 3",
-    "publishedAt": "2026-06-13T13:48:40.000Z",
+    "title": "Linux Kernel CVE-2026-23111 Has a Public Root Exploit — Patch Now | Falcon Internet Blog",
+    "url": "https://www.falconinternet.net/blog/linux-kernel-cve-2026-23111-root-exploit",
+    "excerpt": "Working exploit for Linux CVE-2026-23111 dropped June 8. Patch Ubuntu and Debian servers now — any local user can escalate to root on unpatched systems.",
+    "author": "SIGINT 🛡️🤖",
+    "publishedAt": "2026-06-14T03:00:41.923Z",
     "score": 6,
     "tags": [
-      "advertising",
-      "apple",
+      "ubuntu",
       "linux",
-      "tech",
-      "technology",
-      "writing"
+      "infosec"
     ],
-    "labels": [],
+    "labels": [
+      "security"
+    ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:34bd4615920f",
+    "id": "mastodon:21a37dc89c9a",
     "kind": "article",
     "source": "mastodon",
-    "title": "# LabPlot (upcoming release) just got even more powerful. The latest merge request introduces native support for import…",
-    "url": "https://floss.social/@LabPlot/116741497789863356",
-    "excerpt": "# LabPlot (upcoming release) just got even more powerful. The latest merge request introduces native support for importing data from the following file formats: 👉 # Apache # Parquet 👉 # Apache # OR…",
-    "author": "LabPlot (labplot.org)",
-    "publishedAt": "2026-06-13T06:58:09.000Z",
-    "score": 20,
+    "title": "🚀 Notepad.exe support Go now! Fresh from the press. # golang # macdev # developers # programming get it https:// notep…",
+    "url": "https://mastodon.social/@krzyzanowskim/116745915873577898",
+    "excerpt": "🚀 Notepad.exe support Go now! Fresh from the press. # golang # macdev # developers # programming get it https:// notepadexe.com",
+    "author": "Marcin Krzyzanowski",
+    "publishedAt": "2026-06-14T01:41:44.000Z",
+    "score": 14,
     "tags": [
-      "labplot",
-      "apache",
-      "parquet",
-      "orc",
-      "arrow",
-      "ipc",
-      "feather",
-      "datascience",
-      "opensource",
-      "foss",
-      "floss",
-      "kde",
-      "bigdata",
-      "data",
-      "dataanalysis",
-      "python",
-      "technews",
-      "opendata",
-      "science",
-      "research",
-      "analytics",
-      "tech",
-      "dataviz",
-      "it",
-      "r",
-      "hackernews"
+      "golang",
+      "macdev",
+      "developers",
+      "programming"
     ],
     "labels": [
-      "opensource",
-      "python"
+      "go"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:c43c7fb5cf75",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "repo-slopscore: Detecting AI/LLM contributions in git repositories via commit history analysis",
+    "url": "https://slopscan.ava.pet/",
+    "excerpt": "[Link to source code](https://codeberg.org/polyphony/repo-slopscore)\r\nDisclaimer: This is self-promotion, as I am the author of the tool",
+    "author": "ava",
+    "publishedAt": "2026-06-13T10:37:16.000-05:00",
+    "score": 33,
+    "tags": [
+      "rust",
+      "show",
+      "vcs",
+      "vibecoding"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:9e1c7bd79a2f",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # physics , and the # future of # r…",
+    "url": "https://techtoots.com/@philosophies/116743418417018212",
+    "excerpt": "🤖 # AI as a # muse 🎨for # science 🔬? A lecture by # MarioKrenn on # creativity , # physics , and the # future of # research # ArtificialIntelligence could not only perform calculations and analyse…",
+    "author": "Philo Sophies",
+    "publishedAt": "2026-06-13T15:06:36.000Z",
+    "score": 5,
+    "tags": [
+      "ai",
+      "muse",
+      "science",
+      "mariokrenn",
+      "creativity",
+      "physics",
+      "future",
+      "research",
+      "artificialintelligence",
+      "ideas",
+      "experiments",
+      "universityofmunster",
+      "quantumphysics",
+      "philosophy",
+      "machinelearning",
+      "cdsc",
+      "epistemology",
+      "futureofscience"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a9459ce5aa22",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Using Notes in the Glasgow Haskell Compiler",
+    "url": "https://gitlab.haskell.org/ghc/ghc/-/wikis/commentary/coding-style#2-using-notes",
+    "excerpt": "21 points · haskell, practices",
+    "author": "gnyeki",
+    "publishedAt": "2026-06-13T02:29:23.000-05:00",
+    "score": 21,
+    "tags": [
+      "haskell",
+      "practices"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -291,7 +341,7 @@
     "excerpt": "I live in the terminal. lazygit, yazi, neovim — if it's a nice TUI I'm probably ricing it. I care about privacy, local-first tools, and interfaces that don't get in the way. Currently building enmase…",
     "author": "parthivsaikia",
     "publishedAt": "2026-06-13T05:59:55.000Z",
-    "score": 7,
+    "score": 8,
     "tags": [
       "introduction",
       "golang",
@@ -312,10 +362,10 @@
     "source": "lobsters",
     "title": "Rejected Emoji Proposals",
     "url": "https://charlottebuff.com/unicode/misc/rejected-emoji-proposals/",
-    "excerpt": "39 points · programming",
+    "excerpt": "69 points · programming",
     "author": "carlana",
     "publishedAt": "2026-06-12T21:17:01.000-05:00",
-    "score": 39,
+    "score": 69,
     "tags": [
       "programming"
     ],
@@ -339,17 +389,16 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:5ab78939afdb",
+    "id": "lobsters:a83bb1d5e926",
     "kind": "article",
     "source": "lobsters",
-    "title": "A columnar database for analytics in pure Clojure",
-    "url": "https://github.com/yogthos/flatiron",
-    "excerpt": "17 points · clojure, programming, vibecoding",
+    "title": "erm: A Local CLI That Strips Ums, Uhs, and Erms From Speech",
+    "url": "https://doug.sh/posts/erm-a-local-cli-that-strips-ums-uhs-and-erms-from-speech/",
+    "excerpt": "15 points · programming, vibecoding",
     "author": "Yogthos",
-    "publishedAt": "2026-06-12T12:06:44.000-05:00",
-    "score": 17,
+    "publishedAt": "2026-06-12T12:23:35.000-05:00",
+    "score": 15,
     "tags": [
-      "clojure",
       "programming",
       "vibecoding"
     ],
@@ -357,24 +406,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:b6d4c4b1aa09",
+    "id": "lobsters:5ab78939afdb",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Affected by # GitLab layoff, Looking for a new job with # ruby or # golang # FediHire",
-    "url": "https://mastodon.social/@tachyons/116738097332608011",
-    "excerpt": "Affected by # GitLab layoff, Looking for a new job with # ruby or # golang # FediHire",
-    "author": "Aboobacker MK",
-    "publishedAt": "2026-06-12T16:33:22.000Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "A columnar database for analytics in pure Clojure",
+    "url": "https://github.com/yogthos/flatiron",
+    "excerpt": "18 points · clojure, programming, vibecoding",
+    "author": "Yogthos",
+    "publishedAt": "2026-06-12T12:06:44.000-05:00",
+    "score": 18,
     "tags": [
-      "gitlab",
-      "ruby",
-      "golang",
-      "FediHire"
+      "clojure",
+      "programming",
+      "vibecoding"
     ],
-    "labels": [
-      "go"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -413,60 +459,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:1ffb34dfe13a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Today's # CloudOps / # DevOps challange: A developer who build a frankenstein # k8s implementation , has his last day b…",
-    "url": "https://thistlenfern.org/@wendythedruid/116737749604660346",
-    "excerpt": "Today's # CloudOps / # DevOps challange: A developer who build a frankenstein # k8s implementation , has his last day before he drops a hearty fuck you to the rest of us and leaves the company foreve…",
-    "author": "wendythedruid",
-    "publishedAt": "2026-06-12T15:04:56.000Z",
-    "score": 7,
-    "tags": [
-      "cloudops",
-      "devops",
-      "k8s",
-      "developer",
-      "iac",
-      "terraform",
-      "infrastructure",
-      "kubernetes",
-      "sre",
-      "python",
-      "golang"
-    ],
-    "labels": [
-      "devops",
-      "python",
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:c03d34728447",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Senior Developer:National",
-    "url": "https://www.jobtrain.co.uk/justicedigital/Job/JobDetail?&jobid=1104",
-    "excerpt": "We're looking for a new Senior Developer https://www. jobtrain.co.uk/justicedigital/ Job/JobDetail?&amp;jobid=1104 It's UK government work so you'll need to be living here but if you fancy working wi…",
-    "author": "pieceofthepie :coffefied:",
-    "publishedAt": "2026-06-12T14:05:13.000Z",
-    "score": 11,
-    "tags": [
-      "php",
-      "golang",
-      "terraform",
-      "aws",
-      "job",
-      "fedijobs",
-      "getfedihired"
-    ],
-    "labels": [
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:Stack Overflow Blog:8f74f172e76e",
     "kind": "article",
     "source": "rss",
@@ -491,7 +483,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-06-12T08:04:47.000-05:00",
-    "score": 17,
+    "score": 19,
     "tags": [
       "ask",
       "programming"
@@ -521,10 +513,10 @@
     "source": "lobsters",
     "title": "How I made a 60fps Eink monitor, the Modos Flow",
     "url": "https://youtu.be/nHbA2-_qzH4",
-    "excerpt": "91 points · hardware, performance, video",
+    "excerpt": "110 points · hardware, performance, video",
     "author": "clean-rope5995",
     "publishedAt": "2026-06-12T00:39:08.000-05:00",
-    "score": 91,
+    "score": 110,
     "tags": [
       "hardware",
       "performance",
@@ -557,10 +549,10 @@
     "source": "lobsters",
     "title": "Local-First Software Is Easier to Scale",
     "url": "https://elijahpotter.dev/articles/local-first_software_is_easier_to_scale",
-    "excerpt": "21 points · performance",
+    "excerpt": "22 points · performance",
     "author": "elijahpotter",
     "publishedAt": "2026-06-11T15:53:25.000-05:00",
-    "score": 21,
+    "score": 22,
     "tags": [
       "performance"
     ],
@@ -575,10 +567,10 @@
     "source": "lobsters",
     "title": "There Is Life Before Main in Rust",
     "url": "https://grack.com/blog/2026/06/11/life-before-main/",
-    "excerpt": "41 points · rust",
+    "excerpt": "42 points · rust",
     "author": "mmastrac",
     "publishedAt": "2026-06-11T12:32:42.000-05:00",
-    "score": 41,
+    "score": 42,
     "tags": [
       "rust"
     ],
@@ -593,10 +585,10 @@
     "source": "lobsters",
     "title": "Reuse Less Software",
     "url": "https://wiki.alopex.li/ReuseLessSoftware",
-    "excerpt": "50 points · programming, security",
+    "excerpt": "51 points · programming, security",
     "author": "icefox",
     "publishedAt": "2026-06-11T11:15:10.000-05:00",
-    "score": 50,
+    "score": 51,
     "tags": [
       "programming",
       "security"
@@ -650,10 +642,10 @@
     "source": "lobsters",
     "title": "merman: Mermaid.js, but headless, in Rust",
     "url": "https://github.com/Latias94/merman",
-    "excerpt": "26 points · graphics, rust, vibecoding",
+    "excerpt": "27 points · graphics, rust, vibecoding",
     "author": "wofo",
     "publishedAt": "2026-06-11T08:03:53.000-05:00",
-    "score": 26,
+    "score": 27,
     "tags": [
       "graphics",
       "rust",
@@ -786,28 +778,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:8ff31f128ad5",
-    "kind": "article",
-    "source": "devto",
-    "title": "CSS – only a Nerdy Hobby?",
-    "url": "https://dev.to/ingosteinke/css-only-a-nerdy-hobby-17hf",
-    "excerpt": "In times when people believe that \"AI can code a website in 2 days\" (see: how to leverage AI as a...",
-    "author": "Ingo Steinke, web developer",
-    "publishedAt": "2026-06-10T11:11:50Z",
-    "score": 35,
-    "tags": [
-      "ai",
-      "css",
-      "webdev",
-      "watercooler"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -816,7 +786,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-06-13T06:14:45Z",
-    "score": 441222,
+    "score": 441389,
     "tags": [
       "Python",
       "api",
@@ -847,8 +817,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-06-09T15:12:32Z",
-    "score": 390169,
+    "publishedAt": "2026-06-13T19:32:53Z",
+    "score": 390203,
     "tags": [
       "Python",
       "books",
@@ -871,7 +841,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-06-12T04:11:12Z",
-    "score": 302685,
+    "score": 302793,
     "tags": [
       "Python",
       "awesome",
@@ -895,7 +865,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-06-08T06:06:12Z",
-    "score": 193717,
+    "score": 193748,
     "tags": [
       "Rust"
     ],
@@ -912,8 +882,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-13T14:19:01Z",
-    "score": 192461,
+    "publishedAt": "2026-06-14T04:57:18Z",
+    "score": 192880,
     "tags": [
       "Python",
       "ai",
@@ -947,8 +917,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-13T11:13:15Z",
-    "score": 184924,
+    "publishedAt": "2026-06-13T23:47:18Z",
+    "score": 184932,
     "tags": [
       "Python",
       "agentic-ai",
@@ -977,8 +947,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-06-12T22:55:22Z",
-    "score": 170294,
+    "publishedAt": "2026-06-13T23:06:23Z",
+    "score": 170426,
     "tags": [
       "Python",
       "cli",
@@ -1002,8 +972,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-13T07:37:35Z",
-    "score": 161559,
+    "publishedAt": "2026-06-13T18:11:29Z",
+    "score": 161571,
     "tags": [
       "Python",
       "audio",
@@ -1042,7 +1012,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-06-09T20:35:19Z",
-    "score": 150175,
+    "score": 150398,
     "tags": [
       "Python",
       "agent-skills"
@@ -1061,7 +1031,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-06-11T15:09:35Z",
-    "score": 116097,
+    "score": 116112,
     "tags": [
       "Rust",
       "android",
@@ -1097,8 +1067,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-13T13:24:26Z",
-    "score": 113798,
+    "publishedAt": "2026-06-14T04:26:04Z",
+    "score": 113824,
     "tags": [
       "Rust",
       "compiler",
@@ -1118,8 +1088,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-06-13T14:03:09Z",
-    "score": 107825,
+    "publishedAt": "2026-06-14T01:57:28Z",
+    "score": 107852,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1144,8 +1114,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-13T13:59:42Z",
-    "score": 107045,
+    "publishedAt": "2026-06-13T23:38:57Z",
+    "score": 107062,
     "tags": [
       "Rust",
       "deno",
@@ -1167,8 +1137,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-11T18:37:28Z",
-    "score": 99870,
+    "publishedAt": "2026-06-14T02:05:22Z",
+    "score": 100155,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1233,8 +1203,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-13T12:48:19Z",
-    "score": 93139,
+    "publishedAt": "2026-06-14T01:44:53Z",
+    "score": 93155,
     "tags": [
       "Rust",
       "bun",
@@ -1265,8 +1235,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-13T13:01:23Z",
-    "score": 90824,
+    "publishedAt": "2026-06-14T04:59:19Z",
+    "score": 90890,
     "tags": [
       "Rust"
     ],
@@ -1283,8 +1253,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-06-10T21:12:33Z",
-    "score": 80901,
+    "publishedAt": "2026-06-13T20:30:20Z",
+    "score": 80918,
     "tags": [
       "Java",
       "framework",
