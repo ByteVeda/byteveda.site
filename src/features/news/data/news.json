@@ -218,19 +218,55 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:00790bd4666b",
+    "id": "rss:Hugging Face:07c125a38d88",
     "kind": "article",
-    "source": "mastodon",
-    "title": "The case for an accessibility designer vibe coding when all his coworkers are also vibe coding",
-    "url": "https://ericwbailey.website/published/the-case-for-an-accessibility-designer-vibe-coding-when-all-his-coworkers-are-also-vibe-coding/",
-    "excerpt": "Am I letting my own personal beliefs and biases affect the outcome I ultimately want?.",
-    "author": "Jecture",
-    "publishedAt": "2026-06-15T21:00:19.000Z",
-    "score": 5,
+    "source": "rss",
+    "title": "MolmoMotion: Language-guided 3D motion forecasting",
+    "url": "https://huggingface.co/blog/allenai/molmomotion",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-17T15:26:44.000Z",
+    "score": 0,
     "tags": [
-      "accessibility",
+      "Hugging Face"
+    ],
+    "labels": [
       "ai",
-      "a11y"
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:7720cf985660",
+    "kind": "article",
+    "source": "rss",
+    "title": "AI agents are a confused deputy with the keys to your kingdom​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/06/17/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
+    "excerpt": "How attackers took twenty thousand Instagram accounts by asking Meta&#x27;s AI politely, and why that failure is about to become common.​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌ ​ ‌‍​‌‌‍ ‍‌‍‍‌…",
+    "author": "Fabio Salvadori",
+    "publishedAt": "2026-06-17T14:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:25f3d2f758ff",
+    "kind": "article",
+    "source": "devto",
+    "title": "How I use premortems with Claude and Codex",
+    "url": "https://dev.to/pablonax/how-i-use-premortems-with-claude-and-codex-46mm",
+    "excerpt": "I started using premortems for a boring reason: I did not trust the default review question. When I...",
+    "author": "Pavel Kalo",
+    "publishedAt": "2026-06-17T10:19:30Z",
+    "score": 35,
+    "tags": [
+      "ai",
+      "claude",
+      "llm",
+      "tooling"
     ],
     "labels": [
       "ai"
@@ -238,55 +274,226 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:0af2b9c9a83f",
+    "id": "rss:Hugging Face:c7b6e0d15e34",
     "kind": "article",
-    "source": "mastodon",
-    "title": "On Linux shells, which do you prefer? # linux # technology # bash # shell # devops # sysadmin # terminal # zsh # fish #…",
-    "url": "https://hachyderm.io/@daesorin/116756023226584357",
-    "excerpt": "On Linux shells, which do you prefer? # linux # technology # bash # shell # devops # sysadmin # terminal # zsh # fish # question # python",
-    "author": "/",
-    "publishedAt": "2026-06-15T20:32:10.000Z",
-    "score": 8,
+    "source": "rss",
+    "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+    "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-17T10:18:05.000Z",
+    "score": 0,
     "tags": [
-      "linux",
-      "technology",
-      "bash",
-      "shell",
-      "devops",
-      "sysadmin",
-      "terminal",
-      "zsh",
-      "fish",
-      "question",
-      "python"
+      "Hugging Face"
     ],
     "labels": [
-      "devops",
-      "python"
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:71e11a83efc1",
+    "id": "rss:Hugging Face:64d6b4cbeaac",
     "kind": "article",
-    "source": "mastodon",
-    "title": "EU Open Source Strategy plays a key role in @ EUCommission Tech Sovereignty Package to reduce dependency on non-EU coun…",
-    "url": "https://fosstodon.org/@linuxmagazine/116756002821462701",
-    "excerpt": "EU Open Source Strategy plays a key role in @ EUCommission Tech Sovereignty Package to reduce dependency on non-EU countries https://www. linux-magazine.com/Online/News /EU-Open-Source-Strategy-Plays…",
-    "author": "Linux Magazine",
-    "publishedAt": "2026-06-15T20:26:58.835Z",
-    "score": 7,
+    "source": "rss",
+    "title": "GLM-5.2: Built for Long-Horizon Tasks",
+    "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-17T09:01:25.000Z",
+    "score": 0,
     "tags": [
-      "eu",
-      "techsovereignty",
-      "opensource",
-      "cloud",
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:1d8995b4bf12",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Can gzip be a language model?",
+    "url": "https://nathan.rs/posts/gzip-lm/",
+    "excerpt": "41 points · ai",
+    "author": "AviKav",
+    "publishedAt": "2026-06-16T17:17:20.000-05:00",
+    "score": 41,
+    "tags": [
       "ai"
     ],
     "labels": [
-      "opensource",
       "ai"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:54579fac185e",
+    "kind": "article",
+    "source": "rss",
+    "title": "What are git worktrees, and why should I use them?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+    "excerpt": "It seems like the latest hotness in git these days is the concept of worktrees. Which&hellip; is kind of funny because they&rsquo;ve been around since 2015. But, nevertheless, they are cool, and you…",
+    "author": "Natalie Guevara",
+    "publishedAt": "2026-06-16T20:58:54.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:57f2637a6205",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Build your project Zig-style",
+    "url": "https://fnordig.de/2026/06/16/build-your-project-zig-style/",
+    "excerpt": "21 points · rust, zig",
+    "author": "calebhearth",
+    "publishedAt": "2026-06-16T14:33:20.000-05:00",
+    "score": 21,
+    "tags": [
+      "rust",
+      "zig"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:d644e34b8cb8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "But yak shaving is fun",
+    "url": "https://parksb.github.io/en/article/32.html",
+    "excerpt": "47 points · programming",
+    "author": "hoistbypetard",
+    "publishedAt": "2026-06-16T14:18:46.000-05:00",
+    "score": 47,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:12aedd2734d5",
+    "kind": "article",
+    "source": "devto",
+    "title": "How We Saved Big and Simplified Our Image Pipeline: Adopting bunny.net on DEV",
+    "url": "https://dev.to/devteam/how-we-saved-big-and-simplified-our-image-pipeline-adopting-bunnynet-on-dev-3d53",
+    "excerpt": "Hey everyone, Ben here. If you’ve been following the journey of DEV and our open source project...",
+    "author": "Ben Halpern",
+    "publishedAt": "2026-06-16T16:41:51Z",
+    "score": 64,
+    "tags": [
+      "performance",
+      "webdev",
+      "design",
+      "bunny"
+    ],
+    "labels": [
+      "performance",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f82769bb62e7",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How Developers React to AI-Scented Blog Posts",
+    "url": "https://writethatblog.substack.com/p/dev-reaction-to-ai-blog-posts",
+    "excerpt": "28 points · culture, practices, vibecoding",
+    "author": "eatonphil",
+    "publishedAt": "2026-06-16T09:15:28.000-05:00",
+    "score": 28,
+    "tags": [
+      "culture",
+      "practices",
+      "vibecoding"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:baa17c620a70",
+    "kind": "article",
+    "source": "devto",
+    "title": "A Company AI Flagged My Article As \"Low Quality.\" I Ran the Numbers. Then I Ran Again.",
+    "url": "https://dev.to/xulingfeng/a-company-ai-flagged-my-article-as-low-quality-i-ran-the-numbers-then-i-ran-again-1h0p",
+    "excerpt": "A story about an AI content moderation system that flagged 347 posts since launch — and what...",
+    "author": "xulingfeng",
+    "publishedAt": "2026-06-16T14:06:45Z",
+    "score": 36,
+    "tags": [
+      "ai",
+      "discuss",
+      "career",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:2588212ad727",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "zlib-rs in Firefox",
+    "url": "https://trifectatech.org/blog/zlib-rs-in-firefox/",
+    "excerpt": "52 points · browsers, release, rust",
+    "author": "freddyb",
+    "publishedAt": "2026-06-16T08:29:53.000-05:00",
+    "score": 52,
+    "tags": [
+      "browsers",
+      "release",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:20e81ba3e4a1",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How memory safety CVEs differ between Rust and C/C++",
+    "url": "https://kobzol.github.io/rust/2026/06/15/how-memory-safety-cves-differ-between-rust-and-c-cpp.html",
+    "excerpt": "32 points · c, rust",
+    "author": "nrposner",
+    "publishedAt": "2026-06-16T07:28:27.000-05:00",
+    "score": 32,
+    "tags": [
+      "c",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:d4a202e92859",
+    "kind": "article",
+    "source": "rss",
+    "title": "If context is king, architecture is the castle​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍​﻿​﻿​‍​﻿​﻿‌‍​﻿​﻿​​​﻿‍‌‌‍​‍​﻿​‍​‍﻿‌​﻿‌​​﻿​‌​﻿​﻿‌‍‌​​‍﻿‌​﻿‌​‌‍​‌​﻿‌﻿​﻿​​​‍﻿‌​﻿‍‌‌‍​‌‌‍​‍‌‍​﻿​‍﻿‌‌‍‌‌​﻿‌​​﻿​﻿‌‍‌​​﻿​‌‌‍​‍​﻿‌﻿​﻿​​​﻿‌‍‌‍‌‍​﻿‌‍​﻿‌﻿​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍​﻿​﻿​‍​﻿​﻿‌‍​﻿​﻿​​​﻿‍‌‌‍​‍​﻿​‍​‍﻿‌​﻿‌​​﻿​‌​﻿​﻿‌‍‌​​‍﻿‌​﻿‌​‌‍​‌​﻿‌﻿​﻿​​​‍﻿‌​﻿‍‌‌‍​‌‌‍​‍‌‍​﻿​‍﻿‌‌‍‌‌​﻿‌​​﻿​﻿‌‍‌​​﻿​‌‌‍​‍​﻿‌﻿​﻿​​​﻿‌‍‌‍‌‍​﻿‌‍​﻿‌﻿​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/06/16/if-context-is-king-architecture-is-the-castle/",
+    "excerpt": "Recorded live at the AI Agent Conference, Ryan sits down with Apollo GraphQL CEO Matt DeBerglis to discuss how enterprises can leverage GraphQL and MCP as a structured semantic architecture to feed c…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-06-16T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -306,45 +513,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:138c425b03e6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Edit: solved # AskFedi # Python does an array/object that can be iterated (BeautifulSoup after parsing) can be iterated…",
-    "url": "https://mastodon.social/@dzwiedziu/116755920588199234",
-    "excerpt": "Edit: solved # AskFedi # Python does an array/object that can be iterated (BeautifulSoup after parsing) can be iterated twice? I've done a `for x in array` loop and trying to `' '.join(array)` yields…",
-    "author": "Dźwiedziu",
-    "publishedAt": "2026-06-15T20:06:04.000Z",
-    "score": 5,
-    "tags": [
-      "askfedi",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:1537dd40fb0d",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "As a learning project, I reimplemented a font-related # Python module in # Rust . It deals with kerning pairs, so aroun…",
-    "url": "https://typo.social/@jenskutilek/116755836806345210",
-    "excerpt": "As a learning project, I reimplemented a font-related # Python module in # Rust . It deals with kerning pairs, so around 200,000 pieces of data it has to process. The execution time went down from 6…",
-    "author": "Jens Kutílek",
-    "publishedAt": "2026-06-15T19:44:45.000Z",
-    "score": 7,
-    "tags": [
-      "python",
-      "rust"
-    ],
-    "labels": [
-      "python",
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "rss:GitHub Blog:f2c810084cb1",
     "kind": "article",
     "source": "rss",
@@ -361,44 +529,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:cac033db633e",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Quint Project — Redirecting...",
-    "url": "https://quint-project.org/",
-    "excerpt": "Hi # Fediverse ! My # Introduction 👨‍💻 I'm a backend engineer from 🇺🇦 crafting # QuintProject — an # OpenSource , # FOSS &amp; # LocalFirst knowledge system built for individuals and teams. Tech…",
-    "author": "Oleh Serbin",
-    "publishedAt": "2026-06-15T18:36:59.000Z",
-    "score": 6,
-    "tags": [
-      "fediverse",
-      "introduction",
-      "quintproject",
-      "opensource",
-      "foss",
-      "localfirst",
-      "golang",
-      "sqlite",
-      "selfhosted",
-      "go",
-      "dev"
-    ],
-    "labels": [
-      "opensource",
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:790bfe1a721a",
     "kind": "article",
     "source": "lobsters",
     "title": "Iroh 1.0 - Dial Keys, not IPs",
     "url": "https://www.iroh.computer/blog/v1",
-    "excerpt": "27 points · distributed, rust",
+    "excerpt": "86 points · distributed, rust",
     "author": "mhm",
     "publishedAt": "2026-06-15T10:35:08.000-05:00",
-    "score": 27,
+    "score": 86,
     "tags": [
       "distributed",
       "rust"
@@ -412,7 +551,7 @@
     "id": "rss:Stack Overflow Blog:e8fc834e087b",
     "kind": "article",
     "source": "rss",
-    "title": "Selenium vs Cypress vs Playwright: Choosing Your Test Automation Framework​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌​​﻿‌﻿‌‍​‌‌‍‌‍‌‍‌‍‌‍​‌‌‍​‌​‍﻿‌​﻿‌​​﻿​‌​﻿‍​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‌​﻿​‌​﻿​﻿​‍﻿‌​﻿‍‌​﻿‌​​﻿‌﻿​﻿‌‌​‍﻿‌​﻿‌‌​﻿‌‍‌‍​‌‌‍‌‌‌‍‌‍‌‍​‍​﻿​‌‌‍​‍​﻿‌﻿​﻿​‌‌‍​‍​﻿‌​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌​​﻿‌﻿‌‍​‌‌‍‌‍‌‍‌‍‌‍​‌‌‍​‌​‍﻿‌​﻿‌​​﻿​‌​﻿‍​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‌​﻿​‌​﻿​﻿​‍﻿‌​﻿‍‌​﻿‌​​﻿‌﻿​﻿‌‌​‍﻿‌​﻿‌‌​﻿‌‍‌‍​‌‌‍‌‌‌‍‌‍‌‍​‍​﻿​‌‌‍​‍​﻿‌﻿​﻿​‌‌‍​‍​﻿‌​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "title": "Selenium vs. Cypress vs Playwright: Choosing your test automation framework​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌​​﻿‌﻿‌‍​‌‌‍‌‍‌‍‌‍‌‍​‌‌‍​‌​‍﻿‌​﻿‌​​﻿​‌​﻿‍​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‌​﻿​‌​﻿​﻿​‍﻿‌​﻿‍‌​﻿‌​​﻿‌﻿​﻿‌‌​‍﻿‌​﻿‌‌​﻿‌‍‌‍​‌‌‍‌‌‌‍‌‍‌‍​‍​﻿​‌‌‍​‍​﻿‌﻿​﻿​‌‌‍​‍​﻿‌​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌​​﻿‌﻿‌‍​‌‌‍‌‍‌‍‌‍‌‍​‌‌‍​‌​‍﻿‌​﻿‌​​﻿​‌​﻿‍​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‌​﻿​‌​﻿​﻿​‍﻿‌​﻿‍‌​﻿‌​​﻿‌﻿​﻿‌‌​‍﻿‌​﻿‌‌​﻿‌‍‌‍​‌‌‍‌‌‌‍‌‍‌‍​‍​﻿​‌‌‍​‍​﻿‌﻿​﻿​‌‌‍​‍​﻿‌​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
     "url": "https://stackoverflow.blog/2026/06/15/selenium-vs-cypress-vs-playwright-choosing-your-test-automation-framework/",
     "excerpt": null,
     "author": "Praveen Kumar Gunasekaran, Syed Ahamed",
@@ -425,19 +564,25 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:7720cf985660",
+    "id": "devto:09d863e537bb",
     "kind": "article",
-    "source": "rss",
-    "title": "AI agents expose the security checks you never actually wrote​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/06/15/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
-    "excerpt": "How attackers took twenty thousand Instagram accounts by asking Meta&#x27;s AI politely, and why that failure is about to become common.​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌ ​ ‌‍​‌‌‍ ‍‌‍‍‌…",
-    "author": "Fabio Salvadori",
-    "publishedAt": "2026-06-15T14:58:54.000Z",
-    "score": 0,
+    "source": "devto",
+    "title": "Building a Chrome Extension to Make AI Use More Intentional",
+    "url": "https://dev.to/javz/building-a-chrome-extension-to-make-ai-use-more-intentional-20k0",
+    "excerpt": "After posting several articles about the impact of AI on developers and sharing resources to help...",
+    "author": "Julien Avezou",
+    "publishedAt": "2026-06-15T14:44:53Z",
+    "score": 38,
     "tags": [
-      "Stack Overflow Blog"
+      "ai",
+      "webdev",
+      "productivity",
+      "buildinpublic"
     ],
-    "labels": [],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -446,10 +591,10 @@
     "source": "lobsters",
     "title": "pyinfra — agentless infrastructure automation, in plain Python",
     "url": "https://pyinfra.com",
-    "excerpt": "49 points · devops, python",
+    "excerpt": "67 points · devops, python",
     "author": "gregnavis",
     "publishedAt": "2026-06-15T06:05:07.000-05:00",
-    "score": 49,
+    "score": 67,
     "tags": [
       "devops",
       "python"
@@ -457,28 +602,6 @@
     "labels": [
       "devops",
       "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:11483615122a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Debian Contributions: Go default compatibility, Trimming build-essential, Python upstream engagement and more!",
-    "url": "https://www.freexian.com/blog/debian-contributions-05-2026/?utm_source=mastodon&utm_medium=social",
-    "excerpt": "Debian Contributions: 2026-05 Contributing to Debian is part of Freexian’s mission. This article covers the latest achievements of Freexian and their collaborators. All of this is made possible by organizations subscribing to our Long Term Support contracts and consulting services.\nGo default compatibility, by Helmut Grohne At the MiniDebConf Hamburg, Andrew Lee had prepared a talk on how Debian accidentally chooses Go compatibility. Helmut joined Tobias Quathammer and Andrew Lee in looking into the problem.",
-    "author": "Freexian :debian:",
-    "publishedAt": "2026-06-15T08:09:26.000Z",
-    "score": 6,
-    "tags": [
-      "debian",
-      "freexian",
-      "golang",
-      "openssh",
-      "pyconus"
-    ],
-    "labels": [
-      "go"
     ],
     "mentionsByteveda": false
   },
@@ -488,10 +611,10 @@
     "source": "lobsters",
     "title": "I Am Not a Reverse Centaur",
     "url": "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
-    "excerpt": "34 points · practices, vibecoding",
+    "excerpt": "47 points · practices, vibecoding",
     "author": "kngl",
     "publishedAt": "2026-06-15T02:19:50.000-05:00",
-    "score": 34,
+    "score": 47,
     "tags": [
       "practices",
       "vibecoding"
@@ -500,15 +623,35 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:e7d1942a0591",
+    "kind": "article",
+    "source": "devto",
+    "title": "Turning Gemma 4 into an Old Korean Translator",
+    "url": "https://dev.to/googleai/turning-gemma-4-into-an-old-korean-translator-hop",
+    "excerpt": "There’s something uniquely beautiful about old books. The smell of weathered paper, the texture of...",
+    "author": "bebechien",
+    "publishedAt": "2026-06-15T06:13:07Z",
+    "score": 30,
+    "tags": [
+      "finetuning",
+      "gemma",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:150c3e08689d",
     "kind": "article",
     "source": "lobsters",
     "title": "The only scalable delete in Postgres is DROP TABLE",
     "url": "https://planetscale.com/blog/the-only-scalable-delete",
-    "excerpt": "21 points · databases, performance",
+    "excerpt": "24 points · databases, performance",
     "author": "typesanitizer",
     "publishedAt": "2026-06-15T00:55:24.000-05:00",
-    "score": 21,
+    "score": 24,
     "tags": [
       "databases",
       "performance"
@@ -524,10 +667,10 @@
     "source": "lobsters",
     "title": "Diplomat: Multi-language FFI for Rust Libraries",
     "url": "http://manishearth.github.io/blog/2026/06/14/diplomat-multi-language-ffi-for-rust-libraries/",
-    "excerpt": "32 points · rust",
+    "excerpt": "40 points · rust",
     "author": "typesanitizer",
     "publishedAt": "2026-06-15T00:53:54.000-05:00",
-    "score": 32,
+    "score": 40,
     "tags": [
       "rust"
     ],
@@ -542,10 +685,10 @@
     "source": "lobsters",
     "title": "Clojure is almost as fast as C (with some help)",
     "url": "https://ertu.dev/posts/4_clojure-reaching-c-performance/",
-    "excerpt": "20 points · lisp, performance",
+    "excerpt": "23 points · lisp, performance",
     "author": "veqq",
     "publishedAt": "2026-06-14T23:44:07.000-05:00",
-    "score": 20,
+    "score": 23,
     "tags": [
       "lisp",
       "performance"
@@ -561,10 +704,10 @@
     "source": "lobsters",
     "title": "write for one person",
     "url": "https://wizardzines.com/comics/write-for-one-person/",
-    "excerpt": "102 points · practices",
+    "excerpt": "126 points · practices",
     "author": "lalitm",
     "publishedAt": "2026-06-14T22:29:47.000-05:00",
-    "score": 102,
+    "score": 126,
     "tags": [
       "practices"
     ],
@@ -577,10 +720,10 @@
     "source": "lobsters",
     "title": "zinnia: a modular 64-bit Unix-like kernel written in Rust",
     "url": "https://zinnia-os.org/",
-    "excerpt": "52 points · osdev, programming, rust",
+    "excerpt": "55 points · osdev, programming, rust",
     "author": "mrunix",
     "publishedAt": "2026-06-14T16:05:27.000-05:00",
-    "score": 52,
+    "score": 55,
     "tags": [
       "osdev",
       "programming",
@@ -617,10 +760,10 @@
     "source": "lobsters",
     "title": "The future of Siri, or: why private inference isn’t private enough",
     "url": "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/",
-    "excerpt": "35 points · ai, privacy",
+    "excerpt": "37 points · ai, privacy",
     "author": "achivetta",
     "publishedAt": "2026-06-13T22:50:26.000-05:00",
-    "score": 35,
+    "score": 37,
     "tags": [
       "ai",
       "privacy"
@@ -628,168 +771,6 @@
     "labels": [
       "ai"
     ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f93d0af442da",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Pyodide 314.0: WebAssembly wheels for PyPI",
-    "url": "https://blog.pyodide.org/posts/314-release/",
-    "excerpt": "20 points · python, wasm",
-    "author": "sanxiyn",
-    "publishedAt": "2026-06-13T17:27:49.000-05:00",
-    "score": 20,
-    "tags": [
-      "python",
-      "wasm"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:c9c31692faf3",
-    "kind": "article",
-    "source": "devto",
-    "title": "Teach Your Agent to Forget (On Purpose)",
-    "url": "https://dev.to/lovestaco/teach-your-agent-to-forget-on-purpose-38dh",
-    "excerpt": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
-    "author": "Athreya aka Maneshwar",
-    "publishedAt": "2026-06-13T17:26:10Z",
-    "score": 25,
-    "tags": [
-      "ai",
-      "programming",
-      "beginners",
-      "machinelearning"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:c43c7fb5cf75",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "repo-slopscore: Detecting AI/LLM contributions in git repositories via commit history analysis",
-    "url": "https://slopscan.ava.pet/",
-    "excerpt": "[Link to source code](https://codeberg.org/polyphony/repo-slopscore)\r\nDisclaimer: This is self-promotion, as I am the author of the tool",
-    "author": "ava",
-    "publishedAt": "2026-06-13T10:37:16.000-05:00",
-    "score": 49,
-    "tags": [
-      "rust",
-      "show",
-      "vcs",
-      "vibecoding"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:a9459ce5aa22",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Using Notes in the Glasgow Haskell Compiler",
-    "url": "https://gitlab.haskell.org/ghc/ghc/-/wikis/commentary/coding-style#2-using-notes",
-    "excerpt": "28 points · haskell, practices",
-    "author": "gnyeki",
-    "publishedAt": "2026-06-13T02:29:23.000-05:00",
-    "score": 28,
-    "tags": [
-      "haskell",
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:199024cdfb16",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Rejected Emoji Proposals",
-    "url": "https://charlottebuff.com/unicode/misc/rejected-emoji-proposals/",
-    "excerpt": "82 points · programming",
-    "author": "carlana",
-    "publishedAt": "2026-06-12T21:17:01.000-05:00",
-    "score": 82,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:7b8dd1dbf8a1",
-    "kind": "article",
-    "source": "rss",
-    "title": "How we made GitHub Copilot CLI more selective about delegation",
-    "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
-    "excerpt": "In agentic systems, more delegation isn&rsquo;t always better. Imagine asking Copilot CLI to make a simple change. Instead of handling it directly, it spins up a helper agent that searches the reposi…",
-    "author": "Dylan Birtolo",
-    "publishedAt": "2026-06-12T22:26:23.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:a83bb1d5e926",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "erm: A Local CLI That Strips Ums, Uhs, and Erms From Speech",
-    "url": "https://doug.sh/posts/erm-a-local-cli-that-strips-ums-uhs-and-erms-from-speech/",
-    "excerpt": "15 points · programming, vibecoding",
-    "author": "Yogthos",
-    "publishedAt": "2026-06-12T12:23:35.000-05:00",
-    "score": 15,
-    "tags": [
-      "programming",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:5ab78939afdb",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "A columnar database for analytics in pure Clojure",
-    "url": "https://github.com/yogthos/flatiron",
-    "excerpt": "18 points · clojure, programming, vibecoding",
-    "author": "Yogthos",
-    "publishedAt": "2026-06-12T12:06:44.000-05:00",
-    "score": 18,
-    "tags": [
-      "clojure",
-      "programming",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:07fbbfa8c743",
-    "kind": "article",
-    "source": "rss",
-    "title": "Designing CherryScript: Optimizing Data-Driven Workflows via Custom Python-Based Interpreters​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‌‌‍​‌‌‍‌‍​﻿​‍​﻿‍​​﻿‌‍​﻿​​​﻿​﻿​‍﻿‌​﻿​‍​﻿‌​​﻿‍‌​﻿‌​​‍﻿‌​﻿‌​‌‍‌‌​﻿​‌​﻿‌​​‍﻿‌‌‍​‍​﻿‌​​﻿‍‌‌‍​‍​‍﻿‌​﻿‍​​﻿‌‍‌‍‌​‌‍​‍​﻿‌‍‌‍​‍​﻿​﻿​﻿‌‌​﻿​​​﻿‌﻿‌‍​‌‌‍​‌​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‌‌‍​‌‌‍‌‍​﻿​‍​﻿‍​​﻿‌‍​﻿​​​﻿​﻿​‍﻿‌​﻿​‍​﻿‌​​﻿‍‌​﻿‌​​‍﻿‌​﻿‌​‌‍‌‌​﻿​‌​﻿‌​​‍﻿‌‌‍​‍​﻿‌​​﻿‍‌‌‍​‍​‍﻿‌​﻿‍​​﻿‌‍‌‍‌​‌‍​‍​﻿‌‍‌‍​‍​﻿​﻿​﻿‌‌​﻿​​​﻿‌﻿‌‍​‌‌‍​‌​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/06/12/designing-cherryscript-optimizing-data-driven-workflows-via-custom-python-based-interpreters/",
-    "excerpt": null,
-    "author": "Dr. Ahmad Mateen Ishanzai",
-    "publishedAt": "2026-06-12T16:17:10.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -801,7 +782,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-06-13T06:14:45Z",
-    "score": 441819,
+    "score": 442197,
     "tags": [
       "Python",
       "api",
@@ -832,8 +813,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-06-13T19:32:53Z",
-    "score": 390313,
+    "publishedAt": "2026-06-17T13:59:00Z",
+    "score": 390415,
     "tags": [
       "Python",
       "books",
@@ -856,7 +837,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-06-12T04:11:12Z",
-    "score": 303089,
+    "score": 303386,
     "tags": [
       "Python",
       "awesome",
@@ -879,8 +860,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-15T21:14:11Z",
-    "score": 194373,
+    "publishedAt": "2026-06-17T15:45:37Z",
+    "score": 195981,
     "tags": [
       "Python",
       "ai",
@@ -914,8 +895,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-15T20:47:56Z",
-    "score": 184959,
+    "publishedAt": "2026-06-17T14:46:56Z",
+    "score": 184998,
     "tags": [
       "Python",
       "agentic-ai",
@@ -944,8 +925,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-06-15T20:35:04Z",
-    "score": 170807,
+    "publishedAt": "2026-06-16T02:00:53Z",
+    "score": 171141,
     "tags": [
       "Python",
       "cli",
@@ -969,8 +950,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-15T20:38:14Z",
-    "score": 161607,
+    "publishedAt": "2026-06-17T15:59:41Z",
+    "score": 161669,
     "tags": [
       "Python",
       "audio",
@@ -1001,21 +982,27 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bc97666fba6a",
+    "id": "github-trending:3c2f23bd9712",
     "kind": "trending",
     "source": "github",
-    "title": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "excerpt": "Public repository for Agent Skills",
-    "author": "anthropics",
-    "publishedAt": "2026-06-09T20:35:19Z",
-    "score": 151079,
+    "title": "langflow-ai/langflow",
+    "url": "https://github.com/langflow-ai/langflow",
+    "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "author": "langflow-ai",
+    "publishedAt": "2026-06-17T15:56:45Z",
+    "score": 149788,
     "tags": [
       "Python",
-      "agent-skills"
+      "agents",
+      "chatgpt",
+      "generative-ai",
+      "large-language-models",
+      "multiagent",
+      "react-flow"
     ],
     "labels": [
-      "python"
+      "python",
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -1027,8 +1014,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-06-15T07:13:54Z",
-    "score": 116218,
+    "publishedAt": "2026-06-17T14:58:46Z",
+    "score": 116327,
     "tags": [
       "Rust",
       "android",
@@ -1064,8 +1051,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-15T20:20:50Z",
-    "score": 113861,
+    "publishedAt": "2026-06-17T13:08:50Z",
+    "score": 113920,
     "tags": [
       "Rust",
       "compiler",
@@ -1085,8 +1072,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-06-15T20:39:44Z",
-    "score": 107923,
+    "publishedAt": "2026-06-17T13:48:46Z",
+    "score": 108002,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1111,8 +1098,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-15T20:45:01Z",
-    "score": 107089,
+    "publishedAt": "2026-06-17T15:47:55Z",
+    "score": 107122,
     "tags": [
       "Rust",
       "deno",
@@ -1134,8 +1121,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-15T12:55:33Z",
-    "score": 101624,
+    "publishedAt": "2026-06-17T03:54:40Z",
+    "score": 103354,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1174,8 +1161,8 @@
     "url": "https://github.com/iluwatar/java-design-patterns",
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
-    "publishedAt": "2026-06-12T21:54:08Z",
-    "score": 94124,
+    "publishedAt": "2026-06-15T22:42:37Z",
+    "score": 94128,
     "tags": [
       "Java",
       "awesome-list",
@@ -1200,8 +1187,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-15T21:12:43Z",
-    "score": 93218,
+    "publishedAt": "2026-06-17T15:38:16Z",
+    "score": 93272,
     "tags": [
       "Rust",
       "bun",
@@ -1232,8 +1219,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-15T21:18:12Z",
-    "score": 91248,
+    "publishedAt": "2026-06-17T15:57:16Z",
+    "score": 91705,
     "tags": [
       "Rust"
     ],
@@ -1250,8 +1237,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-06-15T16:16:24Z",
-    "score": 86413,
+    "publishedAt": "2026-06-17T14:54:09Z",
+    "score": 86497,
     "tags": [
       "Rust",
       "packaging",
@@ -1266,24 +1253,34 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bafe5a24351b",
+    "id": "github-trending:98b65a1e42ee",
     "kind": "trending",
     "source": "github",
-    "title": "spring-projects/spring-boot",
-    "url": "https://github.com/spring-projects/spring-boot",
-    "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
-    "author": "spring-projects",
-    "publishedAt": "2026-06-15T14:10:37Z",
-    "score": 80939,
+    "title": "Stirling-Tools/Stirling-PDF",
+    "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+    "author": "Stirling-Tools",
+    "publishedAt": "2026-06-17T15:56:36Z",
+    "score": 81183,
     "tags": [
       "Java",
-      "framework",
+      "docker",
+      "hacktoberfest",
       "java",
-      "spring",
-      "spring-boot"
+      "pdf",
+      "pdf-converter",
+      "pdf-editor",
+      "pdf-manipulation",
+      "pdf-merger",
+      "pdf-ocr",
+      "pdf-tools",
+      "pdf-web-apps",
+      "pdfmerger",
+      "self-hosted"
     ],
     "labels": [
-      "java"
+      "java",
+      "devops"
     ],
     "mentionsByteveda": false
   }
