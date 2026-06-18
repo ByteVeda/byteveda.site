@@ -218,6 +218,66 @@
     "mentionsByteveda": true
   },
   {
+    "id": "rss:GitHub Blog:03d23cbd049d",
+    "kind": "article",
+    "source": "rss",
+    "title": "Getting more from each token: How Copilot improves context handling and model routing",
+    "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+    "excerpt": "As Copilot takes on more agentic work, from planning and editing to debugging, reviewing, and calling tools across longer sessions, efficiency means more than using fewer tokens. It means being smart…",
+    "author": "Natalie Guevara",
+    "publishedAt": "2026-06-17T19:41:46.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:50f57a557fb7",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Rust is the future of programming, and a healthy open-source ecosystem is more important than ever. On Monday, @ charli…",
+    "url": "https://hachyderm.io/@predrag/116766401136363417",
+    "excerpt": "Rust is the future of programming, and a healthy open-source ecosystem is more important than ever. On Monday, @ charliermarsh announced an expansion of the Astral and Codex GitHub Sponsors program.…",
+    "author": "Predrag Gruevski",
+    "publishedAt": "2026-06-17T16:31:24.000Z",
+    "score": 11,
+    "tags": [
+      "rust",
+      "rustlang",
+      "opensource",
+      "funding"
+    ],
+    "labels": [
+      "rust",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:cf8ede5a58d4",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "We'll aim to be a bit different in how we allocate funding. We'll try new things, listen, and learn as we go. We partic…",
+    "url": "https://hachyderm.io/@predrag/116766399179814285",
+    "excerpt": "We'll aim to be a bit different in how we allocate funding. We'll try new things, listen, and learn as we go. We particularly want to find places where each dollar makes the biggest difference for th…",
+    "author": "Predrag Gruevski",
+    "publishedAt": "2026-06-17T16:30:54.000Z",
+    "score": 12,
+    "tags": [
+      "rust",
+      "rustlang",
+      "opensource",
+      "funding"
+    ],
+    "labels": [
+      "rust",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:Hugging Face:07c125a38d88",
     "kind": "article",
     "source": "rss",
@@ -248,6 +308,23 @@
     "score": 0,
     "tags": [
       "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:afe8bf78dd93",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Pull Requests are Free Puppies",
+    "url": "https://www.youtube.com/watch?v=x8_ZZhRL3YU&t=1733s",
+    "excerpt": "Lightly edited transcript of Richard Hipp, creator of SQLite, from 28'53\":\r\n> Suppose you had a pull request for SQLite. \"Hey, I've got this new feature for SQLite. Here's the pull request.\" When you…",
+    "author": "ndr",
+    "publishedAt": "2026-06-17T08:23:44.000-05:00",
+    "score": 21,
+    "tags": [
+      "programming",
+      "video"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -312,15 +389,51 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:af47ab399c1f",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Game Engine White Papers: Commander Keen",
+    "url": "https://forgottenbytes.net/commander_keen.html",
+    "excerpt": "15 points · games, programming",
+    "author": "orib",
+    "publishedAt": "2026-06-17T00:29:46.000-05:00",
+    "score": 15,
+    "tags": [
+      "games",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:da3c81662bdd",
+    "kind": "article",
+    "source": "rss",
+    "title": "Agentic Resource Discovery: Let agents search",
+    "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-06-17T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:1d8995b4bf12",
     "kind": "article",
     "source": "lobsters",
     "title": "Can gzip be a language model?",
     "url": "https://nathan.rs/posts/gzip-lm/",
-    "excerpt": "41 points · ai",
+    "excerpt": "50 points · ai",
     "author": "AviKav",
     "publishedAt": "2026-06-16T17:17:20.000-05:00",
-    "score": 41,
+    "score": 50,
     "tags": [
       "ai"
     ],
@@ -351,10 +464,10 @@
     "source": "lobsters",
     "title": "Build your project Zig-style",
     "url": "https://fnordig.de/2026/06/16/build-your-project-zig-style/",
-    "excerpt": "21 points · rust, zig",
+    "excerpt": "23 points · rust, zig",
     "author": "calebhearth",
     "publishedAt": "2026-06-16T14:33:20.000-05:00",
-    "score": 21,
+    "score": 23,
     "tags": [
       "rust",
       "zig"
@@ -370,10 +483,10 @@
     "source": "lobsters",
     "title": "But yak shaving is fun",
     "url": "https://parksb.github.io/en/article/32.html",
-    "excerpt": "47 points · programming",
+    "excerpt": "58 points · programming",
     "author": "hoistbypetard",
     "publishedAt": "2026-06-16T14:18:46.000-05:00",
-    "score": 47,
+    "score": 58,
     "tags": [
       "programming"
     ],
@@ -389,7 +502,7 @@
     "excerpt": "Hey everyone, Ben here. If you’ve been following the journey of DEV and our open source project...",
     "author": "Ben Halpern",
     "publishedAt": "2026-06-16T16:41:51Z",
-    "score": 64,
+    "score": 74,
     "tags": [
       "performance",
       "webdev",
@@ -429,7 +542,7 @@
     "excerpt": "A story about an AI content moderation system that flagged 347 posts since launch — and what...",
     "author": "xulingfeng",
     "publishedAt": "2026-06-16T14:06:45Z",
-    "score": 36,
+    "score": 38,
     "tags": [
       "ai",
       "discuss",
@@ -447,10 +560,10 @@
     "source": "lobsters",
     "title": "zlib-rs in Firefox",
     "url": "https://trifectatech.org/blog/zlib-rs-in-firefox/",
-    "excerpt": "52 points · browsers, release, rust",
+    "excerpt": "55 points · browsers, release, rust",
     "author": "freddyb",
     "publishedAt": "2026-06-16T08:29:53.000-05:00",
-    "score": 52,
+    "score": 55,
     "tags": [
       "browsers",
       "release",
@@ -467,10 +580,10 @@
     "source": "lobsters",
     "title": "How memory safety CVEs differ between Rust and C/C++",
     "url": "https://kobzol.github.io/rust/2026/06/15/how-memory-safety-cves-differ-between-rust-and-c-cpp.html",
-    "excerpt": "32 points · c, rust",
+    "excerpt": "33 points · c, rust",
     "author": "nrposner",
     "publishedAt": "2026-06-16T07:28:27.000-05:00",
-    "score": 32,
+    "score": 33,
     "tags": [
       "c",
       "rust"
@@ -534,10 +647,10 @@
     "source": "lobsters",
     "title": "Iroh 1.0 - Dial Keys, not IPs",
     "url": "https://www.iroh.computer/blog/v1",
-    "excerpt": "86 points · distributed, rust",
+    "excerpt": "87 points · distributed, rust",
     "author": "mhm",
     "publishedAt": "2026-06-15T10:35:08.000-05:00",
-    "score": 86,
+    "score": 87,
     "tags": [
       "distributed",
       "rust"
@@ -662,118 +775,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:32d3a467ea7b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Diplomat: Multi-language FFI for Rust Libraries",
-    "url": "http://manishearth.github.io/blog/2026/06/14/diplomat-multi-language-ffi-for-rust-libraries/",
-    "excerpt": "40 points · rust",
-    "author": "typesanitizer",
-    "publishedAt": "2026-06-15T00:53:54.000-05:00",
-    "score": 40,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:4bd818d329d4",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Clojure is almost as fast as C (with some help)",
-    "url": "https://ertu.dev/posts/4_clojure-reaching-c-performance/",
-    "excerpt": "23 points · lisp, performance",
-    "author": "veqq",
-    "publishedAt": "2026-06-14T23:44:07.000-05:00",
-    "score": 23,
-    "tags": [
-      "lisp",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:3ea2c021e656",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "write for one person",
-    "url": "https://wizardzines.com/comics/write-for-one-person/",
-    "excerpt": "126 points · practices",
-    "author": "lalitm",
-    "publishedAt": "2026-06-14T22:29:47.000-05:00",
-    "score": 126,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:947c5756a8ee",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "zinnia: a modular 64-bit Unix-like kernel written in Rust",
-    "url": "https://zinnia-os.org/",
-    "excerpt": "55 points · osdev, programming, rust",
-    "author": "mrunix",
-    "publishedAt": "2026-06-14T16:05:27.000-05:00",
-    "score": 55,
-    "tags": [
-      "osdev",
-      "programming",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:41b819b3fb3d",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "FFI in Miri at 8000 segfaults per second",
-    "url": "https://youtu.be/9X-ngiKo_Y0",
-    "excerpt": "Talk by Nia Deckers at RustWeek",
-    "author": "jana",
-    "publishedAt": "2026-06-14T12:12:27.000-05:00",
-    "score": 21,
-    "tags": [
-      "compilers",
-      "rust",
-      "video"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:02bea82622c4",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The future of Siri, or: why private inference isn’t private enough",
-    "url": "https://blog.cryptographyengineering.com/2026/06/09/apples-siri-ai-or-more-shouting-into-the-void-about-private-agents/",
-    "excerpt": "37 points · ai, privacy",
-    "author": "achivetta",
-    "publishedAt": "2026-06-13T22:50:26.000-05:00",
-    "score": 37,
-    "tags": [
-      "ai",
-      "privacy"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -782,7 +783,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-06-13T06:14:45Z",
-    "score": 442197,
+    "score": 442219,
     "tags": [
       "Python",
       "api",
@@ -814,7 +815,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-06-17T13:59:00Z",
-    "score": 390415,
+    "score": 390423,
     "tags": [
       "Python",
       "books",
@@ -837,7 +838,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-06-12T04:11:12Z",
-    "score": 303386,
+    "score": 303425,
     "tags": [
       "Python",
       "awesome",
@@ -860,8 +861,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-17T15:45:37Z",
-    "score": 195981,
+    "publishedAt": "2026-06-17T18:44:06Z",
+    "score": 196093,
     "tags": [
       "Python",
       "ai",
@@ -895,7 +896,7 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-17T14:46:56Z",
+    "publishedAt": "2026-06-17T19:54:24Z",
     "score": 184998,
     "tags": [
       "Python",
@@ -926,7 +927,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-06-16T02:00:53Z",
-    "score": 171141,
+    "score": 171184,
     "tags": [
       "Python",
       "cli",
@@ -950,8 +951,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-17T15:59:41Z",
-    "score": 161669,
+    "publishedAt": "2026-06-17T19:29:02Z",
+    "score": 161671,
     "tags": [
       "Python",
       "audio",
@@ -989,8 +990,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-06-17T15:56:45Z",
-    "score": 149788,
+    "publishedAt": "2026-06-17T19:39:07Z",
+    "score": 149797,
     "tags": [
       "Python",
       "agents",
@@ -1015,7 +1016,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-06-17T14:58:46Z",
-    "score": 116327,
+    "score": 116331,
     "tags": [
       "Rust",
       "android",
@@ -1051,8 +1052,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-17T13:08:50Z",
-    "score": 113920,
+    "publishedAt": "2026-06-17T18:58:37Z",
+    "score": 113922,
     "tags": [
       "Rust",
       "compiler",
@@ -1073,7 +1074,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-06-17T13:48:46Z",
-    "score": 108002,
+    "score": 108004,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1098,8 +1099,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-17T15:47:55Z",
-    "score": 107122,
+    "publishedAt": "2026-06-17T16:28:23Z",
+    "score": 107126,
     "tags": [
       "Rust",
       "deno",
@@ -1122,7 +1123,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-06-17T03:54:40Z",
-    "score": 103354,
+    "score": 103414,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1187,8 +1188,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-17T15:38:16Z",
-    "score": 93272,
+    "publishedAt": "2026-06-17T20:22:43Z",
+    "score": 93277,
     "tags": [
       "Rust",
       "bun",
@@ -1219,8 +1220,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-17T15:57:16Z",
-    "score": 91705,
+    "publishedAt": "2026-06-17T20:29:42Z",
+    "score": 91735,
     "tags": [
       "Rust"
     ],
@@ -1237,8 +1238,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-06-17T14:54:09Z",
-    "score": 86497,
+    "publishedAt": "2026-06-17T19:39:57Z",
+    "score": 86504,
     "tags": [
       "Rust",
       "packaging",
@@ -1260,8 +1261,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-06-17T15:56:36Z",
-    "score": 81183,
+    "publishedAt": "2026-06-17T20:04:28Z",
+    "score": 81198,
     "tags": [
       "Java",
       "docker",
