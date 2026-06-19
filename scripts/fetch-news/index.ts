@@ -12,6 +12,7 @@ import { mastodonAdapter } from "./sources/mastodon";
 import { redditAdapter } from "./sources/reddit";
 import { rssAdapter } from "./sources/rss";
 import type { NewsItem, SourceAdapter } from "./types";
+import { stripLoneSurrogates } from "./util";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, "../../src/features/news/data/news.json");
@@ -55,8 +56,10 @@ async function main(): Promise<void> {
   console.log(`Writing ${feed.length} items → ${OUTPUT_PATH}`);
 
   const existing = await readExisting();
-  const next = JSON.stringify(feed, null, 2);
-  const prev = JSON.stringify(existing, null, 2);
+  const sanitize = (_key: string, value: unknown) =>
+    typeof value === "string" ? stripLoneSurrogates(value) : value;
+  const next = JSON.stringify(feed, sanitize, 2);
+  const prev = JSON.stringify(existing, sanitize, 2);
   if (next === prev) {
     console.log("No changes.");
     return;
