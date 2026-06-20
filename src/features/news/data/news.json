@@ -218,49 +218,122 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:b23b20f7fd85",
+    "id": "mastodon:c3f41c7df43d",
     "kind": "article",
     "source": "mastodon",
-    "title": "Anonymisierendes Linux: Tails 7.9 pflegt Kernkomponenten",
-    "url": "https://www.heise.de/news/Anonymisierendes-Linux-Tails-7-9-pflegt-Kernkomponenten-11338456.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege&utm_source=mastodon",
-    "excerpt": "In der Version 7.9 der anonymisierenden Linux-Distribution Tails betreiben die Entwickler nur leichte Software-Pflege.",
-    "author": "heise Security",
-    "publishedAt": "2026-06-19T10:33:00.000Z",
-    "score": 15,
+    "title": "What would you have me do? Some of my students use LLM ( # chatgpt # AI ) to do their course work for them. It isn't al…",
+    "url": "https://raphus.social/@renedario/116780495196862531",
+    "excerpt": "What would you have me do? Some of my students use LLM ( # chatgpt # AI ) to do their course work for them. It isn't always obvious to me, and I'd rather not throw accusations without proof. How can…",
+    "author": "René Dario",
+    "publishedAt": "2026-06-20T04:15:42.000Z",
+    "score": 5,
     "tags": [
-      "anonymitat",
-      "it",
-      "linux",
-      "linuxdistribution",
-      "security",
-      "updates",
-      "news"
+      "chatgpt",
+      "ai",
+      "highered"
     ],
     "labels": [
-      "security"
+      "ai"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:c6f3b9c253bb",
+    "id": "mastodon:55f9faadc418",
     "kind": "article",
     "source": "mastodon",
-    "title": "Beautiful people 🌈 Today I am giving a talk about Privacy-Preserving Dementia Screening from Speech Using Language-Agn…",
-    "url": "https://fosstodon.org/@gabrock94/116776081687326795",
-    "excerpt": "Beautiful people 🌈 Today I am giving a talk about Privacy-Preserving Dementia Screening from Speech Using Language-Agnostic Acoustic Vocal Biomarkers at Linux Audio Conference 🐧 🎵 in beautiful May…",
-    "author": "Giulio Gabrieli",
-    "publishedAt": "2026-06-19T09:33:18.015Z",
-    "score": 7,
+    "title": "Arint - SEO+KI (@Arint@arint.info)",
+    "url": "https://arint.info/@Arint/116780442326968003",
+    "excerpt": "<p>RT @__tinygrad__: Wir leben in einer seltsamen Zeit, in der wir Dinge überhyped, die in wenigen Wochen vergessen sein werden. Linux und Python stammen beide aus dem Jahr 1991. LLVM begann als Forschungsprojekt im Jahr 2000.</p>\n<p><a href=\"https://arint.info/@Arint/116780442326968003\">mehr</a> auf <a href=\"https://arint.info/\">Arint.info</a></p>\n<p>#Linux #LLVM #LongTermSoftware #Python #SiliconLife #SoftwareEngineering #arint_info</p>\n<p><a href=\"https://x.com/__tinygrad__/status/2068035229324062804#m\">https://x.com/__tinygrad__/status/2068035229324062804#m</a></p>",
+    "author": "Arint - SEO+KI",
+    "publishedAt": "2026-06-20T04:02:16.000Z",
+    "score": 8,
     "tags": [
       "linux",
-      "research",
-      "academia",
-      "neuroscience",
-      "computerscience",
-      "psychology",
+      "llvm",
+      "longtermsoftware",
+      "python",
+      "siliconlife",
+      "softwareengineering",
+      "arint_info"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c6d2c4561441",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Will AI Make Websites Obsolete?",
+    "url": "https://kierendaystudiosofficial.wordpress.com/2026/06/20/will-ai-make-websites-obsolete/",
+    "excerpt": "Artificial intelligence is changing the way people discover information online.Instead of typing keywords into traditional search engines and browsing multiple websites, many users are beginning to…",
+    "author": "Kieren Day",
+    "publishedAt": "2026-06-20T02:58:26.000Z",
+    "score": 43,
+    "tags": [
       "ai",
+      "aisearch",
+      "aitools",
+      "aiwebsites",
+      "artificialintelligence",
+      "audiencebuilding",
+      "blogging",
+      "bloggingtips",
+      "business",
+      "businessgrowth",
+      "businessowner",
+      "businessstrategy",
+      "businesssuccess",
+      "businesstrends",
+      "contentcreation",
+      "contentcreator",
+      "contentmarketing",
+      "creatorbusiness",
+      "creatoreconomy",
+      "digitalbusiness",
+      "digitalentrepreneur",
+      "digitalmarketing",
+      "digitaltransformation",
+      "entrepreneur",
+      "entrepreneurship",
+      "futureofwork",
+      "futuretechnology",
+      "innovation",
+      "InternetBusiness",
+      "internetmarketing",
       "machinelearning",
-      "artificialintelligence"
+      "makemoneyonline",
+      "marketing",
+      "marketingstrategy",
+      "modernbusiness",
+      "onlinebusiness",
+      "onlineentrepreneur",
+      "onlineincome",
+      "onlinemarketing",
+      "onlinepresence",
+      "organictraffic",
+      "personalbranding",
+      "searchengineoptimization",
+      "SearchRankings",
+      "seo",
+      "socialmediamarketing",
+      "startup",
+      "startupfounder",
+      "startups",
+      "technology",
+      "technologytrends",
+      "webbusiness",
+      "webdesign",
+      "websitebuilder",
+      "websitedesign",
+      "websitedevelopment",
+      "websitegrowth",
+      "websitemanagement",
+      "websiteoptimization",
+      "websitestrategy",
+      "websitetraffic",
+      "websites"
     ],
     "labels": [
       "ai",
@@ -269,17 +342,367 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:09c953babbae",
+    "id": "mastodon:18bbb1a0ab09",
     "kind": "article",
     "source": "mastodon",
-    "title": "NVIDIA Research open-sourced cutile-rs &gt;&gt; cuTile-rs enables safe, idiomatic Rust GPU kernels with Rust ownership…",
-    "url": "https://mastodon.social/@rustaceans/116775677348771122",
-    "excerpt": "NVIDIA Research open-sourced cutile-rs &gt;&gt; cuTile-rs enables safe, idiomatic Rust GPU kernels with Rust ownership across host-GPU boundaries, using tile-based CUDA Tile IR for high-performance,…",
-    "author": "Rust Bytes 🦀",
-    "publishedAt": "2026-06-19T07:50:28.000Z",
+    "title": "What Is AI Fatigue and Why Are More People Talking About It?",
+    "url": "https://kierendaystudiosofficial.wordpress.com/2026/06/20/what-is-ai-fatigue-and-why-are-more-people-talking-about-it/",
+    "excerpt": "Artificial intelligence is everywhere.New AI tools launch every week. Headlines constantly discuss breakthroughs, businesses are rushing to adopt new technology, and social media feeds are filled w…",
+    "author": "Kieren Day",
+    "publishedAt": "2026-06-20T02:36:09.000Z",
+    "score": 31,
+    "tags": [
+      "ai",
+      "aiadoption",
+      "aifatigue",
+      "aitools",
+      "aitrends",
+      "artificialintelligence",
+      "audiencebuilding",
+      "automation",
+      "automationtools",
+      "business",
+      "businessgrowth",
+      "businessinnovation",
+      "businessowner",
+      "businessproductivity",
+      "businessstrategy",
+      "businesssuccess",
+      "businesstrends",
+      "communication",
+      "contentcreation",
+      "contentmarketing",
+      "creativity",
+      "creatorbusiness",
+      "creatoreconomy",
+      "creatoreconomytrends",
+      "digitalbusiness",
+      "digitalentrepreneur",
+      "digitalmarketing",
+      "digitaltools",
+      "digitaltransformation",
+      "entrepreneur",
+      "entrepreneurship",
+      "futureofwork",
+      "futuretechnology",
+      "innovation",
+      "innovationtrends",
+      "internetmarketing",
+      "leadership",
+      "machinelearning",
+      "marketing",
+      "marketingstrategy",
+      "mentalhealth",
+      "modernbusiness",
+      "onlinebusiness",
+      "onlineentrepreneur",
+      "onlinemarketing",
+      "personalbranding",
+      "productivity",
+      "productivitytips",
+      "professionaldevelopment",
+      "remotework",
+      "selfimprovement",
+      "smallbusiness",
+      "socialmediamarketing",
+      "startup",
+      "startupfounder",
+      "startups",
+      "technology",
+      "technologynews",
+      "technologytrends",
+      "workfromhome",
+      "worklifebalance",
+      "workplaceproductivity",
+      "workplacetrends"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e08799ca68ce",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Installing NixOS on a Microsoft Surface Book for the thrill",
+    "url": "https://gardinerbryant.com/installing-nixos-on-a-microsoft-surface-book-for-thrill/?utm_campaign=widget&utm_source=mastodon",
+    "excerpt": "In this premium video, you'll find my (lightly edited) experience with installing & configuring NixOS on a Microsoft Surface Book from 2016. It's kinda remarkable just how capable this device still is when it's not being weighed down by Windows 10.",
+    "author": "Gardiner Bryant",
+    "publishedAt": "2026-06-20T01:32:40.000Z",
+    "score": 9,
+    "tags": [
+      "exclusive",
+      "linux",
+      "nixos",
+      "e",
+      "microsoft",
+      "surfacebook",
+      "bryantreview"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e2d4fa735d70",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Preparing a laptop to give to a friend to introduce them to Linux. They want to run a custom software package they’re u…",
+    "url": "https://mastodo.neoliber.al/@petes_bread_eqn_xls/116779729363000439",
+    "excerpt": "Preparing a laptop to give to a friend to introduce them to Linux. They want to run a custom software package they’re used to at work, but they only know Linux as the OS running cryptic commands from…",
+    "author": "petes_bread_eqn_xls",
+    "publishedAt": "2026-06-20T01:00:57.000Z",
+    "score": 28,
+    "tags": [
+      "linux",
+      "newbie",
+      "distro",
+      "poll"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:407c34df0bd7",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "This is a interesting programming path with lots curves of interest # Retro # RetroComputing # NeXT # NeXTSpace # GNUSt…",
+    "url": "https://ioc.exchange/@Radio_Azureus/116779715403706015",
+    "excerpt": "This is a interesting programming path with lots curves of interest # Retro # RetroComputing # NeXT # NeXTSpace # GNUStep # OpenStep # UI # programming # XOrg # XWindows # LLM # AI",
+    "author": "Radio_Azureus",
+    "publishedAt": "2026-06-20T00:57:24.000Z",
+    "score": 13,
+    "tags": [
+      "retro",
+      "retrocomputing",
+      "next",
+      "nextspace",
+      "gnustep",
+      "openstep",
+      "ui",
+      "programming",
+      "xorg",
+      "xwindows",
+      "llm",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:eef47cd57ac6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "NeXTSpace A wonderful project NeXTSpace UI based on OpenStep GNUStep has been ported from Linux to BSD NeXTSpace is mod…",
+    "url": "https://ioc.exchange/@Radio_Azureus/116779690926783108",
+    "excerpt": "NeXTSpace A wonderful project NeXTSpace UI based on OpenStep GNUStep has been ported from Linux to BSD NeXTSpace is modeled on NeXTSTEP a gorgeous UI on the NeXT Computing Workstation This article ha…",
+    "author": "Radio_Azureus",
+    "publishedAt": "2026-06-20T00:51:10.000Z",
+    "score": 17,
+    "tags": [
+      "retro",
+      "retrocomputing",
+      "next",
+      "nextspace",
+      "gnustep",
+      "openstep",
+      "ui",
+      "programming",
+      "xorg",
+      "xwindows",
+      "llm",
+      "ai"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:941ef7ef187f",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "On OpenAI's Support for Rust - The Rust Foundation",
+    "url": "https://rustfoundation.org/media/on-openais-support-for-rust/",
+    "excerpt": "The Rust Foundation was happy to announce OpenAI as our newest Platinum Member today, as part of a $600,000 total contribution in support of the Rust Project and the broader Rust ecosystem. Membership in the Rust Foundation is a way for companies to support the maintainers who are building the…",
+    "author": "jbz",
+    "publishedAt": "2026-06-19T21:00:06.000Z",
     "score": 6,
     "tags": [
+      "rust",
       "rustlang",
+      "openai",
+      "opensource"
+    ],
+    "labels": [
+      "rust",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5a9924ec0082",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "What Jobs Are Most Likely to Be Replaced by AI?",
+    "url": "https://kierendaystudiosofficial.wordpress.com/2026/06/19/what-jobs-are-most-likely-to-be-replaced-by-ai/",
+    "excerpt": "Artificial intelligence is advancing faster than many people expected. New tools are appearing every month, businesses are investing heavily in automation, and entire industries are being transform…",
+    "author": "Kieren Day",
+    "publishedAt": "2026-06-19T17:56:25.000Z",
+    "score": 26,
+    "tags": [
+      "ai",
+      "aijobs",
+      "aitools",
+      "aitrends",
+      "artificialintelligence",
+      "automation",
+      "automationtechnology",
+      "business",
+      "businessgrowth",
+      "businessinnovation",
+      "businessowner",
+      "businessstrategy",
+      "businesstrends",
+      "careeradvice",
+      "careerdevelopment",
+      "careergrowth",
+      "careerplanning",
+      "careers",
+      "communicationskills",
+      "contentcreation",
+      "creatoreconomy",
+      "digitalbusiness",
+      "digitalmarketing",
+      "digitaltransformation",
+      "economictrends",
+      "education",
+      "employment",
+      "entrepreneur",
+      "entrepreneurship",
+      "futurecareers",
+      "futureofwork",
+      "highincomeskills",
+      "innovation",
+      "InternetBusiness",
+      "jobmarket",
+      "jobsecurity",
+      "jobs",
+      "leadership",
+      "learning",
+      "machinelearning",
+      "marketing",
+      "money",
+      "onlinebusiness",
+      "onlineincome",
+      "personalbranding",
+      "productivity",
+      "professionaldevelopment",
+      "professionalskills",
+      "remotework",
+      "selfimprovement",
+      "skills",
+      "smallbusiness",
+      "startup",
+      "startupfounder",
+      "startups",
+      "success",
+      "technology",
+      "technologynews",
+      "technologytrends",
+      "workfromhome",
+      "worktrends",
+      "workforce",
+      "workforcetrends",
+      "workplace"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f85dd487051a",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "I can haz smoller NixOS ISOs?",
+    "url": "https://natkr.com/2026-06-19-nixos-but-smol/",
+    "excerpt": "39 points · nix, performance",
+    "author": "natkr",
+    "publishedAt": "2026-06-19T11:20:51.000-05:00",
+    "score": 39,
+    "tags": [
+      "nix",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:3fac66931ef4",
+    "kind": "article",
+    "source": "rss",
+    "title": "How we built an internal data analytics agent",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+    "excerpt": "Large data and analytics organizations often struggle to make access to data and insights truly self-serve. The industry tried to solve this problem, quite unsuccessfully, for decades, but now AI is…",
+    "author": "Natalie Guevara",
+    "publishedAt": "2026-06-19T16:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:584f67664e62",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Stop Naming Your Variables \"Flag\": The Art of Boolean Prefixes",
+    "url": "https://thatamazingprogrammer.com/posts/stop-naming-your-variables-flag-the-art-of-boolean-prefixes/",
+    "excerpt": "16 points · practices",
+    "author": "typesanitizer",
+    "publishedAt": "2026-06-19T10:22:00.000-05:00",
+    "score": 16,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:54478b42ecb4",
+    "kind": "article",
+    "source": "rss",
+    "title": "Dispatches from O&#x27;Reilly: From capabilities to responsibilities​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿​﻿​​‌‍​‍​﻿‍‌​﻿‍‌​﻿‌‌‌‍‌‍​﻿‌﻿​‍﻿‌​﻿‌﻿‌‍​﻿‌‍​‍​﻿‍‌​‍﻿‌​﻿‌​‌‍‌​‌‍‌​​﻿‍​​‍﻿‌‌‍​‍‌‍‌‍​﻿‌﻿​﻿​‌​‍﻿‌‌‍‌​​﻿​​​﻿‌‍​﻿‍​​﻿‌‌​﻿‍‌​﻿‌​​﻿​​‌‍​‌​﻿​﻿​﻿​‍‌‍​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/06/19/dispatches-from-o-reilly-from-capabilities-to-responsibilities/",
+    "excerpt": "Designing contract-bound AI agents for high-stakes execution.​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌ ​ ‌‍​‌‌‍ ‍‌‍‍‌‌ ‌​‌ ‍‌​‍ ‍‌‍‍‌‌‍ ​‍​‍​‍ ​​‍​‍‌‍‍​‌ ​‍‌‍‌‌‌‍‌‍​‍​‍​ ‍‍​‍​‍‌‍‍​‌ ‌​‌ ‌​‌ ​​…",
+    "author": "Artur Huk",
+    "publishedAt": "2026-06-19T14:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:36edb8e0e2c8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Shutting Down Fornjot",
+    "url": "https://fornjot.app/blog/shutting-down-fornjot/",
+    "excerpt": "23 points · rust",
+    "author": "dzervas",
+    "publishedAt": "2026-06-19T06:28:45.000-05:00",
+    "score": 23,
+    "tags": [
       "rust"
     ],
     "labels": [
@@ -301,24 +724,6 @@
       "Stack Overflow Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:31bf3b8603e4",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "🥳 Go 1.27 Release Candidate 1 is released! 🏃‍♀️ Run it in dev! Run it in prod! File bugs! https:// go.dev/issue/new …",
-    "url": "https://hachyderm.io/@golang/116772912803095146",
-    "excerpt": "🥳 Go 1.27 Release Candidate 1 is released! 🏃‍♀️ Run it in dev! Run it in prod! File bugs! https:// go.dev/issue/new 📣 Announcement: https:// groups.google.com/g/golang-ann ounce/c/Cu9HkstbtpA/m/Nf…",
-    "author": "golang",
-    "publishedAt": "2026-06-18T20:07:24.000Z",
-    "score": 36,
-    "tags": [
-      "golang"
-    ],
-    "labels": [
-      "go"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -349,7 +754,7 @@
     "excerpt": "The forum has been around for a long time and I occasionally find old gems, I wonder what great insights etc. I've missed from the past.",
     "author": "veqq",
     "publishedAt": "2026-06-18T12:04:00.000-05:00",
-    "score": 88,
+    "score": 155,
     "tags": [
       "ask",
       "programming"
@@ -363,10 +768,10 @@
     "source": "lobsters",
     "title": "The Future of the Con Is Already Here, It's Just Not Evenly Distributed",
     "url": "http://manishearth.github.io/blog/2026/06/17/the-future-of-the-con-is-already-here/",
-    "excerpt": "44 points · ai, security",
+    "excerpt": "72 points · ai, security",
     "author": "Manishearth",
     "publishedAt": "2026-06-18T11:25:48.000-05:00",
-    "score": 44,
+    "score": 72,
     "tags": [
       "ai",
       "security"
@@ -399,10 +804,10 @@
     "source": "lobsters",
     "title": "offset_of! slices",
     "url": "https://bal-e.org/blog/2026/offset-of-slices/",
-    "excerpt": "19 points · rust",
+    "excerpt": "21 points · rust",
     "author": "fanf",
     "publishedAt": "2026-06-18T09:56:17.000-05:00",
-    "score": 19,
+    "score": 21,
     "tags": [
       "rust"
     ],
@@ -436,7 +841,7 @@
     "excerpt": "This is a submission for the June Solstice Game Jam It's interesting how the most exciting ideas...",
     "author": "Daniel Balcarek",
     "publishedAt": "2026-06-18T06:49:04Z",
-    "score": 42,
+    "score": 43,
     "tags": [
       "devchallenge",
       "gamechallenge",
@@ -454,10 +859,10 @@
     "source": "lobsters",
     "title": "CLI Authentication, the Right Way",
     "url": "https://www.abgeo.dev/blog/cli-authentication-the-right-way/",
-    "excerpt": "39 points · practices, security",
+    "excerpt": "46 points · practices, security",
     "author": "ABGEO",
     "publishedAt": "2026-06-18T01:36:39.000-05:00",
-    "score": 39,
+    "score": 46,
     "tags": [
       "practices",
       "security"
@@ -530,7 +935,7 @@
     "excerpt": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
     "author": "Athreya aka Maneshwar",
     "publishedAt": "2026-06-17T18:59:11Z",
-    "score": 25,
+    "score": 26,
     "tags": [
       "webdev",
       "programming",
@@ -582,205 +987,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Stack Overflow Blog:7720cf985660",
-    "kind": "article",
-    "source": "rss",
-    "title": "AI agents are a confused deputy with the keys to your kingdom​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/06/17/ai-agents-expose-the-security-checks-you-never-actually-wrote/",
-    "excerpt": "How attackers took twenty thousand Instagram accounts by asking Meta&#x27;s AI politely, and why that failure is about to become common.​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌ ​ ‌‍​‌‌‍ ‍‌‍‍‌…",
-    "author": "Fabio Salvadori",
-    "publishedAt": "2026-06-17T14:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:afe8bf78dd93",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Pull Requests are Free Puppies",
-    "url": "https://www.youtube.com/watch?v=x8_ZZhRL3YU&t=1733s",
-    "excerpt": "Lightly edited transcript of Richard Hipp, creator of SQLite, from 28'53\":\r\n> Suppose you had a pull request for SQLite. \"Hey, I've got this new feature for SQLite. Here's the pull request.\" When you…",
-    "author": "ndr",
-    "publishedAt": "2026-06-17T08:23:44.000-05:00",
-    "score": 89,
-    "tags": [
-      "programming",
-      "video"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:25f3d2f758ff",
-    "kind": "article",
-    "source": "devto",
-    "title": "How I use premortems with Claude and Codex",
-    "url": "https://dev.to/pablonax/how-i-use-premortems-with-claude-and-codex-46mm",
-    "excerpt": "I started using premortems for a boring reason: I did not trust the default review question. When I...",
-    "author": "Pavel Kalo",
-    "publishedAt": "2026-06-17T10:19:30Z",
-    "score": 40,
-    "tags": [
-      "ai",
-      "claude",
-      "llm",
-      "tooling"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:c7b6e0d15e34",
-    "kind": "article",
-    "source": "rss",
-    "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
-    "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-06-17T10:18:05.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:af47ab399c1f",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Game Engine White Papers: Commander Keen",
-    "url": "https://forgottenbytes.net/commander_keen.html",
-    "excerpt": "18 points · games, programming",
-    "author": "orib",
-    "publishedAt": "2026-06-17T00:29:46.000-05:00",
-    "score": 18,
-    "tags": [
-      "games",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:1d8995b4bf12",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Can gzip be a language model?",
-    "url": "https://nathan.rs/posts/gzip-lm/",
-    "excerpt": "62 points · ai",
-    "author": "AviKav",
-    "publishedAt": "2026-06-16T17:17:20.000-05:00",
-    "score": 62,
-    "tags": [
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:54579fac185e",
-    "kind": "article",
-    "source": "rss",
-    "title": "What are git worktrees, and why should I use them?",
-    "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
-    "excerpt": "It seems like the latest hotness in git these days is the concept of worktrees. Which&hellip; is kind of funny because they&rsquo;ve been around since 2015. But, nevertheless, they are cool, and you…",
-    "author": "Natalie Guevara",
-    "publishedAt": "2026-06-16T20:58:54.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:57f2637a6205",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Build your project Zig-style",
-    "url": "https://fnordig.de/2026/06/16/build-your-project-zig-style/",
-    "excerpt": "24 points · rust, zig",
-    "author": "calebhearth",
-    "publishedAt": "2026-06-16T14:33:20.000-05:00",
-    "score": 24,
-    "tags": [
-      "rust",
-      "zig"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:d644e34b8cb8",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "But yak shaving is fun",
-    "url": "https://parksb.github.io/en/article/32.html",
-    "excerpt": "73 points · programming",
-    "author": "hoistbypetard",
-    "publishedAt": "2026-06-16T14:18:46.000-05:00",
-    "score": 73,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:12aedd2734d5",
-    "kind": "article",
-    "source": "devto",
-    "title": "How We Saved Big and Simplified Our Image Pipeline: Adopting bunny.net on DEV",
-    "url": "https://dev.to/devteam/how-we-saved-big-and-simplified-our-image-pipeline-adopting-bunnynet-on-dev-3d53",
-    "excerpt": "Hey everyone, Ben here. If you’ve been following the journey of DEV and our open source project...",
-    "author": "Ben Halpern",
-    "publishedAt": "2026-06-16T16:41:51Z",
-    "score": 76,
-    "tags": [
-      "performance",
-      "webdev",
-      "design",
-      "bunny"
-    ],
-    "labels": [
-      "performance",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f82769bb62e7",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "How Developers React to AI-Scented Blog Posts",
-    "url": "https://writethatblog.substack.com/p/dev-reaction-to-ai-blog-posts",
-    "excerpt": "29 points · culture, practices, vibecoding",
-    "author": "eatonphil",
-    "publishedAt": "2026-06-16T09:15:28.000-05:00",
-    "score": 29,
-    "tags": [
-      "culture",
-      "practices",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -788,8 +994,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-06-13T06:14:45Z",
-    "score": 442710,
+    "publishedAt": "2026-06-19T21:01:24Z",
+    "score": 442965,
     "tags": [
       "Python",
       "api",
@@ -821,7 +1027,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-06-18T15:42:20Z",
-    "score": 390496,
+    "score": 390526,
     "tags": [
       "Python",
       "books",
@@ -844,7 +1050,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-06-19T04:00:48Z",
-    "score": 222047,
+    "score": 222062,
     "tags": [
       "Python",
       "algorithm",
@@ -875,8 +1081,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-06-19T10:39:42Z",
-    "score": 197282,
+    "publishedAt": "2026-06-20T03:55:09Z",
+    "score": 197733,
     "tags": [
       "Python",
       "ai",
@@ -910,8 +1116,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-06-19T10:51:13Z",
-    "score": 185021,
+    "publishedAt": "2026-06-19T23:09:17Z",
+    "score": 185043,
     "tags": [
       "Python",
       "agentic-ai",
@@ -941,7 +1147,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-06-18T22:05:09Z",
-    "score": 171605,
+    "score": 171849,
     "tags": [
       "Python",
       "cli",
@@ -965,8 +1171,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-06-19T10:51:37Z",
-    "score": 161719,
+    "publishedAt": "2026-06-19T18:03:02Z",
+    "score": 161735,
     "tags": [
       "Python",
       "audio",
@@ -1004,8 +1210,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-06-19T01:12:19Z",
-    "score": 149838,
+    "publishedAt": "2026-06-20T01:39:47Z",
+    "score": 149858,
     "tags": [
       "Python",
       "agents",
@@ -1029,8 +1235,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-06-19T04:35:29Z",
-    "score": 116447,
+    "publishedAt": "2026-06-20T01:50:04Z",
+    "score": 116501,
     "tags": [
       "Rust",
       "android",
@@ -1066,8 +1272,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-06-19T10:25:53Z",
-    "score": 113988,
+    "publishedAt": "2026-06-20T03:55:24Z",
+    "score": 113973,
     "tags": [
       "Rust",
       "compiler",
@@ -1087,8 +1293,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-06-18T20:25:04Z",
-    "score": 108062,
+    "publishedAt": "2026-06-19T18:12:45Z",
+    "score": 108092,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1113,8 +1319,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-06-19T10:53:02Z",
-    "score": 107174,
+    "publishedAt": "2026-06-20T04:10:14Z",
+    "score": 107162,
     "tags": [
       "Rust",
       "deno",
@@ -1136,8 +1342,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-06-18T18:39:26Z",
-    "score": 104462,
+    "publishedAt": "2026-06-19T15:38:25Z",
+    "score": 104797,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1177,7 +1383,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-06-15T22:42:37Z",
-    "score": 94128,
+    "score": 94129,
     "tags": [
       "Java",
       "awesome-list",
@@ -1202,8 +1408,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-06-19T10:44:51Z",
-    "score": 93335,
+    "publishedAt": "2026-06-20T04:35:18Z",
+    "score": 93322,
     "tags": [
       "Rust",
       "bun",
@@ -1234,8 +1440,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-06-19T10:06:19Z",
-    "score": 92108,
+    "publishedAt": "2026-06-20T04:37:03Z",
+    "score": 92214,
     "tags": [
       "Rust"
     ],
@@ -1252,8 +1458,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-06-19T10:20:26Z",
-    "score": 86562,
+    "publishedAt": "2026-06-20T01:01:39Z",
+    "score": 86586,
     "tags": [
       "Rust",
       "packaging",
@@ -1275,8 +1481,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-06-19T10:44:46Z",
-    "score": 81315,
+    "publishedAt": "2026-06-19T20:53:03Z",
+    "score": 81461,
     "tags": [
       "Java",
       "docker",
