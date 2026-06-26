@@ -1,5 +1,6 @@
 /* ============================================================
-   Design tokens — Obsidian & Teal
+   Design tokens — Midnight (palette copied from taskito docs)
+   Near-black neutral dark + electric green; warm-paper light mode.
    Fonts injected by next/font (see app/layout.tsx).
    ============================================================ */
 
@@ -30,54 +31,54 @@
   --step-5: clamp(3.2rem, 2.1rem + 5.6vw, 6.6rem);
 }
 
-/* ---------- dark (default) — Obsidian ---------- */
+/* ---------- dark (default) — Midnight ---------- */
 :root,
 [data-theme="dark"] {
-  --bg: #0a0c11;
-  --bg-grad-a: #11192c;
-  --bg-grad-b: #08090d;
-  --surface: #11141b;
-  --surface-2: #161a23;
-  --surface-3: #1e232f;
-  --line: rgba(231, 235, 245, 0.1);
-  --line-soft: rgba(231, 235, 245, 0.055);
-  --line-strong: rgba(110, 155, 255, 0.32);
-  --text: #edeff4;
-  --text-dim: #9aa2b4;
-  --text-faint: #5b6276;
-  --grid-line: rgba(110, 155, 255, 0.06);
-  /* lighter + slightly desaturated teal so it reads on near-black */
-  --accent: #3fc7a3;
-  --accent-2: color-mix(in oklab, var(--accent), white 12%);
-  --accent-ink: #04130d;
-  --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
-  --accent-line: color-mix(in srgb, var(--accent) 40%, transparent);
-  --chip: rgba(231, 235, 245, 0.05);
-  --shadow: 0 34px 90px -42px rgba(0, 0, 0, 0.82);
+  --bg: #08080c;
+  --bg-grad-a: #11111c;
+  --bg-grad-b: #08080c;
+  --surface: #0f0f17;
+  --surface-2: #13131d;
+  --surface-3: #181824;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-soft: rgba(255, 255, 255, 0.045);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --text: #ececf4;
+  --text-dim: #8c8ca3;
+  --text-faint: #5c5c70;
+  --grid-line: rgba(31, 157, 84, 0.07);
+  /* Taskito brand green */
+  --accent: #1f9d54;
+  --accent-2: #3bbf72;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(31, 157, 84, 0.13);
+  --accent-line: rgba(31, 157, 84, 0.28);
+  --chip: rgba(255, 255, 255, 0.05);
+  --shadow: 0 40px 90px -40px rgba(0, 0, 0, 0.7);
   color-scheme: dark;
 }
 
-/* ---------- light — Platinum ---------- */
+/* ---------- light — warm paper ---------- */
 [data-theme="light"] {
-  --bg: #eef0f4;
-  --bg-grad-a: #f6f7fa;
-  --bg-grad-b: #e6e9ef;
+  --bg: #f6f4ee;
+  --bg-grad-a: #fbf9f3;
+  --bg-grad-b: #ece7dc;
   --surface: #ffffff;
-  --surface-2: #f6f7fa;
-  --surface-3: #eceef3;
-  --line: rgba(13, 18, 30, 0.13);
-  --line-soft: rgba(13, 18, 30, 0.07);
-  --line-strong: rgba(40, 71, 168, 0.32);
-  --text: #0c1119;
-  --text-dim: #4c5466;
-  --text-faint: #8b91a0;
-  --grid-line: rgba(13, 18, 30, 0.05);
-  --accent: #15705b;
-  --accent-2: color-mix(in oklab, var(--accent), black 8%);
-  --accent-ink: #f4f7ff;
-  --accent-soft: color-mix(in srgb, var(--accent) 11%, transparent);
-  --accent-line: color-mix(in srgb, var(--accent) 36%, transparent);
-  --chip: rgba(13, 18, 30, 0.045);
-  --shadow: 0 30px 70px -45px rgba(20, 30, 60, 0.3);
+  --surface-2: #f2efe7;
+  --surface-3: #eae5da;
+  --line: rgba(45, 38, 18, 0.1);
+  --line-soft: rgba(45, 38, 18, 0.06);
+  --line-strong: rgba(45, 38, 18, 0.22);
+  --text: #1b1a15;
+  --text-dim: #615d52;
+  --text-faint: #8b877a;
+  --grid-line: rgba(45, 38, 18, 0.05);
+  --accent: #10a152;
+  --accent-2: #0a7c3d;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(16, 161, 82, 0.1);
+  --accent-line: rgba(16, 161, 82, 0.26);
+  --chip: rgba(45, 38, 18, 0.045);
+  --shadow: 0 40px 90px -45px rgba(60, 50, 20, 0.2);
   color-scheme: light;
 }
