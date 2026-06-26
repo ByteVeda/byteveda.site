@@ -2,23 +2,30 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ArrowUpRight, Menu, X } from "@/components/ui";
-import { nav } from "@/lib/site";
+import { createPortal } from "react-dom";
+import { Button, Wordmark } from "@/components/ui";
+import { cn } from "@/lib/cn";
+import { nav, site } from "@/lib/site";
 import { isExternalUrl } from "@/lib/url";
-
-const linkClass =
-  "flex items-center gap-1 rounded-md px-2 py-2.5 text-muted-foreground transition-colors hover:text-foreground";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Portal target only exists after mount (avoids SSR `document` access).
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
     };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   const close = () => setOpen(false);
@@ -27,52 +34,97 @@ export function MobileMenu() {
     <>
       <button
         type="button"
-        aria-label={open ? "Close menu" : "Open menu"}
+        className="icon-btn menu-btn"
+        aria-label="Open menu"
         aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-        className="inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground sm:hidden"
+        aria-controls="mobile-drawer"
+        onClick={() => setOpen(true)}
       >
-        {open ? (
-          <X className="h-5 w-5" strokeWidth={2} />
-        ) : (
-          <Menu className="h-5 w-5" strokeWidth={2} />
-        )}
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.8}
+          strokeLinecap="round"
+          aria-hidden
+        >
+          <title>Menu</title>
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
       </button>
-      {open && (
-        <nav className="absolute top-full right-0 left-0 border-border/60 border-t bg-background/95 backdrop-blur-md sm:hidden">
-          <ul className="mx-auto flex max-w-6xl flex-col px-6 py-3 text-sm">
-            {nav.map((item) => {
-              const openInNewTab = "external" in item && item.external;
-              const label = (
-                <>
-                  {item.label}
-                  {openInNewTab && <ArrowUpRight className="h-3 w-3" strokeWidth={2} />}
-                </>
-              );
 
-              return (
-                <li key={item.href}>
-                  {isExternalUrl(item.href) ? (
+      {mounted &&
+        createPortal(
+          <div className={cn("drawer-root", open && "open")} aria-hidden={!open}>
+            <button
+              type="button"
+              className="drawer-scrim"
+              aria-label="Close menu"
+              onClick={close}
+            />
+            <aside
+              id="mobile-drawer"
+              className="drawer-panel"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Menu"
+            >
+              <div className="drawer-head">
+                <Wordmark href="/" />
+                <button type="button" className="icon-btn" aria-label="Close menu" onClick={close}>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    strokeLinecap="round"
+                    aria-hidden
+                  >
+                    <title>Close</title>
+                    <path d="M6 6l12 12M18 6 6 18" />
+                  </svg>
+                </button>
+              </div>
+
+              <nav className="drawer-links" aria-label="Mobile">
+                {nav.map((item) => {
+                  const external = "external" in item && item.external;
+                  const label = (
+                    <>
+                      {item.label}
+                      {external && <span aria-hidden>↗</span>}
+                    </>
+                  );
+                  return isExternalUrl(item.href) ? (
                     <a
+                      key={item.href}
                       href={item.href}
-                      target={openInNewTab ? "_blank" : undefined}
-                      rel={openInNewTab ? "noopener noreferrer" : undefined}
+                      target={external ? "_blank" : undefined}
+                      rel={external ? "noopener noreferrer" : undefined}
                       onClick={close}
-                      className={linkClass}
                     >
                       {label}
                     </a>
                   ) : (
-                    <Link href={item.href} onClick={close} className={linkClass}>
+                    <Link key={item.href} href={item.href} onClick={close}>
                       {label}
                     </Link>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      )}
+                  );
+                })}
+                <Link href="/contribute" onClick={close}>
+                  Contribute
+                </Link>
+              </nav>
+
+              <div className="drawer-foot">
+                <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+                  GitHub
+                </Button>
+              </div>
+            </aside>
+          </div>,
+          document.body,
+        )}
     </>
   );
 }

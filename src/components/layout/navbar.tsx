@@ -1,51 +1,47 @@
 import Link from "next/link";
-import { ArrowUpRight, Wordmark } from "@/components/ui";
-import { nav } from "@/lib/site";
+import { Button, Wordmark } from "@/components/ui";
+import { nav, site } from "@/lib/site";
 import { isExternalUrl } from "@/lib/url";
 import { MobileMenu } from "./mobile-menu";
 import { ThemeToggle } from "./theme-toggle";
 
-const linkClass =
-  "notebook-serif inline-flex items-center gap-1 px-3 py-1.5 text-[15px] text-muted-foreground transition-colors hover:text-foreground";
-
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-border/60 border-b bg-background/70 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-        <Wordmark />
-        <div className="flex items-center gap-1">
-          <nav className="hidden items-center gap-1 text-sm sm:flex">
-            {nav.map((item) => {
-              const openInNewTab = "external" in item && item.external;
-              const label = (
-                <>
-                  {item.label}
-                  {openInNewTab && <ArrowUpRight className="h-3 w-3" strokeWidth={2} />}
-                </>
-              );
+    <header className="nav" id="nav">
+      <div className="wrap nav-inner">
+        <Wordmark href="/" />
 
-              if (isExternalUrl(item.href)) {
-                return (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    target={openInNewTab ? "_blank" : undefined}
-                    rel={openInNewTab ? "noopener noreferrer" : undefined}
-                    className={linkClass}
-                  >
-                    {label}
-                  </a>
-                );
-              }
+        <nav className="nav-links" aria-label="Primary">
+          {nav.map((item) => {
+            const external = "external" in item && item.external;
+            const label = (
+              <>
+                {item.label}
+                {external && <span aria-hidden>↗</span>}
+              </>
+            );
+            return isExternalUrl(item.href) ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+              >
+                {label}
+              </a>
+            ) : (
+              <Link key={item.href} href={item.href}>
+                {label}
+              </Link>
+            );
+          })}
+        </nav>
 
-              return (
-                <Link key={item.href} href={item.href} className={linkClass}>
-                  {label}
-                </Link>
-              );
-            })}
-          </nav>
+        <div className="nav-right">
           <ThemeToggle />
+          <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+            GitHub
+          </Button>
           <MobileMenu />
         </div>
       </div>
