@@ -1,11 +1,17 @@
+import { HeroNet } from "./hero-net";
+
 export function DocsHero() {
   return (
-    <section className="relative overflow-hidden border-border border-b">
-      <div
-        aria-hidden
-        className="dot-grid absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
-      />
-      <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
+    <section data-hero-fx className="relative overflow-hidden border-border border-b">
+      <div aria-hidden className="aurora">
+        <b className="a1" />
+        <b className="a2" />
+        <b className="a3" />
+      </div>
+      <div aria-hidden className="blueprint" />
+      <HeroNet />
+
+      <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="fade-up max-w-3xl">
           <p className="mb-4 font-mono text-muted-foreground text-xs uppercase tracking-widest">
             Documentation

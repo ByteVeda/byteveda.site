@@ -4,7 +4,7 @@ import { Section, SectionHeader } from "./ui/section";
 
 export function ToolsSection() {
   return (
-    <Section id="tools">
+    <Section id="tools" glow>
       <SectionHeader
         eyebrow="Tools"
         title="Five libraries, fully documented."

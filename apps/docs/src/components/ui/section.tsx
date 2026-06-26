@@ -6,6 +6,8 @@ type SectionProps = HTMLAttributes<HTMLElement> & {
   containerClassName?: string;
   children: ReactNode;
   bordered?: boolean;
+  /** Render a subtle ambient accent glow behind the content. */
+  glow?: boolean;
 };
 
 export function Section({
@@ -14,15 +16,33 @@ export function Section({
   containerClassName,
   children,
   bordered = true,
+  glow = false,
   ...props
 }: SectionProps) {
   return (
     <section
       id={id}
-      className={cn("scroll-mt-16", bordered && "border-border border-b", className)}
+      className={cn(
+        "scroll-mt-16",
+        glow && "relative overflow-hidden",
+        bordered && "border-border border-b",
+        className,
+      )}
       {...props}
     >
-      <div className={cn("mx-auto max-w-6xl px-6 py-24 md:py-32", containerClassName)}>
+      {glow && (
+        <div aria-hidden className="section-glow">
+          <b className="g1" />
+          <b className="g2" />
+        </div>
+      )}
+      <div
+        className={cn(
+          "mx-auto max-w-6xl px-6 py-24 md:py-32",
+          glow && "relative z-10",
+          containerClassName,
+        )}
+      >
         {children}
       </div>
     </section>
