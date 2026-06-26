@@ -3,27 +3,17 @@ import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "reac
 import { cn } from "@/lib/cn";
 import { isExternalUrl } from "@/lib/url";
 
-type Variant = "primary" | "secondary" | "ghost";
-type Size = "sm" | "md" | "icon";
-
-const base =
-  "inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50";
+type Variant = "primary" | "ghost";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-foreground text-background hover:bg-foreground/90",
-  secondary: "border border-border text-foreground hover:border-foreground/40 hover:bg-muted/50",
-  ghost: "text-muted-foreground hover:text-foreground hover:bg-muted/40",
-};
-
-const sizes: Record<Size, string> = {
-  sm: "h-9 px-4 text-sm",
-  md: "h-11 px-5 text-sm",
-  icon: "h-9 w-9",
+  primary: "btn btn-primary",
+  ghost: "btn btn-ghost",
 };
 
 type CommonProps = {
   variant?: Variant;
-  size?: Size;
+  /** Trailing arrow glyph rendered in a `.arr` span (animates on hover). */
+  arrow?: "→" | "↗";
   className?: string;
   children?: ReactNode;
 };
@@ -42,13 +32,19 @@ type ButtonAsLink = CommonProps &
 export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export function Button(props: ButtonProps) {
-  const { variant = "primary", size = "md", className, children, ...rest } = props;
+  const { variant = "primary", arrow, className, children, ...rest } = props;
+  const classes = cn(variants[variant], className);
 
-  const classes = cn(base, variants[variant], sizes[size], className);
+  const label = (
+    <>
+      {children}
+      {arrow && <span className="arr">{arrow}</span>}
+    </>
+  );
 
   if ("href" in rest && rest.href !== undefined) {
     const { href, external, ...anchorRest } = rest;
-    const openInNewTab = external === true;
+    const openInNewTab = external === true || isExternalUrl(href);
 
     if (isExternalUrl(href)) {
       return (
@@ -59,21 +55,21 @@ export function Button(props: ButtonProps) {
           className={classes}
           {...anchorRest}
         >
-          {children}
+          {label}
         </a>
       );
     }
 
     return (
       <Link href={href} className={classes} {...anchorRest}>
-        {children}
+        {label}
       </Link>
     );
   }
 
   return (
     <button className={classes} {...(rest as ButtonHTMLAttributes<HTMLButtonElement>)}>
-      {children}
+      {label}
     </button>
   );
 }

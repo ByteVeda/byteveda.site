@@ -1,17 +1,16 @@
-import { GeistMono } from "geist/font/mono";
-import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Serif } from "next/font/google";
-import { Footer, Navbar, NotebookFrame } from "@/components/layout";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { SiteEffects } from "@/components/fx";
+import { Footer, Navbar } from "@/components/layout";
 import { site } from "@/lib/site";
 import { ThemeProvider } from "@/providers/theme-provider";
 import "./globals.css";
 
-const plexSerif = IBM_Plex_Serif({
+const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
-  variable: "--font-plex-serif",
+  variable: "--font-plex-sans",
   display: "swap",
 });
 
@@ -71,8 +70,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+    { media: "(prefers-color-scheme: light)", color: "#f6f4ee" },
+    { media: "(prefers-color-scheme: dark)", color: "#08080c" },
   ],
 };
 
@@ -92,15 +91,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="en"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${plexSerif.variable} ${plexMono.variable} h-full antialiased`}
+      className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <NotebookFrame>
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </NotebookFrame>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          <div className="grain" aria-hidden />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <SiteEffects />
         </ThemeProvider>
         <script
           type="application/ld+json"

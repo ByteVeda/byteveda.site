@@ -1,142 +1,28 @@
 @import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/nav.css";
+@import "./styles/sections.css";
+@import "./styles/news.css";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* Theme is driven by `data-theme` on <html> (next-themes). Keep the `dark:`
+   variant working for any utility that still relies on it. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #f4f4f5;
-  --muted-foreground: #52525b;
-  --border: #e4e4e7;
-  --accent: #10b981;
-}
-
-.dark {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --muted: #18181b;
-  --muted-foreground: #a1a1aa;
-  --border: #27272a;
-  --accent: #34d399;
-}
-
+/* Tailwind token bridge — lets utilities (text-accent, border-border, …)
+   resolve to the runtime CSS variables for content pages. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-muted: var(--surface-2);
+  --color-muted-foreground: var(--text-dim);
+  --color-faint: var(--text-faint);
+  --color-border: var(--line);
+  --color-line-soft: var(--line-soft);
   --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-plex-serif);
-  --font-notebook-mono: var(--font-plex-mono);
-}
-
-.notebook {
-  --background: #faf6ec;
-  --foreground: #1f1c17;
-  --muted: #f3ede0;
-  --muted-foreground: #5a5345;
-  --border: #d6cdb8;
-  --accent: #2a4d8f;
-  --rule-faint: rgba(31, 28, 23, 0.06);
-}
-
-.dark .notebook {
-  --background: #1a1815;
-  --foreground: #ede6d2;
-  --muted: #221f1b;
-  --muted-foreground: #9a9180;
-  --border: #3a342c;
-  --accent: #6a8fd8;
-  --rule-faint: rgba(237, 230, 210, 0.06);
-}
-
-.notebook {
-  background: var(--background);
-  color: var(--foreground);
-}
-
-.notebook-paper {
-  background-image:
-    linear-gradient(to right, var(--rule-faint) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--rule-faint) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-.notebook-headline {
-  font-family: var(--font-serif), ui-serif, Georgia, "Times New Roman", serif;
-  letter-spacing: -0.01em;
-}
-
-.notebook-serif {
-  font-family: var(--font-serif), ui-serif, Georgia, "Times New Roman", serif;
-}
-
-.notebook-mono {
-  font-family: var(--font-notebook-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.notebook-smallcaps {
-  font-family: var(--font-serif), ui-serif, Georgia, serif;
-  font-variant: all-small-caps;
-  letter-spacing: 0.08em;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-::selection {
-  background: var(--accent);
-  color: #0a0a0a;
-}
-
-@keyframes install-cycle {
-  0% {
-    opacity: 0;
-    transform: translateY(4px);
-  }
-  5%,
-  20% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  25%,
-  100% {
-    opacity: 0;
-    transform: translateY(-4px);
-  }
-}
-
-@keyframes notebook-ticker-x {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.notebook-ticker-track {
-  animation: notebook-ticker-x var(--ticker-duration, 80s) linear infinite;
-}
-
-.notebook-ticker:hover .notebook-ticker-track {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .notebook-ticker-track {
-    animation: none;
-  }
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
