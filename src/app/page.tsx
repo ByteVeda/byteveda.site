@@ -1,13 +1,15 @@
-import { About, Hero, Releases } from "@/components/sections";
-import { News } from "@/features/news";
+import { About, Approach, Cta, Ecosystem, Feed, Hero, Trending } from "@/components/sections";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Ecosystem />
       <About />
-      <Releases limit={3} />
-      <News articleLimit={3} trendingLimit={12} />
+      <Approach />
+      <Feed />
+      <Trending />
+      <Cta />
     </>
   );
 }
