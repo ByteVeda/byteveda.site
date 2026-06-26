@@ -1,0 +1,83 @@
+/* ============================================================
+   Design tokens — Obsidian & Teal
+   Fonts injected by next/font (see app/layout.tsx).
+   ============================================================ */
+
+:root {
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+
+  --maxw: 1240px;
+  --gutter: clamp(20px, 4vw, 64px);
+
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+
+  --platinum: #c8cdd9;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --step--1: clamp(0.78rem, 0.74rem + 0.18vw, 0.88rem);
+  --step-0: clamp(0.95rem, 0.9rem + 0.25vw, 1.06rem);
+  --step-1: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.45rem, 1.25rem + 1vw, 2rem);
+  --step-3: clamp(1.9rem, 1.5rem + 2vw, 2.9rem);
+  --step-4: clamp(2.6rem, 1.9rem + 3.4vw, 4.4rem);
+  --step-5: clamp(3.2rem, 2.1rem + 5.6vw, 6.6rem);
+}
+
+/* ---------- dark (default) — Obsidian ---------- */
+:root,
+[data-theme="dark"] {
+  --bg: #0a0c11;
+  --bg-grad-a: #11192c;
+  --bg-grad-b: #08090d;
+  --surface: #11141b;
+  --surface-2: #161a23;
+  --surface-3: #1e232f;
+  --line: rgba(231, 235, 245, 0.1);
+  --line-soft: rgba(231, 235, 245, 0.055);
+  --line-strong: rgba(110, 155, 255, 0.32);
+  --text: #edeff4;
+  --text-dim: #9aa2b4;
+  --text-faint: #5b6276;
+  --grid-line: rgba(110, 155, 255, 0.06);
+  /* lighter + slightly desaturated teal so it reads on near-black */
+  --accent: #3fc7a3;
+  --accent-2: color-mix(in oklab, var(--accent), white 12%);
+  --accent-ink: #04130d;
+  --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
+  --accent-line: color-mix(in srgb, var(--accent) 40%, transparent);
+  --chip: rgba(231, 235, 245, 0.05);
+  --shadow: 0 34px 90px -42px rgba(0, 0, 0, 0.82);
+  color-scheme: dark;
+}
+
+/* ---------- light — Platinum ---------- */
+[data-theme="light"] {
+  --bg: #eef0f4;
+  --bg-grad-a: #f6f7fa;
+  --bg-grad-b: #e6e9ef;
+  --surface: #ffffff;
+  --surface-2: #f6f7fa;
+  --surface-3: #eceef3;
+  --line: rgba(13, 18, 30, 0.13);
+  --line-soft: rgba(13, 18, 30, 0.07);
+  --line-strong: rgba(40, 71, 168, 0.32);
+  --text: #0c1119;
+  --text-dim: #4c5466;
+  --text-faint: #8b91a0;
+  --grid-line: rgba(13, 18, 30, 0.05);
+  --accent: #15705b;
+  --accent-2: color-mix(in oklab, var(--accent), black 8%);
+  --accent-ink: #f4f7ff;
+  --accent-soft: color-mix(in srgb, var(--accent) 11%, transparent);
+  --accent-line: color-mix(in srgb, var(--accent) 36%, transparent);
+  --chip: rgba(13, 18, 30, 0.045);
+  --shadow: 0 30px 70px -45px rgba(20, 30, 60, 0.3);
+  color-scheme: light;
+}
