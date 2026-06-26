@@ -1,3 +1,3 @@
-export { News } from "./news";
-export { NewsEntry } from "./news-entry";
-export { NewsList } from "./news-list";
+export { NewsCard } from "./news-card";
+export { NewsFeed } from "./news-feed";
+export { NewsHero } from "./news-hero";
