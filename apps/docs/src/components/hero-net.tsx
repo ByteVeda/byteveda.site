@@ -35,6 +35,8 @@ export function HeroNet() {
 
     let W = 0;
     let H = 0;
+    let heroLeft = 0;
+    let heroTopDoc = 0;
     let nodes: Node[] = [];
     let rgb: [number, number, number] = [31, 157, 84];
     let raf: number | null = null;
@@ -51,6 +53,8 @@ export function HeroNet() {
       const r = hero.getBoundingClientRect();
       W = Math.max(1, r.width);
       H = Math.max(1, r.height);
+      heroLeft = r.left;
+      heroTopDoc = r.top + window.scrollY;
       canvas.width = Math.round(W * dpr);
       canvas.height = Math.round(H * dpr);
       canvas.style.width = `${W}px`;
@@ -155,10 +159,11 @@ export function HeroNet() {
         draw();
       }, 150);
     };
+    // Uses offsets cached in build() — hero sits at a fixed document position,
+    // so a getBoundingClientRect() here would force layout on every move.
     const onMove = (e: PointerEvent) => {
-      const r = hero.getBoundingClientRect();
-      mouse.x = e.clientX - r.left;
-      mouse.y = e.clientY - r.top;
+      mouse.x = e.clientX - heroLeft;
+      mouse.y = e.clientY - (heroTopDoc - window.scrollY);
       mouse.on = true;
     };
     const onLeave = () => {
