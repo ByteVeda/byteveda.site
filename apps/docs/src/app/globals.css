@@ -129,11 +129,19 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+  mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
+}
+/* Grid lives on an oversized child so drift can animate `transform` (composited)
+   instead of `background-position` (repaints every frame). */
+.blueprint::before {
+  content: "";
+  position: absolute;
+  inset: -46px;
   background-image:
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 46px 46px;
-  mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
 }
 .hero-net {
   position: absolute;
@@ -205,7 +213,7 @@ body {
   .aurora .a3 {
     animation: bloom-3 15s ease-in-out infinite alternate;
   }
-  .blueprint {
+  .blueprint::before {
     animation: grid-drift 36s linear infinite;
   }
 }
@@ -235,9 +243,7 @@ body {
 }
 @keyframes grid-drift {
   to {
-    background-position:
-      46px 46px,
-      46px 46px;
+    transform: translate(46px, 46px);
   }
 }
 
