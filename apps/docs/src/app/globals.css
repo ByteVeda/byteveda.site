@@ -79,14 +79,19 @@ body {
   position: absolute;
   display: block;
   border-radius: 50%;
-  filter: blur(82px);
   mix-blend-mode: multiply;
-  background: radial-gradient(circle at 50% 50%, var(--accent), transparent 66%);
+  /* Softness lives in the gradient falloff itself — a `filter: blur()` here
+     forces the GPU to re-filter a ~52vw texture every animation frame. */
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--accent),
+    color-mix(in oklab, var(--accent) 45%, transparent) 34%,
+    transparent 72%
+  );
   will-change: transform;
 }
 .dark .aurora b {
   mix-blend-mode: screen;
-  filter: blur(72px);
 }
 .aurora .a1 {
   width: 52vw;
@@ -149,9 +154,13 @@ body {
   position: absolute;
   display: block;
   border-radius: 50%;
-  filter: blur(90px);
   mix-blend-mode: multiply;
-  background: radial-gradient(circle at 50% 50%, var(--accent), transparent 64%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--accent),
+    color-mix(in oklab, var(--accent) 45%, transparent) 32%,
+    transparent 70%
+  );
   will-change: transform;
 }
 .dark .section-glow b {
