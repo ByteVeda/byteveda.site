@@ -732,6 +732,45 @@
   opacity: 0.1;
 }
 
+/* Bloom drift runs on the compositor; negative delays start each bloom
+   mid-cycle so nothing pops in. Guarded by the media query rather than the
+   reduced-motion reset below because `.aurora .a1` outranks `.aurora b`. */
+@media (prefers-reduced-motion: no-preference) {
+  .aurora .a1 {
+    animation: bloom-drift-1 16s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+  }
+  .aurora .a2 {
+    animation: bloom-drift-2 19.5s cubic-bezier(0.37, 0, 0.63, 1) -1.3s infinite alternate;
+  }
+  .aurora .a3 {
+    animation: bloom-drift-3 14s cubic-bezier(0.37, 0, 0.63, 1) -2.6s infinite alternate;
+  }
+}
+@keyframes bloom-drift-1 {
+  from {
+    transform: translate(115px, 72px) scale(1.2);
+  }
+  to {
+    transform: translate(-55px, -42px) scale(1);
+  }
+}
+@keyframes bloom-drift-2 {
+  from {
+    transform: translate(-95px, -52px) scale(1.14);
+  }
+  to {
+    transform: translate(62px, 44px) scale(1);
+  }
+}
+@keyframes bloom-drift-3 {
+  from {
+    transform: translate(60px, -84px) scale(1.24);
+  }
+  to {
+    transform: translate(-74px, 34px) scale(1.02);
+  }
+}
+
 /* hero connective network (canvas) */
 .hero-net {
   position: absolute;
