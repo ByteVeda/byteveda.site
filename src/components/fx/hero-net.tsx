@@ -74,8 +74,31 @@ export function HeroNet() {
       }
     };
 
+    // Segments are grouped into a few alpha buckets so each frame issues one
+    // stroke() per bucket instead of one per link (~300 at full density).
+    const BUCKETS = 8;
+    const linkBuckets: number[][] = Array.from({ length: BUCKETS }, () => []);
+
+    const bucketFor = (t: number) => Math.min(BUCKETS - 1, Math.floor(t * BUCKETS));
+
+    const strokeBuckets = (maxAlpha: number) => {
+      for (let k = 0; k < BUCKETS; k++) {
+        const seg = linkBuckets[k];
+        if (seg.length === 0) continue;
+        ctx.strokeStyle = rgba(((k + 0.5) / BUCKETS) * maxAlpha);
+        ctx.beginPath();
+        for (let s = 0; s < seg.length; s += 4) {
+          ctx.moveTo(seg[s], seg[s + 1]);
+          ctx.lineTo(seg[s + 2], seg[s + 3]);
+        }
+        ctx.stroke();
+        seg.length = 0;
+      }
+    };
+
     const draw = () => {
       ctx.clearRect(0, 0, W, H);
+      ctx.lineWidth = 1;
 
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
@@ -85,16 +108,11 @@ export function HeroNet() {
           const dy = a.y - b.y;
           const d2 = dx * dx + dy * dy;
           if (d2 < LINK * LINK) {
-            const d = Math.sqrt(d2);
-            ctx.strokeStyle = rgba((1 - d / LINK) * 0.22);
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
+            linkBuckets[bucketFor(1 - Math.sqrt(d2) / LINK)].push(a.x, a.y, b.x, b.y);
           }
         }
       }
+      strokeBuckets(0.22);
 
       if (mouse.on) {
         for (const a of nodes) {
@@ -102,25 +120,22 @@ export function HeroNet() {
           const dy = a.y - mouse.y;
           const d2 = dx * dx + dy * dy;
           if (d2 < MOUSE_LINK * MOUSE_LINK) {
-            const d = Math.sqrt(d2);
-            ctx.strokeStyle = rgba((1 - d / MOUSE_LINK) * 0.5);
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(mouse.x, mouse.y);
-            ctx.stroke();
-            a.vx += (dx > 0 ? -1 : 1) * 0.0009 * (1 - d / MOUSE_LINK);
-            a.vy += (dy > 0 ? -1 : 1) * 0.0009 * (1 - d / MOUSE_LINK);
+            const t = 1 - Math.sqrt(d2) / MOUSE_LINK;
+            linkBuckets[bucketFor(t)].push(a.x, a.y, mouse.x, mouse.y);
+            a.vx += (dx > 0 ? -1 : 1) * 0.0009 * t;
+            a.vy += (dy > 0 ? -1 : 1) * 0.0009 * t;
           }
         }
+        strokeBuckets(0.5);
       }
 
       ctx.fillStyle = rgba(0.55);
+      ctx.beginPath();
       for (const a of nodes) {
-        ctx.beginPath();
+        ctx.moveTo(a.x + a.r, a.y);
         ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
-        ctx.fill();
       }
+      ctx.fill();
     };
 
     const step = () => {
