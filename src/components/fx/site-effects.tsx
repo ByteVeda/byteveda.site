@@ -1,16 +1,16 @@
 "use client";
 
-import anime from "animejs";
 import { useEffect } from "react";
 
 /**
  * Site-wide ambient behaviour, mounted once in the root layout:
  *  - toggles `.scrolled` on the sticky nav
- *  - drives the aurora blooms (independent breathing + pointer/scroll parallax)
+ *  - drives the aurora pointer/scroll parallax (rAF-batched so high-frequency
+ *    pointer events collapse to one style write per frame)
  *
- * Scroll reveals are handled entirely in CSS (scroll-driven animations) so no
- * JS mutates React-controlled class names — that previously caused hydration
- * mismatches. All motion is gated on `prefers-reduced-motion`. Renders nothing.
+ * Aurora bloom drift, scroll reveals, and the blueprint grid drift are pure
+ * CSS (compositor-only transforms), gated on `prefers-reduced-motion` in the
+ * stylesheet. Renders nothing.
  */
 export function SiteEffects() {
   useEffect(() => {
@@ -26,51 +26,35 @@ export function SiteEffects() {
       cleanups.push(() => window.removeEventListener("scroll", onScroll));
     }
 
-    // --- aurora: breathing + parallax ---
+    // --- aurora: pointer/scroll parallax ---
     const layer = document.querySelector<HTMLElement>(".aurora");
     if (layer && !reduced) {
-      const blooms: Array<{ el: string; tx: number[]; ty: number[]; sc: number[]; d: number }> = [
-        { el: ".aurora .a1", tx: [115, -55], ty: [72, -42], sc: [1.2, 1.0], d: 16000 },
-        { el: ".aurora .a2", tx: [-95, 62], ty: [-52, 44], sc: [1.14, 1.0], d: 19500 },
-        { el: ".aurora .a3", tx: [60, -74], ty: [-84, 34], sc: [1.24, 1.02], d: 14000 },
-      ];
-      blooms.forEach((c, i) => {
-        anime({
-          targets: c.el,
-          translateX: c.tx,
-          translateY: c.ty,
-          scale: c.sc,
-          easing: "easeInOutSine",
-          direction: "alternate",
-          loop: true,
-          duration: c.d,
-          delay: i * 1300,
-        });
-      });
-
       let pX = 0;
       let pY = 0;
       let sY = 0;
+      let raf: number | null = null;
       const apply = () => {
-        layer.style.transform = `translate(${pX}px,${pY + sY}px)`;
+        raf = null;
+        layer.style.transform = `translate3d(${pX}px, ${pY + sY}px, 0)`;
+      };
+      const schedule = () => {
+        raf ??= requestAnimationFrame(apply);
       };
       const onMove = (e: PointerEvent) => {
         pX = (e.clientX / window.innerWidth - 0.5) * -28;
         pY = (e.clientY / window.innerHeight - 0.5) * -22;
-        apply();
+        schedule();
       };
       const onParallaxScroll = () => {
         sY = Math.min(70, window.scrollY * 0.05);
-        apply();
+        schedule();
       };
       window.addEventListener("pointermove", onMove, { passive: true });
       window.addEventListener("scroll", onParallaxScroll, { passive: true });
       cleanups.push(() => {
         window.removeEventListener("pointermove", onMove);
         window.removeEventListener("scroll", onParallaxScroll);
-        blooms.forEach((c) => {
-          anime.remove(c.el);
-        });
+        if (raf !== null) cancelAnimationFrame(raf);
         layer.style.transform = "";
       });
     }

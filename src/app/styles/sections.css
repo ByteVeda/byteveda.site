@@ -16,11 +16,19 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+  mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
+}
+/* Grid lives on an oversized child so drift can animate `transform` (composited)
+   instead of `background-position` (repaints every frame). */
+.blueprint::before {
+  content: "";
+  position: absolute;
+  inset: -46px;
   background-image:
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 46px 46px;
-  mask-image: radial-gradient(120% 100% at 50% 0%, #000 30%, transparent 78%);
 }
 
 /* ===== Hero — split / product ===== */
@@ -681,10 +689,16 @@
   position: absolute;
   display: block;
   border-radius: 50%;
-  filter: blur(72px);
   mix-blend-mode: screen;
   will-change: transform;
-  background: radial-gradient(circle at 50% 50%, var(--accent), transparent 66%);
+  /* Softness lives in the gradient falloff itself — a `filter: blur()` here
+     forces the GPU to re-filter a ~54vw texture every animation frame. */
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--accent),
+    color-mix(in oklab, var(--accent) 45%, transparent) 34%,
+    transparent 72%
+  );
 }
 .aurora .a1 {
   width: 54vw;
@@ -709,7 +723,12 @@
 }
 [data-theme="light"] .aurora b {
   mix-blend-mode: multiply;
-  filter: blur(86px);
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--accent),
+    color-mix(in oklab, var(--accent) 40%, transparent) 30%,
+    transparent 68%
+  );
 }
 [data-theme="light"] .aurora .a1 {
   opacity: 0.16;
@@ -719,6 +738,45 @@
 }
 [data-theme="light"] .aurora .a3 {
   opacity: 0.1;
+}
+
+/* Bloom drift runs on the compositor; negative delays start each bloom
+   mid-cycle so nothing pops in. Guarded by the media query rather than the
+   reduced-motion reset below because `.aurora .a1` outranks `.aurora b`. */
+@media (prefers-reduced-motion: no-preference) {
+  .aurora .a1 {
+    animation: bloom-drift-1 16s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate;
+  }
+  .aurora .a2 {
+    animation: bloom-drift-2 19.5s cubic-bezier(0.37, 0, 0.63, 1) -1.3s infinite alternate;
+  }
+  .aurora .a3 {
+    animation: bloom-drift-3 14s cubic-bezier(0.37, 0, 0.63, 1) -2.6s infinite alternate;
+  }
+}
+@keyframes bloom-drift-1 {
+  from {
+    transform: translate(115px, 72px) scale(1.2);
+  }
+  to {
+    transform: translate(-55px, -42px) scale(1);
+  }
+}
+@keyframes bloom-drift-2 {
+  from {
+    transform: translate(-95px, -52px) scale(1.14);
+  }
+  to {
+    transform: translate(62px, 44px) scale(1);
+  }
+}
+@keyframes bloom-drift-3 {
+  from {
+    transform: translate(60px, -84px) scale(1.24);
+  }
+  to {
+    transform: translate(-74px, 34px) scale(1.02);
+  }
 }
 
 /* hero connective network (canvas) */
@@ -735,15 +793,13 @@
 
 /* blueprint grid slow drift */
 @media (prefers-reduced-motion: no-preference) {
-  .hero .blueprint {
+  .hero .blueprint::before {
     animation: gridDrift 36s linear infinite;
   }
 }
 @keyframes gridDrift {
   to {
-    background-position:
-      46px 46px,
-      46px 46px;
+    transform: translate(46px, 46px);
   }
 }
 
@@ -798,7 +854,7 @@
   .aurora b {
     animation: none;
   }
-  .hero .blueprint {
+  .hero .blueprint::before {
     animation: none;
   }
   * {
