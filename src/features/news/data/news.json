@@ -218,40 +218,117 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:a8d205a86e6a",
+    "id": "mastodon:97719c3a7bdf",
     "kind": "article",
     "source": "mastodon",
-    "title": "GitHub - qxnode/luks-deadman: USB kill switch + dead man's switch for Linux server: automatic LUKS header wipe on USB disconnection or operator inactivity. · GitHub - Liens en vrac de sebsauvage",
-    "url": "https://sebsauvage.net/links/?dIanfA",
-    "excerpt": ":linux: # Linux # sécurité Vous voulez faire comme dans les films, des serveurs qui se détruisent si la police essaie de les saisir ? Pas besoin de mettre vos disques au micro-onde. Un bon logiciel s…",
-    "author": "sebsauvage",
-    "publishedAt": "2026-07-09T09:44:01.000Z",
+    "title": "Just a thought from an everyday Linux user 🐧 I'm not an IT professional. When I first moved to Linux, I was cautious wi…",
+    "url": "https://mastodon.world/@Carmelo_TJG/116890704588081465",
+    "excerpt": "Just a thought from an everyday Linux user 🐧 I'm not an IT professional. When I first moved to Linux, I was cautious with the terminal because I didn't want to break my system. As I learned more abou…",
+    "author": "Carmelo",
+    "publishedAt": "2026-07-09T15:23:24.000Z",
+    "score": 8,
+    "tags": [
+      "privacy",
+      "linux",
+      "opensource",
+      "ai"
+    ],
+    "labels": [
+      "opensource",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:4a3975277e76",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Antrag auf Dokumentenzugang gemäß Verordnung (EG) Nr. 1049/2001 – Strategische Beschaffungsentscheidung zu Microsoft 365 und Prüfung europäischer Open-Source-Alternativen (ZenDiS / openDesk)",
+    "url": "https://fragdenstaat.de/anfrage/antrag-auf-dokumentenzugang-gemaess-verordnung-eg-nr-1049-2001-strategische-beschaffungsentscheidung-zu-microsoft-365-und-pruefung-europaeischer-open-source-alternativen-zendis-opendesk-1/",
+    "excerpt": "Antrag nach EU-Verordnungen 1049/2001 sowie 1367/2006\n\nGuten Tag,\n\ndie Europäische Kommission betont in ihren strategischen Leitlinien fortlaufend die Bedeutung der „digitalen Souveränität“ Europas. Dennoch hat die Kommission im Juli 2025 die Nutzung von Microsoft 365 (M365) durch Vertragsanpassungen verstetigt, anstatt auf europäische, quelloffene Alternativen umzusteigen.\n\nAuf Basis der Verordnungen 1049/2001 sowie 1367/2006 bitte ich Sie um Übersendung von Dokumenten, die folgende Informationen enthalten:\n1. Sämtliche Markterkundungsberichte, Wirtschaftlichkeitsprüfungen und strategischen Evaluierungen aus den Jahren 2024 und 2025, in denen die Europäische Kommission im Zuge des EDSB-Verfahrens geprüft hat, ob Teile oder die Gesamtheit der M365-Infrastruktur durch europäische Open-Source-Lösungen (wie z. B. die vom deutschen Zentrum für Digitale Souveränität [ZenDiS] koordinierte Suite openDesk) ersetzt werden können.\n2. Die Protokolle, Agenden und Abschlussberichte von Konsultationen zwischen der Europäischen Kommission und Vertretern von EU-Mitgliedstaaten (insbesondere dem deutschen Bundesministerium des Innern / ZenDiS bzw. im Rahmen des Digital Commons EDIC), die die Eignung und Skalierbarkeit europäischer digitaler Gemeingüter als Ersatz für US-proprietäre Software zum Gegenstand hatten.\n3. Interne politische Lageberichte, Briefings für die Kommissarsebene oder Risikoanalysen der Generaldirektion Informatik (DIGIT), die sich mit dem strategischen Risiko einer dauerhaften Anbieterabhängigkeit (Vendor Lock-In) von der Microsoft Corporation und den geopolitischen Implikationen (insb. Zugriffsmöglichkeiten von US-Behörden via CLOUD Act) befassen.\n4. Dokumente und interne Vermerke, aus denen hervorgeht, welche politischen und wirtschaftlichen Kriterien letztlich den Ausschlag dafür gaben, den Verbleib im Microsoft-Ökosystem einer Migration auf souveräne europäische Software-Infrastrukturen vorzuziehen.\n\nSollten Teile der Dokumente rechtlichen Ausnahmetatbeständen unterliegen, beantrage ich die Schwärzung der betroffenen Passagen und die Herausgabe der verbleibenden Teile.\n\nIch weise ausdrücklich darauf hin, dass ich eine Antwort per E-Mail an diese Adresse und nicht über ein Webportal wünsche. Ich möchte Sie um eine Empfangsbestätigung bitten und danke Ihnen für Ihre Mühe!\n\nMit freundlichen Grüßen",
+    "author": "Open Source Business Alliance",
+    "publishedAt": "2026-07-09T15:19:53.000Z",
+    "score": 5,
+    "tags": [
+      "opensource",
+      "informationsfreiheitsgesetz",
+      "ifg"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:eabf9b3d7e74",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Here's $870 worth of Linux knowledge for as little as $5.&nbsp;🐧 *partner link* https:// humblebundleinc.sjv.io/X4r9Lg…",
+    "url": "https://mastodon.social/@itsfoss/116890614027869211",
+    "excerpt": "Here's $870 worth of Linux knowledge for as little as $5.&nbsp;🐧 *partner link* https:// humblebundleinc.sjv.io/X4r9Lg # linux # oreilly # humblebundle",
+    "author": "It's FOSS",
+    "publishedAt": "2026-07-09T15:00:22.000Z",
     "score": 5,
     "tags": [
       "linux",
-      "securite"
+      "oreilly",
+      "humblebundle"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:d9ce8488d2c2",
+    "id": "lobsters:22cea9fb80cc",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Linux Mint Cinnamon is finally Wayland ready",
-    "url": "https://www.gamingonlinux.com/2026/07/linux-mint-cinnamon-is-finally-wayland-ready/",
-    "excerpt": "The next release of the Cinnamon desktop and Linux Mint is finally ready for Wayland - with it no longer considered to be experimental.",
-    "author": "Liam @ GamingOnLinux 🐧🎮",
-    "publishedAt": "2026-07-09T09:08:17.000Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "Peace For All – Re: Factor",
+    "url": "https://re.factorcode.org/2026/07/peace-for-all.html",
+    "excerpt": "17 points · concatenative, programming",
+    "author": "kzdnk",
+    "publishedAt": "2026-07-09T02:45:31.000-05:00",
+    "score": 17,
     "tags": [
-      "linux",
-      "linuxmint",
-      "wayland",
-      "opensource"
+      "concatenative",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:50c4229d87af",
+    "kind": "article",
+    "source": "devto",
+    "title": "Your Hand-Typed Slop Isn't Honest. It's Just Slower.",
+    "url": "https://dev.to/dannwaneri/your-hand-typed-slop-isnt-honest-its-just-slower-36ei",
+    "excerpt": "A post on X last week: \"The fact that people can't even reply to posts without AI anymore says a...",
+    "author": "Daniel Nwaneri",
+    "publishedAt": "2026-07-09T07:35:37Z",
+    "score": 34,
+    "tags": [
+      "ai",
+      "watercooler",
+      "discuss"
     ],
     "labels": [
-      "opensource"
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:The Rust Blog:986459dd7c1a",
+    "kind": "article",
+    "source": "rss",
+    "title": "Announcing Rust 1.97.0",
+    "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
+    "excerpt": "The Rust team is happy to announce a new version of Rust, 1.97.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust i…",
+    "author": "The Rust Release Team",
+    "publishedAt": "2026-07-09T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "The Rust Blog"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -261,10 +338,10 @@
     "source": "lobsters",
     "title": "Rewriting Bun in Rust",
     "url": "https://bun.com/blog/bun-in-rust",
-    "excerpt": "59 points · rust, vibecoding, zig",
+    "excerpt": "83 points · rust, vibecoding, zig",
     "author": "mitsuhiko",
     "publishedAt": "2026-07-08T16:50:54.000-05:00",
-    "score": 59,
+    "score": 83,
     "tags": [
       "rust",
       "vibecoding",
@@ -348,10 +425,10 @@
     "source": "lobsters",
     "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why",
     "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-    "excerpt": "19 points · games, programming",
+    "excerpt": "23 points · games, programming",
     "author": "Yogthos",
     "publishedAt": "2026-07-08T10:47:51.000-05:00",
-    "score": 19,
+    "score": 23,
     "tags": [
       "games",
       "programming"
@@ -368,7 +445,7 @@
     "excerpt": "Intro AI Avatar is a completely free app that lets your VRoid (VRM) 3D avatar animate in...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-07-08T12:25:01Z",
-    "score": 37,
+    "score": 47,
     "tags": [
       "ai",
       "webdev",
@@ -403,10 +480,10 @@
     "source": "lobsters",
     "title": "Jim's TrueType QR Code Font",
     "url": "https://qr.jim.sh/",
-    "excerpt": "107 points · programming",
+    "excerpt": "113 points · programming",
     "author": "markerz",
     "publishedAt": "2026-07-07T22:58:54.000-05:00",
-    "score": 107,
+    "score": 113,
     "tags": [
       "programming"
     ],
@@ -419,10 +496,10 @@
     "source": "lobsters",
     "title": "a software engineering interview question I like: computing the median",
     "url": "https://krisshamloo.com/blog/007",
-    "excerpt": "50 points · programming",
+    "excerpt": "52 points · programming",
     "author": "sunflowerseastar",
     "publishedAt": "2026-07-07T20:49:39.000-05:00",
-    "score": 50,
+    "score": 52,
     "tags": [
       "programming"
     ],
@@ -476,7 +553,7 @@
     "excerpt": "I hesitated to write this. Not because I don’t have an opinion about AI in software engineering, but...",
     "author": "Alexandra",
     "publishedAt": "2026-07-07T20:10:15Z",
-    "score": 41,
+    "score": 42,
     "tags": [
       "ai",
       "discuss",
@@ -494,10 +571,10 @@
     "source": "lobsters",
     "title": "Your Rust Service Isn't Leaking — It Could Be the Allocator",
     "url": "https://pranitha.dev/posts/rust-and-memory-allocators/",
-    "excerpt": "29 points · rust",
+    "excerpt": "30 points · rust",
     "author": "robey",
     "publishedAt": "2026-07-07T12:51:14.000-05:00",
-    "score": 29,
+    "score": 30,
     "tags": [
       "rust"
     ],
@@ -547,10 +624,10 @@
     "source": "lobsters",
     "title": "You shouldn't trust Trusted Publishing",
     "url": "https://blog.yossarian.net/2026/07/07/You-shouldnt-trust-trusted-publishing",
-    "excerpt": "36 points · python, security",
+    "excerpt": "37 points · python, security",
     "author": "yossarian",
     "publishedAt": "2026-07-07T08:13:47.000-05:00",
-    "score": 36,
+    "score": 37,
     "tags": [
       "python",
       "security"
@@ -570,7 +647,7 @@
     "excerpt": "I didn't go to a university for computer science. I have a B.Tech in Geophysics. What I know about...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-07-07T10:33:25Z",
-    "score": 48,
+    "score": 51,
     "tags": [
       "ai",
       "beginners",
@@ -658,10 +735,10 @@
     "source": "lobsters",
     "title": "Odin 1.0 Announcement",
     "url": "https://www.youtube.com/watch?v=dLPAqXi9In0",
-    "excerpt": "151 points · plt, programming, video",
+    "excerpt": "150 points · plt, programming, video",
     "author": "gingerBill",
     "publishedAt": "2026-07-07T01:20:55.000-05:00",
-    "score": 151,
+    "score": 150,
     "tags": [
       "plt",
       "programming",
@@ -679,7 +756,7 @@
     "excerpt": "Take control of your AI models with our newest skill, designed to make local fine-tuning efficient.",
     "author": "bebechien",
     "publishedAt": "2026-07-07T01:44:15Z",
-    "score": 33,
+    "score": 34,
     "tags": [
       "gemma",
       "finetuning",
@@ -692,80 +769,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Hugging Face:b29a21395768",
-    "kind": "article",
-    "source": "rss",
-    "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
-    "url": "https://huggingface.co/blog/skypilot-hf-storage",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-07-07T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:f1f4b0117d7a",
-    "kind": "article",
-    "source": "rss",
-    "title": "When the sensor starts thinking: SnortML, agentic AI, and the evolving architecture of intrusion detection​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌‍‌‍​﻿​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​‌‌‍​‍​‍﻿‌​﻿​﻿​﻿‌​‌‍‌‌​﻿‌‍​‍﻿‌​﻿‌​‌‍‌​​﻿‍‌​﻿‍​​‍﻿‌​﻿‍​​﻿‌‍​﻿‌​​﻿​‌​‍﻿‌‌‍‌‌‌‍​﻿‌‍‌‌‌‍‌‍‌‍​﻿​﻿‌﻿​﻿​‌​﻿​‌‌‍‌‍​﻿​​‌‍‌‌‌‍‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿​﻿‌‍‌‍​﻿​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​‌‌‍​‍​‍﻿‌​﻿​﻿​﻿‌​‌‍‌‌​﻿‌‍​‍﻿‌​﻿‌​‌‍‌​​﻿‍‌​﻿‍​​‍﻿‌​﻿‍​​﻿‌‍​﻿‌​​﻿​‌​‍﻿‌‌‍‌‌‌‍​﻿‌‍‌‌‌‍‌‍‌‍​﻿​﻿‌﻿​﻿​‌​﻿​‌‌‍‌‍​﻿​​‌‍‌‌‌‍‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/07/06/when-the-sensor-starts-thinking-snortml-agentic-ai-and-the-evolving-architecture-of-intrusion-detection/",
-    "excerpt": "Signature-based detection has always known what it was looking for. Machine learning and autonomous agents are changing the question entirely, shifting from &quot;does this match a known pattern?&quo…",
-    "author": "Samaresh Kumar Singh",
-    "publishedAt": "2026-07-06T15:23:34.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:6c88834b63ab",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "PREEMPT_NONE Is Dead; Your Postgres Probably Doesn’t Care",
-    "url": "https://thebuild.com/blog/preempt_none-is-dead-your-postgres-probably-doesnt-care/",
-    "excerpt": "29 points · databases, linux, performance",
-    "author": "kngl",
-    "publishedAt": "2026-07-06T07:31:02.000-05:00",
-    "score": 29,
-    "tags": [
-      "databases",
-      "linux",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:bbc4fdd2a3fa",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "fin: a Jellyfin & Subsonic client for the terminal",
-    "url": "https://tangled.org/tsiry-sandratraina.com/fin",
-    "excerpt": "23 points · rust, show",
-    "author": "op",
-    "publishedAt": "2026-07-06T05:06:13.000-05:00",
-    "score": 23,
-    "tags": [
-      "rust",
-      "show"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -774,7 +777,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-07-04T21:45:40Z",
-    "score": 391511,
+    "score": 391526,
     "tags": [
       "Python",
       "books",
@@ -797,7 +800,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307152,
+    "score": 307191,
     "tags": [
       "Python",
       "awesome",
@@ -821,7 +824,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-06T11:21:27Z",
-    "score": 272595,
+    "score": 272622,
     "tags": [
       "Python",
       "beginner-project",
@@ -849,7 +852,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-06T19:04:41Z",
-    "score": 222512,
+    "score": 222517,
     "tags": [
       "Python",
       "algorithm",
@@ -880,8 +883,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-09T09:34:15Z",
-    "score": 211861,
+    "publishedAt": "2026-07-09T14:11:08Z",
+    "score": 212046,
     "tags": [
       "Python",
       "ai",
@@ -915,8 +918,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-09T09:59:24Z",
-    "score": 185434,
+    "publishedAt": "2026-07-09T13:20:21Z",
+    "score": 185441,
     "tags": [
       "Python",
       "agentic-ai",
@@ -946,7 +949,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-07-06T21:46:30Z",
-    "score": 176595,
+    "score": 176676,
     "tags": [
       "Python",
       "cli",
@@ -970,8 +973,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-09T09:57:52Z",
-    "score": 162405,
+    "publishedAt": "2026-07-09T15:23:30Z",
+    "score": 162416,
     "tags": [
       "Python",
       "audio",
@@ -1010,7 +1013,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-07-09T07:23:43Z",
-    "score": 117918,
+    "score": 117933,
     "tags": [
       "Rust",
       "android",
@@ -1047,7 +1050,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-07-09T02:02:24Z",
-    "score": 115109,
+    "score": 115216,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1086,8 +1089,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-09T09:53:13Z",
-    "score": 114476,
+    "publishedAt": "2026-07-09T15:29:58Z",
+    "score": 114484,
     "tags": [
       "Rust",
       "compiler",
@@ -1107,8 +1110,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-09T08:18:47Z",
-    "score": 108837,
+    "publishedAt": "2026-07-09T15:02:54Z",
+    "score": 108853,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1133,8 +1136,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-09T09:47:20Z",
-    "score": 107580,
+    "publishedAt": "2026-07-09T14:08:16Z",
+    "score": 107586,
     "tags": [
       "Rust",
       "deno",
@@ -1156,8 +1159,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-09T09:58:19Z",
-    "score": 96482,
+    "publishedAt": "2026-07-09T15:17:17Z",
+    "score": 96555,
     "tags": [
       "Rust"
     ],
@@ -1175,7 +1178,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-06T22:43:02Z",
-    "score": 94204,
+    "score": 94206,
     "tags": [
       "Java",
       "awesome-list",
@@ -1200,8 +1203,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-09T09:58:58Z",
-    "score": 93693,
+    "publishedAt": "2026-07-09T15:30:31Z",
+    "score": 93708,
     "tags": [
       "Rust",
       "bun",
@@ -1232,8 +1235,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-07-09T09:31:17Z",
-    "score": 87269,
+    "publishedAt": "2026-07-09T15:29:41Z",
+    "score": 87283,
     "tags": [
       "Rust",
       "packaging",
@@ -1255,8 +1258,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-09T09:57:00Z",
-    "score": 86562,
+    "publishedAt": "2026-07-09T15:25:40Z",
+    "score": 86580,
     "tags": [
       "Java",
       "docker",
