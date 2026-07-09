@@ -218,41 +218,40 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:19dd7b7fccff",
+    "id": "mastodon:a8d205a86e6a",
     "kind": "article",
     "source": "mastodon",
-    "title": "Any Python users here? Not really a Python dev here, but I use pip when asked to install something. Today I saw `uv` to…",
-    "url": "https://phpc.social/@outofcontrol/116887493648687955",
-    "excerpt": "Any Python users here? Not really a Python dev here, but I use pip when asked to install something. Today I saw `uv` to install something. Which do Python devs here prefer, `uv` or `pip`? # python",
-    "author": "Out of Control :laravel:  🇨🇦",
-    "publishedAt": "2026-07-09T01:46:49.000Z",
-    "score": 10,
+    "title": "GitHub - qxnode/luks-deadman: USB kill switch + dead man's switch for Linux server: automatic LUKS header wipe on USB disconnection or operator inactivity. · GitHub - Liens en vrac de sebsauvage",
+    "url": "https://sebsauvage.net/links/?dIanfA",
+    "excerpt": ":linux: # Linux # sécurité Vous voulez faire comme dans les films, des serveurs qui se détruisent si la police essaie de les saisir ? Pas besoin de mettre vos disques au micro-onde. Un bon logiciel s…",
+    "author": "sebsauvage",
+    "publishedAt": "2026-07-09T09:44:01.000Z",
+    "score": 5,
     "tags": [
-      "python"
+      "linux",
+      "securite"
     ],
-    "labels": [
-      "python"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:525ad3679fdc",
+    "id": "mastodon:d9ce8488d2c2",
     "kind": "article",
     "source": "mastodon",
-    "title": "GitHub - EthanPlant/Elsewhere",
-    "url": "https://github.com/EthanPlant/Elsewhere",
-    "excerpt": "Contribute to EthanPlant/Elsewhere development by creating an account on GitHub.",
-    "author": "Ethan Plant",
-    "publishedAt": "2026-07-08T23:22:33.000Z",
+    "title": "Linux Mint Cinnamon is finally Wayland ready",
+    "url": "https://www.gamingonlinux.com/2026/07/linux-mint-cinnamon-is-finally-wayland-ready/",
+    "excerpt": "The next release of the Cinnamon desktop and Linux Mint is finally ready for Wayland - with it no longer considered to be experimental.",
+    "author": "Liam @ GamingOnLinux 🐧🎮",
+    "publishedAt": "2026-07-09T09:08:17.000Z",
     "score": 5,
     "tags": [
-      "indieweb",
-      "posse",
-      "SmallWeb",
-      "rust"
+      "linux",
+      "linuxmint",
+      "wayland",
+      "opensource"
     ],
     "labels": [
-      "rust"
+      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -262,10 +261,10 @@
     "source": "lobsters",
     "title": "Rewriting Bun in Rust",
     "url": "https://bun.com/blog/bun-in-rust",
-    "excerpt": "32 points · rust, vibecoding, zig",
+    "excerpt": "59 points · rust, vibecoding, zig",
     "author": "mitsuhiko",
     "publishedAt": "2026-07-08T16:50:54.000-05:00",
-    "score": 32,
+    "score": 59,
     "tags": [
       "rust",
       "vibecoding",
@@ -349,10 +348,10 @@
     "source": "lobsters",
     "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why",
     "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-    "excerpt": "17 points · games, programming",
+    "excerpt": "19 points · games, programming",
     "author": "Yogthos",
     "publishedAt": "2026-07-08T10:47:51.000-05:00",
-    "score": 17,
+    "score": 19,
     "tags": [
       "games",
       "programming"
@@ -369,7 +368,7 @@
     "excerpt": "Intro AI Avatar is a completely free app that lets your VRoid (VRM) 3D avatar animate in...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-07-08T12:25:01Z",
-    "score": 33,
+    "score": 37,
     "tags": [
       "ai",
       "webdev",
@@ -379,29 +378,6 @@
     "labels": [
       "ai",
       "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:510ae8db41bd",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "DNS-collector",
-    "url": "https://dmachard.github.io/DNS-collector/",
-    "excerpt": "Capture DNS traffic, process it intelligently, and stream it downstream",
-    "author": "Denis Machard",
-    "publishedAt": "2026-07-08T09:29:07.926Z",
-    "score": 7,
-    "tags": [
-      "dns",
-      "LoveDNS",
-      "golang",
-      "opensource",
-      "observability"
-    ],
-    "labels": [
-      "go",
-      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -427,10 +403,10 @@
     "source": "lobsters",
     "title": "Jim's TrueType QR Code Font",
     "url": "https://qr.jim.sh/",
-    "excerpt": "103 points · programming",
+    "excerpt": "107 points · programming",
     "author": "markerz",
     "publishedAt": "2026-07-07T22:58:54.000-05:00",
-    "score": 103,
+    "score": 107,
     "tags": [
       "programming"
     ],
@@ -443,10 +419,10 @@
     "source": "lobsters",
     "title": "a software engineering interview question I like: computing the median",
     "url": "https://krisshamloo.com/blog/007",
-    "excerpt": "49 points · programming",
+    "excerpt": "50 points · programming",
     "author": "sunflowerseastar",
     "publishedAt": "2026-07-07T20:49:39.000-05:00",
-    "score": 49,
+    "score": 50,
     "tags": [
       "programming"
     ],
@@ -518,10 +494,10 @@
     "source": "lobsters",
     "title": "Your Rust Service Isn't Leaking — It Could Be the Allocator",
     "url": "https://pranitha.dev/posts/rust-and-memory-allocators/",
-    "excerpt": "28 points · rust",
+    "excerpt": "29 points · rust",
     "author": "robey",
     "publishedAt": "2026-07-07T12:51:14.000-05:00",
-    "score": 28,
+    "score": 29,
     "tags": [
       "rust"
     ],
@@ -571,10 +547,10 @@
     "source": "lobsters",
     "title": "You shouldn't trust Trusted Publishing",
     "url": "https://blog.yossarian.net/2026/07/07/You-shouldnt-trust-trusted-publishing",
-    "excerpt": "35 points · python, security",
+    "excerpt": "36 points · python, security",
     "author": "yossarian",
     "publishedAt": "2026-07-07T08:13:47.000-05:00",
-    "score": 35,
+    "score": 36,
     "tags": [
       "python",
       "security"
@@ -594,7 +570,7 @@
     "excerpt": "I didn't go to a university for computer science. I have a B.Tech in Geophysics. What I know about...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-07-07T10:33:25Z",
-    "score": 43,
+    "score": 48,
     "tags": [
       "ai",
       "beginners",
@@ -612,10 +588,10 @@
     "source": "lobsters",
     "title": "Together for a healthier Clippy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/07/06/unite-for-clippy/",
-    "excerpt": "84 points · rust",
+    "excerpt": "85 points · rust",
     "author": "blyxyas",
     "publishedAt": "2026-07-07T04:35:02.000-05:00",
-    "score": 84,
+    "score": 85,
     "tags": [
       "rust"
     ],
@@ -682,10 +658,10 @@
     "source": "lobsters",
     "title": "Odin 1.0 Announcement",
     "url": "https://www.youtube.com/watch?v=dLPAqXi9In0",
-    "excerpt": "148 points · plt, programming, video",
+    "excerpt": "151 points · plt, programming, video",
     "author": "gingerBill",
     "publishedAt": "2026-07-07T01:20:55.000-05:00",
-    "score": 148,
+    "score": 151,
     "tags": [
       "plt",
       "programming",
@@ -771,6 +747,25 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:bbc4fdd2a3fa",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "fin: a Jellyfin & Subsonic client for the terminal",
+    "url": "https://tangled.org/tsiry-sandratraina.com/fin",
+    "excerpt": "23 points · rust, show",
+    "author": "op",
+    "publishedAt": "2026-07-06T05:06:13.000-05:00",
+    "score": 23,
+    "tags": [
+      "rust",
+      "show"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:d353474e3996",
     "kind": "trending",
     "source": "github",
@@ -779,7 +774,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-07-04T21:45:40Z",
-    "score": 391495,
+    "score": 391511,
     "tags": [
       "Python",
       "books",
@@ -802,7 +797,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307075,
+    "score": 307152,
     "tags": [
       "Python",
       "awesome",
@@ -826,7 +821,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-06T11:21:27Z",
-    "score": 272573,
+    "score": 272595,
     "tags": [
       "Python",
       "beginner-project",
@@ -854,7 +849,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-06T19:04:41Z",
-    "score": 222507,
+    "score": 222512,
     "tags": [
       "Python",
       "algorithm",
@@ -885,8 +880,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-09T04:01:28Z",
-    "score": 211693,
+    "publishedAt": "2026-07-09T09:34:15Z",
+    "score": 211861,
     "tags": [
       "Python",
       "ai",
@@ -920,8 +915,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-09T03:46:28Z",
-    "score": 185435,
+    "publishedAt": "2026-07-09T09:59:24Z",
+    "score": 185434,
     "tags": [
       "Python",
       "agentic-ai",
@@ -951,7 +946,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-07-06T21:46:30Z",
-    "score": 176512,
+    "score": 176595,
     "tags": [
       "Python",
       "cli",
@@ -975,8 +970,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-09T02:41:16Z",
-    "score": 162398,
+    "publishedAt": "2026-07-09T09:57:52Z",
+    "score": 162405,
     "tags": [
       "Python",
       "audio",
@@ -1014,8 +1009,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-07-08T08:35:35Z",
-    "score": 117898,
+    "publishedAt": "2026-07-09T07:23:43Z",
+    "score": 117918,
     "tags": [
       "Rust",
       "android",
@@ -1052,7 +1047,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-07-09T02:02:24Z",
-    "score": 114928,
+    "score": 115109,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1091,8 +1086,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-09T04:00:56Z",
-    "score": 114445,
+    "publishedAt": "2026-07-09T09:53:13Z",
+    "score": 114476,
     "tags": [
       "Rust",
       "compiler",
@@ -1112,8 +1107,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-09T02:31:16Z",
-    "score": 108828,
+    "publishedAt": "2026-07-09T08:18:47Z",
+    "score": 108837,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1138,8 +1133,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-09T02:01:01Z",
-    "score": 107579,
+    "publishedAt": "2026-07-09T09:47:20Z",
+    "score": 107580,
     "tags": [
       "Rust",
       "deno",
@@ -1161,8 +1156,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-09T04:10:01Z",
-    "score": 96386,
+    "publishedAt": "2026-07-09T09:58:19Z",
+    "score": 96482,
     "tags": [
       "Rust"
     ],
@@ -1180,7 +1175,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-06T22:43:02Z",
-    "score": 94203,
+    "score": 94204,
     "tags": [
       "Java",
       "awesome-list",
@@ -1205,8 +1200,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-09T04:13:56Z",
-    "score": 93669,
+    "publishedAt": "2026-07-09T09:58:58Z",
+    "score": 93693,
     "tags": [
       "Rust",
       "bun",
@@ -1237,8 +1232,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-07-09T02:49:00Z",
-    "score": 87250,
+    "publishedAt": "2026-07-09T09:31:17Z",
+    "score": 87269,
     "tags": [
       "Rust",
       "packaging",
@@ -1260,8 +1255,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-09T02:34:49Z",
-    "score": 86537,
+    "publishedAt": "2026-07-09T09:57:00Z",
+    "score": 86562,
     "tags": [
       "Java",
       "docker",
