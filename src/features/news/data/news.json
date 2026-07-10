@@ -218,63 +218,206 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:97719c3a7bdf",
+    "id": "mastodon:eb91b5226dc1",
     "kind": "article",
     "source": "mastodon",
-    "title": "Just a thought from an everyday Linux user 🐧 I'm not an IT professional. When I first moved to Linux, I was cautious wi…",
-    "url": "https://mastodon.world/@Carmelo_TJG/116890704588081465",
-    "excerpt": "Just a thought from an everyday Linux user 🐧 I'm not an IT professional. When I first moved to Linux, I was cautious with the terminal because I didn't want to break my system. As I learned more abou…",
-    "author": "Carmelo",
-    "publishedAt": "2026-07-09T15:23:24.000Z",
-    "score": 8,
+    "title": "🔎Rusty textures at an abandoned bicycle workshop in Northern Ireland. I loved these old signs and petrol pumps; it was…",
+    "url": "https://mstdn.social/@ObsidianUrbex/116894750003081220",
+    "excerpt": "🔎Rusty textures at an abandoned bicycle workshop in Northern Ireland. I loved these old signs and petrol pumps; it was a fantastic excuse to take some detail shots. Bonus points, check out the last p…",
+    "author": "Obsidian Urbex Photography",
+    "publishedAt": "2026-07-10T08:32:12.000Z",
+    "score": 25,
     "tags": [
-      "privacy",
-      "linux",
-      "opensource",
-      "ai"
+      "textures",
+      "ireland",
+      "photography",
+      "rustic",
+      "rust",
+      "abandoned"
     ],
     "labels": [
-      "opensource",
-      "ai"
+      "rust"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:4a3975277e76",
+    "id": "rss:Stack Overflow Blog:80a86404b022",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Antrag auf Dokumentenzugang gemäß Verordnung (EG) Nr. 1049/2001 – Strategische Beschaffungsentscheidung zu Microsoft 365 und Prüfung europäischer Open-Source-Alternativen (ZenDiS / openDesk)",
-    "url": "https://fragdenstaat.de/anfrage/antrag-auf-dokumentenzugang-gemaess-verordnung-eg-nr-1049-2001-strategische-beschaffungsentscheidung-zu-microsoft-365-und-pruefung-europaeischer-open-source-alternativen-zendis-opendesk-1/",
-    "excerpt": "Antrag nach EU-Verordnungen 1049/2001 sowie 1367/2006\n\nGuten Tag,\n\ndie Europäische Kommission betont in ihren strategischen Leitlinien fortlaufend die Bedeutung der „digitalen Souveränität“ Europas. Dennoch hat die Kommission im Juli 2025 die Nutzung von Microsoft 365 (M365) durch Vertragsanpassungen verstetigt, anstatt auf europäische, quelloffene Alternativen umzusteigen.\n\nAuf Basis der Verordnungen 1049/2001 sowie 1367/2006 bitte ich Sie um Übersendung von Dokumenten, die folgende Informationen enthalten:\n1. Sämtliche Markterkundungsberichte, Wirtschaftlichkeitsprüfungen und strategischen Evaluierungen aus den Jahren 2024 und 2025, in denen die Europäische Kommission im Zuge des EDSB-Verfahrens geprüft hat, ob Teile oder die Gesamtheit der M365-Infrastruktur durch europäische Open-Source-Lösungen (wie z. B. die vom deutschen Zentrum für Digitale Souveränität [ZenDiS] koordinierte Suite openDesk) ersetzt werden können.\n2. Die Protokolle, Agenden und Abschlussberichte von Konsultationen zwischen der Europäischen Kommission und Vertretern von EU-Mitgliedstaaten (insbesondere dem deutschen Bundesministerium des Innern / ZenDiS bzw. im Rahmen des Digital Commons EDIC), die die Eignung und Skalierbarkeit europäischer digitaler Gemeingüter als Ersatz für US-proprietäre Software zum Gegenstand hatten.\n3. Interne politische Lageberichte, Briefings für die Kommissarsebene oder Risikoanalysen der Generaldirektion Informatik (DIGIT), die sich mit dem strategischen Risiko einer dauerhaften Anbieterabhängigkeit (Vendor Lock-In) von der Microsoft Corporation und den geopolitischen Implikationen (insb. Zugriffsmöglichkeiten von US-Behörden via CLOUD Act) befassen.\n4. Dokumente und interne Vermerke, aus denen hervorgeht, welche politischen und wirtschaftlichen Kriterien letztlich den Ausschlag dafür gaben, den Verbleib im Microsoft-Ökosystem einer Migration auf souveräne europäische Software-Infrastrukturen vorzuziehen.\n\nSollten Teile der Dokumente rechtlichen Ausnahmetatbeständen unterliegen, beantrage ich die Schwärzung der betroffenen Passagen und die Herausgabe der verbleibenden Teile.\n\nIch weise ausdrücklich darauf hin, dass ich eine Antwort per E-Mail an diese Adresse und nicht über ein Webportal wünsche. Ich möchte Sie um eine Empfangsbestätigung bitten und danke Ihnen für Ihre Mühe!\n\nMit freundlichen Grüßen",
-    "author": "Open Source Business Alliance",
-    "publishedAt": "2026-07-09T15:19:53.000Z",
-    "score": 5,
+    "source": "rss",
+    "title": "Building more than just an agent harness​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿​﻿‌‍​‍‌‍​‍​﻿​‍​‍﻿‌​﻿‌​‌‍‌‍​﻿‌‍​﻿‍‌​‍﻿‌‌‍​‌‌‍‌‌‌‍​‍‌‍‌‌​‍﻿‌‌‍‌​​﻿​﻿​﻿​‌‌‍‌​​﻿​‌​﻿‍‌​﻿‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌​​﻿‌​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿​﻿‌‍​‍‌‍​‍​﻿​‍​‍﻿‌​﻿‌​‌‍‌‍​﻿‌‍​﻿‍‌​‍﻿‌‌‍​‌‌‍‌‌‌‍​‍‌‍‌‌​‍﻿‌‌‍‌​​﻿​﻿​﻿​‌‌‍‌​​﻿​‌​﻿‍‌​﻿‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌​​﻿‌​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/07/10/building-more-than-just-an-agent-harness/",
+    "excerpt": "Live from Microsoft Build, Ryan is joined by Jay Parikh, Microsoft’s VP of AI Core, for a conversation on what enterprises need to build, deploy, and run AI agents at scale with demonstrable ROI; how…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-07-10T07:40:00.000Z",
+    "score": 0,
     "tags": [
-      "opensource",
-      "informationsfreiheitsgesetz",
-      "ifg"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:eabf9b3d7e74",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Here's $870 worth of Linux knowledge for as little as $5.&nbsp;🐧 *partner link* https:// humblebundleinc.sjv.io/X4r9Lg…",
-    "url": "https://mastodon.social/@itsfoss/116890614027869211",
-    "excerpt": "Here's $870 worth of Linux knowledge for as little as $5.&nbsp;🐧 *partner link* https:// humblebundleinc.sjv.io/X4r9Lg # linux # oreilly # humblebundle",
-    "author": "It's FOSS",
-    "publishedAt": "2026-07-09T15:00:22.000Z",
-    "score": 5,
-    "tags": [
-      "linux",
-      "oreilly",
-      "humblebundle"
+      "Stack Overflow Blog"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:235895774d49",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "A Scale-Invariance-Based Algorithm Application For Land Surface Temperature Downscaling In Denmark -- https:// doi.org/…",
+    "url": "https://techhub.social/@GregCocks/116893901201233613",
+    "excerpt": "A Scale-Invariance-Based Algorithm Application For Land Surface Temperature Downscaling In Denmark -- https:// doi.org/10.3390/rs18132263 &lt;-- shared paper -- https:// zenodo.org/records/20863040 &…",
+    "author": "💧🌏 Greg Cocks",
+    "publishedAt": "2026-07-10T04:56:21.000Z",
+    "score": 5,
+    "tags": [
+      "urbanclimate",
+      "downscaling",
+      "landsurfacetemperature",
+      "lst",
+      "ai",
+      "machinelearning",
+      "scaleinvariance",
+      "residualcorrection",
+      "sentinel",
+      "landsat",
+      "satellite",
+      "remotesensing",
+      "earthobservation",
+      "clim4cities",
+      "climateservices",
+      "climateadaptation",
+      "heatwave",
+      "temperature",
+      "ontheground",
+      "copenhagen",
+      "denmark",
+      "impervioussurface",
+      "asphalt",
+      "roof",
+      "concrete",
+      "albedo",
+      "heatabsorption",
+      "mitigation",
+      "urban",
+      "urbancentre",
+      "treecover",
+      "vegetation",
+      "UrbanHeatIsland",
+      "planning",
+      "design",
+      "hotspots",
+      "monitoring",
+      "spatialAnalysis",
+      "spatiotemporal",
+      "model",
+      "modeling",
+      "usecase",
+      "operational",
+      "climatechange",
+      "extremeweather",
+      "evidencebased",
+      "Adapation",
+      "sustainability",
+      "urbanplanning",
+      "climateresilience",
+      "essentialclimatevariable",
+      "ECV"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:145fbd552c75",
+    "kind": "article",
+    "source": "rss",
+    "title": "Profiling in PyTorch (Part 3): Attention is all you profile",
+    "url": "https://huggingface.co/blog/torch-attention-profile",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-07-10T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:3b51a470a832",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Announcing TypeScript 7.0 - TypeScript",
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+    "excerpt": "Today we are proud to announce the availability of TypeScript 7, a 10x faster native port of TypeScript! Since its early days, TypeScript has promised to",
+    "author": "Mike Taylor 🦕",
+    "publishedAt": "2026-07-09T19:23:06.000Z",
+    "score": 9,
+    "tags": [
+      "golang"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:e997c3a1a679",
+    "kind": "article",
+    "source": "rss",
+    "title": "How GitHub gave every repository a durable owner",
+    "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
+    "excerpt": "GitHub has over 14,000 repositories across our primary internal GitHub organization. As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner…",
+    "author": "Michael Recachinas",
+    "publishedAt": "2026-07-09T16:29:37.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:14ca221c367a",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Announcing Rust 1.97.0",
+    "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
+    "excerpt": "51 points · release, rust",
+    "author": "imadij",
+    "publishedAt": "2026-07-09T09:56:32.000-05:00",
+    "score": 51,
+    "tags": [
+      "release",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:413fb365199e",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Deleted 200 Lines of Code I Didn't Write and Learned More Than When I Wrote It...",
+    "url": "https://dev.to/gamya_m/i-deleted-200-lines-of-code-i-didnt-write-and-learned-more-than-when-i-wrote-it-18dd",
+    "excerpt": "Quick note before we dive in — I know I've been off track from the iOS/Swift series lately. I just...",
+    "author": "Gamya",
+    "publishedAt": "2026-07-09T08:44:00Z",
+    "score": 33,
+    "tags": [
+      "devops",
+      "programming",
+      "ai",
+      "career"
+    ],
+    "labels": [
+      "devops",
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -283,10 +426,10 @@
     "source": "lobsters",
     "title": "Peace For All – Re: Factor",
     "url": "https://re.factorcode.org/2026/07/peace-for-all.html",
-    "excerpt": "17 points · concatenative, programming",
+    "excerpt": "31 points · concatenative, programming",
     "author": "kzdnk",
     "publishedAt": "2026-07-09T02:45:31.000-05:00",
-    "score": 17,
+    "score": 31,
     "tags": [
       "concatenative",
       "programming"
@@ -303,7 +446,7 @@
     "excerpt": "A post on X last week: \"The fact that people can't even reply to posts without AI anymore says a...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-07-09T07:35:37Z",
-    "score": 34,
+    "score": 43,
     "tags": [
       "ai",
       "watercooler",
@@ -315,33 +458,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:The Rust Blog:986459dd7c1a",
-    "kind": "article",
-    "source": "rss",
-    "title": "Announcing Rust 1.97.0",
-    "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
-    "excerpt": "The Rust team is happy to announce a new version of Rust, 1.97.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust i…",
-    "author": "The Rust Release Team",
-    "publishedAt": "2026-07-09T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "The Rust Blog"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:04a6cab90e4a",
     "kind": "article",
     "source": "lobsters",
     "title": "Rewriting Bun in Rust",
     "url": "https://bun.com/blog/bun-in-rust",
-    "excerpt": "83 points · rust, vibecoding, zig",
+    "excerpt": "120 points · rust, vibecoding, zig",
     "author": "mitsuhiko",
     "publishedAt": "2026-07-08T16:50:54.000-05:00",
-    "score": 83,
+    "score": 120,
     "tags": [
       "rust",
       "vibecoding",
@@ -425,10 +550,10 @@
     "source": "lobsters",
     "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why",
     "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-    "excerpt": "23 points · games, programming",
+    "excerpt": "25 points · games, programming",
     "author": "Yogthos",
     "publishedAt": "2026-07-08T10:47:51.000-05:00",
-    "score": 23,
+    "score": 25,
     "tags": [
       "games",
       "programming"
@@ -445,7 +570,7 @@
     "excerpt": "Intro AI Avatar is a completely free app that lets your VRoid (VRM) 3D avatar animate in...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-07-08T12:25:01Z",
-    "score": 47,
+    "score": 50,
     "tags": [
       "ai",
       "webdev",
@@ -480,14 +605,55 @@
     "source": "lobsters",
     "title": "Jim's TrueType QR Code Font",
     "url": "https://qr.jim.sh/",
-    "excerpt": "113 points · programming",
+    "excerpt": "114 points · programming",
     "author": "markerz",
     "publishedAt": "2026-07-07T22:58:54.000-05:00",
-    "score": 113,
+    "score": 114,
     "tags": [
       "programming"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:06dc364666d1",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Started Writing My Prediction Before Reading the AI's Answer. Here's What Happened.",
+    "url": "https://dev.to/gamya_m/i-started-writing-my-prediction-before-reading-the-ais-answer-heres-what-happened-9c5",
+    "excerpt": "So a few days ago I was in a comment thread arguing about whether AI is quietly ruining junior...",
+    "author": "Gamya",
+    "publishedAt": "2026-07-08T03:58:48Z",
+    "score": 41,
+    "tags": [
+      "discuss",
+      "ai",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:ee286f1f606a",
+    "kind": "article",
+    "source": "devto",
+    "title": "Stratagems #8: Alex Watched an AI Dashboard Take Over. He Kept the Keys Under the Table.",
+    "url": "https://dev.to/xulingfeng/stratagems-8-alex-watched-an-ai-dashboard-take-over-he-kept-the-keys-under-the-table-3n70",
+    "excerpt": "Deceive the enemy with an obvious approach that will take a very long time, while ambushing them...",
+    "author": "xulingfeng",
+    "publishedAt": "2026-07-08T03:58:05Z",
+    "score": 49,
+    "tags": [
+      "discuss",
+      "ai",
+      "career",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -496,10 +662,10 @@
     "source": "lobsters",
     "title": "a software engineering interview question I like: computing the median",
     "url": "https://krisshamloo.com/blog/007",
-    "excerpt": "52 points · programming",
+    "excerpt": "54 points · programming",
     "author": "sunflowerseastar",
     "publishedAt": "2026-07-07T20:49:39.000-05:00",
-    "score": 52,
+    "score": 54,
     "tags": [
       "programming"
     ],
@@ -553,7 +719,7 @@
     "excerpt": "I hesitated to write this. Not because I don’t have an opinion about AI in software engineering, but...",
     "author": "Alexandra",
     "publishedAt": "2026-07-07T20:10:15Z",
-    "score": 42,
+    "score": 47,
     "tags": [
       "ai",
       "discuss",
@@ -647,121 +813,12 @@
     "excerpt": "I didn't go to a university for computer science. I have a B.Tech in Geophysics. What I know about...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-07-07T10:33:25Z",
-    "score": 51,
+    "score": 55,
     "tags": [
       "ai",
       "beginners",
       "productivity",
       "career"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:1ace9e0e2906",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Together for a healthier Clippy",
-    "url": "https://blog.rust-lang.org/inside-rust/2026/07/06/unite-for-clippy/",
-    "excerpt": "85 points · rust",
-    "author": "blyxyas",
-    "publishedAt": "2026-07-07T04:35:02.000-05:00",
-    "score": 85,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:10595e4279da",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Why false sharing alignment should be 128 bytes on x64",
-    "url": "https://monoid.github.io/posts/false-sharing-alignment/",
-    "excerpt": "39 points · performance",
-    "author": "monoid",
-    "publishedAt": "2026-07-07T03:22:58.000-05:00",
-    "score": 39,
-    "tags": [
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:384626cb965c",
-    "kind": "article",
-    "source": "rss",
-    "title": "Agent orchestration is so two-years ago​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​‍‌‍​‍​﻿​﻿​﻿​﻿​﻿‌​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‍​﻿​﻿​﻿​﻿​‍﻿‌​﻿‌​‌‍‌‌​﻿‌﻿‌‍‌​​‍﻿‌‌‍​‌​﻿​‌​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍‌‍‌‍​‍‌‍​‌​﻿​‌​﻿‌​​﻿‌﻿​﻿​‍‌‍​﻿​﻿​‍‌‍‌‍‌‍​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​‍‌‍​‍​﻿​﻿​﻿​﻿​﻿‌​‌‍‌‌​‍﻿‌​﻿‌​​﻿​‍​﻿​﻿​﻿​﻿​‍﻿‌​﻿‌​‌‍‌‌​﻿‌﻿‌‍‌​​‍﻿‌‌‍​‌​﻿​‌​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍‌‍‌‍​‍‌‍​‌​﻿​‌​﻿‌​​﻿‌﻿​﻿​‍‌‍​﻿​﻿​‍‌‍‌‍‌‍​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/07/07/agent-orchestration-is-so-two-years-ago/",
-    "excerpt": "Ryan welcomes Saahil Jain, CTO of You.com, to discuss why building agents with a 2024 mindset is a mistake as modern models improve at long-horizon tasks, why heavy orchestration layers can hurt mode…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-07-07T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:93771e535db8",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Google’s exponential path to climate-wrecking digital bloat",
-    "url": "https://ketanjoshi.co/2026/07/01/googles-exponential-path-to-climate-wrecking-digital-bloat/",
-    "excerpt": "136 points · ai",
-    "author": "sjamaan",
-    "publishedAt": "2026-07-07T02:33:16.000-05:00",
-    "score": 136,
-    "tags": [
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:502bd69b3756",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Odin 1.0 Announcement",
-    "url": "https://www.youtube.com/watch?v=dLPAqXi9In0",
-    "excerpt": "150 points · plt, programming, video",
-    "author": "gingerBill",
-    "publishedAt": "2026-07-07T01:20:55.000-05:00",
-    "score": 150,
-    "tags": [
-      "plt",
-      "programming",
-      "video"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:f6116d37abc0",
-    "kind": "article",
-    "source": "devto",
-    "title": "Master Local Fine-Tuning with \"gemma-trainer\"",
-    "url": "https://dev.to/googleai/master-local-fine-tuning-with-gemma-trainer-3ipp",
-    "excerpt": "Take control of your AI models with our newest skill, designed to make local fine-tuning efficient.",
-    "author": "bebechien",
-    "publishedAt": "2026-07-07T01:44:15Z",
-    "score": 34,
-    "tags": [
-      "gemma",
-      "finetuning",
-      "ai",
-      "agents"
     ],
     "labels": [
       "ai"
@@ -777,7 +834,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-07-04T21:45:40Z",
-    "score": 391526,
+    "score": 391568,
     "tags": [
       "Python",
       "books",
@@ -800,7 +857,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307191,
+    "score": 307354,
     "tags": [
       "Python",
       "awesome",
@@ -824,7 +881,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-06T11:21:27Z",
-    "score": 272622,
+    "score": 272702,
     "tags": [
       "Python",
       "beginner-project",
@@ -852,7 +909,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-06T19:04:41Z",
-    "score": 222517,
+    "score": 222536,
     "tags": [
       "Python",
       "algorithm",
@@ -883,8 +940,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-09T14:11:08Z",
-    "score": 212046,
+    "publishedAt": "2026-07-10T09:03:18Z",
+    "score": 212490,
     "tags": [
       "Python",
       "ai",
@@ -918,8 +975,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-09T13:20:21Z",
-    "score": 185441,
+    "publishedAt": "2026-07-10T09:38:54Z",
+    "score": 185447,
     "tags": [
       "Python",
       "agentic-ai",
@@ -948,8 +1005,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-07-06T21:46:30Z",
-    "score": 176676,
+    "publishedAt": "2026-07-09T23:11:00Z",
+    "score": 176929,
     "tags": [
       "Python",
       "cli",
@@ -973,8 +1030,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-09T15:23:30Z",
-    "score": 162416,
+    "publishedAt": "2026-07-10T09:24:15Z",
+    "score": 162432,
     "tags": [
       "Python",
       "audio",
@@ -1012,8 +1069,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-07-09T07:23:43Z",
-    "score": 117933,
+    "publishedAt": "2026-07-10T07:21:57Z",
+    "score": 117989,
     "tags": [
       "Rust",
       "android",
@@ -1049,8 +1106,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-07-09T02:02:24Z",
-    "score": 115216,
+    "publishedAt": "2026-07-09T18:39:52Z",
+    "score": 115516,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1089,8 +1146,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-09T15:29:58Z",
-    "score": 114484,
+    "publishedAt": "2026-07-10T09:39:27Z",
+    "score": 114618,
     "tags": [
       "Rust",
       "compiler",
@@ -1110,8 +1167,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-09T15:02:54Z",
-    "score": 108853,
+    "publishedAt": "2026-07-10T04:01:17Z",
+    "score": 108883,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1136,8 +1193,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-09T14:08:16Z",
-    "score": 107586,
+    "publishedAt": "2026-07-10T09:21:56Z",
+    "score": 107701,
     "tags": [
       "Rust",
       "deno",
@@ -1159,8 +1216,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-09T15:17:17Z",
-    "score": 96555,
+    "publishedAt": "2026-07-10T09:41:27Z",
+    "score": 96863,
     "tags": [
       "Rust"
     ],
@@ -1203,8 +1260,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-09T15:30:31Z",
-    "score": 93708,
+    "publishedAt": "2026-07-10T09:27:46Z",
+    "score": 93848,
     "tags": [
       "Rust",
       "bun",
@@ -1235,8 +1292,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-07-09T15:29:41Z",
-    "score": 87283,
+    "publishedAt": "2026-07-10T09:09:05Z",
+    "score": 87312,
     "tags": [
       "Rust",
       "packaging",
@@ -1258,8 +1315,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-09T15:25:40Z",
-    "score": 86580,
+    "publishedAt": "2026-07-10T09:50:14Z",
+    "score": 86712,
     "tags": [
       "Java",
       "docker",
