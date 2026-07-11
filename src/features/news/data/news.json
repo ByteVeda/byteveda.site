@@ -218,21 +218,19 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:485a39441604",
+    "id": "mastodon:6de461664614",
     "kind": "article",
     "source": "mastodon",
-    "title": "txt2img via Craiyon",
-    "url": "https://girldotapk.wordpress.com/2026/07/11/txt2img-via-craiyon/",
-    "excerpt": "Source. 3×6 inch womans black and grey tattoo The design is beautiful, feminine, and whimsical, with a hint of dark fantasy, created as if from a child’s enchanted storybook—but made with grac…",
-    "author": "girl.apk",
-    "publishedAt": "2026-07-11T13:39:28.000Z",
+    "title": "Who cleans up after the vibe-coding party? https:// archive.is/854yJ This is an excellent and approachable article on t…",
+    "url": "https://phpc.social/@Crell/116902431496259580",
+    "excerpt": "Who cleans up after the vibe-coding party? https:// archive.is/854yJ This is an excellent and approachable article on the destructive impacts of AI coding. # ai # llm # slop",
+    "author": "Larry Garfield",
+    "publishedAt": "2026-07-11T17:05:43.000Z",
     "score": 7,
     "tags": [
       "ai",
-      "bunny",
-      "generated",
-      "image",
-      "text"
+      "llm",
+      "slop"
     ],
     "labels": [
       "ai"
@@ -240,22 +238,22 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ceff467815f0",
+    "id": "mastodon:2688a52d11a7",
     "kind": "article",
     "source": "mastodon",
-    "title": "Wikimedia principled LLMs",
-    "url": "https://diff.wikimedia.org/2026/07/11/wikimedia-principled-llms/",
-    "excerpt": "The hype around LLMs does not escape the Wikimedia movement. Not only because we are obviously feeling the effects of its presence in multiple ways (server loads, changed behavior, and lost readers…",
-    "author": "Jan Ainali",
-    "publishedAt": "2026-07-11T13:05:28.000Z",
+    "title": "Getting back into Python and, like, there's so much weirdness about it that I forgot. Since when are variables not scop…",
+    "url": "https://cubhub.social/@Rusty/116902338465624121",
+    "excerpt": "Getting back into Python and, like, there's so much weirdness about it that I forgot. Since when are variables not scoped to blocks??? :blobcatgooglyshocked:​ I'm too C/Java pilled apparently. # Pyth…",
+    "author": "Rusty Corgi",
+    "publishedAt": "2026-07-11T16:42:03.000Z",
     "score": 6,
     "tags": [
-      "wikimedia",
-      "wikimania",
-      "llm"
+      "python",
+      "coding",
+      "programming"
     ],
     "labels": [
-      "ai"
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -281,10 +279,10 @@
     "source": "lobsters",
     "title": "Two Ways To Design",
     "url": "https://wiki.c2.com/?TwoWaysToDesign",
-    "excerpt": "17 points · practices, web",
+    "excerpt": "19 points · practices, web",
     "author": "vrolfs",
     "publishedAt": "2026-07-10T07:01:41.000-05:00",
-    "score": 17,
+    "score": 19,
     "tags": [
       "practices",
       "web"
@@ -333,10 +331,10 @@
     "source": "lobsters",
     "title": "Cpp2Rust: Automatic Translation of C++ to Safe Rust",
     "url": "https://github.com/Cpp2Rust/cpp2rust",
-    "excerpt": "31 points · c++, rust",
+    "excerpt": "33 points · c++, rust",
     "author": "gnyeki",
     "publishedAt": "2026-07-09T22:24:53.000-05:00",
-    "score": 31,
+    "score": 33,
     "tags": [
       "c++",
       "rust"
@@ -371,10 +369,10 @@
     "source": "lobsters",
     "title": "Page weight matters",
     "url": "https://nh3.dev/blog/05-bloat",
-    "excerpt": "25 points · performance, web",
+    "excerpt": "26 points · performance, web",
     "author": "slab",
     "publishedAt": "2026-07-09T15:06:04.000-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "performance",
       "web"
@@ -407,10 +405,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.97.0",
     "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
-    "excerpt": "66 points · release, rust",
+    "excerpt": "67 points · release, rust",
     "author": "imadij",
     "publishedAt": "2026-07-09T09:56:32.000-05:00",
-    "score": 66,
+    "score": 67,
     "tags": [
       "release",
       "rust"
@@ -485,10 +483,10 @@
     "source": "lobsters",
     "title": "Rewriting Bun in Rust",
     "url": "https://bun.com/blog/bun-in-rust",
-    "excerpt": "134 points · rust, vibecoding, zig",
+    "excerpt": "135 points · rust, vibecoding, zig",
     "author": "mitsuhiko",
     "publishedAt": "2026-07-08T16:50:54.000-05:00",
-    "score": 134,
+    "score": 135,
     "tags": [
       "rust",
       "vibecoding",
@@ -780,7 +778,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307511,
+    "score": 307568,
     "tags": [
       "Python",
       "awesome",
@@ -804,7 +802,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-06T11:21:27Z",
-    "score": 272865,
+    "score": 272899,
     "tags": [
       "Python",
       "beginner-project",
@@ -832,7 +830,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-11T00:39:35Z",
-    "score": 222562,
+    "score": 222585,
     "tags": [
       "Python",
       "algorithm",
@@ -863,8 +861,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-11T13:20:08Z",
-    "score": 213066,
+    "publishedAt": "2026-07-11T18:16:13Z",
+    "score": 213213,
     "tags": [
       "Python",
       "ai",
@@ -898,8 +896,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-11T06:14:27Z",
-    "score": 185471,
+    "publishedAt": "2026-07-11T17:24:47Z",
+    "score": 185476,
     "tags": [
       "Python",
       "agentic-ai",
@@ -929,7 +927,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-07-09T23:11:00Z",
-    "score": 177234,
+    "score": 177309,
     "tags": [
       "Python",
       "cli",
@@ -953,8 +951,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-11T13:38:54Z",
-    "score": 162490,
+    "publishedAt": "2026-07-11T19:00:13Z",
+    "score": 162500,
     "tags": [
       "Python",
       "audio",
@@ -993,7 +991,7 @@
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
     "publishedAt": "2026-07-11T00:59:57Z",
-    "score": 151645,
+    "score": 151684,
     "tags": [
       "Python",
       "agents",
@@ -1018,7 +1016,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-07-11T13:43:16Z",
-    "score": 118035,
+    "score": 118045,
     "tags": [
       "Rust",
       "android",
@@ -1055,7 +1053,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-07-11T12:11:14Z",
-    "score": 115894,
+    "score": 115958,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1094,8 +1092,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-11T13:39:25Z",
-    "score": 114634,
+    "publishedAt": "2026-07-11T18:48:19Z",
+    "score": 114646,
     "tags": [
       "Rust",
       "compiler",
@@ -1115,8 +1113,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-11T07:15:32Z",
-    "score": 108924,
+    "publishedAt": "2026-07-11T18:41:57Z",
+    "score": 108936,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1141,8 +1139,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-11T09:45:30Z",
-    "score": 107743,
+    "publishedAt": "2026-07-11T14:14:58Z",
+    "score": 107750,
     "tags": [
       "Rust",
       "deno",
@@ -1164,8 +1162,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-11T04:18:02Z",
-    "score": 97137,
+    "publishedAt": "2026-07-11T17:49:35Z",
+    "score": 97189,
     "tags": [
       "Rust"
     ],
@@ -1182,8 +1180,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-11T13:38:47Z",
-    "score": 94488,
+    "publishedAt": "2026-07-11T18:49:58Z",
+    "score": 94529,
     "tags": [
       "Rust",
       "bun",
@@ -1215,7 +1213,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-10T21:31:07Z",
-    "score": 94207,
+    "score": 94213,
     "tags": [
       "Java",
       "awesome-list",
@@ -1241,7 +1239,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-07-11T00:11:11Z",
-    "score": 87341,
+    "score": 87344,
     "tags": [
       "Rust",
       "packaging",
@@ -1263,8 +1261,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-11T13:15:58Z",
-    "score": 86808,
+    "publishedAt": "2026-07-11T18:35:59Z",
+    "score": 86828,
     "tags": [
       "Java",
       "docker",
