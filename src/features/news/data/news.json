@@ -218,19 +218,83 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:6de461664614",
+    "id": "mastodon:2b10901b68f1",
     "kind": "article",
     "source": "mastodon",
-    "title": "Who cleans up after the vibe-coding party? https:// archive.is/854yJ This is an excellent and approachable article on t…",
-    "url": "https://phpc.social/@Crell/116902431496259580",
-    "excerpt": "Who cleans up after the vibe-coding party? https:// archive.is/854yJ This is an excellent and approachable article on the destructive impacts of AI coding. # ai # llm # slop",
-    "author": "Larry Garfield",
-    "publishedAt": "2026-07-11T17:05:43.000Z",
+    "title": "First Look at the New Frosted Glass Effect on the # COSMIC Desktop Environment https:// 9to5linux.com/first-look-at-co…",
+    "url": "https://floss.social/@9to5linux/116904446875311764",
+    "excerpt": "First Look at the New Frosted Glass Effect on the # COSMIC Desktop Environment https:// 9to5linux.com/first-look-at-co smic-desktop-environments-frosted-glass-effect @ system76 # Linux # OpenSource",
+    "author": "9to5Linux",
+    "publishedAt": "2026-07-12T01:38:15.000Z",
     "score": 7,
     "tags": [
+      "cosmic",
+      "linux",
+      "opensource"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:436e2f4bcbe7",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "# python # technology # stockmarket # covid # crisis # machinelearning # anomaly 👉 Looking for Market Twins: How MASS F…",
+    "url": "https://mastodon.social/@alexzap/116903110820056370",
+    "excerpt": "# python # technology # stockmarket # covid # crisis # machinelearning # anomaly 👉 Looking for Market Twins: How MASS Finds Similar Trading Patterns Beyond Technical Indicators 📈 Technical Analysis R…",
+    "author": "Alex Zap",
+    "publishedAt": "2026-07-11T19:58:28.000Z",
+    "score": 5,
+    "tags": [
+      "python",
+      "technology",
+      "stockmarket",
+      "COVID",
+      "crisis",
+      "machinelearning",
+      "anomaly",
+      "exploremore"
+    ],
+    "labels": [
+      "python",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:22651bfdf195",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Good Tools Are Invisible",
+    "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
+    "excerpt": "20 points · editors, practices, vim",
+    "author": "telemachus",
+    "publishedAt": "2026-07-11T13:02:54.858-05:00",
+    "score": 20,
+    "tags": [
+      "editors",
+      "practices",
+      "vim"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:0acefa33f616",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "AI Surveillance and Social Progress",
+    "url": "https://www.schneier.com/blog/archives/2026/07/ai-surveillance-and-social-progress.html",
+    "excerpt": "15 points · ai, culture, privacy",
+    "author": "cyplo",
+    "publishedAt": "2026-07-11T04:40:40.000-05:00",
+    "score": 15,
+    "tags": [
       "ai",
-      "llm",
-      "slop"
+      "culture",
+      "privacy"
     ],
     "labels": [
       "ai"
@@ -238,19 +302,18 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:2688a52d11a7",
+    "id": "lobsters:afc6be74802f",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Getting back into Python and, like, there's so much weirdness about it that I forgot. Since when are variables not scop…",
-    "url": "https://cubhub.social/@Rusty/116902338465624121",
-    "excerpt": "Getting back into Python and, like, there's so much weirdness about it that I forgot. Since when are variables not scoped to blocks??? :blobcatgooglyshocked:​ I'm too C/Java pilled apparently. # Pyth…",
-    "author": "Rusty Corgi",
-    "publishedAt": "2026-07-11T16:42:03.000Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "What Every Python Developer Should Know About the CPython ABI",
+    "url": "https://labs.quansight.org/blog/python-abi-abi3t",
+    "excerpt": "15 points · c, python",
+    "author": "ngoldbaum",
+    "publishedAt": "2026-07-10T12:17:58.000-05:00",
+    "score": 15,
     "tags": [
-      "python",
-      "coding",
-      "programming"
+      "c",
+      "python"
     ],
     "labels": [
       "python"
@@ -279,10 +342,10 @@
     "source": "lobsters",
     "title": "Two Ways To Design",
     "url": "https://wiki.c2.com/?TwoWaysToDesign",
-    "excerpt": "19 points · practices, web",
+    "excerpt": "20 points · practices, web",
     "author": "vrolfs",
     "publishedAt": "2026-07-10T07:01:41.000-05:00",
-    "score": 19,
+    "score": 20,
     "tags": [
       "practices",
       "web"
@@ -301,7 +364,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-07-10T05:44:48.000-05:00",
-    "score": 19,
+    "score": 20,
     "tags": [
       "ask",
       "programming"
@@ -331,10 +394,10 @@
     "source": "lobsters",
     "title": "Cpp2Rust: Automatic Translation of C++ to Safe Rust",
     "url": "https://github.com/Cpp2Rust/cpp2rust",
-    "excerpt": "33 points · c++, rust",
+    "excerpt": "36 points · c++, rust",
     "author": "gnyeki",
     "publishedAt": "2026-07-09T22:24:53.000-05:00",
-    "score": 33,
+    "score": 36,
     "tags": [
       "c++",
       "rust"
@@ -369,10 +432,10 @@
     "source": "lobsters",
     "title": "Page weight matters",
     "url": "https://nh3.dev/blog/05-bloat",
-    "excerpt": "26 points · performance, web",
+    "excerpt": "28 points · performance, web",
     "author": "slab",
     "publishedAt": "2026-07-09T15:06:04.000-05:00",
-    "score": 26,
+    "score": 28,
     "tags": [
       "performance",
       "web"
@@ -405,10 +468,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.97.0",
     "url": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
-    "excerpt": "67 points · release, rust",
+    "excerpt": "69 points · release, rust",
     "author": "imadij",
     "publishedAt": "2026-07-09T09:56:32.000-05:00",
-    "score": 67,
+    "score": 69,
     "tags": [
       "release",
       "rust"
@@ -483,10 +546,10 @@
     "source": "lobsters",
     "title": "Rewriting Bun in Rust",
     "url": "https://bun.com/blog/bun-in-rust",
-    "excerpt": "135 points · rust, vibecoding, zig",
+    "excerpt": "136 points · rust, vibecoding, zig",
     "author": "mitsuhiko",
     "publishedAt": "2026-07-08T16:50:54.000-05:00",
-    "score": 135,
+    "score": 136,
     "tags": [
       "rust",
       "vibecoding",
@@ -712,64 +775,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Hugging Face:ca9a2a21da07",
-    "kind": "article",
-    "source": "rss",
-    "title": "From Hugging Face to Amazon SageMaker Studio in one click",
-    "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-07-07T21:15:33.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:aa74e17c6380",
-    "kind": "article",
-    "source": "devto",
-    "title": "Being an engineer in the AI era",
-    "url": "https://dev.to/ale3oula/being-an-engineer-in-the-ai-era-277p",
-    "excerpt": "I hesitated to write this. Not because I don’t have an opinion about AI in software engineering, but...",
-    "author": "Alexandra",
-    "publishedAt": "2026-07-07T20:10:15Z",
-    "score": 48,
-    "tags": [
-      "ai",
-      "discuss",
-      "productivity",
-      "softwareengineering"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:daaf95d3708c",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Your Rust Service Isn't Leaking — It Could Be the Allocator",
-    "url": "https://pranitha.dev/posts/rust-and-memory-allocators/",
-    "excerpt": "32 points · rust",
-    "author": "robey",
-    "publishedAt": "2026-07-07T12:51:14.000-05:00",
-    "score": 32,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:03bcb55f8165",
     "kind": "trending",
     "source": "github",
@@ -778,7 +783,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307568,
+    "score": 307619,
     "tags": [
       "Python",
       "awesome",
@@ -802,7 +807,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-06T11:21:27Z",
-    "score": 272899,
+    "score": 272922,
     "tags": [
       "Python",
       "beginner-project",
@@ -830,7 +835,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-11T00:39:35Z",
-    "score": 222585,
+    "score": 222591,
     "tags": [
       "Python",
       "algorithm",
@@ -862,7 +867,7 @@
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
     "publishedAt": "2026-07-11T18:16:13Z",
-    "score": 213213,
+    "score": 213346,
     "tags": [
       "Python",
       "ai",
@@ -896,8 +901,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-11T17:24:47Z",
-    "score": 185476,
+    "publishedAt": "2026-07-11T20:00:23Z",
+    "score": 185481,
     "tags": [
       "Python",
       "agentic-ai",
@@ -926,8 +931,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-07-09T23:11:00Z",
-    "score": 177309,
+    "publishedAt": "2026-07-12T00:48:16Z",
+    "score": 177375,
     "tags": [
       "Python",
       "cli",
@@ -951,8 +956,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-11T19:00:13Z",
-    "score": 162500,
+    "publishedAt": "2026-07-12T00:55:33Z",
+    "score": 162514,
     "tags": [
       "Python",
       "audio",
@@ -990,8 +995,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-07-11T00:59:57Z",
-    "score": 151684,
+    "publishedAt": "2026-07-12T03:25:26Z",
+    "score": 151709,
     "tags": [
       "Python",
       "agents",
@@ -1016,7 +1021,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-07-11T13:43:16Z",
-    "score": 118045,
+    "score": 118062,
     "tags": [
       "Rust",
       "android",
@@ -1053,7 +1058,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-07-11T12:11:14Z",
-    "score": 115958,
+    "score": 116022,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1092,8 +1097,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-11T18:48:19Z",
-    "score": 114646,
+    "publishedAt": "2026-07-12T02:50:21Z",
+    "score": 114664,
     "tags": [
       "Rust",
       "compiler",
@@ -1114,7 +1119,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-07-11T18:41:57Z",
-    "score": 108936,
+    "score": 108943,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1139,8 +1144,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-11T14:14:58Z",
-    "score": 107750,
+    "publishedAt": "2026-07-11T23:18:48Z",
+    "score": 107774,
     "tags": [
       "Rust",
       "deno",
@@ -1162,8 +1167,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-11T17:49:35Z",
-    "score": 97189,
+    "publishedAt": "2026-07-11T21:05:32Z",
+    "score": 97230,
     "tags": [
       "Rust"
     ],
@@ -1180,8 +1185,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-11T18:49:58Z",
-    "score": 94529,
+    "publishedAt": "2026-07-12T03:42:39Z",
+    "score": 94580,
     "tags": [
       "Rust",
       "bun",
@@ -1213,7 +1218,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-10T21:31:07Z",
-    "score": 94213,
+    "score": 94215,
     "tags": [
       "Java",
       "awesome-list",
@@ -1239,7 +1244,7 @@
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
     "publishedAt": "2026-07-11T00:11:11Z",
-    "score": 87344,
+    "score": 87349,
     "tags": [
       "Rust",
       "packaging",
@@ -1261,8 +1266,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-11T18:35:59Z",
-    "score": 86828,
+    "publishedAt": "2026-07-12T03:41:42Z",
+    "score": 86855,
     "tags": [
       "Java",
       "docker",
