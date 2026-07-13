@@ -218,21 +218,58 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:0d832039c89a",
+    "id": "mastodon:5e327d15ac82",
     "kind": "article",
     "source": "mastodon",
-    "title": "Watching techies learn that their favorite artist isn't in love with LLMs will never be boring to me, online or offline…",
-    "url": "https://caneandable.social/@WeirdWriter/116909630586357016",
-    "excerpt": "Watching techies learn that their favorite artist isn't in love with LLMs will never be boring to me, online or offline. The best part? The techs act all shocked their favorite artist would hate some…",
-    "author": "Robert Kingett",
-    "publishedAt": "2026-07-12T23:36:32.000Z",
-    "score": 26,
+    "title": "For the first release of `time` on or after October 1, the `cookie` crate will be broken unless they accept and release…",
+    "url": "https://mastodon.social/@jhpratt/116911320139176452",
+    "excerpt": "For the first release of `time` on or after October 1, the `cookie` crate will be broken unless they accept and release a one-line patch moving away from a never-documented API. That is three full mo…",
+    "author": "Jacob Pratt",
+    "publishedAt": "2026-07-13T06:46:13.000Z",
+    "score": 6,
     "tags": [
-      "llm",
-      "ai"
+      "rust",
+      "rustlang"
     ],
     "labels": [
-      "ai"
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:d95a85b923ac",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Quadrupling code performance with a \"useless\" if",
+    "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+    "excerpt": "34 points · c, performance",
+    "author": "purplesyringa",
+    "publishedAt": "2026-07-12T22:33:01.672-05:00",
+    "score": 34,
+    "tags": [
+      "c",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:The Rust Blog:cef9dc73c688",
+    "kind": "article",
+    "source": "rss",
+    "title": "crates.io: development update",
+    "url": "https://blog.rust-lang.org/2026/07/13/crates-io-development-update/",
+    "excerpt": "Another six months have passed since our last development update , and the crates.io team has been busy. Here&#x27;s a summary of the most notable changes and improvements made to crates.io since the…",
+    "author": "Tobias Bieniek",
+    "publishedAt": "2026-07-13T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "The Rust Blog"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -242,10 +279,10 @@
     "source": "lobsters",
     "title": "Closing a three-year-old issue using Rust arenas",
     "url": "https://giacomocavalieri.me/writing/gleam-rust-arenas",
-    "excerpt": "38 points · performance, rust",
+    "excerpt": "59 points · performance, rust",
     "author": "giacomo_cavalieri",
     "publishedAt": "2026-07-12T13:58:31.905-05:00",
-    "score": 38,
+    "score": 59,
     "tags": [
       "performance",
       "rust"
@@ -257,15 +294,43 @@
     "mentionsByteveda": false
   },
   {
+    "id": "mastodon:f40297cefca3",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "revisited a # fediverse # frontend single # golang binary setup. a bit more work on mobile reactive layout, but it's ru…",
+    "url": "https://mastodon.bsd.cafe/@jae/116907384073216013",
+    "excerpt": "revisited a # fediverse # frontend single # golang binary setup. a bit more work on mobile reactive layout, but it's running pretty nicely so far. compatibility matrix: - # pleroma : [solid] - # mast…",
+    "author": "ᴏᴏᴍ-ᴋɪʟʟᴇʀ: 333",
+    "publishedAt": "2026-07-12T14:05:13.000Z",
+    "score": 5,
+    "tags": [
+      "fediverse",
+      "frontend",
+      "golang",
+      "pleroma",
+      "mastodon",
+      "gotosocial",
+      "Mitra",
+      "kubernetes",
+      "homelab"
+    ],
+    "labels": [
+      "webdev",
+      "go",
+      "devops"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:8ac0d6012c86",
     "kind": "article",
     "source": "lobsters",
     "title": "In defense of not understanding your codebase",
     "url": "https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
-    "excerpt": "33 points · practices, vibecoding",
+    "excerpt": "34 points · practices, vibecoding",
     "author": "siddhartha_golu",
     "publishedAt": "2026-07-11T21:37:46.244-05:00",
-    "score": 33,
+    "score": 34,
     "tags": [
       "practices",
       "vibecoding"
@@ -295,10 +360,10 @@
     "source": "lobsters",
     "title": "Good Tools Are Invisible",
     "url": "https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/",
-    "excerpt": "38 points · editors, practices, vim",
+    "excerpt": "39 points · editors, practices, vim",
     "author": "telemachus",
     "publishedAt": "2026-07-11T13:02:54.858-05:00",
-    "score": 38,
+    "score": 39,
     "tags": [
       "editors",
       "practices",
@@ -321,6 +386,27 @@
       "ai",
       "culture",
       "privacy"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:8d5a86185f62",
+    "kind": "article",
+    "source": "devto",
+    "title": "Stratagems #11: Lena Watched Her Own AI Platform Get Cut. An Ember Stayed.",
+    "url": "https://dev.to/xulingfeng/stratagems-11-lena-watched-her-own-ai-platform-get-cut-an-ember-stayed-3j59",
+    "excerpt": "Better to sacrifice a part to preserve the whole. — The 36 Stratagems, Sacrifice the Plum Tree to...",
+    "author": "xulingfeng",
+    "publishedAt": "2026-07-11T02:04:07Z",
+    "score": 53,
+    "tags": [
+      "discuss",
+      "ai",
+      "career",
+      "programming"
     ],
     "labels": [
       "ai"
@@ -479,10 +565,10 @@
     "source": "lobsters",
     "title": "Page weight matters",
     "url": "https://nh3.dev/blog/05-bloat",
-    "excerpt": "28 points · performance, web",
+    "excerpt": "30 points · performance, web",
     "author": "slab",
     "publishedAt": "2026-07-09T15:06:04.000-05:00",
-    "score": 28,
+    "score": 30,
     "tags": [
       "performance",
       "web"
@@ -576,11 +662,32 @@
     "excerpt": "A post on X last week: \"The fact that people can't even reply to posts without AI anymore says a...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-07-09T07:35:37Z",
-    "score": 50,
+    "score": 51,
     "tags": [
       "ai",
       "watercooler",
       "discuss"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:31b3681189e9",
+    "kind": "article",
+    "source": "devto",
+    "title": "Stratagems #9: Lena and P Watched Two AI Suppliers Fight. The Logs Said Neither Was Clean.",
+    "url": "https://dev.to/xulingfeng/stratagems-9-lena-and-p-watched-two-ai-suppliers-fight-the-logs-said-neither-was-clean-2pj3",
+    "excerpt": "Watch the fires burning on the far shore. Don't cross until they've burned themselves out. — The 36...",
+    "author": "xulingfeng",
+    "publishedAt": "2026-07-09T04:06:00Z",
+    "score": 56,
+    "tags": [
+      "discuss",
+      "ai",
+      "career",
+      "programming"
     ],
     "labels": [
       "ai"
@@ -675,97 +782,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:3bccd13ce103",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Eve Online's Carbon engine is now open source: Fenris Creations explains why",
-    "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why",
-    "excerpt": "25 points · games, programming",
-    "author": "Yogthos",
-    "publishedAt": "2026-07-08T10:47:51.000-05:00",
-    "score": 25,
-    "tags": [
-      "games",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:89bc24761681",
-    "kind": "article",
-    "source": "devto",
-    "title": "✨Cool Effects, TTS, and Fun Animations (AI Avatar v15: VS Code and Chrome Extension)",
-    "url": "https://dev.to/webdeveloperhyper/cool-effects-tts-and-fun-animations-ai-avatar-v15-vs-code-and-chrome-extension-3oec",
-    "excerpt": "Intro AI Avatar is a completely free app that lets your VRoid (VRM) 3D avatar animate in...",
-    "author": "Web Developer Hyper",
-    "publishedAt": "2026-07-08T12:25:01Z",
-    "score": 62,
-    "tags": [
-      "ai",
-      "webdev",
-      "discuss",
-      "productivity"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:6fbdf27fce74",
-    "kind": "article",
-    "source": "rss",
-    "title": "What&#x27;s left for infrastructure-as-code after AI moves in?​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿‌‍‌‌‌‍​‍‌‍‌​​﻿‌﻿​﻿‌‍‌‍‌​​﻿​‍​‍﻿‌‌‍​﻿‌‍‌‌‌‍​‍‌‍​﻿​‍﻿‌​﻿‌​‌‍​‍​﻿‍​​﻿‍​​‍﻿‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍‌​‍﻿‌​﻿​﻿‌‍‌​‌‍‌‍‌‍​‍​﻿​‍‌‍​﻿​﻿‍​‌‍​‍‌‍​﻿​﻿‌‌‌‍​﻿‌‍​‌​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌﻿‌‍‌‌‌‍​‍‌‍‌​​﻿‌﻿​﻿‌‍‌‍‌​​﻿​‍​‍﻿‌‌‍​﻿‌‍‌‌‌‍​‍‌‍​﻿​‍﻿‌​﻿‌​‌‍​‍​﻿‍​​﻿‍​​‍﻿‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍‌​‍﻿‌​﻿​﻿‌‍‌​‌‍‌‍‌‍​‍​﻿​‍‌‍​﻿​﻿‍​‌‍​‍‌‍​﻿​﻿‌‌‌‍​﻿‌‍​‌​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/07/08/what-s-left-for-infrastructure-as-code-after-ai-moves-in/",
-    "excerpt": "Ryan is joined by Rosemary Wang, Developer Advocate at IBM, to explore what infrastructure as code looks like once AI starts writing and deploying it. ​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌…",
-    "author": "Ryan Donovan",
-    "publishedAt": "2026-07-08T04:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:575c140367a0",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Jim's TrueType QR Code Font",
-    "url": "https://qr.jim.sh/",
-    "excerpt": "117 points · programming",
-    "author": "markerz",
-    "publishedAt": "2026-07-07T22:58:54.000-05:00",
-    "score": 117,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:06dc364666d1",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Started Writing My Prediction Before Reading the AI's Answer. Here's What Happened.",
-    "url": "https://dev.to/gamya_m/i-started-writing-my-prediction-before-reading-the-ais-answer-heres-what-happened-9c5",
-    "excerpt": "So a few days ago I was in a comment thread arguing about whether AI is quietly ruining junior...",
-    "author": "Gamya",
-    "publishedAt": "2026-07-08T03:58:48Z",
-    "score": 41,
-    "tags": [
-      "discuss",
-      "ai",
-      "programming"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:03bcb55f8165",
     "kind": "trending",
     "source": "github",
@@ -774,7 +790,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-08T09:29:27Z",
-    "score": 307797,
+    "score": 307837,
     "tags": [
       "Python",
       "awesome",
@@ -798,7 +814,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-07-11T00:39:35Z",
-    "score": 222628,
+    "score": 222640,
     "tags": [
       "Python",
       "algorithm",
@@ -829,8 +845,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-13T03:43:34Z",
-    "score": 213816,
+    "publishedAt": "2026-07-13T09:42:21Z",
+    "score": 213997,
     "tags": [
       "Python",
       "ai",
@@ -864,8 +880,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-11T20:00:23Z",
-    "score": 185496,
+    "publishedAt": "2026-07-13T08:46:16Z",
+    "score": 185505,
     "tags": [
       "Python",
       "agentic-ai",
@@ -895,7 +911,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-07-12T19:39:52Z",
-    "score": 177599,
+    "score": 177644,
     "tags": [
       "Python",
       "cli",
@@ -919,8 +935,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-07-13T03:46:48Z",
-    "score": 162554,
+    "publishedAt": "2026-07-13T09:41:20Z",
+    "score": 162561,
     "tags": [
       "Python",
       "audio",
@@ -958,8 +974,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-07-13T00:43:38Z",
-    "score": 151787,
+    "publishedAt": "2026-07-13T07:54:05Z",
+    "score": 151801,
     "tags": [
       "Python",
       "agents",
@@ -984,7 +1000,7 @@
     "excerpt": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "author": "open-webui",
     "publishedAt": "2026-07-10T23:32:22Z",
-    "score": 145192,
+    "score": 145229,
     "tags": [
       "Python",
       "ai",
@@ -1018,7 +1034,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-07-11T13:43:16Z",
-    "score": 118120,
+    "score": 118137,
     "tags": [
       "Rust",
       "android",
@@ -1055,7 +1071,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-07-12T13:47:46Z",
-    "score": 116403,
+    "score": 116586,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1094,8 +1110,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-13T03:14:08Z",
-    "score": 114668,
+    "publishedAt": "2026-07-13T09:07:16Z",
+    "score": 114677,
     "tags": [
       "Rust",
       "compiler",
@@ -1115,8 +1131,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-11T18:41:57Z",
-    "score": 108979,
+    "publishedAt": "2026-07-13T08:42:22Z",
+    "score": 108992,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1141,8 +1157,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-07-13T01:57:31Z",
-    "score": 107767,
+    "publishedAt": "2026-07-13T09:40:35Z",
+    "score": 107769,
     "tags": [
       "Rust",
       "deno",
@@ -1164,8 +1180,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-13T03:24:46Z",
-    "score": 97440,
+    "publishedAt": "2026-07-13T09:44:58Z",
+    "score": 97567,
     "tags": [
       "Rust"
     ],
@@ -1182,8 +1198,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-13T03:32:58Z",
-    "score": 94638,
+    "publishedAt": "2026-07-13T08:36:57Z",
+    "score": 94653,
     "tags": [
       "Rust",
       "bun",
@@ -1215,7 +1231,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-10T21:31:07Z",
-    "score": 94217,
+    "score": 94219,
     "tags": [
       "Java",
       "awesome-list",
@@ -1240,8 +1256,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-07-13T02:15:22Z",
-    "score": 87380,
+    "publishedAt": "2026-07-13T09:20:10Z",
+    "score": 87400,
     "tags": [
       "Rust",
       "packaging",
@@ -1263,8 +1279,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-13T01:17:59Z",
-    "score": 86947,
+    "publishedAt": "2026-07-13T09:41:15Z",
+    "score": 86960,
     "tags": [
       "Java",
       "docker",
