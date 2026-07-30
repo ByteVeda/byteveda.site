@@ -218,63 +218,24 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:41bb9f74722c",
+    "id": "mastodon:93b5a517fc2f",
     "kind": "article",
     "source": "mastodon",
-    "title": "RE: https:// mastodon.social/@koen_hufkens/ 117004920937193940 So # Google is sacrificing their children to their mecha…",
-    "url": "https://zeroes.ca/@dedicto/117006578191833735",
-    "excerpt": "RE: https:// mastodon.social/@koen_hufkens/ 117004920937193940 So # Google is sacrificing their children to their mechanized # Moloch . A few noteworthy aspects: (1) As always, it’s worth keeping in…",
-    "author": "Douglas Edwards :neurodiv:",
-    "publishedAt": "2026-07-30T02:31:35.000Z",
-    "score": 5,
-    "tags": [
-      "google",
-      "moloch",
-      "llms",
-      "ai",
-      "alphafold",
-      "singularity",
-      "llm",
-      "datacenters",
-      "luddite"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:14a0731ea6e6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Impact of climate change may be equivalent to 3.3 million years of transformations in tropical vegetation",
-    "url": "https://theconversation.com/impact-of-climate-change-may-be-equivalent-to-3-3-million-years-of-transformations-in-tropical-vegetation-288073",
-    "excerpt": "Changes that took millions of years can now happen in a matter of decades, and this accelerated rythm can be destructive, with dangerous consequences for the planet",
-    "author": "TKSST • seethis.tv 🌈🪐✨",
-    "publishedAt": "2026-07-29T19:30:02.000Z",
+    "title": "RE: https:// troet.cafe/@Willy_Wuff/1170074 85308173354 Es wird dann wohl Zeit auch bei Linux mal über einen Virenscann…",
+    "url": "https://burningboard.net/@AlienJay/117007836137596142",
+    "excerpt": "RE: https:// troet.cafe/@Willy_Wuff/1170074 85308173354 Es wird dann wohl Zeit auch bei Linux mal über einen Virenscanner nachzudenken. Vorschläge? # linux # virenscanner # virenschutz # antivirus #…",
+    "author": "Jörg 🇩🇪🇬🇧🇪🇺",
+    "publishedAt": "2026-07-30T07:51:30.000Z",
     "score": 9,
     "tags": [
-      "brazil",
-      "tropical",
-      "vegetation",
-      "history",
-      "climatechange",
-      "ecosystem",
-      "archipelago",
-      "climate",
-      "amazon",
-      "biodiversity",
-      "deforestation",
-      "globalwarming",
-      "ecology",
-      "science",
-      "ufmg",
-      "machinelearning",
-      "conservation"
+      "linux",
+      "virenscanner",
+      "virenschutz",
+      "antivirus",
+      "malware",
+      "followerpower"
     ],
-    "labels": [
-      "ml"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -293,27 +254,6 @@
       "golang"
     ],
     "labels": [
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:dff505ebf869",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# embedded # python # golang I've been using Python as a replacement for shell scripting for embedded development tooli…",
-    "url": "https://cosocial.ca/@rhempel/117004786618716798",
-    "excerpt": "# embedded # python # golang I've been using Python as a replacement for shell scripting for embedded development tooling for about a decade, but the dependency hell is starting to get to me. I use P…",
-    "author": "rhempel",
-    "publishedAt": "2026-07-29T18:55:58.000Z",
-    "score": 8,
-    "tags": [
-      "embedded",
-      "python",
-      "golang"
-    ],
-    "labels": [
-      "python",
       "go"
     ],
     "mentionsByteveda": false
@@ -359,7 +299,7 @@
     "excerpt": "Hoi hoi! I'm @nyaomaru, a frontend engineer who was recently knocked off my feet by how good the...",
     "author": "nyaomaru",
     "publishedAt": "2026-07-29T10:42:13Z",
-    "score": 31,
+    "score": 36,
     "tags": [
       "javascript",
       "typescript",
@@ -374,6 +314,29 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:d9fca356c985",
+    "kind": "article",
+    "source": "devto",
+    "title": "What Replacing Calendly Taught Me About Trusting Open Source",
+    "url": "https://dev.to/pascal_cescato_692b7a8a20/what-replacing-calendly-taught-me-about-trusting-open-source-540a",
+    "excerpt": "cal.com, Calendly, zcal... booking SaaS isn't short on options, and most of them are genuinely...",
+    "author": "Pascal CESCATO",
+    "publishedAt": "2026-07-29T00:22:42Z",
+    "score": 29,
+    "tags": [
+      "webdev",
+      "selfhosted",
+      "opensource",
+      "security"
+    ],
+    "labels": [
+      "webdev",
+      "opensource",
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "devto:9d1f099d2d28",
     "kind": "article",
     "source": "devto",
@@ -382,7 +345,7 @@
     "excerpt": "A few months ago, my AI coding workflow looked something like...",
     "author": "Konark Sharma",
     "publishedAt": "2026-07-28T19:25:24Z",
-    "score": 30,
+    "score": 31,
     "tags": [
       "ai",
       "vibecoding",
@@ -404,7 +367,7 @@
     "excerpt": "So I had this idea that kept nagging at me. Every AI chat app works the same way. You type...",
     "author": "Varshith V Hegde",
     "publishedAt": "2026-07-28T18:35:05Z",
-    "score": 35,
+    "score": 37,
     "tags": [
       "ai",
       "agents",
@@ -480,7 +443,7 @@
     "excerpt": "Typosquatting bets on your typo. Slopsquatting bets on your AI assistant. When a model invents a...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-07-28T13:28:33Z",
-    "score": 76,
+    "score": 77,
     "tags": [
       "security",
       "ai",
@@ -526,7 +489,7 @@
     "excerpt": "Many of developers communities are asking the wrong question. Not because they're wrong to worry...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-07-28T09:36:21Z",
-    "score": 53,
+    "score": 59,
     "tags": [
       "ai",
       "programming",
@@ -619,7 +582,7 @@
     "excerpt": "Everyone agrees AI makes senior engineers more valuable. Almost nobody asks where the next generation...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-07-27T13:16:13Z",
-    "score": 197,
+    "score": 202,
     "tags": [
       "ai",
       "discuss",
@@ -824,6 +787,22 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:6095d72e3e8c",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "We Are Not Special (2021)",
+    "url": "https://www.hillelwayne.com/post/we-are-not-special/",
+    "excerpt": "32 points · practices",
+    "author": "WilhelmVonWeiner",
+    "publishedAt": "2026-07-24T22:00:20.837-05:00",
+    "score": 32,
+    "tags": [
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -832,7 +811,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-07-25T21:34:33Z",
-    "score": 453367,
+    "score": 453468,
     "tags": [
       "Python",
       "api",
@@ -864,7 +843,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-07-27T22:15:56Z",
-    "score": 393290,
+    "score": 393308,
     "tags": [
       "Python",
       "books",
@@ -887,7 +866,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-07-29T04:17:23Z",
-    "score": 311087,
+    "score": 311137,
     "tags": [
       "Python",
       "awesome",
@@ -911,7 +890,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-07-27T07:45:24Z",
-    "score": 275770,
+    "score": 275812,
     "tags": [
       "Python",
       "beginner-project",
@@ -938,8 +917,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-07-30T03:09:15Z",
-    "score": 222410,
+    "publishedAt": "2026-07-30T08:44:32Z",
+    "score": 222550,
     "tags": [
       "Python",
       "ai",
@@ -973,8 +952,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-07-29T23:24:10Z",
-    "score": 185743,
+    "publishedAt": "2026-07-30T06:35:29Z",
+    "score": 185748,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1004,7 +983,7 @@
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
     "publishedAt": "2026-07-29T18:18:09Z",
-    "score": 170084,
+    "score": 170163,
     "tags": [
       "Python",
       "autogen",
@@ -1029,7 +1008,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-07-28T00:08:52Z",
-    "score": 168053,
+    "score": 168107,
     "tags": [
       "Python",
       "awesome",
@@ -1051,7 +1030,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-07-24T07:32:34Z",
-    "score": 128957,
+    "score": 128970,
     "tags": [
       "Java",
       "algo",
@@ -1079,8 +1058,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-07-29T16:08:04Z",
-    "score": 122324,
+    "publishedAt": "2026-07-30T04:20:50Z",
+    "score": 122422,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1119,8 +1098,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-07-30T03:15:05Z",
-    "score": 119205,
+    "publishedAt": "2026-07-30T08:41:04Z",
+    "score": 119228,
     "tags": [
       "Rust",
       "android",
@@ -1156,8 +1135,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-07-30T02:56:20Z",
-    "score": 114939,
+    "publishedAt": "2026-07-30T08:39:23Z",
+    "score": 114951,
     "tags": [
       "Rust",
       "compiler",
@@ -1177,8 +1156,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-07-29T18:00:30Z",
-    "score": 109675,
+    "publishedAt": "2026-07-30T04:39:40Z",
+    "score": 109699,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1204,7 +1183,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-07-29T21:18:42Z",
-    "score": 107849,
+    "score": 107854,
     "tags": [
       "Rust",
       "deno",
@@ -1226,8 +1205,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-07-30T01:39:30Z",
-    "score": 102454,
+    "publishedAt": "2026-07-30T05:54:37Z",
+    "score": 102527,
     "tags": [
       "Rust"
     ],
@@ -1244,8 +1223,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-07-30T03:21:26Z",
-    "score": 95084,
+    "publishedAt": "2026-07-30T08:33:09Z",
+    "score": 95088,
     "tags": [
       "Rust",
       "bun",
@@ -1276,8 +1255,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-07-30T02:08:20Z",
-    "score": 88310,
+    "publishedAt": "2026-07-30T08:43:35Z",
+    "score": 88327,
     "tags": [
       "Java",
       "docker",
@@ -1308,8 +1287,8 @@
     "url": "https://github.com/astral-sh/uv",
     "excerpt": "An extremely fast Python package and project manager, written in Rust.",
     "author": "astral-sh",
-    "publishedAt": "2026-07-30T03:16:11Z",
-    "score": 88095,
+    "publishedAt": "2026-07-30T06:41:24Z",
+    "score": 88108,
     "tags": [
       "Rust",
       "packaging",
