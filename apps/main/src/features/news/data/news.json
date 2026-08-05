@@ -238,58 +238,20 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:b0afd0361952",
+    "id": "mastodon:117198364def",
     "kind": "article",
     "source": "mastodon",
-    "title": "Can Artificial General Intelligence Have a&nbsp;Soul? The soul includes the mind, spirit and heart. Is it immortal? Bib…",
-    "url": "https://biblescienceforum.com/2026/08/05/can-artificial-general-intelligence-have-a-soul/",
-    "excerpt": "Can Artificial General Intelligence Have a&nbsp;Soul? The soul includes the mind, spirit and heart. Is it immortal? Biblically the&nbsp; heart &nbsp;is the central hub of the&nbsp; inner person , enc…",
-    "author": "Bible Science Forum",
-    "publishedAt": "2026-08-05T03:24:08.000Z",
-    "score": 5,
+    "title": "In July we had an update to # LibreOffice , said hello to new @ tdforg members, posted sections from the foundation&#39…",
+    "url": "https://fosstodon.org/@libreoffice/117041945726796332",
+    "excerpt": "In July we had an update to # LibreOffice , said hello to new @ tdforg members, posted sections from the foundation&#39;s Annual Report, and more: https:// blog.documentfoundation.org/bl og/2026/08/0…",
+    "author": "LibreOffice",
+    "publishedAt": "2026-08-05T08:26:01.317Z",
+    "score": 7,
     "tags": [
-      "agi",
-      "ai",
-      "artificialintelligence",
-      "body",
-      "brain",
-      "breathoflife",
-      "consciousness",
-      "gehenna",
-      "heart",
-      "hell",
-      "intellect",
-      "livingbeing",
-      "livingsoul",
-      "mind",
-      "sapience",
-      "selfawareness",
-      "sentience",
-      "spirit"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d7100c16625f",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Wanted to unwind this evening, so I pulled my trusty old Motorola Moto G4 out of the drawer. It had become completely u…",
-    "url": "https://floss.social/@okias/117040311797352024",
-    "excerpt": "Wanted to unwind this evening, so I pulled my trusty old Motorola Moto G4 out of the drawer. It had become completely useless running 32-bit Android 7.0 these days... and then, somehow, a Linux kerne…",
-    "author": "David Heidelberg",
-    "publishedAt": "2026-08-05T01:30:29.000Z",
-    "score": 15,
-    "tags": [
-      "linux",
-      "motorola",
-      "opensource",
-      "linuxkernel",
-      "mobilelinux",
+      "libreoffice",
       "foss",
-      "oldhardware"
+      "opensource",
+      "freesoftware"
     ],
     "labels": [
       "opensource"
@@ -297,51 +259,133 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7e836ba8c0ae",
+    "id": "mastodon:fbaa30e366eb",
     "kind": "article",
     "source": "mastodon",
-    "title": "Update... Update! PH4NTXM includes now an overall ph4ntxm-health cli, so you can check your identity and more, includin…",
-    "url": "https://infosec.exchange/@PH4NTXMOFFICIAL/117040294623353680",
-    "excerpt": "Update... Update! PH4NTXM includes now an overall ph4ntxm-health cli, so you can check your identity and more, including score. Almost every important spoofed value is on your screen so you can verif…",
-    "author": "PH4NTXM :verified:",
-    "publishedAt": "2026-08-05T01:26:07.000Z",
-    "score": 5,
+    "title": "The goal of TUXEDO OS is to provide users with a fully productive working environment from the very first boot. This sa…",
+    "url": "https://linuxrocks.online/@tuxedocomputers/117041851216998148",
+    "excerpt": "The goal of TUXEDO OS is to provide users with a fully productive working environment from the very first boot. This saves both time and resources. Our philosophy is simple: as little as possible, as…",
+    "author": "TUXEDO",
+    "publishedAt": "2026-08-05T08:01:59.000Z",
+    "score": 11,
     "tags": [
-      "ph4ntxm",
-      "linux",
+      "tuxedoos",
       "debian",
-      "os",
-      "live",
-      "privacy",
-      "security",
-      "opsec",
-      "infosec",
-      "research",
-      "tech",
-      "technology"
+      "linux",
+      "tuxedo",
+      "augsburg"
     ],
-    "labels": [
-      "security"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:fb43fa0194ae",
+    "id": "mastodon:9e590fc113ab",
     "kind": "article",
     "source": "mastodon",
-    "title": "Keynote: Securing Python for the next decade - William Woodruff",
-    "url": "https://youtu.be/wMPe_KepOjc",
-    "excerpt": "my keynote from europython is online! https:// youtu.be/wMPe_KepOjc # python # europython",
-    "author": "yossarian",
-    "publishedAt": "2026-08-04T23:45:47.000Z",
-    "score": 9,
+    "title": "Me after laboriously backporting # Python 3.15 fixes to # Django 6.0.x in # Gentoo : \"oh, nice, the patchset applies cl…",
+    "url": "https://social.treehouse.systems/@mgorny/117041742864244996",
+    "excerpt": "Me after laboriously backporting # Python 3.15 fixes to # Django 6.0.x in # Gentoo : \"oh, nice, the patchset applies cleanly to 5.2.x as well.\" And today, I have to laboriously backport another patch…",
+    "author": "Jesus Michał von Gentoo 🏔 (he)",
+    "publishedAt": "2026-08-05T07:34:25.000Z",
+    "score": 7,
     "tags": [
       "python",
-      "europython"
+      "django",
+      "gentoo"
     ],
     "labels": [
       "python"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ad977f651766",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "rust-lang/rust is adopting an LLM policy | Inside Rust Blog",
+    "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+    "excerpt": "Want to follow along with Rust development? Curious how you might get involved? Take a look!",
+    "author": "Esteban Küber :rust:",
+    "publishedAt": "2026-08-05T06:39:33.000Z",
+    "score": 150,
+    "tags": [
+      "rustlang",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:76da73af20bc",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Flood And Landslide Susceptibility Assessment And Multi Hazard Interaction Mapping Using Machine Learning And GIS For S…",
+    "url": "https://techhub.social/@GregCocks/117041145717509714",
+    "excerpt": "Flood And Landslide Susceptibility Assessment And Multi Hazard Interaction Mapping Using Machine Learning And GIS For Sustainable Settlement Planning In Nepal -- https:// doi.org/10.1007/s44288-026-0…",
+    "author": "💧🌏 Greg Cocks",
+    "publishedAt": "2026-08-05T05:02:34.000Z",
+    "score": 5,
+    "tags": [
+      "gis",
+      "spatial",
+      "mapping",
+      "GoogleEarthEngine",
+      "machinelearning",
+      "remotesensing",
+      "geospatialai",
+      "DisasterRiskReduction",
+      "multihazard",
+      "climateadaptation",
+      "climatechange",
+      "extremeweather",
+      "landuseplanning",
+      "sustainabledevelopment",
+      "infrastructureplanning",
+      "riskassessment",
+      "NaturalHazards",
+      "nepal",
+      "earthobservation",
+      "hindukushhimalaya",
+      "hkh",
+      "hindukush",
+      "himalayas",
+      "risk",
+      "hazard",
+      "assessment",
+      "national",
+      "regional",
+      "spatialAnalysis",
+      "spatiotemporal",
+      "MassMovement",
+      "landslide",
+      "mitigation",
+      "water",
+      "hydrology",
+      "flood",
+      "flooding",
+      "sustainability"
+    ],
+    "labels": [
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:29bfc35a5ea8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "irken: A tiny hackable full-featured IRC client",
+    "url": "https://codeberg.org/dlowe/irken",
+    "excerpt": "19 points · programming",
+    "author": "dzwdz",
+    "publishedAt": "2026-08-04T15:30:17.224-05:00",
+    "score": 19,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -386,10 +430,10 @@
     "source": "lobsters",
     "title": "Enabling the next iteration of the borrow checker on nightly",
     "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nighty/",
-    "excerpt": "42 points · rust",
+    "excerpt": "71 points · rust",
     "author": "kmaasrud",
     "publishedAt": "2026-08-04T12:45:15.663-05:00",
-    "score": 42,
+    "score": 71,
     "tags": [
       "rust"
     ],
@@ -455,10 +499,10 @@
     "source": "lobsters",
     "title": "BorrowSanitizer",
     "url": "https://borrowsanitizer.com/",
-    "excerpt": "35 points · rust",
+    "excerpt": "43 points · rust",
     "author": "sanxiyn",
     "publishedAt": "2026-08-04T02:29:43.185-05:00",
-    "score": 35,
+    "score": 43,
     "tags": [
       "rust"
     ],
@@ -476,7 +520,7 @@
     "excerpt": "A few days ago, I wrote \"Understanding Over Origin\" and it got alot of engagement and I'm really...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-04T04:36:13Z",
-    "score": 31,
+    "score": 33,
     "tags": [
       "ai",
       "programming",
@@ -550,7 +594,7 @@
     "excerpt": "I want to talk about what I have notice on the platform and want to address what we all have been...",
     "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
     "publishedAt": "2026-08-03T14:47:20Z",
-    "score": 93,
+    "score": 97,
     "tags": [
       "discuss",
       "community",
@@ -571,7 +615,7 @@
     "excerpt": "Everyone's heard by now that TypeScript \"went native.\" And I keep seeing the same wrong conclusion...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-08-03T13:11:18Z",
-    "score": 132,
+    "score": 136,
     "tags": [
       "discuss",
       "javascript",
@@ -628,10 +672,10 @@
     "source": "lobsters",
     "title": "Don't be a meat proxy",
     "url": "https://gruhn.me/blog/2026-08-03/",
-    "excerpt": "132 points · practices, vibecoding",
+    "excerpt": "134 points · practices, vibecoding",
     "author": "antonmedv",
     "publishedAt": "2026-08-03T02:10:50.103-05:00",
-    "score": 132,
+    "score": 134,
     "tags": [
       "practices",
       "vibecoding"
@@ -645,10 +689,10 @@
     "source": "lobsters",
     "title": "Practical Memory Safety",
     "url": "https://ohadravid.github.io/posts/2026-08-unsafe-water/",
-    "excerpt": "15 points · c, rust",
+    "excerpt": "16 points · c, rust",
     "author": "raymii",
     "publishedAt": "2026-08-03T02:02:41.286-05:00",
-    "score": 15,
+    "score": 16,
     "tags": [
       "c",
       "rust"
@@ -683,7 +727,7 @@
     "excerpt": "Two weeks ago, I published \"Why Agent Evaluation Is Harder Than Model Evaluation.\" The core argument:...",
     "author": "Debashish Ghosal",
     "publishedAt": "2026-08-02T20:38:59Z",
-    "score": 25,
+    "score": 26,
     "tags": [
       "ai",
       "agentskills",
@@ -763,7 +807,7 @@
     "excerpt": "Keep the shell. Preserve the presence. The ally doesn't suspect; the enemy doesn't move. — The 36...",
     "author": "xulingfeng",
     "publishedAt": "2026-08-02T12:49:29Z",
-    "score": 53,
+    "score": 55,
     "tags": [
       "ai",
       "discuss",
@@ -781,54 +825,14 @@
     "source": "hn",
     "title": "Seedance 2.5",
     "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
-    "excerpt": "440 points · 255 comments",
+    "excerpt": "441 points · 255 comments",
     "author": "njaremko",
     "publishedAt": "2026-08-01T20:45:12Z",
-    "score": 440,
+    "score": 441,
     "tags": [
       "story"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:c88f61327e2f",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "An old-new take on argument parsing in Rust",
-    "url": "https://jmmv.dev/2026/07/hello-getoptsargs.html",
-    "excerpt": "31 points · rust, unix",
-    "author": "jmmv",
-    "publishedAt": "2026-08-01T14:31:15.800-05:00",
-    "score": 31,
-    "tags": [
-      "rust",
-      "unix"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:e1043235366a",
-    "kind": "article",
-    "source": "devto",
-    "title": "ratatop: the network box, and why your ISP lies with units",
-    "url": "https://dev.to/lovestaco/ratatop-the-network-box-and-why-your-isp-lies-with-units-4lpo",
-    "excerpt": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
-    "author": "Athreya aka Maneshwar",
-    "publishedAt": "2026-08-01T16:48:16Z",
-    "score": 27,
-    "tags": [
-      "programming",
-      "productivity",
-      "cli",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -839,8 +843,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-08-03T19:57:18Z",
-    "score": 454404,
+    "publishedAt": "2026-08-05T06:58:49Z",
+    "score": 454433,
     "tags": [
       "Python",
       "api",
@@ -872,7 +876,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-03T15:22:27Z",
-    "score": 393733,
+    "score": 393763,
     "tags": [
       "Python",
       "books",
@@ -894,8 +898,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
-    "publishedAt": "2026-08-03T06:50:14Z",
-    "score": 312221,
+    "publishedAt": "2026-08-05T06:11:04Z",
+    "score": 312265,
     "tags": [
       "Python",
       "awesome",
@@ -919,7 +923,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 276562,
+    "score": 276604,
     "tags": [
       "Python",
       "beginner-project",
@@ -946,8 +950,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-05T00:33:39Z",
-    "score": 225581,
+    "publishedAt": "2026-08-05T08:30:26Z",
+    "score": 225717,
     "tags": [
       "Python",
       "ai",
@@ -982,7 +986,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223480,
+    "score": 223487,
     "tags": [
       "Python",
       "algorithm",
@@ -1013,8 +1017,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-05T03:22:43Z",
-    "score": 185817,
+    "publishedAt": "2026-08-05T08:29:55Z",
+    "score": 185821,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1044,7 +1048,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 182478,
+    "score": 182535,
     "tags": [
       "Python",
       "cli",
@@ -1068,8 +1072,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-05T01:04:15Z",
-    "score": 124434,
+    "publishedAt": "2026-08-05T08:05:23Z",
+    "score": 124580,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1108,8 +1112,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-04T10:52:12Z",
-    "score": 119619,
+    "publishedAt": "2026-08-05T08:19:20Z",
+    "score": 119642,
     "tags": [
       "Rust",
       "android",
@@ -1145,8 +1149,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-05T03:14:50Z",
-    "score": 115203,
+    "publishedAt": "2026-08-05T07:38:12Z",
+    "score": 115215,
     "tags": [
       "Rust",
       "compiler",
@@ -1166,8 +1170,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-05T03:15:45Z",
-    "score": 109900,
+    "publishedAt": "2026-08-05T08:22:00Z",
+    "score": 109903,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1192,8 +1196,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-05T01:09:50Z",
-    "score": 108081,
+    "publishedAt": "2026-08-05T03:31:39Z",
+    "score": 108111,
     "tags": [
       "Rust",
       "deno",
@@ -1215,8 +1219,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-05T01:25:52Z",
-    "score": 103976,
+    "publishedAt": "2026-08-05T08:26:01Z",
+    "score": 104051,
     "tags": [
       "Rust"
     ],
@@ -1233,8 +1237,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-05T03:27:57Z",
-    "score": 95270,
+    "publishedAt": "2026-08-05T08:44:06Z",
+    "score": 95281,
     "tags": [
       "Rust",
       "bun",
@@ -1266,7 +1270,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-31T11:42:30Z",
-    "score": 94529,
+    "score": 94530,
     "tags": [
       "Java",
       "awesome-list",
@@ -1291,8 +1295,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-05T00:42:10Z",
-    "score": 88860,
+    "publishedAt": "2026-08-05T08:43:31Z",
+    "score": 88885,
     "tags": [
       "Java",
       "docker",
@@ -1323,8 +1327,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-05T00:39:53Z",
-    "score": 88528,
+    "publishedAt": "2026-08-05T07:00:20Z",
+    "score": 88562,
     "tags": [
       "Rust",
       "awesome",
