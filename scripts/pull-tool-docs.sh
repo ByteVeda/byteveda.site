@@ -27,11 +27,16 @@ SLUGS=(taskito paperjam agenteval reclink dagron)
 missing=()
 
 for slug in "${SLUGS[@]}"; do
-  run_id=$(gh run list -R "$ORG/$slug" --workflow docs.yml --status success --limit 1 \
-    --json databaseId --jq '.[0].databaseId // empty' 2>/dev/null || true)
+  # Scope to the default branch: the tool repos guard their upload step to
+  # push/workflow_dispatch, so a pull_request run — a dependabot PR, say — is
+  # "successful" but carries no artifact. `--branch` matches the head branch,
+  # which excludes PR runs.
+  branch=$(gh api "repos/$ORG/$slug" --jq .default_branch 2>/dev/null || true)
+  run_id=$(gh run list -R "$ORG/$slug" --workflow docs.yml --branch "$branch" --status success \
+    --limit 1 --json databaseId --jq '.[0].databaseId // empty' 2>/dev/null || true)
 
   if [ -z "$run_id" ]; then
-    missing+=("$slug — no successful docs.yml run")
+    missing+=("$slug — no successful docs.yml run on $branch")
     continue
   fi
 
