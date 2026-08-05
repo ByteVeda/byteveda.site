@@ -14,15 +14,16 @@ permissions:
   contents: read
 
 jobs:
-  lint:
-    name: Lint
+  verify:
+    name: Lint, typecheck, build
     runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v7
 
+      # Version comes from `packageManager` in the root package.json.
       - uses: pnpm/action-setup@v5
-        with:
-          version: 10
 
       - uses: actions/setup-node@v7
         with:
@@ -32,49 +33,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Biome runs once from the workspace root over apps/** and packages/**.
       - name: Biome check
         run: pnpm exec biome check
 
-  typecheck:
-    name: Typecheck
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-
-      - uses: pnpm/action-setup@v5
-        with:
-          version: 10
-
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: TypeScript
-        run: pnpm typecheck
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-
-      - uses: pnpm/action-setup@v5
-        with:
-          version: 10
-
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Next.js build
-        run: pnpm build
-        env:
-          NEXT_TELEMETRY_DISABLED: 1
+      # Turbo fans these out across both apps; one install beats three cold jobs.
+      - name: Typecheck and build
+        run: pnpm turbo run typecheck build

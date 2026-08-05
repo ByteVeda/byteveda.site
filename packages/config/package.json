@@ -1,0 +1,16 @@
+{
+  "name": "@byteveda/config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared TypeScript and Biome configuration for the ByteVeda monorepo.",
+  "files": [
+    "biome.base.json",
+    "next.json",
+    "tsconfig.base.json"
+  ],
+  "exports": {
+    "./biome.base.json": "./biome.base.json",
+    "./next.json": "./next.json",
+    "./tsconfig.base.json": "./tsconfig.base.json"
+  }
+}
