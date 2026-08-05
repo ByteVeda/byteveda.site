@@ -8,18 +8,18 @@
   "files": {
     "ignoreUnknown": true,
     "includes": [
-      "src/**",
-      "scripts/**",
+      "apps/**",
+      "packages/**",
       "*.ts",
       "*.tsx",
       "*.mjs",
       "*.js",
       "*.json",
-      "!.next",
-      "!node_modules",
-      "!next-env.d.ts",
+      "!**/.next",
+      "!**/node_modules",
+      "!**/next-env.d.ts",
       "!pnpm-lock.yaml",
-      "!src/features/news/data/news.json"
+      "!apps/main/src/features/news/data/news.json"
     ]
   },
   "formatter": {
