@@ -238,20 +238,45 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:117198364def",
+    "id": "mastodon:cb8b385e5588",
     "kind": "article",
     "source": "mastodon",
-    "title": "In July we had an update to # LibreOffice , said hello to new @ tdforg members, posted sections from the foundation&#39…",
-    "url": "https://fosstodon.org/@libreoffice/117041945726796332",
-    "excerpt": "In July we had an update to # LibreOffice , said hello to new @ tdforg members, posted sections from the foundation&#39;s Annual Report, and more: https:// blog.documentfoundation.org/bl og/2026/08/0…",
-    "author": "LibreOffice",
-    "publishedAt": "2026-08-05T08:26:01.317Z",
-    "score": 7,
+    "title": "Great news, everyone! # ONLYOFFICE Desktop Editors is the default office suite on OpenOS/bNode, a privacy-first # Linux…",
+    "url": "https://fosstodon.org/@ONLYOFFICE/117043218174820812",
+    "excerpt": "Great news, everyone! # ONLYOFFICE Desktop Editors is the default office suite on OpenOS/bNode, a privacy-first # Linux distro built on Ubuntu 22.04 LTS (Linux 6.8 kernel), released in June 2026. Key…",
+    "author": "ONLYOFFICE",
+    "publishedAt": "2026-08-05T13:49:37.327Z",
+    "score": 5,
     "tags": [
-      "libreoffice",
-      "foss",
+      "onlyoffice",
+      "linux"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:98414b3682d5",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I’ve been working on a native KDE client based on # Carburetor , and I’m happy to announce its release under the name #…",
+    "url": "https://mastodon.bsd.cafe/@sohrab/117043201429971878",
+    "excerpt": "I’ve been working on a native KDE client based on # Carburetor , and I’m happy to announce its release under the name # Karburetor . The goal of this project is to provide a better Tor experience for…",
+    "author": "Sohrab Behdani :freebsd:",
+    "publishedAt": "2026-08-05T13:45:21.000Z",
+    "score": 6,
+    "tags": [
+      "carburetor",
+      "karburetor",
+      "kde",
+      "kdeplasma",
+      "linux",
       "opensource",
-      "freesoftware"
+      "foss",
+      "tor",
+      "privacy",
+      "gnulinux",
+      "qt",
+      "kdeapps"
     ],
     "labels": [
       "opensource"
@@ -259,58 +284,34 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:fbaa30e366eb",
+    "id": "rss:Stack Overflow Blog:ad8b7f8bfa19",
     "kind": "article",
-    "source": "mastodon",
-    "title": "The goal of TUXEDO OS is to provide users with a fully productive working environment from the very first boot. This sa…",
-    "url": "https://linuxrocks.online/@tuxedocomputers/117041851216998148",
-    "excerpt": "The goal of TUXEDO OS is to provide users with a fully productive working environment from the very first boot. This saves both time and resources. Our philosophy is simple: as little as possible, as…",
-    "author": "TUXEDO",
-    "publishedAt": "2026-08-05T08:01:59.000Z",
-    "score": 11,
+    "source": "rss",
+    "title": "Explorers, exploiters, and the myth of the 100x engineer​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌​‌‍‌​​﻿​﻿​﻿‌‍‌‍​‍​﻿‌﻿‌‍‌‍‌‍‌‌​‍﻿‌​﻿‍​‌‍‌‍​﻿‌﻿​﻿‌​​‍﻿‌​﻿‌​​﻿‌​‌‍​‍​﻿​﻿​‍﻿‌​﻿‍‌​﻿​‌‌‍‌​‌‍​‍​‍﻿‌‌‍​‌‌‍​‍‌‍​﻿​﻿‌‌‌‍‌​​﻿‌​‌‍‌‌‌‍​﻿​﻿‌‌‌‍‌​​﻿‍‌​﻿‍‌​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌​‌‍‌​​﻿​﻿​﻿‌‍‌‍​‍​﻿‌﻿‌‍‌‍‌‍‌‌​‍﻿‌​﻿‍​‌‍‌‍​﻿‌﻿​﻿‌​​‍﻿‌​﻿‌​​﻿‌​‌‍​‍​﻿​﻿​‍﻿‌​﻿‍‌​﻿​‌‌‍‌​‌‍​‍​‍﻿‌‌‍​‌‌‍​‍‌‍​﻿​﻿‌‌‌‍‌​​﻿‌​‌‍‌‌‌‍​﻿​﻿‌‌‌‍‌​​﻿‍‌​﻿‍‌​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/08/05/the-myth-of-the-100x-engineer/",
+    "excerpt": "The “find the special ones and promote their traits” approach isn’t the best or only way to drive AI adoption and productivity on an engineering team. ​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍‍​‍​‍‌…",
+    "author": "Eira May",
+    "publishedAt": "2026-08-05T07:40:00.000Z",
+    "score": 0,
     "tags": [
-      "tuxedoos",
-      "debian",
-      "linux",
-      "tuxedo",
-      "augsburg"
+      "Stack Overflow Blog"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:9e590fc113ab",
+    "id": "lobsters:42f8c59d6bee",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Me after laboriously backporting # Python 3.15 fixes to # Django 6.0.x in # Gentoo : \"oh, nice, the patchset applies cl…",
-    "url": "https://social.treehouse.systems/@mgorny/117041742864244996",
-    "excerpt": "Me after laboriously backporting # Python 3.15 fixes to # Django 6.0.x in # Gentoo : \"oh, nice, the patchset applies cleanly to 5.2.x as well.\" And today, I have to laboriously backport another patch…",
-    "author": "Jesus Michał von Gentoo 🏔 (he)",
-    "publishedAt": "2026-08-05T07:34:25.000Z",
-    "score": 7,
-    "tags": [
-      "python",
-      "django",
-      "gentoo"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ad977f651766",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "rust-lang/rust is adopting an LLM policy | Inside Rust Blog",
+    "source": "lobsters",
+    "title": "rust-lang/rust is adopting an LLM policy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-    "excerpt": "Want to follow along with Rust development? Curious how you might get involved? Take a look!",
-    "author": "Esteban Küber :rust:",
-    "publishedAt": "2026-08-05T06:39:33.000Z",
-    "score": 150,
+    "excerpt": "70 points · rust, vibecoding",
+    "author": "wezm",
+    "publishedAt": "2026-08-05T01:55:36.963-05:00",
+    "score": 70,
     "tags": [
-      "rustlang",
-      "rust"
+      "rust",
+      "vibecoding"
     ],
     "labels": [
       "rust"
@@ -318,57 +319,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:76da73af20bc",
+    "id": "lobsters:5045f9a76753",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Flood And Landslide Susceptibility Assessment And Multi Hazard Interaction Mapping Using Machine Learning And GIS For S…",
-    "url": "https://techhub.social/@GregCocks/117041145717509714",
-    "excerpt": "Flood And Landslide Susceptibility Assessment And Multi Hazard Interaction Mapping Using Machine Learning And GIS For Sustainable Settlement Planning In Nepal -- https:// doi.org/10.1007/s44288-026-0…",
-    "author": "💧🌏 Greg Cocks",
-    "publishedAt": "2026-08-05T05:02:34.000Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "designing a query system",
+    "url": "https://bal-e.org/speed/krabby/2026/query-system-design/",
+    "excerpt": "16 points · compilers, rust",
+    "author": "fanf",
+    "publishedAt": "2026-08-04T16:40:22.122-05:00",
+    "score": 16,
     "tags": [
-      "gis",
-      "spatial",
-      "mapping",
-      "GoogleEarthEngine",
-      "machinelearning",
-      "remotesensing",
-      "geospatialai",
-      "DisasterRiskReduction",
-      "multihazard",
-      "climateadaptation",
-      "climatechange",
-      "extremeweather",
-      "landuseplanning",
-      "sustainabledevelopment",
-      "infrastructureplanning",
-      "riskassessment",
-      "NaturalHazards",
-      "nepal",
-      "earthobservation",
-      "hindukushhimalaya",
-      "hkh",
-      "hindukush",
-      "himalayas",
-      "risk",
-      "hazard",
-      "assessment",
-      "national",
-      "regional",
-      "spatialAnalysis",
-      "spatiotemporal",
-      "MassMovement",
-      "landslide",
-      "mitigation",
-      "water",
-      "hydrology",
-      "flood",
-      "flooding",
-      "sustainability"
+      "compilers",
+      "rust"
     ],
     "labels": [
-      "ml"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -378,34 +343,14 @@
     "source": "lobsters",
     "title": "irken: A tiny hackable full-featured IRC client",
     "url": "https://codeberg.org/dlowe/irken",
-    "excerpt": "19 points · programming",
+    "excerpt": "33 points · programming",
     "author": "dzwdz",
     "publishedAt": "2026-08-04T15:30:17.224-05:00",
-    "score": 19,
+    "score": 33,
     "tags": [
       "programming"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:dcfb0999fb9e",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Relre Relay",
-    "url": "https://rel.re/",
-    "excerpt": "You are looking for a way to increase your instances visibility and have more Inbox? Look no further, check out https:// rel.re our state of the art selfmade # activitypub # relay in # golang . Its i…",
-    "author": "SolSoCoG@:ieji:",
-    "publishedAt": "2026-08-04T19:35:42.000Z",
-    "score": 5,
-    "tags": [
-      "activitypub",
-      "relay",
-      "golang"
-    ],
-    "labels": [
-      "go"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -430,10 +375,10 @@
     "source": "lobsters",
     "title": "Enabling the next iteration of the borrow checker on nightly",
     "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nighty/",
-    "excerpt": "71 points · rust",
+    "excerpt": "96 points · rust",
     "author": "kmaasrud",
     "publishedAt": "2026-08-04T12:45:15.663-05:00",
-    "score": 71,
+    "score": 96,
     "tags": [
       "rust"
     ],
@@ -499,10 +444,10 @@
     "source": "lobsters",
     "title": "BorrowSanitizer",
     "url": "https://borrowsanitizer.com/",
-    "excerpt": "43 points · rust",
+    "excerpt": "44 points · rust",
     "author": "sanxiyn",
     "publishedAt": "2026-08-04T02:29:43.185-05:00",
-    "score": 43,
+    "score": 44,
     "tags": [
       "rust"
     ],
@@ -520,7 +465,7 @@
     "excerpt": "A few days ago, I wrote \"Understanding Over Origin\" and it got alot of engagement and I'm really...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-04T04:36:13Z",
-    "score": 33,
+    "score": 37,
     "tags": [
       "ai",
       "programming",
@@ -594,7 +539,7 @@
     "excerpt": "I want to talk about what I have notice on the platform and want to address what we all have been...",
     "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
     "publishedAt": "2026-08-03T14:47:20Z",
-    "score": 97,
+    "score": 110,
     "tags": [
       "discuss",
       "community",
@@ -615,7 +560,7 @@
     "excerpt": "Everyone's heard by now that TypeScript \"went native.\" And I keep seeing the same wrong conclusion...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-08-03T13:11:18Z",
-    "score": 136,
+    "score": 150,
     "tags": [
       "discuss",
       "javascript",
@@ -634,10 +579,10 @@
     "source": "lobsters",
     "title": "Rust Project Goals: Immobile types and guaranteed destructors",
     "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
-    "excerpt": "47 points · rust",
+    "excerpt": "49 points · rust",
     "author": "noncrab",
     "publishedAt": "2026-08-03T06:13:13.293-05:00",
-    "score": 47,
+    "score": 49,
     "tags": [
       "rust"
     ],
@@ -655,7 +600,7 @@
     "excerpt": "This is a submission for DEV's Summer Bug Smash: Clear the Lineup powered by Sentry. ...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-08-03T07:38:53Z",
-    "score": 33,
+    "score": 37,
     "tags": [
       "bugsmash",
       "devchallenge",
@@ -672,10 +617,10 @@
     "source": "lobsters",
     "title": "Don't be a meat proxy",
     "url": "https://gruhn.me/blog/2026-08-03/",
-    "excerpt": "134 points · practices, vibecoding",
+    "excerpt": "135 points · practices, vibecoding",
     "author": "antonmedv",
     "publishedAt": "2026-08-03T02:10:50.103-05:00",
-    "score": 134,
+    "score": 135,
     "tags": [
       "practices",
       "vibecoding"
@@ -689,10 +634,10 @@
     "source": "lobsters",
     "title": "Practical Memory Safety",
     "url": "https://ohadravid.github.io/posts/2026-08-unsafe-water/",
-    "excerpt": "16 points · c, rust",
+    "excerpt": "17 points · c, rust",
     "author": "raymii",
     "publishedAt": "2026-08-03T02:02:41.286-05:00",
-    "score": 16,
+    "score": 17,
     "tags": [
       "c",
       "rust"
@@ -727,7 +672,7 @@
     "excerpt": "Two weeks ago, I published \"Why Agent Evaluation Is Harder Than Model Evaluation.\" The core argument:...",
     "author": "Debashish Ghosal",
     "publishedAt": "2026-08-02T20:38:59Z",
-    "score": 26,
+    "score": 27,
     "tags": [
       "ai",
       "agentskills",
@@ -746,10 +691,10 @@
     "source": "lobsters",
     "title": "Faster floating point math with Rust’s new API",
     "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
-    "excerpt": "46 points · performance, rust",
+    "excerpt": "47 points · performance, rust",
     "author": "hemitheconyx",
     "publishedAt": "2026-08-02T15:27:23.061-05:00",
-    "score": 46,
+    "score": 47,
     "tags": [
       "performance",
       "rust"
@@ -807,7 +752,7 @@
     "excerpt": "Keep the shell. Preserve the presence. The ally doesn't suspect; the enemy doesn't move. — The 36...",
     "author": "xulingfeng",
     "publishedAt": "2026-08-02T12:49:29Z",
-    "score": 55,
+    "score": 56,
     "tags": [
       "ai",
       "discuss",
@@ -836,6 +781,25 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:c88f61327e2f",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "An old-new take on argument parsing in Rust",
+    "url": "https://jmmv.dev/2026/07/hello-getoptsargs.html",
+    "excerpt": "32 points · rust, unix",
+    "author": "jmmv",
+    "publishedAt": "2026-08-01T14:31:15.800-05:00",
+    "score": 32,
+    "tags": [
+      "rust",
+      "unix"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -844,7 +808,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-05T06:58:49Z",
-    "score": 454433,
+    "score": 454473,
     "tags": [
       "Python",
       "api",
@@ -876,7 +840,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-03T15:22:27Z",
-    "score": 393763,
+    "score": 393785,
     "tags": [
       "Python",
       "books",
@@ -899,7 +863,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 312265,
+    "score": 312314,
     "tags": [
       "Python",
       "awesome",
@@ -923,7 +887,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 276604,
+    "score": 276659,
     "tags": [
       "Python",
       "beginner-project",
@@ -950,8 +914,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-05T08:30:26Z",
-    "score": 225717,
+    "publishedAt": "2026-08-05T14:27:58Z",
+    "score": 225872,
     "tags": [
       "Python",
       "ai",
@@ -986,7 +950,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223487,
+    "score": 223506,
     "tags": [
       "Python",
       "algorithm",
@@ -1017,8 +981,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-05T08:29:55Z",
-    "score": 185821,
+    "publishedAt": "2026-08-05T14:09:43Z",
+    "score": 185829,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1048,7 +1012,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 182535,
+    "score": 182594,
     "tags": [
       "Python",
       "cli",
@@ -1072,8 +1036,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-05T08:05:23Z",
-    "score": 124580,
+    "publishedAt": "2026-08-05T13:32:38Z",
+    "score": 124710,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1112,8 +1076,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-05T08:19:20Z",
-    "score": 119642,
+    "publishedAt": "2026-08-05T11:38:03Z",
+    "score": 119666,
     "tags": [
       "Rust",
       "android",
@@ -1149,8 +1113,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-05T07:38:12Z",
-    "score": 115215,
+    "publishedAt": "2026-08-05T14:28:01Z",
+    "score": 115245,
     "tags": [
       "Rust",
       "compiler",
@@ -1170,8 +1134,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-05T08:22:00Z",
-    "score": 109903,
+    "publishedAt": "2026-08-05T09:52:51Z",
+    "score": 109910,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1196,8 +1160,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-05T03:31:39Z",
-    "score": 108111,
+    "publishedAt": "2026-08-05T14:08:11Z",
+    "score": 108150,
     "tags": [
       "Rust",
       "deno",
@@ -1219,8 +1183,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-05T08:26:01Z",
-    "score": 104051,
+    "publishedAt": "2026-08-05T14:23:19Z",
+    "score": 104110,
     "tags": [
       "Rust"
     ],
@@ -1237,8 +1201,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-05T08:44:06Z",
-    "score": 95281,
+    "publishedAt": "2026-08-05T14:28:15Z",
+    "score": 95285,
     "tags": [
       "Rust",
       "bun",
@@ -1270,7 +1234,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-31T11:42:30Z",
-    "score": 94530,
+    "score": 94534,
     "tags": [
       "Java",
       "awesome-list",
@@ -1295,8 +1259,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-05T08:43:31Z",
-    "score": 88885,
+    "publishedAt": "2026-08-05T14:26:00Z",
+    "score": 88912,
     "tags": [
       "Java",
       "docker",
@@ -1327,8 +1291,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-05T07:00:20Z",
-    "score": 88562,
+    "publishedAt": "2026-08-05T12:41:58Z",
+    "score": 88597,
     "tags": [
       "Rust",
       "awesome",
