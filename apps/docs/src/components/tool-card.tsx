@@ -1,9 +1,6 @@
+import { ArrowRight, Badge, ExternalLink, GithubIcon, TerminalChip } from "@byteveda/ui";
 import { cn, type Project } from "@byteveda/utils";
 import Link from "next/link";
-import { Badge } from "./ui/badge";
-import { ExternalLink } from "./ui/external-link";
-import { ArrowRight, GithubIcon } from "./ui/icons";
-import { TerminalChip } from "./ui/terminal-chip";
 
 type Props = {
   tool: Project;

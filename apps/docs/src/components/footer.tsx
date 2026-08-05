@@ -1,7 +1,6 @@
+import { ExternalLink, Wordmark } from "@byteveda/ui";
 import { projects } from "@byteveda/utils";
 import { site } from "@/lib/site";
-import { ExternalLink } from "./ui/external-link";
-import { Wordmark } from "./ui/wordmark";
 
 export function Footer() {
   return (

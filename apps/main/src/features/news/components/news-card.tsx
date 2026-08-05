@@ -1,4 +1,4 @@
-import { RelativeTime } from "@/components/ui";
+import { RelativeTime } from "@byteveda/ui";
 import type { NewsItem } from "../types";
 import { sourceLabel } from "../utils";
 

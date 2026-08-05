@@ -1,6 +1,6 @@
+import { Section, SectionHeader } from "@byteveda/ui";
 import { projects } from "@byteveda/utils";
 import { ToolCard } from "./tool-card";
-import { Section, SectionHeader } from "./ui/section";
 
 export function ToolsSection() {
   return (

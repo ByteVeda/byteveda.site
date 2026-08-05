@@ -1,16 +1,17 @@
-import { cn } from "@byteveda/utils";
+import { cn, ORG } from "@byteveda/utils";
 import Link from "next/link";
-import { site } from "@/lib/site";
 
 type WordmarkProps = {
   href?: string;
+  /** Brand text; defaults to the org name, lowercased. */
+  label?: string;
   className?: string;
 };
 
 /** The ByteVeda brand lockup — teal bracket mark + wordmark. */
-export function Wordmark({ href = "/", className }: WordmarkProps) {
+export function Wordmark({ href = "/", label = ORG.toLowerCase(), className }: WordmarkProps) {
   return (
-    <Link href={href} className={cn("brand", className)} aria-label={`${site.name} home`}>
+    <Link href={href} className={cn("brand", className)} aria-label={`${ORG} home`}>
       <span className="mark" aria-hidden>
         <svg
           viewBox="0 0 24 24"
@@ -20,13 +21,13 @@ export function Wordmark({ href = "/", className }: WordmarkProps) {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <title>{site.name}</title>
+          <title>{ORG}</title>
           <path d="M5 7h9a4 4 0 0 1 0 8H9l5 6" />
           <path d="M9 3v18" />
         </svg>
       </span>
       <span>
-        <b>{site.name.toLowerCase()}</b>
+        <b>{label}</b>
         <span className="dot">.</span>
       </span>
     </Link>

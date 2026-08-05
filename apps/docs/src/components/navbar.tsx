@@ -2,11 +2,10 @@
 // The landing site has a matching but distinct navbar under the same path.
 // Keep them in sync manually if nav structure changes.
 
+import { ArrowUpRight, ThemeToggle } from "@byteveda/ui";
 import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
-import { ThemeToggle } from "./theme-toggle";
-import { ArrowUpRight } from "./ui/icons";
 
 const linkClass = cn(
   "hidden items-center gap-1 rounded-md px-3 py-1.5 sm:inline-flex",

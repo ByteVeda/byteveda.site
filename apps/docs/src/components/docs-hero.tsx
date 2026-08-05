@@ -1,4 +1,4 @@
-import { HeroNet } from "./hero-net";
+import { HeroNet } from "@byteveda/ui";
 
 export function DocsHero() {
   return (

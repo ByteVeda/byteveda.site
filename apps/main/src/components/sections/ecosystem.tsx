@@ -1,4 +1,4 @@
-import { Marquee } from "@/components/ui";
+import { Marquee } from "@byteveda/ui";
 
 const langs = [
   { name: "Python", color: "#ffd34e" },

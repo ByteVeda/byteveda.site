@@ -1,7 +1,7 @@
 "use client";
 
+import { Button, RelativeTime } from "@byteveda/ui";
 import { useMemo, useState } from "react";
-import { Button, RelativeTime } from "@/components/ui";
 import { site } from "@/lib/site";
 import type { NewsItem } from "../types";
 import {

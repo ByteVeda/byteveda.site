@@ -1,4 +1,4 @@
-import { NotebookSection } from "@/components/ui";
+import { NotebookSection } from "@byteveda/ui";
 import {
   avatarUrl,
   contributeGuideUrl,

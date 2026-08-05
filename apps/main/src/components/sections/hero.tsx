@@ -1,5 +1,4 @@
-import { HeroNet } from "@/components/fx";
-import { Button } from "@/components/ui";
+import { Button, HeroNet } from "@byteveda/ui";
 import { site } from "@/lib/site";
 
 /** A static benchmark terminal — reclink dedupe, 68× faster on the byteveda core. */
@@ -40,7 +39,7 @@ function BenchmarkTerminal() {
 
 export function Hero() {
   return (
-    <section className="hero" id="hero">
+    <section className="hero" id="hero" data-hero-fx>
       <div className="aurora" aria-hidden>
         <b className="a1" />
         <b className="a2" />

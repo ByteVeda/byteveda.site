@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button } from "@byteveda/ui";
 import { getArticles, getReleases, NewsCard } from "@/features/news";
 import { site } from "@/lib/site";
 

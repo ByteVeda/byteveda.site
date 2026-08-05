@@ -1,4 +1,4 @@
-import { Marquee } from "@/components/ui";
+import { Marquee } from "@byteveda/ui";
 import { getTrending } from "@/features/news";
 
 const TRENDING_LIMIT = 12;

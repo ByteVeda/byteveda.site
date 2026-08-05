@@ -780,12 +780,6 @@
 }
 
 /* hero connective network (canvas) */
-.hero-net {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
 .hero .wrap {
   position: relative;
   z-index: 1;

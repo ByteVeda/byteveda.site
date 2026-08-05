@@ -15,17 +15,22 @@ function hexToRgb(hex: string): [number, number, number] | null {
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }
 
+type HeroNetProps = {
+  /** Selector for the element the canvas should fill and track the cursor over. */
+  selector?: string;
+};
+
 /**
  * Hero connective network: drifting nodes + proximity links + a gentle pull
  * toward the cursor. Accent- and theme-aware, pauses when off-screen or the
  * tab is hidden, and honours `prefers-reduced-motion`.
  */
-export function HeroNet() {
+export function HeroNet({ selector = "[data-hero-fx]" }: HeroNetProps = {}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const hero = canvas?.closest<HTMLElement>(".hero") ?? canvas?.parentElement ?? null;
+    const hero = canvas?.closest<HTMLElement>(selector) ?? canvas?.parentElement ?? null;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !hero || !ctx) return;
 
@@ -236,7 +241,7 @@ export function HeroNet() {
       screenIO.disconnect();
       accentMO.disconnect();
     };
-  }, []);
+  }, [selector]);
 
   return <canvas ref={canvasRef} className="hero-net" aria-hidden />;
 }

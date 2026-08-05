@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui";
+import { Button } from "@byteveda/ui";
 import { site } from "@/lib/site";
 
 export function Cta() {

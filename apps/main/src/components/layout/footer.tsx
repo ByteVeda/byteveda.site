@@ -1,5 +1,5 @@
+import { GithubIcon, Wordmark } from "@byteveda/ui";
 import { projects } from "@byteveda/utils";
-import { GithubIcon, Wordmark } from "@/components/ui";
 import { site } from "@/lib/site";
 import { FooterSubscribe } from "./footer-subscribe";
 

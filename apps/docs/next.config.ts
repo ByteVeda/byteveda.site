@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   // Workspace packages ship raw TypeScript, so Next has to compile them itself.
-  transpilePackages: ["@byteveda/utils"],
+  transpilePackages: ["@byteveda/ui", "@byteveda/utils"],
 };
 
 export default nextConfig;

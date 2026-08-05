@@ -1,10 +1,10 @@
 "use client";
 
+import { Button, Wordmark } from "@byteveda/ui";
 import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Button, Wordmark } from "@/components/ui";
 import { nav, site } from "@/lib/site";
 
 export function MobileMenu() {

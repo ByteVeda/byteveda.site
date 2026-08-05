@@ -1,5 +1,4 @@
-import { HeroNet } from "@/components/fx";
-import { Button, RelativeTime } from "@/components/ui";
+import { Button, HeroNet, RelativeTime } from "@byteveda/ui";
 import type { NewsItem } from "../types";
 
 function summarize(text: string, max = 190): string {
@@ -22,7 +21,7 @@ export function NewsHero({ lead }: { lead: NewsItem }) {
       : "MIT / APACHE-2.0";
 
   return (
-    <section className="hero news-hero" id="hero">
+    <section className="hero news-hero" id="hero" data-hero-fx>
       <div className="aurora" aria-hidden>
         <b className="a1" />
         <b className="a2" />

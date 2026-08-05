@@ -1,9 +1,8 @@
+import { Button, ThemeToggle, Wordmark } from "@byteveda/ui";
 import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
-import { Button, Wordmark } from "@/components/ui";
 import { nav, site } from "@/lib/site";
 import { MobileMenu } from "./mobile-menu";
-import { ThemeToggle } from "./theme-toggle";
 
 export function Navbar() {
   return (

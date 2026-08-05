@@ -1,0 +1,33 @@
+/* The ByteVeda design system: import this straight after `tailwindcss`.
+   Apps add only their own page-level stylesheets on top. */
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./components.css";
+
+/* Tailwind scans consumers' source automatically but skips node_modules, which
+   is how this package is resolved. `@source` is relative to this file, so one
+   directive here covers every app. */
+@source "../";
+
+/* Theme is driven by `data-theme` on <html> (next-themes). Keep the `dark:`
+   variant working for any utility that still relies on it. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Tailwind token bridge — lets utilities (text-accent, border-border, …)
+   resolve to the runtime CSS variables for content pages. */
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-muted: var(--surface-2);
+  --color-muted-foreground: var(--text-dim);
+  --color-faint: var(--text-faint);
+  --color-border: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}

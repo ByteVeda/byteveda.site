@@ -1,9 +1,9 @@
+import { ThemeProvider } from "@byteveda/ui";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { SiteEffects } from "@/components/fx";
 import { Footer, Navbar } from "@/components/layout";
 import { site } from "@/lib/site";
-import { ThemeProvider } from "@/providers/theme-provider";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
