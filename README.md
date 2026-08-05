@@ -52,3 +52,13 @@ Anything scoped to one workspace: `pnpm --filter @byteveda/main <script>`.
 | --- | --- | --- |
 | `apps/main` | Vercel | Project root directory is `apps/main`; build `pnpm turbo run build --filter=@byteveda/main` |
 | `apps/docs` | GitHub Pages | `.github/workflows/deploy-docs.yml` publishes `apps/docs/out`; `public/CNAME` binds the custom domain |
+
+### Per-tool docs
+
+`docs.byteveda.org/<slug>/` serves documentation built in each tool's own repo. A
+custom domain belongs to exactly one repository, so the tool repos cannot serve those
+subpaths themselves — `scripts/pull-tool-docs.sh` mirrors their build output into the
+portal export instead, and the deploy runs daily to pick up new publishes. Each tool's
+own `byteveda.github.io/<slug>/` site is unaffected.
+
+Requires a `DOCS_ARTIFACT_TOKEN` secret with `Actions: read` on the org.
