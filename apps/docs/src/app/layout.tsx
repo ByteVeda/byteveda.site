@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@byteveda/ui";
+import { SiteEffects, ThemeProvider } from "@byteveda/ui";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { site } from "@/lib/site";
@@ -79,6 +79,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         >
           <div className="grain" aria-hidden />
           {children}
+          <SiteEffects />
         </ThemeProvider>
       </body>
     </html>
