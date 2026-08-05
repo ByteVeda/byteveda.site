@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteVeda web
 
-## Getting Started
+Monorepo for the ByteVeda websites. pnpm workspaces + Turborepo, Next.js 16, Tailwind v4, Biome.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```text
+apps/
+  main/        byteveda.org        → Vercel
+  docs/        docs.byteveda.org   → GitHub Pages (static export)
+packages/
+  ui/          @byteveda/ui        primitives, theme tokens, hero effects
+  utils/       @byteveda/utils     cn / url / github helpers, org constants, project catalogue
+  config/      @byteveda/config    shared tsconfig + Biome rules
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+pnpm dev          # byteveda.org on :3000
+pnpm dev:docs     # docs portal on :3001
+pnpm dev:all      # both at once
+```
 
-## Learn More
+## Checks
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm lint         # Biome, once from the root over apps/** and packages/**
+pnpm typecheck    # tsc --noEmit per app, via turbo
+pnpm build        # next build for both apps
+pnpm fetch:news   # refresh apps/main/src/features/news/data/news.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Anything scoped to one workspace: `pnpm --filter @byteveda/main <script>`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Working in the monorepo
 
-## Deploy on Vercel
+- **Shared code goes in `packages/`.** Both apps consume raw TypeScript from the
+  workspace, so each app lists the packages in `transpilePackages`.
+- **Dependency versions live in the `catalog:` block of `pnpm-workspace.yaml`.**
+  App manifests reference `catalog:` rather than a version range, which is what
+  keeps the two apps on identical Next/React builds.
+- **Design tokens and primitive styles live in `@byteveda/ui/styles`.** An app's
+  `globals.css` imports `tailwindcss`, then the package stylesheet, then only its
+  own page-level CSS. Tailwind scans the package through an `@source` directive
+  inside that stylesheet.
+- **Theme switching is `data-theme` on `<html>`** (next-themes), not a `.dark` class.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| App | Target | Notes |
+| --- | --- | --- |
+| `apps/main` | Vercel | Project root directory is `apps/main`; build `pnpm turbo run build --filter=@byteveda/main` |
+| `apps/docs` | GitHub Pages | `.github/workflows/deploy-docs.yml` publishes `apps/docs/out`; `public/CNAME` binds the custom domain |
