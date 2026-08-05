@@ -1,13 +1,12 @@
+import { cn, type Project } from "@byteveda/utils";
 import Link from "next/link";
-import type { Tool } from "@/content/tools";
-import { cn } from "@/lib/cn";
 import { Badge } from "./ui/badge";
 import { ExternalLink } from "./ui/external-link";
 import { ArrowRight, GithubIcon } from "./ui/icons";
 import { TerminalChip } from "./ui/terminal-chip";
 
 type Props = {
-  tool: Tool;
+  tool: Project;
 };
 
 export function ToolCard({ tool }: Props) {

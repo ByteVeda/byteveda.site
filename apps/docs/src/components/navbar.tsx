@@ -2,10 +2,9 @@
 // The landing site has a matching but distinct navbar under the same path.
 // Keep them in sync manually if nav structure changes.
 
+import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
-import { cn } from "@/lib/cn";
 import { nav, site } from "@/lib/site";
-import { isExternalUrl } from "@/lib/url";
 import { ThemeToggle } from "./theme-toggle";
 import { ArrowUpRight } from "./ui/icons";
 

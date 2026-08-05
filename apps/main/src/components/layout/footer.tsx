@@ -1,5 +1,5 @@
+import { projects } from "@byteveda/utils";
 import { GithubIcon, Wordmark } from "@/components/ui";
-import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
 import { FooterSubscribe } from "./footer-subscribe";
 
@@ -51,7 +51,7 @@ export function Footer() {
           <FooterColumn title="Tools">
             {projects.map((p) => (
               <li key={p.slug}>
-                <a href={p.docsUrl ?? p.repoUrl}>{p.name}</a>
+                <a href={p.docsUrl}>{p.name}</a>
               </li>
             ))}
           </FooterColumn>

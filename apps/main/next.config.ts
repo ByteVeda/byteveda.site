@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Workspace packages ship raw TypeScript, so Next has to compile them itself.
+  transpilePackages: ["@byteveda/utils"],
 };
 
 export default nextConfig;

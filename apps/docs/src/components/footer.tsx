@@ -1,4 +1,4 @@
-import { projects } from "@/content/projects";
+import { projects } from "@byteveda/utils";
 import { site } from "@/lib/site";
 import { ExternalLink } from "./ui/external-link";
 import { Wordmark } from "./ui/wordmark";
@@ -18,7 +18,8 @@ export function Footer() {
           <FooterColumn title="Tools">
             {projects.map((p) => (
               <li key={p.slug}>
-                <ExternalLink href={p.docsUrl ?? p.repoUrl} className="text-sm">
+                {/* Per-tool docs live on this domain, so link the subpath, not the absolute URL. */}
+                <ExternalLink href={`/${p.slug}/`} className="text-sm">
                   {p.name}
                 </ExternalLink>
               </li>

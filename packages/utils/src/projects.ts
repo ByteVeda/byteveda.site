@@ -1,3 +1,5 @@
+import { DOCS_URL, GITHUB_URL } from "./org";
+
 export type Language = "Rust" | "Python" | "Java" | "TypeScript";
 export type License = "MIT" | "Apache-2.0";
 
@@ -9,11 +11,18 @@ export type Project = {
   languages: Language[];
   license: License;
   install: string;
+  /** `github.com/ByteVeda/<slug>` */
   repoUrl: string;
-  docsUrl?: string;
+  /** `docs.byteveda.org/<slug>` */
+  docsUrl: string;
+  /** `github.com/ByteVeda/<slug>#readme` */
+  readmeUrl: string;
 };
 
-export const projects: Project[] = [
+/** Everything about a project except the URLs, which are derived from `slug`. */
+type ProjectSeed = Omit<Project, "repoUrl" | "docsUrl" | "readmeUrl">;
+
+const seeds: ProjectSeed[] = [
   {
     slug: "taskito",
     name: "taskito",
@@ -23,8 +32,6 @@ export const projects: Project[] = [
     languages: ["Rust", "Python"],
     license: "MIT",
     install: "pip install taskito",
-    repoUrl: "https://github.com/ByteVeda/taskito",
-    docsUrl: "https://docs.byteveda.org/taskito",
   },
   {
     slug: "paperjam",
@@ -35,8 +42,6 @@ export const projects: Project[] = [
     languages: ["Rust", "Python"],
     license: "MIT",
     install: "pip install paperjam",
-    repoUrl: "https://github.com/ByteVeda/paperjam",
-    docsUrl: "https://docs.byteveda.org/paperjam",
   },
   {
     slug: "agenteval",
@@ -47,8 +52,6 @@ export const projects: Project[] = [
     languages: ["Java"],
     license: "Apache-2.0",
     install: "org.byteveda.agenteval:agenteval-junit5",
-    repoUrl: "https://github.com/ByteVeda/agenteval",
-    docsUrl: "https://docs.byteveda.org/agenteval",
   },
   {
     slug: "reclink",
@@ -59,8 +62,6 @@ export const projects: Project[] = [
     languages: ["Rust", "Python"],
     license: "Apache-2.0",
     install: "pip install reclink",
-    repoUrl: "https://github.com/ByteVeda/reclink",
-    docsUrl: "https://docs.byteveda.org/reclink",
   },
   {
     slug: "dagron",
@@ -71,7 +72,12 @@ export const projects: Project[] = [
     languages: ["Rust", "Python"],
     license: "MIT",
     install: "pip install dagron",
-    repoUrl: "https://github.com/ByteVeda/dagron",
-    docsUrl: "https://docs.byteveda.org/dagron",
   },
 ];
+
+export const projects: Project[] = seeds.map((seed) => ({
+  ...seed,
+  repoUrl: `${GITHUB_URL}/${seed.slug}`,
+  docsUrl: `${DOCS_URL}/${seed.slug}`,
+  readmeUrl: `${GITHUB_URL}/${seed.slug}#readme`,
+}));

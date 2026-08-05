@@ -8,6 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@byteveda/utils": "workspace:*",
     "lucide-react": "catalog:",
     "next": "catalog:",
     "next-themes": "catalog:",

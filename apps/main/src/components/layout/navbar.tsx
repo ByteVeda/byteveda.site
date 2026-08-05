@@ -1,7 +1,7 @@
+import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { Button, Wordmark } from "@/components/ui";
 import { nav, site } from "@/lib/site";
-import { isExternalUrl } from "@/lib/url";
 import { MobileMenu } from "./mobile-menu";
 import { ThemeToggle } from "./theme-toggle";
 

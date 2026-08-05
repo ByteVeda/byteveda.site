@@ -1,15 +1,17 @@
+import { DOCS_DOMAIN, DOCS_URL, GITHUB_URL, MAIN_URL, ORG } from "@byteveda/utils";
+
 export const site = {
-  name: "ByteVeda",
+  name: ORG,
   section: "docs",
-  domain: "docs.byteveda.org",
-  url: "https://docs.byteveda.org",
-  homeUrl: "https://byteveda.org",
+  domain: DOCS_DOMAIN,
+  url: DOCS_URL,
+  homeUrl: MAIN_URL,
   tagline: "Everything ByteVeda, documented in one place.",
   description:
     "Documentation portal for ByteVeda's open-source libraries. Guides, API references, and examples for taskito, paperjam, agenteval, reclink, and dagron.",
-  org: "ByteVeda",
-  githubUrl: "https://github.com/ByteVeda",
-  docsUrl: "https://docs.byteveda.org",
+  org: ORG,
+  githubUrl: GITHUB_URL,
+  docsUrl: DOCS_URL,
 } as const;
 
 export const nav = [

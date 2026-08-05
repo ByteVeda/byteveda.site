@@ -11,6 +11,7 @@
     "fetch:news": "tsx scripts/fetch-news/index.ts"
   },
   "dependencies": {
+    "@byteveda/utils": "workspace:*",
     "lucide-react": "catalog:",
     "next": "catalog:",
     "next-themes": "catalog:",

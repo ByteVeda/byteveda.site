@@ -1,12 +1,11 @@
 "use client";
 
+import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button, Wordmark } from "@/components/ui";
-import { cn } from "@/lib/cn";
 import { nav, site } from "@/lib/site";
-import { isExternalUrl } from "@/lib/url";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);

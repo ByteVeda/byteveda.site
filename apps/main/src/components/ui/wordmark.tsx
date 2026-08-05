@@ -1,5 +1,5 @@
+import { cn } from "@byteveda/utils";
 import Link from "next/link";
-import { cn } from "@/lib/cn";
 import { site } from "@/lib/site";
 
 type WordmarkProps = {

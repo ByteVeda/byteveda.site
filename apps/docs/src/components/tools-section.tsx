@@ -1,4 +1,4 @@
-import { tools } from "@/content/tools";
+import { projects } from "@byteveda/utils";
 import { ToolCard } from "./tool-card";
 import { Section, SectionHeader } from "./ui/section";
 
@@ -12,8 +12,8 @@ export function ToolsSection() {
         align="split"
       />
       <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {tools.map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} />
+        {projects.map((project) => (
+          <ToolCard key={project.slug} tool={project} />
         ))}
       </div>
     </Section>

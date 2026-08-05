@@ -1,4 +1,4 @@
-import { projects } from "@/lib/projects";
+import { projects } from "@byteveda/utils";
 import { config } from "../config";
 import { fetchJson, HttpError } from "../http";
 import { toLabels } from "../labels";

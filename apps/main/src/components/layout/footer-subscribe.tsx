@@ -1,8 +1,8 @@
 "use client";
 
+import { cn } from "@byteveda/utils";
 import { useId, useState } from "react";
 import { Button } from "@/components/ui";
-import { cn } from "@/lib/cn";
 
 /**
  * Newsletter capture. There's no backend yet, so this is an optimistic,

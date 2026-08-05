@@ -1,0 +1,14 @@
+{
+  "name": "@byteveda/utils",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-agnostic helpers and shared ByteVeda constants.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@byteveda/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

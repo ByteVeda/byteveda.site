@@ -1,8 +1,10 @@
+import { ORG } from "./org";
+
 type RepoResponse = { stargazers_count?: number };
 
 export async function fetchRepoStars(slug: string): Promise<number | null> {
   try {
-    const res = await fetch(`https://api.github.com/repos/ByteVeda/${slug}`, {
+    const res = await fetch(`https://api.github.com/repos/${ORG}/${slug}`, {
       headers: { Accept: "application/vnd.github+json" },
       next: { revalidate: 3600 },
     });

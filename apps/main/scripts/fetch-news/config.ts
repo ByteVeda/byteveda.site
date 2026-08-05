@@ -1,5 +1,5 @@
+import { projects } from "@byteveda/utils";
 import type { Label } from "@/features/news";
-import { projects } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 type RssFeed = { name: string; url: string; labels?: Label[] };

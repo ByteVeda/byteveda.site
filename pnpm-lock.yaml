@@ -59,6 +59,9 @@ importers:
 
   apps/docs:
     dependencies:
+      '@byteveda/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       lucide-react:
         specifier: 'catalog:'
         version: 1.28.0(react@19.2.8)
@@ -99,6 +102,9 @@ importers:
 
   apps/main:
     dependencies:
+      '@byteveda/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       lucide-react:
         specifier: 'catalog:'
         version: 1.28.0(react@19.2.8)
@@ -144,6 +150,15 @@ importers:
         version: 6.0.3
 
   packages/config: {}
+
+  packages/utils:
+    devDependencies:
+      '@byteveda/config':
+        specifier: workspace:*
+        version: link:../config
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
 
 packages:
 

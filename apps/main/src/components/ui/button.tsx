@@ -1,7 +1,6 @@
+import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
-import { cn } from "@/lib/cn";
-import { isExternalUrl } from "@/lib/url";
 
 type Variant = "primary" | "ghost";
 

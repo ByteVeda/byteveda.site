@@ -1,5 +1,5 @@
+import { cn } from "@byteveda/utils";
 import type { HTMLAttributes, ReactNode } from "react";
-import { cn } from "@/lib/cn";
 
 type SectionProps = HTMLAttributes<HTMLElement> & {
   id?: string;
