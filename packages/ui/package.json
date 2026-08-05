@@ -8,6 +8,9 @@
     ".": "./src/index.ts",
     "./styles/*": "./src/styles/*"
   },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@byteveda/utils": "workspace:*",
     "lucide-react": "catalog:"

@@ -196,6 +196,9 @@ importers:
       '@byteveda/config':
         specifier: workspace:*
         version: link:../config
+      next:
+        specifier: 'catalog:'
+        version: 16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       typescript:
         specifier: 'catalog:'
         version: 6.0.3

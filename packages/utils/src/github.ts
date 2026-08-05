@@ -1,3 +1,8 @@
+/// <reference types="next" />
+// The reference has to live in this file rather than a stray `.d.ts`: `next: {…}`
+// is a global `RequestInit` augmentation, and a consumer's tsc only loads it if
+// the module that needs it pulls it in.
+
 import { ORG } from "./org";
 
 type RepoResponse = { stargazers_count?: number };

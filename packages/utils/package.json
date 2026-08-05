@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Framework-agnostic helpers and shared ByteVeda constants.",
+  "description": "Shared ByteVeda helpers, org constants, and the project catalogue.",
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=16"
+  },
   "devDependencies": {
     "@byteveda/config": "workspace:*",
+    "next": "catalog:",
     "typescript": "catalog:"
   }
 }
