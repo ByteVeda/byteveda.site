@@ -11,7 +11,7 @@ export function DocsHero() {
       <div aria-hidden className="blueprint" />
       <HeroNet />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-32">
+      <div className="wrap section-pad relative z-10">
         <div className="fade-up max-w-3xl">
           <p className="mb-4 font-mono text-muted-foreground text-xs uppercase tracking-widest">
             Documentation

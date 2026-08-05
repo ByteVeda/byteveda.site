@@ -2,57 +2,6 @@
    Nav + mobile drawer
    ============================================================ */
 
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 60;
-  backdrop-filter: blur(14px);
-  background: color-mix(in oklab, var(--bg) 72%, transparent);
-  border-bottom: 1px solid transparent;
-  transition:
-    border-color 0.3s var(--ease),
-    background 0.3s var(--ease);
-}
-.nav.scrolled {
-  border-bottom-color: var(--line);
-}
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 68px;
-  gap: 24px;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.nav-links a {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-dim);
-  padding: 0.5em 0.85em;
-  border-radius: var(--r-sm);
-  transition:
-    color 0.2s,
-    background 0.2s;
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-}
-.nav-links a:hover {
-  color: var(--text);
-  background: var(--chip);
-}
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .menu-btn {
   display: none;
 }

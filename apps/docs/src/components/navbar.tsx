@@ -1,70 +1,58 @@
-// Portal-specific navbar — NOT synced from byteveda.site.
-// The landing site has a matching but distinct navbar under the same path.
-// Keep them in sync manually if nav structure changes.
-
-import { ArrowUpRight, ThemeToggle } from "@byteveda/ui";
-import { cn, isExternalUrl } from "@byteveda/utils";
+import { Button, ThemeToggle, Wordmark } from "@byteveda/ui";
+import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
 
-const linkClass = cn(
-  "hidden items-center gap-1 rounded-md px-3 py-1.5 sm:inline-flex",
-  "text-muted-foreground transition-colors hover:text-foreground",
-);
-
+/**
+ * Same shell as the landing site's navbar (`.nav` / `.nav-inner` / `.nav-links`
+ * come from @byteveda/ui) with the docs section marker after the wordmark.
+ */
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-border/60 border-b bg-background/70 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-        <div className="flex items-center gap-2 font-mono font-semibold text-foreground text-sm tracking-tight">
-          <a
-            href={site.homeUrl}
-            className="flex items-center gap-2 transition-colors hover:text-foreground/80"
-          >
-            <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-accent" />
-            <span>{site.name.toLowerCase()}</span>
-          </a>
-          <span aria-hidden className="text-muted-foreground/60">
+    <header className="nav" id="nav">
+      <div className="wrap nav-inner">
+        <div className="flex items-center gap-3">
+          <Wordmark href={site.homeUrl} />
+          <span aria-hidden className="notebook-mono text-faint">
             /
           </span>
-          <Link href="/" className="text-muted-foreground transition-colors hover:text-foreground">
+          <Link href="/" className="notebook-mono text-muted-foreground text-sm hover:text-accent">
             {site.section}
           </Link>
         </div>
-        <nav className="flex items-center gap-1 text-sm">
+
+        <nav className="nav-links" aria-label="Primary">
           {nav.map((item) => {
-            const openInNewTab = "external" in item && item.external;
+            const external = "external" in item && item.external;
             const label = (
               <>
                 {item.label}
-                {openInNewTab && <ArrowUpRight className="h-3 w-3" strokeWidth={2} />}
+                {external && <span aria-hidden>↗</span>}
               </>
             );
-
-            if (isExternalUrl(item.href)) {
-              return (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  target={openInNewTab ? "_blank" : undefined}
-                  rel={openInNewTab ? "noopener noreferrer" : undefined}
-                  className={linkClass}
-                >
-                  {label}
-                </a>
-              );
-            }
-
-            return (
-              <Link key={item.href} href={item.href} className={linkClass}>
+            return isExternalUrl(item.href) ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+              >
+                {label}
+              </a>
+            ) : (
+              <Link key={item.href} href={item.href}>
                 {label}
               </Link>
             );
           })}
-          <div className="ml-1">
-            <ThemeToggle />
-          </div>
         </nav>
+
+        <div className="nav-right">
+          <ThemeToggle />
+          <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+            GitHub
+          </Button>
+        </div>
       </div>
     </header>
   );

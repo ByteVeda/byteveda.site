@@ -36,13 +36,7 @@ export function Section({
           <b className="g2" />
         </div>
       )}
-      <div
-        className={cn(
-          "mx-auto max-w-6xl px-6 py-24 md:py-32",
-          glow && "relative z-10",
-          containerClassName,
-        )}
-      >
+      <div className={cn("wrap section-pad", glow && "relative z-10", containerClassName)}>
         {children}
       </div>
     </section>
