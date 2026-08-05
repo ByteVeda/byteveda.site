@@ -2,6 +2,7 @@ export * from "./badge";
 export * from "./button";
 export * from "./external-link";
 export * from "./fx/hero-net";
+export * from "./fx/site-effects";
 export * from "./icons";
 export * from "./marquee";
 export * from "./notebook-section";
