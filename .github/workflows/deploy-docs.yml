@@ -10,6 +10,10 @@ on:
       - "pnpm-workspace.yaml"
       - "turbo.json"
       - ".github/workflows/deploy-docs.yml"
+      - "scripts/pull-tool-docs.sh"
+  # Picks up docs published by the tool repos since the last portal build.
+  schedule:
+    - cron: "40 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -42,6 +46,13 @@ jobs:
 
       - name: Build static export
         run: pnpm turbo run build --filter=@byteveda/docs
+
+      # docs.byteveda.org/<slug>/ cannot be served by the tool repos — one custom
+      # domain belongs to one repository — so their builds are mirrored in here.
+      - name: Pull per-tool docs
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_ARTIFACT_TOKEN }}
+        run: bash scripts/pull-tool-docs.sh apps/docs/out
 
       # `public/CNAME` is copied into the export, which is what keeps the
       # docs.byteveda.org custom domain bound after each deploy.
