@@ -1,0 +1,48 @@
+name: Semantic PR
+
+# PRs land as squash merges, so the PR title becomes the commit subject on `main`.
+# This keeps that history in Conventional Commits form.
+
+on:
+  pull_request_target:
+    types: [opened, edited, reopened, synchronize]
+
+permissions:
+  pull-requests: read
+
+concurrency:
+  group: semantic-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  title:
+    name: Validate PR title
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amannn/action-semantic-pull-request@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # `deps` and `ci` are what dependabot prefixes its PRs with.
+          types: |
+            feat
+            fix
+            perf
+            refactor
+            style
+            docs
+            test
+            build
+            ci
+            chore
+            deps
+            revert
+          # Scopes are optional, but when present keep them kebab-case.
+          requireScope: false
+          scopes: |
+            [a-z][a-z0-9-]*
+          # Lowercase first word, no trailing period.
+          subjectPattern: ^(?![A-Z])(?!.*\.$).+$
+          subjectPatternError: |
+            The subject "{subject}" in "{title}" must start lowercase and must not
+            end with a period.

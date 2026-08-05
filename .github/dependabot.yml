@@ -1,11 +1,11 @@
 version: 2
 
 updates:
+  # One entry for the whole pnpm workspace. Listing members individually makes
+  # Dependabot resolve each in isolation, where `catalog:` specs have no root
+  # pnpm-workspace.yaml to resolve against (ERR_PNPM_CATALOG_ENTRY_NOT_FOUND_FOR_SPEC).
   - package-ecosystem: npm
-    directories:
-      - /
-      - /apps/*
-      - /packages/*
+    directory: /
     schedule:
       interval: weekly
       day: monday
