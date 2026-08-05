@@ -1,9 +1,13 @@
 /* The ByteVeda design system: import this straight after `tailwindcss`.
    Apps add only their own page-level stylesheets on top. */
 
+/* `layer()` is load-bearing: unlayered CSS outranks anything inside a cascade
+   layer, so an unlayered `* { margin: 0 }` in base.css would beat Tailwind's
+   `mx-auto` (which lives in `@layer utilities`). Tokens stay unlayered — they
+   only declare custom properties, nothing competes with them. */
 @import "./tokens.css";
-@import "./base.css";
-@import "./components.css";
+@import "./base.css" layer(base);
+@import "./components.css" layer(components);
 
 /* Tailwind scans consumers' source automatically but skips node_modules, which
    is how this package is resolved. `@source` is relative to this file, so one
