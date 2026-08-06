@@ -238,94 +238,150 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:60cfc6e5d0ea",
+    "id": "mastodon:28538e0a6bbf",
     "kind": "article",
     "source": "mastodon",
-    "title": "Academic research belongs to the terminal! 📄 **papr** — An all-in-one research workspace 💯 Browse arXiv, manage your PD…",
-    "url": "https://fosstodon.org/@orhun/117044488167401465",
-    "excerpt": "Academic research belongs to the terminal! 📄 **papr** — An all-in-one research workspace 💯 Browse arXiv, manage your PDF library, take Markdown notes &amp; write LaTeX 🦀 Written in Rust &amp; built w…",
-    "author": "Orhun Parmaksız 👾",
-    "publishedAt": "2026-08-05T19:12:35.876Z",
-    "score": 9,
-    "tags": [
-      "rustlang",
-      "ratatui",
-      "tui",
-      "research",
-      "latex",
-      "academia",
-      "opensource"
-    ],
-    "labels": [
-      "rust",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:cd17aae512ad",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python Type System and Tooling Survey 2026",
-    "url": "https://www.surveymonkey.com/r/python_typing",
-    "excerpt": "The Python Typing Survey offers a comprehensive look at the current state of Python’s type system and developer tooling. It captures the evolving sentiment, challenges, and opportunities around Python typing in the open-source ecosystem.",
-    "author": "Łukasz Langa",
-    "publishedAt": "2026-08-05T18:03:10.000Z",
-    "score": 20,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:c668b4148210",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# hackers I added emojis feature to # RRChat for # reticulum # nomadnet # rrc (like IRC but over Reticulum chat) https:…",
-    "url": "https://hispagatos.space/@rek2/117044108484865900",
-    "excerpt": "# hackers I added emojis feature to # RRChat for # reticulum # nomadnet # rrc (like IRC but over Reticulum chat) https:// sr.ht/~rek2/RRChat/ # rust # tui # hackerculture # privacy # hispagatos",
-    "author": "Packet-lost soul",
-    "publishedAt": "2026-08-05T17:36:02.000Z",
-    "score": 5,
-    "tags": [
-      "hackers",
-      "rrchat",
-      "reticulum",
-      "nomadnet",
-      "rrc",
-      "rust",
-      "tui",
-      "hackerculture",
-      "privacy",
-      "hispagatos"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:401676ab9b9e",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python 3.14.7 and 3.13.15 are now available!",
-    "url": "https://discuss.python.org/t/python-3-14-7-and-3-13-15-are-now-available/108420",
-    "excerpt": "Again a day late, this time to future-proof for Xcode 27, but they’re all the better for it: two new Python bugfix releases:  Python 3.14.7 Python 3.14.7 is the seventh maintenance release of 3.14, containing around  499 bugfixes, build improvements and documentation changes from 86  contributors since 3.14.6.    Python 3.13.15 Python 3.13.15 is the fifteenth maintenance release of 3.13, containing  around 400 bugfixes, build improvements and documentation changes since  3.13.14.    More resourc...",
-    "author": "Hugo van Kemenade",
-    "publishedAt": "2026-08-05T17:25:54.000Z",
+    "title": "The real energy use of agentic AI",
+    "url": "https://www.theclimatebrink.com/p/the-real-energy-use-of-agentic-ai",
+    "excerpt": "Agents use about 600x more energy than simple AI prompts",
+    "author": "VM (Vicky) Brasseur",
+    "publishedAt": "2026-08-06T01:37:15.000Z",
     "score": 6,
     "tags": [
+      "llm",
+      "ai",
+      "climatecrisis"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:8e84dde5a8be",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "What unholy thing is an \"AppImage\"? WTF? I thought the # linux world learned it's lesson with \"flatpacks\" and \"snap\" ga…",
+    "url": "https://mastodon.social/@ScottE/117045674198872787",
+    "excerpt": "What unholy thing is an \"AppImage\"? WTF? I thought the # linux world learned it's lesson with \"flatpacks\" and \"snap\" garbage, but I guess some are giving it the ol' college try again. If you want a s…",
+    "author": "Scott Ellis",
+    "publishedAt": "2026-08-06T00:14:13.000Z",
+    "score": 5,
+    "tags": [
+      "linux",
+      "golang"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:bc37c04464cd",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "New here! # Introduction . Father to two daughters 🧠 Neurodivergent &amp; living with epilepsy 🏢 Backend and developmen…",
+    "url": "https://mastodon.social/@ReneMichael/117045407445473285",
+    "excerpt": "New here! # Introduction . Father to two daughters 🧠 Neurodivergent &amp; living with epilepsy 🏢 Backend and development for a logistics &amp; construction company 💻 Hobbies include web design, Pytho…",
+    "author": "Rene Nel",
+    "publishedAt": "2026-08-05T23:06:22.000Z",
+    "score": 13,
+    "tags": [
+      "introduction",
+      "startrek",
+      "neurodivergent",
+      "epilepsy",
       "python",
-      "python314",
-      "python313",
-      "release"
+      "cloud",
+      "fedora"
     ],
     "labels": [
       "python"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:24b7181ac8ec",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Python: sharing common tests in unittest - Adam Johnson",
+    "url": "https://adamj.eu/tech/2025/05/30/python-unittest-common-tests/",
+    "excerpt": "A neat testing pattern is writing common tests in a base class and then applying them to multiple objects through subclassing. Doing so can help you test smarter and cover more code with less boilerplate.",
+    "author": "Adam Johnson :django: :python:",
+    "publishedAt": "2026-08-05T22:36:45.315Z",
+    "score": 7,
+    "tags": [
+      "python",
+      "unittest"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b08720fb8e6d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "# tech # technology # BigTech # IT # AI # ArtificialIntelligence # LLM # LLMs # ML # MachineLearning # GenAI # generati…",
+    "url": "https://graphics.social/@metin/117044512619124538",
+    "excerpt": "# tech # technology # BigTech # IT # AI # ArtificialIntelligence # LLM # LLMs # ML # MachineLearning # GenAI # generativeAI # AIAgent # AISlop # FuckAI # Fuck_AI # enshittification # microslop # micr…",
+    "author": "Metin Seven",
+    "publishedAt": "2026-08-05T19:18:48.000Z",
+    "score": 16,
+    "tags": [
+      "tech",
+      "technology",
+      "bigtech",
+      "it",
+      "ai",
+      "artificialintelligence",
+      "llm",
+      "llms",
+      "ml",
+      "machinelearning",
+      "genai",
+      "generativeAI",
+      "aiagent",
+      "aislop",
+      "fuckai",
+      "fuck_ai",
+      "enshittification",
+      "microslop",
+      "microsoft",
+      "copilot",
+      "meta",
+      "google",
+      "nvidia",
+      "amazon",
+      "gemini",
+      "openai",
+      "chatgpt",
+      "anthropic",
+      "claude"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:fd2db2fc1d55",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Painting with Gaussians",
+    "url": "https://yogthos.net/posts/2026-08-03-splat-painter.html",
+    "excerpt": "16 points · graphics, programming, vibecoding",
+    "author": "Yogthos",
+    "publishedAt": "2026-08-05T08:33:16.943-05:00",
+    "score": 16,
+    "tags": [
+      "graphics",
+      "programming",
+      "vibecoding"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -334,10 +390,10 @@
     "source": "lobsters",
     "title": "Faster Than Ninja",
     "url": "https://build2.org/blog/faster-than-ninja.xhtml",
-    "excerpt": "27 points · programming",
+    "excerpt": "44 points · programming",
     "author": "borisk",
     "publishedAt": "2026-08-05T05:37:51.827-05:00",
-    "score": 27,
+    "score": 44,
     "tags": [
       "programming"
     ],
@@ -366,10 +422,10 @@
     "source": "lobsters",
     "title": "rust-lang/rust is adopting an LLM policy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-    "excerpt": "115 points · rust, vibecoding",
+    "excerpt": "132 points · rust, vibecoding",
     "author": "wezm",
     "publishedAt": "2026-08-05T01:55:36.963-05:00",
-    "score": 115,
+    "score": 132,
     "tags": [
       "rust",
       "vibecoding"
@@ -403,10 +459,10 @@
     "source": "lobsters",
     "title": "designing a query system",
     "url": "https://bal-e.org/speed/krabby/2026/query-system-design/",
-    "excerpt": "25 points · compilers, rust",
+    "excerpt": "28 points · compilers, rust",
     "author": "fanf",
     "publishedAt": "2026-08-04T16:40:22.122-05:00",
-    "score": 25,
+    "score": 28,
     "tags": [
       "compilers",
       "rust"
@@ -422,10 +478,10 @@
     "source": "lobsters",
     "title": "irken: A tiny hackable full-featured IRC client",
     "url": "https://codeberg.org/dlowe/irken",
-    "excerpt": "39 points · programming",
+    "excerpt": "42 points · programming",
     "author": "dzwdz",
     "publishedAt": "2026-08-04T15:30:17.224-05:00",
-    "score": 39,
+    "score": 42,
     "tags": [
       "programming"
     ],
@@ -454,10 +510,10 @@
     "source": "lobsters",
     "title": "Enabling the next iteration of the borrow checker on nightly",
     "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nighty/",
-    "excerpt": "115 points · rust",
+    "excerpt": "123 points · rust",
     "author": "kmaasrud",
     "publishedAt": "2026-08-04T12:45:15.663-05:00",
-    "score": 115,
+    "score": 123,
     "tags": [
       "rust"
     ],
@@ -523,10 +579,10 @@
     "source": "lobsters",
     "title": "BorrowSanitizer",
     "url": "https://borrowsanitizer.com/",
-    "excerpt": "44 points · rust",
+    "excerpt": "46 points · rust",
     "author": "sanxiyn",
     "publishedAt": "2026-08-04T02:29:43.185-05:00",
-    "score": 44,
+    "score": 46,
     "tags": [
       "rust"
     ],
@@ -618,7 +674,7 @@
     "excerpt": "I want to talk about what I have notice on the platform and want to address what we all have been...",
     "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
     "publishedAt": "2026-08-03T14:47:20Z",
-    "score": 122,
+    "score": 133,
     "tags": [
       "discuss",
       "community",
@@ -639,7 +695,7 @@
     "excerpt": "Everyone's heard by now that TypeScript \"went native.\" And I keep seeing the same wrong conclusion...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-08-03T13:11:18Z",
-    "score": 156,
+    "score": 160,
     "tags": [
       "discuss",
       "javascript",
@@ -696,10 +752,10 @@
     "source": "lobsters",
     "title": "Don't be a meat proxy",
     "url": "https://gruhn.me/blog/2026-08-03/",
-    "excerpt": "136 points · practices, vibecoding",
+    "excerpt": "137 points · practices, vibecoding",
     "author": "antonmedv",
     "publishedAt": "2026-08-03T02:10:50.103-05:00",
-    "score": 136,
+    "score": 137,
     "tags": [
       "practices",
       "vibecoding"
@@ -765,45 +821,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:18e9a35440f7",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Faster floating point math with Rust’s new API",
-    "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
-    "excerpt": "47 points · performance, rust",
-    "author": "hemitheconyx",
-    "publishedAt": "2026-08-02T15:27:23.061-05:00",
-    "score": 47,
-    "tags": [
-      "performance",
-      "rust"
-    ],
-    "labels": [
-      "performance",
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:a62b21f34cf5",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "I'm (mostly) picking models on speed now, not intelligence",
-    "url": "https://martinalderson.com/posts/speed-vs-intelligence/",
-    "excerpt": "33 points · performance, vibecoding",
-    "author": "martinald",
-    "publishedAt": "2026-08-02T08:49:23.164-05:00",
-    "score": 33,
-    "tags": [
-      "performance",
-      "vibecoding"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -812,7 +829,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-05T06:58:49Z",
-    "score": 454513,
+    "score": 454558,
     "tags": [
       "Python",
       "api",
@@ -844,7 +861,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-05T16:34:42Z",
-    "score": 393802,
+    "score": 393822,
     "tags": [
       "Python",
       "books",
@@ -867,7 +884,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 312364,
+    "score": 312417,
     "tags": [
       "Python",
       "awesome",
@@ -891,7 +908,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 276713,
+    "score": 276746,
     "tags": [
       "Python",
       "beginner-project",
@@ -918,8 +935,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-05T19:40:53Z",
-    "score": 225999,
+    "publishedAt": "2026-08-06T00:26:31Z",
+    "score": 226136,
     "tags": [
       "Python",
       "ai",
@@ -954,7 +971,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223516,
+    "score": 223525,
     "tags": [
       "Python",
       "algorithm",
@@ -985,8 +1002,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-05T19:49:01Z",
-    "score": 185831,
+    "publishedAt": "2026-08-06T03:27:24Z",
+    "score": 185837,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1016,7 +1033,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 182651,
+    "score": 182705,
     "tags": [
       "Python",
       "cli",
@@ -1041,7 +1058,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-05T16:30:39Z",
-    "score": 124772,
+    "score": 124862,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1080,8 +1097,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-05T15:53:48Z",
-    "score": 119678,
+    "publishedAt": "2026-08-06T03:16:02Z",
+    "score": 119704,
     "tags": [
       "Rust",
       "android",
@@ -1117,8 +1134,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-05T18:25:43Z",
-    "score": 115260,
+    "publishedAt": "2026-08-06T02:02:35Z",
+    "score": 115288,
     "tags": [
       "Rust",
       "compiler",
@@ -1138,8 +1155,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-05T09:52:51Z",
-    "score": 109920,
+    "publishedAt": "2026-08-06T02:19:14Z",
+    "score": 109937,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1164,8 +1181,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-05T14:08:11Z",
-    "score": 108158,
+    "publishedAt": "2026-08-06T01:47:34Z",
+    "score": 108164,
     "tags": [
       "Rust",
       "deno",
@@ -1187,8 +1204,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-05T18:39:17Z",
-    "score": 104155,
+    "publishedAt": "2026-08-06T03:17:27Z",
+    "score": 104228,
     "tags": [
       "Rust"
     ],
@@ -1205,8 +1222,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-05T19:50:23Z",
-    "score": 95288,
+    "publishedAt": "2026-08-06T03:30:53Z",
+    "score": 95294,
     "tags": [
       "Rust",
       "bun",
@@ -1238,7 +1255,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-07-31T11:42:30Z",
-    "score": 94540,
+    "score": 94541,
     "tags": [
       "Java",
       "awesome-list",
@@ -1263,8 +1280,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-05T18:54:02Z",
-    "score": 88936,
+    "publishedAt": "2026-08-05T20:48:51Z",
+    "score": 88955,
     "tags": [
       "Java",
       "docker",
@@ -1295,8 +1312,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-05T18:37:20Z",
-    "score": 88628,
+    "publishedAt": "2026-08-06T00:37:55Z",
+    "score": 88653,
     "tags": [
       "Rust",
       "awesome",
