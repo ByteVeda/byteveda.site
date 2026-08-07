@@ -238,19 +238,21 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:28538e0a6bbf",
+    "id": "mastodon:b3b9af4e8181",
     "kind": "article",
     "source": "mastodon",
-    "title": "The real energy use of agentic AI",
-    "url": "https://www.theclimatebrink.com/p/the-real-energy-use-of-agentic-ai",
-    "excerpt": "Agents use about 600x more energy than simple AI prompts",
-    "author": "VM (Vicky) Brasseur",
-    "publishedAt": "2026-08-06T01:37:15.000Z",
-    "score": 6,
+    "title": "AI music company wants to press users' creations onto vinyl records",
+    "url": "https://www.latimes.com/entertainment-arts/business/story/2026-08-07/ai-music-company-wants-to-press-users-creations-onto-vinyl-records",
+    "excerpt": "AI music company Suno plans to press users' generated tracks onto 12-inch records for about $45, moving into vinyl as copyright suits from Universal and Sony continue.",
+    "author": "AI6YR Ben",
+    "publishedAt": "2026-08-07T13:25:56.000Z",
+    "score": 5,
     "tags": [
-      "llm",
+      "aislop",
       "ai",
-      "climatecrisis"
+      "lps",
+      "records",
+      "music"
     ],
     "labels": [
       "ai"
@@ -258,111 +260,235 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:8e84dde5a8be",
+    "id": "mastodon:1c957bad866b",
     "kind": "article",
     "source": "mastodon",
-    "title": "What unholy thing is an \"AppImage\"? WTF? I thought the # linux world learned it's lesson with \"flatpacks\" and \"snap\" ga…",
-    "url": "https://mastodon.social/@ScottE/117045674198872787",
-    "excerpt": "What unholy thing is an \"AppImage\"? WTF? I thought the # linux world learned it's lesson with \"flatpacks\" and \"snap\" garbage, but I guess some are giving it the ol' college try again. If you want a s…",
-    "author": "Scott Ellis",
-    "publishedAt": "2026-08-06T00:14:13.000Z",
+    "title": "Support Our Work!",
+    "url": "https://letsencrypt.org/donate/",
+    "excerpt": "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer.",
+    "author": "Roy Greenhilt",
+    "publishedAt": "2026-08-07T13:08:34.107Z",
     "score": 5,
     "tags": [
-      "linux",
-      "golang"
+      "ssl",
+      "apache",
+      "encryption",
+      "linux"
     ],
-    "labels": [
-      "go"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:bc37c04464cd",
+    "id": "mastodon:79e1c80cd1e5",
     "kind": "article",
     "source": "mastodon",
-    "title": "New here! # Introduction . Father to two daughters 🧠 Neurodivergent &amp; living with epilepsy 🏢 Backend and developmen…",
-    "url": "https://mastodon.social/@ReneMichael/117045407445473285",
-    "excerpt": "New here! # Introduction . Father to two daughters 🧠 Neurodivergent &amp; living with epilepsy 🏢 Backend and development for a logistics &amp; construction company 💻 Hobbies include web design, Pytho…",
-    "author": "Rene Nel",
-    "publishedAt": "2026-08-05T23:06:22.000Z",
-    "score": 13,
+    "title": "The real energy use of agentic AI",
+    "url": "https://www.theclimatebrink.com/p/the-real-energy-use-of-agentic-ai",
+    "excerpt": "Agents use about 600x more energy than simple AI prompts",
+    "author": "Jürgen",
+    "publishedAt": "2026-08-07T11:30:55.000Z",
+    "score": 18,
     "tags": [
-      "introduction",
-      "startrek",
-      "neurodivergent",
-      "epilepsy",
-      "python",
-      "cloud",
-      "fedora"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:24b7181ac8ec",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Python: sharing common tests in unittest - Adam Johnson",
-    "url": "https://adamj.eu/tech/2025/05/30/python-unittest-common-tests/",
-    "excerpt": "A neat testing pattern is writing common tests in a base class and then applying them to multiple objects through subclassing. Doing so can help you test smarter and cover more code with less boilerplate.",
-    "author": "Adam Johnson :django: :python:",
-    "publishedAt": "2026-08-05T22:36:45.315Z",
-    "score": 7,
-    "tags": [
-      "python",
-      "unittest"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:b08720fb8e6d",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# tech # technology # BigTech # IT # AI # ArtificialIntelligence # LLM # LLMs # ML # MachineLearning # GenAI # generati…",
-    "url": "https://graphics.social/@metin/117044512619124538",
-    "excerpt": "# tech # technology # BigTech # IT # AI # ArtificialIntelligence # LLM # LLMs # ML # MachineLearning # GenAI # generativeAI # AIAgent # AISlop # FuckAI # Fuck_AI # enshittification # microslop # micr…",
-    "author": "Metin Seven",
-    "publishedAt": "2026-08-05T19:18:48.000Z",
-    "score": 16,
-    "tags": [
-      "tech",
+      "data",
       "technology",
-      "bigtech",
-      "it",
+      "tech",
+      "GreenOps",
+      "opensource",
+      "python",
+      "programming",
+      "research",
+      "datascience",
       "ai",
-      "artificialintelligence",
-      "llm",
-      "llms",
-      "ml",
-      "machinelearning",
-      "genai",
-      "generativeAI",
-      "aiagent",
-      "aislop",
-      "fuckai",
-      "fuck_ai",
-      "enshittification",
-      "microslop",
-      "microsoft",
-      "copilot",
-      "meta",
-      "google",
-      "nvidia",
-      "amazon",
-      "gemini",
-      "openai",
-      "chatgpt",
-      "anthropic",
-      "claude"
+      "sustainability",
+      "GreenSoftware",
+      "codingagents",
+      "agents",
+      "climatechange"
+    ],
+    "labels": [
+      "opensource",
+      "python",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:d15509c3fbb9",
+    "kind": "article",
+    "source": "rss",
+    "title": "How to be fearlessly AI native​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍​﻿‌‍‌​​﻿‌‍‌‍‌​​﻿‍‌​﻿‌​‌‍​‌​﻿‍​​‍﻿‌​﻿‌‍‌‍‌‌‌‍​‍​﻿‌‍​‍﻿‌​﻿‌​​﻿​‍​﻿‌​​﻿​﻿​‍﻿‌​﻿‍​‌‍‌‌‌‍‌‌​﻿​‌​‍﻿‌‌‍​‍​﻿‌‌‌‍​‍​﻿​﻿​﻿‍‌​﻿​‌‌‍‌‌‌‍‌‍​﻿​​​﻿‌​​﻿‌​​﻿​‌​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍​﻿‌‍‌​​﻿‌‍‌‍‌​​﻿‍‌​﻿‌​‌‍​‌​﻿‍​​‍﻿‌​﻿‌‍‌‍‌‌‌‍​‍​﻿‌‍​‍﻿‌​﻿‌​​﻿​‍​﻿‌​​﻿​﻿​‍﻿‌​﻿‍​‌‍‌‌‌‍‌‌​﻿​‌​‍﻿‌‌‍​‍​﻿‌‌‌‍​‍​﻿​﻿​﻿‍‌​﻿​‌‌‍‌‌‌‍‌‍​﻿​​​﻿‌​​﻿‌​​﻿​‌​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+    "url": "https://stackoverflow.blog/2026/08/07/how-to-be-fearlessly-ai-native/",
+    "excerpt": "Ryan welcomes McLaren Stanley, Senior Principal Engineer for Amazon Stores, to discuss what it actually takes to make teams AI native, why agentic engineering is shifting code bottlenecks downstream…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-08-07T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:22dbed91411b",
+    "kind": "article",
+    "source": "rss",
+    "title": "A guide to slash commands in the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+    "excerpt": "If you&rsquo;ve used slash commands in the GitHub Copilot CLI, you already know how powerful a quick / can be. In the GitHub Copilot app, slash commands take that idea further, giving you shortcuts f…",
+    "author": "Jacklyn Carroll",
+    "publishedAt": "2026-08-06T19:49:34.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:89bcbe6bc2be",
+    "kind": "article",
+    "source": "rss",
+    "title": "How we took malware advisories beyond npm",
+    "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
+    "excerpt": "A compromised package can steal credentials the moment you install it, and until recently, GitHub could only flag those in npm. Not anymore. This is the story of how the supply chain engineering team…",
+    "author": "Ankit Kumar Honey",
+    "publishedAt": "2026-08-06T16:51:12.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:fac2834efe4f",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Recreated Management With AI: 9 Things I Do Differently",
+    "url": "https://dev.to/anchildress1/i-recreated-management-with-ai-9-things-i-do-differently-3j8g",
+    "excerpt": "I stopped treating permission prompts as the safety system, then spent four and a half months writing 134 standing rules to replace them. Nine things I do differently with AI, and the proof to back i…",
+    "author": "Ashley Childress",
+    "publishedAt": "2026-08-06T12:42:10Z",
+    "score": 35,
+    "tags": [
+      "discuss",
+      "ai",
+      "writing",
+      "productivity"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:3f0a71b84a6e",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "The following is a valid DOS COM executable",
+    "url": "https://oldbytes.space/@gloriouscow/117045701876951834",
+    "excerpt": "27 points · art, programming",
+    "author": "dsr",
+    "publishedAt": "2026-08-06T06:37:30.897-05:00",
+    "score": 27,
+    "tags": [
+      "art",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:87df7b2d5699",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "python string literals are kinda funny",
+    "url": "https://sebsite.pw/w/20260806-pystrings.html",
+    "excerpt": "54 points · python",
+    "author": "raymii",
+    "publishedAt": "2026-08-05T23:44:44.655-05:00",
+    "score": 54,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:72ea094fa822",
+    "kind": "article",
+    "source": "rss",
+    "title": "Baseten on Hugging Face Inference Providers 🔥",
+    "url": "https://huggingface.co/blog/baseten",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-06T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
     ],
     "labels": [
       "ai",
       "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:14212b9eda3c",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "A Vision for Cargo",
+    "url": "https://epage.github.io/blog/2026/08/cargo-vision/",
+    "excerpt": "41 points · rust",
+    "author": "asb",
+    "publishedAt": "2026-08-05T15:45:57.143-05:00",
+    "score": 41,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:832043a52c68",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "I Built a Blog and Forgot to Write",
+    "url": "https://benjcal.space/blog/i-built-a-blog-and-forgot-to-write/",
+    "excerpt": "25 points · culture, philosophy, practices",
+    "author": "benj",
+    "publishedAt": "2026-08-05T15:07:39.008-05:00",
+    "score": 25,
+    "tags": [
+      "culture",
+      "philosophy",
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:863a933b57ad",
+    "kind": "article",
+    "source": "devto",
+    "title": "Introducing Kiro Crew: AWS's Open-Source AI Agent Orchestrator",
+    "url": "https://dev.to/sarvar_04/introducing-kiro-crew-awss-open-source-ai-agent-orchestrator-1e63",
+    "excerpt": "AWS open-sourced a persistent workspace that coordinates AI coding agents across sessions, schedules, and repos. Here's what it actually does and why it matters.",
+    "author": "Sarvar Nadaf",
+    "publishedAt": "2026-08-05T13:51:22Z",
+    "score": 27,
+    "tags": [
+      "agents",
+      "ai",
+      "aws",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -372,10 +498,10 @@
     "source": "lobsters",
     "title": "Painting with Gaussians",
     "url": "https://yogthos.net/posts/2026-08-03-splat-painter.html",
-    "excerpt": "16 points · graphics, programming, vibecoding",
+    "excerpt": "20 points · graphics, programming, vibecoding",
     "author": "Yogthos",
     "publishedAt": "2026-08-05T08:33:16.943-05:00",
-    "score": 16,
+    "score": 20,
     "tags": [
       "graphics",
       "programming",
@@ -390,10 +516,10 @@
     "source": "lobsters",
     "title": "Faster Than Ninja",
     "url": "https://build2.org/blog/faster-than-ninja.xhtml",
-    "excerpt": "44 points · programming",
+    "excerpt": "52 points · programming",
     "author": "borisk",
     "publishedAt": "2026-08-05T05:37:51.827-05:00",
-    "score": 44,
+    "score": 52,
     "tags": [
       "programming"
     ],
@@ -422,10 +548,10 @@
     "source": "lobsters",
     "title": "rust-lang/rust is adopting an LLM policy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-    "excerpt": "132 points · rust, vibecoding",
+    "excerpt": "155 points · rust, vibecoding",
     "author": "wezm",
     "publishedAt": "2026-08-05T01:55:36.963-05:00",
-    "score": 132,
+    "score": 155,
     "tags": [
       "rust",
       "vibecoding"
@@ -459,10 +585,10 @@
     "source": "lobsters",
     "title": "designing a query system",
     "url": "https://bal-e.org/speed/krabby/2026/query-system-design/",
-    "excerpt": "28 points · compilers, rust",
+    "excerpt": "33 points · compilers, rust",
     "author": "fanf",
     "publishedAt": "2026-08-04T16:40:22.122-05:00",
-    "score": 28,
+    "score": 33,
     "tags": [
       "compilers",
       "rust"
@@ -478,10 +604,10 @@
     "source": "lobsters",
     "title": "irken: A tiny hackable full-featured IRC client",
     "url": "https://codeberg.org/dlowe/irken",
-    "excerpt": "42 points · programming",
+    "excerpt": "46 points · programming",
     "author": "dzwdz",
     "publishedAt": "2026-08-04T15:30:17.224-05:00",
-    "score": 42,
+    "score": 46,
     "tags": [
       "programming"
     ],
@@ -510,10 +636,10 @@
     "source": "lobsters",
     "title": "Enabling the next iteration of the borrow checker on nightly",
     "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nighty/",
-    "excerpt": "123 points · rust",
+    "excerpt": "127 points · rust",
     "author": "kmaasrud",
     "publishedAt": "2026-08-04T12:45:15.663-05:00",
-    "score": 123,
+    "score": 127,
     "tags": [
       "rust"
     ],
@@ -558,6 +684,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:2b0846d376e5",
+    "kind": "article",
+    "source": "devto",
+    "title": "Your browser renders everything, even what you can't see — `content-visibility: auto` fixes that",
+    "url": "https://dev.to/parsajiravand/your-browser-renders-everything-even-what-you-cant-see-content-visibility-auto-fixes-that-3g7c",
+    "excerpt": "When you open a long page — a news feed, an admin table, a documentation article — the browser lays...",
+    "author": "Parsa Jiravand",
+    "publishedAt": "2026-08-04T08:44:58Z",
+    "score": 28,
+    "tags": [
+      "css",
+      "webdev",
+      "performance",
+      "frontend"
+    ],
+    "labels": [
+      "webdev",
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:Stack Overflow Blog:f090ff00ce54",
     "kind": "article",
     "source": "rss",
@@ -579,10 +727,10 @@
     "source": "lobsters",
     "title": "BorrowSanitizer",
     "url": "https://borrowsanitizer.com/",
-    "excerpt": "46 points · rust",
+    "excerpt": "48 points · rust",
     "author": "sanxiyn",
     "publishedAt": "2026-08-04T02:29:43.185-05:00",
-    "score": 46,
+    "score": 48,
     "tags": [
       "rust"
     ],
@@ -600,7 +748,7 @@
     "excerpt": "A few days ago, I wrote \"Understanding Over Origin\" and it got alot of engagement and I'm really...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-04T04:36:13Z",
-    "score": 38,
+    "score": 57,
     "tags": [
       "ai",
       "programming",
@@ -649,178 +797,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:5914220a4b74",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Reliability Lessons From SQLite",
-    "url": "https://www.youtube.com/watch?v=V_qzqY1bb7I",
-    "excerpt": "43 points · practices, video",
-    "author": "dgv",
-    "publishedAt": "2026-08-03T11:27:45.504-05:00",
-    "score": 43,
-    "tags": [
-      "practices",
-      "video"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:7d12c4b7f2fe",
-    "kind": "article",
-    "source": "devto",
-    "title": "How would you decide, whether the content is good or bad?",
-    "url": "https://dev.to/francistrdev/how-would-you-decide-whether-the-content-is-good-or-bad-295p",
-    "excerpt": "I want to talk about what I have notice on the platform and want to address what we all have been...",
-    "author": "FrancisTRᴅᴇᴠ (っ◔◡◔)っ",
-    "publishedAt": "2026-08-03T14:47:20Z",
-    "score": 133,
-    "tags": [
-      "discuss",
-      "community",
-      "ai",
-      "writing"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:db45c59a38ae",
-    "kind": "article",
-    "source": "devto",
-    "title": "TypeScript 7 Went Native: What Actually Changes And What Doesn't",
-    "url": "https://dev.to/nazar-boyko/typescript-7-went-native-what-actually-changes-and-what-doesnt-6b3",
-    "excerpt": "Everyone's heard by now that TypeScript \"went native.\" And I keep seeing the same wrong conclusion...",
-    "author": "Nazar Boyko",
-    "publishedAt": "2026-08-03T13:11:18Z",
-    "score": 160,
-    "tags": [
-      "discuss",
-      "javascript",
-      "typescript",
-      "performance"
-    ],
-    "labels": [
-      "typescript",
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f7da6a9aef01",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Rust Project Goals: Immobile types and guaranteed destructors",
-    "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
-    "excerpt": "49 points · rust",
-    "author": "noncrab",
-    "publishedAt": "2026-08-03T06:13:13.293-05:00",
-    "score": 49,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:39ff1cfee8ab",
-    "kind": "article",
-    "source": "devto",
-    "title": "dev.to's Dashboard Can't Count Its Own Posts",
-    "url": "https://dev.to/dannwaneri/devtos-dashboard-cant-count-its-own-posts-3fci",
-    "excerpt": "This is a submission for DEV's Summer Bug Smash: Clear the Lineup powered by Sentry. ...",
-    "author": "Daniel Nwaneri",
-    "publishedAt": "2026-08-03T07:38:53Z",
-    "score": 37,
-    "tags": [
-      "bugsmash",
-      "devchallenge",
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:aaebcad99330",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Don't be a meat proxy",
-    "url": "https://gruhn.me/blog/2026-08-03/",
-    "excerpt": "137 points · practices, vibecoding",
-    "author": "antonmedv",
-    "publishedAt": "2026-08-03T02:10:50.103-05:00",
-    "score": 137,
-    "tags": [
-      "practices",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:8cd1653e4efc",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Practical Memory Safety",
-    "url": "https://ohadravid.github.io/posts/2026-08-unsafe-water/",
-    "excerpt": "17 points · c, rust",
-    "author": "raymii",
-    "publishedAt": "2026-08-03T02:02:41.286-05:00",
-    "score": 17,
-    "tags": [
-      "c",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:2172c63d6fb5",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Controlling Your Environment Makes You Happy (2000)",
-    "url": "https://www.joelonsoftware.com/2000/04/10/controlling-your-environment-makes-you-happy/",
-    "excerpt": "22 points · practices",
-    "author": "veqq",
-    "publishedAt": "2026-08-02T16:10:35.104-05:00",
-    "score": 22,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:ceaaf11697f9",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Built an Agent Eval Harness. Real Agents Broke the Clean Version of the Story",
-    "url": "https://dev.to/debashish_ghosal/i-built-an-agent-eval-harness-real-agents-broke-the-clean-version-of-the-story-53dj",
-    "excerpt": "Two weeks ago, I published \"Why Agent Evaluation Is Harder Than Model Evaluation.\" The core argument:...",
-    "author": "Debashish Ghosal",
-    "publishedAt": "2026-08-02T20:38:59Z",
-    "score": 27,
-    "tags": [
-      "ai",
-      "agentskills",
-      "learning",
-      "opensource"
-    ],
-    "labels": [
-      "ai",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -829,7 +805,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-05T06:58:49Z",
-    "score": 454558,
+    "score": 454891,
     "tags": [
       "Python",
       "api",
@@ -860,8 +836,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-08-05T16:34:42Z",
-    "score": 393822,
+    "publishedAt": "2026-08-06T13:01:39Z",
+    "score": 393925,
     "tags": [
       "Python",
       "books",
@@ -884,7 +860,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 312417,
+    "score": 312670,
     "tags": [
       "Python",
       "awesome",
@@ -908,7 +884,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 276746,
+    "score": 277103,
     "tags": [
       "Python",
       "beginner-project",
@@ -935,8 +911,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-06T00:26:31Z",
-    "score": 226136,
+    "publishedAt": "2026-08-07T13:32:26Z",
+    "score": 226905,
     "tags": [
       "Python",
       "ai",
@@ -971,7 +947,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223525,
+    "score": 223550,
     "tags": [
       "Python",
       "algorithm",
@@ -995,6 +971,24 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:996ec6ea0cd3",
+    "kind": "trending",
+    "source": "github",
+    "title": "ultraworkers/claw-code",
+    "url": "https://github.com/ultraworkers/claw-code",
+    "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
+    "author": "ultraworkers",
+    "publishedAt": "2026-08-06T11:18:35Z",
+    "score": 195004,
+    "tags": [
+      "Rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:93c8a2e1b159",
     "kind": "trending",
     "source": "github",
@@ -1002,8 +996,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-06T03:27:24Z",
-    "score": 185837,
+    "publishedAt": "2026-08-07T13:31:09Z",
+    "score": 186210,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1033,7 +1027,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 182705,
+    "score": 183011,
     "tags": [
       "Python",
       "cli",
@@ -1057,8 +1051,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-05T16:30:39Z",
-    "score": 124862,
+    "publishedAt": "2026-08-07T10:37:38Z",
+    "score": 125388,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1097,8 +1091,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-06T03:16:02Z",
-    "score": 119704,
+    "publishedAt": "2026-08-07T09:17:32Z",
+    "score": 119823,
     "tags": [
       "Rust",
       "android",
@@ -1134,8 +1128,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-06T02:02:35Z",
-    "score": 115288,
+    "publishedAt": "2026-08-07T13:22:11Z",
+    "score": 115327,
     "tags": [
       "Rust",
       "compiler",
@@ -1155,8 +1149,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-06T02:19:14Z",
-    "score": 109937,
+    "publishedAt": "2026-08-07T04:38:28Z",
+    "score": 109993,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1181,8 +1175,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-06T01:47:34Z",
-    "score": 108164,
+    "publishedAt": "2026-08-07T10:18:14Z",
+    "score": 108181,
     "tags": [
       "Rust",
       "deno",
@@ -1204,8 +1198,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-06T03:17:27Z",
-    "score": 104228,
+    "publishedAt": "2026-08-07T13:25:46Z",
+    "score": 104600,
     "tags": [
       "Rust"
     ],
@@ -1222,8 +1216,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-06T03:30:53Z",
-    "score": 95294,
+    "publishedAt": "2026-08-07T13:28:45Z",
+    "score": 95310,
     "tags": [
       "Rust",
       "bun",
@@ -1247,32 +1241,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:16906210b22d",
-    "kind": "trending",
-    "source": "github",
-    "title": "iluwatar/java-design-patterns",
-    "url": "https://github.com/iluwatar/java-design-patterns",
-    "excerpt": "Design patterns implemented in Java",
-    "author": "iluwatar",
-    "publishedAt": "2026-07-31T11:42:30Z",
-    "score": 94541,
-    "tags": [
-      "Java",
-      "awesome-list",
-      "design-patterns",
-      "hacktoberfest",
-      "java",
-      "principles",
-      "snippets",
-      "snippets-collection",
-      "snippets-library"
-    ],
-    "labels": [
-      "java"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:98b65a1e42ee",
     "kind": "trending",
     "source": "github",
@@ -1280,8 +1248,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-05T20:48:51Z",
-    "score": 88955,
+    "publishedAt": "2026-08-07T13:03:44Z",
+    "score": 89055,
     "tags": [
       "Java",
       "docker",
@@ -1305,42 +1273,24 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:1ef2b3d65817",
+    "id": "github-trending:bafe5a24351b",
     "kind": "trending",
     "source": "github",
-    "title": "ruvnet/RuView",
-    "url": "https://github.com/ruvnet/RuView",
-    "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-    "author": "ruvnet",
-    "publishedAt": "2026-08-06T00:37:55Z",
-    "score": 88653,
+    "title": "spring-projects/spring-boot",
+    "url": "https://github.com/spring-projects/spring-boot",
+    "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+    "author": "spring-projects",
+    "publishedAt": "2026-08-07T12:30:53Z",
+    "score": 81279,
     "tags": [
-      "Rust",
-      "awesome",
-      "claude",
-      "densepose",
-      "esp32",
-      "firmware",
-      "home-assistant",
-      "home-automation",
-      "iot",
-      "monitoring",
-      "networking",
-      "npm",
-      "pose-estimation",
-      "react",
-      "rf",
-      "self-learning",
-      "skills",
-      "spatial-intelligence",
-      "typescript",
-      "wifi",
-      "wifi-security"
+      "Java",
+      "framework",
+      "java",
+      "spring",
+      "spring-boot"
     ],
     "labels": [
-      "rust",
-      "webdev",
-      "typescript"
+      "java"
     ],
     "mentionsByteveda": false
   }
