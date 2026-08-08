@@ -238,21 +238,97 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:b3b9af4e8181",
+    "id": "mastodon:119b1756ca37",
     "kind": "article",
     "source": "mastodon",
-    "title": "AI music company wants to press users' creations onto vinyl records",
-    "url": "https://www.latimes.com/entertainment-arts/business/story/2026-08-07/ai-music-company-wants-to-press-users-creations-onto-vinyl-records",
-    "excerpt": "AI music company Suno plans to press users' generated tracks onto 12-inch records for about $45, moving into vinyl as copyright suits from Universal and Sony continue.",
-    "author": "AI6YR Ben",
-    "publishedAt": "2026-08-07T13:25:56.000Z",
+    "title": "Future Archaeology Department, BDI - JOURNAL AUG7 (FRIDAY) - BERKELEY, CA \"Photographed here is a complete SCRAPBOOK CO…",
+    "url": "https://pixelfed.social/p/whisperworld/991508087952397147",
+    "excerpt": "Future Archaeology Department, BDI - JOURNAL AUG7 (FRIDAY) - BERKELEY, CA \"Photographed here is a complete SCRAPBOOK COMPUTER SYSTEM - based on the technology known as WHISPER CRAFT. We think the dat…",
+    "author": "Whisper World",
+    "publishedAt": "2026-08-08T00:59:09.000Z",
+    "score": 6,
+    "tags": [
+      "photography",
+      "opensource",
+      "leaves",
+      "tech",
+      "foss",
+      "design",
+      "concept",
+      "sustainability",
+      "workinprogress",
+      "hacking",
+      "floss",
+      "future",
+      "technology",
+      "hardware",
+      "fiction",
+      "degrowth",
+      "scrapbooking",
+      "scrapbook",
+      "microfiction",
+      "lowtech",
+      "hci"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:688243ca1395",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "The controller for my sprinkler system died last year, and the good controllers are ridiculously expensive. So I spent…",
+    "url": "https://dice.camp/@deadtom/117056962390311258",
+    "excerpt": "The controller for my sprinkler system died last year, and the good controllers are ridiculously expensive. So I spent the afternoon writing a Python script to run my sprinkler system with a Raspberr…",
+    "author": "DeadTOm :d20:",
+    "publishedAt": "2026-08-08T00:04:57.000Z",
     "score": 5,
     "tags": [
-      "aislop",
+      "python",
+      "raspberrypi",
+      "diy",
+      "homeautomation"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ae1651d1a89c",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "🎨 I’m really enjoying the redesigned PyPI project pages. Thanks to Nicole Harris and team for making these improvements…",
+    "url": "https://fosstodon.org/@adamchainz/117056647670513414",
+    "excerpt": "🎨 I’m really enjoying the redesigned PyPI project pages. Thanks to Nicole Harris and team for making these improvements! Blog post: https:// blog.pypi.org/posts/2026-07-22 -ui-updates/ # Python",
+    "author": "Adam Johnson :django: :python:",
+    "publishedAt": "2026-08-07T22:44:55.168Z",
+    "score": 11,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ed7810ee21e6",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "alexandra dunn (@alexandra@digipres.club)",
+    "url": "https://digipres.club/@alexandra/116999628685741330",
+    "excerpt": "have library workers produced a statement on AI in the vein of https://leidendeclaration.ai/",
+    "author": "Lina",
+    "publishedAt": "2026-08-07T21:49:03.000Z",
+    "score": 6,
+    "tags": [
+      "libraries",
+      "library",
       "ai",
-      "lps",
-      "records",
-      "music"
+      "llm"
     ],
     "labels": [
       "ai"
@@ -260,56 +336,104 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:1c957bad866b",
+    "id": "lobsters:5a308d67a0db",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Support Our Work!",
-    "url": "https://letsencrypt.org/donate/",
-    "excerpt": "Get the limited-edition ISRG Root X1 t-shirt when you give $75 or more this summer.",
-    "author": "Roy Greenhilt",
-    "publishedAt": "2026-08-07T13:08:34.107Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "Am I the problem? Interviewing another team to find out",
+    "url": "https://www.macchaffee.com/blog/2026/am-i-the-problem/",
+    "excerpt": "36 points · culture, practices",
+    "author": "cetera",
+    "publishedAt": "2026-08-07T14:27:16.129-05:00",
+    "score": 36,
     "tags": [
-      "ssl",
-      "apache",
-      "encryption",
-      "linux"
+      "culture",
+      "practices"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:79e1c80cd1e5",
+    "id": "rss:Hugging Face:fd5b733b3580",
     "kind": "article",
-    "source": "mastodon",
-    "title": "The real energy use of agentic AI",
-    "url": "https://www.theclimatebrink.com/p/the-real-energy-use-of-agentic-ai",
-    "excerpt": "Agents use about 600x more energy than simple AI prompts",
-    "author": "Jürgen",
-    "publishedAt": "2026-08-07T11:30:55.000Z",
-    "score": 18,
+    "source": "rss",
+    "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+    "url": "https://huggingface.co/blog/allenai/tutormoments",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-07T17:53:32.000Z",
+    "score": 0,
     "tags": [
-      "data",
-      "technology",
-      "tech",
-      "GreenOps",
-      "opensource",
-      "python",
-      "programming",
-      "research",
-      "datascience",
-      "ai",
-      "sustainability",
-      "GreenSoftware",
-      "codingagents",
-      "agents",
-      "climatechange"
+      "Hugging Face"
     ],
     "labels": [
-      "opensource",
-      "python",
-      "ai"
+      "ai",
+      "ml"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:3f2c3c5a8857",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "PS3 emulation is fast on ARM now",
+    "url": "https://www.youtube.com/watch?v=-aI_XEwmKFk",
+    "excerpt": "16 points · assembly, performance, video",
+    "author": "tjf",
+    "publishedAt": "2026-08-07T12:50:55.390-05:00",
+    "score": 16,
+    "tags": [
+      "assembly",
+      "performance",
+      "video"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:bb8b550c7617",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Steel-hull boat upkeep. 1. On a calm, sunny day, find a place where you can reach the rust spots from the shore or dock…",
+    "url": "https://poweredbygay.social/@PKYo/117055372308099530",
+    "excerpt": "Steel-hull boat upkeep. 1. On a calm, sunny day, find a place where you can reach the rust spots from the shore or dock. 2. Sand off the rust and then paint on the rust-blocking primer. 3. Let it dry…",
+    "author": "Bobbing Boat",
+    "publishedAt": "2026-08-07T17:20:34.000Z",
+    "score": 9,
+    "tags": [
+      "CanalLife",
+      "boatlife",
+      "steel",
+      "boat",
+      "boatinglife",
+      "boating",
+      "Narrowboat",
+      "hull",
+      "rust",
+      "maintenance",
+      "paint"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:1a65817259a4",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/ucaatd/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-08-07T04:38:13.292-05:00",
+    "score": 22,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -361,6 +485,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:161889b3c37a",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Spent a Day With Kiro Crew. Here's What It Actually Does.",
+    "url": "https://dev.to/aws-builders/i-spent-a-day-with-kiro-crew-heres-what-it-actually-does-fk0",
+    "excerpt": "4-minute demo: AI agent investigates a P1 latency spike, sets up prevention automation, and documents tribal knowledge. Cost: $0.04 per incident.",
+    "author": "Sarvar Nadaf",
+    "publishedAt": "2026-08-06T16:18:31Z",
+    "score": 25,
+    "tags": [
+      "agents",
+      "ai",
+      "showdev",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "devto:fac2834efe4f",
     "kind": "article",
     "source": "devto",
@@ -369,7 +514,7 @@
     "excerpt": "I stopped treating permission prompts as the safety system, then spent four and a half months writing 134 standing rules to replace them. Nine things I do differently with AI, and the proof to back i…",
     "author": "Ashley Childress",
     "publishedAt": "2026-08-06T12:42:10Z",
-    "score": 35,
+    "score": 38,
     "tags": [
       "discuss",
       "ai",
@@ -387,10 +532,10 @@
     "source": "lobsters",
     "title": "The following is a valid DOS COM executable",
     "url": "https://oldbytes.space/@gloriouscow/117045701876951834",
-    "excerpt": "27 points · art, programming",
+    "excerpt": "29 points · art, programming",
     "author": "dsr",
     "publishedAt": "2026-08-06T06:37:30.897-05:00",
-    "score": 27,
+    "score": 29,
     "tags": [
       "art",
       "programming"
@@ -404,10 +549,10 @@
     "source": "lobsters",
     "title": "python string literals are kinda funny",
     "url": "https://sebsite.pw/w/20260806-pystrings.html",
-    "excerpt": "54 points · python",
+    "excerpt": "60 points · python",
     "author": "raymii",
     "publishedAt": "2026-08-05T23:44:44.655-05:00",
-    "score": 54,
+    "score": 60,
     "tags": [
       "python"
     ],
@@ -441,10 +586,10 @@
     "source": "lobsters",
     "title": "A Vision for Cargo",
     "url": "https://epage.github.io/blog/2026/08/cargo-vision/",
-    "excerpt": "41 points · rust",
+    "excerpt": "42 points · rust",
     "author": "asb",
     "publishedAt": "2026-08-05T15:45:57.143-05:00",
-    "score": 41,
+    "score": 42,
     "tags": [
       "rust"
     ],
@@ -459,10 +604,10 @@
     "source": "lobsters",
     "title": "I Built a Blog and Forgot to Write",
     "url": "https://benjcal.space/blog/i-built-a-blog-and-forgot-to-write/",
-    "excerpt": "25 points · culture, philosophy, practices",
+    "excerpt": "26 points · culture, philosophy, practices",
     "author": "benj",
     "publishedAt": "2026-08-05T15:07:39.008-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "culture",
       "philosophy",
@@ -480,7 +625,7 @@
     "excerpt": "AWS open-sourced a persistent workspace that coordinates AI coding agents across sessions, schedules, and repos. Here's what it actually does and why it matters.",
     "author": "Sarvar Nadaf",
     "publishedAt": "2026-08-05T13:51:22Z",
-    "score": 27,
+    "score": 28,
     "tags": [
       "agents",
       "ai",
@@ -548,10 +693,10 @@
     "source": "lobsters",
     "title": "rust-lang/rust is adopting an LLM policy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-    "excerpt": "155 points · rust, vibecoding",
+    "excerpt": "158 points · rust, vibecoding",
     "author": "wezm",
     "publishedAt": "2026-08-05T01:55:36.963-05:00",
-    "score": 155,
+    "score": 158,
     "tags": [
       "rust",
       "vibecoding"
@@ -636,10 +781,10 @@
     "source": "lobsters",
     "title": "Enabling the next iteration of the borrow checker on nightly",
     "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nighty/",
-    "excerpt": "127 points · rust",
+    "excerpt": "129 points · rust",
     "author": "kmaasrud",
     "publishedAt": "2026-08-04T12:45:15.663-05:00",
-    "score": 127,
+    "score": 129,
     "tags": [
       "rust"
     ],
@@ -665,138 +810,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Hugging Face:ea7f6df3de1a",
-    "kind": "article",
-    "source": "rss",
-    "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-08-04T13:58:29.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:2b0846d376e5",
-    "kind": "article",
-    "source": "devto",
-    "title": "Your browser renders everything, even what you can't see — `content-visibility: auto` fixes that",
-    "url": "https://dev.to/parsajiravand/your-browser-renders-everything-even-what-you-cant-see-content-visibility-auto-fixes-that-3g7c",
-    "excerpt": "When you open a long page — a news feed, an admin table, a documentation article — the browser lays...",
-    "author": "Parsa Jiravand",
-    "publishedAt": "2026-08-04T08:44:58Z",
-    "score": 28,
-    "tags": [
-      "css",
-      "webdev",
-      "performance",
-      "frontend"
-    ],
-    "labels": [
-      "webdev",
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:f090ff00ce54",
-    "kind": "article",
-    "source": "rss",
-    "title": "Your MVP doesn’t need a Kubernetes cluster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‍​​﻿​‌‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌‌‌‍‌‌​﻿​﻿​‍﻿‌​﻿​‌​﻿​‌‌‍​‍​﻿‌‌​‍﻿‌​﻿‌​‌‍​‌​﻿​‍​﻿​​​‍﻿‌​﻿‍​​﻿‌‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍‌​​﻿‍‌‌‍‌‍​﻿​﻿​﻿‍​​﻿​‍‌‍​‍​﻿​‍​﻿‍‌‌‍​﻿​﻿​‌‌‍​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‍​​﻿​‌‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌‌‌‍‌‌​﻿​﻿​‍﻿‌​﻿​‌​﻿​‌‌‍​‍​﻿‌‌​‍﻿‌​﻿‌​‌‍​‌​﻿​‍​﻿​​​‍﻿‌​﻿‍​​﻿‌‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍‌​​﻿‍‌‌‍‌‍​﻿​﻿​﻿‍​​﻿​‍‌‍​‍​﻿​‍​﻿‍‌‌‍​﻿​﻿​‌‌‍​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
-    "url": "https://stackoverflow.blog/2026/08/04/your-mvp-doesn-t-need-a-kubernetes-cluster/",
-    "excerpt": "Ryan welcomes Anurag Goel, CEO and co-founder of Render, to discuss why most startups shouldn’t start by managing their Kubernetes and cloud infrastructure. ​​​​‌ ‍ ​‍​‍‌‍ ‌ ​‍‌‍‍‌‌‍‌ ‌‍‍‌‌‍ ‍​‍​‍​ ‍…",
-    "author": "Ryan Donovan",
-    "publishedAt": "2026-08-04T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:96625416f8b5",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "BorrowSanitizer",
-    "url": "https://borrowsanitizer.com/",
-    "excerpt": "48 points · rust",
-    "author": "sanxiyn",
-    "publishedAt": "2026-08-04T02:29:43.185-05:00",
-    "score": 48,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:e7890dbd53bc",
-    "kind": "article",
-    "source": "devto",
-    "title": "Understanding Over Origin: The Missing Friction",
-    "url": "https://dev.to/adamthedeveloper/understanding-over-origin-the-missing-friction-55ag",
-    "excerpt": "A few days ago, I wrote \"Understanding Over Origin\" and it got alot of engagement and I'm really...",
-    "author": "Adam - The Developer ✨",
-    "publishedAt": "2026-08-04T04:36:13Z",
-    "score": 57,
-    "tags": [
-      "ai",
-      "programming",
-      "productivity",
-      "learning"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:The Rust Blog:90dd6fb3064a",
-    "kind": "article",
-    "source": "rss",
-    "title": "Enabling the next iteration of the borrow checker on nightly",
-    "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nightly/",
-    "excerpt": "TL;DR We are enabling the next iteration of the borrow checker (coined Polonius Alpha) on nightly in preparation for stabilization in the next few months. Whaaaaaat? Yes! You heard it right! The next…",
-    "author": "Jack Huey",
-    "publishedAt": "2026-08-04T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "The Rust Blog"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Python Insider:a513e2436979",
-    "kind": "article",
-    "source": "rss",
-    "title": "Python 3.15.0 candidate 1 is here!",
-    "url": "https://blog.python.org/2026/08/python-3150-rc1/",
-    "excerpt": "Get those wheels rolling!",
-    "author": "Hugo van Kemenade",
-    "publishedAt": "2026-08-04T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Python Insider"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -805,7 +818,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-05T06:58:49Z",
-    "score": 454891,
+    "score": 454974,
     "tags": [
       "Python",
       "api",
@@ -836,8 +849,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-08-06T13:01:39Z",
-    "score": 393925,
+    "publishedAt": "2026-08-07T20:33:59Z",
+    "score": 393952,
     "tags": [
       "Python",
       "books",
@@ -860,7 +873,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 312670,
+    "score": 312761,
     "tags": [
       "Python",
       "awesome",
@@ -884,7 +897,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 277103,
+    "score": 277206,
     "tags": [
       "Python",
       "beginner-project",
@@ -911,8 +924,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-07T13:32:26Z",
-    "score": 226905,
+    "publishedAt": "2026-08-08T01:28:07Z",
+    "score": 227108,
     "tags": [
       "Python",
       "ai",
@@ -947,7 +960,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223550,
+    "score": 223562,
     "tags": [
       "Python",
       "algorithm",
@@ -979,7 +992,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-06T11:18:35Z",
-    "score": 195004,
+    "score": 195006,
     "tags": [
       "Rust"
     ],
@@ -996,8 +1009,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-07T13:31:09Z",
-    "score": 186210,
+    "publishedAt": "2026-08-08T02:11:13Z",
+    "score": 186342,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1027,7 +1040,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 183011,
+    "score": 183122,
     "tags": [
       "Python",
       "cli",
@@ -1051,8 +1064,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-07T10:37:38Z",
-    "score": 125388,
+    "publishedAt": "2026-08-07T18:38:46Z",
+    "score": 125476,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1091,8 +1104,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-07T09:17:32Z",
-    "score": 119823,
+    "publishedAt": "2026-08-08T01:33:58Z",
+    "score": 119863,
     "tags": [
       "Rust",
       "android",
@@ -1128,8 +1141,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-07T13:22:11Z",
-    "score": 115327,
+    "publishedAt": "2026-08-08T01:52:01Z",
+    "score": 115347,
     "tags": [
       "Rust",
       "compiler",
@@ -1149,8 +1162,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-07T04:38:28Z",
-    "score": 109993,
+    "publishedAt": "2026-08-07T15:10:55Z",
+    "score": 110003,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1175,8 +1188,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-07T10:18:14Z",
-    "score": 108181,
+    "publishedAt": "2026-08-07T23:53:23Z",
+    "score": 108189,
     "tags": [
       "Rust",
       "deno",
@@ -1198,8 +1211,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-07T13:25:46Z",
-    "score": 104600,
+    "publishedAt": "2026-08-08T01:42:25Z",
+    "score": 104661,
     "tags": [
       "Rust"
     ],
@@ -1216,8 +1229,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-07T13:28:45Z",
-    "score": 95310,
+    "publishedAt": "2026-08-08T02:15:35Z",
+    "score": 95322,
     "tags": [
       "Rust",
       "bun",
@@ -1248,8 +1261,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-07T13:03:44Z",
-    "score": 89055,
+    "publishedAt": "2026-08-08T01:23:40Z",
+    "score": 89074,
     "tags": [
       "Java",
       "docker",
@@ -1280,8 +1293,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-08-07T12:30:53Z",
-    "score": 81279,
+    "publishedAt": "2026-08-07T15:02:38Z",
+    "score": 81282,
     "tags": [
       "Java",
       "framework",
