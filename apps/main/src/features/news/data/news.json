@@ -238,6 +238,113 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:844278d332ea",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "An AI Broke Out, Hacked Hugging Face, and Shook the Industry. IBM’s Answer Is Named Bob.",
+    "url": "https://mayashenoi.com/2026/08/09/an-ai-broke-out-hacked-hugging-face-and-shook-the-industry-ibms-answer-is-named-bob/",
+    "excerpt": "Let me tell you what happened in July. Because it changes how you should think about every AI project on your roadmap. OpenAI was testing one of its models for hacking skills. Standard practice — y…",
+    "author": "Maya Shenoi",
+    "publishedAt": "2026-08-09T06:19:31.000Z",
+    "score": 9,
+    "tags": [
+      "agenticai",
+      "ai",
+      "aisecurity",
+      "artificialintelligence",
+      "chatgpt",
+      "devsecops",
+      "ibm",
+      "ibmsecurity",
+      "ibmbob",
+      "llm",
+      "technology"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:7ad846256373",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Parch GNU/Linux",
+    "url": "https://parchlinux.com/",
+    "excerpt": "A Persian Arch-based Linux distribution — streamlined, user-friendly, and community-driven.",
+    "author": "Sohrab Behdani :freebsd:",
+    "publishedAt": "2026-08-09T06:13:03.000Z",
+    "score": 7,
+    "tags": [
+      "parchlinux",
+      "linux",
+      "opensource",
+      "foss",
+      "internetfreedom",
+      "iran"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e4ceb1ccad1d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "88 % des développeur·se·s les plus productifs avec l'IA déclarent être en burn-out. Ce phénomène, la *vibecoding fatigu…",
+    "url": "https://mastodon.social/@camilleroux/117064021197973404",
+    "excerpt": "88 % des développeur·se·s les plus productifs avec l'IA déclarent être en burn-out. Ce phénomène, la *vibecoding fatigue*, va toucher tous les métiers du langage : journalistes, juristes, traducteur·…",
+    "author": "Camille Roux",
+    "publishedAt": "2026-08-09T06:00:06.000Z",
+    "score": 5,
+    "tags": [
+      "machinelearning",
+      "ai"
+    ],
+    "labels": [
+      "ml",
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:1c1eca44b9e1",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Release 0.2.0 · 15r10nk/matchify",
+    "url": "https://github.com/15r10nk/matchify/releases/tag/0.2.0",
+    "excerpt": "Added\n\nConvert membership tests against eligible literal sets into OR patterns when\nthe hashable-subjects assumption is enabled.\n\nFixed\n\nApply --no-types patterns to qualified isinstance targets su...",
+    "author": "Frank Hoffmann",
+    "publishedAt": "2026-08-09T04:09:15.454Z",
+    "score": 5,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ad94e5e61465",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "just finished reading the # rust programming language book! very excited to use build stuff with it. my favorite parts…",
+    "url": "https://social.treehouse.systems/@koopa/117063409040955267",
+    "excerpt": "just finished reading the # rust programming language book! very excited to use build stuff with it. my favorite parts are the expression-centric syntax, pattern matching, safer integral primitives,…",
+    "author": "Koopa 🌸",
+    "publishedAt": "2026-08-09T03:24:25.000Z",
+    "score": 6,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:63fde3e008ce",
     "kind": "article",
     "source": "mastodon",
@@ -257,99 +364,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:e14cba0ab1c9",
+    "id": "lobsters:fd35d139fda1",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Swarm of bots post astroturf campaign in support of ATF’s anti-trans gun rule - Assigned Media",
-    "url": "https://assignedmedia.org/breaking-news/swarm-of-bots-post-astroturf-campaign-in-support-of-atfs-anti-trans-gun-rule/",
-    "excerpt": "An ATF proposal to curb trans gun rights got thousands of supportive comments. 96 percent of them appear fake.",
-    "author": "The Human Capybara",
-    "publishedAt": "2026-08-08T23:55:30.000Z",
-    "score": 16,
+    "source": "lobsters",
+    "title": "\"Code was never the hard part\" is an insult to all programmers",
+    "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+    "excerpt": "25 points · practices, vibecoding",
+    "author": "typesanitizer",
+    "publishedAt": "2026-08-08T14:23:48.760-05:00",
+    "score": 25,
     "tags": [
-      "gun",
-      "trans",
-      "ai",
-      "llm"
+      "practices",
+      "vibecoding"
     ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:d28a9c459a90",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "My Introductory Toot ================= Interests: # ukulele # guitar # astronomy # foss # linux # thorium # 4thGenerati…",
-    "url": "https://universeodon.com/@doubledodge/117062231273081669",
-    "excerpt": "My Introductory Toot ================= Interests: # ukulele # guitar # astronomy # foss # linux # thorium # 4thGenerationNuclear # physics # mandarin # python # bellringing # family # democracy # net…",
-    "author": "Doubledodge  🇺🇦🇪🇺🇬🇧🐧",
-    "publishedAt": "2026-08-08T22:24:54.000Z",
-    "score": 7,
-    "tags": [
-      "ukulele",
-      "guitar",
-      "astronomy",
-      "foss",
-      "linux",
-      "thorium",
-      "4thgenerationnuclear",
-      "physics",
-      "mandarin",
-      "python",
-      "BellRinging",
-      "family",
-      "democracy",
-      "netzero",
-      "internationalism",
-      "electronics",
-      "rpi",
-      "maths",
-      "quantummanyworlds",
-      "everettianism"
-    ],
-    "labels": [
-      "opensource",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:7f9de39b128a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "AI model achieves breakthrough in forecasting cyclones",
-    "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-    "excerpt": "WeatherNext enables accurate cyclone forecasts that can give an extra day of warning. Now we are open sourcing the model.",
-    "author": "Metin Seven",
-    "publishedAt": "2026-08-08T18:31:23.000Z",
-    "score": 15,
-    "tags": [
-      "tech",
-      "technology",
-      "bigtech",
-      "it",
-      "ai",
-      "artificialintelligence",
-      "llm",
-      "llms",
-      "ml",
-      "machinelearning",
-      "genai",
-      "generativeAI",
-      "aiagent",
-      "aislop",
-      "fuckai",
-      "fuck_ai",
-      "enshittification",
-      "google",
-      "deepmind"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -361,7 +389,7 @@
     "excerpt": "Not tagged as video but contains mostly links to videos",
     "author": "hugoarnal",
     "publishedAt": "2026-08-08T08:48:36.676-05:00",
-    "score": 57,
+    "score": 67,
     "tags": [
       "programming"
     ],
@@ -374,10 +402,10 @@
     "source": "lobsters",
     "title": "Am I the problem? Interviewing another team to find out",
     "url": "https://www.macchaffee.com/blog/2026/am-i-the-problem/",
-    "excerpt": "95 points · culture, practices",
+    "excerpt": "99 points · culture, practices",
     "author": "cetera",
     "publishedAt": "2026-08-07T14:27:16.129-05:00",
-    "score": 95,
+    "score": 99,
     "tags": [
       "culture",
       "practices"
@@ -410,10 +438,10 @@
     "source": "lobsters",
     "title": "PS3 emulation is fast on ARM now",
     "url": "https://www.youtube.com/watch?v=-aI_XEwmKFk",
-    "excerpt": "36 points · assembly, performance, video",
+    "excerpt": "37 points · assembly, performance, video",
     "author": "tjf",
     "publishedAt": "2026-08-07T12:50:55.390-05:00",
-    "score": 36,
+    "score": 37,
     "tags": [
       "assembly",
       "performance",
@@ -433,7 +461,7 @@
     "excerpt": "My day job, such as it is, involves optimizing simulations and scientific tooling. Right now I'm working on an astrophysical simulation with a group at CUNY. One of the grad students has spent the la…",
     "author": "nrposner",
     "publishedAt": "2026-08-07T10:24:58.559-05:00",
-    "score": 25,
+    "score": 27,
     "tags": [
       "practices",
       "python",
@@ -734,10 +762,10 @@
     "source": "lobsters",
     "title": "rust-lang/rust is adopting an LLM policy",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-    "excerpt": "160 points · rust, vibecoding",
+    "excerpt": "162 points · rust, vibecoding",
     "author": "wezm",
     "publishedAt": "2026-08-05T01:55:36.963-05:00",
-    "score": 160,
+    "score": 162,
     "tags": [
       "rust",
       "vibecoding"
@@ -766,57 +794,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:5045f9a76753",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "designing a query system",
-    "url": "https://bal-e.org/speed/krabby/2026/query-system-design/",
-    "excerpt": "33 points · compilers, rust",
-    "author": "fanf",
-    "publishedAt": "2026-08-04T16:40:22.122-05:00",
-    "score": 33,
-    "tags": [
-      "compilers",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:29bfc35a5ea8",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "irken: A tiny hackable full-featured IRC client",
-    "url": "https://codeberg.org/dlowe/irken",
-    "excerpt": "46 points · programming",
-    "author": "dzwdz",
-    "publishedAt": "2026-08-04T15:30:17.224-05:00",
-    "score": 46,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:00b3e9274b23",
-    "kind": "article",
-    "source": "rss",
-    "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
-    "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
-    "excerpt": "Whether you are just starting out or are not in a technical role at all, you likely already have the skills you need to build your own tools. If you have ever thought &ldquo;I&rsquo;m not technical e…",
-    "author": "Bria Ford",
-    "publishedAt": "2026-08-04T19:02:34.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -825,7 +802,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-08T20:32:59Z",
-    "score": 455112,
+    "score": 455144,
     "tags": [
       "Python",
       "api",
@@ -857,7 +834,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-07T20:33:59Z",
-    "score": 393988,
+    "score": 394006,
     "tags": [
       "Python",
       "books",
@@ -880,7 +857,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 312930,
+    "score": 312968,
     "tags": [
       "Python",
       "awesome",
@@ -904,7 +881,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-03T07:46:08Z",
-    "score": 277389,
+    "score": 277427,
     "tags": [
       "Python",
       "beginner-project",
@@ -931,8 +908,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-09T02:23:30Z",
-    "score": 227549,
+    "publishedAt": "2026-08-09T07:04:07Z",
+    "score": 227628,
     "tags": [
       "Python",
       "ai",
@@ -967,7 +944,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-03T18:44:56Z",
-    "score": 223581,
+    "score": 223580,
     "tags": [
       "Python",
       "algorithm",
@@ -999,7 +976,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-06T11:18:35Z",
-    "score": 195018,
+    "score": 195014,
     "tags": [
       "Rust"
     ],
@@ -1016,8 +993,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-09T01:30:17Z",
-    "score": 186440,
+    "publishedAt": "2026-08-09T07:05:00Z",
+    "score": 186443,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1047,7 +1024,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 183332,
+    "score": 183375,
     "tags": [
       "Python",
       "cli",
@@ -1071,8 +1048,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-07T18:38:46Z",
-    "score": 125728,
+    "publishedAt": "2026-08-09T04:34:50Z",
+    "score": 125786,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1111,8 +1088,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-09T01:31:40Z",
-    "score": 119919,
+    "publishedAt": "2026-08-09T05:20:30Z",
+    "score": 119926,
     "tags": [
       "Rust",
       "android",
@@ -1148,8 +1125,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-09T02:24:07Z",
-    "score": 115367,
+    "publishedAt": "2026-08-09T06:37:49Z",
+    "score": 115371,
     "tags": [
       "Rust",
       "compiler",
@@ -1169,8 +1146,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-07T15:10:55Z",
-    "score": 110028,
+    "publishedAt": "2026-08-09T07:00:33Z",
+    "score": 110033,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1218,8 +1195,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-09T01:05:56Z",
-    "score": 104815,
+    "publishedAt": "2026-08-09T04:27:23Z",
+    "score": 104849,
     "tags": [
       "Rust"
     ],
@@ -1236,8 +1213,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-09T02:23:20Z",
-    "score": 95338,
+    "publishedAt": "2026-08-09T07:10:45Z",
+    "score": 95339,
     "tags": [
       "Rust",
       "bun",
@@ -1269,7 +1246,7 @@
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
     "publishedAt": "2026-08-09T00:02:53Z",
-    "score": 89147,
+    "score": 89164,
     "tags": [
       "Java",
       "docker",
@@ -1301,7 +1278,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-08-08T19:07:45Z",
-    "score": 81294,
+    "score": 81296,
     "tags": [
       "Java",
       "framework",
