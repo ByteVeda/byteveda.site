@@ -238,69 +238,65 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:2b357fa4b995",
+    "id": "mastodon:41cc8c7cc2a9",
     "kind": "article",
     "source": "mastodon",
-    "title": "RE: https:// mastodon.online/@gardiner_brya nt/117071122333123981 I have 1 iMac (Mint), 1 MacMini (LMDE), 1 MB Pro (MX…",
-    "url": "https://fosstodon.org/@datenteiler/117072743550730860",
-    "excerpt": "RE: https:// mastodon.online/@gardiner_brya nt/117071122333123981 I have 1 iMac (Mint), 1 MacMini (LMDE), 1 MB Pro (MX Linux) and 1 MB Air (MX Linux) from 2011 and 1 MacMini (Mint) from 2014. They al…",
-    "author": "Christian",
-    "publishedAt": "2026-08-10T18:58:18.808Z",
-    "score": 5,
+    "title": "Tengo sentimientos encontrados con la IA, pero yo la uso para algunas cosas y en particular hoy la usé para que me dier…",
+    "url": "https://mastodon.uy/@santiago/117074133552766706",
+    "excerpt": "Tengo sentimientos encontrados con la IA, pero yo la uso para algunas cosas y en particular hoy la usé para que me diera el código Latex de un práctico de Técnicas Instrumentales del cual perdí la fu…",
+    "author": "Santiago 🔭🪐",
+    "publishedAt": "2026-08-11T00:51:48.000Z",
+    "score": 8,
     "tags": [
-      "linux",
-      "debian",
-      "mxlinux",
-      "lmde",
-      "linuxonmac",
-      "linuxmint"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:aa23c9036ba0",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I would like to introduce myself! I'm Darren. I'm in my 20s. I live in the US. I am passionate about activism and scien…",
-    "url": "https://universeodon.com/@DarrenEatsVeggies/117072731270653693",
-    "excerpt": "I would like to introduce myself! I'm Darren. I'm in my 20s. I live in the US. I am passionate about activism and science. I love trying new healthy foods and cooking with unusual ingredients. My cur…",
-    "author": "Darren",
-    "publishedAt": "2026-08-10T18:55:11.000Z",
-    "score": 5,
-    "tags": [
-      "education",
-      "renewable",
-      "activism",
-      "wfpb",
-      "plantbased",
-      "degrowth",
-      "sustainability",
-      "frugal",
-      "linux",
-      "ecofriendly",
-      "climatechange",
-      "punkrock"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:420e438b82f5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Breaking up (lines) is hard to do",
-    "url": "https://www.b-list.org/weblog/2026/aug/10/newlines/",
-    "excerpt": "Here’s a seemingly simple question: given a chunk of multi-line text, how do you split it and return an array …",
-    "author": "James Bennett",
-    "publishedAt": "2026-08-10T18:10:36.000Z",
-    "score": 11,
-    "tags": [
-      "python"
+      "ia",
+      "llm",
+      "autogestion",
+      "comunidad",
+      "comunidades",
+      "debate",
+      "contaminacion"
     ],
     "labels": [
-      "python"
+      "ai"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:46a24fe1ba27",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Just about happy with my # SelfHosted stack of software. Need to get RustDesk working, and I&#39;ve been tinkering with…",
+    "url": "https://fosstodon.org/@RockyC/117074117786075537",
+    "excerpt": "Just about happy with my # SelfHosted stack of software. Need to get RustDesk working, and I&#39;ve been tinkering with LocalAI to figure out this agentic stuff (I really don&#39;t use LLMs much). Th…",
+    "author": "RockyC",
+    "publishedAt": "2026-08-11T00:47:47.978Z",
+    "score": 7,
+    "tags": [
+      "selfhosted",
+      "homelab",
+      "linux",
+      "foss",
+      "softwarefreedom"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:1cd9faee1a34",
+    "kind": "article",
+    "source": "rss",
+    "title": "Using the GitHub Copilot SDK for Java",
+    "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
+    "excerpt": "Java developers no longer have to rely on Java framework-specific approaches to drive AI from their enterprise apps. While it is true that Langchain4j empowered developers by disintermediating specif…",
+    "author": "Edward Burns",
+    "publishedAt": "2026-08-10T19:30:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -328,10 +324,10 @@
     "source": "lobsters",
     "title": "Django is moving to an annual release cycle",
     "url": "https://www.djangoproject.com/weblog/2026/aug/10/annual-release-cycle/",
-    "excerpt": "32 points · python, release, web",
+    "excerpt": "42 points · python, release, web",
     "author": "ggpsv",
     "publishedAt": "2026-08-10T07:46:03.432-05:00",
-    "score": 32,
+    "score": 42,
     "tags": [
       "python",
       "release",
@@ -341,6 +337,23 @@
       "python",
       "webdev"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:c8d1977f5a33",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this week?",
+    "url": "https://lobste.rs/s/3qwloh/what_are_you_doing_this_week",
+    "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
+    "author": "caius",
+    "publishedAt": "2026-08-10T06:41:16.943-05:00",
+    "score": 15,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -398,27 +411,6 @@
     "labels": [
       "ai",
       "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:4cb190ef40b5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "GitHub - PierpaoloPernici/lazycaddy: The lazier way to manage your Caddyfile",
-    "url": "https://github.com/PierpaoloPernici/lazycaddy",
-    "excerpt": "The lazier way to manage your Caddyfile. Contribute to PierpaoloPernici/lazycaddy development by creating an account on GitHub.",
-    "author": "PieR :verified:",
-    "publishedAt": "2026-08-09T19:49:17.000Z",
-    "score": 18,
-    "tags": [
-      "caddy",
-      "golang",
-      "selfhosted",
-      "homelab"
-    ],
-    "labels": [
-      "go"
     ],
     "mentionsByteveda": false
   },
@@ -502,7 +494,7 @@
     "excerpt": "I read back six months of my own work journal and found three different note-taking systems, only one of which I remember deciding to build. This is what the volume of information actually did to my…",
     "author": "christine",
     "publishedAt": "2026-08-07T19:39:15Z",
-    "score": 29,
+    "score": 30,
     "tags": [
       "ai",
       "productivity",
@@ -520,10 +512,10 @@
     "source": "lobsters",
     "title": "Am I the problem? Interviewing another team to find out",
     "url": "https://www.macchaffee.com/blog/2026/am-i-the-problem/",
-    "excerpt": "108 points · culture, practices",
+    "excerpt": "109 points · culture, practices",
     "author": "cetera",
     "publishedAt": "2026-08-07T14:27:16.129-05:00",
-    "score": 108,
+    "score": 109,
     "tags": [
       "culture",
       "practices"
@@ -720,7 +712,7 @@
     "excerpt": "I stopped treating permission prompts as the safety system, then spent four and a half months writing 134 standing rules to replace them. Nine things I do differently with AI, and the proof to back i…",
     "author": "Ashley Childress",
     "publishedAt": "2026-08-06T12:42:10Z",
-    "score": 54,
+    "score": 55,
     "tags": [
       "discuss",
       "ai",
@@ -813,7 +805,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-08T20:32:59Z",
-    "score": 455342,
+    "score": 455372,
     "tags": [
       "Python",
       "api",
@@ -845,7 +837,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-07T20:33:59Z",
-    "score": 394093,
+    "score": 394107,
     "tags": [
       "Python",
       "books",
@@ -868,7 +860,7 @@
     "excerpt": "An opinionated list of Python frameworks, libraries, tools, and resources",
     "author": "vinta",
     "publishedAt": "2026-08-05T06:11:04Z",
-    "score": 313244,
+    "score": 313272,
     "tags": [
       "Python",
       "awesome",
@@ -892,7 +884,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-10T07:04:22Z",
-    "score": 277926,
+    "score": 278021,
     "tags": [
       "Python",
       "beginner-project",
@@ -919,8 +911,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-10T19:07:54Z",
-    "score": 228367,
+    "publishedAt": "2026-08-11T02:17:02Z",
+    "score": 228510,
     "tags": [
       "Python",
       "ai",
@@ -955,7 +947,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-06T11:18:35Z",
-    "score": 195017,
+    "score": 195020,
     "tags": [
       "Rust"
     ],
@@ -972,8 +964,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-10T18:58:02Z",
-    "score": 186498,
+    "publishedAt": "2026-08-11T00:34:15Z",
+    "score": 186505,
     "tags": [
       "Python",
       "agentic-ai",
@@ -995,31 +987,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:ea981792d382",
-    "kind": "trending",
-    "source": "github",
-    "title": "yt-dlp/yt-dlp",
-    "url": "https://github.com/yt-dlp/yt-dlp",
-    "excerpt": "A feature-rich command-line audio/video downloader",
-    "author": "yt-dlp",
-    "publishedAt": "2026-08-04T22:58:34Z",
-    "score": 183690,
-    "tags": [
-      "Python",
-      "cli",
-      "downloader",
-      "python",
-      "sponsorblock",
-      "youtube-dl",
-      "youtube-downloader",
-      "yt-dlp"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:bc97666fba6a",
     "kind": "trending",
     "source": "github",
@@ -1028,13 +995,52 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-08-07T17:14:15Z",
-    "score": 167416,
+    "score": 167554,
     "tags": [
       "Python",
       "agent-skills"
     ],
     "labels": [
       "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "github-trending:6efb574d5b5c",
+    "kind": "trending",
+    "source": "github",
+    "title": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "author": "huggingface",
+    "publishedAt": "2026-08-10T22:47:42Z",
+    "score": 163560,
+    "tags": [
+      "Python",
+      "audio",
+      "deep-learning",
+      "deepseek",
+      "gemma",
+      "glm",
+      "hacktoberfest",
+      "llm",
+      "machine-learning",
+      "model-hub",
+      "natural-language-processing",
+      "nlp",
+      "pretrained-models",
+      "python",
+      "pytorch",
+      "pytorch-transformers",
+      "qwen",
+      "speech-recognition",
+      "transformer",
+      "vlm"
+    ],
+    "labels": [
+      "python",
+      "ml",
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -1047,7 +1053,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-10T15:57:22Z",
-    "score": 126196,
+    "score": 126227,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1087,7 +1093,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-10T12:43:43Z",
-    "score": 120030,
+    "score": 120043,
     "tags": [
       "Rust",
       "android",
@@ -1123,8 +1129,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-10T18:52:48Z",
-    "score": 115386,
+    "publishedAt": "2026-08-11T01:26:52Z",
+    "score": 115394,
     "tags": [
       "Rust",
       "compiler",
@@ -1144,8 +1150,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-10T08:31:23Z",
-    "score": 110083,
+    "publishedAt": "2026-08-10T22:42:34Z",
+    "score": 110089,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1170,8 +1176,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-10T14:43:24Z",
-    "score": 108217,
+    "publishedAt": "2026-08-11T00:04:32Z",
+    "score": 108219,
     "tags": [
       "Rust",
       "deno",
@@ -1193,8 +1199,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-10T18:47:20Z",
-    "score": 105141,
+    "publishedAt": "2026-08-11T01:07:36Z",
+    "score": 105171,
     "tags": [
       "Rust"
     ],
@@ -1211,8 +1217,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-10T19:11:23Z",
-    "score": 95358,
+    "publishedAt": "2026-08-11T02:23:37Z",
+    "score": 95359,
     "tags": [
       "Rust",
       "bun",
@@ -1243,8 +1249,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-10T19:08:32Z",
-    "score": 89275,
+    "publishedAt": "2026-08-10T23:56:04Z",
+    "score": 89293,
     "tags": [
       "Java",
       "docker",
@@ -1275,7 +1281,7 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-08-10T16:17:49Z",
+    "publishedAt": "2026-08-10T19:53:30Z",
     "score": 81319,
     "tags": [
       "Java",
