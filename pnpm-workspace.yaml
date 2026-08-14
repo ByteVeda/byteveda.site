@@ -5,6 +5,8 @@ packages:
 # Single source of truth for the versions both apps share. Bump here rather than in
 # the individual package.json files so `main` and `docs` cannot drift apart again.
 catalog:
+  "@fontsource-variable/ibm-plex-sans": ^5.3.0
+  "@fontsource/ibm-plex-mono": ^5.3.0
   "@tailwindcss/postcss": ^4
   "@types/node": ^26
   "@types/react": ^19
