@@ -6,6 +6,12 @@ settings:
 
 catalogs:
   default:
+    '@fontsource-variable/ibm-plex-sans':
+      specifier: ^5.3.0
+      version: 5.3.0
+    '@fontsource/ibm-plex-mono':
+      specifier: ^5.3.0
+      version: 5.3.0
     '@tailwindcss/postcss':
       specifier: ^4
       version: 4.3.3
@@ -65,6 +71,12 @@ importers:
       '@byteveda/utils':
         specifier: workspace:*
         version: link:../../packages/utils
+      '@fontsource-variable/ibm-plex-sans':
+        specifier: 'catalog:'
+        version: 5.3.0
+      '@fontsource/ibm-plex-mono':
+        specifier: 'catalog:'
+        version: 5.3.0
       lucide-react:
         specifier: 'catalog:'
         version: 1.31.0(react@19.2.8)
@@ -111,6 +123,12 @@ importers:
       '@byteveda/utils':
         specifier: workspace:*
         version: link:../../packages/utils
+      '@fontsource-variable/ibm-plex-sans':
+        specifier: 'catalog:'
+        version: 5.3.0
+      '@fontsource/ibm-plex-mono':
+        specifier: 'catalog:'
+        version: 5.3.0
       lucide-react:
         specifier: 'catalog:'
         version: 1.31.0(react@19.2.8)
@@ -424,6 +442,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/ibm-plex-sans@5.3.0':
+    resolution: {integrity: sha512-agG8tXFEo0hD9+J7npa4vbbWult52eMLVaQ6WQRlhs/iCAojrMAoejru85W9HTVXHfyUj96KM7gp/KGAS87XaQ==}
+
+  '@fontsource/ibm-plex-mono@5.3.0':
+    resolution: {integrity: sha512-eTgnZjZEGk1QtD3ZstF+Vclo2HLAni8YMy34/DxllwZvyz1lR/1RF/xTiAquOBO7MvqBx8D2Ig2WCPMVfdZu7Q==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -1172,6 +1196,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.2':
     optional: true
+
+  '@fontsource-variable/ibm-plex-sans@5.3.0': {}
+
+  '@fontsource/ibm-plex-mono@5.3.0': {}
 
   '@img/colour@1.1.0':
     optional: true

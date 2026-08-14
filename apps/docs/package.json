@@ -10,6 +10,8 @@
   "dependencies": {
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
+    "@fontsource-variable/ibm-plex-sans": "catalog:",
+    "@fontsource/ibm-plex-mono": "catalog:",
     "lucide-react": "catalog:",
     "next": "catalog:",
     "next-themes": "catalog:",
