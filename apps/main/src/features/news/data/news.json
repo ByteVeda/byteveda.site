@@ -238,23 +238,59 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:f225dd75cb40",
+    "id": "rss:Stack Overflow Blog:22fe099dc2de",
+    "kind": "article",
+    "source": "rss",
+    "title": "Solving integration woes with a hackathon",
+    "url": "https://stackoverflow.blog/2026/08/14/solving-integration-woes-with-a-hackathon/",
+    "excerpt": "Ryan welcomes Meryll Blanchet, Director of Engineering for Adobe Brand Visibility, to chat about Adobe’s recent acquisition of Semrush, how Adobe Brand Visibility was born from Semrush’s AI visibilit…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-08-14T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:b78658f306f3",
     "kind": "article",
     "source": "mastodon",
-    "title": "Dogfirmations with Doofie and Dingus: Collector Dingus' collection of bones brings him joy, peace, and a profound sense…",
-    "url": "https://mastodon.social/@BCWHS/117091473305482087",
-    "excerpt": "Dogfirmations with Doofie and Dingus: Collector Dingus' collection of bones brings him joy, peace, and a profound sense of fulfillment. # Collector # AI # dogs # photography # nature # artist # techn…",
-    "author": "Doofie and Dingus",
-    "publishedAt": "2026-08-14T02:21:32.000Z",
-    "score": 5,
+    "title": "Epic Games Store will get a Linux version sometime \"soon\"",
+    "url": "https://www.gamingonlinux.com/2026/08/epic-games-store-will-get-a-linux-version-sometime-soon/",
+    "excerpt": "Epic Games recently did an AMA (Ask me anything) in the community Discord server, confirming that a Linux / SteamOS version of the Epic Games Store is coming.",
+    "author": "Liam @ GamingOnLinux 🐧🎮",
+    "publishedAt": "2026-08-14T07:25:30.000Z",
+    "score": 6,
     "tags": [
-      "collector",
+      "epicgamesstore",
+      "epicgames",
+      "linux",
+      "steamos",
+      "linuxgaming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:21b4f724c433",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I have been a # blogger since early stages of me life during elementary school. Later, I found writing of a way to expr…",
+    "url": "https://mastodon.bsd.cafe/@farooqkz/117092342756298904",
+    "excerpt": "I have been a # blogger since early stages of me life during elementary school. Later, I found writing of a way to express meself, share me thoughts, and also take notes possibly useful for others or…",
+    "author": "Farooq [Master Patata]",
+    "publishedAt": "2026-08-14T06:02:38.000Z",
+    "score": 6,
+    "tags": [
+      "blogger",
+      "SmallWeb",
+      "llm",
       "ai",
-      "dogs",
-      "photography",
-      "nature",
-      "artist",
-      "technology"
+      "blog",
+      "blogging",
+      "writing"
     ],
     "labels": [
       "ai"
@@ -262,55 +298,17 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:e49827b6969f",
+    "id": "lobsters:a93551021236",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Best Open Source video editor? - Lemmy.zip",
-    "url": "https://lemmy.zip/post/69654546",
-    "excerpt": "as we know capcut is no longer good for free users, any recommendation for open\nsource video editor? i prefer option to export projects so i can archive it to\nmy drive.",
-    "author": "shojivr@lemmy.zip",
-    "publishedAt": "2026-08-14T01:54:10.989Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "Let's not call it \"tech debt,\" it's just \"mess\"",
+    "url": "https://www.simplermachines.com/lets-not-call-it-tech-debt-its-just-mess/",
+    "excerpt": "20 points · practices",
+    "author": "jdh",
+    "publishedAt": "2026-08-13T18:09:13.109-05:00",
+    "score": 20,
     "tags": [
-      "opensource"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:05d488952d96",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I ( @ grimmy ) am going to state this as clearly as possible here in the hopes it&#39;ll propagate quickly. # Pidgin ,…",
-    "url": "https://fosstodon.org/@pidgin/117091360844173977",
-    "excerpt": "I ( @ grimmy ) am going to state this as clearly as possible here in the hopes it&#39;ll propagate quickly. # Pidgin , and the other projects we maintain alongside it, have never and will never knowi…",
-    "author": "Pidgin Instant Messenger",
-    "publishedAt": "2026-08-14T01:52:56.165Z",
-    "score": 35,
-    "tags": [
-      "pidgin",
-      "opensource",
-      "fuckai"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:38f1559f35a0",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I tried moving my scanner from my main server to a raspberry pi today. Didn't work. Eventually determined I'd have to d…",
-    "url": "https://hachyderm.io/@davefischer/117091082918705567",
-    "excerpt": "I tried moving my scanner from my main server to a raspberry pi today. Didn't work. Eventually determined I'd have to do a fresh install of \"raspbian\" or whatever the fuck it's called. Spent most of…",
-    "author": "Dave Fischer",
-    "publishedAt": "2026-08-14T00:42:15.000Z",
-    "score": 9,
-    "tags": [
-      "linux"
+      "practices"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -399,10 +397,10 @@
     "source": "lobsters",
     "title": "I want extern \"fil-c\"",
     "url": "https://domenkozar.com/2026/08/13/i-want-extern-fil-c/",
-    "excerpt": "43 points · c, rust",
+    "excerpt": "50 points · c, rust",
     "author": "fzakaria",
     "publishedAt": "2026-08-13T12:43:13.111-05:00",
-    "score": 43,
+    "score": 50,
     "tags": [
       "c",
       "rust"
@@ -453,10 +451,10 @@
     "source": "lobsters",
     "title": "AI is removing the middle class of software engineering",
     "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-    "excerpt": "22 points · practices, vibecoding",
+    "excerpt": "29 points · practices, vibecoding",
     "author": "facundoolano",
     "publishedAt": "2026-08-13T09:03:13.761-05:00",
-    "score": 22,
+    "score": 29,
     "tags": [
       "practices",
       "vibecoding"
@@ -473,7 +471,7 @@
     "excerpt": "24 stories. 24 visits. One counter, same six faces. The Third Cup The AI wave hit, and...",
     "author": "xulingfeng",
     "publishedAt": "2026-08-13T07:58:42Z",
-    "score": 55,
+    "score": 56,
     "tags": [
       "career",
       "discuss",
@@ -486,15 +484,37 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:e9f8f563445d",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Stopped Trusting AI Agents With Tools. So I Built a Gatekeeper.",
+    "url": "https://dev.to/debashish_ghosal/i-stopped-trusting-ai-agents-with-tools-so-i-built-a-gatekeeper-26fb",
+    "excerpt": "github.com/deghosal-2026/agent-tooltrust · pip install agent-tooltrust · field test report · design...",
+    "author": "Debashish Ghosal",
+    "publishedAt": "2026-08-13T06:43:24Z",
+    "score": 26,
+    "tags": [
+      "ai",
+      "agents",
+      "security",
+      "gatekeeper"
+    ],
+    "labels": [
+      "ai",
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:397b28cdfb20",
     "kind": "article",
     "source": "lobsters",
     "title": "python's pre-declared constants are kinda weird",
     "url": "https://sebsite.pw/w/20260801-pythonconstants.html",
-    "excerpt": "88 points · python",
+    "excerpt": "93 points · python",
     "author": "seb",
     "publishedAt": "2026-08-13T00:28:40.501-05:00",
-    "score": 88,
+    "score": 93,
     "tags": [
       "python"
     ],
@@ -634,7 +654,7 @@
     "excerpt": "Someone asked me to share meeting notes in Slack yesterday. I pasted the markdown. Slack ate the...",
     "author": "Varshith V Hegde",
     "publishedAt": "2026-08-12T15:53:06Z",
-    "score": 35,
+    "score": 38,
     "tags": [
       "ai",
       "webdev",
@@ -656,7 +676,7 @@
     "excerpt": "The next evolution of software developers: from implementation to intent, orchestration, and...",
     "author": "Roberto B.",
     "publishedAt": "2026-08-12T14:36:41Z",
-    "score": 49,
+    "score": 50,
     "tags": [
       "ai",
       "learning",
@@ -696,7 +716,7 @@
     "excerpt": "Hoi hoi! I'm @nyaomaru, a frontend engineer who is trying to lose weight. 🐖🙀 I maintain a type...",
     "author": "nyaomaru",
     "publishedAt": "2026-08-12T13:16:48Z",
-    "score": 41,
+    "score": 51,
     "tags": [
       "typescript",
       "opensource",
@@ -783,22 +803,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:a022ecfe9e5c",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Compression is prediction",
-    "url": "https://ngrok.com/blog/compression-is-prediction",
-    "excerpt": "39 points · programming",
-    "author": "gmem",
-    "publishedAt": "2026-08-11T14:35:12.200-05:00",
-    "score": 39,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -807,7 +811,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-13T21:07:34Z",
-    "score": 455992,
+    "score": 456203,
     "tags": [
       "Python",
       "api",
@@ -839,7 +843,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-11T12:11:06Z",
-    "score": 394349,
+    "score": 394374,
     "tags": [
       "Python",
       "books",
@@ -862,7 +866,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-10T07:04:22Z",
-    "score": 279085,
+    "score": 279120,
     "tags": [
       "Python",
       "beginner-project",
@@ -889,8 +893,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-14T02:37:56Z",
-    "score": 230186,
+    "publishedAt": "2026-08-14T07:45:57Z",
+    "score": 230323,
     "tags": [
       "Python",
       "ai",
@@ -921,8 +925,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-14T02:27:40Z",
-    "score": 186603,
+    "publishedAt": "2026-08-14T04:53:53Z",
+    "score": 186615,
     "tags": [
       "Python",
       "agentic-ai",
@@ -952,7 +956,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-08-13T18:09:56Z",
-    "score": 169087,
+    "score": 169247,
     "tags": [
       "Python",
       "agent-skills"
@@ -970,8 +974,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-08-13T23:55:53Z",
-    "score": 164083,
+    "publishedAt": "2026-08-14T06:39:37Z",
+    "score": 164097,
     "tags": [
       "Python",
       "audio",
@@ -1009,8 +1013,8 @@
     "url": "https://github.com/langflow-ai/langflow",
     "excerpt": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "author": "langflow-ai",
-    "publishedAt": "2026-08-14T02:27:53Z",
-    "score": 153205,
+    "publishedAt": "2026-08-14T06:08:59Z",
+    "score": 153219,
     "tags": [
       "Python",
       "agents",
@@ -1034,8 +1038,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-13T18:40:21Z",
-    "score": 127060,
+    "publishedAt": "2026-08-14T04:58:17Z",
+    "score": 127154,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1074,8 +1078,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-13T12:22:41Z",
-    "score": 120369,
+    "publishedAt": "2026-08-14T06:31:13Z",
+    "score": 120398,
     "tags": [
       "Rust",
       "android",
@@ -1111,8 +1115,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-14T01:46:33Z",
-    "score": 115497,
+    "publishedAt": "2026-08-14T06:44:17Z",
+    "score": 115499,
     "tags": [
       "Rust",
       "compiler",
@@ -1133,7 +1137,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-14T00:46:40Z",
-    "score": 110200,
+    "score": 110220,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1159,7 +1163,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-13T21:26:51Z",
-    "score": 108256,
+    "score": 108259,
     "tags": [
       "Rust",
       "deno",
@@ -1181,8 +1185,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-14T02:34:26Z",
-    "score": 105781,
+    "publishedAt": "2026-08-14T05:51:54Z",
+    "score": 105872,
     "tags": [
       "Rust"
     ],
@@ -1199,8 +1203,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-14T02:39:39Z",
-    "score": 95411,
+    "publishedAt": "2026-08-14T07:45:56Z",
+    "score": 95416,
     "tags": [
       "Rust",
       "bun",
@@ -1231,8 +1235,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-14T00:30:31Z",
-    "score": 89940,
+    "publishedAt": "2026-08-14T06:34:29Z",
+    "score": 89974,
     "tags": [
       "Rust",
       "awesome",
@@ -1271,8 +1275,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-14T01:17:50Z",
-    "score": 89485,
+    "publishedAt": "2026-08-14T06:46:36Z",
+    "score": 89504,
     "tags": [
       "Java",
       "docker",
@@ -1303,8 +1307,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-08-12T06:22:31Z",
-    "score": 81349,
+    "publishedAt": "2026-08-14T06:44:24Z",
+    "score": 81350,
     "tags": [
       "Java",
       "framework",
