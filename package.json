@@ -18,7 +18,7 @@
     "fetch:news": "pnpm --filter @byteveda/main fetch:news"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.7",
+    "@biomejs/biome": "^2.5.8",
     "turbo": "^2.10.8",
     "typescript": "^6"
   },
