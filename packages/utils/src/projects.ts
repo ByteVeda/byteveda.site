@@ -24,14 +24,14 @@ type ProjectSeed = Omit<Project, "repoUrl" | "docsUrl" | "readmeUrl">;
 
 const seeds: ProjectSeed[] = [
   {
-    slug: "taskito",
-    name: "taskito",
-    tagline: "Rust-powered task queue for Python — no broker required.",
+    slug: "flexiq",
+    name: "FlexiQ",
+    tagline: "Rust-powered task queue with native SDKs — no broker required.",
     description:
-      "Priority queues, cron, retries, dead-letter, and a built-in dashboard. Embedded SQLite by default, Postgres when you need to scale out.",
-    languages: ["Rust", "Python"],
+      "Priority queues, cron, retries, dead-letter, and a built-in dashboard, driven from Python, Node, or Java. Embedded SQLite by default, Postgres or Redis when you need to scale out.",
+    languages: ["Rust", "Python", "TypeScript", "Java"],
     license: "MIT",
-    install: "pip install taskito",
+    install: "pip install flexiq",
   },
   {
     slug: "paperjam",

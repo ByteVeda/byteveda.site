@@ -8,7 +8,7 @@ export const site = {
   homeUrl: MAIN_URL,
   tagline: "Everything ByteVeda, documented in one place.",
   description:
-    "Documentation portal for ByteVeda's open-source libraries. Guides, API references, and examples for taskito, paperjam, agenteval, reclink, and dagron.",
+    "Documentation portal for ByteVeda's open-source libraries. Guides, API references, and examples for FlexiQ, agenteval, reclink, dagron, and paperjam.",
   org: ORG,
   githubUrl: GITHUB_URL,
   docsUrl: DOCS_URL,

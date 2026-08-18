@@ -6,7 +6,7 @@
 # cannot serve subpaths of docs.byteveda.org themselves. Instead this pulls the
 # docs each tool's own workflow already builds and unpacks it under out/<slug>/.
 # Every tool builds with base path /<slug> (see `DOCS_BASE_PATH` in
-# ByteVeda/taskito .github/workflows/docs.yml), so the tree drops in unmodified
+# ByteVeda/flexiq .github/workflows/docs.yml), so the tree drops in unmodified
 # and its absolute asset URLs stay correct.
 #
 # Their own byteveda.github.io/<slug>/ sites keep working; this mirrors, not moves.
@@ -22,7 +22,7 @@ ORG=ByteVeda
 OUT=${1:-apps/docs/out}
 
 # Keep in sync with packages/utils/src/projects.ts
-SLUGS=(taskito paperjam agenteval reclink dagron)
+SLUGS=(flexiq paperjam agenteval reclink dagron)
 
 missing=()
 
