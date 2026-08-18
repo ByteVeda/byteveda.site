@@ -17,6 +17,8 @@ export type Project = {
   docsUrl: string;
   /** `github.com/ByteVeda/<slug>#readme` */
   readmeUrl: string;
+  /** Repo is archived upstream: no new releases, docs frozen at the last build. */
+  archived?: boolean;
 };
 
 /** Everything about a project except the URLs, which are derived from `slug`. */
@@ -42,6 +44,7 @@ const seeds: ProjectSeed[] = [
     languages: ["Rust", "Python"],
     license: "MIT",
     install: "pip install paperjam",
+    archived: true,
   },
   {
     slug: "agenteval",

@@ -21,7 +21,9 @@ set -euo pipefail
 ORG=ByteVeda
 OUT=${1:-apps/docs/out}
 
-# Keep in sync with packages/utils/src/projects.ts
+# Keep in sync with packages/utils/src/projects.ts.
+# paperjam is archived: its docs.yml never runs again, so this pulls the frozen
+# last run until that artifact expires, then warns.
 SLUGS=(flexiq paperjam agenteval reclink dagron)
 
 missing=()
