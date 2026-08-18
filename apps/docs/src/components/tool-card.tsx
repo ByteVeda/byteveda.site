@@ -18,6 +18,8 @@ export function ToolCard({ tool }: Props) {
         >
           {tool.name}
         </Link>
+        {/* Archived upstream: the docs below are the last build, not a moving target. */}
+        {tool.archived && <Badge>Archived</Badge>}
       </header>
 
       <p className="mt-3 text-foreground text-sm leading-6">{tool.tagline}</p>

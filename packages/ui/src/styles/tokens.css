@@ -1,5 +1,5 @@
 /* ============================================================
-   Design tokens — Midnight (palette copied from taskito docs)
+   Design tokens — Midnight (palette copied from FlexiQ docs)
    Near-black neutral dark + electric green; warm-paper light mode.
    Fonts injected by next/font (see app/layout.tsx).
    ============================================================ */
@@ -47,7 +47,7 @@
   --text-dim: #8c8ca3;
   --text-faint: #5c5c70;
   --grid-line: rgba(31, 157, 84, 0.07);
-  /* Taskito brand green */
+  /* FlexiQ brand green */
   --accent: #1f9d54;
   --accent-2: #3bbf72;
   --accent-ink: #ffffff;
