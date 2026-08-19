@@ -181,22 +181,76 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:21266ef25247",
+    "id": "mastodon:94a45a28f857",
     "kind": "article",
     "source": "mastodon",
-    "title": "When str.lower() is a security vulnerability in Python",
-    "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
-    "excerpt": "Some internet standards only support ASCII characters, but the world uses\nmuch more than the Latin alphabet. Thus, a mapping from Unicode to\nASCII for use in domain names is required.\n\nNamePrep was...",
-    "author": "Seth Larson",
-    "publishedAt": "2026-08-18T22:44:06.000Z",
-    "score": 11,
+    "title": "I was able to attend the International Skills of the Youth in the Presidents meeting hall of Nakasero in Kampala last y…",
+    "url": "https://masto.nu/@greenyouthmovement/117120770578553667",
+    "excerpt": "I was able to attend the International Skills of the Youth in the Presidents meeting hall of Nakasero in Kampala last year and a lot was learnt that day. Many people realised that empowering the yout…",
+    "author": "GREEN YOUTH MOVEMENT",
+    "publishedAt": "2026-08-19T06:32:13.000Z",
+    "score": 5,
     "tags": [
-      "security",
-      "python",
-      "idna"
+      "gardening",
+      "skills",
+      "agriculture",
+      "mastodon",
+      "linux",
+      "fediverse",
+      "photography",
+      "nature",
+      "environment",
+      "climate",
+      "youth",
+      "solarpunk",
+      "farming",
+      "sustainability",
+      "climatechange",
+      "climatecrisis",
+      "ClimateDiary",
+      "climateemergency"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:cbe632580c05",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "So if any scientific or technological advancements you post for free on the internet get slurped up, and LLMs train on…",
+    "url": "https://autistics.life/@d1/117120283216549786",
+    "excerpt": "So if any scientific or technological advancements you post for free on the internet get slurped up, and LLMs train on it, giving you no credit, and in fact stealing your thunder (no attribution for…",
+    "author": "Owl Eyes Hoo",
+    "publishedAt": "2026-08-19T04:28:16.000Z",
+    "score": 5,
+    "tags": [
+      "science",
+      "llm",
+      "llms",
+      "ai",
+      "opensource"
     ],
     "labels": [
-      "security",
+      "ai",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:a4572b3f8f83",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "While hacking today, I needed to center some text, normally I do that in BBEdit but this was in shell. Am I just missin…",
+    "url": "https://appdot.net/@mdhughes/117119916110905049",
+    "excerpt": "While hacking today, I needed to center some text, normally I do that in BBEdit but this was in shell. Am I just missing an obvious shell command? for 40 years? Quick apropos or searching didn't turn…",
+    "author": "Digital Mark λ ☕️ 8647",
+    "publishedAt": "2026-08-19T02:54:54.000Z",
+    "score": 7,
+    "tags": [
+      "unix",
+      "python"
+    ],
+    "labels": [
       "python"
     ],
     "mentionsByteveda": false
@@ -221,38 +275,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ee7bf38bdb11",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Fast git handover with mob",
-    "url": "https://mob.sh/",
-    "excerpt": "Tool for smooth git handover.",
-    "author": "Luyin",
-    "publishedAt": "2026-08-18T17:04:59.000Z",
-    "score": 147,
-    "tags": [
-      "python",
-      "datascience",
-      "softwareengineering",
-      "rust",
-      "javascript",
-      "react",
-      "fedijob",
-      "boostswelcome",
-      "boostsappreciated",
-      "getfedihired",
-      "mainz",
-      "wiesbaden",
-      "germany"
-    ],
-    "labels": [
-      "python",
-      "rust",
-      "typescript"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:4a24c7b6c8d4",
     "kind": "article",
     "source": "lobsters",
@@ -261,7 +283,7 @@
     "excerpt": "There was a similar thread here six years ago, and I'm curious how people's daily setups have changed since then.\r\n\r\nWhat does the software side of your daily setup look like in 2026?\r\n\r\nOperating sy…",
     "author": "r1w1s1",
     "publishedAt": "2026-08-18T09:31:11.824-05:00",
-    "score": 38,
+    "score": 54,
     "tags": [
       "ask",
       "practices"
@@ -291,10 +313,10 @@
     "source": "lobsters",
     "title": "The benchmarkpocalypse",
     "url": "https://danluu.com/benchpocalypse/",
-    "excerpt": "19 points · performance, vibecoding",
+    "excerpt": "20 points · performance, vibecoding",
     "author": "nolan",
     "publishedAt": "2026-08-17T19:47:13.022-05:00",
-    "score": 19,
+    "score": 20,
     "tags": [
       "performance",
       "vibecoding"
@@ -348,10 +370,10 @@
     "source": "lobsters",
     "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
     "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-    "excerpt": "52 points · ai, art",
+    "excerpt": "53 points · ai, art",
     "author": "alcides",
     "publishedAt": "2026-08-17T12:54:19.965-05:00",
-    "score": 52,
+    "score": 53,
     "tags": [
       "ai",
       "art"
@@ -549,7 +571,7 @@
     "excerpt": "Anthropic signed the EU AI Act's Code of Practice on Transparency of AI-Generated Content, and...",
     "author": "Pascal CESCATO",
     "publishedAt": "2026-08-15T13:06:49Z",
-    "score": 66,
+    "score": 72,
     "tags": [
       "ai",
       "llm",
@@ -713,23 +735,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:ddec755f0f54",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Write for people",
-    "url": "https://newsletter.vickiboykis.com/archive/write-for-people/",
-    "excerpt": "20 points · practices, vibecoding",
-    "author": "carlana",
-    "publishedAt": "2026-08-13T19:06:09.462-05:00",
-    "score": 20,
-    "tags": [
-      "practices",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -738,7 +743,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-18T19:20:39Z",
-    "score": 464623,
+    "score": 464992,
     "tags": [
       "Python",
       "api",
@@ -770,7 +775,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394712,
+    "score": 394734,
     "tags": [
       "Python",
       "books",
@@ -793,7 +798,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-16T13:31:43Z",
-    "score": 314715,
+    "score": 314765,
     "tags": [
       "Python",
       "awesome",
@@ -817,7 +822,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 279808,
+    "score": 279843,
     "tags": [
       "Python",
       "beginner-project",
@@ -844,8 +849,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-19T01:45:20Z",
-    "score": 232578,
+    "publishedAt": "2026-08-19T07:01:24Z",
+    "score": 232700,
     "tags": [
       "Python",
       "ai",
@@ -877,7 +882,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195087,
+    "score": 195090,
     "tags": [
       "Rust"
     ],
@@ -894,8 +899,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-19T01:15:20Z",
-    "score": 186677,
+    "publishedAt": "2026-08-19T06:48:27Z",
+    "score": 186682,
     "tags": [
       "Python",
       "agentic-ai",
@@ -924,8 +929,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-18T12:10:11Z",
-    "score": 185416,
+    "publishedAt": "2026-08-19T06:42:14Z",
+    "score": 185485,
     "tags": [
       "Python",
       "cli",
@@ -950,7 +955,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-08-18T16:02:06Z",
-    "score": 170304,
+    "score": 170349,
     "tags": [
       "Python",
       "agent-skills"
@@ -969,7 +974,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129462,
+    "score": 129468,
     "tags": [
       "Java",
       "algo",
@@ -997,8 +1002,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-18T08:57:45Z",
-    "score": 128102,
+    "publishedAt": "2026-08-19T05:49:45Z",
+    "score": 128163,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1037,8 +1042,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-18T07:02:50Z",
-    "score": 121206,
+    "publishedAt": "2026-08-19T04:49:28Z",
+    "score": 121225,
     "tags": [
       "Rust",
       "android",
@@ -1074,8 +1079,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-19T01:18:04Z",
-    "score": 115598,
+    "publishedAt": "2026-08-19T06:56:28Z",
+    "score": 115602,
     "tags": [
       "Rust",
       "compiler",
@@ -1095,8 +1100,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-17T20:01:17Z",
-    "score": 110340,
+    "publishedAt": "2026-08-19T04:42:18Z",
+    "score": 110347,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1122,7 +1127,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-19T00:52:28Z",
-    "score": 108253,
+    "score": 108256,
     "tags": [
       "Rust",
       "deno",
@@ -1144,8 +1149,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-19T01:41:03Z",
-    "score": 106691,
+    "publishedAt": "2026-08-19T04:48:13Z",
+    "score": 106741,
     "tags": [
       "Rust"
     ],
@@ -1162,8 +1167,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-19T01:50:13Z",
-    "score": 95449,
+    "publishedAt": "2026-08-19T06:58:55Z",
+    "score": 95454,
     "tags": [
       "Rust",
       "bun",
@@ -1195,7 +1200,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94584,
+    "score": 94587,
     "tags": [
       "Java",
       "awesome-list",
