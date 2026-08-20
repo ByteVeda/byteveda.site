@@ -181,78 +181,215 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:94a45a28f857",
+    "id": "mastodon:ff525c798dac",
     "kind": "article",
     "source": "mastodon",
-    "title": "I was able to attend the International Skills of the Youth in the Presidents meeting hall of Nakasero in Kampala last y…",
-    "url": "https://masto.nu/@greenyouthmovement/117120770578553667",
-    "excerpt": "I was able to attend the International Skills of the Youth in the Presidents meeting hall of Nakasero in Kampala last year and a lot was learnt that day. Many people realised that empowering the yout…",
-    "author": "GREEN YOUTH MOVEMENT",
-    "publishedAt": "2026-08-19T06:32:13.000Z",
+    "title": "Python Tip #231 (of 365): Use class methods as alternate constructors. &gt;&gt;&gt; s = Square.from_area(100) &gt;&gt;&…",
+    "url": "https://mastodon.social/@treyhunner/117124843846386578",
+    "excerpt": "Python Tip #231 (of 365): Use class methods as alternate constructors. &gt;&gt;&gt; s = Square.from_area(100) &gt;&gt;&gt; s.length 10.0 The classmethod decorator makes a method that's meant to be ca…",
+    "author": "Trey Hunner 🐍",
+    "publishedAt": "2026-08-19T23:48:06.000Z",
+    "score": 6,
+    "tags": [
+      "python",
+      "dailypythontip"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5810899a485d",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "TIL # Python gets irate if you have a file called types.py.",
+    "url": "https://mstdn.social/@peterdrake/117124688854110250",
+    "excerpt": "TIL # Python gets irate if you have a file called types.py.",
+    "author": "Peter Drake",
+    "publishedAt": "2026-08-19T23:08:41.000Z",
     "score": 5,
     "tags": [
-      "gardening",
-      "skills",
-      "agriculture",
-      "mastodon",
-      "linux",
-      "fediverse",
-      "photography",
-      "nature",
-      "environment",
-      "climate",
-      "youth",
-      "solarpunk",
-      "farming",
-      "sustainability",
-      "climatechange",
-      "climatecrisis",
-      "ClimateDiary",
-      "climateemergency"
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5e7e1bc758e2",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "UPDATE: we've got a volunteer for the proximate issue, but I'd love to have some more XMPP folks involved generally! Es…",
+    "url": "https://mastodon.social/@glyph/117124345590319455",
+    "excerpt": "UPDATE: we've got a volunteer for the proximate issue, but I'd love to have some more XMPP folks involved generally! Especially to have more than one! We could really use some help with Twisted's # P…",
+    "author": "Glyph",
+    "publishedAt": "2026-08-19T21:41:23.000Z",
+    "score": 11,
+    "tags": [
+      "python",
+      "xmpp",
+      "jabber"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:8c066a472bd8",
+    "kind": "article",
+    "source": "rss",
+    "title": "GitHub Copilot app for Beginners: Managing your work",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+    "excerpt": "This is the third post in our GitHub Copilot app for Beginners series. If you&rsquo;re just joining us, check out, GitHub Copilot app for beginners: Getting started , where we introduced the app and…",
+    "author": "Christopher Harrison",
+    "publishedAt": "2026-08-19T17:50:23.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:cbe632580c05",
+    "id": "mastodon:b277f55fffae",
     "kind": "article",
     "source": "mastodon",
-    "title": "So if any scientific or technological advancements you post for free on the internet get slurped up, and LLMs train on…",
-    "url": "https://autistics.life/@d1/117120283216549786",
-    "excerpt": "So if any scientific or technological advancements you post for free on the internet get slurped up, and LLMs train on it, giving you no credit, and in fact stealing your thunder (no attribution for…",
-    "author": "Owl Eyes Hoo",
-    "publishedAt": "2026-08-19T04:28:16.000Z",
-    "score": 5,
+    "title": "[$] Debian weighs eight options in vote on LLM usage The Debian Project is voting on the usage of large language models…",
+    "url": "https://fedi.lwn.net/@lwn/117123383227205226",
+    "excerpt": "[$] Debian weighs eight options in vote on LLM usage The Debian Project is voting on the usage of large language models (LLMs) to make contributions to the project. The first proposal, sent in late J…",
+    "author": "LWN.net",
+    "publishedAt": "2026-08-19T17:36:38.000Z",
+    "score": 7,
     "tags": [
-      "science",
-      "llm",
-      "llms",
-      "ai",
-      "opensource"
+      "lwn",
+      "linux",
+      "debian",
+      "gentoo",
+      "gcc",
+      "rust",
+      "python",
+      "systemd"
     ],
     "labels": [
-      "ai",
-      "opensource"
+      "rust",
+      "python"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:a4572b3f8f83",
+    "id": "mastodon:fb556a05a7a1",
     "kind": "article",
     "source": "mastodon",
-    "title": "While hacking today, I needed to center some text, normally I do that in BBEdit but this was in shell. Am I just missin…",
-    "url": "https://appdot.net/@mdhughes/117119916110905049",
-    "excerpt": "While hacking today, I needed to center some text, normally I do that in BBEdit but this was in shell. Am I just missing an obvious shell command? for 40 years? Quick apropos or searching didn't turn…",
-    "author": "Digital Mark λ ☕️ 8647",
-    "publishedAt": "2026-08-19T02:54:54.000Z",
-    "score": 7,
+    "title": "Now I've added back floor and ceiling rendering using a horizontal algorithm. This is about twice as fast as the old re…",
+    "url": "https://hachyderm.io/@ollej/117123146986371836",
+    "excerpt": "Now I've added back floor and ceiling rendering using a horizontal algorithm. This is about twice as fast as the old rendering method. Most of the time is spent drawing pixels. # Raycasting # Rust #…",
+    "author": "Lord Doctor Olle W",
+    "publishedAt": "2026-08-19T16:36:34.000Z",
+    "score": 6,
     "tags": [
-      "unix",
-      "python"
+      "raycasting",
+      "rust",
+      "gamedev"
     ],
     "labels": [
-      "python"
+      "rust"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:22e214c52569",
+    "kind": "article",
+    "source": "rss",
+    "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+    "url": "https://huggingface.co/blog/LiquidAI/qad",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-19T13:48:49.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:319876e90cc4",
+    "kind": "article",
+    "source": "devto",
+    "title": "Greatness Is Forged by Limitation",
+    "url": "https://dev.to/adamthedeveloper/greatness-is-forged-by-limitation-e20",
+    "excerpt": "Can't believe I spent 2 weeks writing this. Last week, I gave a talk at a Cursor community event...",
+    "author": "Adam - The Developer ✨",
+    "publishedAt": "2026-08-19T13:04:47Z",
+    "score": 28,
+    "tags": [
+      "ai",
+      "programming",
+      "webdev",
+      "career"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a1bd72abb8b4",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Why I still hand write my commit messages",
+    "url": "https://www.jvt.me/posts/2026/08/17/hand-write-commits/",
+    "excerpt": "28 points · practices, vcs, vibecoding",
+    "author": "JamieTanna",
+    "publishedAt": "2026-08-19T08:01:00.885-05:00",
+    "score": 28,
+    "tags": [
+      "practices",
+      "vcs",
+      "vibecoding"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:aa5bea30195d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "a filename when none exists",
+    "url": "https://daniel.haxx.se/blog/2024/08/19/a-filename-when-none-exists/",
+    "excerpt": "23 points · programming",
+    "author": "lvmbdv",
+    "publishedAt": "2026-08-19T02:29:33.007-05:00",
+    "score": 23,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:06b49c145ce8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Odin's New Inline Assembly Templates",
+    "url": "https://odin-lang.org/docs/inline-asm/",
+    "excerpt": "24 points · assembly, plt, programming",
+    "author": "gingerBill",
+    "publishedAt": "2026-08-18T14:20:45.217-05:00",
+    "score": 24,
+    "tags": [
+      "assembly",
+      "plt",
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -283,12 +420,35 @@
     "excerpt": "There was a similar thread here six years ago, and I'm curious how people's daily setups have changed since then.\r\n\r\nWhat does the software side of your daily setup look like in 2026?\r\n\r\nOperating sy…",
     "author": "r1w1s1",
     "publishedAt": "2026-08-18T09:31:11.824-05:00",
-    "score": 54,
+    "score": 77,
     "tags": [
       "ask",
       "practices"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:301e45ff71d3",
+    "kind": "article",
+    "source": "devto",
+    "title": "COSP: The Prompting Trick Where Your LLM Grades Its Own Homework",
+    "url": "https://dev.to/lovestaco/cosp-the-prompting-trick-where-your-llm-grades-its-own-homework-40lf",
+    "excerpt": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
+    "author": "Athreya aka Maneshwar",
+    "publishedAt": "2026-08-18T11:06:36Z",
+    "score": 25,
+    "tags": [
+      "ai",
+      "machinelearning",
+      "webdev",
+      "llm"
+    ],
+    "labels": [
+      "ai",
+      "ml",
+      "webdev"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -313,10 +473,10 @@
     "source": "lobsters",
     "title": "The benchmarkpocalypse",
     "url": "https://danluu.com/benchpocalypse/",
-    "excerpt": "20 points · performance, vibecoding",
+    "excerpt": "21 points · performance, vibecoding",
     "author": "nolan",
     "publishedAt": "2026-08-17T19:47:13.022-05:00",
-    "score": 20,
+    "score": 21,
     "tags": [
       "performance",
       "vibecoding"
@@ -370,10 +530,10 @@
     "source": "lobsters",
     "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
     "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
-    "excerpt": "53 points · ai, art",
+    "excerpt": "55 points · ai, art",
     "author": "alcides",
     "publishedAt": "2026-08-17T12:54:19.965-05:00",
-    "score": 53,
+    "score": 55,
     "tags": [
       "ai",
       "art"
@@ -417,6 +577,26 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:80cf076e3949",
+    "kind": "article",
+    "source": "devto",
+    "title": "My AI Assistant Did Not Love Getting a Second Opinion",
+    "url": "https://dev.to/dannwaneri/my-ai-assistant-did-not-love-getting-a-second-opinion-dl1",
+    "excerpt": "\"our work got checked by an external reviewer.\" That's what Fable said after I brought Gemini...",
+    "author": "Daniel Nwaneri",
+    "publishedAt": "2026-08-17T12:46:21Z",
+    "score": 27,
+    "tags": [
+      "ai",
+      "discuss",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:7ed4916dc0ff",
     "kind": "article",
     "source": "lobsters",
@@ -456,10 +636,10 @@
     "source": "lobsters",
     "title": "A faster way to calculate the day-of-the-week",
     "url": "https://www.benjoffe.com/fast-day-of-week",
-    "excerpt": "79 points · assembly, c++, math, performance",
+    "excerpt": "80 points · assembly, c++, math, performance",
     "author": "benjoffe",
     "publishedAt": "2026-08-16T15:52:12.026-05:00",
-    "score": 79,
+    "score": 80,
     "tags": [
       "assembly",
       "c++",
@@ -498,10 +678,10 @@
     "source": "lobsters",
     "title": "I thought I was building a C replacement. I was wrong",
     "url": "https://c3-lang.org/blog/i_thought_i_was_building_a_c_replacement/",
-    "excerpt": "117 points · c, programming",
+    "excerpt": "118 points · c, programming",
     "author": "clerno",
     "publishedAt": "2026-08-16T09:05:05.789-05:00",
-    "score": 117,
+    "score": 118,
     "tags": [
       "c",
       "programming"
@@ -515,10 +695,10 @@
     "source": "lobsters",
     "title": "Protecting the Rust standard library from accidental breakage",
     "url": "https://predr.ag/blog/protecting-the-rust-stdlib-from-breakage/",
-    "excerpt": "53 points · rust",
+    "excerpt": "54 points · rust",
     "author": "predrag",
     "publishedAt": "2026-08-16T08:59:09.800-05:00",
-    "score": 53,
+    "score": 54,
     "tags": [
       "rust"
     ],
@@ -533,33 +713,16 @@
     "source": "lobsters",
     "title": "What's missing to have reproducible builds on PyPI",
     "url": "https://snarky.ca/whats-missing-to-have-reproducible-builds-on-pypi/",
-    "excerpt": "23 points · python",
+    "excerpt": "24 points · python",
     "author": "ubernostrum",
     "publishedAt": "2026-08-15T22:41:17.072-05:00",
-    "score": 23,
+    "score": 24,
     "tags": [
       "python"
     ],
     "labels": [
       "python"
     ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:79f61f411342",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Recap: Software Should Work 2026",
-    "url": "https://bencornia.com/blog/recap-software-should-work-2026",
-    "excerpt": "28 points · event, programming",
-    "author": "rmpr",
-    "publishedAt": "2026-08-15T15:01:21.832-05:00",
-    "score": 28,
-    "tags": [
-      "event",
-      "programming"
-    ],
-    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -571,7 +734,7 @@
     "excerpt": "Anthropic signed the EU AI Act's Code of Practice on Transparency of AI-Generated Content, and...",
     "author": "Pascal CESCATO",
     "publishedAt": "2026-08-15T13:06:49Z",
-    "score": 72,
+    "score": 85,
     "tags": [
       "ai",
       "llm",
@@ -584,157 +747,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:3e72769ae4b2",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "How 2004 RuneScape fit a multiplayer RPG into 56k dial-up",
-    "url": "https://jkm.dev/posts/how-2004-runescape-fit-a-multiplayer-rpg-into-56k-dialup/",
-    "excerpt": "17 points · games, networking, programming",
-    "author": "Yogthos",
-    "publishedAt": "2026-08-14T23:45:34.595-05:00",
-    "score": 17,
-    "tags": [
-      "games",
-      "networking",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:59f728113887",
-    "kind": "article",
-    "source": "rss",
-    "title": "No Dumb Questions: What is AI context architecture? Why not just build your own?",
-    "url": "https://stackoverflow.blog/2026/08/14/ndq-ai-context-architecture-build-buy/",
-    "excerpt": "In this No Dumb Questions, Phoebe asks Stack’s Engineering Manager Doug Whitley and Product Manager Ash Zade everything she wants to know about AI context architecture. What exactly is it? Why is it…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-08-14T18:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:605d809e9e78",
-    "kind": "article",
-    "source": "rss",
-    "title": "How to bring your software delivery workflow into GitHub with agent apps",
-    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
-    "excerpt": "How many tabs do you have open alongside your pull request? Imagine picking up a new issue in your product&rsquo;s free-trial onboarding flow: make the &ldquo;invite your teammates&rdquo; step option…",
-    "author": "Sam Zhang",
-    "publishedAt": "2026-08-14T16:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:fa76246376ea",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Guilt-Driven Development",
-    "url": "https://markuseliasson.se/article/guilt-driven-development",
-    "excerpt": "15 points · practices",
-    "author": "typesanitizer",
-    "publishedAt": "2026-08-14T10:54:54.106-05:00",
-    "score": 15,
-    "tags": [
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:35cc285e2a51",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "There Is Still No Silver Bullet",
-    "url": "https://cekrem.github.io/posts/there-is-still-no-silver-bullet/",
-    "excerpt": "21 points · programming, vibecoding",
-    "author": "gered",
-    "publishedAt": "2026-08-14T10:18:11.279-05:00",
-    "score": 21,
-    "tags": [
-      "programming",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:7418f379b27e",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Curl Performance",
-    "url": "https://daniel.haxx.se/blog/2026/08/14/curl-performance-2/",
-    "excerpt": "41 points · performance",
-    "author": "dhruvp",
-    "publishedAt": "2026-08-14T06:33:57.460-05:00",
-    "score": 41,
-    "tags": [
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:82af5536a2f7",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "What are you doing this weekend?",
-    "url": "https://lobste.rs/s/n3pkuh/what_are_you_doing_this_weekend",
-    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
-    "author": "caius",
-    "publishedAt": "2026-08-14T05:39:05.957-05:00",
-    "score": 21,
-    "tags": [
-      "ask",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:24b5c57ed5cb",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Comments in the code vs PR description",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260812-00/?p=112607",
-    "excerpt": "21 points · practices, vcs",
-    "author": "abareplace",
-    "publishedAt": "2026-08-14T04:52:20.310-05:00",
-    "score": 21,
-    "tags": [
-      "practices",
-      "vcs"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:22fe099dc2de",
-    "kind": "article",
-    "source": "rss",
-    "title": "Solving integration woes with a hackathon",
-    "url": "https://stackoverflow.blog/2026/08/14/solving-integration-woes-with-a-hackathon/",
-    "excerpt": "Ryan welcomes Meryll Blanchet, Director of Engineering for Adobe Brand Visibility, to chat about Adobe’s recent acquisition of Semrush, how Adobe Brand Visibility was born from Semrush’s AI visibilit…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-08-14T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -742,8 +754,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-08-18T19:20:39Z",
-    "score": 464992,
+    "publishedAt": "2026-08-19T21:44:19Z",
+    "score": 466109,
     "tags": [
       "Python",
       "api",
@@ -775,7 +787,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394734,
+    "score": 394802,
     "tags": [
       "Python",
       "books",
@@ -798,7 +810,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-16T13:31:43Z",
-    "score": 314765,
+    "score": 314980,
     "tags": [
       "Python",
       "awesome",
@@ -822,7 +834,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 279843,
+    "score": 279984,
     "tags": [
       "Python",
       "beginner-project",
@@ -849,8 +861,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-19T07:01:24Z",
-    "score": 232700,
+    "publishedAt": "2026-08-20T01:17:27Z",
+    "score": 233075,
     "tags": [
       "Python",
       "ai",
@@ -882,7 +894,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195090,
+    "score": 195086,
     "tags": [
       "Rust"
     ],
@@ -899,8 +911,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-19T06:48:27Z",
-    "score": 186682,
+    "publishedAt": "2026-08-20T01:34:53Z",
+    "score": 186691,
     "tags": [
       "Python",
       "agentic-ai",
@@ -929,8 +941,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-19T06:42:14Z",
-    "score": 185485,
+    "publishedAt": "2026-08-19T23:48:28Z",
+    "score": 185663,
     "tags": [
       "Python",
       "cli",
@@ -947,18 +959,24 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bc97666fba6a",
+    "id": "github-trending:13faaaa41c52",
     "kind": "trending",
     "source": "github",
-    "title": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "excerpt": "Public repository for Agent Skills",
-    "author": "anthropics",
-    "publishedAt": "2026-08-18T16:02:06Z",
-    "score": 170349,
+    "title": "microsoft/markitdown",
+    "url": "https://github.com/microsoft/markitdown",
+    "excerpt": "Python tool for converting files and office documents to Markdown.",
+    "author": "microsoft",
+    "publishedAt": "2026-08-19T19:36:22Z",
+    "score": 174720,
     "tags": [
       "Python",
-      "agent-skills"
+      "autogen",
+      "autogen-extension",
+      "langchain",
+      "markdown",
+      "microsoft-office",
+      "openai",
+      "pdf"
     ],
     "labels": [
       "python"
@@ -974,7 +992,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129468,
+    "score": 129484,
     "tags": [
       "Java",
       "algo",
@@ -1003,7 +1021,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-19T05:49:45Z",
-    "score": 128163,
+    "score": 128307,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1042,8 +1060,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-19T04:49:28Z",
-    "score": 121225,
+    "publishedAt": "2026-08-19T07:31:40Z",
+    "score": 121278,
     "tags": [
       "Rust",
       "android",
@@ -1079,8 +1097,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-19T06:56:28Z",
-    "score": 115602,
+    "publishedAt": "2026-08-19T20:56:29Z",
+    "score": 115612,
     "tags": [
       "Rust",
       "compiler",
@@ -1100,8 +1118,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-19T04:42:18Z",
-    "score": 110347,
+    "publishedAt": "2026-08-20T01:17:47Z",
+    "score": 110378,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1126,8 +1144,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-19T00:52:28Z",
-    "score": 108256,
+    "publishedAt": "2026-08-19T23:08:17Z",
+    "score": 108263,
     "tags": [
       "Rust",
       "deno",
@@ -1149,8 +1167,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-19T04:48:13Z",
-    "score": 106741,
+    "publishedAt": "2026-08-20T01:42:02Z",
+    "score": 106877,
     "tags": [
       "Rust"
     ],
@@ -1167,8 +1185,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-19T06:58:55Z",
-    "score": 95454,
+    "publishedAt": "2026-08-20T01:41:49Z",
+    "score": 95470,
     "tags": [
       "Rust",
       "bun",
@@ -1200,7 +1218,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94587,
+    "score": 94589,
     "tags": [
       "Java",
       "awesome-list",
