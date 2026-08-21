@@ -181,6 +181,162 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:7324249610cb",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Thank you to everyone who came out last night, and to our lightning talk speakers: Daria Linhart Grudzien, Maksym Shale…",
+    "url": "https://fosstodon.org/@pyladies_vancouver/117130749171754740",
+    "excerpt": "Thank you to everyone who came out last night, and to our lightning talk speakers: Daria Linhart Grudzien, Maksym Shalenyi, Sophia Chu, and Melissa B, Daniel Chen and Linda Lee. Thank you to Vancouve…",
+    "author": "PyLadies Vancouver",
+    "publishedAt": "2026-08-21T00:49:54.345Z",
+    "score": 8,
+    "tags": [
+      "python",
+      "pyladies",
+      "rladies",
+      "vancouver"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:1a9ee3c62fb1",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "SURF FED: A FAST, PRIVATE, SECURITY‑FOCUSED BROWSER https:// ko-fi.com/fedpromptly # AI # ArtificialIntelligence # Tech…",
+    "url": "https://mastodon.social/@FEDPromptly2/117130659042996109",
+    "excerpt": "SURF FED: A FAST, PRIVATE, SECURITY‑FOCUSED BROWSER https:// ko-fi.com/fedpromptly # AI # ArtificialIntelligence # Technology # Tech # Coding # Programming # Developer # Software # ComputerScience #…",
+    "author": "FEDPromptly2",
+    "publishedAt": "2026-08-21T00:26:59.000Z",
+    "score": 5,
+    "tags": [
+      "ai",
+      "artificialintelligence",
+      "technology",
+      "tech",
+      "coding",
+      "programming",
+      "developer",
+      "software",
+      "computerscience",
+      "code",
+      "webdevelopment",
+      "webdev",
+      "python",
+      "javascript",
+      "github",
+      "opensource",
+      "machinelearning",
+      "datascience",
+      "automation",
+      "innovation",
+      "technews"
+    ],
+    "labels": [
+      "ai",
+      "webdev",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:dde7b66af558",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Welcome to the new Maintainer Summit website",
+    "url": "https://pycon-maintainer-summit.github.io/news/welcome/",
+    "excerpt": "Announcing the PyCon US Maintainer Summit website: why we moved from a single page on https://us.pycon.org to a dedicated, openly-maintained website. Subscribe to our RSS feed to follow along.",
+    "author": "Mariatta 🤦🏻‍♀️ :python:",
+    "publishedAt": "2026-08-20T23:49:28.438Z",
+    "score": 5,
+    "tags": [
+      "python",
+      "pyconus",
+      "maintainersummit",
+      "opensource",
+      "foss"
+    ],
+    "labels": [
+      "python",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:ec44257a0e52",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "FED PLAY: THE APP STORE FOR APPS THAT DO NOT EXIST Become part of FED‑OS: https:// ko-fi.com/fedpromptly # AI # Artific…",
+    "url": "https://mastodon.social/@FEDPromptly2/117129968606304600",
+    "excerpt": "FED PLAY: THE APP STORE FOR APPS THAT DO NOT EXIST Become part of FED‑OS: https:// ko-fi.com/fedpromptly # AI # ArtificialIntelligence # Technology # Tech # Coding # Programming # Developer # Softwar…",
+    "author": "FEDPromptly2",
+    "publishedAt": "2026-08-20T21:31:23.000Z",
+    "score": 5,
+    "tags": [
+      "ai",
+      "artificialintelligence",
+      "technology",
+      "tech",
+      "coding",
+      "programming",
+      "developer",
+      "software",
+      "computerscience",
+      "code",
+      "webdevelopment",
+      "webdev",
+      "python",
+      "javascript",
+      "github",
+      "opensource",
+      "machinelearning",
+      "datascience",
+      "automation",
+      "innovation",
+      "technews"
+    ],
+    "labels": [
+      "ai",
+      "webdev",
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:c2b6931c76cd",
+    "kind": "article",
+    "source": "rss",
+    "title": "AI Won&#x27;t Replace Project Managers, But It is Reshaping How Work Gets Done",
+    "url": "https://stackoverflow.blog/2026/08/20/ai-won-t-replace-project-managers-but-it-is-reshaping-how-work-gets-done/",
+    "excerpt": null,
+    "author": "Emim Vigin Lumina",
+    "publishedAt": "2026-08-20T19:05:40.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:7db1d5c9ae20",
+    "kind": "article",
+    "source": "rss",
+    "title": "Quantum-Augmented Applications: Integrating Quantum Subroutines into Classical Software Stacks",
+    "url": "https://stackoverflow.blog/2026/08/20/quantum-augmented-applications-integrating-quantum-subroutines-into-classical-software-stacks/",
+    "excerpt": null,
+    "author": "Dr. Ahmad Mateen Ishanzai",
+    "publishedAt": "2026-08-20T18:43:39.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:GitHub Blog:dc7f9fd0bcd5",
     "kind": "article",
     "source": "rss",
@@ -194,164 +350,6 @@
       "GitHub Blog"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ffbb3ba28888",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Meta Smart Glasses Empower Blind People to Participate in Corporate Surveillance",
-    "url": "https://thesqueakywheel.org/meta-smart-glasses-empower-blind-people-to-participate-equally-in-corporate-surveillance/",
-    "excerpt": "Christina Lawrence always dreamed of surveilling her fellow citizens for a gigantic conglomerate, but she couldn’t because she is blind. Now, thanks to Meta’s smart glasses, her dream has finally c…",
-    "author": "Robert Kingett",
-    "publishedAt": "2026-08-20T18:01:19.000Z",
-    "score": 6,
-    "tags": [
-      "blind",
-      "disability",
-      "ai",
-      "llm"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:bb96aa4919a6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "# LibreOffice developers and the QA community are working on lots of improvements to the software. For instance, OpenTy…",
-    "url": "https://fosstodon.org/@libreoffice/117129120499722889",
-    "excerpt": "# LibreOffice developers and the QA community are working on lots of improvements to the software. For instance, OpenType math font support. But there&#39;s much more: https:// qa.blog.documentfounda…",
-    "author": "LibreOffice",
-    "publishedAt": "2026-08-20T17:55:42.782Z",
-    "score": 42,
-    "tags": [
-      "libreoffice",
-      "foss",
-      "opensource",
-      "freesoftware"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:b4153d6a8188",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Most of my scraping etiquette isn't robots.txt, it's just going slow enough that nobody notices me. One request at a ti…",
-    "url": "https://mastodon.social/@Siteintel/117129092735878568",
-    "excerpt": "Most of my scraping etiquette isn't robots.txt, it's just going slow enough that nobody notices me. One request at a time, real user agent with a contact address, back off hard on a 429. Never been b…",
-    "author": "SiteIntel — building in the open",
-    "publishedAt": "2026-08-20T17:48:39.000Z",
-    "score": 5,
-    "tags": [
-      "webdev",
-      "selfhosted",
-      "python"
-    ],
-    "labels": [
-      "webdev",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:6c611dc540e8",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "🧹 Abandoned broom and brush workshop, somewhere in Staffordshire in England. Ironically, the floor could use a bit of a…",
-    "url": "https://mstdn.social/@ObsidianUrbex/117129082698534005",
-    "excerpt": "🧹 Abandoned broom and brush workshop, somewhere in Staffordshire in England. Ironically, the floor could use a bit of a sweep up but I hate house cleaning so I am out 🤣 # Abandoned # Heritage # Staff…",
-    "author": "Obsidian Urbex Photography",
-    "publishedAt": "2026-08-20T17:46:05.000Z",
-    "score": 6,
-    "tags": [
-      "abandoned",
-      "heritage",
-      "Staffordshire",
-      "photography",
-      "explore",
-      "industry",
-      "factory",
-      "rust",
-      "machines"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:77adfcc71939",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "LLM annoyances I can't enter certain sites anymore Going to sweetwater.com to get instruments audio control gear for we…",
-    "url": "https://littleone.littlefedi.social/@dendrobatus_azureus/56ce1293-9206-43ac-b39a-81887fb8370f",
-    "excerpt": "LLM annoyances I can't enter certain sites anymore Going to sweetwater.com to get instruments audio control gear for weeks, gets me this impassable screen where you have to press and hold a mouse but…",
-    "author": "Dendrobatus Azureus",
-    "publishedAt": "2026-08-20T17:27:01.000Z",
-    "score": 5,
-    "tags": [
-      "business",
-      "ai",
-      "llm",
-      "slop",
-      "bad",
-      "for",
-      "miscreant",
-      "capthca",
-      "impassable"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:671c76af831a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Artificial Intelligence Policy",
-    "url": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
-    "excerpt": "Effective Summer 2026 Purpose Future lawyers may need to use artificial intelligence (“AI”) fluently. But the current state of the technology requires that AI use be coupled with the cognitive […]",
-    "author": "Akshay",
-    "publishedAt": "2026-08-20T17:09:56.000Z",
-    "score": 10,
-    "tags": [
-      "ai",
-      "llm",
-      "academia",
-      "university",
-      "education",
-      "law"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:97c065322390",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "We need more ephemerality in tech",
-    "url": "https://www.mostlypython.com/we-need-more-ephemerality-in-tech/",
-    "excerpt": "MP 174: It's a wonderful word, and an especially important concept right now.\n\n\"Ephemeral\" is one of my favorite words; it's one of the words I remember learning. I don't remember the context in which I first learned it, but I remember coming across it for the",
-    "author": "Eric Matthes",
-    "publishedAt": "2026-08-20T16:58:05.638Z",
-    "score": 5,
-    "tags": [
-      "python",
-      "opensource"
-    ],
-    "labels": [
-      "python",
-      "opensource"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -379,10 +377,10 @@
     "source": "lobsters",
     "title": "Why compiling Rust to WebAssembly is slow",
     "url": "https://00f.net/2026/08/19/why-compiling-rust-to-webassembly-is-slow/",
-    "excerpt": "18 points · rust, wasm",
+    "excerpt": "26 points · rust, wasm",
     "author": "fanf",
     "publishedAt": "2026-08-20T07:32:22.598-05:00",
-    "score": 18,
+    "score": 26,
     "tags": [
       "rust",
       "wasm"
@@ -398,10 +396,10 @@
     "source": "lobsters",
     "title": "Supply chain attack on arrayref",
     "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
-    "excerpt": "40 points · rust, security",
+    "excerpt": "69 points · rust, security",
     "author": "ohrv",
     "publishedAt": "2026-08-20T04:54:06.012-05:00",
-    "score": 40,
+    "score": 69,
     "tags": [
       "rust",
       "security"
@@ -418,10 +416,10 @@
     "source": "lobsters",
     "title": "What Zig felt like, coming from Rust",
     "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
-    "excerpt": "39 points · rust, vibecoding, zig",
+    "excerpt": "55 points · rust, vibecoding, zig",
     "author": "nickmonad",
     "publishedAt": "2026-08-20T02:53:17.055-05:00",
-    "score": 39,
+    "score": 55,
     "tags": [
       "rust",
       "vibecoding",
@@ -477,10 +475,10 @@
     "source": "lobsters",
     "title": "Reclaim the terminal",
     "url": "https://nishantjosh.dev/blogs/reclaim-the-terminal/",
-    "excerpt": "38 points · rust, unix",
+    "excerpt": "43 points · rust, unix",
     "author": "nishantjosh",
     "publishedAt": "2026-08-19T17:10:12.631-05:00",
-    "score": 38,
+    "score": 43,
     "tags": [
       "rust",
       "unix"
@@ -496,10 +494,10 @@
     "source": "lobsters",
     "title": "Sing-song: a speakable encoding for long numbers and keys",
     "url": "https://blog.vrypan.net/2026/08/19/260819-sing-song/",
-    "excerpt": "21 points · programming",
+    "excerpt": "25 points · programming",
     "author": "vrypan",
     "publishedAt": "2026-08-19T15:28:07.404-05:00",
-    "score": 21,
+    "score": 25,
     "tags": [
       "programming"
     ],
@@ -531,7 +529,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who dislikes crowded places, so I'm planning to take a...",
     "author": "nyaomaru",
     "publishedAt": "2026-08-19T14:43:44Z",
-    "score": 33,
+    "score": 34,
     "tags": [
       "dsa",
       "typescript",
@@ -553,7 +551,7 @@
     "excerpt": "Can't believe I spent 2 weeks writing this. Last week, I gave a talk at a Cursor community event...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-19T13:04:47Z",
-    "score": 42,
+    "score": 43,
     "tags": [
       "ai",
       "programming",
@@ -572,10 +570,10 @@
     "source": "lobsters",
     "title": "Why I still hand write my commit messages",
     "url": "https://www.jvt.me/posts/2026/08/17/hand-write-commits/",
-    "excerpt": "40 points · practices, vcs, vibecoding",
+    "excerpt": "43 points · practices, vcs, vibecoding",
     "author": "JamieTanna",
     "publishedAt": "2026-08-19T08:01:00.885-05:00",
-    "score": 40,
+    "score": 43,
     "tags": [
       "practices",
       "vcs",
@@ -666,7 +664,7 @@
     "excerpt": "There was a similar thread here six years ago, and I'm curious how people's daily setups have changed since then.\r\n\r\nWhat does the software side of your daily setup look like in 2026?\r\n\r\nOperating sy…",
     "author": "r1w1s1",
     "publishedAt": "2026-08-18T09:31:11.824-05:00",
-    "score": 85,
+    "score": 87,
     "tags": [
       "ask",
       "practices"
@@ -771,6 +769,22 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:GitHub Blog:59590c5eac87",
+    "kind": "article",
+    "source": "rss",
+    "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+    "excerpt": "When I was in college, I joined the beta for one of the first versions of AI inline completions in VS Code. It felt like a game changer. Since then, GenAI has fundamentally changed software developme…",
+    "author": "Ayan Gupta",
+    "publishedAt": "2026-08-17T16:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -779,7 +793,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-19T21:44:19Z",
-    "score": 467020,
+    "score": 467268,
     "tags": [
       "Python",
       "api",
@@ -811,7 +825,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394859,
+    "score": 394872,
     "tags": [
       "Python",
       "books",
@@ -834,7 +848,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-16T13:31:43Z",
-    "score": 315118,
+    "score": 315167,
     "tags": [
       "Python",
       "awesome",
@@ -858,7 +872,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 280101,
+    "score": 280148,
     "tags": [
       "Python",
       "beginner-project",
@@ -885,8 +899,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-20T18:36:10Z",
-    "score": 233486,
+    "publishedAt": "2026-08-21T01:20:13Z",
+    "score": 233569,
     "tags": [
       "Python",
       "ai",
@@ -918,7 +932,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195087,
+    "score": 195088,
     "tags": [
       "Rust"
     ],
@@ -935,8 +949,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-20T18:54:28Z",
-    "score": 186685,
+    "publishedAt": "2026-08-21T01:25:06Z",
+    "score": 186689,
     "tags": [
       "Python",
       "agentic-ai",
@@ -965,8 +979,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-19T23:48:28Z",
-    "score": 185845,
+    "publishedAt": "2026-08-20T22:26:03Z",
+    "score": 185893,
     "tags": [
       "Python",
       "cli",
@@ -991,7 +1005,7 @@
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
     "publishedAt": "2026-08-19T19:36:22Z",
-    "score": 174898,
+    "score": 174959,
     "tags": [
       "Python",
       "autogen",
@@ -1016,7 +1030,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129505,
+    "score": 129508,
     "tags": [
       "Java",
       "algo",
@@ -1045,7 +1059,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-20T18:35:38Z",
-    "score": 128496,
+    "score": 128525,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1085,7 +1099,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-20T17:26:02Z",
-    "score": 121354,
+    "score": 121365,
     "tags": [
       "Rust",
       "android",
@@ -1121,8 +1135,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-20T18:08:10Z",
-    "score": 115645,
+    "publishedAt": "2026-08-21T01:35:05Z",
+    "score": 115658,
     "tags": [
       "Rust",
       "compiler",
@@ -1142,8 +1156,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-20T10:11:40Z",
-    "score": 110398,
+    "publishedAt": "2026-08-21T00:22:10Z",
+    "score": 110409,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1169,7 +1183,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-20T16:14:58Z",
-    "score": 108267,
+    "score": 108272,
     "tags": [
       "Rust",
       "deno",
@@ -1191,8 +1205,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-20T18:49:34Z",
-    "score": 107095,
+    "publishedAt": "2026-08-21T01:53:20Z",
+    "score": 107708,
     "tags": [
       "Rust"
     ],
@@ -1209,8 +1223,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-20T18:54:39Z",
-    "score": 95507,
+    "publishedAt": "2026-08-21T01:52:42Z",
+    "score": 95517,
     "tags": [
       "Rust",
       "bun",
@@ -1242,7 +1256,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94595,
+    "score": 94597,
     "tags": [
       "Java",
       "awesome-list",
