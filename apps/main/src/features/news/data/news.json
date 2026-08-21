@@ -181,6 +181,81 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:472fd30efac5",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "AI Is Failing At An Overwhelming Majority of Companies Using It, MIT Study Finds",
+    "url": "https://onlinemarketingscoops.com/2026/08/21/ai-is-failing-at-an-overwhelming-majority-of-companies-using-it-mit-study-finds/",
+    "excerpt": "Getty / Futurism With AI software increasingly hogging the enterprise spotlight, companies and investors are spending like never before. In the first half of 2025, AI startups raised over $44 billi…",
+    "author": "Online Marketing Scoops",
+    "publishedAt": "2026-08-21T12:07:07.000Z",
+    "score": 24,
+    "tags": [
+      "aiapplications",
+      "AIIndustry",
+      "airevolution",
+      "aistartups",
+      "artificialintelligence",
+      "businessgrowth",
+      "digitaltransformation",
+      "disruptivetechnology",
+      "entrepreneurship",
+      "futureofwork",
+      "goldmansachs",
+      "innovation",
+      "investintech",
+      "laborproductivity",
+      "machinelearning",
+      "startupjourney",
+      "startupnation",
+      "startups",
+      "techcommunity",
+      "TechInnovation",
+      "techtrends",
+      "venturecapital"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:e5217bf85a85",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Supply-Chain-Angriff: Backdoor in millionenfach geladene Rust Crates eingeschleust - Golem.de",
+    "url": "https://www.golem.de/news/supply-chain-angriff-backdoor-in-millionenfach-geladene-rust-crates-eingeschleust-2608-212158.html",
+    "excerpt": "Angreifern ist es gelungen, mehrere populäre Rust Crates mit einer Backdoor-Malware zu verseuchen. Entwickler sollten dringend handeln.",
+    "author": "Katzenschrat",
+    "publishedAt": "2026-08-21T09:24:15.000Z",
+    "score": 6,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:724cc63986e8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Better Batteries",
+    "url": "https://matklad.github.io/2026/08/20/better-batteries.html",
+    "excerpt": "16 points · plt, programming",
+    "author": "olex",
+    "publishedAt": "2026-08-21T02:47:50.174-05:00",
+    "score": 16,
+    "tags": [
+      "plt",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:Stack Overflow Blog:3dfa2a3916fb",
     "kind": "article",
     "source": "rss",
@@ -202,10 +277,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.98.0",
     "url": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
-    "excerpt": "17 points · release, rust",
+    "excerpt": "39 points · release, rust",
     "author": "FedericoSchonborn",
     "publishedAt": "2026-08-20T19:38:21.813-05:00",
-    "score": 17,
+    "score": 39,
     "tags": [
       "release",
       "rust"
@@ -288,10 +363,10 @@
     "source": "lobsters",
     "title": "Why compiling Rust to WebAssembly is slow",
     "url": "https://00f.net/2026/08/19/why-compiling-rust-to-webassembly-is-slow/",
-    "excerpt": "28 points · rust, wasm",
+    "excerpt": "34 points · rust, wasm",
     "author": "fanf",
     "publishedAt": "2026-08-20T07:32:22.598-05:00",
-    "score": 28,
+    "score": 34,
     "tags": [
       "rust",
       "wasm"
@@ -307,10 +382,10 @@
     "source": "lobsters",
     "title": "Supply chain attack on arrayref",
     "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
-    "excerpt": "74 points · rust, security",
+    "excerpt": "80 points · rust, security",
     "author": "ohrv",
     "publishedAt": "2026-08-20T04:54:06.012-05:00",
-    "score": 74,
+    "score": 80,
     "tags": [
       "rust",
       "security"
@@ -327,10 +402,10 @@
     "source": "lobsters",
     "title": "What Zig felt like, coming from Rust",
     "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
-    "excerpt": "59 points · rust, vibecoding, zig",
+    "excerpt": "63 points · rust, vibecoding, zig",
     "author": "nickmonad",
     "publishedAt": "2026-08-20T02:53:17.055-05:00",
-    "score": 59,
+    "score": 63,
     "tags": [
       "rust",
       "vibecoding",
@@ -366,7 +441,7 @@
     "excerpt": "Faz mais de 5 anos que eu não abria um PR ou issue técnica no Github, mas essa semana tenho aprendido...",
     "author": "vitoriazzp",
     "publishedAt": "2026-08-20T06:52:21Z",
-    "score": 34,
+    "score": 40,
     "tags": [
       "braziliandevs",
       "opensource",
@@ -384,10 +459,10 @@
     "source": "lobsters",
     "title": "Reclaim the terminal",
     "url": "https://nishantjosh.dev/blogs/reclaim-the-terminal/",
-    "excerpt": "44 points · rust, unix",
+    "excerpt": "47 points · rust, unix",
     "author": "nishantjosh",
     "publishedAt": "2026-08-19T17:10:12.631-05:00",
-    "score": 44,
+    "score": 47,
     "tags": [
       "rust",
       "unix"
@@ -438,7 +513,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who dislikes crowded places, so I'm planning to take a...",
     "author": "nyaomaru",
     "publishedAt": "2026-08-19T14:43:44Z",
-    "score": 34,
+    "score": 35,
     "tags": [
       "dsa",
       "typescript",
@@ -479,10 +554,10 @@
     "source": "lobsters",
     "title": "Why I still hand write my commit messages",
     "url": "https://www.jvt.me/posts/2026/08/17/hand-write-commits/",
-    "excerpt": "43 points · practices, vcs, vibecoding",
+    "excerpt": "44 points · practices, vcs, vibecoding",
     "author": "JamieTanna",
     "publishedAt": "2026-08-19T08:01:00.885-05:00",
-    "score": 43,
+    "score": 44,
     "tags": [
       "practices",
       "vcs",
@@ -497,10 +572,10 @@
     "source": "lobsters",
     "title": "a filename when none exists",
     "url": "https://daniel.haxx.se/blog/2024/08/19/a-filename-when-none-exists/",
-    "excerpt": "26 points · programming",
+    "excerpt": "27 points · programming",
     "author": "lvmbdv",
     "publishedAt": "2026-08-19T02:29:33.007-05:00",
-    "score": 26,
+    "score": 27,
     "tags": [
       "programming"
     ],
@@ -533,10 +608,10 @@
     "source": "lobsters",
     "title": "Odin's New Inline Assembly Templates",
     "url": "https://odin-lang.org/docs/inline-asm/",
-    "excerpt": "24 points · assembly, plt, programming",
+    "excerpt": "25 points · assembly, plt, programming",
     "author": "gingerBill",
     "publishedAt": "2026-08-18T14:20:45.217-05:00",
-    "score": 24,
+    "score": 25,
     "tags": [
       "assembly",
       "plt",
@@ -573,7 +648,7 @@
     "excerpt": "There was a similar thread here six years ago, and I'm curious how people's daily setups have changed since then.\r\n\r\nWhat does the software side of your daily setup look like in 2026?\r\n\r\nOperating sy…",
     "author": "r1w1s1",
     "publishedAt": "2026-08-18T09:31:11.824-05:00",
-    "score": 89,
+    "score": 90,
     "tags": [
       "ask",
       "practices"
@@ -678,59 +753,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:GitHub Blog:59590c5eac87",
-    "kind": "article",
-    "source": "rss",
-    "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
-    "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
-    "excerpt": "When I was in college, I joined the beta for one of the first versions of AI inline completions in VS Code. It felt like a game changer. Since then, GenAI has fundamentally changed software developme…",
-    "author": "Ayan Gupta",
-    "publishedAt": "2026-08-17T16:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:53686f3bf3d4",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Does it make sense to switch to a Github Alternative ?",
-    "url": "https://lobste.rs/s/0zdh32/does_it_make_sense_switch_github",
-    "excerpt": "Github has been down consistently over the last few months - does it make sense to switch to alternatives now? \r\n\r\nWhen do you think majority will switch?\r\n\r\nEdit : My thoughts on this - https://dhru…",
-    "author": "dhruvp",
-    "publishedAt": "2026-08-17T09:03:05.555-05:00",
-    "score": 80,
-    "tags": [
-      "ask",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:80cf076e3949",
-    "kind": "article",
-    "source": "devto",
-    "title": "My AI Assistant Did Not Love Getting a Second Opinion",
-    "url": "https://dev.to/dannwaneri/my-ai-assistant-did-not-love-getting-a-second-opinion-dl1",
-    "excerpt": "\"our work got checked by an external reviewer.\" That's what Fable said after I brought Gemini...",
-    "author": "Daniel Nwaneri",
-    "publishedAt": "2026-08-17T12:46:21Z",
-    "score": 28,
-    "tags": [
-      "ai",
-      "discuss",
-      "programming"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -739,7 +761,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-19T21:44:19Z",
-    "score": 467441,
+    "score": 467654,
     "tags": [
       "Python",
       "api",
@@ -771,7 +793,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394881,
+    "score": 394892,
     "tags": [
       "Python",
       "books",
@@ -794,7 +816,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-16T13:31:43Z",
-    "score": 315212,
+    "score": 315249,
     "tags": [
       "Python",
       "awesome",
@@ -818,7 +840,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 280176,
+    "score": 280203,
     "tags": [
       "Python",
       "beginner-project",
@@ -845,8 +867,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-21T06:56:18Z",
-    "score": 233674,
+    "publishedAt": "2026-08-21T12:52:56Z",
+    "score": 233802,
     "tags": [
       "Python",
       "ai",
@@ -878,7 +900,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195089,
+    "score": 195091,
     "tags": [
       "Rust"
     ],
@@ -895,8 +917,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-21T05:07:51Z",
-    "score": 186694,
+    "publishedAt": "2026-08-21T12:14:39Z",
+    "score": 186707,
     "tags": [
       "Python",
       "agentic-ai",
@@ -926,7 +948,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-20T22:26:03Z",
-    "score": 185942,
+    "score": 186005,
     "tags": [
       "Python",
       "cli",
@@ -951,7 +973,7 @@
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
     "publishedAt": "2026-08-19T19:36:22Z",
-    "score": 175054,
+    "score": 175144,
     "tags": [
       "Python",
       "autogen",
@@ -976,7 +998,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129519,
+    "score": 129528,
     "tags": [
       "Java",
       "algo",
@@ -1005,7 +1027,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-20T18:35:38Z",
-    "score": 128579,
+    "score": 128653,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1044,8 +1066,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-21T06:15:35Z",
-    "score": 121386,
+    "publishedAt": "2026-08-21T09:07:25Z",
+    "score": 121408,
     "tags": [
       "Rust",
       "android",
@@ -1081,13 +1103,31 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-21T06:25:30Z",
-    "score": 115750,
+    "publishedAt": "2026-08-21T12:59:00Z",
+    "score": 115756,
     "tags": [
       "Rust",
       "compiler",
       "language",
       "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "github-trending:83c4d873e34c",
+    "kind": "trending",
+    "source": "github",
+    "title": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "excerpt": "Lightweight coding agent that runs in your terminal",
+    "author": "openai",
+    "publishedAt": "2026-08-21T12:51:48Z",
+    "score": 110550,
+    "tags": [
+      "Rust"
     ],
     "labels": [
       "rust"
@@ -1103,7 +1143,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-21T00:22:10Z",
-    "score": 110416,
+    "score": 110423,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1121,24 +1161,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:83c4d873e34c",
-    "kind": "trending",
-    "source": "github",
-    "title": "openai/codex",
-    "url": "https://github.com/openai/codex",
-    "excerpt": "Lightweight coding agent that runs in your terminal",
-    "author": "openai",
-    "publishedAt": "2026-08-21T06:43:47Z",
-    "score": 109382,
-    "tags": [
-      "Rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:8f758d1c0759",
     "kind": "trending",
     "source": "github",
@@ -1146,8 +1168,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-21T05:41:05Z",
-    "score": 108268,
+    "publishedAt": "2026-08-21T12:08:20Z",
+    "score": 108273,
     "tags": [
       "Rust",
       "deno",
@@ -1169,8 +1191,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-21T07:02:00Z",
-    "score": 95535,
+    "publishedAt": "2026-08-21T13:04:40Z",
+    "score": 95550,
     "tags": [
       "Rust",
       "bun",
@@ -1202,7 +1224,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94597,
+    "score": 94599,
     "tags": [
       "Java",
       "awesome-list",
