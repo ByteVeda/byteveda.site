@@ -181,26 +181,36 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:fe2272d9c278",
+    "id": "lobsters:78b595fba9ca",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Nächste Woche erscheint # LibreOffice 26.8 mit dem neuen Absatz-Composer. Der gleicht die Wortabstände in aufeinanderfo…",
-    "url": "https://social.tchncs.de/@LibreOfficeDE/117139153777342621",
-    "excerpt": "Nächste Woche erscheint # LibreOffice 26.8 mit dem neuen Absatz-Composer. Der gleicht die Wortabstände in aufeinanderfolgenden Zeilen aus und behebt damit einen grundlegenden Mangel des \"gierigen\" Ze…",
-    "author": "LibreOfficeDE",
-    "publishedAt": "2026-08-22T12:27:18.000Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "You should never be angry at work",
+    "url": "https://www.seangoedecke.com/you-should-never-be-angry-at-work/",
+    "excerpt": "45 points · practices",
+    "author": "MooreMachine",
+    "publishedAt": "2026-08-22T07:41:39.341-05:00",
+    "score": 45,
     "tags": [
-      "libreoffice",
-      "foss",
-      "opensource",
-      "freesoftware",
-      "office",
-      "schule",
-      "verwaltung"
+      "practices"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Python Insider:aabfc544d84e",
+    "kind": "article",
+    "source": "rss",
+    "title": "The Python documentation is now available in Russian!",
+    "url": "https://blog.python.org/2026/08/the-python-documentation-is-now-available-in-russian/",
+    "excerpt": null,
+    "author": "Stan Ulbrych",
+    "publishedAt": "2026-08-22T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Python Insider"
     ],
     "labels": [
-      "opensource"
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -210,10 +220,10 @@
     "source": "lobsters",
     "title": "Unfortunately you sometimes need to do the thing",
     "url": "https://griffinberlste.in/blog/do-the-thing/",
-    "excerpt": "15 points · philosophy, programming, rust",
+    "excerpt": "19 points · philosophy, programming, rust",
     "author": "pgn",
     "publishedAt": "2026-08-21T11:15:41.123-05:00",
-    "score": 15,
+    "score": 19,
     "tags": [
       "philosophy",
       "programming",
@@ -230,10 +240,10 @@
     "source": "lobsters",
     "title": "Enabling the next-generation trait solver on nightly",
     "url": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
-    "excerpt": "81 points · rust",
+    "excerpt": "96 points · rust",
     "author": "jana",
     "publishedAt": "2026-08-21T10:15:16.747-05:00",
-    "score": 81,
+    "score": 96,
     "tags": [
       "rust"
     ],
@@ -248,10 +258,10 @@
     "source": "lobsters",
     "title": "rust-glancer: An alternative LSP for Rust with focus on low memory usage",
     "url": "https://rust-glancer.github.io/blog/hello-world/",
-    "excerpt": "16 points · rust, vibecoding",
+    "excerpt": "19 points · rust, vibecoding",
     "author": "heavyrain266",
     "publishedAt": "2026-08-21T09:29:38.398-05:00",
-    "score": 16,
+    "score": 19,
     "tags": [
       "rust",
       "vibecoding"
@@ -262,20 +272,23 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:6088ebe34dbc",
+    "id": "devto:7420f8beaf2b",
     "kind": "article",
-    "source": "mastodon",
-    "title": "If I had a Euro for every time I've googled \"golang last element in slice\" in the last few months just to realize for t…",
-    "url": "https://social.mei-home.net/@mmeier/117133884151033877",
-    "excerpt": "If I had a Euro for every time I've googled \"golang last element in slice\" in the last few months just to realize for the umpteenth time that golang doesn't have any special syntax for that, I could…",
-    "author": "Michael",
-    "publishedAt": "2026-08-21T14:07:10.000Z",
-    "score": 6,
+    "source": "devto",
+    "title": "I Added Terminal Charts to My Dev.to CLI. Here's What My Data Looks Like.",
+    "url": "https://dev.to/sarvar_04/i-added-terminal-charts-to-my-devto-cli-heres-what-my-data-looks-like-250j",
+    "excerpt": "devpub v0.2.1 adds color-gradient bar charts, sparklines, trend arrows, and multi-period breakdowns to your Dev.to analytics. All in the terminal. Zero new dependencies.",
+    "author": "Sarvar Nadaf",
+    "publishedAt": "2026-08-21T14:13:00Z",
+    "score": 31,
     "tags": [
-      "golang"
+      "devto",
+      "showdev",
+      "opensource",
+      "productivity"
     ],
     "labels": [
-      "go"
+      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -301,10 +314,10 @@
     "source": "lobsters",
     "title": "Better Batteries",
     "url": "https://matklad.github.io/2026/08/20/better-batteries.html",
-    "excerpt": "70 points · plt, programming",
+    "excerpt": "72 points · plt, programming",
     "author": "olex",
     "publishedAt": "2026-08-21T02:47:50.174-05:00",
-    "score": 70,
+    "score": 72,
     "tags": [
       "plt",
       "programming"
@@ -334,10 +347,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.98.0",
     "url": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
-    "excerpt": "67 points · release, rust",
+    "excerpt": "73 points · release, rust",
     "author": "FedericoSchonborn",
     "publishedAt": "2026-08-20T19:38:21.813-05:00",
-    "score": 67,
+    "score": 73,
     "tags": [
       "release",
       "rust"
@@ -442,7 +455,7 @@
     "excerpt": "Part 4 of the Building the AI Memory Stack series After finishing the previous article, I looked at...",
     "author": "Ken W Alger",
     "publishedAt": "2026-08-20T14:03:00Z",
-    "score": 34,
+    "score": 37,
     "tags": [
       "ai",
       "agents",
@@ -479,10 +492,10 @@
     "source": "lobsters",
     "title": "Supply chain attack on arrayref",
     "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
-    "excerpt": "86 points · rust, security",
+    "excerpt": "87 points · rust, security",
     "author": "ohrv",
     "publishedAt": "2026-08-20T04:54:06.012-05:00",
-    "score": 86,
+    "score": 87,
     "tags": [
       "rust",
       "security"
@@ -632,7 +645,7 @@
     "excerpt": "Can't believe I spent 2 weeks writing this. Last week, I gave a talk at a Cursor community event...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-19T13:04:47Z",
-    "score": 49,
+    "score": 51,
     "tags": [
       "ai",
       "programming",
@@ -723,24 +736,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:06b49c145ce8",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Odin's New Inline Assembly Templates",
-    "url": "https://odin-lang.org/docs/inline-asm/",
-    "excerpt": "25 points · assembly, plt, programming",
-    "author": "gingerBill",
-    "publishedAt": "2026-08-18T14:20:45.217-05:00",
-    "score": 25,
-    "tags": [
-      "assembly",
-      "plt",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -749,7 +744,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-19T21:44:19Z",
-    "score": 468315,
+    "score": 468512,
     "tags": [
       "Python",
       "api",
@@ -781,7 +776,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394991,
+    "score": 395016,
     "tags": [
       "Python",
       "books",
@@ -803,8 +798,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
-    "publishedAt": "2026-08-21T14:25:23Z",
-    "score": 315453,
+    "publishedAt": "2026-08-22T18:07:56Z",
+    "score": 315491,
     "tags": [
       "Python",
       "awesome",
@@ -828,7 +823,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 280324,
+    "score": 280363,
     "tags": [
       "Python",
       "beginner-project",
@@ -855,8 +850,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-22T12:32:00Z",
-    "score": 234205,
+    "publishedAt": "2026-08-22T18:15:46Z",
+    "score": 234324,
     "tags": [
       "Python",
       "ai",
@@ -888,7 +883,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-21T18:46:06Z",
-    "score": 223946,
+    "score": 223948,
     "tags": [
       "Python",
       "algorithm",
@@ -920,7 +915,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195113,
+    "score": 195115,
     "tags": [
       "Rust"
     ],
@@ -937,8 +932,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-22T12:53:33Z",
-    "score": 186751,
+    "publishedAt": "2026-08-22T14:16:44Z",
+    "score": 186764,
     "tags": [
       "Python",
       "agentic-ai",
@@ -968,7 +963,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-20T22:26:03Z",
-    "score": 186198,
+    "score": 186255,
     "tags": [
       "Python",
       "cli",
@@ -993,7 +988,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129546,
+    "score": 129552,
     "tags": [
       "Java",
       "algo",
@@ -1022,7 +1017,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-21T14:55:47Z",
-    "score": 128803,
+    "score": 128850,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1061,8 +1056,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-22T12:41:54Z",
-    "score": 121473,
+    "publishedAt": "2026-08-22T13:40:45Z",
+    "score": 121490,
     "tags": [
       "Rust",
       "android",
@@ -1098,8 +1093,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-22T12:56:57Z",
-    "score": 115887,
+    "publishedAt": "2026-08-22T18:45:24Z",
+    "score": 115902,
     "tags": [
       "Rust",
       "compiler",
@@ -1120,7 +1115,7 @@
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
     "publishedAt": "2026-08-22T05:57:03Z",
-    "score": 112077,
+    "score": 112878,
     "tags": [
       "Rust"
     ],
@@ -1138,7 +1133,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-21T21:34:35Z",
-    "score": 110454,
+    "score": 110461,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1163,8 +1158,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-22T12:52:12Z",
-    "score": 108271,
+    "publishedAt": "2026-08-22T17:49:35Z",
+    "score": 108278,
     "tags": [
       "Rust",
       "deno",
@@ -1186,8 +1181,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-22T12:54:42Z",
-    "score": 95568,
+    "publishedAt": "2026-08-22T18:46:07Z",
+    "score": 95580,
     "tags": [
       "Rust",
       "bun",
@@ -1219,7 +1214,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94601,
+    "score": 94604,
     "tags": [
       "Java",
       "awesome-list",
