@@ -181,114 +181,46 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:8b87bae05146",
+    "id": "mastodon:fe2272d9c278",
     "kind": "article",
     "source": "mastodon",
-    "title": "Your AI Chatbot Conversations Don't Stay Between You and the Screen",
-    "url": "https://shortlivedage.substack.com/p/your-ai-chatbot-conversations-dont?r=8uodfo&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
-    "excerpt": "The FTC opened a formal inquiry into AI companion chatbots. One of the specific questions they're asking: what happens to everything users tell these systems.",
-    "author": "Short Lived",
-    "publishedAt": "2026-08-22T00:55:28.000Z",
+    "title": "Nächste Woche erscheint # LibreOffice 26.8 mit dem neuen Absatz-Composer. Der gleicht die Wortabstände in aufeinanderfo…",
+    "url": "https://social.tchncs.de/@LibreOfficeDE/117139153777342621",
+    "excerpt": "Nächste Woche erscheint # LibreOffice 26.8 mit dem neuen Absatz-Composer. Der gleicht die Wortabstände in aufeinanderfolgenden Zeilen aus und behebt damit einen grundlegenden Mangel des \"gierigen\" Ze…",
+    "author": "LibreOfficeDE",
+    "publishedAt": "2026-08-22T12:27:18.000Z",
     "score": 5,
     "tags": [
-      "ai",
-      "technology",
-      "practicaltech",
-      "digitalsafety",
-      "privacy"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:649342791f9b",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "10 years of public speaking and 10 years of Ice cream selfie. Next one&#39;s at PyCon Portugal See you there? https://…",
-    "url": "https://fosstodon.org/@mariatta/117136109463557321",
-    "excerpt": "10 years of public speaking and 10 years of Ice cream selfie. Next one&#39;s at PyCon Portugal See you there? https:// 2026.pycon.pt/ # Python # PublicSpeaking # Conference # Travel",
-    "author": "Mariatta 🤦🏻‍♀️ :python:",
-    "publishedAt": "2026-08-21T23:33:05.906Z",
-    "score": 8,
-    "tags": [
-      "python",
-      "publicspeaking",
-      "conference",
-      "travel"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:fa6a8340656a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "This is what an # Emacs native # AI agent looks like these days. No need to step out of our comfort zone ;-) # foss # o…",
-    "url": "https://indieweb.social/@xenodium/117135527618791208",
-    "excerpt": "This is what an # Emacs native # AI agent looks like these days. No need to step out of our comfort zone ;-) # foss # oss # linux # macos # llm",
-    "author": "Álvaro R.",
-    "publishedAt": "2026-08-21T21:05:07.000Z",
-    "score": 16,
-    "tags": [
-      "emacs",
-      "ai",
+      "libreoffice",
       "foss",
-      "oss",
-      "linux",
-      "macos",
-      "llm"
+      "opensource",
+      "freesoftware",
+      "office",
+      "schule",
+      "verwaltung"
     ],
     "labels": [
-      "ai",
       "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:4cc1d672c812",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "An antidote to AI hype: AI agents are not “going rogue”",
-    "url": "https://misaligned.markets/antidote-ai-hype-rogue-ai-agents/",
-    "excerpt": "Dangerous, automated security tools existed before LLMs, and AI agents don't change cybersecurity fundamentals.",
-    "author": "Mike @ Misaligned Markets",
-    "publishedAt": "2026-08-21T19:19:11.000Z",
-    "score": 8,
-    "tags": [
-      "openai",
-      "cybersecurity",
-      "aibubble",
-      "llm",
-      "ai",
-      "machinelearning",
-      "infosec"
-    ],
-    "labels": [
-      "security",
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:3cb181157636",
+    "id": "lobsters:50dbbfdcbe40",
     "kind": "article",
     "source": "lobsters",
-    "title": "Felony Bench: Be AI, Do Crime",
-    "url": "https://www.felonybench.com/",
-    "excerpt": "30 points · ai",
-    "author": "pushcx",
-    "publishedAt": "2026-08-21T12:23:02.886-05:00",
-    "score": 30,
+    "title": "Unfortunately you sometimes need to do the thing",
+    "url": "https://griffinberlste.in/blog/do-the-thing/",
+    "excerpt": "15 points · philosophy, programming, rust",
+    "author": "pgn",
+    "publishedAt": "2026-08-21T11:15:41.123-05:00",
+    "score": 15,
     "tags": [
-      "ai"
+      "philosophy",
+      "programming",
+      "rust"
     ],
     "labels": [
-      "ai"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -298,12 +230,31 @@
     "source": "lobsters",
     "title": "Enabling the next-generation trait solver on nightly",
     "url": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
-    "excerpt": "50 points · rust",
+    "excerpt": "81 points · rust",
     "author": "jana",
     "publishedAt": "2026-08-21T10:15:16.747-05:00",
-    "score": 50,
+    "score": 81,
     "tags": [
       "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:23c788d7d95c",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "rust-glancer: An alternative LSP for Rust with focus on low memory usage",
+    "url": "https://rust-glancer.github.io/blog/hello-world/",
+    "excerpt": "16 points · rust, vibecoding",
+    "author": "heavyrain266",
+    "publishedAt": "2026-08-21T09:29:38.398-05:00",
+    "score": 16,
+    "tags": [
+      "rust",
+      "vibecoding"
     ],
     "labels": [
       "rust"
@@ -350,10 +301,10 @@
     "source": "lobsters",
     "title": "Better Batteries",
     "url": "https://matklad.github.io/2026/08/20/better-batteries.html",
-    "excerpt": "62 points · plt, programming",
+    "excerpt": "70 points · plt, programming",
     "author": "olex",
     "publishedAt": "2026-08-21T02:47:50.174-05:00",
-    "score": 62,
+    "score": 70,
     "tags": [
       "plt",
       "programming"
@@ -383,10 +334,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.98.0",
     "url": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
-    "excerpt": "62 points · release, rust",
+    "excerpt": "67 points · release, rust",
     "author": "FedericoSchonborn",
     "publishedAt": "2026-08-20T19:38:21.813-05:00",
-    "score": 62,
+    "score": 67,
     "tags": [
       "release",
       "rust"
@@ -491,7 +442,7 @@
     "excerpt": "Part 4 of the Building the AI Memory Stack series After finishing the previous article, I looked at...",
     "author": "Ken W Alger",
     "publishedAt": "2026-08-20T14:03:00Z",
-    "score": 30,
+    "score": 34,
     "tags": [
       "ai",
       "agents",
@@ -528,10 +479,10 @@
     "source": "lobsters",
     "title": "Supply chain attack on arrayref",
     "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
-    "excerpt": "85 points · rust, security",
+    "excerpt": "86 points · rust, security",
     "author": "ohrv",
     "publishedAt": "2026-08-20T04:54:06.012-05:00",
-    "score": 85,
+    "score": 86,
     "tags": [
       "rust",
       "security"
@@ -548,10 +499,10 @@
     "source": "lobsters",
     "title": "What Zig felt like, coming from Rust",
     "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
-    "excerpt": "67 points · rust, vibecoding, zig",
+    "excerpt": "69 points · rust, vibecoding, zig",
     "author": "nickmonad",
     "publishedAt": "2026-08-20T02:53:17.055-05:00",
-    "score": 67,
+    "score": 69,
     "tags": [
       "rust",
       "vibecoding",
@@ -587,7 +538,7 @@
     "excerpt": "Faz mais de 5 anos que eu não abria um PR ou issue técnica no Github, mas essa semana tenho aprendido...",
     "author": "vitoriazzp",
     "publishedAt": "2026-08-20T06:52:21Z",
-    "score": 40,
+    "score": 45,
     "tags": [
       "braziliandevs",
       "opensource",
@@ -605,10 +556,10 @@
     "source": "lobsters",
     "title": "Reclaim the terminal",
     "url": "https://nishantjosh.dev/blogs/reclaim-the-terminal/",
-    "excerpt": "48 points · rust, unix",
+    "excerpt": "49 points · rust, unix",
     "author": "nishantjosh",
     "publishedAt": "2026-08-19T17:10:12.631-05:00",
-    "score": 48,
+    "score": 49,
     "tags": [
       "rust",
       "unix"
@@ -659,7 +610,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who dislikes crowded places, so I'm planning to take a...",
     "author": "nyaomaru",
     "publishedAt": "2026-08-19T14:43:44Z",
-    "score": 36,
+    "score": 37,
     "tags": [
       "dsa",
       "typescript",
@@ -681,7 +632,7 @@
     "excerpt": "Can't believe I spent 2 weeks writing this. Last week, I gave a talk at a Cursor community event...",
     "author": "Adam - The Developer ✨",
     "publishedAt": "2026-08-19T13:04:47Z",
-    "score": 47,
+    "score": 49,
     "tags": [
       "ai",
       "programming",
@@ -752,6 +703,44 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:05d45f646e21",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "When str.lower() is a security vulnerability in Python",
+    "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+    "excerpt": "17 points · python, security",
+    "author": "ubernostrum",
+    "publishedAt": "2026-08-18T17:57:41.264-05:00",
+    "score": 17,
+    "tags": [
+      "python",
+      "security"
+    ],
+    "labels": [
+      "python",
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:06b49c145ce8",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Odin's New Inline Assembly Templates",
+    "url": "https://odin-lang.org/docs/inline-asm/",
+    "excerpt": "25 points · assembly, plt, programming",
+    "author": "gingerBill",
+    "publishedAt": "2026-08-18T14:20:45.217-05:00",
+    "score": 25,
+    "tags": [
+      "assembly",
+      "plt",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -760,7 +749,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-19T21:44:19Z",
-    "score": 468029,
+    "score": 468315,
     "tags": [
       "Python",
       "api",
@@ -792,7 +781,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 394961,
+    "score": 394991,
     "tags": [
       "Python",
       "books",
@@ -815,11 +804,11 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-21T14:25:23Z",
-    "score": 315367,
+    "score": 315453,
     "tags": [
       "Python",
       "awesome",
-      "collections",
+      "awesome-list",
       "python",
       "python-frameworks",
       "python-libraries",
@@ -839,7 +828,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-17T06:46:47Z",
-    "score": 280271,
+    "score": 280324,
     "tags": [
       "Python",
       "beginner-project",
@@ -866,8 +855,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-22T01:04:45Z",
-    "score": 234006,
+    "publishedAt": "2026-08-22T12:32:00Z",
+    "score": 234205,
     "tags": [
       "Python",
       "ai",
@@ -899,7 +888,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-21T18:46:06Z",
-    "score": 223933,
+    "score": 223946,
     "tags": [
       "Python",
       "algorithm",
@@ -931,7 +920,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-08-16T06:18:45Z",
-    "score": 195106,
+    "score": 195113,
     "tags": [
       "Rust"
     ],
@@ -948,8 +937,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-21T22:56:45Z",
-    "score": 186728,
+    "publishedAt": "2026-08-22T12:53:33Z",
+    "score": 186751,
     "tags": [
       "Python",
       "agentic-ai",
@@ -979,7 +968,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-20T22:26:03Z",
-    "score": 186122,
+    "score": 186198,
     "tags": [
       "Python",
       "cli",
@@ -1004,7 +993,7 @@
     "excerpt": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
     "author": "krahets",
     "publishedAt": "2026-08-17T20:58:58Z",
-    "score": 129534,
+    "score": 129546,
     "tags": [
       "Java",
       "algo",
@@ -1033,7 +1022,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-21T14:55:47Z",
-    "score": 128723,
+    "score": 128803,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1072,8 +1061,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-21T16:28:12Z",
-    "score": 121441,
+    "publishedAt": "2026-08-22T12:41:54Z",
+    "score": 121473,
     "tags": [
       "Rust",
       "android",
@@ -1109,8 +1098,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-22T01:14:34Z",
-    "score": 115751,
+    "publishedAt": "2026-08-22T12:56:57Z",
+    "score": 115887,
     "tags": [
       "Rust",
       "compiler",
@@ -1130,8 +1119,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-22T00:44:40Z",
-    "score": 111364,
+    "publishedAt": "2026-08-22T05:57:03Z",
+    "score": 112077,
     "tags": [
       "Rust"
     ],
@@ -1149,7 +1138,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-21T21:34:35Z",
-    "score": 110446,
+    "score": 110454,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1174,8 +1163,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-21T21:20:50Z",
-    "score": 108267,
+    "publishedAt": "2026-08-22T12:52:12Z",
+    "score": 108271,
     "tags": [
       "Rust",
       "deno",
@@ -1197,8 +1186,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-22T01:46:48Z",
-    "score": 95554,
+    "publishedAt": "2026-08-22T12:54:42Z",
+    "score": 95568,
     "tags": [
       "Rust",
       "bun",
@@ -1230,7 +1219,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-17T22:42:48Z",
-    "score": 94600,
+    "score": 94601,
     "tags": [
       "Java",
       "awesome-list",
