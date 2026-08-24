@@ -181,39 +181,46 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:7225dd0d920b",
+    "id": "mastodon:a1e77c38d5eb",
     "kind": "article",
     "source": "mastodon",
-    "title": "lol # linux # rtfm",
-    "url": "https://oldbytes.space/@anomalocaris/117149162785995124",
-    "excerpt": "lol # linux # rtfm",
-    "author": "anomalocaris",
-    "publishedAt": "2026-08-24T06:52:43.000Z",
+    "title": "GitHub - thanksstevenkim/the-hitchhikers-guide-to-the-fediverse: ActivityPub 인스턴스 총 정리한 목록입니다. The Whole ActivityPub Instance List.",
+    "url": "https://github.com/thanksstevenkim/the-hitchhikers-guide-to-the-fediverse",
+    "excerpt": "ActivityPub 인스턴스 총 정리한 목록입니다. The Whole ActivityPub Instance List. - thanksstevenkim/the-hitchhikers-guide-to-the-fediverse",
+    "author": "Steven \"thx\" Kim",
+    "publishedAt": "2026-08-24T13:04:00.000Z",
     "score": 6,
     "tags": [
-      "linux",
-      "rtfm"
+      "fediverse",
+      "activitypub",
+      "mastodon",
+      "opensource",
+      "selfhosting"
     ],
-    "labels": [],
+    "labels": [
+      "opensource"
+    ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:765f5043e040",
+    "id": "mastodon:6d39f8073bf0",
     "kind": "article",
     "source": "mastodon",
-    "title": "labmon, in beta | Quentin Marolleau",
-    "url": "https://marolleau.me/posts/labmon-beta/",
-    "excerpt": "A self-hosted monitoring stack for laboratories: what it records, why the units are checked before anything is stored, and what the first beta covers.",
-    "author": "Quentin Marolleau",
-    "publishedAt": "2026-08-23T23:07:46.000Z",
+    "title": "Hello techhub.social! 👋 Time for an official # Introduction . I'm Truediff, a data and # Linux enthusiast who strongly…",
+    "url": "https://techhub.social/@truediff/117150438128260966",
+    "excerpt": "Hello techhub.social! 👋 Time for an official # Introduction . I'm Truediff, a data and # Linux enthusiast who strongly believes in # DigitalSovereignty and # opensource Here is the real picture: -&gt…",
+    "author": "Dιff",
+    "publishedAt": "2026-08-24T12:17:03.000Z",
     "score": 5,
     "tags": [
+      "introduction",
+      "linux",
+      "digitalsovereignty",
       "opensource",
+      "mmorpgs",
       "python",
-      "physics",
-      "labautomation",
-      "labsoftware",
-      "monitoring"
+      "postgresql",
+      "selfhosted"
     ],
     "labels": [
       "opensource",
@@ -230,7 +237,7 @@
     "excerpt": "I'm updating my Rust projects to harden them against supply chain attacks: - explicit allowlist of hashes for build scripts in the project - `min-publish-age` of 7 days for deps updates, using the ni…",
     "author": "Predrag Gruevski",
     "publishedAt": "2026-08-23T17:38:15.000Z",
-    "score": 22,
+    "score": 23,
     "tags": [
       "rust",
       "rustlang"
@@ -246,10 +253,10 @@
     "source": "lobsters",
     "title": "My favorite Computer Science books, and why",
     "url": "https://backtracking.github.io/en/2020/02/20/cs-books.html",
-    "excerpt": "31 points · programming",
+    "excerpt": "42 points · programming",
     "author": "jeanthomas",
     "publishedAt": "2026-08-23T09:45:46.417-05:00",
-    "score": 31,
+    "score": 42,
     "tags": [
       "programming"
     ],
@@ -265,7 +272,7 @@
     "excerpt": "Contributor: Nikhil Kumar Rajak (@ryzrr) Organization: webpack · Project: webpack-doc-kit Mentors:...",
     "author": "Nikhil Kumar Rajak",
     "publishedAt": "2026-08-23T12:36:05Z",
-    "score": 25,
+    "score": 26,
     "tags": [
       "javascript",
       "opensource",
@@ -287,7 +294,7 @@
     "excerpt": "Alternate title:How is there still no decent Linux replacement for Adobe Acrobat (pdf viewing and editing)?\r\n\r\nThere are plenty of viewing programs, some page editing programs, but simply nothing tha…",
     "author": "oceanhaiyang",
     "publishedAt": "2026-08-23T07:08:25.166-05:00",
-    "score": 28,
+    "score": 33,
     "tags": [
       "ask",
       "linux",
@@ -305,7 +312,7 @@
     "excerpt": "Over the last few months, I have been developing a new index format for Debian Code Search. This required a lot of careful refactoring, re-implementation, debug tool creation and debugging.",
     "author": "Michael Stapelberg 🐧🐹😺",
     "publishedAt": "2026-08-23T09:50:11.000Z",
-    "score": 14,
+    "score": 30,
     "tags": [
       "simd",
       "debian",
@@ -322,10 +329,10 @@
     "source": "lobsters",
     "title": "Why aren't my two Cortex-A9 cores cache coherent?",
     "url": "https://thejpster.org.uk/blog/blog-2026-08-22/",
-    "excerpt": "41 points · hardware, rust",
+    "excerpt": "43 points · hardware, rust",
     "author": "binjip978",
     "publishedAt": "2026-08-22T23:48:06.102-05:00",
-    "score": 41,
+    "score": 43,
     "tags": [
       "hardware",
       "rust"
@@ -341,10 +348,10 @@
     "source": "lobsters",
     "title": "A 2026 Survey of Rust GUI Libraries",
     "url": "https://blog.wybxc.cc/blog/rust-gui-survey-2026/",
-    "excerpt": "45 points · rust",
+    "excerpt": "54 points · rust",
     "author": "dkess",
     "publishedAt": "2026-08-22T12:52:17.884-05:00",
-    "score": 45,
+    "score": 54,
     "tags": [
       "rust"
     ],
@@ -378,10 +385,10 @@
     "source": "lobsters",
     "title": "You should never be angry at work",
     "url": "https://www.seangoedecke.com/you-should-never-be-angry-at-work/",
-    "excerpt": "94 points · practices",
+    "excerpt": "97 points · practices",
     "author": "MooreMachine",
     "publishedAt": "2026-08-22T07:41:39.341-05:00",
-    "score": 94,
+    "score": 97,
     "tags": [
       "practices"
     ],
@@ -668,7 +675,7 @@
     "excerpt": "Part 4 of the Building the AI Memory Stack series After finishing the previous article, I looked at...",
     "author": "Ken W Alger",
     "publishedAt": "2026-08-20T14:03:00Z",
-    "score": 40,
+    "score": 42,
     "tags": [
       "ai",
       "agents",
@@ -748,7 +755,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-19T21:44:19Z",
-    "score": 469423,
+    "score": 469603,
     "tags": [
       "Python",
       "api",
@@ -780,7 +787,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-18T14:16:15Z",
-    "score": 395110,
+    "score": 395127,
     "tags": [
       "Python",
       "books",
@@ -803,7 +810,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-24T06:42:58Z",
-    "score": 315742,
+    "score": 315790,
     "tags": [
       "Python",
       "awesome",
@@ -819,6 +826,34 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:a88f7f858fd2",
+    "kind": "trending",
+    "source": "github",
+    "title": "practical-tutorials/project-based-learning",
+    "url": "https://github.com/practical-tutorials/project-based-learning",
+    "excerpt": "Curated list of project-based tutorials",
+    "author": "practical-tutorials",
+    "publishedAt": "2026-08-24T07:38:50Z",
+    "score": 280594,
+    "tags": [
+      "Python",
+      "beginner-project",
+      "cpp",
+      "golang",
+      "javascript",
+      "project",
+      "python",
+      "tutorial",
+      "webdevelopment"
+    ],
+    "labels": [
+      "python",
+      "go",
+      "typescript"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:c80311475bba",
     "kind": "trending",
     "source": "github",
@@ -826,8 +861,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-24T07:16:28Z",
-    "score": 235236,
+    "publishedAt": "2026-08-24T13:09:29Z",
+    "score": 235475,
     "tags": [
       "Python",
       "ai",
@@ -859,7 +894,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-21T18:46:06Z",
-    "score": 223979,
+    "score": 223986,
     "tags": [
       "Python",
       "algorithm",
@@ -890,8 +925,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-24T06:18:19Z",
-    "score": 186844,
+    "publishedAt": "2026-08-24T11:07:27Z",
+    "score": 186847,
     "tags": [
       "Python",
       "agentic-ai",
@@ -921,7 +956,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-20T22:26:03Z",
-    "score": 186557,
+    "score": 186600,
     "tags": [
       "Python",
       "cli",
@@ -938,31 +973,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:13faaaa41c52",
-    "kind": "trending",
-    "source": "github",
-    "title": "microsoft/markitdown",
-    "url": "https://github.com/microsoft/markitdown",
-    "excerpt": "Python tool for converting files and office documents to Markdown.",
-    "author": "microsoft",
-    "publishedAt": "2026-08-19T19:36:22Z",
-    "score": 175846,
-    "tags": [
-      "Python",
-      "autogen",
-      "autogen-extension",
-      "langchain",
-      "markdown",
-      "microsoft-office",
-      "openai",
-      "pdf"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:f0f9a9d19b4d",
     "kind": "trending",
     "source": "github",
@@ -970,8 +980,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-21T14:55:47Z",
-    "score": 129069,
+    "publishedAt": "2026-08-24T09:03:55Z",
+    "score": 129125,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1009,8 +1019,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-22T13:40:45Z",
-    "score": 121639,
+    "publishedAt": "2026-08-24T11:11:30Z",
+    "score": 121674,
     "tags": [
       "Rust",
       "android",
@@ -1046,8 +1056,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-24T06:44:23Z",
-    "score": 116194,
+    "publishedAt": "2026-08-24T12:47:56Z",
+    "score": 116699,
     "tags": [
       "Rust"
     ],
@@ -1064,8 +1074,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-24T06:51:39Z",
-    "score": 115970,
+    "publishedAt": "2026-08-24T13:07:20Z",
+    "score": 115977,
     "tags": [
       "Rust",
       "compiler",
@@ -1086,7 +1096,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-21T21:34:35Z",
-    "score": 110511,
+    "score": 110519,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1111,8 +1121,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-22T17:49:35Z",
-    "score": 108293,
+    "publishedAt": "2026-08-24T13:00:30Z",
+    "score": 108296,
     "tags": [
       "Rust",
       "deno",
@@ -1134,8 +1144,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-24T07:14:22Z",
-    "score": 95629,
+    "publishedAt": "2026-08-24T13:08:37Z",
+    "score": 95645,
     "tags": [
       "Rust",
       "bun",
@@ -1166,8 +1176,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-24T06:18:43Z",
-    "score": 91431,
+    "publishedAt": "2026-08-24T12:12:11Z",
+    "score": 91459,
     "tags": [
       "Rust",
       "awesome",
@@ -1206,8 +1216,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-24T00:05:28Z",
-    "score": 90270,
+    "publishedAt": "2026-08-24T13:09:37Z",
+    "score": 90298,
     "tags": [
       "Java",
       "docker",
@@ -1238,8 +1248,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-08-24T06:27:42Z",
-    "score": 81348,
+    "publishedAt": "2026-08-24T13:08:24Z",
+    "score": 81352,
     "tags": [
       "Java",
       "framework",
