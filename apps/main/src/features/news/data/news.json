@@ -181,32 +181,162 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:28ab4690ca19",
+    "id": "mastodon:06bc3c8db659",
     "kind": "article",
     "source": "mastodon",
-    "title": "@ snap here, have another flyer to help you in your quest 👏👏👏 # DeltaChat # decentralization # privacy # linux # macos…",
-    "url": "https://mastodon.de/@adbenitez/117159102652823926",
-    "excerpt": "@ snap here, have another flyer to help you in your quest 👏👏👏 # DeltaChat # decentralization # privacy # linux # macos # ios # android # windows # software # encryption # communication # activism # f…",
-    "author": "adb",
-    "publishedAt": "2026-08-26T01:00:34.000Z",
-    "score": 10,
+    "title": "@ _elena and I looking at all the talks submitted for the Decentralized Technologies track at the @ oscl 🌊 # oscl26 # o…",
+    "url": "https://fosstodon.org/@Gina/117161900003544972",
+    "excerpt": "@ _elena and I looking at all the talks submitted for the Decentralized Technologies track at the @ oscl 🌊 # oscl26 # opensource",
+    "author": "Gina",
+    "publishedAt": "2026-08-26T12:51:58.319Z",
+    "score": 17,
     "tags": [
-      "deltachat",
-      "decentralization",
-      "privacy",
-      "linux",
-      "macos",
-      "ios",
-      "android",
-      "windows",
-      "software",
-      "encryption",
-      "communication",
-      "activism",
-      "flyer",
-      "poster"
+      "oscl26",
+      "opensource"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:336eb02036a7",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Welches Logo? · Furtka",
+    "url": "https://furtka.org/de/logo/",
+    "excerpt": "Zwei Vorschläge für das Furtka-Zeichen. Wähl das, das dir besser gefällt — ein Klick genügt.",
+    "author": "Daniels Technik-Service",
+    "publishedAt": "2026-08-26T12:36:26.000Z",
+    "score": 5,
+    "tags": [
+      "furtka",
+      "logo",
+      "selfhosting",
+      "opensource",
+      "abstimmung"
+    ],
+    "labels": [
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:c3e6a6d4d670",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Omarchy Linux Just Got $8 Million From Tech's Biggest Names",
+    "url": "https://itsfoss.com/news/omarchy-launches-omacom-foundation/?=0",
+    "excerpt": "A new nonprofit is being setup that would house all that money, and Hyprland is the first external project to benefit.",
+    "author": "cm0002@mander.xyz",
+    "publishedAt": "2026-08-26T12:33:43.525Z",
+    "score": 6,
+    "tags": [
+      "linux"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:bd3b36ef1d26",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "# Rust is one of my favourite programming languages at the moment, not because the code is beautiful, but because the r…",
+    "url": "https://hachyderm.io/@jadehopepunk/117161344469825891",
+    "excerpt": "# Rust is one of my favourite programming languages at the moment, not because the code is beautiful, but because the results are so practical and refactoring is so safe. I'd gotten a bit used to the…",
+    "author": "Jade",
+    "publishedAt": "2026-08-26T10:30:41.000Z",
+    "score": 11,
+    "tags": [
+      "rust",
+      "zededitor",
+      "elm"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:d7be40a6d91b",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Tested 5 Design to Code Tools With the Same Outdated SaaS Dashboard",
+    "url": "https://dev.to/hadil/i-tested-5-design-to-code-tools-with-the-same-outdated-saas-dashboard-1ijk",
+    "excerpt": "A polished UI can make a product feel completely different, but getting there usually takes more than...",
+    "author": "Hadil Ben Abdallah",
+    "publishedAt": "2026-08-26T09:05:06Z",
+    "score": 30,
+    "tags": [
+      "ai",
+      "design",
+      "coding",
+      "programming"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5efa14cffcca",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Every release now ships a binary — and a doc that tells you what to do with it - Smeldr",
+    "url": "https://smeldr.dev/devlog/release-binaries-self-hosting",
+    "excerpt": "Every GitHub Release Smeldr has ever cut has been source-tag-only. `gh release\nview v1.66.1 --json assets` returns `\"assets\":[]` — the tag exists, the\nCHANGELOG…",
+    "author": "Smeldr",
+    "publishedAt": "2026-08-26T08:30:46.000Z",
+    "score": 5,
+    "tags": [
+      "ai",
+      "selfhosting",
+      "EUTech",
+      "golang"
+    ],
+    "labels": [
+      "ai",
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:ec3fa956282b",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Casey Muratori – The Root of The Root of All Evil – BSC 2026",
+    "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
+    "excerpt": "22 points · historical, programming, retrocomputing, video",
+    "author": "gingerBill",
+    "publishedAt": "2026-08-26T02:55:34.184-05:00",
+    "score": 22,
+    "tags": [
+      "historical",
+      "programming",
+      "retrocomputing",
+      "video"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:3fd5e8ff2cf3",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "mold: A Massively Parallel Linker",
+    "url": "https://arxiv.org/abs/2608.23228",
+    "excerpt": "22 points · compilers, pdf, performance",
+    "author": "rrampage",
+    "publishedAt": "2026-08-26T00:09:52.163-05:00",
+    "score": 22,
+    "tags": [
+      "compilers",
+      "pdf",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -226,128 +356,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7d6b742d3d2e",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "A more nuanced view of LLMs",
-    "url": "https://anarc.at/blog/2026-08-25-llm-nuance",
-    "excerpt": "anarcat",
-    "author": "anarcat",
-    "publishedAt": "2026-08-25T21:09:23.000Z",
-    "score": 9,
-    "tags": [
-      "llm",
-      "analysis",
-      "debian",
-      "python",
-      "free",
-      "copyleft",
-      "copyright",
-      "linux"
-    ],
-    "labels": [
-      "ai",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:77c732136016",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "What the Hell is AI Anyway?",
-    "url": "https://www.plagiarismtoday.com/2026/08/25/what-the-hell-is-ai-anyway/",
-    "excerpt": "The term “AI” has become almost meaningless. While it’s easy to dismiss this as marketing hype, you can’t restrict what you can’t define.",
-    "author": "Jonathan Bailey",
-    "publishedAt": "2026-08-25T20:12:23.000Z",
-    "score": 5,
-    "tags": [
-      "ai",
-      "artificialintelligence",
-      "marketing",
-      "machinelearning"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ab6e5f2a38db",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Small Local AI Models for Business: Why Privacy Beats Raw Intelligence https://www. madebyagents.com/blog/small-lo cal-…",
-    "url": "https://mastodon.social/@craigbrownphd/117157875242617723",
-    "excerpt": "Small Local AI Models for Business: Why Privacy Beats Raw Intelligence https://www. madebyagents.com/blog/small-lo cal-ai-models-for-business?utm_source=dlvr.it&amp;utm_medium=mastodon # ArtificialIn…",
-    "author": "Craig Brown, PhD",
-    "publishedAt": "2026-08-25T19:48:25.000Z",
-    "score": 5,
-    "tags": [
-      "artificialintelligence",
-      "machinelearning",
-      "datascience",
-      "dataengineering",
-      "technology",
-      "aistrategy",
-      "businessstrategy",
-      "aiarchitecture"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ddfbf20edb23",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "My 2026 Rust Toolkit",
-    "url": "https://www.youtube.com/watch?v=jlWnoRsGJNQ",
-    "excerpt": "New video: My 2026 Rust Toolkit :rust: A demo of my 2026 toolkit for writing # rust , containing a dozen or so tools &amp; packages that I use in every project, along with smart default config. Hope…",
-    "author": ":youtube_logo: No Boilerplate",
-    "publishedAt": "2026-08-25T17:50:54.000Z",
-    "score": 17,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:df8ebacbd5c4",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "RE: https:// social.treehouse.systems/@schr ottkatze/117155456112126732 so, i guess i did an anti-ai protest fork (see…",
-    "url": "https://social.treehouse.systems/@schrottkatze/117157376375768509",
-    "excerpt": "RE: https:// social.treehouse.systems/@schr ottkatze/117155456112126732 so, i guess i did an anti-ai protest fork (see quote) i need some additional maintainers for editor extensions (optimally peopl…",
-    "author": "chrottkatze \"off-by-one\"",
-    "publishedAt": "2026-08-25T17:41:33.000Z",
-    "score": 11,
-    "tags": [
-      "typst",
-      "vscode",
-      "lapce",
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:da2d3de4084e",
     "kind": "article",
     "source": "lobsters",
     "title": "The Move to Python 3 Begins",
     "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
-    "excerpt": "70 points · python",
+    "excerpt": "116 points · python",
     "author": "rmpr",
     "publishedAt": "2026-08-25T11:52:46.126-05:00",
-    "score": 70,
+    "score": 116,
     "tags": [
       "python"
     ],
@@ -381,15 +398,36 @@
     "source": "lobsters",
     "title": "I stabilized never type",
     "url": "https://blog.ihatereality.space/0C-never-type/",
-    "excerpt": "79 points · rust",
+    "excerpt": "123 points · rust",
     "author": "ettolrach",
     "publishedAt": "2026-08-25T10:11:30.269-05:00",
-    "score": 79,
+    "score": 123,
     "tags": [
       "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:3d933294b7e1",
+    "kind": "article",
+    "source": "devto",
+    "title": "What Do You Do While AI Codes?",
+    "url": "https://dev.to/anchildress1/what-do-you-do-while-ai-codes-k8k",
+    "excerpt": "AI coding agents leave you with 5-to-20-minute gaps all day. Five real ways I fill them — and the one \"quick\" habit that makes you the bottleneck.",
+    "author": "Ashley Childress",
+    "publishedAt": "2026-08-25T13:36:11Z",
+    "score": 51,
+    "tags": [
+      "discuss",
+      "ai",
+      "productivity",
+      "devex"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -437,7 +475,7 @@
     "excerpt": "The first time my RAG system gave a confidently wrong answer, I did what everyone does: I blamed the...",
     "author": "James Anderson",
     "publishedAt": "2026-08-25T04:02:30Z",
-    "score": 25,
+    "score": 28,
     "tags": [
       "ai",
       "llm",
@@ -459,7 +497,7 @@
     "excerpt": "This is article 5 in a series about building PlannerCritic, an open-source engine where one LLM...",
     "author": "Debashish Ghosal",
     "publishedAt": "2026-08-25T00:15:18Z",
-    "score": 30,
+    "score": 31,
     "tags": [
       "ai",
       "agents",
@@ -500,7 +538,7 @@
     "excerpt": "I wanted to disagree with 'AI made me a worse reviewer' from Michael Amachree (@dev_michael) ....",
     "author": "Heinrich Neb",
     "publishedAt": "2026-08-24T23:23:06Z",
-    "score": 38,
+    "score": 41,
     "tags": [
       "ai",
       "productivity",
@@ -661,7 +699,7 @@
     "excerpt": "There's a very specific kind of AI project that looks incredibly impressive in the architecture...",
     "author": "James Anderson",
     "publishedAt": "2026-08-24T03:24:26Z",
-    "score": 28,
+    "score": 29,
     "tags": [
       "ai",
       "llm",
@@ -709,61 +747,34 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:a5d4a13f3d2c",
-    "kind": "article",
-    "source": "devto",
-    "title": "Making webpack's Docs Update Themselves | GSoC 2026, wrapped",
-    "url": "https://dev.to/ryzrr/making-webpacks-docs-update-themselves-gsoc-2026-wrapped-2jmn",
-    "excerpt": "Contributor: Nikhil Kumar Rajak (@ryzrr) Organization: webpack · Project: webpack-doc-kit Mentors:...",
-    "author": "Nikhil Kumar Rajak",
-    "publishedAt": "2026-08-23T12:36:05Z",
-    "score": 26,
+    "id": "github-trending:9e3fdce04716",
+    "kind": "trending",
+    "source": "github",
+    "title": "public-apis/public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "excerpt": "A collective list of free APIs",
+    "author": "public-apis",
+    "publishedAt": "2026-08-26T10:11:55Z",
+    "score": 470776,
     "tags": [
-      "javascript",
-      "opensource",
-      "webpack",
-      "gsoc2026"
+      "Python",
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free",
+      "list",
+      "lists",
+      "open-source",
+      "public",
+      "public-api",
+      "public-apis",
+      "resources",
+      "software"
     ],
     "labels": [
-      "typescript",
+      "python",
       "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:a089c77cd661",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Are there any decent programs for pdf viewing and editing for Linux that replace Adobe Acrobat?",
-    "url": "https://lobste.rs/s/kxualw/are_there_any_decent_programs_for_pdf",
-    "excerpt": "Alternate title:How is there still no decent Linux replacement for Adobe Acrobat (pdf viewing and editing)?\r\n\r\nThere are plenty of viewing programs, some page editing programs, but simply nothing tha…",
-    "author": "oceanhaiyang",
-    "publishedAt": "2026-08-23T07:08:25.166-05:00",
-    "score": 37,
-    "tags": [
-      "ask",
-      "linux",
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:736754212588",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Why aren't my two Cortex-A9 cores cache coherent?",
-    "url": "https://thejpster.org.uk/blog/blog-2026-08-22/",
-    "excerpt": "43 points · hardware, rust",
-    "author": "binjip978",
-    "publishedAt": "2026-08-22T23:48:06.102-05:00",
-    "score": 43,
-    "tags": [
-      "hardware",
-      "rust"
-    ],
-    "labels": [
-      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -776,7 +787,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 316073,
+    "score": 316168,
     "tags": [
       "Python",
       "awesome",
@@ -800,7 +811,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 280840,
+    "score": 280920,
     "tags": [
       "Python",
       "beginner-project",
@@ -827,8 +838,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-26T00:55:19Z",
-    "score": 236440,
+    "publishedAt": "2026-08-26T12:33:43Z",
+    "score": 236690,
     "tags": [
       "Python",
       "ai",
@@ -860,7 +871,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-25T14:09:01Z",
-    "score": 224029,
+    "score": 224036,
     "tags": [
       "Python",
       "algorithm",
@@ -892,7 +903,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-25T16:30:28Z",
-    "score": 186931,
+    "score": 187046,
     "tags": [
       "Python",
       "cli",
@@ -916,8 +927,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-26T01:46:24Z",
-    "score": 186867,
+    "publishedAt": "2026-08-26T13:04:17Z",
+    "score": 186880,
     "tags": [
       "Python",
       "agentic-ai",
@@ -947,52 +958,13 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-08-21T17:10:55Z",
-    "score": 171590,
+    "score": 171730,
     "tags": [
       "Python",
       "agent-skills"
     ],
     "labels": [
       "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "github-trending:6efb574d5b5c",
-    "kind": "trending",
-    "source": "github",
-    "title": "huggingface/transformers",
-    "url": "https://github.com/huggingface/transformers",
-    "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-    "author": "huggingface",
-    "publishedAt": "2026-08-26T01:19:56Z",
-    "score": 164443,
-    "tags": [
-      "Python",
-      "audio",
-      "deep-learning",
-      "deepseek",
-      "gemma",
-      "glm",
-      "hacktoberfest",
-      "llm",
-      "machine-learning",
-      "model-hub",
-      "natural-language-processing",
-      "nlp",
-      "pretrained-models",
-      "python",
-      "pytorch",
-      "pytorch-transformers",
-      "qwen",
-      "speech-recognition",
-      "transformer",
-      "vlm"
-    ],
-    "labels": [
-      "python",
-      "ml",
-      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -1004,8 +976,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-24T09:03:55Z",
-    "score": 129377,
+    "publishedAt": "2026-08-26T09:21:30Z",
+    "score": 129517,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1043,8 +1015,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-25T11:53:56Z",
-    "score": 121820,
+    "publishedAt": "2026-08-26T11:03:54Z",
+    "score": 121864,
     "tags": [
       "Rust",
       "android",
@@ -1080,8 +1052,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-26T01:23:02Z",
-    "score": 118155,
+    "publishedAt": "2026-08-26T11:23:27Z",
+    "score": 118625,
     "tags": [
       "Rust"
     ],
@@ -1098,8 +1070,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-26T01:34:22Z",
-    "score": 116216,
+    "publishedAt": "2026-08-26T13:10:14Z",
+    "score": 116171,
     "tags": [
       "Rust",
       "compiler",
@@ -1119,8 +1091,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-25T16:29:29Z",
-    "score": 110563,
+    "publishedAt": "2026-08-26T12:21:04Z",
+    "score": 110577,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1145,8 +1117,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-26T01:20:59Z",
-    "score": 108307,
+    "publishedAt": "2026-08-26T12:04:00Z",
+    "score": 108301,
     "tags": [
       "Rust",
       "deno",
@@ -1168,8 +1140,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-26T01:43:23Z",
-    "score": 95691,
+    "publishedAt": "2026-08-26T13:01:17Z",
+    "score": 95705,
     "tags": [
       "Rust",
       "bun",
@@ -1201,7 +1173,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-25T04:52:07Z",
-    "score": 94620,
+    "score": 94622,
     "tags": [
       "Java",
       "awesome-list",
@@ -1226,8 +1198,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-26T01:40:53Z",
-    "score": 91642,
+    "publishedAt": "2026-08-26T12:12:54Z",
+    "score": 91690,
     "tags": [
       "Rust",
       "awesome",
@@ -1266,8 +1238,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-26T00:15:30Z",
-    "score": 90424,
+    "publishedAt": "2026-08-26T13:03:56Z",
+    "score": 90464,
     "tags": [
       "Java",
       "docker",
