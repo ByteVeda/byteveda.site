@@ -181,131 +181,40 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:c75ba939e713",
+    "id": "rss:GitHub Blog:c8665e330285",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Dogfirmations with Doofie and Dingus: Soundtrack Barking is the soundtrack of Dingus' life, and it's a hit. View Dogfir…",
-    "url": "https://mastodon.social/@BCWHS/117163525298245172",
-    "excerpt": "Dogfirmations with Doofie and Dingus: Soundtrack Barking is the soundtrack of Dingus' life, and it's a hit. View Dogfirmation: https:// dogs.blackcatwhitehatsecurity. com/?dogID=262#today # Soundtrac…",
-    "author": "Doofie and Dingus",
-    "publishedAt": "2026-08-26T19:45:18.000Z",
-    "score": 5,
+    "source": "rss",
+    "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+    "excerpt": "I might be biased, but I think Dependabot is pretty amazing. It helps keep my projects up to date, ensuring I&rsquo;m always using secure libraries. But because there&rsquo;re frequently new vulnerab…",
+    "author": "Christopher Harrison",
+    "publishedAt": "2026-08-26T20:12:53.000Z",
+    "score": 0,
     "tags": [
-      "soundtrack",
-      "ai",
-      "dogs",
-      "photography",
-      "nature",
-      "artist",
-      "technology"
+      "GitHub Blog"
     ],
-    "labels": [
-      "ai"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:b3b095568506",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "🚀 Deploying Django doesn&#39;t have to be confusing. Join Will Vincent for “Modern Django Deployments in 2026” and lear…",
-    "url": "https://fosstodon.org/@djangocon/117163406574067759",
-    "excerpt": "🚀 Deploying Django doesn&#39;t have to be confusing. Join Will Vincent for “Modern Django Deployments in 2026” and learn how to take a Django app from local development to production. ⏰ 2:40–3:05 PM…",
-    "author": "DjangoCon US :django: :python:",
-    "publishedAt": "2026-08-26T19:15:06.757Z",
-    "score": 6,
-    "tags": [
-      "djangoconUS",
-      "django",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:68c50f8370e5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Heute habe ich den \"Ubuntu Nutzer:innen Arbeitsplatz (UNA)\" auf der GBV-Verbundkonferenz vorgestellt. War super.😀🥳 🐧 We…",
-    "url": "https://openbiblio.social/@datenteiler/117163372710187429",
-    "excerpt": "Heute habe ich den \"Ubuntu Nutzer:innen Arbeitsplatz (UNA)\" auf der GBV-Verbundkonferenz vorgestellt. War super.😀🥳 🐧 Wer mehr wissen möchte, findet die Doku in unserem Github: https:// github.com/TIB…",
-    "author": "Christian 📚",
-    "publishedAt": "2026-08-26T19:06:30.000Z",
-    "score": 6,
-    "tags": [
-      "linux",
-      "opensource",
-      "digitaleselbstbestimmung",
-      "ubuntu",
-      "opsi",
-      "bibliothek",
-      "gbv"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:dd1f651dc6ad",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "⚡ Make Django dynamic without throwing away the views you already built. Join Natalia Bidart for “Wishlist granted: HTM…",
-    "url": "https://fosstodon.org/@djangocon/117163171329843785",
-    "excerpt": "⚡ Make Django dynamic without throwing away the views you already built. Join Natalia Bidart for “Wishlist granted: HTMX without betraying your Django views.” ⏰ 1:50–2:35 PM 📍 Sauganash Ballroom # Dj…",
-    "author": "DjangoCon US :django: :python:",
-    "publishedAt": "2026-08-26T18:15:17.216Z",
-    "score": 5,
-    "tags": [
-      "djangoconUS",
-      "django",
-      "htmx",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:c377b2beaadf",
+    "id": "devto:306874814c97",
     "kind": "article",
     "source": "devto",
-    "title": "Introducing AI Disclosure on DEV: Tools for Nuance, Clarity, and Better Feeds",
-    "url": "https://dev.to/devteam/introducing-ai-disclosure-on-dev-tools-for-nuance-clarity-and-better-feeds-34mk",
-    "excerpt": "We're introducing structured AI disclosure tiers to foster transparency, preserve human connection, and give you control over your reading experience.",
-    "author": "Ben Halpern",
-    "publishedAt": "2026-08-26T18:05:39Z",
-    "score": 44,
+    "title": "Learn Valid Parentheses, Reverse Linked List, and Tree Max Depth with Step-by-Step Visualization in DSA View View 👀👀",
+    "url": "https://dev.to/nyaomaru/learn-valid-parentheses-reverse-linked-list-and-tree-max-depth-with-step-by-step-visualization-in-3o09",
+    "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who struggles to make game sounds. 😿 Have you used DSA...",
+    "author": "nyaomaru",
+    "publishedAt": "2026-08-26T14:18:19Z",
+    "score": 34,
     "tags": [
-      "showdev",
-      "announcements",
-      "ai",
-      "community"
+      "typescript",
+      "algorithms",
+      "opensource",
+      "dsa"
     ],
     "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:8c9bce415e28",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Super glad to be here for # Rust and # Rustup :)",
-    "url": "https://hachyderm.io/@rami3l/117162450349385533",
-    "excerpt": "Super glad to be here for # Rust and # Rustup :)",
-    "author": "rami3l",
-    "publishedAt": "2026-08-26T15:11:55.000Z",
-    "score": 7,
-    "tags": [
-      "rust",
-      "rustup"
-    ],
-    "labels": [
-      "rust"
+      "typescript",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -318,7 +227,7 @@
     "excerpt": "A polished UI can make a product feel completely different, but getting there usually takes more than...",
     "author": "Hadil Ben Abdallah",
     "publishedAt": "2026-08-26T09:05:06Z",
-    "score": 30,
+    "score": 38,
     "tags": [
       "ai",
       "design",
@@ -331,37 +240,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:5efa14cffcca",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Every release now ships a binary — and a doc that tells you what to do with it - Smeldr",
-    "url": "https://smeldr.dev/devlog/release-binaries-self-hosting",
-    "excerpt": "Every GitHub Release Smeldr has ever cut has been source-tag-only. `gh release\nview v1.66.1 --json assets` returns `\"assets\":[]` — the tag exists, the\nCHANGELOG…",
-    "author": "Smeldr",
-    "publishedAt": "2026-08-26T08:30:46.000Z",
-    "score": 5,
-    "tags": [
-      "ai",
-      "selfhosting",
-      "EUTech",
-      "golang"
-    ],
-    "labels": [
-      "ai",
-      "go"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:ec3fa956282b",
     "kind": "article",
     "source": "lobsters",
     "title": "The Root of The Root of All Evil",
     "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
-    "excerpt": "55 points · historical, programming, retrocomputing, video",
+    "excerpt": "72 points · historical, programming, retrocomputing, video",
     "author": "gingerBill",
     "publishedAt": "2026-08-26T02:55:34.184-05:00",
-    "score": 55,
+    "score": 72,
     "tags": [
       "historical",
       "programming",
@@ -372,15 +259,31 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:65a8f3d6bc3c",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Using TypeScript to Obtain One of the Rarest License Plates (2025)",
+    "url": "https://www.jack.bio/blog/licenseplate",
+    "excerpt": "21 points · programming",
+    "author": "indigo",
+    "publishedAt": "2026-08-26T01:00:12.856-05:00",
+    "score": 21,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:3fd5e8ff2cf3",
     "kind": "article",
     "source": "lobsters",
     "title": "mold: A Massively Parallel Linker",
     "url": "https://arxiv.org/abs/2608.23228",
-    "excerpt": "53 points · compilers, pdf, performance",
+    "excerpt": "71 points · compilers, pdf, performance",
     "author": "rrampage",
     "publishedAt": "2026-08-26T00:09:52.163-05:00",
-    "score": 53,
+    "score": 71,
     "tags": [
       "compilers",
       "pdf",
@@ -450,10 +353,10 @@
     "source": "lobsters",
     "title": "The Move to Python 3 Begins",
     "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
-    "excerpt": "134 points · python",
+    "excerpt": "147 points · python",
     "author": "rmpr",
     "publishedAt": "2026-08-25T11:52:46.126-05:00",
-    "score": 134,
+    "score": 147,
     "tags": [
       "python"
     ],
@@ -487,10 +390,10 @@
     "source": "lobsters",
     "title": "I stabilized never type",
     "url": "https://blog.ihatereality.space/0C-never-type/",
-    "excerpt": "142 points · rust",
+    "excerpt": "161 points · rust",
     "author": "ettolrach",
     "publishedAt": "2026-08-25T10:11:30.269-05:00",
-    "score": 142,
+    "score": 161,
     "tags": [
       "rust"
     ],
@@ -508,7 +411,7 @@
     "excerpt": "AI coding agents leave you with 5-to-20-minute gaps all day. Five real ways I fill them — and the one \"quick\" habit that makes you the bottleneck.",
     "author": "Ashley Childress",
     "publishedAt": "2026-08-25T13:36:11Z",
-    "score": 66,
+    "score": 74,
     "tags": [
       "discuss",
       "ai",
@@ -586,7 +489,7 @@
     "excerpt": "This is article 5 in a series about building PlannerCritic, an open-source engine where one LLM...",
     "author": "Debashish Ghosal",
     "publishedAt": "2026-08-25T00:15:18Z",
-    "score": 32,
+    "score": 33,
     "tags": [
       "ai",
       "agents",
@@ -627,7 +530,7 @@
     "excerpt": "I wanted to disagree with 'AI made me a worse reviewer' from Michael Amachree (@dev_michael) ....",
     "author": "Heinrich Neb",
     "publishedAt": "2026-08-24T23:23:06Z",
-    "score": 43,
+    "score": 44,
     "tags": [
       "ai",
       "productivity",
@@ -763,6 +666,79 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:2ef9a89e9b11",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this week?",
+    "url": "https://lobste.rs/s/lo28ad/what_are_you_doing_this_week",
+    "excerpt": "What are you doing this week? Feel free to share!\r\n\r\nKeep in mind it’s OK to do nothing at all, too.",
+    "author": "caius",
+    "publishedAt": "2026-08-24T04:40:30.431-05:00",
+    "score": 22,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:cc7ef44913ec",
+    "kind": "article",
+    "source": "devto",
+    "title": "7 Signs You're Over-Engineering Your AI App (and How to Stop)",
+    "url": "https://dev.to/james_anderson_h/7-signs-youre-over-engineering-your-ai-app-and-how-to-stop-4gb",
+    "excerpt": "There's a very specific kind of AI project that looks incredibly impressive in the architecture...",
+    "author": "James Anderson",
+    "publishedAt": "2026-08-24T03:24:26Z",
+    "score": 34,
+    "tags": [
+      "ai",
+      "llm",
+      "webdev",
+      "programming"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Python Insider:e4efc6a513fe",
+    "kind": "article",
+    "source": "rss",
+    "title": "RISC-V is now officially supported by CPython!",
+    "url": "https://blog.python.org/2026/08/riscv-now-officially-supported/",
+    "excerpt": "I’m happy to announce that RISC-V platforms are now officially supported by CPython. 🎉 🚀",
+    "author": "Stan Ulbrych",
+    "publishedAt": "2026-08-24T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Python Insider"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:c3e88d1c22b1",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "My favorite Computer Science books, and why",
+    "url": "https://backtracking.github.io/en/2020/02/20/cs-books.html",
+    "excerpt": "51 points · programming",
+    "author": "jeanthomas",
+    "publishedAt": "2026-08-23T09:45:46.417-05:00",
+    "score": 51,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -771,7 +747,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-26T19:19:56Z",
-    "score": 470965,
+    "score": 471311,
     "tags": [
       "Python",
       "api",
@@ -803,7 +779,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 316235,
+    "score": 316352,
     "tags": [
       "Python",
       "awesome",
@@ -827,7 +803,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 280967,
+    "score": 281031,
     "tags": [
       "Python",
       "beginner-project",
@@ -854,8 +830,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-26T19:51:08Z",
-    "score": 236830,
+    "publishedAt": "2026-08-27T09:35:54Z",
+    "score": 237095,
     "tags": [
       "Python",
       "ai",
@@ -887,7 +863,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-25T14:09:01Z",
-    "score": 224043,
+    "score": 224053,
     "tags": [
       "Python",
       "algorithm",
@@ -918,8 +894,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-25T16:30:28Z",
-    "score": 187132,
+    "publishedAt": "2026-08-26T23:44:15Z",
+    "score": 187255,
     "tags": [
       "Python",
       "cli",
@@ -943,8 +919,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-26T19:53:10Z",
-    "score": 186890,
+    "publishedAt": "2026-08-27T09:34:45Z",
+    "score": 186919,
     "tags": [
       "Python",
       "agentic-ai",
@@ -974,7 +950,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-08-21T17:10:55Z",
-    "score": 171794,
+    "score": 171951,
     "tags": [
       "Python",
       "agent-skills"
@@ -992,8 +968,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-26T15:51:34Z",
-    "score": 129563,
+    "publishedAt": "2026-08-27T07:30:59Z",
+    "score": 129687,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1031,8 +1007,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-26T14:24:05Z",
-    "score": 121886,
+    "publishedAt": "2026-08-27T08:33:58Z",
+    "score": 121939,
     "tags": [
       "Rust",
       "android",
@@ -1068,8 +1044,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-26T19:56:38Z",
-    "score": 118744,
+    "publishedAt": "2026-08-27T08:46:44Z",
+    "score": 119042,
     "tags": [
       "Rust"
     ],
@@ -1086,8 +1062,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-26T19:56:07Z",
-    "score": 116185,
+    "publishedAt": "2026-08-27T08:25:08Z",
+    "score": 116276,
     "tags": [
       "Rust",
       "compiler",
@@ -1107,8 +1083,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-26T13:47:08Z",
-    "score": 110583,
+    "publishedAt": "2026-08-26T21:03:24Z",
+    "score": 110594,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1134,7 +1110,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-26T16:42:05Z",
-    "score": 108308,
+    "score": 108317,
     "tags": [
       "Rust",
       "deno",
@@ -1156,8 +1132,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-26T19:53:45Z",
-    "score": 95712,
+    "publishedAt": "2026-08-27T09:36:09Z",
+    "score": 95727,
     "tags": [
       "Rust",
       "bun",
@@ -1189,7 +1165,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-25T04:52:07Z",
-    "score": 94623,
+    "score": 94625,
     "tags": [
       "Java",
       "awesome-list",
@@ -1214,8 +1190,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-26T18:40:57Z",
-    "score": 91735,
+    "publishedAt": "2026-08-27T09:12:52Z",
+    "score": 91787,
     "tags": [
       "Rust",
       "awesome",
@@ -1254,8 +1230,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-26T18:09:57Z",
-    "score": 90483,
+    "publishedAt": "2026-08-27T09:31:25Z",
+    "score": 90619,
     "tags": [
       "Java",
       "docker",
