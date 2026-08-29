@@ -181,81 +181,228 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:56e07bd5e377",
+    "id": "mastodon:d3219b7c9317",
     "kind": "article",
     "source": "mastodon",
-    "title": "Thank you to everyone who has supported our land fundraiser. We’re now at 7%! We haven’t received any donations this we…",
-    "url": "https://masto.nu/@greenyouthmovement/117169528103814059",
-    "excerpt": "Thank you to everyone who has supported our land fundraiser. We’re now at 7%! We haven’t received any donations this week, yet so much remains. More families need food, and young people need training…",
-    "author": "GREEN YOUTH MOVEMENT",
-    "publishedAt": "2026-08-27T21:11:53.000Z",
+    "title": "PH4NTXM · A session without a past",
+    "url": "https://ph4ntxmofficial.github.io/",
+    "excerpt": "A Linux Live Operating System with a linked identity, network protection that blocks traffic on failure, and a common Nuke shutdown path.",
+    "author": "PH4NTXM :verified:",
+    "publishedAt": "2026-08-28T22:09:08.000Z",
+    "score": 5,
+    "tags": [
+      "ph4ntxm",
+      "linux",
+      "debian",
+      "os",
+      "live",
+      "privacy",
+      "security",
+      "opsec",
+      "infosec",
+      "research",
+      "tech",
+      "technology"
+    ],
+    "labels": [
+      "security"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:5b1e37693f0a",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "BEYOND AWARENESS: THE INSURANCE ADOPTION PARADOX IN NIGERIA From Insurance-System Reform to Household Financial Protect…",
+    "url": "https://sundayokekwuinsurance.wordpress.com/2026/08/28/beyond-awareness-the-insurance-adoption-paradox-in-nigeria/",
+    "excerpt": "BEYOND AWARENESS: THE INSURANCE ADOPTION PARADOX IN NIGERIA From Insurance-System Reform to Household Financial Protection: A Protection Conversion Framework for Nigeria and Emerging EconomiesAn Inde…",
+    "author": "SUNDAY OKEKWU",
+    "publishedAt": "2026-08-28T22:05:33.000Z",
+    "score": 8,
+    "tags": [
+      "ai",
+      "artificialintelligence",
+      "finance",
+      "news",
+      "technology"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:a3d0b6531684",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "What are the cool text editors out there? I like to work from the terminal, modal text editing is cool. When I use text…",
+    "url": "https://xoxo.zone/@computergripe/117175162448209978",
+    "excerpt": "What are the cool text editors out there? I like to work from the terminal, modal text editing is cool. When I use text editors professionally/to make money I do pay money to the project. I do not wa…",
+    "author": "Sabrina",
+    "publishedAt": "2026-08-28T21:04:47.000Z",
     "score": 7,
     "tags": [
-      "gardening",
-      "sustainability",
-      "agriculture",
-      "climatecrisis",
-      "ClimateDiary",
-      "climateemergency",
-      "nature",
-      "naturephotography",
-      "solarpunk",
-      "mastodon",
-      "linux",
-      "photography",
-      "mutualaid",
-      "MutualAidRequest",
-      "fediverse",
-      "food"
+      "askfedi",
+      "software",
+      "linux"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:f20c1239acf9",
+    "id": "mastodon:2c1a4a95d1f1",
     "kind": "article",
     "source": "mastodon",
-    "title": "There is something deeply satisfying about true data sovereignty. No rate limits, no third-party APIs snooping on promp…",
-    "url": "https://burningboard.net/@Larvitz/117169109398257110",
-    "excerpt": "There is something deeply satisfying about true data sovereignty. No rate limits, no third-party APIs snooping on prompts, and zero cloud lock-in. Just raw self-hosted inference pulling 154 tok/s wit…",
-    "author": "Larvitz :fedora:",
-    "publishedAt": "2026-08-27T19:25:24.000Z",
-    "score": 31,
+    "title": "DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with VAD-Free Cascaded ASR–LLM–TTS Pipeline and Micro-Turn Optimization",
+    "url": "https://arxiv.org/html/2603.09180",
+    "excerpt": "I discovered a research paper, I'll try to implement what they demonstrated, and then experiment to make it use as less resource as possible &gt; DuplexCascade: Full-Duplex Speech-to-Speech Dialogue…",
+    "author": "Alex Hoyau",
+    "publishedAt": "2026-08-28T20:55:48.000Z",
+    "score": 9,
     "tags": [
-      "selfhosted",
-      "localai",
-      "datasovereignty",
-      "opensource",
-      "machinelearning",
-      "sglang",
-      "blackwell",
-      "linux",
-      "ai"
+      "ai",
+      "learning",
+      "llm",
+      "SLM",
+      "localllm"
     ],
     "labels": [
-      "opensource",
-      "ml",
       "ai"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:dddb9f7134b0",
+    "id": "mastodon:8b3779363c05",
     "kind": "article",
     "source": "mastodon",
-    "title": "I think I'm officially Rust-pilled now. Writing some Python and work and wishing my custom exception object contained a…",
-    "url": "https://indieweb.social/@GandalfDG/117168696759891724",
-    "excerpt": "I think I'm officially Rust-pilled now. Writing some Python and work and wishing my custom exception object contained an enum to match against. I know there's the match case construct now, but my app…",
-    "author": "Jack C.",
-    "publishedAt": "2026-08-27T17:40:28.000Z",
-    "score": 8,
+    "title": "Senior Engineer (Software), Enterprise",
+    "url": "https://jobs.ashbyhq.com/netboxlabs/e3fff69b-ab13-4869-95c5-66d018fc43ae",
+    "excerpt": "NetBox Labs seeks a Senior Software Engineer with strong DevOps experience to build and drive NetBox Enterprise, our on-premises product suite. You'll own installation, configuration, and lifecycle management for our customers, tackle complex technical challenges, proactively address deployment issues unique to on-prem environments, and collaborate closely with high-performing, cross-functional teams.\n\nIn this role you will:\n\n - Design, architect, and implement Kubernetes-based, high-availability (HA) on-premises solutions, including control plane applications, telemetry systems, air-gapped installations, and appliance offerings\n\n - Extend and maintain our Kubernetes operator, the core of how NetBox Enterprise installs, upgrades, and heals itself in customer environments\n\n - Develop and maintain our operational management console and associated tools, ensuring a seamless user experience for lifecycle management\n\n - Architect and implement robust multi-stage CI/CD pipelines using GitHub Actions and complementary DevOps technologies\n\n - Drive releases on our six-week cadence, four weeks of build followed by two weeks of stabilization, including versioning strategy and structured release management\n\n - Write Rust and Python across the stack, from operator internals to internal tooling and APIs\n\n - Build internal tooling and APIs to facilitate integration testing by upstream application teams, validating changes ahead of inclusion in on-premises releases\n\n - Develop comprehensive documentation and establish best practice guidelines for deployments\n\n - Take a weekly turn as Engineering Guardian, fielding questions and escalations from across the organization and working directly with Customer Success and customers to diagnose and resolve deployment and operational issues\n\nRequirements:\n\n - 5+ years in software engineering, platform engineering, or SRE, with proven experience writing robust, maintainable code\n\n - Demonstrated expertise with Kubernetes, Helm charts, and deployment automation, including complex multi-cluster and multi-region deployments\n\n - Hands-on experience building inside an AI-augmented development harness, including Claude Code and the workflows that make agentic tooling reliable\n\n - Strong Python skills for tooling, APIs, and automation\n\n - Hands-on experience with CI/CD systems (GitHub Actions), GitOps delivery (ArgoCD or FluxCD), and infrastructure-as-code (Terraform)\n\n - Strong knowledge of Linux systems, including system administration, troubleshooting, and networking\n\n - Solid understanding of software supply chain security, including vulnerability scanning and CVE management, with tools such as Trivy, Dependabot, and GitHub code scanning\n\n - Comfort working directly with customers to diagnose deployment and operational issues\n\nNice to Haves:\n\n - Rust or Golang programming experience.\n\n - Experience with virtual appliances and air-gapped installations\n\n - Experience deploying applications using Replicated\n\n - Familiarity with networking concepts or distributed system architecture\n\n - 3+ years of experience in a B2B software startup or high-growth organization\n\n - Open-source contributions or project involvement\n\nJoin us at NetBox Labs to shape the future of on-premise infrastructure intelligence and innovation.\n\n\nABOUT NETBOX LABS:\n\nNetBox Labs helps companies build and manage complex networks. We help customers accelerate network automation by delivering open, composable products and supporting the network automation community.\n\nNetBox Labs is the commercial steward of open source NetBox, the world’s most popular network source of truth, and Orb, the next-generation open source network observability platform. Our products include NetBox Enterprise, a fully supported self-managed NetBox with advanced features, and NetBox Cloud, a secure, scalable, and reliable SaaS edition of NetBox.\n\nNetBox powers thousands of companies, and NetBox Labs is backed by investment from Notable Capital (formerly GGV), Grafana Labs CEO Raj Dutt, Flybridge, IBM, Salesforce Ventures, and Mango Capital.\n\n\nOUR CULTURE AND VALUES: \n\n - We own and solve problems with high attention to detail.\n\n - Our open source contributors, users, customers & team are all part of our community. When our community wins, we win.\n\n - We prioritize simplicity and think twice before adding complexity\n\n - Clear communication helps keep our team aligned and collaborating smoothly.\n\nNetBox Labs is proud to be an equal opportunity employer. We believe diverse teams build better software, and we welcome applicants of every race, color, religion, gender identity, sexual orientation, national origin, age, disability, and veteran status. If you need accommodation at any point in the process, just let us know.",
+    "author": "Benjamin Reed",
+    "publishedAt": "2026-08-28T18:05:07.000Z",
+    "score": 6,
     "tags": [
+      "netbox",
+      "getfedihired",
       "rust",
-      "python"
+      "python",
+      "kubernetes",
+      "devops",
+      "floss"
     ],
     "labels": [
       "rust",
-      "python"
+      "python",
+      "devops"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:5668f23521d1",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Yap: a particular kind of slop",
+    "url": "https://mckayla.blog/posts/yap.html",
+    "excerpt": "36 points · practices, vibecoding",
+    "author": "lilac",
+    "publishedAt": "2026-08-28T11:35:15.935-05:00",
+    "score": 36,
+    "tags": [
+      "practices",
+      "vibecoding"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:7b93ad620ba1",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How I made Rustdoc 33% faster in one week",
+    "url": "https://noahlev.org/blog/2026/08/27/making-rustdoc-faster/",
+    "excerpt": "26 points · performance, rust",
+    "author": "rrampage",
+    "publishedAt": "2026-08-28T08:58:44.993-05:00",
+    "score": 26,
+    "tags": [
+      "performance",
+      "rust"
+    ],
+    "labels": [
+      "performance",
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:baac1fb7ceb3",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Zero-Cost 'Tagless Final' in Rust with GADT-style Enums",
+    "url": "https://inferara.com/blog/rust-tagless-final-gadt/",
+    "excerpt": "18 points · rust",
+    "author": "abhin4v",
+    "publishedAt": "2026-08-28T05:51:03.004-05:00",
+    "score": 18,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Stack Overflow Blog:5de718f7bceb",
+    "kind": "article",
+    "source": "rss",
+    "title": "When you keep AI Lean, you keep AI correct",
+    "url": "https://stackoverflow.blog/2026/08/28/when-you-keep-ai-lean-you-keep-ai-correct/",
+    "excerpt": "Ryan chats with Leo de Moura, Senior Principal Applied Scientist at AWS and the creator of the Lean language, about proving correctness in AI agents with the Lean language, how automated reasoning co…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-08-28T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:9d5e892bd8da",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
+    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+    "excerpt": "29 points · distributed, performance",
+    "author": "rmpr",
+    "publishedAt": "2026-08-28T01:54:56.659-05:00",
+    "score": 29,
+    "tags": [
+      "distributed",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:b0b2c2da12a5",
+    "kind": "article",
+    "source": "rss",
+    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-28T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
     ],
     "mentionsByteveda": false
   },
@@ -276,15 +423,77 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:fa861f1f89d5",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What happens when a GPU reads memory",
+    "url": "https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory",
+    "excerpt": "16 points · graphics, hardware, performance",
+    "author": "eatonphil",
+    "publishedAt": "2026-08-27T09:42:03.231-05:00",
+    "score": 16,
+    "tags": [
+      "graphics",
+      "hardware",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:1d03bd3bfe43",
+    "kind": "article",
+    "source": "devto",
+    "title": "Velocidade de entrega e custo de manutenção pós IA",
+    "url": "https://dev.to/he4rt/velocidade-de-entrega-e-custo-de-manutencao-pos-ia-5gei",
+    "excerpt": "Entregar ficou rápido demais. O problema é que manter continuou custando o mesmo preço de sempre. ...",
+    "author": "Elves Santos",
+    "publishedAt": "2026-08-27T13:58:08Z",
+    "score": 72,
+    "tags": [
+      "ai",
+      "braziliandevs",
+      "career",
+      "productivity"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:cf928e7e88db",
+    "kind": "article",
+    "source": "devto",
+    "title": "NexPath Review: The Prompt Quality Layer for Cursor, Windsurf and Claude Code",
+    "url": "https://dev.to/sarvar_04/nexpath-review-the-prompt-quality-layer-for-cursor-windsurf-and-claude-code-353n",
+    "excerpt": "Your AI coding agent does exactly what you ask, which isn't always what you mean. NexPath catches vague prompts before they become bugs.",
+    "author": "Sarvar Nadaf",
+    "publishedAt": "2026-08-27T13:21:53Z",
+    "score": 49,
+    "tags": [
+      "ai",
+      "programming",
+      "showdev",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:fdfde4885bfc",
     "kind": "article",
     "source": "lobsters",
     "title": "Announcing our first Maintainers in Residence",
     "url": "https://blog.rust-lang.org/2026/08/26/announcing-our-first-maintainers-in-residence/",
-    "excerpt": "66 points · rust",
+    "excerpt": "93 points · rust",
     "author": "jamesw",
     "publishedAt": "2026-08-27T03:44:13.994-05:00",
-    "score": 66,
+    "score": 93,
     "tags": [
       "rust"
     ],
@@ -294,20 +503,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:447ac950a8e2",
+    "id": "devto:044cd2c5cfba",
     "kind": "article",
     "source": "devto",
-    "title": "Stratagems #25: Derek Changed the Delay. The AI Didn't Flinch.",
-    "url": "https://dev.to/xulingfeng/stratagems-25-derek-changed-the-delay-the-ai-didnt-flinch-28ca",
-    "excerpt": "Keep the beams standing. Replace what they carry. — The 36 Stratagems, Replace the beams with rotten...",
-    "author": "xulingfeng",
-    "publishedAt": "2026-08-27T07:19:37Z",
-    "score": 44,
+    "title": "Your AI Has a Reviewer. Has Anyone Ever Seen It Say No?",
+    "url": "https://dev.to/heinrichneb/your-ai-has-a-reviewer-has-anyone-ever-seen-it-say-no-4ja8",
+    "excerpt": "Two weeks ago I counted 204 guards in my repos and found that 89 % had never been shown they can...",
+    "author": "Heinrich Neb",
+    "publishedAt": "2026-08-27T04:25:16Z",
+    "score": 26,
     "tags": [
-      "discuss",
       "ai",
-      "programming",
-      "career"
+      "agents",
+      "discuss",
+      "programming"
     ],
     "labels": [
       "ai"
@@ -320,10 +529,10 @@
     "source": "lobsters",
     "title": "If I release it, you won’t get the same experience I get",
     "url": "https://notes.highlysuspect.agency/cant-release-that.html",
-    "excerpt": "32 points · programming",
+    "excerpt": "38 points · programming",
     "author": "artemisSystem",
     "publishedAt": "2026-08-26T22:47:52.263-05:00",
-    "score": 32,
+    "score": 38,
     "tags": [
       "programming"
     ],
@@ -369,6 +578,27 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:1696d8149320",
+    "kind": "article",
+    "source": "devto",
+    "title": "My Cloud Run Multi-Agent Fleet Passed Its Demo. The Architecture Was Still Wrong.",
+    "url": "https://dev.to/dannwaneri/my-cloud-run-multi-agent-fleet-passed-its-demo-the-architecture-was-still-wrong-1p",
+    "excerpt": "The correlation notice fired. Three sites, same anomaly type, inside the time window. The...",
+    "author": "Daniel Nwaneri",
+    "publishedAt": "2026-08-26T09:45:20Z",
+    "score": 25,
+    "tags": [
+      "googlecloud",
+      "hackathon",
+      "cloudrun",
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "devto:d7be40a6d91b",
     "kind": "article",
     "source": "devto",
@@ -377,7 +607,7 @@
     "excerpt": "A polished UI can make a product feel completely different, but getting there usually takes more than...",
     "author": "Hadil Ben Abdallah",
     "publishedAt": "2026-08-26T09:05:06Z",
-    "score": 41,
+    "score": 48,
     "tags": [
       "ai",
       "design",
@@ -395,10 +625,10 @@
     "source": "lobsters",
     "title": "The Root of The Root of All Evil",
     "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
-    "excerpt": "77 points · historical, programming, retrocomputing, video",
+    "excerpt": "81 points · historical, programming, retrocomputing, video",
     "author": "gingerBill",
     "publishedAt": "2026-08-26T02:55:34.184-05:00",
-    "score": 77,
+    "score": 81,
     "tags": [
       "historical",
       "programming",
@@ -414,10 +644,10 @@
     "source": "lobsters",
     "title": "Using TypeScript to Obtain One of the Rarest License Plates (2025)",
     "url": "https://www.jack.bio/blog/licenseplate",
-    "excerpt": "21 points · programming",
+    "excerpt": "22 points · programming",
     "author": "indigo",
     "publishedAt": "2026-08-26T01:00:12.856-05:00",
-    "score": 21,
+    "score": 22,
     "tags": [
       "programming"
     ],
@@ -430,10 +660,10 @@
     "source": "lobsters",
     "title": "mold: A Massively Parallel Linker",
     "url": "https://arxiv.org/abs/2608.23228",
-    "excerpt": "75 points · compilers, pdf, performance",
+    "excerpt": "77 points · compilers, pdf, performance",
     "author": "rrampage",
     "publishedAt": "2026-08-26T00:09:52.163-05:00",
-    "score": 75,
+    "score": 77,
     "tags": [
       "compilers",
       "pdf",
@@ -485,10 +715,10 @@
     "source": "lobsters",
     "title": "The Move to Python 3 Begins",
     "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
-    "excerpt": "151 points · python",
+    "excerpt": "152 points · python",
     "author": "rmpr",
     "publishedAt": "2026-08-25T11:52:46.126-05:00",
-    "score": 151,
+    "score": 152,
     "tags": [
       "python"
     ],
@@ -522,244 +752,16 @@
     "source": "lobsters",
     "title": "I stabilized never type",
     "url": "https://blog.ihatereality.space/0C-never-type/",
-    "excerpt": "164 points · rust",
+    "excerpt": "166 points · rust",
     "author": "ettolrach",
     "publishedAt": "2026-08-25T10:11:30.269-05:00",
-    "score": 164,
+    "score": 166,
     "tags": [
       "rust"
     ],
     "labels": [
       "rust"
     ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:3d933294b7e1",
-    "kind": "article",
-    "source": "devto",
-    "title": "What Do You Do While AI Codes?",
-    "url": "https://dev.to/anchildress1/what-do-you-do-while-ai-codes-k8k",
-    "excerpt": "AI coding agents leave you with 5-to-20-minute gaps all day. Five real ways I fill them — and the one \"quick\" habit that makes you the bottleneck.",
-    "author": "Ashley Childress",
-    "publishedAt": "2026-08-25T13:36:11Z",
-    "score": 86,
-    "tags": [
-      "discuss",
-      "ai",
-      "productivity",
-      "devex"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:f6b26e55a489",
-    "kind": "article",
-    "source": "rss",
-    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-08-25T11:39:24.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:5a21d1b69a5c",
-    "kind": "article",
-    "source": "rss",
-    "title": "Inside LinkedIn&#x27;s cognitive memory agent for agentic personalization",
-    "url": "https://stackoverflow.blog/2026/08/25/inside-linkedin-s-cognitive-memory-agent/",
-    "excerpt": "Ryan is joined by Praveen Bodigutla, Principal AI Researcher at LinkedIn, to chat about the four-layer memory system his team built to give LinkedIn&#x27;s hiring assistant a persistent, personalized…",
-    "author": "Phoebe Sajor",
-    "publishedAt": "2026-08-25T07:40:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:a7ce19de2740",
-    "kind": "article",
-    "source": "devto",
-    "title": "The Retrieval Checklist I Wish I'd Had Before Shipping RAG",
-    "url": "https://dev.to/james_anderson_h/the-retrieval-checklist-i-wish-id-had-before-shipping-rag-2j5a",
-    "excerpt": "The first time my RAG system gave a confidently wrong answer, I did what everyone does: I blamed the...",
-    "author": "James Anderson",
-    "publishedAt": "2026-08-25T04:02:30Z",
-    "score": 29,
-    "tags": [
-      "ai",
-      "llm",
-      "rag",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:64e781c9690b",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Tried to Prompt-Inject My Own Agent Engine. It Didn't Work. Here's Why.",
-    "url": "https://dev.to/debashish_ghosal/i-tried-to-prompt-inject-my-own-agent-engine-it-didnt-work-heres-why-57m0",
-    "excerpt": "This is article 5 in a series about building PlannerCritic, an open-source engine where one LLM...",
-    "author": "Debashish Ghosal",
-    "publishedAt": "2026-08-25T00:15:18Z",
-    "score": 33,
-    "tags": [
-      "ai",
-      "agents",
-      "security",
-      "llm"
-    ],
-    "labels": [
-      "ai",
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:2983dbf79834",
-    "kind": "article",
-    "source": "rss",
-    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-    "url": "https://huggingface.co/blog/gradio-workflow-guide",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-08-25T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:75a95cfaf8aa",
-    "kind": "article",
-    "source": "devto",
-    "title": "AI promoted every developer to reviewer. Nobody tested the reviewer.",
-    "url": "https://dev.to/heinrichneb/ai-promoted-every-developer-to-reviewer-nobody-tested-the-reviewer-m4h",
-    "excerpt": "I wanted to disagree with 'AI made me a worse reviewer' from Michael Amachree (@dev_michael) ....",
-    "author": "Heinrich Neb",
-    "publishedAt": "2026-08-24T23:23:06Z",
-    "score": 52,
-    "tags": [
-      "ai",
-      "productivity",
-      "testing",
-      "discuss"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:35bd1c2a7300",
-    "kind": "article",
-    "source": "rss",
-    "title": "Your alt text passes automated checks. That doesn&#8217;t mean it&#8217;s any good.",
-    "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
-    "excerpt": "More than one in four images on the web&rsquo;s most popular home pages have alt text that&rsquo;s missing, vague, or copied from adjacent images. That&rsquo;s from WebAIM&rsquo;s 2026 WebAIM Million…",
-    "author": "Taarik Ashenafi",
-    "publishedAt": "2026-08-24T20:56:32.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:26a29bcef5ed",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Won a Writing Challenge That I Almost Didn't Publish!",
-    "url": "https://dev.to/fm/i-won-a-writing-challenge-that-i-almost-didnt-publish-2cn0",
-    "excerpt": "All praise to almighty God, and thanks to Google and the DEV Team, a while back, I won the Google...",
-    "author": "Fayaz",
-    "publishedAt": "2026-08-24T17:24:53Z",
-    "score": 29,
-    "tags": [
-      "devchallenge",
-      "motivation",
-      "writing",
-      "ai"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Mozilla Hacks:adb6b7175cb9",
-    "kind": "article",
-    "source": "rss",
-    "title": "Intent to Ship: JPEG XL",
-    "url": "https://hacks.mozilla.org/2026/08/intent-to-ship-jpeg-xl/",
-    "excerpt": "It isn&#8217;t often that new image formats land in browsers. In the early 2000s we had JPEG, GIF, and PNG. The 2010s gave us WebP, which was a modest step up from JPEG. But the 2020s have given us t…",
-    "author": "Jake Archibald",
-    "publishedAt": "2026-08-24T15:32:15.000Z",
-    "score": 0,
-    "tags": [
-      "Mozilla Hacks"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:49a3671ad87a",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "IPython is All You Need",
-    "url": "https://nathancooper.io/blog/2026-08-10-ipython-is-all-you-need",
-    "excerpt": "19 points · python, vibecoding",
-    "author": "ncoop57",
-    "publishedAt": "2026-08-24T10:24:13.663-05:00",
-    "score": 19,
-    "tags": [
-      "python",
-      "vibecoding"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Stack Overflow Blog:3de23ddc470a",
-    "kind": "article",
-    "source": "rss",
-    "title": "Responsible AI adoption needs developer workflow design",
-    "url": "https://stackoverflow.blog/2026/08/24/responsible-ai-adoption-needs-developer-workflow-design/",
-    "excerpt": "Organizations cannot solve shadow AI with a document employees read once. They need to make responsible use easier than improvised use.",
-    "author": "Dr. Gleb Tsipursky",
-    "publishedAt": "2026-08-24T14:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Stack Overflow Blog"
-    ],
-    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -771,7 +773,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-26T19:19:56Z",
-    "score": 471676,
+    "score": 472300,
     "tags": [
       "Python",
       "api",
@@ -803,7 +805,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 316493,
+    "score": 316763,
     "tags": [
       "Python",
       "awesome",
@@ -827,7 +829,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 281109,
+    "score": 281187,
     "tags": [
       "Python",
       "beginner-project",
@@ -854,8 +856,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-27T22:09:24Z",
-    "score": 237309,
+    "publishedAt": "2026-08-28T22:08:10Z",
+    "score": 237726,
     "tags": [
       "Python",
       "ai",
@@ -886,8 +888,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-08-27T11:13:49Z",
-    "score": 224064,
+    "publishedAt": "2026-08-28T13:50:15Z",
+    "score": 224079,
     "tags": [
       "Python",
       "algorithm",
@@ -918,8 +920,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-26T23:44:15Z",
-    "score": 187364,
+    "publishedAt": "2026-08-27T23:05:39Z",
+    "score": 187557,
     "tags": [
       "Python",
       "cli",
@@ -943,8 +945,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-27T22:06:11Z",
-    "score": 186935,
+    "publishedAt": "2026-08-28T19:28:51Z",
+    "score": 186963,
     "tags": [
       "Python",
       "agentic-ai",
@@ -966,18 +968,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:bc97666fba6a",
+    "id": "github-trending:e40b322bc1b1",
     "kind": "trending",
     "source": "github",
-    "title": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "excerpt": "Public repository for Agent Skills",
-    "author": "anthropics",
-    "publishedAt": "2026-08-21T17:10:55Z",
-    "score": 172064,
+    "title": "521xueweihan/HelloGitHub",
+    "url": "https://github.com/521xueweihan/HelloGitHub",
+    "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+    "author": "521xueweihan",
+    "publishedAt": "2026-08-28T00:38:12Z",
+    "score": 173480,
     "tags": [
       "Python",
-      "agent-skills"
+      "awesome",
+      "github",
+      "hellogithub",
+      "python"
     ],
     "labels": [
       "python"
@@ -992,8 +997,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-27T18:36:29Z",
-    "score": 129757,
+    "publishedAt": "2026-08-28T00:29:46Z",
+    "score": 129921,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1031,8 +1036,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-08-27T08:33:58Z",
-    "score": 121982,
+    "publishedAt": "2026-08-28T09:15:42Z",
+    "score": 122061,
     "tags": [
       "Rust",
       "android",
@@ -1068,8 +1073,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-27T21:47:52Z",
-    "score": 119191,
+    "publishedAt": "2026-08-28T22:11:47Z",
+    "score": 119549,
     "tags": [
       "Rust"
     ],
@@ -1086,8 +1091,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-27T21:44:37Z",
-    "score": 116291,
+    "publishedAt": "2026-08-28T22:06:21Z",
+    "score": 116322,
     "tags": [
       "Rust",
       "compiler",
@@ -1107,8 +1112,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-08-27T16:39:08Z",
-    "score": 110604,
+    "publishedAt": "2026-08-28T16:18:58Z",
+    "score": 110625,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1133,8 +1138,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-27T21:33:45Z",
-    "score": 108323,
+    "publishedAt": "2026-08-28T21:45:32Z",
+    "score": 108334,
     "tags": [
       "Rust",
       "deno",
@@ -1156,8 +1161,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-27T22:12:33Z",
-    "score": 95739,
+    "publishedAt": "2026-08-28T22:13:03Z",
+    "score": 95774,
     "tags": [
       "Rust",
       "bun",
@@ -1189,7 +1194,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-25T04:52:07Z",
-    "score": 94628,
+    "score": 94633,
     "tags": [
       "Java",
       "awesome-list",
@@ -1214,8 +1219,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-27T21:15:47Z",
-    "score": 91847,
+    "publishedAt": "2026-08-28T21:25:50Z",
+    "score": 91933,
     "tags": [
       "Rust",
       "awesome",
@@ -1254,8 +1259,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-27T21:30:04Z",
-    "score": 90746,
+    "publishedAt": "2026-08-28T20:36:05Z",
+    "score": 90852,
     "tags": [
       "Java",
       "docker",
