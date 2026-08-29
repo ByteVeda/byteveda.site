@@ -181,120 +181,20 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:d3219b7c9317",
+    "id": "lobsters:195423eb5765",
     "kind": "article",
-    "source": "mastodon",
-    "title": "PH4NTXM · A session without a past",
-    "url": "https://ph4ntxmofficial.github.io/",
-    "excerpt": "A Linux Live Operating System with a linked identity, network protection that blocks traffic on failure, and a common Nuke shutdown path.",
-    "author": "PH4NTXM :verified:",
-    "publishedAt": "2026-08-28T22:09:08.000Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "How cats.txt showed llms.txt evidence is GEO astrology",
+    "url": "https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence",
+    "excerpt": "26 points · practices, vibecoding",
+    "author": "kaycebasques",
+    "publishedAt": "2026-08-28T13:11:43.147-05:00",
+    "score": 26,
     "tags": [
-      "ph4ntxm",
-      "linux",
-      "debian",
-      "os",
-      "live",
-      "privacy",
-      "security",
-      "opsec",
-      "infosec",
-      "research",
-      "tech",
-      "technology"
-    ],
-    "labels": [
-      "security"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:5b1e37693f0a",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "BEYOND AWARENESS: THE INSURANCE ADOPTION PARADOX IN NIGERIA From Insurance-System Reform to Household Financial Protect…",
-    "url": "https://sundayokekwuinsurance.wordpress.com/2026/08/28/beyond-awareness-the-insurance-adoption-paradox-in-nigeria/",
-    "excerpt": "BEYOND AWARENESS: THE INSURANCE ADOPTION PARADOX IN NIGERIA From Insurance-System Reform to Household Financial Protection: A Protection Conversion Framework for Nigeria and Emerging EconomiesAn Inde…",
-    "author": "SUNDAY OKEKWU",
-    "publishedAt": "2026-08-28T22:05:33.000Z",
-    "score": 8,
-    "tags": [
-      "ai",
-      "artificialintelligence",
-      "finance",
-      "news",
-      "technology"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:a3d0b6531684",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "What are the cool text editors out there? I like to work from the terminal, modal text editing is cool. When I use text…",
-    "url": "https://xoxo.zone/@computergripe/117175162448209978",
-    "excerpt": "What are the cool text editors out there? I like to work from the terminal, modal text editing is cool. When I use text editors professionally/to make money I do pay money to the project. I do not wa…",
-    "author": "Sabrina",
-    "publishedAt": "2026-08-28T21:04:47.000Z",
-    "score": 7,
-    "tags": [
-      "askfedi",
-      "software",
-      "linux"
+      "practices",
+      "vibecoding"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:2c1a4a95d1f1",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with VAD-Free Cascaded ASR–LLM–TTS Pipeline and Micro-Turn Optimization",
-    "url": "https://arxiv.org/html/2603.09180",
-    "excerpt": "I discovered a research paper, I'll try to implement what they demonstrated, and then experiment to make it use as less resource as possible &gt; DuplexCascade: Full-Duplex Speech-to-Speech Dialogue…",
-    "author": "Alex Hoyau",
-    "publishedAt": "2026-08-28T20:55:48.000Z",
-    "score": 9,
-    "tags": [
-      "ai",
-      "learning",
-      "llm",
-      "SLM",
-      "localllm"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:8b3779363c05",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Senior Engineer (Software), Enterprise",
-    "url": "https://jobs.ashbyhq.com/netboxlabs/e3fff69b-ab13-4869-95c5-66d018fc43ae",
-    "excerpt": "NetBox Labs seeks a Senior Software Engineer with strong DevOps experience to build and drive NetBox Enterprise, our on-premises product suite. You'll own installation, configuration, and lifecycle management for our customers, tackle complex technical challenges, proactively address deployment issues unique to on-prem environments, and collaborate closely with high-performing, cross-functional teams.\n\nIn this role you will:\n\n - Design, architect, and implement Kubernetes-based, high-availability (HA) on-premises solutions, including control plane applications, telemetry systems, air-gapped installations, and appliance offerings\n\n - Extend and maintain our Kubernetes operator, the core of how NetBox Enterprise installs, upgrades, and heals itself in customer environments\n\n - Develop and maintain our operational management console and associated tools, ensuring a seamless user experience for lifecycle management\n\n - Architect and implement robust multi-stage CI/CD pipelines using GitHub Actions and complementary DevOps technologies\n\n - Drive releases on our six-week cadence, four weeks of build followed by two weeks of stabilization, including versioning strategy and structured release management\n\n - Write Rust and Python across the stack, from operator internals to internal tooling and APIs\n\n - Build internal tooling and APIs to facilitate integration testing by upstream application teams, validating changes ahead of inclusion in on-premises releases\n\n - Develop comprehensive documentation and establish best practice guidelines for deployments\n\n - Take a weekly turn as Engineering Guardian, fielding questions and escalations from across the organization and working directly with Customer Success and customers to diagnose and resolve deployment and operational issues\n\nRequirements:\n\n - 5+ years in software engineering, platform engineering, or SRE, with proven experience writing robust, maintainable code\n\n - Demonstrated expertise with Kubernetes, Helm charts, and deployment automation, including complex multi-cluster and multi-region deployments\n\n - Hands-on experience building inside an AI-augmented development harness, including Claude Code and the workflows that make agentic tooling reliable\n\n - Strong Python skills for tooling, APIs, and automation\n\n - Hands-on experience with CI/CD systems (GitHub Actions), GitOps delivery (ArgoCD or FluxCD), and infrastructure-as-code (Terraform)\n\n - Strong knowledge of Linux systems, including system administration, troubleshooting, and networking\n\n - Solid understanding of software supply chain security, including vulnerability scanning and CVE management, with tools such as Trivy, Dependabot, and GitHub code scanning\n\n - Comfort working directly with customers to diagnose deployment and operational issues\n\nNice to Haves:\n\n - Rust or Golang programming experience.\n\n - Experience with virtual appliances and air-gapped installations\n\n - Experience deploying applications using Replicated\n\n - Familiarity with networking concepts or distributed system architecture\n\n - 3+ years of experience in a B2B software startup or high-growth organization\n\n - Open-source contributions or project involvement\n\nJoin us at NetBox Labs to shape the future of on-premise infrastructure intelligence and innovation.\n\n\nABOUT NETBOX LABS:\n\nNetBox Labs helps companies build and manage complex networks. We help customers accelerate network automation by delivering open, composable products and supporting the network automation community.\n\nNetBox Labs is the commercial steward of open source NetBox, the world’s most popular network source of truth, and Orb, the next-generation open source network observability platform. Our products include NetBox Enterprise, a fully supported self-managed NetBox with advanced features, and NetBox Cloud, a secure, scalable, and reliable SaaS edition of NetBox.\n\nNetBox powers thousands of companies, and NetBox Labs is backed by investment from Notable Capital (formerly GGV), Grafana Labs CEO Raj Dutt, Flybridge, IBM, Salesforce Ventures, and Mango Capital.\n\n\nOUR CULTURE AND VALUES: \n\n - We own and solve problems with high attention to detail.\n\n - Our open source contributors, users, customers & team are all part of our community. When our community wins, we win.\n\n - We prioritize simplicity and think twice before adding complexity\n\n - Clear communication helps keep our team aligned and collaborating smoothly.\n\nNetBox Labs is proud to be an equal opportunity employer. We believe diverse teams build better software, and we welcome applicants of every race, color, religion, gender identity, sexual orientation, national origin, age, disability, and veteran status. If you need accommodation at any point in the process, just let us know.",
-    "author": "Benjamin Reed",
-    "publishedAt": "2026-08-28T18:05:07.000Z",
-    "score": 6,
-    "tags": [
-      "netbox",
-      "getfedihired",
-      "rust",
-      "python",
-      "kubernetes",
-      "devops",
-      "floss"
-    ],
-    "labels": [
-      "rust",
-      "python",
-      "devops"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -303,10 +203,10 @@
     "source": "lobsters",
     "title": "Yap: a particular kind of slop",
     "url": "https://mckayla.blog/posts/yap.html",
-    "excerpt": "36 points · practices, vibecoding",
+    "excerpt": "50 points · practices, vibecoding",
     "author": "lilac",
     "publishedAt": "2026-08-28T11:35:15.935-05:00",
-    "score": 36,
+    "score": 50,
     "tags": [
       "practices",
       "vibecoding"
@@ -320,11 +220,50 @@
     "source": "lobsters",
     "title": "How I made Rustdoc 33% faster in one week",
     "url": "https://noahlev.org/blog/2026/08/27/making-rustdoc-faster/",
-    "excerpt": "26 points · performance, rust",
+    "excerpt": "32 points · performance, rust",
     "author": "rrampage",
     "publishedAt": "2026-08-28T08:58:44.993-05:00",
-    "score": 26,
+    "score": 32,
     "tags": [
+      "performance",
+      "rust"
+    ],
+    "labels": [
+      "performance",
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:0c4182270836",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/oveaa3/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-08-28T08:03:44.410-05:00",
+    "score": 17,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a5aec7c654c4",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "25x Performance, Three Optimizations",
+    "url": "https://maplant.com/2025-04-20-25x-Performance,-Three-Optimizations.html",
+    "excerpt": "16 points · compilers, lisp, performance, rust",
+    "author": "abhin4v",
+    "publishedAt": "2026-08-28T06:33:14.348-05:00",
+    "score": 16,
+    "tags": [
+      "compilers",
+      "lisp",
       "performance",
       "rust"
     ],
@@ -340,10 +279,10 @@
     "source": "lobsters",
     "title": "Zero-Cost 'Tagless Final' in Rust with GADT-style Enums",
     "url": "https://inferara.com/blog/rust-tagless-final-gadt/",
-    "excerpt": "18 points · rust",
+    "excerpt": "21 points · rust",
     "author": "abhin4v",
     "publishedAt": "2026-08-28T05:51:03.004-05:00",
-    "score": 18,
+    "score": 21,
     "tags": [
       "rust"
     ],
@@ -374,10 +313,10 @@
     "source": "lobsters",
     "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
     "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
-    "excerpt": "29 points · distributed, performance",
+    "excerpt": "31 points · distributed, performance",
     "author": "rmpr",
     "publishedAt": "2026-08-28T01:54:56.659-05:00",
-    "score": 29,
+    "score": 31,
     "tags": [
       "distributed",
       "performance"
@@ -428,10 +367,10 @@
     "source": "lobsters",
     "title": "What happens when a GPU reads memory",
     "url": "https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory",
-    "excerpt": "16 points · graphics, hardware, performance",
+    "excerpt": "17 points · graphics, hardware, performance",
     "author": "eatonphil",
     "publishedAt": "2026-08-27T09:42:03.231-05:00",
-    "score": 16,
+    "score": 17,
     "tags": [
       "graphics",
       "hardware",
@@ -472,7 +411,7 @@
     "excerpt": "Your AI coding agent does exactly what you ask, which isn't always what you mean. NexPath catches vague prompts before they become bugs.",
     "author": "Sarvar Nadaf",
     "publishedAt": "2026-08-27T13:21:53Z",
-    "score": 49,
+    "score": 50,
     "tags": [
       "ai",
       "programming",
@@ -490,15 +429,37 @@
     "source": "lobsters",
     "title": "Announcing our first Maintainers in Residence",
     "url": "https://blog.rust-lang.org/2026/08/26/announcing-our-first-maintainers-in-residence/",
-    "excerpt": "93 points · rust",
+    "excerpt": "94 points · rust",
     "author": "jamesw",
     "publishedAt": "2026-08-27T03:44:13.994-05:00",
-    "score": 93,
+    "score": 94,
     "tags": [
       "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:bbe7d3f4e4c5",
+    "kind": "article",
+    "source": "devto",
+    "title": "The agent posted successfully. To the wrong account.",
+    "url": "https://dev.to/eugeniya_ivanova_4a58eadc/the-agent-posted-successfully-to-the-wrong-account-3kf3",
+    "excerpt": "Back in July I wrote about what it takes to wire an AI agent into social platforms: six OAuth flows,...",
+    "author": "Eugeniya Ivanova",
+    "publishedAt": "2026-08-27T08:31:54Z",
+    "score": 26,
+    "tags": [
+      "ai",
+      "api",
+      "mcp",
+      "webdev"
+    ],
+    "labels": [
+      "ai",
+      "webdev"
     ],
     "mentionsByteveda": false
   },
@@ -511,7 +472,7 @@
     "excerpt": "Two weeks ago I counted 204 guards in my repos and found that 89 % had never been shown they can...",
     "author": "Heinrich Neb",
     "publishedAt": "2026-08-27T04:25:16Z",
-    "score": 26,
+    "score": 27,
     "tags": [
       "ai",
       "agents",
@@ -529,10 +490,10 @@
     "source": "lobsters",
     "title": "If I release it, you won’t get the same experience I get",
     "url": "https://notes.highlysuspect.agency/cant-release-that.html",
-    "excerpt": "38 points · programming",
+    "excerpt": "40 points · programming",
     "author": "artemisSystem",
     "publishedAt": "2026-08-26T22:47:52.263-05:00",
-    "score": 38,
+    "score": 40,
     "tags": [
       "programming"
     ],
@@ -660,10 +621,10 @@
     "source": "lobsters",
     "title": "mold: A Massively Parallel Linker",
     "url": "https://arxiv.org/abs/2608.23228",
-    "excerpt": "77 points · compilers, pdf, performance",
+    "excerpt": "79 points · compilers, pdf, performance",
     "author": "rrampage",
     "publishedAt": "2026-08-26T00:09:52.163-05:00",
-    "score": 77,
+    "score": 79,
     "tags": [
       "compilers",
       "pdf",
@@ -752,15 +713,36 @@
     "source": "lobsters",
     "title": "I stabilized never type",
     "url": "https://blog.ihatereality.space/0C-never-type/",
-    "excerpt": "166 points · rust",
+    "excerpt": "167 points · rust",
     "author": "ettolrach",
     "publishedAt": "2026-08-25T10:11:30.269-05:00",
-    "score": 166,
+    "score": 167,
     "tags": [
       "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:3d933294b7e1",
+    "kind": "article",
+    "source": "devto",
+    "title": "What Do You Do While AI Codes?",
+    "url": "https://dev.to/anchildress1/what-do-you-do-while-ai-codes-k8k",
+    "excerpt": "AI coding agents leave you with 5-to-20-minute gaps all day. Five real ways I fill them — and the one \"quick\" habit that makes you the bottleneck.",
+    "author": "Ashley Childress",
+    "publishedAt": "2026-08-25T13:36:11Z",
+    "score": 113,
+    "tags": [
+      "discuss",
+      "ai",
+      "productivity",
+      "devex"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -773,7 +755,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-26T19:19:56Z",
-    "score": 472300,
+    "score": 472484,
     "tags": [
       "Python",
       "api",
@@ -805,7 +787,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 316763,
+    "score": 316834,
     "tags": [
       "Python",
       "awesome",
@@ -829,7 +811,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 281187,
+    "score": 281210,
     "tags": [
       "Python",
       "beginner-project",
@@ -856,8 +838,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-28T22:08:10Z",
-    "score": 237726,
+    "publishedAt": "2026-08-29T06:53:42Z",
+    "score": 237836,
     "tags": [
       "Python",
       "ai",
@@ -888,8 +870,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-08-28T13:50:15Z",
-    "score": 224079,
+    "publishedAt": "2026-08-29T00:17:23Z",
+    "score": 224084,
     "tags": [
       "Python",
       "algorithm",
@@ -921,7 +903,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-27T23:05:39Z",
-    "score": 187557,
+    "score": 187624,
     "tags": [
       "Python",
       "cli",
@@ -945,8 +927,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-28T19:28:51Z",
-    "score": 186963,
+    "publishedAt": "2026-08-29T04:02:30Z",
+    "score": 186966,
     "tags": [
       "Python",
       "agentic-ai",
@@ -976,7 +958,7 @@
     "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
     "author": "521xueweihan",
     "publishedAt": "2026-08-28T00:38:12Z",
-    "score": 173480,
+    "score": 173511,
     "tags": [
       "Python",
       "awesome",
@@ -998,7 +980,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-28T00:29:46Z",
-    "score": 129921,
+    "score": 129975,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1037,7 +1019,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-28T09:15:42Z",
-    "score": 122061,
+    "score": 122079,
     "tags": [
       "Rust",
       "android",
@@ -1073,8 +1055,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-28T22:11:47Z",
-    "score": 119549,
+    "publishedAt": "2026-08-29T06:06:43Z",
+    "score": 119650,
     "tags": [
       "Rust"
     ],
@@ -1091,8 +1073,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-28T22:06:21Z",
-    "score": 116322,
+    "publishedAt": "2026-08-29T05:19:28Z",
+    "score": 116334,
     "tags": [
       "Rust",
       "compiler",
@@ -1113,7 +1095,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-28T16:18:58Z",
-    "score": 110625,
+    "score": 110634,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1139,7 +1121,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-28T21:45:32Z",
-    "score": 108334,
+    "score": 108339,
     "tags": [
       "Rust",
       "deno",
@@ -1161,8 +1143,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-28T22:13:03Z",
-    "score": 95774,
+    "publishedAt": "2026-08-29T06:59:02Z",
+    "score": 95781,
     "tags": [
       "Rust",
       "bun",
@@ -1194,7 +1176,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-25T04:52:07Z",
-    "score": 94633,
+    "score": 94631,
     "tags": [
       "Java",
       "awesome-list",
@@ -1219,8 +1201,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-28T21:25:50Z",
-    "score": 91933,
+    "publishedAt": "2026-08-29T06:21:38Z",
+    "score": 91951,
     "tags": [
       "Rust",
       "awesome",
@@ -1259,8 +1241,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-28T20:36:05Z",
-    "score": 90852,
+    "publishedAt": "2026-08-29T06:38:44Z",
+    "score": 90874,
     "tags": [
       "Java",
       "docker",
