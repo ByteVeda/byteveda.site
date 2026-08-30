@@ -181,15 +181,147 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:32eef468d64f",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "California lawmakers unanimously pass Linux exemption from age-verification law — software distributed under the GPL, MIT, BSD, and Apache licenses are exempt",
+    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+    "excerpt": "AB 1856 excludes open-source operating systems from the upcoming Digital Age Assurance Act.",
+    "author": "cm0002",
+    "publishedAt": "2026-08-29T20:30:41.359Z",
+    "score": 6,
+    "tags": [
+      "linux"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:48ef56caaea9",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Mamy tu jakiś speców od bootowania kernela? Muszę zainstalować mozliwie najnowszego kernela. Nie wglebiajac sie, licze…",
+    "url": "https://101010.pl/@wloczykij/117180619388327849",
+    "excerpt": "Mamy tu jakiś speców od bootowania kernela? Muszę zainstalować mozliwie najnowszego kernela. Nie wglebiajac sie, licze ze to zmusi virsh do dzialania. Problem w tym, ze kernel wywala \"out of memory\".…",
+    "author": "Włóczykij",
+    "publishedAt": "2026-08-29T20:12:33.000Z",
+    "score": 6,
+    "tags": [
+      "linux",
+      "kernel",
+      "kernelpanic",
+      "outofmemory",
+      "help",
+      "fedihelppl",
+      "fedihelp",
+      "pomocy"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:0f6360e40ab0",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I Wanted an IPv4 Toast and Accidentally Built an IP Service",
+    "url": "https://blog.hofstede.it/i-wanted-an-ipv4-toast-and-accidentally-built-an-ip-service/",
+    "excerpt": "At 10:15 this morning I added a gently condescending toast for IPv4-only visitors to my website. It called ipify, which felt increasingly inappropriate for somebody operating an ASN. Three hours la...",
+    "author": "Larvitz :fedora:",
+    "publishedAt": "2026-08-29T11:46:06.000Z",
+    "score": 6,
+    "tags": [
+      "freebsd",
+      "ipv6",
+      "rust",
+      "selfhosting"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:f084f47d0e91",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "2001:41d0:306:1e23:: — IP address & network information",
+    "url": "https://ip.hofstede.it/",
+    "excerpt": "Your public IP address, network, ASN, and approximate GeoIP location.",
+    "author": "Larvitz :fedora:",
+    "publishedAt": "2026-08-29T10:36:19.000Z",
+    "score": 15,
+    "tags": [
+      "ipv6",
+      "rust",
+      "freebsd",
+      "selfhosting",
+      "as201379"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:6db380c7f6ea",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Parsing the Infamous Japanese Postal CSV (2020)",
+    "url": "https://www.dampfkraft.com/posuto.html",
+    "excerpt": "29 points · programming",
+    "author": "lim",
+    "publishedAt": "2026-08-29T03:10:10.185-05:00",
+    "score": 29,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:0a57116b6d3b",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy",
+    "url": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
+    "excerpt": "15 points · philosophy, practices, vibecoding",
+    "author": "luiz",
+    "publishedAt": "2026-08-29T01:11:18.866-05:00",
+    "score": 15,
+    "tags": [
+      "philosophy",
+      "practices",
+      "vibecoding"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f01e20d67a93",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "GUIs should be fully keyboard-driven",
+    "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+    "excerpt": "27 points · programming",
+    "author": "an_origamian",
+    "publishedAt": "2026-08-28T13:47:26.008-05:00",
+    "score": 27,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:195423eb5765",
     "kind": "article",
     "source": "lobsters",
     "title": "How cats.txt showed llms.txt evidence is GEO astrology",
     "url": "https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence",
-    "excerpt": "26 points · practices, vibecoding",
+    "excerpt": "41 points · practices, vibecoding",
     "author": "kaycebasques",
     "publishedAt": "2026-08-28T13:11:43.147-05:00",
-    "score": 26,
+    "score": 41,
     "tags": [
       "practices",
       "vibecoding"
@@ -203,10 +335,10 @@
     "source": "lobsters",
     "title": "Yap: a particular kind of slop",
     "url": "https://mckayla.blog/posts/yap.html",
-    "excerpt": "50 points · practices, vibecoding",
+    "excerpt": "65 points · practices, vibecoding",
     "author": "lilac",
     "publishedAt": "2026-08-28T11:35:15.935-05:00",
-    "score": 50,
+    "score": 65,
     "tags": [
       "practices",
       "vibecoding"
@@ -215,15 +347,36 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:c53e342066c8",
+    "kind": "article",
+    "source": "devto",
+    "title": "Your AI Remembers Everything and Trusts All of It",
+    "url": "https://dev.to/marcosomma/your-ai-remembers-everything-and-trusts-all-of-it-4gg",
+    "excerpt": "I think we are still talking about AI memory in the wrong way. Most implementations are variations of...",
+    "author": "marcosomma",
+    "publishedAt": "2026-08-28T14:27:09Z",
+    "score": 28,
+    "tags": [
+      "ai",
+      "architecture",
+      "llm",
+      "systemdesign"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:7b93ad620ba1",
     "kind": "article",
     "source": "lobsters",
     "title": "How I made Rustdoc 33% faster in one week",
     "url": "https://noahlev.org/blog/2026/08/27/making-rustdoc-faster/",
-    "excerpt": "32 points · performance, rust",
+    "excerpt": "44 points · performance, rust",
     "author": "rrampage",
     "publishedAt": "2026-08-28T08:58:44.993-05:00",
-    "score": 32,
+    "score": 44,
     "tags": [
       "performance",
       "rust"
@@ -257,10 +410,10 @@
     "source": "lobsters",
     "title": "25x Performance, Three Optimizations",
     "url": "https://maplant.com/2025-04-20-25x-Performance,-Three-Optimizations.html",
-    "excerpt": "16 points · compilers, lisp, performance, rust",
+    "excerpt": "18 points · compilers, lisp, performance, rust",
     "author": "abhin4v",
     "publishedAt": "2026-08-28T06:33:14.348-05:00",
-    "score": 16,
+    "score": 18,
     "tags": [
       "compilers",
       "lisp",
@@ -279,10 +432,10 @@
     "source": "lobsters",
     "title": "Zero-Cost 'Tagless Final' in Rust with GADT-style Enums",
     "url": "https://inferara.com/blog/rust-tagless-final-gadt/",
-    "excerpt": "21 points · rust",
+    "excerpt": "24 points · rust",
     "author": "abhin4v",
     "publishedAt": "2026-08-28T05:51:03.004-05:00",
-    "score": 21,
+    "score": 24,
     "tags": [
       "rust"
     ],
@@ -313,10 +466,10 @@
     "source": "lobsters",
     "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
     "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
-    "excerpt": "31 points · distributed, performance",
+    "excerpt": "40 points · distributed, performance",
     "author": "rmpr",
     "publishedAt": "2026-08-28T01:54:56.659-05:00",
-    "score": 31,
+    "score": 40,
     "tags": [
       "distributed",
       "performance"
@@ -390,7 +543,7 @@
     "excerpt": "Entregar ficou rápido demais. O problema é que manter continuou custando o mesmo preço de sempre. ...",
     "author": "Elves Santos",
     "publishedAt": "2026-08-27T13:58:08Z",
-    "score": 72,
+    "score": 77,
     "tags": [
       "ai",
       "braziliandevs",
@@ -429,10 +582,10 @@
     "source": "lobsters",
     "title": "Announcing our first Maintainers in Residence",
     "url": "https://blog.rust-lang.org/2026/08/26/announcing-our-first-maintainers-in-residence/",
-    "excerpt": "94 points · rust",
+    "excerpt": "95 points · rust",
     "author": "jamesw",
     "publishedAt": "2026-08-27T03:44:13.994-05:00",
-    "score": 94,
+    "score": 95,
     "tags": [
       "rust"
     ],
@@ -472,7 +625,7 @@
     "excerpt": "Two weeks ago I counted 204 guards in my repos and found that 89 % had never been shown they can...",
     "author": "Heinrich Neb",
     "publishedAt": "2026-08-27T04:25:16Z",
-    "score": 27,
+    "score": 31,
     "tags": [
       "ai",
       "agents",
@@ -490,14 +643,37 @@
     "source": "lobsters",
     "title": "If I release it, you won’t get the same experience I get",
     "url": "https://notes.highlysuspect.agency/cant-release-that.html",
-    "excerpt": "40 points · programming",
+    "excerpt": "41 points · programming",
     "author": "artemisSystem",
     "publishedAt": "2026-08-26T22:47:52.263-05:00",
-    "score": 40,
+    "score": 41,
     "tags": [
       "programming"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:aea082a8da46",
+    "kind": "article",
+    "source": "devto",
+    "title": "I Spawned 1000000 Goroutines. Here's Where 13 GB of RAM Went.",
+    "url": "https://dev.to/nazar-boyko/goroutines-are-cheap-their-stacks-arent-4ena",
+    "excerpt": "Ask any Go developer what a goroutine costs and you'll get the same answer with the exact byte count:...",
+    "author": "Nazar Boyko",
+    "publishedAt": "2026-08-27T03:21:04Z",
+    "score": 27,
+    "tags": [
+      "go",
+      "performance",
+      "programming",
+      "webdev"
+    ],
+    "labels": [
+      "go",
+      "performance",
+      "webdev"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -525,7 +701,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who struggles to make game sounds. 😿 Have you used DSA...",
     "author": "nyaomaru",
     "publishedAt": "2026-08-26T14:18:19Z",
-    "score": 48,
+    "score": 68,
     "tags": [
       "typescript",
       "algorithms",
@@ -581,172 +757,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:ec3fa956282b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The Root of The Root of All Evil",
-    "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
-    "excerpt": "81 points · historical, programming, retrocomputing, video",
-    "author": "gingerBill",
-    "publishedAt": "2026-08-26T02:55:34.184-05:00",
-    "score": 81,
-    "tags": [
-      "historical",
-      "programming",
-      "retrocomputing",
-      "video"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:65a8f3d6bc3c",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Using TypeScript to Obtain One of the Rarest License Plates (2025)",
-    "url": "https://www.jack.bio/blog/licenseplate",
-    "excerpt": "22 points · programming",
-    "author": "indigo",
-    "publishedAt": "2026-08-26T01:00:12.856-05:00",
-    "score": 22,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:3fd5e8ff2cf3",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "mold: A Massively Parallel Linker",
-    "url": "https://arxiv.org/abs/2608.23228",
-    "excerpt": "79 points · compilers, pdf, performance",
-    "author": "rrampage",
-    "publishedAt": "2026-08-26T00:09:52.163-05:00",
-    "score": 79,
-    "tags": [
-      "compilers",
-      "pdf",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:5309d9655463",
-    "kind": "article",
-    "source": "rss",
-    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-    "url": "https://huggingface.co/blog/train-multi-vector-encoder",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:3ff5f1f57f40",
-    "kind": "article",
-    "source": "rss",
-    "title": "How to evaluate LLMs before production",
-    "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
-    "excerpt": "A language model can perform well on a clean benchmark and still struggle with the cases that matter in production. Benchmarks and curated datasets are useful when prototyping an LLM-based system. Th…",
-    "author": "Mariko Wakabayashi",
-    "publishedAt": "2026-08-25T21:35:11.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:da2d3de4084e",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The Move to Python 3 Begins",
-    "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
-    "excerpt": "152 points · python",
-    "author": "rmpr",
-    "publishedAt": "2026-08-25T11:52:46.126-05:00",
-    "score": 152,
-    "tags": [
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:74043a2c13e4",
-    "kind": "article",
-    "source": "rss",
-    "title": "Granite 4.2 LLMs: How They're Built",
-    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-08-25T15:14:14.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:4f76bdaa8346",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "I stabilized never type",
-    "url": "https://blog.ihatereality.space/0C-never-type/",
-    "excerpt": "167 points · rust",
-    "author": "ettolrach",
-    "publishedAt": "2026-08-25T10:11:30.269-05:00",
-    "score": 167,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:3d933294b7e1",
-    "kind": "article",
-    "source": "devto",
-    "title": "What Do You Do While AI Codes?",
-    "url": "https://dev.to/anchildress1/what-do-you-do-while-ai-codes-k8k",
-    "excerpt": "AI coding agents leave you with 5-to-20-minute gaps all day. Five real ways I fill them — and the one \"quick\" habit that makes you the bottleneck.",
-    "author": "Ashley Childress",
-    "publishedAt": "2026-08-25T13:36:11Z",
-    "score": 113,
-    "tags": [
-      "discuss",
-      "ai",
-      "productivity",
-      "devex"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -755,7 +765,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-26T19:19:56Z",
-    "score": 472484,
+    "score": 472759,
     "tags": [
       "Python",
       "api",
@@ -779,6 +789,29 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:d353474e3996",
+    "kind": "trending",
+    "source": "github",
+    "title": "EbookFoundation/free-programming-books",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "excerpt": ":books: Freely available programming books",
+    "author": "EbookFoundation",
+    "publishedAt": "2026-08-29T12:26:19Z",
+    "score": 395541,
+    "tags": [
+      "Python",
+      "books",
+      "education",
+      "hacktoberfest",
+      "list",
+      "resource"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:03bcb55f8165",
     "kind": "trending",
     "source": "github",
@@ -787,7 +820,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 316834,
+    "score": 317005,
     "tags": [
       "Python",
       "awesome",
@@ -811,7 +844,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 281210,
+    "score": 281274,
     "tags": [
       "Python",
       "beginner-project",
@@ -838,8 +871,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-29T06:53:42Z",
-    "score": 237836,
+    "publishedAt": "2026-08-29T18:04:52Z",
+    "score": 238081,
     "tags": [
       "Python",
       "ai",
@@ -871,7 +904,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-29T00:17:23Z",
-    "score": 224084,
+    "score": 224110,
     "tags": [
       "Python",
       "algorithm",
@@ -903,7 +936,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-27T23:05:39Z",
-    "score": 187624,
+    "score": 187742,
     "tags": [
       "Python",
       "cli",
@@ -927,8 +960,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-29T04:02:30Z",
-    "score": 186966,
+    "publishedAt": "2026-08-29T19:10:02Z",
+    "score": 186989,
     "tags": [
       "Python",
       "agentic-ai",
@@ -950,28 +983,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:e40b322bc1b1",
-    "kind": "trending",
-    "source": "github",
-    "title": "521xueweihan/HelloGitHub",
-    "url": "https://github.com/521xueweihan/HelloGitHub",
-    "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
-    "author": "521xueweihan",
-    "publishedAt": "2026-08-28T00:38:12Z",
-    "score": 173511,
-    "tags": [
-      "Python",
-      "awesome",
-      "github",
-      "hellogithub",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:f0f9a9d19b4d",
     "kind": "trending",
     "source": "github",
@@ -979,8 +990,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-28T00:29:46Z",
-    "score": 129975,
+    "publishedAt": "2026-08-29T14:55:03Z",
+    "score": 130085,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1019,7 +1030,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-28T09:15:42Z",
-    "score": 122079,
+    "score": 122111,
     "tags": [
       "Rust",
       "android",
@@ -1055,8 +1066,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-29T06:06:43Z",
-    "score": 119650,
+    "publishedAt": "2026-08-29T20:48:57Z",
+    "score": 119790,
     "tags": [
       "Rust"
     ],
@@ -1073,8 +1084,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-29T05:19:28Z",
-    "score": 116334,
+    "publishedAt": "2026-08-29T20:18:38Z",
+    "score": 116626,
     "tags": [
       "Rust",
       "compiler",
@@ -1095,7 +1106,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-28T16:18:58Z",
-    "score": 110634,
+    "score": 110644,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1120,8 +1131,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-08-28T21:45:32Z",
-    "score": 108339,
+    "publishedAt": "2026-08-29T19:17:00Z",
+    "score": 108340,
     "tags": [
       "Rust",
       "deno",
@@ -1143,8 +1154,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-29T06:59:02Z",
-    "score": 95781,
+    "publishedAt": "2026-08-29T20:33:17Z",
+    "score": 95793,
     "tags": [
       "Rust",
       "bun",
@@ -1176,7 +1187,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-25T04:52:07Z",
-    "score": 94631,
+    "score": 94634,
     "tags": [
       "Java",
       "awesome-list",
@@ -1201,8 +1212,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-29T06:21:38Z",
-    "score": 91951,
+    "publishedAt": "2026-08-29T18:15:57Z",
+    "score": 92020,
     "tags": [
       "Rust",
       "awesome",
@@ -1241,8 +1252,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-29T06:38:44Z",
-    "score": 90874,
+    "publishedAt": "2026-08-29T20:15:23Z",
+    "score": 90904,
     "tags": [
       "Java",
       "docker",
