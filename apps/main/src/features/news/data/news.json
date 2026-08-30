@@ -181,84 +181,64 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:32eef468d64f",
+    "id": "mastodon:61f68a0ed790",
     "kind": "article",
     "source": "mastodon",
-    "title": "California lawmakers unanimously pass Linux exemption from age-verification law — software distributed under the GPL, MIT, BSD, and Apache licenses are exempt",
-    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
-    "excerpt": "AB 1856 excludes open-source operating systems from the upcoming Digital Age Assurance Act.",
-    "author": "cm0002",
-    "publishedAt": "2026-08-29T20:30:41.359Z",
-    "score": 6,
+    "title": "I am exceptionally disappointed in the centrist decision taken by # Debian on LLM usage. I'll be halting any work I do…",
+    "url": "https://aus.social/@voltagex/117182740979062864",
+    "excerpt": "I am exceptionally disappointed in the centrist decision taken by # Debian on LLM usage. I'll be halting any work I do that might benefit Debian, including reporting bugs. I have used Debian since at…",
+    "author": "Adam ♿",
+    "publishedAt": "2026-08-30T05:12:06.000Z",
+    "score": 5,
     "tags": [
+      "debian",
       "linux"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:48ef56caaea9",
+    "id": "mastodon:0372e990e2d5",
     "kind": "article",
     "source": "mastodon",
-    "title": "Mamy tu jakiś speców od bootowania kernela? Muszę zainstalować mozliwie najnowszego kernela. Nie wglebiajac sie, licze…",
-    "url": "https://101010.pl/@wloczykij/117180619388327849",
-    "excerpt": "Mamy tu jakiś speców od bootowania kernela? Muszę zainstalować mozliwie najnowszego kernela. Nie wglebiajac sie, licze ze to zmusi virsh do dzialania. Problem w tym, ze kernel wywala \"out of memory\".…",
-    "author": "Włóczykij",
-    "publishedAt": "2026-08-29T20:12:33.000Z",
-    "score": 6,
+    "title": "# openSUSE .Asia Summit 2026 kicks off Oct 3-4! Two days packed with talks on # security , # containers , # AI , and #…",
+    "url": "https://fosstodon.org/@opensuse/117182234548716296",
+    "excerpt": "# openSUSE .Asia Summit 2026 kicks off Oct 3-4! Two days packed with talks on # security , # containers , # AI , and # community . Who&#39;s ready? # openSUSEAsia # OpenSource https:// events.opensus…",
+    "author": "openSUSE Linux",
+    "publishedAt": "2026-08-30T03:03:18.853Z",
+    "score": 7,
     "tags": [
-      "linux",
-      "kernel",
-      "kernelpanic",
-      "outofmemory",
-      "help",
-      "fedihelppl",
-      "fedihelp",
-      "pomocy"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:0f6360e40ab0",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I Wanted an IPv4 Toast and Accidentally Built an IP Service",
-    "url": "https://blog.hofstede.it/i-wanted-an-ipv4-toast-and-accidentally-built-an-ip-service/",
-    "excerpt": "At 10:15 this morning I added a gently condescending toast for IPv4-only visitors to my website. It called ipify, which felt increasingly inappropriate for somebody operating an ASN. Three hours la...",
-    "author": "Larvitz :fedora:",
-    "publishedAt": "2026-08-29T11:46:06.000Z",
-    "score": 6,
-    "tags": [
-      "freebsd",
-      "ipv6",
-      "rust",
-      "selfhosting"
+      "opensuse",
+      "security",
+      "containers",
+      "ai",
+      "community",
+      "opensuseasia",
+      "opensource"
     ],
     "labels": [
-      "rust"
+      "security",
+      "ai",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:f084f47d0e91",
+    "id": "mastodon:251c0a71971d",
     "kind": "article",
     "source": "mastodon",
-    "title": "2001:41d0:306:1e23:: — IP address & network information",
-    "url": "https://ip.hofstede.it/",
-    "excerpt": "Your public IP address, network, ASN, and approximate GeoIP location.",
-    "author": "Larvitz :fedora:",
-    "publishedAt": "2026-08-29T10:36:19.000Z",
-    "score": 15,
+    "title": "It's been a while since i published a new # Python tool but here is a fresh one i am increasingly using myself \"srcloc\"…",
+    "url": "https://chaos.social/@hpk/117181392153684004",
+    "excerpt": "It's been a while since i published a new # Python tool but here is a fresh one i am increasingly using myself \"srcloc\":. It's for those of us working with source trees, git and testing and care abou…",
+    "author": "holga",
+    "publishedAt": "2026-08-29T23:29:04.000Z",
+    "score": 5,
     "tags": [
-      "ipv6",
-      "rust",
-      "freebsd",
-      "selfhosting",
-      "as201379"
+      "python",
+      "pytest"
     ],
     "labels": [
-      "rust"
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -268,10 +248,10 @@
     "source": "lobsters",
     "title": "Parsing the Infamous Japanese Postal CSV (2020)",
     "url": "https://www.dampfkraft.com/posuto.html",
-    "excerpt": "29 points · programming",
+    "excerpt": "34 points · programming",
     "author": "lim",
     "publishedAt": "2026-08-29T03:10:10.185-05:00",
-    "score": 29,
+    "score": 34,
     "tags": [
       "programming"
     ],
@@ -284,14 +264,31 @@
     "source": "lobsters",
     "title": "I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy",
     "url": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
-    "excerpt": "15 points · philosophy, practices, vibecoding",
+    "excerpt": "21 points · philosophy, practices, vibecoding",
     "author": "luiz",
     "publishedAt": "2026-08-29T01:11:18.866-05:00",
-    "score": 15,
+    "score": 21,
     "tags": [
       "philosophy",
       "practices",
       "vibecoding"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f05afe822fe9",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Any true alternatives to electron JavaScript?",
+    "url": "https://lobste.rs/s/vji9aj/any_true_alternatives_electron",
+    "excerpt": "I see companies having codebase in Tauri going back to electron - is this a common thing?",
+    "author": "dhruvp",
+    "publishedAt": "2026-08-28T22:11:59.669-05:00",
+    "score": 15,
+    "tags": [
+      "ask",
+      "programming"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -302,10 +299,10 @@
     "source": "lobsters",
     "title": "GUIs should be fully keyboard-driven",
     "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-    "excerpt": "27 points · programming",
+    "excerpt": "31 points · programming",
     "author": "an_origamian",
     "publishedAt": "2026-08-28T13:47:26.008-05:00",
-    "score": 27,
+    "score": 31,
     "tags": [
       "programming"
     ],
@@ -318,10 +315,10 @@
     "source": "lobsters",
     "title": "How cats.txt showed llms.txt evidence is GEO astrology",
     "url": "https://markwilliamscook.substack.com/p/how-catstxt-showed-llmstxt-evidence",
-    "excerpt": "41 points · practices, vibecoding",
+    "excerpt": "45 points · practices, vibecoding",
     "author": "kaycebasques",
     "publishedAt": "2026-08-28T13:11:43.147-05:00",
-    "score": 41,
+    "score": 45,
     "tags": [
       "practices",
       "vibecoding"
@@ -335,10 +332,10 @@
     "source": "lobsters",
     "title": "Yap: a particular kind of slop",
     "url": "https://mckayla.blog/posts/yap.html",
-    "excerpt": "65 points · practices, vibecoding",
+    "excerpt": "72 points · practices, vibecoding",
     "author": "lilac",
     "publishedAt": "2026-08-28T11:35:15.935-05:00",
-    "score": 65,
+    "score": 72,
     "tags": [
       "practices",
       "vibecoding"
@@ -355,7 +352,7 @@
     "excerpt": "I think we are still talking about AI memory in the wrong way. Most implementations are variations of...",
     "author": "marcosomma",
     "publishedAt": "2026-08-28T14:27:09Z",
-    "score": 28,
+    "score": 30,
     "tags": [
       "ai",
       "architecture",
@@ -373,10 +370,10 @@
     "source": "lobsters",
     "title": "How I made Rustdoc 33% faster in one week",
     "url": "https://noahlev.org/blog/2026/08/27/making-rustdoc-faster/",
-    "excerpt": "44 points · performance, rust",
+    "excerpt": "48 points · performance, rust",
     "author": "rrampage",
     "publishedAt": "2026-08-28T08:58:44.993-05:00",
-    "score": 44,
+    "score": 48,
     "tags": [
       "performance",
       "rust"
@@ -466,10 +463,10 @@
     "source": "lobsters",
     "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
     "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
-    "excerpt": "40 points · distributed, performance",
+    "excerpt": "41 points · distributed, performance",
     "author": "rmpr",
     "publishedAt": "2026-08-28T01:54:56.659-05:00",
-    "score": 40,
+    "score": 41,
     "tags": [
       "distributed",
       "performance"
@@ -662,7 +659,7 @@
     "excerpt": "Ask any Go developer what a goroutine costs and you'll get the same answer with the exact byte count:...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-08-27T03:21:04Z",
-    "score": 27,
+    "score": 28,
     "tags": [
       "go",
       "performance",
@@ -765,7 +762,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-26T19:19:56Z",
-    "score": 472759,
+    "score": 472883,
     "tags": [
       "Python",
       "api",
@@ -797,7 +794,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-29T12:26:19Z",
-    "score": 395541,
+    "score": 395553,
     "tags": [
       "Python",
       "books",
@@ -820,7 +817,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 317005,
+    "score": 317054,
     "tags": [
       "Python",
       "awesome",
@@ -844,7 +841,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 281274,
+    "score": 281281,
     "tags": [
       "Python",
       "beginner-project",
@@ -871,8 +868,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-29T18:04:52Z",
-    "score": 238081,
+    "publishedAt": "2026-08-30T05:09:48Z",
+    "score": 238207,
     "tags": [
       "Python",
       "ai",
@@ -904,7 +901,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-08-29T00:17:23Z",
-    "score": 224110,
+    "score": 224117,
     "tags": [
       "Python",
       "algorithm",
@@ -935,8 +932,8 @@
     "url": "https://github.com/yt-dlp/yt-dlp",
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
-    "publishedAt": "2026-08-27T23:05:39Z",
-    "score": 187742,
+    "publishedAt": "2026-08-29T23:22:48Z",
+    "score": 187789,
     "tags": [
       "Python",
       "cli",
@@ -960,8 +957,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-29T19:10:02Z",
-    "score": 186989,
+    "publishedAt": "2026-08-29T22:58:45Z",
+    "score": 186994,
     "tags": [
       "Python",
       "agentic-ai",
@@ -991,7 +988,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-08-29T14:55:03Z",
-    "score": 130085,
+    "score": 130109,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1030,7 +1027,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-28T09:15:42Z",
-    "score": 122111,
+    "score": 122118,
     "tags": [
       "Rust",
       "android",
@@ -1066,8 +1063,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-29T20:48:57Z",
-    "score": 119790,
+    "publishedAt": "2026-08-30T05:06:00Z",
+    "score": 119877,
     "tags": [
       "Rust"
     ],
@@ -1084,8 +1081,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-29T20:18:38Z",
-    "score": 116626,
+    "publishedAt": "2026-08-30T02:42:42Z",
+    "score": 116635,
     "tags": [
       "Rust",
       "compiler",
@@ -1106,7 +1103,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-28T16:18:58Z",
-    "score": 110644,
+    "score": 110658,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1132,7 +1129,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-29T19:17:00Z",
-    "score": 108340,
+    "score": 108342,
     "tags": [
       "Rust",
       "deno",
@@ -1154,8 +1151,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-29T20:33:17Z",
-    "score": 95793,
+    "publishedAt": "2026-08-30T05:13:31Z",
+    "score": 95799,
     "tags": [
       "Rust",
       "bun",
@@ -1212,8 +1209,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-29T18:15:57Z",
-    "score": 92020,
+    "publishedAt": "2026-08-30T00:43:33Z",
+    "score": 92042,
     "tags": [
       "Rust",
       "awesome",
@@ -1252,8 +1249,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-29T20:15:23Z",
-    "score": 90904,
+    "publishedAt": "2026-08-29T23:06:31Z",
+    "score": 90921,
     "tags": [
       "Java",
       "docker",
