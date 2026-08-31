@@ -181,74 +181,25 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:34433e7cb339",
+    "id": "mastodon:7677bc6e8f02",
     "kind": "article",
     "source": "mastodon",
-    "title": "WHY DOES A MORE CAPABLE INSURANCE ECOSYSTEM NOT AUTOMATICALLY PRODUCE A MORE PROTECTED POPULATION? Examining the Insura…",
-    "url": "https://sundayokekwuinsurance.wordpress.com/2026/08/30/why-does-a-more-capable-insurance-ecosystem-not-automatically-produce-a-more-protected-population/",
-    "excerpt": "WHY DOES A MORE CAPABLE INSURANCE ECOSYSTEM NOT AUTOMATICALLY PRODUCE A MORE PROTECTED POPULATION? Examining the Insurance Capability–Protection Translation Gap in NigeriaResearch Article | Conceptua…",
-    "author": "SUNDAY OKEKWU",
-    "publishedAt": "2026-08-30T20:57:08.000Z",
-    "score": 9,
-    "tags": [
-      "ai",
-      "artificialintelligence",
-      "business",
-      "news",
-      "technology"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:537280355688",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Another Chinese rocket explodes!  This one is far more dangerous!",
-    "url": "https://youtu.be/4RpA__Ks_7Y",
-    "excerpt": "Chinese Space Debris? The Angry Astronaut admitted that he talks about space debris too much… I am glad someone is reporting on China’s neglect of public space/orbit. It’s called Earth Orbit, not one…",
-    "author": "The New Mars",
-    "publishedAt": "2026-08-30T20:49:55.000Z",
-    "score": 15,
-    "tags": [
-      "adr",
-      "debris",
-      "earth",
-      "esa",
-      "leolabs",
-      "orbit",
-      "orbital",
-      "angryastronuat",
-      "astroangry",
-      "theangryastronaut",
-      "ai",
-      "china",
-      "kesslersyndrome",
-      "nasa",
-      "science",
-      "space",
-      "technology"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:8c5c22721244",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "California lawmakers unanimously pass Linux exemption from age-verification law — software distributed under the GPL, MIT, BSD, and Apache licenses are exempt",
-    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
-    "excerpt": "AB 1856 excludes open-source operating systems from the upcoming Digital Age Assurance Act.",
-    "author": "Kevin Dominik Korte",
-    "publishedAt": "2026-08-30T20:45:57.143Z",
+    "title": "Microsoft 365 und Google Workspace: Europäische Alternativen im Überblick",
+    "url": "https://www.heise.de/tests/Microsoft-365-und-Google-Workspace-Europaeische-Alternativen-im-Ueberblick-11364523.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege&utm_source=mastodon",
+    "excerpt": "Ein Leben ohne Microsoft 365 oder Google Workspace? Was nach digitaler Askese klingt, ist dank Open Source und alternativer Anbieter längst eine Option.",
+    "author": "c't Magazin",
+    "publishedAt": "2026-08-31T05:04:04.000Z",
     "score": 6,
     "tags": [
+      "datenschutz",
+      "digitalesouveranitat",
+      "it",
+      "itinfrastruktur",
+      "microsoft",
+      "microsoftoffice",
+      "nextcloud",
       "opensource",
-      "ageverification"
+      "news"
     ],
     "labels": [
       "opensource"
@@ -256,224 +207,107 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:05238e1f4e3e",
+    "id": "mastodon:ca1f81b0e85a",
     "kind": "article",
     "source": "mastodon",
-    "title": "[packman] 25 Jahre Packman – und nun? // Packman at 25 – where do we go from here?",
-    "url": "https://lists.links2linux.de/pipermail/packman/2026-August/018314.html",
-    "excerpt": "Packman to be discontinued? From the mailing: After 25 years, the time has come for us to hand over the Packman project. If no one is found who wishes to continue Packman, we will discontinue the pro…",
-    "author": "nixCraft 🐧",
-    "publishedAt": "2026-08-30T20:28:46.000Z",
-    "score": 8,
+    "title": "Linux 7.3-rc1 - Linus Torvalds",
+    "url": "https://lore.kernel.org/all/CAHk-=wjpN3XkKU+JX6zoh_bzJXr1aPYN4FY14UX0z7yCidosPQ@mail.gmail.com/",
+    "excerpt": "# Linux 7.3-rc1 is out: https:// lore.kernel.org/all/CAHk-%3Dwj pN3XkKU%2BJX6zoh_bzJXr1aPYN4FY14UX0z7yCidosPQ@mail.gmail.com/ \"\"Two weeks have passed, it's Sunday afternoon, and the merge window has…",
+    "author": "Thorsten Leemhuis (acct. 1/4)",
+    "publishedAt": "2026-08-31T04:13:49.000Z",
+    "score": 5,
     "tags": [
-      "linux"
+      "linux",
+      "linuxkernel",
+      "kernel"
     ],
     "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:7f0d15ded8da",
+    "id": "mastodon:2fd948cb2abe",
     "kind": "article",
     "source": "mastodon",
-    "title": "RE: https:// aus.social/@Robinzz3/117160234 767234810 Yeah, attacks like this are not hurting the Tech Bros. As for the…",
-    "url": "https://caneandable.social/@WeirdWriter/117186335458387788",
-    "excerpt": "RE: https:// aus.social/@Robinzz3/117160234 767234810 Yeah, attacks like this are not hurting the Tech Bros. As for the cliff notes version about how I view large language models as a disabled person…",
-    "author": "Robert Kingett",
-    "publishedAt": "2026-08-30T20:26:13.000Z",
-    "score": 6,
+    "title": "[Previous Contributors Response Needed] Transition python-zeroconf to the Apache-2.0 License · Issue #1835 · python-zeroconf/python-zeroconf",
+    "url": "https://github.com/python-zeroconf/python-zeroconf/issues/1835",
+    "excerpt": "Why python-zeroconf sits under a long list of Python projects. #1123 asked for a permissive license in 2023, and the same request has reached me many times since, mostly in private conversations wi...",
+    "author": "Jesus Michał von Gentoo 🏔 (he)",
+    "publishedAt": "2026-08-31T03:47:03.000Z",
+    "score": 16,
     "tags": [
+      "python",
+      "lgpl",
       "ai",
-      "llm"
+      "copywashing",
+      "copyleft"
     ],
     "labels": [
+      "python",
       "ai"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:a25013e62f1b",
+    "id": "mastodon:4575d29b41cc",
     "kind": "article",
     "source": "mastodon",
-    "title": "Depuis 13 ans, @ KernelRecipes est la conférence technique sur le noyau Linux en France. Nous avons invité @ ennael , c…",
-    "url": "https://piaille.fr/@projetslibres_podcast/117186287902780552",
-    "excerpt": "Depuis 13 ans, @ KernelRecipes est la conférence technique sur le noyau Linux en France. Nous avons invité @ ennael , créatrice de l'évènement, pour raconter l'histoire de Kernel Recipes, de son idée…",
-    "author": "Podcast Projets libres",
-    "publishedAt": "2026-08-30T20:14:08.000Z",
-    "score": 12,
-    "tags": [
-      "podcast",
-      "opensource",
-      "kernel",
-      "linux",
-      "conference",
-      "france",
-      "kr2026"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:b6e83173d8fe",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Die Pebble Round 2 werde ich mir auf dem Blog genauer ansehen. Das Konzept aus E-Paper, langer Akkulaufzeit und PebbleO…",
-    "url": "https://social.tchncs.de/@kuketzblog/117186281523753265",
-    "excerpt": "Die Pebble Round 2 werde ich mir auf dem Blog genauer ansehen. Das Konzept aus E-Paper, langer Akkulaufzeit und PebbleOS wirkt angenehm reduziert - genau deshalb bin ich gespannt, wie sich die Uhr im…",
-    "author": "Kuketz-Blog 🛡",
-    "publishedAt": "2026-08-30T20:12:30.000Z",
-    "score": 8,
-    "tags": [
-      "pebble",
-      "pebbleround2",
-      "smartwatch",
-      "opensource"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:9dd55fdd5be4",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "New # introduction toot, since I switched instances: I'm Mike. He/him, il/lui. I live on unceded and unsurrendered Wola…",
-    "url": "https://hachyderm.io/@trike/117186180515696641",
-    "excerpt": "New # introduction toot, since I switched instances: I'm Mike. He/him, il/lui. I live on unceded and unsurrendered Wolastoqey territory. I have # adhd . I'm a # technicalwriter , and I code a little…",
-    "author": "Trike Homard",
-    "publishedAt": "2026-08-30T19:46:49.000Z",
+    "title": "Senior MTS - SRE at Aviatrix",
+    "url": "https://jobsfordevelopers.com/jobs/senior-mts-sre-at-aviatrix-com-aug-5-2026-466410?utm_source=mastodon.world&utm_medium=social&utm_campaign=posting",
+    "excerpt": "Aviatrix is hiring Senior MTS - SRE",
+    "author": "Jobs for Developers",
+    "publishedAt": "2026-08-31T00:06:01.000Z",
     "score": 5,
     "tags": [
-      "introduction",
-      "adhd",
-      "technicalwriter",
+      "golang",
       "python",
-      "dnd",
-      "bass",
-      "hiking",
-      "linux",
-      "dogs",
-      "reading",
-      "history"
+      "kubernetes",
+      "terraform",
+      "seniorengineer",
+      "jobalert",
+      "jobsearch",
+      "hiring"
     ],
     "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:ac64d293fe01",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "GNU Emacs people who write Python using venvs, what's the state of the art for getting linters, LSP servers, and so on…",
-    "url": "https://mastodon.social/@cks/117186120032794520",
-    "excerpt": "GNU Emacs people who write Python using venvs, what's the state of the art for getting linters, LSP servers, and so on started with the right paths/etc set up for a particular project's venv? Is it (…",
-    "author": "Chris Siebenmann",
-    "publishedAt": "2026-08-30T19:31:26.000Z",
-    "score": 5,
-    "tags": [
-      "emacs",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:777d6ba67c99",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Moved my 354 GB from Google Photos to Proton Photos a few weeks ago - but I lost the one thing I took for granted: sear…",
-    "url": "https://techhub.social/@mmornati/117185758071052913",
-    "excerpt": "Moved my 354 GB from Google Photos to Proton Photos a few weeks ago - but I lost the one thing I took for granted: search. Proton Photos is end-to-end encrypted. Proton literally cannot see your phot…",
-    "author": "Marco Mornati :ve:",
-    "publishedAt": "2026-08-30T17:59:23.000Z",
-    "score": 5,
-    "tags": [
-      "protonphotos",
-      "privacy",
-      "selfhosted",
-      "opensource",
-      "machinelearning",
-      "clip",
-      "foss",
-      "docker"
-    ],
-    "labels": [
-      "opensource",
-      "ml",
+      "go",
+      "python",
       "devops"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:04bd12a79c03",
+    "id": "mastodon:c224fb1bdf10",
     "kind": "article",
     "source": "mastodon",
-    "title": "I heard about Needle 2 and obviously had to test it immediately! Needle 2 is not a traditional LLM like the models you…",
-    "url": "https://pixelfed.social/p/sheepfreak/999723197338574111",
-    "excerpt": "I heard about Needle 2 and obviously had to test it immediately! Needle 2 is not a traditional LLM like the models you would normally run with Ollama. Instead, it uses a Simple Attention Network (SAN…",
-    "author": "PsychoticSheep",
-    "publishedAt": "2026-08-30T17:03:04.000Z",
-    "score": 7,
+    "title": "Release Notes - zizmor",
+    "url": "https://docs.zizmor.sh/release-notes/#1300",
+    "excerpt": "Abbreviated change notes about each zizmor release.",
+    "author": "yossarian",
+    "publishedAt": "2026-08-30T21:30:21.000Z",
+    "score": 10,
     "tags": [
-      "computing",
-      "opensource",
-      "linux",
-      "python",
-      "tech",
-      "foss",
-      "privacy",
-      "ai",
-      "retrocomputing",
-      "machinelearning",
-      "san",
-      "upcycling",
-      "selfhosting",
-      "linuxdesktop",
-      "needle",
-      "airesearch",
-      "oldhardware",
-      "EdgeAI",
-      "opensourceai",
-      "localllm",
-      "aiagents",
-      "ollama",
-      "tinyai",
-      "localai",
-      "agenticai",
-      "toolcalling",
-      "artificialtelligence",
-      "needle2",
-      "simpleattentionnetwork"
+      "rust",
+      "opensource"
     ],
     "labels": [
-      "opensource",
-      "python",
-      "ai"
+      "rust",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:c178b5dd85a6",
+    "id": "lobsters:0526e82e2f93",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Rustdoc: F*** it I'm helping. | ThierryBerger",
-    "url": "https://thierryberger.com/blog/rustdoc-contribution/",
-    "excerpt": "Who else?",
-    "author": "Guillaume Gomez",
-    "publishedAt": "2026-08-30T15:01:33.000Z",
-    "score": 15,
+    "source": "lobsters",
+    "title": "Automating immersive reading",
+    "url": "https://smoores.dev/post/automating_immersive_reading/",
+    "excerpt": "16 points · programming",
+    "author": "smoores",
+    "publishedAt": "2026-08-30T06:54:38.431-05:00",
+    "score": 16,
     "tags": [
-      "rust",
-      "rustlang"
+      "programming"
     ],
-    "labels": [
-      "rust"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -482,10 +316,10 @@
     "source": "lobsters",
     "title": "Rust Function Overloading - Call for Experimentation",
     "url": "https://blog.rust-lang.org/inside-rust/2026/08/19/overloading-experiment/",
-    "excerpt": "28 points · rust",
+    "excerpt": "36 points · rust",
     "author": "madsmtm",
     "publishedAt": "2026-08-30T04:39:06.983-05:00",
-    "score": 28,
+    "score": 36,
     "tags": [
       "rust"
     ],
@@ -500,10 +334,10 @@
     "source": "lobsters",
     "title": "Gram Editor 3.3.0 Released",
     "url": "https://gram-editor.com/posts/release-3.3.0/",
-    "excerpt": "55 points · editors, release, rust",
+    "excerpt": "62 points · editors, release, rust",
     "author": "patchunwrap",
     "publishedAt": "2026-08-30T03:50:36.845-05:00",
-    "score": 55,
+    "score": 62,
     "tags": [
       "editors",
       "release",
@@ -520,10 +354,10 @@
     "source": "lobsters",
     "title": "Bug blindness",
     "url": "https://danluu.com/bug-blind/",
-    "excerpt": "27 points · practices",
+    "excerpt": "33 points · practices",
     "author": "nolan",
     "publishedAt": "2026-08-29T20:34:27.794-05:00",
-    "score": 27,
+    "score": 33,
     "tags": [
       "practices"
     ],
@@ -536,10 +370,10 @@
     "source": "lobsters",
     "title": "Functional State Machines in Rust: Typestate and Newtype Patterns",
     "url": "https://dl.acm.org/doi/epdf/10.1145/3830438.3830958",
-    "excerpt": "21 points · rust",
+    "excerpt": "22 points · rust",
     "author": "anex9d",
     "publishedAt": "2026-08-29T16:59:35.366-05:00",
-    "score": 21,
+    "score": 22,
     "tags": [
       "rust"
     ],
@@ -557,7 +391,7 @@
     "excerpt": "Every AI redesign of my portfolio looked different and was the same filing cabinet underneath. What a style guide couldn't fix — and the one instruction that did.",
     "author": "Ashley Childress",
     "publishedAt": "2026-08-29T16:28:50Z",
-    "score": 32,
+    "score": 33,
     "tags": [
       "ai",
       "webdev",
@@ -576,10 +410,10 @@
     "source": "lobsters",
     "title": "Parsing the Infamous Japanese Postal CSV (2020)",
     "url": "https://www.dampfkraft.com/posuto.html",
-    "excerpt": "44 points · programming",
+    "excerpt": "45 points · programming",
     "author": "lim",
     "publishedAt": "2026-08-29T03:10:10.185-05:00",
-    "score": 44,
+    "score": 45,
     "tags": [
       "programming"
     ],
@@ -592,10 +426,10 @@
     "source": "lobsters",
     "title": "I naively tried vibe-coding a memory tool for agents and stared into the abyss of unsolved problems in philosophy",
     "url": "https://arbustoemchamas.substack.com/p/i-naively-tried-vibe-coding-a-memory",
-    "excerpt": "26 points · philosophy, practices, vibecoding",
+    "excerpt": "27 points · philosophy, practices, vibecoding",
     "author": "luiz",
     "publishedAt": "2026-08-29T01:11:18.866-05:00",
-    "score": 26,
+    "score": 27,
     "tags": [
       "philosophy",
       "practices",
@@ -613,7 +447,7 @@
     "excerpt": "I see companies having codebase in Tauri going back to electron - is this a common thing?",
     "author": "dhruvp",
     "publishedAt": "2026-08-28T22:11:59.669-05:00",
-    "score": 15,
+    "score": 16,
     "tags": [
       "ask",
       "programming"
@@ -627,10 +461,10 @@
     "source": "lobsters",
     "title": "GUIs should be fully keyboard-driven",
     "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-    "excerpt": "34 points · programming",
+    "excerpt": "35 points · programming",
     "author": "an_origamian",
     "publishedAt": "2026-08-28T13:47:26.008-05:00",
-    "score": 34,
+    "score": 35,
     "tags": [
       "programming"
     ],
@@ -663,7 +497,7 @@
     "excerpt": "Yesterday, I published a post titled \"My Book 'AI, Ego &amp; Regret' Paperback Is Live. Kindle Is...",
     "author": "xulingfeng",
     "publishedAt": "2026-08-28T16:50:00Z",
-    "score": 49,
+    "score": 50,
     "tags": [
       "ai",
       "discuss",
@@ -722,7 +556,7 @@
     "excerpt": "I think we are still talking about AI memory in the wrong way. Most implementations are variations of...",
     "author": "marcosomma",
     "publishedAt": "2026-08-28T14:27:09Z",
-    "score": 30,
+    "score": 31,
     "tags": [
       "ai",
       "architecture",
@@ -812,6 +646,117 @@
     "mentionsByteveda": false
   },
   {
+    "id": "rss:Stack Overflow Blog:5de718f7bceb",
+    "kind": "article",
+    "source": "rss",
+    "title": "When you keep AI Lean, you keep AI correct",
+    "url": "https://stackoverflow.blog/2026/08/28/when-you-keep-ai-lean-you-keep-ai-correct/",
+    "excerpt": "Ryan chats with Leo de Moura, Senior Principal Applied Scientist at AWS and the creator of the Lean language, about proving correctness in AI agents with the Lean language, how automated reasoning co…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-08-28T07:40:00.000Z",
+    "score": 0,
+    "tags": [
+      "Stack Overflow Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:9d5e892bd8da",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
+    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+    "excerpt": "41 points · distributed, performance",
+    "author": "rmpr",
+    "publishedAt": "2026-08-28T01:54:56.659-05:00",
+    "score": 41,
+    "tags": [
+      "distributed",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:b0b2c2da12a5",
+    "kind": "article",
+    "source": "rss",
+    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-08-28T00:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:b28b99cd97ea",
+    "kind": "article",
+    "source": "rss",
+    "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
+    "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
+    "excerpt": "What began as a personal experiment quickly became a global open source project with extraordinary momentum. OpenClaw is a personal AI assistant that runs on users&rsquo; devices and connects with th…",
+    "author": "Gregg Cochran",
+    "publishedAt": "2026-08-27T16:00:00.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:fa861f1f89d5",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What happens when a GPU reads memory",
+    "url": "https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory",
+    "excerpt": "17 points · graphics, hardware, performance",
+    "author": "eatonphil",
+    "publishedAt": "2026-08-27T09:42:03.231-05:00",
+    "score": 17,
+    "tags": [
+      "graphics",
+      "hardware",
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:1d03bd3bfe43",
+    "kind": "article",
+    "source": "devto",
+    "title": "Velocidade de entrega e custo de manutenção pós IA",
+    "url": "https://dev.to/he4rt/velocidade-de-entrega-e-custo-de-manutencao-pos-ia-5gei",
+    "excerpt": "Entregar ficou rápido demais. O problema é que manter continuou custando o mesmo preço de sempre. ...",
+    "author": "Elves Santos",
+    "publishedAt": "2026-08-27T13:58:08Z",
+    "score": 78,
+    "tags": [
+      "ai",
+      "braziliandevs",
+      "career",
+      "productivity"
+    ],
+    "labels": [
+      "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -820,7 +765,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-08-30T16:27:33Z",
-    "score": 473259,
+    "score": 473397,
     "tags": [
       "Python",
       "api",
@@ -852,7 +797,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-08-30T08:24:39Z",
-    "score": 395597,
+    "score": 395608,
     "tags": [
       "Python",
       "books",
@@ -875,7 +820,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-08-25T04:08:40Z",
-    "score": 317177,
+    "score": 317230,
     "tags": [
       "Python",
       "awesome",
@@ -891,34 +836,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:a88f7f858fd2",
-    "kind": "trending",
-    "source": "github",
-    "title": "practical-tutorials/project-based-learning",
-    "url": "https://github.com/practical-tutorials/project-based-learning",
-    "excerpt": "Curated list of project-based tutorials",
-    "author": "practical-tutorials",
-    "publishedAt": "2026-08-24T07:38:50Z",
-    "score": 281373,
-    "tags": [
-      "Python",
-      "beginner-project",
-      "cpp",
-      "golang",
-      "javascript",
-      "project",
-      "python",
-      "tutorial",
-      "webdevelopment"
-    ],
-    "labels": [
-      "python",
-      "go",
-      "typescript"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:c80311475bba",
     "kind": "trending",
     "source": "github",
@@ -926,8 +843,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-08-30T20:48:18Z",
-    "score": 238468,
+    "publishedAt": "2026-08-31T05:21:05Z",
+    "score": 238585,
     "tags": [
       "Python",
       "ai",
@@ -958,8 +875,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-08-30T17:14:01Z",
-    "score": 224134,
+    "publishedAt": "2026-08-31T05:19:56Z",
+    "score": 224138,
     "tags": [
       "Python",
       "algorithm",
@@ -991,7 +908,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-30T13:58:45Z",
-    "score": 187929,
+    "score": 187996,
     "tags": [
       "Python",
       "cli",
@@ -1015,8 +932,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-08-30T09:04:08Z",
-    "score": 187016,
+    "publishedAt": "2026-08-31T03:41:43Z",
+    "score": 187021,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1038,6 +955,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:e40b322bc1b1",
+    "kind": "trending",
+    "source": "github",
+    "title": "521xueweihan/HelloGitHub",
+    "url": "https://github.com/521xueweihan/HelloGitHub",
+    "excerpt": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+    "author": "521xueweihan",
+    "publishedAt": "2026-08-28T00:38:12Z",
+    "score": 173829,
+    "tags": [
+      "Python",
+      "awesome",
+      "github",
+      "hellogithub",
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:f0f9a9d19b4d",
     "kind": "trending",
     "source": "github",
@@ -1045,8 +984,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-08-30T16:30:53Z",
-    "score": 130215,
+    "publishedAt": "2026-08-31T02:08:44Z",
+    "score": 130272,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1085,7 +1024,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-08-28T09:15:42Z",
-    "score": 122163,
+    "score": 122199,
     "tags": [
       "Rust",
       "android",
@@ -1121,8 +1060,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-08-30T16:47:55Z",
-    "score": 120074,
+    "publishedAt": "2026-08-31T02:20:34Z",
+    "score": 120190,
     "tags": [
       "Rust"
     ],
@@ -1139,8 +1078,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-08-30T20:49:08Z",
-    "score": 116661,
+    "publishedAt": "2026-08-31T04:41:44Z",
+    "score": 116675,
     "tags": [
       "Rust",
       "compiler",
@@ -1161,7 +1100,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-08-28T16:18:58Z",
-    "score": 110687,
+    "score": 110698,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1187,7 +1126,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-08-29T19:17:00Z",
-    "score": 108346,
+    "score": 108349,
     "tags": [
       "Rust",
       "deno",
@@ -1209,8 +1148,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-08-30T20:12:51Z",
-    "score": 95812,
+    "publishedAt": "2026-08-31T05:25:48Z",
+    "score": 95819,
     "tags": [
       "Rust",
       "bun",
@@ -1242,7 +1181,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-30T11:53:09Z",
-    "score": 94637,
+    "score": 94636,
     "tags": [
       "Java",
       "awesome-list",
@@ -1267,8 +1206,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-08-30T18:15:38Z",
-    "score": 92097,
+    "publishedAt": "2026-08-31T00:44:07Z",
+    "score": 92137,
     "tags": [
       "Rust",
       "awesome",
@@ -1307,8 +1246,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-08-30T13:15:18Z",
-    "score": 90989,
+    "publishedAt": "2026-08-30T23:24:59Z",
+    "score": 91007,
     "tags": [
       "Java",
       "docker",
