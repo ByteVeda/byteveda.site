@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 import { FooterSubscribe } from "./footer-subscribe";
 
 const resources = [
-  { label: "Documentation ↗", href: site.docsUrl },
+  { label: "Documentation", href: site.docsUrl },
   { label: "GitHub org ↗", href: site.githubUrl },
   { label: "News", href: "/news" },
   { label: "Contribute", href: "/contribute" },
