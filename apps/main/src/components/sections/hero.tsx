@@ -59,7 +59,7 @@ export function Hero() {
               / Apache-2.0, all the way down.
             </p>
             <div className="h3-cta">
-              <Button href={site.docsUrl} variant="primary" arrow="→" external>
+              <Button href={site.docsUrl} variant="primary" arrow="→" external={false}>
                 Read the docs
               </Button>
               <Button href={site.githubUrl} variant="ghost" arrow="↗" external>

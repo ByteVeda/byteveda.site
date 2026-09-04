@@ -20,7 +20,7 @@ export function Cta() {
             <Button href={site.githubUrl} variant="primary" arrow="↗" external>
               Start contributing
             </Button>
-            <Button href={site.docsUrl} variant="ghost" arrow="→" external>
+            <Button href={site.docsUrl} variant="ghost" arrow="→" external={false}>
               Read the docs
             </Button>
           </div>

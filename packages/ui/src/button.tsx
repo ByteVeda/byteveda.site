@@ -43,7 +43,7 @@ export function Button(props: ButtonProps) {
 
   if ("href" in rest && rest.href !== undefined) {
     const { href, external, ...anchorRest } = rest;
-    const openInNewTab = external === true || isExternalUrl(href);
+    const openInNewTab = external ?? isExternalUrl(href);
 
     if (isExternalUrl(href)) {
       return (
