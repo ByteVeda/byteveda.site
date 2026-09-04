@@ -23,6 +23,9 @@ catalog:
   tailwindcss: ^4
   typescript: ^6
 
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver
+# Replaces ignoredBuiltDependencies, removed in pnpm 11. Each ships prebuilt
+# binaries, so their install scripts stay off.
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
