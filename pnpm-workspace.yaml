@@ -2,6 +2,10 @@ packages:
   - apps/*
   - packages/*
 
+# pnpm 11 no longer reads the `pnpm` field in package.json; overrides live here.
+overrides:
+  postcss@<8.5.10: ">=8.5.10"
+
 # Single source of truth for the versions both apps share. Bump here rather than in
 # the individual package.json files so `main` and `docs` cannot drift apart again.
 catalog:
