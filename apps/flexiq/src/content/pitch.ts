@@ -8,6 +8,8 @@
  * the reader break a running queue.
  */
 
+import type { Sdk } from "@/lib/docs";
+
 export const HERO = {
   headline: "Delete Redis",
   headlineAccent: "from your stack.",
@@ -183,11 +185,43 @@ export const SOURCE = {
 
     now_millis() + full_jitter(cap)
 }`,
-  api: `@queue.task(
+} as const;
+
+export interface SourceApi {
+  filename: string;
+  code: string;
+}
+
+/**
+ * The left half of the source section: the same three knobs in whichever SDK
+ * the reader picked in the hero. The point of the pairing is that every SDK
+ * lands in the one Rust function quoted on the right, so showing a Node reader
+ * a Python decorator undercuts exactly the claim the section is making.
+ */
+export const SOURCE_API: Record<Sdk, SourceApi> = {
+  python: {
+    filename: "tasks.py",
+    code: `@queue.task(
     max_retries=5,
     retry_backoff=1.0,
     max_retry_delay=300,
 )
 def charge_card(order_id):
     ...`,
-} as const;
+  },
+  node: {
+    filename: "tasks.ts",
+    code: `queue.task("charge_card", chargeCard, {
+  maxRetries: 5,
+  retryBackoff: 1.0,
+  maxRetryDelay: 300,
+});`,
+  },
+  java: {
+    filename: "Tasks.java",
+    code: `Task<Order> chargeCard = Task.of("charge_card", Order.class)
+    .retries(5)
+    .retryBackoff(1.0)
+    .maxRetryDelay(300);`,
+  },
+};
