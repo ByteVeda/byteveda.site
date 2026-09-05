@@ -9,12 +9,14 @@
   "scripts": {
     "dev": "turbo run dev --filter=@byteveda/main",
     "dev:docs": "turbo run dev --filter=@byteveda/docs",
+    "dev:flexiq": "turbo run dev --filter=@byteveda/flexiq-site",
     "dev:all": "turbo run dev",
     "build": "turbo run build",
     "lint": "biome check",
     "lint:fix": "biome check --write",
     "format": "biome format --write",
     "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
     "fetch:news": "pnpm --filter @byteveda/main fetch:news"
   },
   "devDependencies": {

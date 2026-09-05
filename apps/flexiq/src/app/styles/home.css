@@ -1,0 +1,699 @@
+/* ============================================================
+   Home page sections.
+
+   One argument in five moves: hero → ledger → lab → interop → source.
+   No card grid, because a card grid is what the docs landing page already
+   is and what every other queue's home page is too.
+   ============================================================ */
+
+.section-soft {
+  background: var(--bg-grad-a);
+  border-block: 1px solid var(--line);
+}
+
+/* ---------- hero ---------- */
+
+.hero-m {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 9vw, 7rem) clamp(3rem, 7vw, 5.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1000px) {
+  .hero-grid {
+    /* The copy column takes the larger share: the headline is the asset, and
+       the snippet reads fine at its natural width. */
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+.hero-title {
+  /* Sized so the longer of the two lines ("from your stack.") clears the copy
+     column at every width, which is what keeps the break at two lines. */
+  font-size: clamp(2.6rem, 1.4rem + 3.6vw, 4.25rem);
+  max-width: 17ch;
+}
+
+/* Two lines, always: the claim, then who it is aimed at. Letting the headline
+   rewrap at every breakpoint costs the line its rhythm. */
+.hero-accent {
+  display: block;
+  background: linear-gradient(100deg, var(--accent-2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-lede {
+  margin-top: 1.4rem;
+  max-width: 46ch;
+  color: var(--text-dim);
+  font-size: var(--step-1);
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* ---------- the hero's proof: a process list ---------- */
+
+.ps {
+  margin-top: 2.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: color-mix(in oklab, var(--surface-2) 82%, transparent);
+  backdrop-filter: blur(6px);
+  padding: 0.85rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  line-height: 1.9;
+  max-width: 46ch;
+}
+
+.ps-cmd {
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--line-soft);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ps-line {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ps-gone {
+  color: var(--text-faint);
+  /* Struck through and receding: these are the processes you stop running. */
+  opacity: 0.5;
+}
+
+.ps-gone s {
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+}
+
+.ps-kept {
+  color: var(--text);
+  margin-top: 0.35rem;
+}
+
+.ps-kept i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  flex: none;
+  animation: pulse 1.8s var(--ease) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ps-kept i {
+    animation: none;
+  }
+}
+
+.hero-pane {
+  min-width: 0;
+}
+
+.hero-repo {
+  margin-left: auto;
+  color: var(--text-faint);
+  font-size: 0.72rem;
+}
+
+.hero-repo:hover {
+  color: var(--accent-2);
+}
+
+.hero-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.hero-tabs .tabs {
+  padding: 0.25rem;
+}
+
+.hero-tabs .tab {
+  padding: 0.25rem 0.65rem;
+}
+
+.hero-tabs .pg-copy {
+  margin-left: auto;
+}
+
+.hero-note {
+  margin-top: 1rem;
+  color: var(--text-faint);
+  font-size: 0.86rem;
+  line-height: 1.65;
+  max-width: 54ch;
+}
+
+.hero-note b {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.92em;
+  color: var(--accent-2);
+}
+
+.hero-note code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--text-dim);
+}
+
+.glyph {
+  color: var(--text-faint);
+}
+
+.glyph.ok {
+  color: var(--accent-2);
+}
+
+/* ---------- the ledger ---------- */
+
+.ledger {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.ledger-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 2.5rem);
+  background: var(--surface);
+  padding: clamp(1.1rem, 3vw, 1.6rem) clamp(1.1rem, 3vw, 1.9rem);
+  transition: background 0.22s var(--ease);
+}
+
+.ledger-row:hover {
+  background: var(--surface-2);
+}
+
+.ledger-nums {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  flex: none;
+  /* Fixed so every row's arrow lands on the same column. */
+  min-width: 7.5rem;
+}
+
+.ledger-before {
+  font-size: var(--step-2);
+  color: var(--text-faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+.ledger-arrow {
+  color: var(--text-faint);
+  font-size: 0.9rem;
+}
+
+.ledger-after {
+  font-size: var(--step-4);
+  line-height: 1;
+  font-weight: 600;
+  color: var(--accent-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.ledger-text b {
+  font-size: var(--step-0);
+  letter-spacing: -0.01em;
+}
+
+.ledger-text span {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.ledger-foot {
+  margin-top: 1.75rem;
+  color: var(--text-faint);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.ledger-foot a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- the failure lab ---------- */
+
+.lab {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1040px) {
+  .lab {
+    grid-template-columns: 1.35fr 1fr;
+    grid-template-areas:
+      "actions actions"
+      "stage read";
+  }
+
+  .lab-actions {
+    grid-area: actions;
+  }
+
+  .lab-stage {
+    grid-area: stage;
+  }
+
+  .lab-read {
+    grid-area: read;
+  }
+}
+
+.lab-actions {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr;
+}
+
+.lab-actions li {
+  display: flex;
+}
+
+@media (min-width: 700px) {
+  .lab-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .lab-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lab-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  padding: 0.95rem 1.05rem;
+  cursor: pointer;
+  transition:
+    border-color 0.22s var(--ease),
+    background 0.22s var(--ease),
+    transform 0.22s var(--ease);
+}
+
+.lab-action:hover {
+  border-color: var(--accent-line);
+  transform: translateY(-2px);
+}
+
+.lab-action.is-active {
+  border-color: var(--accent);
+  background: linear-gradient(180deg, var(--accent-soft), transparent 70%), var(--surface-2);
+}
+
+.lab-action-cmd {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  color: var(--text);
+}
+
+.lab-action.is-active .lab-action-cmd {
+  color: var(--accent-2);
+}
+
+.lab-action-q {
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.lab-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.lab-canvas {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  overflow: hidden;
+  /* Tall enough for the worker grid and the DLQ below it to both breathe. */
+  height: clamp(300px, 42vw, 420px);
+}
+
+.lab-canvas .pg-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.lab-replay {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--surface-2) 88%, transparent);
+  backdrop-filter: blur(6px);
+  padding: 0.3rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease),
+    color 0.2s var(--ease);
+}
+
+.lab-replay:hover {
+  border-color: var(--accent-line);
+  color: var(--accent-2);
+}
+
+.lab-counters {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+}
+
+.lab-counter {
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm, 8px);
+  background: var(--surface);
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  transition:
+    border-color 0.22s var(--ease),
+    background 0.22s var(--ease);
+}
+
+/* The counter this experiment is actually about. */
+.lab-counter.is-watched {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.lab-counter b {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+}
+
+.lab-counter.is-watched b {
+  color: var(--accent-2);
+}
+
+.lab-counter span {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.lab-read {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.lab-answer {
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, var(--accent-soft), transparent 70%), var(--surface);
+  padding: 1.1rem 1.2rem;
+}
+
+.lab-q {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+.lab-invariant {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.lab-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-2);
+}
+
+.lab-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lab-code .pane-bar span:last-child {
+  color: var(--text-faint);
+}
+
+.lab-honesty {
+  margin-top: 1.75rem;
+  color: var(--text-faint);
+  font-size: 0.86rem;
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+.lab-honesty a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- interop: two runtimes, one file ---------- */
+
+.interop {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .interop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.interop-file {
+  min-width: 0;
+}
+
+.interop-role {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+.interop-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The two panes converge on one file. */
+.interop-pipe {
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(180deg, var(--line), var(--accent));
+}
+
+.interop-db {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, var(--accent-soft), transparent 70%), var(--surface);
+  padding: 0.9rem 1.6rem;
+  text-align: center;
+}
+
+.interop-db b {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  color: var(--accent-2);
+}
+
+.interop-db span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+/* ---------- source ---------- */
+
+.source {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .source {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+}
+
+.source-col {
+  min-width: 0;
+}
+
+.source-role {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- closing CTA ---------- */
+
+.cta-m {
+  text-align: center;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(90% 120% at 50% 0%, var(--accent-soft), transparent 60%), var(--surface);
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
+}
+
+.cta-m .kicker {
+  justify-content: center;
+}
+
+.cta-m h2 {
+  font-size: var(--step-3);
+  margin-top: 1rem;
+}
+
+.cta-m > p {
+  margin: 1.1rem auto 0;
+  max-width: 46ch;
+  color: var(--text-dim);
+  line-height: 1.65;
+}
+
+.cta-m .hero-cta {
+  justify-content: center;
+}
+
+.install-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.install {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+  padding: 0.4rem 0.5rem 0.4rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.install-prompt {
+  color: var(--accent-2);
+}
+
+/* ---------- hero field (webgl → canvas → static) ---------- */
+
+.hero-fx {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.85;
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 72%, transparent);
+}

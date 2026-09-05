@@ -12,6 +12,9 @@ node_modules/
 
 # testing
 coverage/
+test-results/
+playwright-report/
+blob-report/
 
 # next.js
 .next/
@@ -50,3 +53,4 @@ AGENTS.md
 
 # local task notes
 tasks/
+docs/superpowers/

@@ -1,0 +1,57 @@
+---
+title: "Why FlexiQ has no broker"
+description: "Every mainstream task queue starts by asking you to run Redis. For most workloads that is a second database you now operate for no benefit — so FlexiQ does not have one."
+date: "2026-09-05"
+tags: ["architecture", "sqlite"]
+author: "ByteVeda"
+---
+
+Ask any Python developer how to run a background job and the answer arrives in two
+parts: install Celery, and run Redis. The second half is rarely questioned. It is
+simply what a task queue costs.
+
+It is worth questioning. A broker exists to move messages between machines. If your
+workers and your producer are on the same host — which describes the overwhelming
+majority of applications that need background jobs at all — the broker is moving
+messages from a process to itself, via a network hop, through a service you now have
+to monitor, back up, secure and pay for.
+
+## What a queue actually needs
+
+Strip the problem down and a task queue needs four things:
+
+- **Durable storage** for jobs, so a crash does not lose work.
+- **Atomic claim**, so two workers never run the same job.
+- **A clock**, for delays, retries and cron.
+- **A place to put results.**
+
+A single SQLite file in WAL mode does all four. Atomic claim is a transaction.
+The clock is the scheduler's own loop. Results are a column. There is no step in
+that list that needs a second daemon.
+
+## What that buys
+
+FlexiQ ships the scheduler, the dispatcher and the storage engine as one Rust
+core, and each SDK is a thin shell over it. The practical difference shows up in
+operations, not in your task code:
+
+| | FlexiQ | Celery + Redis |
+|---|---|---|
+| Processes to run | 1 | 3 (worker, beat, Redis) |
+| Install | `pip install flexiq` | Package, plus a Redis daemon |
+| Periodic tasks | In the scheduler | A separate `beat` process |
+| Dashboard | Included | Flower, installed separately |
+
+The task itself is unchanged. What changes is that there is nothing else to start.
+
+## When you do want a broker
+
+Sometimes the network hop is the point. If workers run on machines that are not
+your producer's machine, you need shared storage that is reachable from both, and
+a file on one host is not that.
+
+FlexiQ handles this by moving the store, not by adding a broker: point the same
+API at Postgres or Redis and multi-machine workers coordinate through it. The
+scheduler, the retry curve and the dead-letter semantics are identical, because
+they live in the same Rust core either way. You pay for distribution when you
+need distribution, and not before.

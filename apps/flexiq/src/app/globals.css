@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@byteveda/ui/styles/index.css";
+@import "./styles/marketing.css";
+@import "./styles/home.css";
+@import "./styles/playground.css";
+@import "./styles/blog.css";

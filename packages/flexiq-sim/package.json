@@ -1,0 +1,20 @@
+{
+  "name": "@byteveda/flexiq-sim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic simulation of FlexiQ's scheduling semantics. Pure TypeScript, no React, no DOM.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@byteveda/config": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
