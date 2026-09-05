@@ -18,8 +18,19 @@ export interface Post extends PostMeta {
   content: string;
 }
 
+/**
+ * A slug becomes a URL path segment and a static route, so it is restricted to
+ * an unambiguous alphabet rather than trusted because it came off the disk.
+ * Anything else is a filename that should not have been added.
+ */
+const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
 function parse(filename: string): Post {
   const slug = filename.replace(/\.mdx$/, "");
+  if (!SLUG.test(slug)) {
+    throw new Error(`content/blog/${filename}: slug "${slug}" must be lowercase kebab-case`);
+  }
+
   const raw = readFileSync(join(BLOG_DIR, filename), "utf8");
   const { data, content } = matter(raw);
 

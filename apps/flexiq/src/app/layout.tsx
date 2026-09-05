@@ -2,6 +2,7 @@ import { ThemeProvider } from "@byteveda/ui";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
+import { JsonLd } from "@/components/json-ld";
 import { Footer, Navbar } from "@/components/layout";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -131,11 +132,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
-        <script
-          type="application/ld+json"
-          // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD structured data is injected as raw JSON
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
-        />
+        <JsonLd data={softwareSchema} />
       </body>
     </html>
   );

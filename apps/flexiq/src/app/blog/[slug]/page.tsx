@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import { JsonLd } from "@/components/json-ld";
 import { formatDate, getPost, getPosts } from "@/features/blog/posts";
 import { site } from "@/lib/site";
 
@@ -66,11 +67,7 @@ export default async function BlogPost({ params }: Params) {
 
       <div className="prose">{content}</div>
 
-      <script
-        type="application/ld+json"
-        // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD structured data is injected as raw JSON
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <JsonLd data={articleSchema} />
     </article>
   );
 }
