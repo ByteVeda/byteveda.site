@@ -28,8 +28,14 @@ test.describe("home", () => {
 
   test("the SDK chosen in the hero follows through to the closing CTA", async ({ page }) => {
     await page.goto("/");
+    await expect(page.locator("#source .pane-bar").first()).toContainText("tasks.py");
+
     await page.getByRole("button", { name: "Node.js" }).first().click();
 
+    // The source section quotes the API next to the Rust it lands in, so it has
+    // to be the reader's own SDK — a Python decorator there argues the opposite.
+    await expect(page.locator("#source .pane-bar").first()).toContainText("tasks.ts");
+    await expect(page.locator("#source")).toContainText("maxRetries: 5");
     await expect(page.locator("#get-started")).toContainText("Node.js quickstart");
     await expect(
       page.locator('#get-started a[href*="/node/getting-started/quickstart"]'),

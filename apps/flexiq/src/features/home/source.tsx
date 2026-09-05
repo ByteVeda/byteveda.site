@@ -1,10 +1,14 @@
+"use client";
+
 import { ExternalLink } from "@byteveda/ui";
 import { Code } from "@/components/code";
 import { DocsLink } from "@/components/docs-link";
-import { SOURCE } from "@/content/pitch";
+import { SOURCE, SOURCE_API } from "@/content/pitch";
 import { docsUrl } from "@/lib/docs";
+import { LANG_FOR_SDK } from "@/lib/highlight";
 import { site } from "@/lib/site";
 import { Reveal } from "./reveal";
+import { useSdk } from "./sdk-context";
 
 /**
  * The transparency section.
@@ -17,6 +21,9 @@ import { Reveal } from "./reveal";
  * do it without cloning anything.
  */
 export function Source() {
+  const { sdk } = useSdk();
+  const api = SOURCE_API[sdk];
+
   return (
     <section className="section-pad section-soft" id="source">
       <div className="wrap">
@@ -43,9 +50,9 @@ export function Source() {
                     <i />
                     <i />
                   </span>
-                  <span>tasks.py</span>
+                  <span>{api.filename}</span>
                 </div>
-                <Code code={SOURCE.api} lang="python" />
+                <Code code={api.code} lang={LANG_FOR_SDK[sdk]} />
               </div>
             </div>
 
