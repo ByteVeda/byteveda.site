@@ -1,13 +1,13 @@
 [
   {
-    "id": "github:ca51cb7f948e",
+    "id": "github:ad5d5603473e",
     "kind": "release",
     "source": "github",
-    "title": "flexiq-server v1.0.0",
-    "url": "https://github.com/ByteVeda/flexiq/releases/tag/server-v1.0.0",
-    "excerpt": "## What's Changed * chore(deps): bump the dashboard-deps group across 1 directory with 8 updates by @dependabot[bot] in https://github.com/ByteVeda/flexiq/pull/622 * chore(deps): bump the rust-deps g…",
-    "author": "kartikeya-27",
-    "publishedAt": "2026-08-17T20:35:25Z",
+    "title": "flexiq taskito-node v2.0.0",
+    "url": "https://github.com/ByteVeda/flexiq/releases/tag/node-v2.0.0",
+    "excerpt": "## What's Changed * ci: widen publish verify window to 5 minutes by @kartikeya-27 in https://github.com/ByteVeda/flexiq/pull/690 * chore(deps): bump libsqlite3-sys from 0.37.0 to 0.38.2 by @dependabo…",
+    "author": "pratyush618",
+    "publishedAt": "2026-09-05T20:11:37Z",
     "score": 0,
     "tags": [
       "flexiq",
@@ -21,14 +21,14 @@
     "mentionsByteveda": true
   },
   {
-    "id": "github:f62f87657618",
+    "id": "github:ca51cb7f948e",
     "kind": "release",
     "source": "github",
-    "title": "flexiq-node v1.0.0",
-    "url": "https://github.com/ByteVeda/flexiq/releases/tag/node-v1.0.0",
-    "excerpt": "## What's Changed * chore(ci): bump the actions group across 1 directory with 5 updates by @dependabot[bot] in https://github.com/ByteVeda/flexiq/pull/625 * chore(deps): bump the dashboard-deps group…",
+    "title": "flexiq-server v1.0.0",
+    "url": "https://github.com/ByteVeda/flexiq/releases/tag/server-v1.0.0",
+    "excerpt": "## What's Changed * chore(deps): bump the dashboard-deps group across 1 directory with 8 updates by @dependabot[bot] in https://github.com/ByteVeda/flexiq/pull/622 * chore(deps): bump the rust-deps g…",
     "author": "kartikeya-27",
-    "publishedAt": "2026-08-17T20:24:31Z",
+    "publishedAt": "2026-08-17T20:35:25Z",
     "score": 0,
     "tags": [
       "flexiq",
@@ -181,20 +181,119 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:fd0edec8bfe1",
+    "id": "mastodon:96ea50051b31",
     "kind": "article",
     "source": "mastodon",
-    "title": "Last few days, I’ve been working on the Pixel 3. Today, I managed to make the first calls. Most of the work should now…",
-    "url": "https://floss.social/@okias/117214488244669537",
-    "excerpt": "Last few days, I’ve been working on the Pixel 3. Today, I managed to make the first calls. Most of the work should now be ready for upstreaming. This phone will become my daily driver with BengalOS.…",
-    "author": "David Heidelberg",
-    "publishedAt": "2026-09-04T19:45:51.000Z",
-    "score": 23,
+    "title": "I'm setting up Debian on a ThinkPad T440 and I've noticed that GRUB always ends up on a black screen. It's not that GRU…",
+    "url": "https://infosec.exchange/@loureir_or_not/117220212568913722",
+    "excerpt": "I'm setting up Debian on a ThinkPad T440 and I've noticed that GRUB always ends up on a black screen. It's not that GRUB doesn't work, it still boots after waiting the delay period for GRUB, it is me…",
+    "author": "Renato",
+    "publishedAt": "2026-09-05T20:01:37.000Z",
+    "score": 5,
     "tags": [
-      "bengalos",
+      "debian",
+      "linux",
+      "thinkpad",
+      "tech"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:076f2881f2e5",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Attention developers of KDE, Gnome, Libreoffice, GIMP, and any and all applications that let you use fonts: We need to…",
+    "url": "https://chaosfem.tw/@moriel/117220045364102442",
+    "excerpt": "Attention developers of KDE, Gnome, Libreoffice, GIMP, and any and all applications that let you use fonts: We need to talk about font management. i run Kubuntu and when i am editing a document or an…",
+    "author": "Moriel 🏳️‍⚧️",
+    "publishedAt": "2026-09-05T19:19:06.000Z",
+    "score": 9,
+    "tags": [
+      "debian",
+      "ubuntu",
+      "gnu",
+      "gimp",
+      "linux",
+      "kde",
+      "gnome",
+      "fonts"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:85a6a7e05a0a",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Inspired by multiple years consuming blog posts from @ hynek and @ glyph , I realize I wish there was more guidance out…",
+    "url": "https://wandering.shop/@phildini/117219760910768142",
+    "excerpt": "Inspired by multiple years consuming blog posts from @ hynek and @ glyph , I realize I wish there was more guidance out in the world on when to use threads vs when to use multi-process workers vs whe…",
+    "author": "phildini",
+    "publishedAt": "2026-09-05T18:06:45.000Z",
+    "score": 9,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:98fd1e3e2daf",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "I've been looking for a # WiFi networks channels analyzer app for the # Linux desktop, like those found on F-Droid (suc…",
+    "url": "https://mastodon.social/@nekohayo/117219574815243595",
+    "excerpt": "I've been looking for a # WiFi networks channels analyzer app for the # Linux desktop, like those found on F-Droid (such as WiFiAnalyzer), and couldn't find one on Flathub. Then, searching more broad…",
+    "author": "Jeff Fortin T. (風の庭園のNekohayo)",
+    "publishedAt": "2026-09-05T17:19:26.000Z",
+    "score": 8,
+    "tags": [
+      "linuxmobile",
       "mobilelinux",
-      "phosh",
-      "linux"
+      "wifi",
+      "linux",
+      "gnome",
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:ba7e812b15a7",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Knowing Where to Type ‘Zero’ (2015)",
+    "url": "https://randomascii.wordpress.com/2015/01/19/knowing-where-to-type-zero/",
+    "excerpt": "17 points · performance",
+    "author": "typesanitizer",
+    "publishedAt": "2026-09-05T06:12:59.204-05:00",
+    "score": 17,
+    "tags": [
+      "performance"
+    ],
+    "labels": [
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:9c318f7fcc4a",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Bespoke: A Programming Language for People Who Say Please",
+    "url": "https://blog.hofstede.it/bespoke-a-programming-language-for-people-who-say-please/",
+    "excerpt": "18 points · programming, satire",
+    "author": "Larvitz",
+    "publishedAt": "2026-09-05T02:13:32.661-05:00",
+    "score": 18,
+    "tags": [
+      "programming",
+      "satire"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -208,7 +307,7 @@
     "excerpt": "The October 2026 issue is available now. This month, we introduce you to the Vosk speech recognition toolkit and show you how to build speech input into a Python script. This month&#39;s DVD: Garuda…",
     "author": "Linux Magazine",
     "publishedAt": "2026-09-04T16:33:29.547Z",
-    "score": 9,
+    "score": 14,
     "tags": [
       "linux",
       "Vosk",
@@ -241,35 +340,59 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:5c262c311571",
+    "id": "lobsters:a749b30d75fe",
     "kind": "article",
-    "source": "mastodon",
-    "title": "A browser-based Python course that runs entirely in VS Code. No install, no setup. VS Code for Education offers an intr…",
-    "url": "https://tech.lgbt/@jesper/117213597421171400",
-    "excerpt": "A browser-based Python course that runs entirely in VS Code. No install, no setup. VS Code for Education offers an intro-to-Python course that runs in the browser with a full editor experience. For l…",
-    "author": "Jesper Dr.amsch :v_enby:",
-    "publishedAt": "2026-09-04T15:59:18.000Z",
-    "score": 5,
+    "source": "lobsters",
+    "title": "The new Go JSON API: twice as fast, or 1.5x slower?",
+    "url": "https://lemire.me/blog/2026/08/29/the-new-go-json-api-twice-as-fast-or-1-5x-slower/",
+    "excerpt": "15 points · go, performance",
+    "author": "weberc2",
+    "publishedAt": "2026-09-04T10:52:56.023-05:00",
+    "score": 15,
     "tags": [
-      "python",
-      "software",
-      "ml",
-      "technology",
-      "latetotheparty",
-      "machinelearning",
-      "coding",
-      "ai",
-      "artificialintelligence",
-      "programming",
-      "tech",
-      "career",
-      "data",
-      "datascience",
-      "deeplearning"
+      "go",
+      "performance"
     ],
     "labels": [
-      "python",
-      "ml",
+      "go",
+      "performance"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:bdbb8012096d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/ku30xf/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-09-04T04:26:25.543-05:00",
+    "score": 21,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:886b9acdb469",
+    "kind": "article",
+    "source": "devto",
+    "title": "AI Engineering Is Easy. Changing How We Work Is Hard",
+    "url": "https://dev.to/ujja/ai-engineering-is-easy-changing-how-we-work-is-hard-39j4",
+    "excerpt": "AI engineering sounds fancy. New terms are everywhere: agentic development, AI-native engineering,...",
+    "author": "ujja",
+    "publishedAt": "2026-09-04T09:24:10Z",
+    "score": 30,
+    "tags": [
+      "ai",
+      "agents",
+      "software",
+      "discuss"
+    ],
+    "labels": [
       "ai"
     ],
     "mentionsByteveda": false
@@ -296,10 +419,10 @@
     "source": "lobsters",
     "title": "simple is not small",
     "url": "https://jyn.dev/simple-is-not-the-same-as-small/",
-    "excerpt": "57 points · practices",
+    "excerpt": "64 points · practices",
     "author": "hugoarnal",
     "publishedAt": "2026-09-03T16:24:19.683-05:00",
-    "score": 57,
+    "score": 64,
     "tags": [
       "practices"
     ],
@@ -344,10 +467,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.98.1",
     "url": "https://blog.rust-lang.org/2026/09/03/Rust-1.98.1/",
-    "excerpt": "30 points · rust",
+    "excerpt": "33 points · rust",
     "author": "realkc",
     "publishedAt": "2026-09-03T09:03:38.893-05:00",
-    "score": 30,
+    "score": 33,
     "tags": [
       "rust"
     ],
@@ -362,10 +485,10 @@
     "source": "lobsters",
     "title": "Revo Programming language",
     "url": "https://revo.lung.fyi/",
-    "excerpt": "86 points · programming, zig",
+    "excerpt": "88 points · programming, zig",
     "author": "Drakonis",
     "publishedAt": "2026-09-03T08:21:37.693-05:00",
-    "score": 86,
+    "score": 88,
     "tags": [
       "programming",
       "zig"
@@ -440,7 +563,7 @@
     "excerpt": "Do you ever feel like the AI world has moved forward a little too quickly?&nbsp;You hear about...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-09-03T06:44:57Z",
-    "score": 116,
+    "score": 146,
     "tags": [
       "ai",
       "agents",
@@ -570,7 +693,7 @@
     "excerpt": "My hot take is: Telling people that they have to build endlessly is very, very, very bad advice. If...",
     "author": "Alexandra",
     "publishedAt": "2026-09-02T16:38:09Z",
-    "score": 60,
+    "score": 67,
     "tags": [
       "ai",
       "productivity",
@@ -587,10 +710,10 @@
     "source": "lobsters",
     "title": "Implementing FMA and finding bugs in C and Rust standard libraries",
     "url": "https://shnatsel.github.io/implementing-fma-finding-bugs-in-std/",
-    "excerpt": "38 points · c, rust",
+    "excerpt": "39 points · c, rust",
     "author": "itamarst",
     "publishedAt": "2026-09-02T11:19:44.194-05:00",
-    "score": 38,
+    "score": 39,
     "tags": [
       "c",
       "rust"
@@ -609,7 +732,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who is surprised by how cold it is in the Netherlands...",
     "author": "nyaomaru",
     "publishedAt": "2026-09-02T14:54:12Z",
-    "score": 56,
+    "score": 57,
     "tags": [
       "typescript",
       "dsa",
@@ -624,150 +747,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "rss:Hugging Face:22915ca8a273",
-    "kind": "article",
-    "source": "rss",
-    "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
-    "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-09-02T13:49:14.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:a463ef0befab",
-    "kind": "article",
-    "source": "devto",
-    "title": "I Tried Pair Programming With Three Different AI Tools For a Month",
-    "url": "https://dev.to/elsie-rainee/i-tried-pair-programming-with-three-different-ai-tools-for-a-month-2nnc",
-    "excerpt": "AI coding tools can write a function in seconds. The harder question is whether that function...",
-    "author": "Elsie Rainee",
-    "publishedAt": "2026-09-02T06:34:20Z",
-    "score": 31,
-    "tags": [
-      "productivity",
-      "ai",
-      "tools",
-      "discuss"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:4028a854a04b",
-    "kind": "article",
-    "source": "devto",
-    "title": "Agents That Act Need Brakes, Not Just Brains",
-    "url": "https://dev.to/james_anderson_h/agents-that-act-need-brakes-not-just-brains-54h2",
-    "excerpt": "Here's the moment a lot of us had this year. You built an agent. It was genuinely impressive — it...",
-    "author": "James Anderson",
-    "publishedAt": "2026-09-02T06:05:06Z",
-    "score": 30,
-    "tags": [
-      "ai",
-      "llm",
-      "agents",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:c46a67316dc4",
-    "kind": "article",
-    "source": "devto",
-    "title": "Execution Trees, Not More Logs: A Better Debugging Model for AI Agents",
-    "url": "https://dev.to/raju_dandigam/execution-trees-not-more-logs-a-better-debugging-model-for-ai-agents-3d4g",
-    "excerpt": "A flat log can tell you that five things happened. It often cannot tell you which operation caused...",
-    "author": "Raju Dandigam",
-    "publishedAt": "2026-09-02T04:46:27Z",
-    "score": 30,
-    "tags": [
-      "ai",
-      "typescript",
-      "debugging",
-      "opensource"
-    ],
-    "labels": [
-      "ai",
-      "typescript",
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:ac53fe909649",
-    "kind": "article",
-    "source": "devto",
-    "title": "I tested Claude Code's memory against mine. They are not doing the same job.",
-    "url": "https://dev.to/heinrichneb/i-tested-claude-codes-memory-against-mine-they-are-not-doing-the-same-job-35jb",
-    "excerpt": "Proof over claim Last time I described the hour a platform shipped the feature I had spent months...",
-    "author": "Heinrich Neb",
-    "publishedAt": "2026-09-01T20:40:47Z",
-    "score": 26,
-    "tags": [
-      "ai",
-      "claudecode",
-      "productivity",
-      "llm"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f4753b509a87",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The pattern language of software architecture",
-    "url": "https://metapatterns.io/",
-    "excerpt": "18 points · book, distributed, practices",
-    "author": "miro",
-    "publishedAt": "2026-09-01T12:53:50.092-05:00",
-    "score": 18,
-    "tags": [
-      "book",
-      "distributed",
-      "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:001798cb523a",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Wasmi 2.0 - Engineering of the Fastest Wasm Interpreters",
-    "url": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/",
-    "excerpt": "35 points · performance, release, wasm",
-    "author": "isuffix",
-    "publishedAt": "2026-09-01T10:10:52.122-05:00",
-    "score": 35,
-    "tags": [
-      "performance",
-      "release",
-      "wasm"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -775,8 +754,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-09-02T02:23:53Z",
-    "score": 475288,
+    "publishedAt": "2026-09-05T20:06:17Z",
+    "score": 475830,
     "tags": [
       "Python",
       "api",
@@ -808,7 +787,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-01T09:12:19Z",
-    "score": 395969,
+    "score": 396030,
     "tags": [
       "Python",
       "books",
@@ -831,7 +810,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-09-01T08:48:12Z",
-    "score": 318263,
+    "score": 318485,
     "tags": [
       "Python",
       "awesome",
@@ -855,7 +834,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-08-31T07:08:03Z",
-    "score": 282076,
+    "score": 282197,
     "tags": [
       "Python",
       "beginner-project",
@@ -882,8 +861,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-04T20:33:21Z",
-    "score": 241410,
+    "publishedAt": "2026-09-05T19:49:06Z",
+    "score": 241931,
     "tags": [
       "Python",
       "ai",
@@ -914,8 +893,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-04T19:04:55Z",
-    "score": 224256,
+    "publishedAt": "2026-09-05T18:05:56Z",
+    "score": 224285,
     "tags": [
       "Python",
       "algorithm",
@@ -947,7 +926,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-08-30T13:58:45Z",
-    "score": 188937,
+    "score": 189190,
     "tags": [
       "Python",
       "cli",
@@ -971,8 +950,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-04T20:39:32Z",
-    "score": 187124,
+    "publishedAt": "2026-09-05T20:15:54Z",
+    "score": 187159,
     "tags": [
       "Python",
       "agentic-ai",
@@ -1001,8 +980,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-09-04T13:43:14Z",
-    "score": 131080,
+    "publishedAt": "2026-09-05T15:29:06Z",
+    "score": 131202,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1040,8 +1019,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-04T17:28:43Z",
-    "score": 122601,
+    "publishedAt": "2026-09-05T16:25:26Z",
+    "score": 122689,
     "tags": [
       "Rust",
       "android",
@@ -1077,8 +1056,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-04T20:39:12Z",
-    "score": 121529,
+    "publishedAt": "2026-09-05T20:04:43Z",
+    "score": 121736,
     "tags": [
       "Rust"
     ],
@@ -1095,8 +1074,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-04T20:29:37Z",
-    "score": 117443,
+    "publishedAt": "2026-09-05T19:41:00Z",
+    "score": 117469,
     "tags": [
       "Rust",
       "compiler",
@@ -1116,8 +1095,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-04T18:49:05Z",
-    "score": 110814,
+    "publishedAt": "2026-09-05T19:07:08Z",
+    "score": 110826,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1143,7 +1122,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-04T18:13:25Z",
-    "score": 108367,
+    "score": 108381,
     "tags": [
       "Rust",
       "deno",
@@ -1165,8 +1144,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-04T20:35:14Z",
-    "score": 95879,
+    "publishedAt": "2026-09-05T20:12:39Z",
+    "score": 95890,
     "tags": [
       "Rust",
       "bun",
@@ -1198,7 +1177,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-08-31T22:43:02Z",
-    "score": 94651,
+    "score": 94654,
     "tags": [
       "Java",
       "awesome-list",
@@ -1223,8 +1202,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-09-04T20:31:39Z",
-    "score": 92498,
+    "publishedAt": "2026-09-05T18:15:45Z",
+    "score": 92542,
     "tags": [
       "Rust",
       "awesome",
@@ -1263,8 +1242,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-04T17:24:20Z",
-    "score": 91303,
+    "publishedAt": "2026-09-05T15:00:55Z",
+    "score": 91350,
     "tags": [
       "Java",
       "docker",
