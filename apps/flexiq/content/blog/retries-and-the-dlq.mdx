@@ -1,0 +1,76 @@
+---
+title: "Retries, backoff, and where failed jobs actually go"
+description: "A walk through FlexiQ's retry budget, the exponential backoff curve, the jitter that keeps a failure burst from retrying in lockstep, and what the dead-letter queue is for."
+date: "2026-09-04"
+tags: ["reliability", "retries"]
+author: "ByteVeda"
+---
+
+Anything that talks to a network fails sometimes. A queue's job is to make that
+boring. FlexiQ's answer is three things that fit on one page: a retry budget, a
+backoff curve, and a dead-letter queue for the jobs that exhaust both.
+
+## The budget
+
+`max_retries` counts the retries *after* the first attempt. A task configured
+with `max_retries=3` gets four tries in total before it dead-letters.
+
+That is worth stating plainly because the neighbours disagree. BullMQ's
+`attempts: 3` means one try plus two retries. If you are porting, expect to be
+off by one in the direction that matters.
+
+```python
+@queue.task(max_retries=3, retry_backoff=2.0)
+def flaky_api_call(url):
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.json()
+```
+
+## The curve
+
+Each retry's delay comes from the task's base delay `B` and its cap `M`:
+
+```
+cap   = min(M, B * 2^retry_count)
+delay = uniform(0, cap)
+```
+
+With a two-second base the cap runs 2s, 4s, 8s, 16s, 32s — doubling until it
+reaches `M`, then holding there. The delay itself is drawn from anywhere in
+`[0, cap]`.
+
+That second line is the part worth pausing on, because it is where FlexiQ
+differs from the obvious implementation. The obvious one computes the
+exponential delay and adds a small random wobble on top. This is AWS's **Full
+Jitter**, which draws the *whole* delay from the range instead.
+
+The difference matters when a dependency goes down, because then every in-flight
+job fails at approximately the same moment. Adding a fixed wobble spreads those
+retries over a window that stays the same width no matter how long the outage
+lasts — the wall of traffic gets blurry, but it is still a wall. Drawing the
+whole delay from `[0, cap]` spreads them over a window that *doubles* with every
+round, so the longer the downstream stays sick, the more thinly its clients
+arrive. That is what turns a retry storm back into a queue.
+
+It costs something: an individual retry can fire almost immediately, so the
+first attempt after a failure is not politely delayed. Across a fleet that is
+the right trade, and it is the one the scheduler makes.
+
+The whole curve is enforced by the Rust scheduler rather than by the calling
+process, which is why a job that survives a worker crash mid-backoff still
+retries on schedule instead of being forgotten.
+
+## Where the exhausted jobs go
+
+When the budget runs out, the job moves to the dead-letter queue. It is not
+deleted and it is not retried forever — both of which are worse. It sits there
+with its error, its attempt count, and its payload, waiting for you to look at it.
+
+That matters because the interesting failures are almost never transient. A job
+that burned four attempts against the same 400 response is telling you about a
+bug, and a queue that silently dropped it would have thrown away the report.
+Fix the cause, then replay the queue.
+
+You can watch all of this happen — the budget draining, the delays stretching,
+jobs landing in the DLQ — in [the playground](/playground).

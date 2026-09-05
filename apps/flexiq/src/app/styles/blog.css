@@ -1,0 +1,194 @@
+/* ============================================================
+   Blog index and posts.
+
+   Tighter vertical rhythm than the marketing sections: this is reading
+   material, and the airy spacing that suits a landing page just makes a
+   post feel padded out.
+   ============================================================ */
+
+.blog.section-pad {
+  /* The shared 72–150px block padding is sized for marketing sections between
+     other sections. At the top of a content page it is just dead space. */
+  padding-block: clamp(2.25rem, 4vw, 3.25rem) clamp(3rem, 7vw, 5rem);
+}
+
+.blog .section-head {
+  margin-bottom: 1.75rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 820px) {
+  .post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.post-card {
+  display: block;
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  padding: 1.5rem;
+  transition:
+    border-color 0.22s var(--ease),
+    transform 0.22s var(--ease);
+}
+
+.post-card:hover {
+  border-color: var(--accent-line);
+  transform: translateY(-2px);
+}
+
+.post-card time {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-faint);
+}
+
+.post-card h3 {
+  margin: 0.45rem 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.post-card p {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+/* ---------- a post ---------- */
+
+.post {
+  /* Wider than a textbook 46rem measure. On a large display that column left
+     more gutter than page, so it runs closer to the shared 1240px shell — and
+     the prose size below goes up with it to keep the line length sane. */
+  max-width: 60rem;
+}
+
+.post-back {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.post-back:hover {
+  color: var(--accent);
+}
+
+.post-head h1 {
+  margin: 0.9rem 0 0.6rem;
+  font-size: var(--step-3);
+}
+
+.post-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-bottom: 1.75rem;
+}
+
+.prose {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1.78;
+}
+
+.prose > * + * {
+  margin-top: 1.05rem;
+}
+
+.prose h2 {
+  margin-top: 2.1rem;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.prose h3 {
+  margin-top: 1.6rem;
+  font-size: var(--step-1);
+  color: var(--text);
+}
+
+.prose strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.prose a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.3rem;
+}
+
+.prose li + li {
+  margin-top: 0.35rem;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--chip);
+  border: 1px solid var(--line-soft);
+  border-radius: 5px;
+  padding: 0.1em 0.36em;
+  color: var(--text);
+}
+
+.prose pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 1.1rem 1.2rem;
+  overflow-x: auto;
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.prose pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--text-dim);
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--line-soft);
+}
+
+.prose th {
+  color: var(--text);
+  background: var(--surface-2);
+}
