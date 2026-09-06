@@ -11,7 +11,12 @@ on:
       - "turbo.json"
       - ".github/workflows/deploy-docs.yml"
       - "scripts/pull-tool-docs.sh"
-  # Picks up docs published by the tool repos since the last portal build.
+  # Each tool repo pings this after its own Pages deploy, so a published tool
+  # doc reaches docs.byteveda.org/<slug>/ in minutes instead of at the next cron.
+  repository_dispatch:
+    types: [tool-docs-published]
+  # Safety net for a missed dispatch — a rotated token, a repo that never wired
+  # the notify step — and the only trigger the archived tools still have.
   schedule:
     - cron: "40 5 * * *"
   workflow_dispatch:
@@ -52,6 +57,10 @@ jobs:
       - name: Pull per-tool docs
         env:
           GH_TOKEN: ${{ secrets.DOCS_ARTIFACT_TOKEN }}
+          # On a dispatch the notifying run is still in progress, so the script's
+          # "latest successful run" lookup would mirror the build before it.
+          DOCS_PIN_SLUG: ${{ github.event.client_payload.slug }}
+          DOCS_PIN_RUN_ID: ${{ github.event.client_payload.run_id }}
         run: bash scripts/pull-tool-docs.sh apps/docs/out
 
       # `public/CNAME` is copied into the export, which is what keeps the
