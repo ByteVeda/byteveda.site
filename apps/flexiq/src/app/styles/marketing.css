@@ -237,7 +237,18 @@
 
 /* The trailing Q of the wordmark, accented the way the docs site accents it. */
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   white-space: nowrap;
+}
+
+/* Sized off the text it sits beside, so the lockup holds together wherever the
+   wordmark is rendered. The mark is wider than tall (770×513) — height drives,
+   width follows, or the flanking queue arrows get cropped. */
+.brand-logo {
+  height: 1.6em;
+  width: auto;
 }
 
 .brand-q {
