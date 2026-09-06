@@ -16,10 +16,25 @@
 # hardcodes a 1-day retention, so it is gone by the time the portal next builds.
 #
 # Usage:  GH_TOKEN=<token with Actions: read on the org> bash scripts/pull-tool-docs.sh [out-dir]
+#
+# Optional:  DOCS_PIN_SLUG / DOCS_PIN_RUN_ID pin one slug to one run, set from a
+# `tool-docs-published` repository_dispatch payload. See PIN below.
 set -euo pipefail
 
 ORG=ByteVeda
 OUT=${1:-apps/docs/out}
+
+# PIN: a tool repo dispatches from the deploy job of the very run that built the
+# docs, so that run is still in progress and the `--status success` lookup below
+# would pick up its predecessor. Its `docs-dist` upload happened in the earlier
+# build job, so downloading by run id is already safe. Ignored for any other slug
+# and for a payload that is not a plain run id.
+PIN_SLUG=${DOCS_PIN_SLUG:-}
+PIN_RUN_ID=${DOCS_PIN_RUN_ID:-}
+if [ -n "$PIN_RUN_ID" ] && ! [[ $PIN_RUN_ID =~ ^[0-9]+$ ]]; then
+  echo "::warning::ignoring non-numeric DOCS_PIN_RUN_ID"
+  PIN_RUN_ID=""
+fi
 
 # Keep in sync with packages/utils/src/projects.ts.
 # paperjam is archived: its docs.yml never runs again, so this pulls the frozen
@@ -29,17 +44,22 @@ SLUGS=(flexiq paperjam agenteval reclink dagron)
 missing=()
 
 for slug in "${SLUGS[@]}"; do
-  # Scope to the default branch: the tool repos guard their upload step to
-  # push/workflow_dispatch, so a pull_request run — a dependabot PR, say — is
-  # "successful" but carries no artifact. `--branch` matches the head branch,
-  # which excludes PR runs.
-  branch=$(gh api "repos/$ORG/$slug" --jq .default_branch 2>/dev/null || true)
-  run_id=$(gh run list -R "$ORG/$slug" --workflow docs.yml --branch "$branch" --status success \
-    --limit 1 --json databaseId --jq '.[0].databaseId // empty' 2>/dev/null || true)
+  if [ -n "$PIN_RUN_ID" ] && [ "$slug" = "$PIN_SLUG" ]; then
+    run_id=$PIN_RUN_ID
+    echo "  · $slug — pinned to dispatching run $run_id"
+  else
+    # Scope to the default branch: the tool repos guard their upload step to
+    # push/workflow_dispatch, so a pull_request run — a dependabot PR, say — is
+    # "successful" but carries no artifact. `--branch` matches the head branch,
+    # which excludes PR runs.
+    branch=$(gh api "repos/$ORG/$slug" --jq .default_branch 2>/dev/null || true)
+    run_id=$(gh run list -R "$ORG/$slug" --workflow docs.yml --branch "$branch" --status success \
+      --limit 1 --json databaseId --jq '.[0].databaseId // empty' 2>/dev/null || true)
 
-  if [ -z "$run_id" ]; then
-    missing+=("$slug — no successful docs.yml run on $branch")
-    continue
+    if [ -z "$run_id" ]; then
+      missing+=("$slug — no successful docs.yml run on $branch")
+      continue
+    fi
   fi
 
   tmp=$(mktemp -d)
