@@ -218,7 +218,11 @@ function BroadcastRow({ broadcast }: { broadcast: Broadcast }) {
           </span>
         )}
       </span>
-      <span className="num num-dim">{ago(broadcast.sentAt ?? broadcast.createdAt)}</span>
+      {/* `ago` reads the clock, so a value sitting on a boundary can render
+          "just now" on the server and "1m" a moment later on the client. */}
+      <span className="num num-dim" suppressHydrationWarning>
+        {ago(broadcast.sentAt ?? broadcast.createdAt)}
+      </span>
       {sent ? (
         <span />
       ) : (

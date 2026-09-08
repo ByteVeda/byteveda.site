@@ -2,7 +2,14 @@ const MINUTE = 60_000;
 const HOUR = 60 * MINUTE;
 const DAY = 24 * HOUR;
 
-/** Compact relative time — "2h", "3d", "just now". Long enough ago, a date. */
+/**
+ * Compact relative time — "2h", "3d", "just now". Long enough ago, a date.
+ *
+ * Locale and time zone are pinned rather than left to the runtime: this also
+ * runs while server-rendering a client component, and a server whose locale
+ * differs from the browser's produces a different string and a hydration
+ * mismatch.
+ */
 export function ago(value: Date | string, now = Date.now()): string {
   const then = new Date(value).getTime();
   const elapsed = now - then;
@@ -12,7 +19,11 @@ export function ago(value: Date | string, now = Date.now()): string {
   if (elapsed < DAY) return `${Math.floor(elapsed / HOUR)}h`;
   if (elapsed < 30 * DAY) return `${Math.floor(elapsed / DAY)}d`;
 
-  return new Date(value).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  return new Date(value).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 }
 
 /** Thousands separators, and a compact form once the numbers get long. */

@@ -23,7 +23,9 @@ function niceCeiling(value: number): number {
 }
 
 function shortDay(day: string): string {
-  return new Date(`${day}T00:00:00Z`).toLocaleDateString(undefined, {
+  // Locale pinned: this renders on the server too, and a runtime locale that
+  // differs from the browser's is a hydration mismatch.
+  return new Date(`${day}T00:00:00Z`).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
     timeZone: "UTC",

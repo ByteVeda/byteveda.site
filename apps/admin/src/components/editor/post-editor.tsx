@@ -379,11 +379,15 @@ export function PostEditor({ post, corpus, revisions }: Props) {
               revisions.map((revision) => (
                 <div key={revision.id} className="revision">
                   <span className="when">
-                    {new Date(revision.createdAt).toLocaleString(undefined, {
+                    {/* Locale and zone pinned: this renders on the server as
+                        well, and a runtime that disagrees with the browser is a
+                        hydration mismatch. */}
+                    {new Date(revision.createdAt).toLocaleString("en-US", {
                       month: "short",
                       day: "numeric",
                       hour: "2-digit",
                       minute: "2-digit",
+                      timeZone: "UTC",
                     })}
                   </span>
                   <button
