@@ -3,7 +3,7 @@
 import type { EngineConfig } from "@byteveda/flexiq-sim";
 import { patchConfig, patchTask, setRateLimit } from "./config-edit";
 import type { Preset } from "./presets";
-import { PRESETS } from "./presets";
+import { burstTask, PRESETS } from "./presets";
 import type { PlaygroundEngine } from "./use-engine";
 
 interface Props {
@@ -191,7 +191,7 @@ export function Controls({ preset, config, engine, onPreset, onConfig, onShare, 
           <button
             type="button"
             className="btn btn-ghost"
-            onClick={() => engine.burst(preset.burst.task, preset.burst.count)}
+            onClick={() => engine.burst(burstTask(preset, config), preset.burst.count)}
           >
             Burst {preset.burst.count} jobs
           </button>
