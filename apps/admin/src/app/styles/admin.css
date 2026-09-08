@@ -33,7 +33,16 @@
 @layer components {
   /* ---------- shell ---------- */
 
+  /*
+   * `body::before` in @byteveda/ui paints an opaque page texture across the
+   * viewport at z-index 0. The public sites clear it because their content sits
+   * in a `<main>`, which that stylesheet lifts to z-index 2. The console's shell
+   * is a grid of its own, so it lifts itself — without this the sticky rail and
+   * topbar stay visible and everything static underneath is painted over.
+   */
   .shell {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: var(--rail-w) minmax(0, 1fr);
     min-height: 100dvh;

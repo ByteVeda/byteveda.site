@@ -19,7 +19,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
       >
         <SignOut />
       </Rail>
-      <div className="main">{children}</div>
+      <main className="main">{children}</main>
     </div>
   );
 }

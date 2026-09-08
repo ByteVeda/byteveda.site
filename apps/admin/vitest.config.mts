@@ -10,6 +10,6 @@ export default defineConfig({
   test: {
     // Unit tests only. Anything that needs a browser or a database belongs in
     // the Playwright suite, which runs against a built app.
-    include: ["src/**/*.test.ts"],
+    include: ["src/**/*.test.ts", "src/**/*.test.tsx"],
   },
 });
