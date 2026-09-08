@@ -22,6 +22,13 @@
       "when": 1788897208737,
       "tag": "0002_download_stats",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1788897928248,
+      "tag": "0003_email",
+      "breakpoints": true
     }
   ]
 }

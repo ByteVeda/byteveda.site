@@ -28,6 +28,22 @@ export const EMPTY_SEO: PostSeo = { keywords: [] };
 export const ECOSYSTEMS = ["pypi", "npm", "crates", "maven"] as const;
 export type Ecosystem = (typeof ECOSYSTEMS)[number];
 
+export const SUBSCRIBER_STATUSES = ["pending", "active", "unsubscribed", "bounced"] as const;
+export type SubscriberStatus = (typeof SUBSCRIBER_STATUSES)[number];
+
+export const BROADCAST_STATUSES = ["draft", "sending", "sent", "failed"] as const;
+export type BroadcastStatus = (typeof BROADCAST_STATUSES)[number];
+
+/** What a sent message was for, so the log can be filtered without guessing. */
+export const OUTBOUND_KINDS = [
+  "transactional",
+  "confirmation",
+  "broadcast",
+  "announcement",
+  "reply",
+] as const;
+export type OutboundKind = (typeof OUTBOUND_KINDS)[number];
+
 export const ECOSYSTEM_LABELS: Record<Ecosystem, string> = {
   pypi: "PyPI",
   npm: "npm",
