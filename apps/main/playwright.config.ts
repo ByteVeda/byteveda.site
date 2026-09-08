@@ -1,11 +1,10 @@
 import { definePlaywrightConfig } from "@byteveda/config/playwright/base";
 
-const PORT = 3011;
+const PORT = 3012;
 
-// Tested against the production build: the perf budget and the lazy WebGL
-// chunk only mean anything there.
+// Mobile-only suite: this app has no desktop specs, and the production build is
+// what ships, so it is what gets measured.
 export default definePlaywrightConfig({
   port: PORT,
   webServerCommand: `pnpm build && pnpm start --port ${PORT}`,
-  desktop: true,
 });
