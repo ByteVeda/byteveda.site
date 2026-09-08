@@ -17,6 +17,7 @@
     "format": "biome format --write",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
+    "lighthouse": "turbo run lighthouse",
     "fetch:news": "pnpm --filter @byteveda/main fetch:news"
   },
   "devDependencies": {

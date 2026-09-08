@@ -10,7 +10,8 @@ apps/
 packages/
   ui/          @byteveda/ui          primitives, theme tokens, hero effects
   utils/       @byteveda/utils       cn / url / github helpers, org constants, project catalogue
-  config/      @byteveda/config      shared tsconfig + Biome rules
+  config/      @byteveda/config      shared tsconfig, Biome rules, Lighthouse budgets
+  analytics/   @byteveda/analytics   Web Vitals beacon
   flexiq-sim/  @byteveda/flexiq-sim  deterministic simulation of FlexiQ's scheduler
 ```
 
@@ -30,13 +31,14 @@ pnpm dev:all      # all three at once
 ```bash
 pnpm lint         # Biome, once from the root over apps/** and packages/**
 pnpm typecheck    # tsc --noEmit per workspace, via turbo
-pnpm test         # unit tests (vitest) — currently @byteveda/flexiq-sim
+pnpm test         # vitest for flexiq-sim + Playwright for the FlexiQ site
 pnpm build        # next build for every app
+pnpm lighthouse   # Lighthouse budgets for every app (builds first)
 pnpm fetch:news   # refresh apps/main/src/features/news/data/news.json
-
-# Browser tests for the FlexiQ site (builds and serves it first):
-pnpm --filter @byteveda/flexiq-site test:e2e
 ```
+
+`pnpm test` builds and serves the FlexiQ site for its browser tests, so it is the
+slow one. Scope it while iterating: `pnpm --filter @byteveda/flexiq-site test`.
 
 Anything scoped to one workspace: `pnpm --filter @byteveda/main <script>`.
 
@@ -52,6 +54,41 @@ Anything scoped to one workspace: `pnpm --filter @byteveda/main <script>`.
   own page-level CSS. Tailwind scans the package through an `@source` directive
   inside that stylesheet.
 - **Theme switching is `data-theme` on `<html>`** (next-themes), not a `.dark` class.
+
+## Performance
+
+Measured in three layers, because no single one of them is trustworthy alone.
+
+**Byte budgets — these fail a pull request.** Each app has a `lighthouserc.js`
+declaring transfer-size ceilings for scripts, fonts and the page total, plus a
+DOM-node ceiling. The numbers came from measuring the app and adding roughly 20%,
+and they are identical on every run, so a red build means the diff added weight.
+Raising a ceiling is a deliberate edit with a reason, not a retry.
+
+**Wall-clock metrics — these only warn.** LCP, TBT, CLS and Speed Index are
+collected over three runs and reported at the median. A shared CI runner moves
+them ±30% between runs; treating that as a gate teaches everyone to ignore CI.
+The same applies to `unused-javascript` and `render-blocking-resources`, whose
+numeric values move with Lighthouse's heuristics rather than with the diff.
+
+**Field data.** `<WebVitals />` from `@byteveda/analytics` sits in all three root
+layouts and posts Core Web Vitals to `NEXT_PUBLIC_VITALS_ENDPOINT`. It is inert
+when that is unset. It is built on `next/web-vitals`, so the only thing coupled
+to a provider is the URL. `main` and `flexiq` additionally mount Vercel's
+`<SpeedInsights />` as a second sink; the docs export on Pages does not.
+
+```bash
+pnpm lighthouse                                  # every app
+pnpm --filter @byteveda/flexiq-site lighthouse   # one app
+
+# Audit a deployed origin instead of a local production build. Any host — the
+# override is a URL, and nothing in the config knows who serves it.
+LHCI_TARGET_URL=https://byteveda.org pnpm --filter @byteveda/main lighthouse
+```
+
+The same override drives the `Lighthouse` workflow: run it from the Actions tab
+with a `target_url` to audit a preview deploy, or leave it blank and it builds
+and serves each app itself. Reports land as run artifacts.
 
 ## Deployment
 

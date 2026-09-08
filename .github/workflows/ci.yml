@@ -40,3 +40,40 @@ jobs:
       # Turbo fans these out across both apps; one install beats three cold jobs.
       - name: Typecheck and build
         run: pnpm turbo run typecheck build
+
+  test:
+    name: Unit and browser tests
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v7
+
+      # Version comes from `packageManager` in the root package.json.
+      - uses: pnpm/action-setup@v5
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Only the FlexiQ site runs browser tests, and only against Chromium.
+      - name: Install Chromium
+        run: pnpm --filter @byteveda/flexiq-site exec playwright install --with-deps chromium
+
+      # vitest for @byteveda/flexiq-sim, Playwright for the FlexiQ site — including
+      # the initial-payload budget, which until now had no job to run in.
+      - name: Test
+        run: pnpm turbo run test
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report
+          path: apps/flexiq/playwright-report
+          if-no-files-found: ignore
+          retention-days: 14

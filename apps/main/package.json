@@ -8,11 +8,14 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
+    "lighthouse": "pnpm dlx @lhci/cli@0.15.1 autorun",
     "fetch:news": "tsx scripts/fetch-news/index.ts"
   },
   "dependencies": {
+    "@byteveda/analytics": "workspace:*",
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
+    "@vercel/speed-insights": "catalog:",
     "@fontsource-variable/ibm-plex-sans": "catalog:",
     "@fontsource/ibm-plex-mono": "catalog:",
     "lucide-react": "catalog:",

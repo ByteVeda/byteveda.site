@@ -1,0 +1,33 @@
+{
+  "name": "@byteveda/analytics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vendor-neutral Web Vitals reporting for the ByteVeda apps.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./vercel": "./src/vercel.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@vercel/speed-insights": ">=2",
+    "next": ">=16",
+    "react": ">=19"
+  },
+  "peerDependenciesMeta": {
+    "@vercel/speed-insights": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@byteveda/config": "workspace:*",
+    "@types/node": "catalog:",
+    "@vercel/speed-insights": "catalog:",
+    "@types/react": "catalog:",
+    "next": "catalog:",
+    "react": "catalog:",
+    "typescript": "catalog:"
+  }
+}
