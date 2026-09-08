@@ -1,0 +1,475 @@
+/* ============================================================
+   The post editor.
+
+   The one place in the console where chrome gets out of the way:
+   the writing column is wide and quiet, and every control is either
+   in the topbar or in the right rail.
+   ============================================================ */
+
+@layer components {
+  .editor {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 312px;
+    align-items: start;
+  }
+
+  .editor-main {
+    min-width: 0;
+    padding: 22px 26px 90px;
+  }
+
+  .editor-side {
+    position: sticky;
+    top: var(--topbar-h);
+    height: calc(100dvh - var(--topbar-h));
+    overflow-y: auto;
+    padding: 18px;
+    border-left: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  /* ---------- title and description ---------- */
+
+  .editor-title,
+  .editor-description {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--text);
+    font-family: var(--font-display);
+    resize: none;
+  }
+  .editor-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+  }
+  .editor-description {
+    margin-top: 8px;
+    color: var(--text-dim);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .editor-title:focus,
+  .editor-description:focus {
+    outline: none;
+  }
+  .editor-title::placeholder,
+  .editor-description::placeholder {
+    color: var(--text-faint);
+  }
+
+  /* ---------- mode switch + toolbar ---------- */
+
+  .editor-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: var(--topbar-h);
+    z-index: 20;
+    margin: 18px 0 14px;
+    padding: 7px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+  }
+
+  .tool {
+    display: inline-grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--r-sm);
+    color: var(--text-dim);
+    transition:
+      background 0.12s,
+      color 0.12s;
+  }
+  .tool svg {
+    width: 15px;
+    height: 15px;
+  }
+  .tool:hover:not(:disabled) {
+    background: var(--chip);
+    color: var(--text);
+  }
+  .tool[aria-pressed="true"] {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .tool:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  .tool-divider {
+    width: 1px;
+    height: 18px;
+    margin: 0 3px;
+    background: var(--line);
+  }
+
+  /* A fieldset, because it groups two related controls — with the browser's
+     default fieldset chrome removed. */
+  .seg {
+    display: inline-flex;
+    margin-left: auto;
+    padding: 2px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    min-inline-size: auto;
+  }
+  .seg button {
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    font-weight: 500;
+    transition:
+      background 0.12s,
+      color 0.12s;
+  }
+  .seg button[aria-pressed="true"] {
+    background: var(--chip);
+    color: var(--text);
+  }
+
+  /* ---------- rich text surface ---------- */
+
+  .prose-editor .ProseMirror {
+    min-height: 52vh;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .prose-editor :where(.ProseMirror) > * + * {
+    margin-top: 1.05em;
+  }
+  .prose-editor h2 {
+    margin-top: 1.7em;
+    font-family: var(--font-display);
+    font-size: 1.32rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+  .prose-editor h3 {
+    margin-top: 1.5em;
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    font-weight: 600;
+  }
+  .prose-editor ul,
+  .prose-editor ol {
+    padding-left: 1.4em;
+  }
+  .prose-editor li + li {
+    margin-top: 0.35em;
+  }
+  .prose-editor blockquote {
+    padding-left: 1em;
+    border-left: 2px solid var(--accent-line);
+    color: var(--text-dim);
+  }
+  .prose-editor code {
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+    background: var(--chip);
+    font-family: var(--font-mono);
+    font-size: 0.86em;
+  }
+  .prose-editor pre {
+    padding: 13px 15px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    overflow-x: auto;
+  }
+  .prose-editor :where(pre) code {
+    padding: 0;
+    background: none;
+    font-size: 0.84rem;
+  }
+  .prose-editor a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .prose-editor hr {
+    border: none;
+    border-top: 1px solid var(--line);
+  }
+  /* Tiptap's empty-node placeholder. */
+  .prose-editor p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    color: var(--text-faint);
+    pointer-events: none;
+  }
+
+  /* ---------- raw MDX ---------- */
+
+  .mdx-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+  }
+  .mdx-source {
+    width: 100%;
+    min-height: 52vh;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 0.83rem;
+    line-height: 1.7;
+    resize: vertical;
+    tab-size: 2;
+  }
+  .mdx-source:focus-visible {
+    outline: none;
+    border-color: var(--accent-line);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  .mdx-preview {
+    padding: 12px 16px;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--r-md);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    overflow-x: auto;
+  }
+  .mdx-preview > * + * {
+    margin-top: 1em;
+  }
+  .mdx-preview h1,
+  .mdx-preview h2,
+  .mdx-preview h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+  .mdx-preview h2 {
+    font-size: 1.2rem;
+  }
+  .mdx-preview h3 {
+    font-size: 1rem;
+  }
+  .mdx-preview pre {
+    padding: 11px 13px;
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    overflow-x: auto;
+  }
+  .mdx-preview code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+  }
+  .mdx-preview a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .mdx-preview ul,
+  .mdx-preview ol {
+    padding-left: 1.35em;
+  }
+  .mdx-preview table {
+    border-collapse: collapse;
+    font-size: 0.85em;
+  }
+  .mdx-preview th,
+  .mdx-preview td {
+    padding: 5px 9px;
+    border: 1px solid var(--line);
+    text-align: left;
+  }
+
+  /* ---------- side rail ---------- */
+
+  .side-block + .side-block {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .side-block > h2 {
+    margin-bottom: 11px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dim);
+  }
+
+  .score {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .score b {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .score span {
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+  .score-track {
+    height: 3px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    background: var(--chip);
+    overflow: hidden;
+  }
+  .score-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--accent);
+    transition: width 0.35s var(--ease);
+  }
+
+  .checks {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .check {
+    display: grid;
+    grid-template-columns: 13px minmax(0, 1fr);
+    gap: 8px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+  .check-mark {
+    margin-top: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+  .check-pass .check-mark {
+    background: var(--ok);
+  }
+  .check-warn .check-mark {
+    background: var(--warn);
+  }
+  .check-fail .check-mark {
+    background: var(--danger);
+  }
+  .check b {
+    display: block;
+    font-weight: 500;
+  }
+  .check span {
+    color: var(--text-faint);
+  }
+
+  .kw {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    padding: 5px 7px;
+    border-radius: var(--r-sm);
+    text-align: left;
+    transition: background 0.12s;
+  }
+  .kw:hover {
+    background: var(--chip);
+  }
+  .kw-term {
+    flex: 1;
+    min-width: 0;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .kw[data-chosen="true"] .kw-term {
+    color: var(--accent);
+  }
+  .kw-bar {
+    width: 34px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--chip);
+    overflow: hidden;
+    flex: none;
+  }
+  .kw-bar i {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+  }
+  .kw-n {
+    width: 22px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    flex: none;
+  }
+
+  .revision {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--line-soft);
+    font-size: 0.78rem;
+  }
+  .revision:last-child {
+    border-bottom: none;
+  }
+  .revision .when {
+    flex: 1;
+    min-width: 0;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+  }
+
+  /* ---------- save state ---------- */
+
+  .save-state {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .save-state[data-tone="error"] {
+    color: var(--danger);
+  }
+  .save-state[data-tone="ok"] {
+    color: var(--ok);
+  }
+
+  @media (max-width: 1100px) {
+    .editor {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .editor-side {
+      position: static;
+      height: auto;
+      border-left: none;
+      border-top: 1px solid var(--line);
+    }
+    .mdx-split {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}

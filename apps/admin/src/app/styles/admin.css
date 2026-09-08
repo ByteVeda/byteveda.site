@@ -324,6 +324,11 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  /* Status, title, tags, and a time — the four things worth scanning. */
+  .row-post {
+    grid-template-columns: 96px minmax(0, 1fr) 150px 68px;
+  }
+
   .row-actions {
     display: flex;
     align-items: center;
