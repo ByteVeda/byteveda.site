@@ -6,7 +6,7 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "typecheck": "tsc --noEmit",
-    "lighthouse": "lhci autorun"
+    "lighthouse": "pnpm dlx @lhci/cli@0.15.1 autorun"
   },
   "dependencies": {
     "@byteveda/analytics": "workspace:*",
@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@byteveda/config": "workspace:*",
-    "@lhci/cli": "catalog:",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
