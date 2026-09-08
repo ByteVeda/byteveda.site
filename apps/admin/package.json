@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "collect": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/collect.ts"
   },
   "dependencies": {
     "@byteveda/db": "workspace:*",
@@ -36,6 +37,7 @@
     "@types/react-dom": "catalog:",
     "@types/turndown": "catalog:",
     "tailwindcss": "catalog:",
+    "tsx": "^4.23.13",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }
