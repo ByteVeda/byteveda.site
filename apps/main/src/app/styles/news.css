@@ -368,6 +368,16 @@
   margin-top: clamp(32px, 4vw, 48px);
 }
 
+/* The filter pills and the pager are the only two controls on this page; at
+   desktop line height they are 31px and 20px strips. See the shared rule in
+   @byteveda/ui for why this keys on the pointer rather than on the viewport. */
+@media (pointer: coarse) {
+  .filters button,
+  .news-pager button {
+    min-height: 44px;
+  }
+}
+
 @media (max-width: 940px) {
   .lead-grid {
     grid-template-columns: 1fr;

@@ -13,14 +13,22 @@ concurrency:
 permissions:
   contents: read
 
+# Scope every turbo run to the packages a change can actually reach. The graph
+# decides, not a list of paths: touching packages/ui still rebuilds all three
+# apps, while a change confined to apps/docs leaves the other two alone.
+env:
+  NEXT_TELEMETRY_DISABLED: 1
+  TURBO_SCM_HEAD: ${{ github.sha }}
+
 jobs:
   verify:
     name: Lint, typecheck, build
     runs-on: ubuntu-latest
-    env:
-      NEXT_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v7
+        with:
+          # `--affected` diffs against a base commit, which has to be in the clone.
+          fetch-depth: 0
 
       # Version comes from `packageManager` in the root package.json.
       - uses: pnpm/action-setup@v5
@@ -30,24 +38,28 @@ jobs:
           node-version: 24
           cache: pnpm
 
+      - name: Resolve comparison base
+        run: .github/scripts/resolve-scm-base.sh
+        env:
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Biome runs once from the workspace root over apps/** and packages/**.
+      # Biome is not worth scoping: it checks all 200-odd files in under a second.
       - name: Biome check
         run: pnpm exec biome check
 
-      # Turbo fans these out across both apps; one install beats three cold jobs.
       - name: Typecheck and build
-        run: pnpm turbo run typecheck build
+        run: pnpm turbo run typecheck build --affected
 
   test:
     name: Unit and browser tests
     runs-on: ubuntu-latest
-    env:
-      NEXT_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       # Version comes from `packageManager` in the root package.json.
       - uses: pnpm/action-setup@v5
@@ -57,23 +69,46 @@ jobs:
           node-version: 24
           cache: pnpm
 
+      - name: Resolve comparison base
+        run: .github/scripts/resolve-scm-base.sh
+        env:
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Only the FlexiQ site runs browser tests, and only against Chromium.
-      - name: Install Chromium
-        run: pnpm --filter @byteveda/flexiq-site exec playwright install --with-deps chromium
+      # Downloading two browsers costs a couple of minutes, so ask the same plan
+      # the test step will run whether any of them is going to open.
+      - name: Plan affected tests
+        id: plan
+        run: |
+          packages=$(pnpm turbo run test --affected --dry=json \
+            | jq -r '[.tasks[] | select(.command != "<NONEXISTENT>") | .package] | join(" ")')
+          echo "Affected test packages: ${packages:-none}"
+          if printf '%s' "$packages" | grep -qE '@byteveda/(main|docs|flexiq-site)'; then
+            echo "browsers=true" >> "$GITHUB_OUTPUT"
+          fi
 
-      # vitest for @byteveda/flexiq-sim, Playwright for the FlexiQ site — including
-      # the initial-payload budget, which until now had no job to run in.
+      # Browsers land in a shared cache, so one install covers all three apps.
+      # WebKit is what makes the mobile suite worth running: iOS Safari is where
+      # `dvh`, `backdrop-filter` and sticky positioning actually differ.
+      - name: Install browsers
+        if: steps.plan.outputs.browsers == 'true'
+        run: pnpm --filter @byteveda/flexiq-site exec playwright install --with-deps chromium webkit
+
+      # vitest for @byteveda/flexiq-sim, Playwright for all three sites — the
+      # FlexiQ desktop suite plus the phone-viewport audit each app now ships.
       - name: Test
-        run: pnpm turbo run test
+        run: pnpm turbo run test --affected
 
-      - name: Upload Playwright report
+      - name: Upload Playwright reports
         if: failure()
         uses: actions/upload-artifact@v7
         with:
           name: playwright-report
-          path: apps/flexiq/playwright-report
+          path: |
+            apps/flexiq/playwright-report
+            apps/main/playwright-report
+            apps/docs/playwright-report
           if-no-files-found: ignore
           retention-days: 14

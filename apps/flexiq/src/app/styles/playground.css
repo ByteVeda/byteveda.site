@@ -402,3 +402,21 @@
   opacity: 0.45;
   cursor: not-allowed;
 }
+
+/* ---------- touch targets ---------- */
+/* This page is nothing but controls, and at desktop sizing they are 28-32px
+   pills and a 16px slider. See the shared rule in @byteveda/ui for why this
+   keys on the pointer rather than on the viewport. */
+@media (pointer: coarse) {
+  .pg-copy,
+  .pg-preset {
+    min-height: 44px;
+  }
+  .pg-field input[type="range"] {
+    min-height: 44px;
+  }
+  /* The checkbox is small on purpose; its label is what you tap. */
+  .pg-check {
+    min-height: 44px;
+  }
+}

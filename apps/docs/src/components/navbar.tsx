@@ -1,4 +1,4 @@
-import { Button, ThemeToggle, Wordmark } from "@byteveda/ui";
+import { Button, MobileMenu, ThemeToggle, Wordmark } from "@byteveda/ui";
 import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
@@ -16,7 +16,10 @@ export function Navbar() {
           <span aria-hidden className="notebook-mono text-faint">
             /
           </span>
-          <Link href="/" className="notebook-mono text-muted-foreground text-sm hover:text-accent">
+          <Link
+            href="/"
+            className="nav-section notebook-mono text-muted-foreground text-sm hover:text-accent"
+          >
             {site.section}
           </Link>
         </div>
@@ -52,6 +55,15 @@ export function Navbar() {
           <Button href={site.githubUrl} variant="primary" arrow="↗" external>
             GitHub
           </Button>
+          <MobileMenu
+            items={nav}
+            brand={<Wordmark href={site.homeUrl} />}
+            action={
+              <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+                GitHub
+              </Button>
+            }
+          />
         </div>
       </div>
     </header>

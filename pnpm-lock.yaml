@@ -129,6 +129,9 @@ importers:
       '@byteveda/config':
         specifier: workspace:*
         version: link:../../packages/config
+      '@playwright/test':
+        specifier: 'catalog:'
+        version: 1.62.1
       '@tailwindcss/postcss':
         specifier: 'catalog:'
         version: 4.3.3
@@ -272,6 +275,9 @@ importers:
       '@byteveda/config':
         specifier: workspace:*
         version: link:../../packages/config
+      '@playwright/test':
+        specifier: 'catalog:'
+        version: 1.62.1
       '@tailwindcss/postcss':
         specifier: 'catalog:'
         version: 4.3.3
@@ -321,7 +327,11 @@ importers:
         specifier: 'catalog:'
         version: 6.0.3
 
-  packages/config: {}
+  packages/config:
+    devDependencies:
+      '@playwright/test':
+        specifier: 'catalog:'
+        version: 1.62.1
 
   packages/flexiq-sim:
     devDependencies:

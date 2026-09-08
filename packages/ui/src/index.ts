@@ -5,6 +5,7 @@ export * from "./fx/hero-net";
 export * from "./fx/site-effects";
 export * from "./icons";
 export * from "./marquee";
+export * from "./mobile-menu";
 export * from "./notebook-section";
 export * from "./relative-time";
 export * from "./section";

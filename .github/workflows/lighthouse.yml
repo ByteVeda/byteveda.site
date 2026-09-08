@@ -40,8 +40,12 @@ jobs:
     env:
       NEXT_TELEMETRY_DISABLED: 1
       LHCI_TARGET_URL: ${{ inputs.target_url }}
+      TURBO_SCM_HEAD: ${{ github.sha }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # `--affected` diffs against a base commit, which has to be in the clone.
+          fetch-depth: 0
 
       # Version comes from `packageManager` in the root package.json.
       - uses: pnpm/action-setup@v5
@@ -51,21 +55,46 @@ jobs:
           node-version: 24
           cache: pnpm
 
+      - name: Resolve comparison base
+        run: .github/scripts/resolve-scm-base.sh
+        env:
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Three builds and nine Lighthouse runs is the expensive half of this
+      # workflow. Skip the ones a change cannot reach — but never when a target
+      # URL was dispatched, since that audits a deployment, not this diff.
+      - name: Check whether ${{ matrix.app }} is affected
+        id: affected
+        run: |
+          if [ -n "$LHCI_TARGET_URL" ]; then
+            echo "Auditing a dispatched target; running regardless of the diff."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if pnpm turbo run lighthouse --affected --dry=json \
+            | jq -e --arg pkg '${{ matrix.filter }}' \
+              '[.tasks[] | select(.command != "<NONEXISTENT>") | .package] | index($pkg)' > /dev/null; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "${{ matrix.filter }} is untouched by this change; skipping."
+          fi
+
       # Skipped when auditing a deployed origin — there is nothing local to serve.
       - name: Build
-        if: inputs.target_url == ''
+        if: steps.affected.outputs.run == 'true' && inputs.target_url == ''
         run: pnpm turbo run build --filter=${{ matrix.filter }}
 
       - name: Lighthouse
+        if: steps.affected.outputs.run == 'true'
         run: pnpm --filter ${{ matrix.filter }} lighthouse
 
       # The run prints a temporary-public-storage link per URL, but that expires;
       # the raw reports are what you diff when a budget moves.
       - name: Upload reports
-        if: always()
+        if: always() && steps.affected.outputs.run == 'true'
         uses: actions/upload-artifact@v7
         with:
           name: lighthouse-${{ matrix.app }}
