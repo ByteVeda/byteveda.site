@@ -10,6 +10,7 @@
     "dev": "turbo run dev --filter=@byteveda/main",
     "dev:docs": "turbo run dev --filter=@byteveda/docs",
     "dev:flexiq": "turbo run dev --filter=@byteveda/flexiq-site",
+    "dev:admin": "turbo run dev --filter=@byteveda/admin",
     "dev:all": "turbo run dev",
     "build": "turbo run build",
     "lint": "biome check",

@@ -7,12 +7,14 @@ apps/
   main/        byteveda.org          → Vercel
   docs/        docs.byteveda.org     → GitHub Pages (static export)
   flexiq/      flexiq.byteveda.org   → Vercel (FlexiQ product site)
+  admin/       admin.byteveda.org    → Vercel (private console, GitHub sign-in)
 packages/
   ui/          @byteveda/ui          primitives, theme tokens, hero effects
   utils/       @byteveda/utils       cn / url / github helpers, org constants, project catalogue
   config/      @byteveda/config      shared tsconfig, Biome rules, Lighthouse budgets
   analytics/   @byteveda/analytics   Web Vitals beacon
   flexiq-sim/  @byteveda/flexiq-sim  deterministic simulation of FlexiQ's scheduler
+  db/          @byteveda/db          Postgres schema, migrations, and shared queries
 ```
 
 ## Getting started
@@ -23,8 +25,12 @@ pnpm install
 pnpm dev          # byteveda.org on :3000
 pnpm dev:docs     # docs portal on :3001
 pnpm dev:flexiq   # FlexiQ product site
-pnpm dev:all      # all three at once
+pnpm dev:admin    # admin console on :3002
+pnpm dev:all      # all of them at once
 ```
+
+`admin` and `flexiq` both need a `DATABASE_URL`; copy each app's `.env.example`
+to `.env.local` and fill it in. See **Database** below.
 
 ## Checks
 
@@ -54,6 +60,38 @@ Anything scoped to one workspace: `pnpm --filter @byteveda/main <script>`.
   own page-level CSS. Tailwind scans the package through an `@source` directive
   inside that stylesheet.
 - **Theme switching is `data-theme` on `<html>`** (next-themes), not a `.dark` class.
+
+## Database
+
+Blog posts, download numbers, and the mailing list live in Postgres. Nothing
+imports a provider SDK — `@byteveda/db` talks to whatever `DATABASE_URL` points
+at, over plain `node-postgres`.
+
+```bash
+pnpm --filter @byteveda/db db:generate   # schema change → a new SQL migration
+pnpm --filter @byteveda/db db:migrate    # apply pending migrations
+pnpm --filter @byteveda/db db:studio     # browse the data
+
+pnpm --filter @byteveda/admin collect --seed   # track the catalogue's packages, then collect
+```
+
+Migrations are generated SQL, committed, and reviewed like any other source.
+Never edit an applied one — add another.
+
+The package presents three faces, and which one you import matters:
+
+| Import | For | Contains |
+|---|---|---|
+| `@byteveda/db` | server code | the pooled client and the full schema |
+| `@byteveda/db/queries/posts` | the public sites | read-only, published posts only |
+| `@byteveda/db/constants` | client components | the closed sets, and no imports at all |
+
+A client component that imports a *value* from the package root pulls `pg` into
+the browser bundle and the build fails. That is what `/constants` exists for.
+
+FlexiQ reads posts through the tagged cache in `features/blog/posts.ts`, so the
+site stays effectively static between publishes; the admin app calls
+`/api/revalidate` on FlexiQ to invalidate the `blog` tag when something changes.
 
 ## Performance
 
