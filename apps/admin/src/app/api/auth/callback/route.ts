@@ -9,7 +9,7 @@ import {
   safeEqual,
   sessionCookieOptions,
 } from "@/lib/auth/session";
-import { callbackUrl, safeNext } from "@/lib/auth/urls";
+import { callbackUrl, originOf, safeNext } from "@/lib/auth/urls";
 import { clientIp, userAgent } from "@/lib/request";
 
 export const dynamic = "force-dynamic";
@@ -18,7 +18,10 @@ export const dynamic = "force-dynamic";
 type Failure = "denied" | "state" | "exchange" | "config";
 
 function fail(request: NextRequest, reason: Failure) {
-  const url = new URL("/login", request.nextUrl.origin);
+  // `originOf`, never `nextUrl.origin`: behind a tunnel the latter combines the
+  // forwarded protocol with the rewritten host and yields `https://localhost:3000`,
+  // which the browser rejects outright.
+  const url = new URL("/login", originOf(request));
   url.searchParams.set("error", reason);
   const response = NextResponse.redirect(url);
   response.cookies.delete(STATE_COOKIE);
@@ -90,7 +93,7 @@ export async function GET(request: NextRequest) {
     userAgent: userAgent(request),
   });
 
-  const response = NextResponse.redirect(new URL(next, request.nextUrl.origin));
+  const response = NextResponse.redirect(new URL(next, originOf(request)));
   response.cookies.set(SESSION_COOKIE, token, sessionCookieOptions());
   response.cookies.delete(STATE_COOKIE);
   return response;
