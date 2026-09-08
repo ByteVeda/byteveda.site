@@ -1,3 +1,4 @@
+import { WebVitals } from "@byteveda/analytics";
 import { SiteEffects, ThemeProvider } from "@byteveda/ui";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
@@ -101,6 +102,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
           <SiteEffects />
         </ThemeProvider>
+        {/* Pages hosts this export, so there is no Vercel sink to pair with —
+            the portable beacon is the only field measurement here. */}
+        <WebVitals />
       </body>
     </html>
   );

@@ -4,7 +4,10 @@
   "globalDependencies": ["pnpm-workspace.yaml", "packages/config/**"],
   "tasks": {
     "build": {
-      "outputs": [".next/**", "!.next/cache/**", "out/**"]
+      "outputs": [".next/**", "!.next/cache/**", "out/**"],
+      // Inlined into the client bundle at build time, so it belongs in the hash:
+      // a different endpoint is a different build.
+      "env": ["NEXT_PUBLIC_VITALS_ENDPOINT"]
     },
     "typecheck": {},
     "test": {},
