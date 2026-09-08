@@ -1,13 +1,34 @@
 "use client";
 
-import { Button, Wordmark } from "@byteveda/ui";
 import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { nav, site } from "@/lib/site";
 
-export function MobileMenu() {
+export type MobileMenuItem = {
+  label: string;
+  href: string;
+  /** Opens in a new tab with an ↗ glyph. Sibling ByteVeda domains are not external. */
+  external?: boolean;
+};
+
+type MobileMenuProps = {
+  items: readonly MobileMenuItem[];
+  /** The lockup for the drawer head. Each app brings its own. */
+  brand: ReactNode;
+  /** Call to action pinned to the foot — the nav row hides its own below 940px. */
+  action?: ReactNode;
+};
+
+/**
+ * The drawer every ByteVeda site falls back to once `.nav-links` is hidden.
+ *
+ * Below 940px the horizontal nav does not fit — it pushed the docs site 250px
+ * past its own viewport before this existed — so the links move in here and the
+ * button that opens it is the only way to reach them. That makes this component
+ * load-bearing on a phone rather than decorative.
+ */
+export function MobileMenu({ items, brand, action }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -28,6 +49,30 @@ export function MobileMenu() {
   }, [open]);
 
   const close = () => setOpen(false);
+
+  const link = (item: MobileMenuItem) => {
+    const label = (
+      <>
+        {item.label}
+        {item.external && <span aria-hidden>↗</span>}
+      </>
+    );
+    return isExternalUrl(item.href) ? (
+      <a
+        key={item.href}
+        href={item.href}
+        target={item.external ? "_blank" : undefined}
+        rel={item.external ? "noopener noreferrer" : undefined}
+        onClick={close}
+      >
+        {label}
+      </a>
+    ) : (
+      <Link key={item.href} href={item.href} onClick={close}>
+        {label}
+      </Link>
+    );
+  };
 
   return (
     <>
@@ -69,7 +114,7 @@ export function MobileMenu() {
               aria-label="Menu"
             >
               <div className="drawer-head">
-                <Wordmark href="/" />
+                {brand}
                 <button type="button" className="icon-btn" aria-label="Close menu" onClick={close}>
                   <svg
                     viewBox="0 0 24 24"
@@ -86,40 +131,10 @@ export function MobileMenu() {
               </div>
 
               <nav className="drawer-links" aria-label="Mobile">
-                {nav.map((item) => {
-                  const external = "external" in item && item.external;
-                  const label = (
-                    <>
-                      {item.label}
-                      {external && <span aria-hidden>↗</span>}
-                    </>
-                  );
-                  return isExternalUrl(item.href) ? (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      target={external ? "_blank" : undefined}
-                      rel={external ? "noopener noreferrer" : undefined}
-                      onClick={close}
-                    >
-                      {label}
-                    </a>
-                  ) : (
-                    <Link key={item.href} href={item.href} onClick={close}>
-                      {label}
-                    </Link>
-                  );
-                })}
-                <Link href="/contribute" onClick={close}>
-                  Contribute
-                </Link>
+                {items.map(link)}
               </nav>
 
-              <div className="drawer-foot">
-                <Button href={site.githubUrl} variant="primary" arrow="↗" external>
-                  GitHub
-                </Button>
-              </div>
+              {action && <div className="drawer-foot">{action}</div>}
             </aside>
           </div>,
           document.body,

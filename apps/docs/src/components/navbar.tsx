@@ -1,4 +1,4 @@
-import { Button, ThemeToggle, Wordmark } from "@byteveda/ui";
+import { Button, MobileMenu, ThemeToggle, Wordmark } from "@byteveda/ui";
 import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
@@ -52,6 +52,15 @@ export function Navbar() {
           <Button href={site.githubUrl} variant="primary" arrow="↗" external>
             GitHub
           </Button>
+          <MobileMenu
+            items={nav}
+            brand={<Wordmark href={site.homeUrl} />}
+            action={
+              <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+                GitHub
+              </Button>
+            }
+          />
         </div>
       </div>
     </header>

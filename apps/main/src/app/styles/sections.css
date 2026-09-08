@@ -662,12 +662,6 @@
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .nav-links {
-    display: none;
-  }
-  .menu-btn {
-    display: grid;
-  }
   .engine-stage {
     min-height: 360px;
   }

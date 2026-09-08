@@ -1,4 +1,4 @@
-import { OctocatIcon, ThemeToggle } from "@byteveda/ui";
+import { MobileMenu, OctocatIcon, ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 import { Wordmark } from "@/components/wordmark";
 import { nav, site } from "@/lib/site";
@@ -30,6 +30,14 @@ export function Navbar() {
           >
             <OctocatIcon aria-hidden />
           </a>
+          <MobileMenu
+            items={nav}
+            brand={
+              <Link href="/" className="brand">
+                <Wordmark />
+              </Link>
+            }
+          />
         </div>
       </div>
     </header>

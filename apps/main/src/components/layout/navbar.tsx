@@ -1,8 +1,10 @@
-import { Button, ThemeToggle, Wordmark } from "@byteveda/ui";
+import { Button, MobileMenu, ThemeToggle, Wordmark } from "@byteveda/ui";
 import { isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { nav, site } from "@/lib/site";
-import { MobileMenu } from "./mobile-menu";
+
+/** Contribute has no room in the horizontal nav, but the drawer has the space. */
+const drawerItems = [...nav, { label: "Contribute", href: "/contribute" }];
 
 export function Navbar() {
   return (
@@ -41,7 +43,15 @@ export function Navbar() {
           <Button href={site.githubUrl} variant="primary" arrow="↗" external>
             GitHub
           </Button>
-          <MobileMenu />
+          <MobileMenu
+            items={drawerItems}
+            brand={<Wordmark href="/" />}
+            action={
+              <Button href={site.githubUrl} variant="primary" arrow="↗" external>
+                GitHub
+              </Button>
+            }
+          />
         </div>
       </div>
     </header>

@@ -345,6 +345,115 @@
   }
 }
 
+/* ---------- mobile drawer ---------- */
+/* Portaled to <body> so it escapes the nav's backdrop-filter containing block
+   and covers the full viewport. */
+.menu-btn {
+  display: none;
+}
+.drawer-root {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+}
+.drawer-root.open {
+  pointer-events: auto;
+}
+.drawer-scrim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: color-mix(in oklab, #04070d 58%, transparent);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.drawer-root.open .drawer-scrim {
+  opacity: 1;
+}
+.drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(84vw, 340px);
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 24px;
+  background: var(--surface);
+  border-left: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transform: translateX(100%);
+  transition: transform 0.34s var(--ease);
+}
+.drawer-root.open .drawer-panel {
+  transform: none;
+}
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  margin-bottom: 14px;
+}
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.drawer-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 14px 12px;
+  border-radius: var(--r-sm);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+.drawer-links a:hover,
+.drawer-links a:active {
+  color: var(--text);
+  background: var(--chip);
+}
+.drawer-foot {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+}
+.drawer-foot .btn {
+  justify-content: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .drawer-scrim,
+  .drawer-panel {
+    transition: none;
+  }
+}
+
+/* ---------- responsive nav ---------- */
+/* The horizontal nav does not fit a phone — it pushed the docs site 250px past
+   its own viewport before this rule existed. Below the breakpoint the links and
+   the call to action move into the drawer, which is what `.menu-btn` opens. */
+@media (max-width: 940px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-btn {
+    display: grid;
+  }
+  .nav-right .btn {
+    display: none;
+  }
+}
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   .marquee-track,
