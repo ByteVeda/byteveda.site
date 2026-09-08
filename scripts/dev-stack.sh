@@ -44,6 +44,9 @@ ok() { printf '\033[32m✓\033[0m %s\n' "$1"; }
 
 while [ $# -gt 0 ]; do
   case "$1" in
+    # `pnpm stack -- --ngrok …` forwards the separator itself, so swallow it
+    # rather than reporting the documented invocation as an unknown flag.
+    --) shift ;;
     --ngrok) NGROK_URL="${2:-}"; shift 2 ;;
     --port) ADMIN_PORT="${2:-}"; shift 2 ;;
     --seed) SEED=1; shift ;;
