@@ -498,6 +498,60 @@
     font-size: 0.78rem;
   }
 
+  /* ---------- overview cards ----------
+     The one place cards earn their keep: three unrelated figures that are each
+     a link somewhere. Everywhere else, rows. */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .card {
+    display: block;
+    padding: 15px 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    transition: border-color 0.15s;
+  }
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+  .card svg {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 12px;
+    color: var(--text-faint);
+  }
+  .card b {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 1.55rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .card span {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .card i {
+    font-family: var(--font-mono);
+    font-style: normal;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-dim);
+  }
+
   /* ---------- empty + error ---------- */
 
   .empty {
