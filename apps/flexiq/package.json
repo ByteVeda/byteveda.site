@@ -8,15 +8,18 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "lighthouse": "lhci autorun",
+    "test": "playwright test"
   },
   "dependencies": {
+    "@byteveda/analytics": "workspace:*",
     "@byteveda/flexiq-sim": "workspace:*",
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
     "@fontsource-variable/ibm-plex-sans": "catalog:",
     "@fontsource/ibm-plex-mono": "catalog:",
     "@react-three/fiber": "catalog:",
+    "@vercel/speed-insights": "catalog:",
     "three": "catalog:",
     "gray-matter": "catalog:",
     "lucide-react": "catalog:",
@@ -30,6 +33,7 @@
   },
   "devDependencies": {
     "@byteveda/config": "workspace:*",
+    "@lhci/cli": "catalog:",
     "@playwright/test": "catalog:",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",

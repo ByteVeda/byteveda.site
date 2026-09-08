@@ -1,0 +1,10 @@
+{
+  "extends": "../config/next.json",
+  "compilerOptions": {
+    // `NEXT_PUBLIC_VITALS_ENDPOINT` is read through `process.env` so Next can
+    // inline it at build time; that name only exists with Node's types loaded.
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
