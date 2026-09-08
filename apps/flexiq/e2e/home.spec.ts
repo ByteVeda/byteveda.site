@@ -127,12 +127,14 @@ test.describe("the failure lab", () => {
     // newest 40 events, and a burst this size pushes `worker_killed` out of the
     // window within a couple of seconds.)
     //
-    // The generous timeout is about the clock, not the queue: the simulation is
-    // driven by rAF, and a page competing with three other Playwright workers
-    // gets far fewer frames per second than a foregrounded one.
+    // The timeout is deliberately only a few times the real duration. The clock
+    // advances by wall-clock delta, so a page competing with three other
+    // Playwright workers finishes this in about the same time as a lone one; a
+    // regression that starts discarding time on slow frames shows up here as a
+    // timeout rather than as an unnoticed slow motion.
     await expect(page.locator(".lab-counter", { hasText: "Succeeded" }).locator("b")).toHaveText(
       "20",
-      { timeout: 60_000 },
+      { timeout: 20_000 },
     );
     await expect(page.locator(".lab-counter", { hasText: "Retried" }).locator("b")).toHaveText("0");
   });
