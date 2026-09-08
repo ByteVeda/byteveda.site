@@ -11,6 +11,12 @@
     },
     "typecheck": {},
     "test": {},
+    "lighthouse": {
+      "dependsOn": ["build"],
+      // Starts a server and uploads a report; there is nothing here to replay.
+      "cache": false,
+      "passThroughEnv": ["LHCI_*", "CHROME_PATH", "CI"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
