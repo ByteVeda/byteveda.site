@@ -26,8 +26,10 @@ export const config = {
      *  - /login and the auth handshake, which anonymous visitors must reach
      *  - /api/webhooks, authenticated by signature rather than by cookie
      *  - /api/cron, authenticated by a shared secret
+     *  - /api/public, the signup endpoint the public sites post to
+     *  - /s, the confirm and unsubscribe links, which arrive by email
      *  - Next's own assets and the favicon
      */
-    "/((?!login|api/auth|api/webhooks|api/cron|_next/static|_next/image|favicon.ico).*)",
+    "/((?!login|api/auth|api/webhooks|api/cron|api/public|s/|_next/static|_next/image|favicon.ico).*)",
   ],
 };
