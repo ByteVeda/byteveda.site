@@ -34,7 +34,7 @@
     "@types/react-dom": "catalog:",
     "fast-xml-parser": "^5.11.1",
     "tailwindcss": "catalog:",
-    "tsx": "^4.23.12",
+    "tsx": "^4.23.13",
     "typescript": "catalog:"
   }
 }
