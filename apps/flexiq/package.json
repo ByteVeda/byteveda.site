@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@byteveda/analytics": "workspace:*",
+    "@byteveda/db": "workspace:*",
     "@byteveda/flexiq-sim": "workspace:*",
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
@@ -21,7 +22,6 @@
     "@react-three/fiber": "catalog:",
     "@vercel/speed-insights": "catalog:",
     "three": "catalog:",
-    "gray-matter": "catalog:",
     "lucide-react": "catalog:",
     "motion": "catalog:",
     "next": "catalog:",

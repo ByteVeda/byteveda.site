@@ -271,6 +271,9 @@ importers:
       '@byteveda/analytics':
         specifier: workspace:*
         version: link:../../packages/analytics
+      '@byteveda/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@byteveda/flexiq-sim':
         specifier: workspace:*
         version: link:../../packages/flexiq-sim
@@ -292,9 +295,6 @@ importers:
       '@vercel/speed-insights':
         specifier: 'catalog:'
         version: 2.0.0(next@16.3.4(@playwright/test@1.62.1)(@types/node@24.13.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
-      gray-matter:
-        specifier: 'catalog:'
-        version: 4.0.3
       lucide-react:
         specifier: 'catalog:'
         version: 1.34.0(react@19.2.8)
@@ -469,6 +469,12 @@ importers:
       drizzle-kit:
         specifier: 'catalog:'
         version: 0.31.10
+      gray-matter:
+        specifier: 'catalog:'
+        version: 4.0.3
+      tsx:
+        specifier: ^4.23.13
+        version: 4.23.13
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
