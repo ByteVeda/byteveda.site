@@ -1,0 +1,229 @@
+/* ============================================================
+   Download numbers.
+
+   The page is a tape: one line per package, sparkline and figure
+   on the same baseline so the whole catalogue can be read down a
+   single column. Every chart here is one series, so there is no
+   palette to assign — the accent carries the line, and the status
+   colours stay reserved for whether collection worked.
+   ============================================================ */
+
+@layer components {
+  /* ---------- headline ---------- */
+
+  .stat-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+  .stat-head b {
+    font-family: var(--font-mono);
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .stat-head .delta {
+    font-family: var(--font-mono);
+    font-size: 0.84rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-sub {
+    margin-bottom: 16px;
+    color: var(--text-faint);
+    font-size: 0.8rem;
+  }
+
+  /* ---------- 30-day trend ---------- */
+
+  .trend {
+    margin: 0 0 26px;
+  }
+  .trend svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Matches the viewBox, so the aspect ratio is reserved before paint. */
+    aspect-ratio: 640 / 150;
+    overflow: visible;
+  }
+  .trend-line {
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .trend-grid {
+    stroke: var(--line);
+    stroke-width: 1;
+  }
+  .trend-tick {
+    fill: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 10px;
+  }
+  .trend-cursor {
+    stroke: var(--line-strong);
+    stroke-width: 1;
+    stroke-dasharray: 2 2;
+  }
+  .trend-dot {
+    fill: var(--accent);
+    stroke: var(--bg);
+    stroke-width: 1.5;
+  }
+  .trend-readout {
+    margin-top: 7px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .trend-readout b {
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .trend-empty {
+    padding: 34px 0;
+    margin-bottom: 20px;
+    border: 1px dashed var(--line);
+    border-radius: var(--r-md);
+    color: var(--text-faint);
+    font-size: 0.84rem;
+    text-align: center;
+  }
+
+  /* ---------- the tape ---------- */
+
+  .tape {
+    border-top: 1px solid var(--line);
+  }
+  .tape-project {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 96px 64px 28px;
+    align-items: baseline;
+    gap: 14px;
+    padding: 13px 12px 7px;
+  }
+  .tape-project h3 {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .tape-project .num {
+    font-size: 0.86rem;
+  }
+
+  .tape-row {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr) 96px 96px 64px 28px;
+    align-items: center;
+    gap: 14px;
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .tape-row:last-child {
+    border-bottom-color: var(--line);
+  }
+  .tape-row:hover {
+    background: var(--chip);
+  }
+  .tape-eco {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+  }
+  .tape-name {
+    min-width: 0;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .tape-note {
+    color: var(--text-faint);
+    font-size: 0.72rem;
+    font-style: normal;
+  }
+
+  .spark {
+    display: block;
+    width: 84px;
+    height: 20px;
+    overflow: visible;
+  }
+  .spark path {
+    stroke: var(--accent);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .spark circle {
+    fill: var(--accent);
+  }
+  .spark-empty {
+    display: block;
+    width: 84px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-align: center;
+  }
+
+  .tape-remove {
+    color: var(--text-faint);
+    line-height: 1;
+    opacity: 0;
+    transition:
+      opacity 0.12s,
+      color 0.12s;
+  }
+  .tape-row:hover .tape-remove,
+  .tape-remove:focus-visible {
+    opacity: 1;
+  }
+  .tape-remove:hover {
+    color: var(--danger);
+  }
+
+  /* ---------- adding a package ---------- */
+
+  .add-package {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 130px minmax(0, 1.4fr) auto;
+    gap: 8px;
+    align-items: end;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .add-package .field {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 720px) {
+    .tape-row {
+      grid-template-columns: 70px minmax(0, 1fr) 76px 24px;
+    }
+    .tape-row .spark,
+    .tape-row .spark-empty,
+    .tape-row .delta-up,
+    .tape-row .delta-down,
+    .tape-row .delta-flat {
+      display: none;
+    }
+    .add-package {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tape-remove,
+  .trend-line {
+    transition: none;
+  }
+}
