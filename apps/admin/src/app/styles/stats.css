@@ -38,7 +38,10 @@
 
   /* ---------- 30-day trend ---------- */
 
+  /* Bounded, because a 640:150 box stretched across an ultrawide display is
+     400px of chart for thirty numbers. */
   .trend {
+    max-width: 880px;
     margin: 0 0 26px;
   }
   .trend svg {

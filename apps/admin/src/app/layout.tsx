@@ -51,6 +51,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html
       lang="en"
       suppressHydrationWarning
+      // @byteveda/ui sets `scroll-behavior: smooth`. Without this attribute Next
+      // animates its scroll restoration on every route change, which lands a
+      // navigation part-way down the new page instead of at the top.
+      data-scroll-behavior="smooth"
       className={`${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
