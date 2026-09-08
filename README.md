@@ -32,6 +32,27 @@ pnpm dev:all      # all of them at once
 `admin` and `flexiq` both need a `DATABASE_URL`; copy each app's `.env.example`
 to `.env.local` and fill it in. See **Database** below.
 
+### Running the admin console
+
+`pnpm stack` checks the environment before starting anything, so a missing
+credential is named up front rather than surfacing as a redirect back to
+`/login`. It also applies pending migrations and prints the callback URL to
+register on the GitHub OAuth app.
+
+```bash
+pnpm stack                                              # localhost:3002
+pnpm stack -- --port 3000
+pnpm stack -- --ngrok https://abc123.ngrok-free.app --port 3000
+pnpm stack -- --ngrok <url> --seed --with-flexiq
+```
+
+Behind a tunnel, GitHub redirects to whatever origin began the handshake, so
+`--ngrok` writes `ADMIN_URL` and prints the callback to paste into the OAuth
+app. ngrok origins are accepted by the dev server and by the public signup
+endpoint **outside production only** — see the `TEMPORARY` comments in
+`apps/admin/next.config.ts` and `apps/admin/src/lib/cors.ts`, which are the two
+places to delete once the tunnel is no longer needed.
+
 ## Checks
 
 ```bash

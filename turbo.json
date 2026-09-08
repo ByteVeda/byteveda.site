@@ -20,7 +20,9 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      // scripts/dev-stack.sh sets the port it told you to point ngrok at.
+      "passThroughEnv": ["ADMIN_PORT"]
     },
     "fetch:news": {
       "cache": false
