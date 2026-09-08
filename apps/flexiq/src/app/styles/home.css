@@ -680,6 +680,12 @@
 .install {
   display: inline-flex;
   align-items: center;
+  /* The command is as long as it is; on a phone the pill has to give way rather
+     than run past the viewport, where the body clips it and shaves the button.
+     `min-width: 0` is the load-bearing half — a flex item defaults to
+     `min-width: auto` and refuses to shrink below its content. */
+  min-width: 0;
+  max-width: 100%;
   gap: 0.55rem;
   border: 1px solid var(--line);
   border-radius: var(--r-pill);
@@ -688,6 +694,11 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text);
+}
+
+.install code {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .install-prompt {
