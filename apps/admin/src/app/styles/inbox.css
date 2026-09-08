@@ -1,0 +1,159 @@
+/* ============================================================
+   Inbox — a conversation list beside the conversation.
+   ============================================================ */
+
+@layer components {
+  .inbox {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    align-items: start;
+    min-height: calc(100dvh - var(--topbar-h));
+  }
+
+  .thread-list {
+    position: sticky;
+    top: var(--topbar-h);
+    height: calc(100dvh - var(--topbar-h));
+    overflow-y: auto;
+    border-right: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .thread-item {
+    display: block;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    transition: background 0.12s;
+  }
+  .thread-item:hover {
+    background: var(--chip);
+  }
+  .thread-item[aria-current="true"] {
+    background: var(--chip);
+    box-shadow: inset 2px 0 0 var(--accent);
+  }
+  .thread-from {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+  .thread-from b {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .thread-from time {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    flex: none;
+  }
+  .thread-subject {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.82rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .thread-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text-faint);
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+  /* A dot rather than bold text: unread should be findable without re-reading. */
+  .thread-unread {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+
+  .thread-view {
+    min-width: 0;
+    padding: 20px 24px 60px;
+  }
+  .thread-head {
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .thread-head h2 {
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+  .thread-head p {
+    margin-top: 4px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+  }
+
+  .message {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .message:last-of-type {
+    border-bottom: none;
+  }
+  .message-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+  }
+  .message-body {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .reply-box {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .reply-box .textarea {
+    min-height: 120px;
+  }
+  .reply-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .inbox {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .thread-list {
+      position: static;
+      height: auto;
+      max-height: 40dvh;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .thread-view {
+      padding-inline: 16px;
+    }
+  }
+}
