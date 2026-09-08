@@ -66,7 +66,7 @@ jobs:
       # the raw reports are what you diff when a budget moves.
       - name: Upload reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: lighthouse-${{ matrix.app }}
           path: apps/${{ matrix.app }}/.lighthouseci
