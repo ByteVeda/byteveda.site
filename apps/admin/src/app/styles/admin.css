@@ -1,0 +1,672 @@
+/* ============================================================
+   Admin console.
+
+   The public sites are the storefront; this is the workshop. Where
+   they use generous sans-serif type and full-bleed sections, this
+   leans on aligned columns, hairline rules, and monospace for
+   anything that is a count, an identifier, or a date. Cards and
+   shadows are deliberately absent — the data lines up instead of
+   being boxed.
+   ============================================================ */
+
+:root {
+  --rail-w: 232px;
+  --topbar-h: 60px;
+  --admin-maxw: 1120px;
+
+  /* Semantic states. The shared tokens only carry one accent, and a
+     console needs to say "stop" as well as "go". */
+  --ok: var(--accent);
+  --warn: #cf9a25;
+  --danger: #d4513f;
+  --warn-soft: rgba(207, 154, 37, 0.13);
+  --danger-soft: rgba(212, 81, 63, 0.13);
+}
+
+[data-theme="light"] {
+  --warn: #9a6f0d;
+  --danger: #b23425;
+  --warn-soft: rgba(154, 111, 13, 0.1);
+  --danger-soft: rgba(178, 52, 37, 0.1);
+}
+
+@layer components {
+  /* ---------- shell ---------- */
+
+  .shell {
+    display: grid;
+    grid-template-columns: var(--rail-w) minmax(0, 1fr);
+    min-height: 100dvh;
+  }
+
+  .rail {
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 0 14px;
+    border-right: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .rail-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 18px 16px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+  }
+  .rail-brand .mark {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    flex: none;
+  }
+  .rail-brand small {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .rail-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  /* Active state is a 2px edge tick and a brightness change, not a filled
+     pill — the rail should stay quiet enough to ignore while writing. */
+  .rail-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 8px 10px;
+    border-radius: var(--r-sm);
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    transition:
+      color 0.15s,
+      background 0.15s;
+  }
+  /* The active state drives the icon through custom properties rather than a
+     more specific descendant selector, which keeps every `… svg` rule in this
+     file at one specificity and out of each other's way. */
+  .rail-link svg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    color: var(--rail-icon, currentcolor);
+    opacity: var(--rail-icon-opacity, 0.75);
+  }
+  .rail-link:hover {
+    color: var(--text);
+    background: var(--chip);
+  }
+  .rail-link[aria-current="page"] {
+    --rail-icon: var(--accent);
+    --rail-icon-opacity: 1;
+    color: var(--text);
+    background: var(--chip);
+  }
+  .rail-link[aria-current="page"]::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    translate: 0 -50%;
+    width: 2px;
+    height: 18px;
+    border-radius: 0 2px 2px 0;
+    background: var(--accent);
+  }
+  .rail-link .count {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rail-spacer {
+    flex: 1;
+  }
+
+  .rail-foot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    padding: 10px;
+    border-top: 1px solid var(--line-soft);
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  .rail-foot img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex: none;
+  }
+  .rail-foot .who {
+    min-width: 0;
+    line-height: 1.3;
+  }
+  .who-name {
+    display: block;
+    color: var(--text);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .who-handle {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-faint);
+  }
+
+  /* ---------- topbar + content ---------- */
+
+  .main {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: var(--topbar-h);
+    padding: 0 24px;
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in oklab, var(--bg) 84%, transparent);
+    backdrop-filter: blur(12px);
+  }
+  .topbar h1 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .topbar .sub {
+    color: var(--text-faint);
+    font-size: 0.82rem;
+  }
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .content {
+    padding: 24px;
+  }
+  .content-narrow {
+    max-width: var(--admin-maxw);
+  }
+
+  /* ---------- buttons ---------- */
+
+  .abtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    height: 34px;
+    padding: 0 13px;
+    border: 1px solid transparent;
+    border-radius: var(--r-sm);
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background 0.15s,
+      border-color 0.15s,
+      color 0.15s,
+      opacity 0.15s;
+  }
+  .abtn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .abtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .abtn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .abtn-primary:hover:not(:disabled) {
+    background: var(--accent-2);
+  }
+  .abtn-quiet {
+    border-color: var(--line);
+    color: var(--text-dim);
+  }
+  .abtn-quiet:hover:not(:disabled) {
+    border-color: var(--line-strong);
+    color: var(--text);
+  }
+  .abtn-danger {
+    border-color: color-mix(in oklab, var(--danger) 40%, transparent);
+    color: var(--danger);
+  }
+  .abtn-danger:hover:not(:disabled) {
+    background: var(--danger-soft);
+  }
+  .abtn-sm {
+    height: 28px;
+    padding: 0 9px;
+    font-size: 0.8rem;
+  }
+
+  /* ---------- rows: the primary way lists are shown ---------- */
+
+  .rows {
+    border-top: 1px solid var(--line);
+  }
+  .row {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    transition: background 0.12s;
+  }
+  .row:hover {
+    background: var(--chip);
+  }
+  .row-head {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom-color: var(--line);
+    color: var(--text-faint);
+    font-size: 0.75rem;
+  }
+  .row-head:hover {
+    background: none;
+  }
+  .row-title {
+    min-width: 0;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-sub {
+    display: block;
+    margin-top: 2px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  /* Anything countable is monospace and tabular so columns line up. */
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .num-dim {
+    color: var(--text-faint);
+  }
+  .delta-up {
+    color: var(--ok);
+  }
+  .delta-down {
+    color: var(--danger);
+  }
+  .delta-flat {
+    color: var(--text-faint);
+  }
+
+  /* ---------- state ---------- */
+
+  .state {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .state::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentcolor;
+    flex: none;
+  }
+  .state-published {
+    color: var(--ok);
+  }
+  .state-draft {
+    color: var(--warn);
+  }
+  .state-archived {
+    color: var(--text-faint);
+  }
+
+  /* ---------- panels ---------- */
+
+  .panel {
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+  }
+  .panel-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .panel-head h2 {
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  .panel-head .abtn {
+    margin-left: auto;
+  }
+  .panel-body {
+    padding: 14px;
+  }
+
+  /* ---------- forms ---------- */
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .field > label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-dim);
+  }
+  .field .hint {
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+  .field .err {
+    color: var(--danger);
+    font-size: 0.76rem;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    width: 100%;
+    padding: 8px 11px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.88rem;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+  }
+  .textarea {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.6;
+  }
+  .input-mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+  }
+  .input:focus-visible,
+  .textarea:focus-visible,
+  .select:focus-visible {
+    outline: none;
+    border-color: var(--accent-line);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  .input::placeholder,
+  .textarea::placeholder {
+    color: var(--text-faint);
+  }
+
+  .switch {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .switch:last-child {
+    border-bottom: none;
+  }
+  .switch input {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    accent-color: var(--accent);
+    flex: none;
+  }
+  .switch .who {
+    line-height: 1.45;
+  }
+  .switch b {
+    display: block;
+    font-weight: 500;
+    font-size: 0.88rem;
+  }
+  .switch span {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+
+  /* ---------- empty + error ---------- */
+
+  .empty {
+    padding: 56px 20px;
+    text-align: center;
+    color: var(--text-dim);
+  }
+  .empty h3 {
+    margin-bottom: 5px;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .empty p {
+    margin-bottom: 16px;
+    font-size: 0.86rem;
+  }
+
+  .notice {
+    display: flex;
+    gap: 10px;
+    padding: 11px 13px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+  .notice-warn {
+    border-color: color-mix(in oklab, var(--warn) 35%, transparent);
+    background: var(--warn-soft);
+  }
+  .notice-danger {
+    border-color: color-mix(in oklab, var(--danger) 35%, transparent);
+    background: var(--danger-soft);
+  }
+  .notice svg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    margin-top: 2px;
+  }
+
+  /* ---------- chips ---------- */
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 7px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--chip);
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+  .tag button {
+    color: var(--text-faint);
+    line-height: 1;
+  }
+  .tag button:hover {
+    color: var(--danger);
+  }
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* ---------- login ---------- */
+
+  .login {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    padding: 24px;
+  }
+  .login-card {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+  }
+  .login-card .mark {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 18px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .login-card h1 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .login-card p {
+    margin: 7px 0 22px;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  .login-card .abtn {
+    width: 100%;
+    height: 40px;
+  }
+  .login-foot {
+    margin-top: 18px;
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width: 900px) {
+    .shell {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .rail {
+      position: static;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 2px;
+      overflow-x: auto;
+      padding: 8px 10px;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .rail-brand,
+    .rail-spacer,
+    .rail-foot {
+      display: none;
+    }
+    .rail-nav {
+      flex-direction: row;
+      padding: 0;
+    }
+    .rail-link[aria-current="page"]::before {
+      inset: auto 10px 0 10px;
+      top: auto;
+      translate: none;
+      width: auto;
+      height: 2px;
+      border-radius: 2px 2px 0 0;
+    }
+    .content,
+    .topbar {
+      padding-inline: 16px;
+    }
+  }
+}
+
+/* Keyboard focus must stay visible everywhere, including on rows and
+   links that otherwise have no border to light up. */
+.rail-link:focus-visible,
+.abtn:focus-visible,
+.row a:focus-visible,
+.tag button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail-link,
+  .abtn,
+  .row,
+  .input,
+  .textarea,
+  .select {
+    transition: none;
+  }
+}
