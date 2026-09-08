@@ -1,0 +1,32 @@
+{
+  "name": "@byteveda/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Postgres schema, migrations, and queries shared by the admin app and the public sites.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./queries/posts": "./src/queries/posts.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "drizzle": "node --env-file-if-exists=.env.local --env-file-if-exists=.env node_modules/drizzle-kit/bin.cjs",
+    "db:generate": "pnpm drizzle generate",
+    "db:migrate": "pnpm drizzle migrate",
+    "db:studio": "pnpm drizzle studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "catalog:",
+    "pg": "catalog:"
+  },
+  "devDependencies": {
+    "@byteveda/config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/pg": "catalog:",
+    "drizzle-kit": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
