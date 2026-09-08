@@ -1,32 +1,9 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { originOf } from "@/lib/auth/urls";
+import { corsHeaders } from "@/lib/cors";
 import { subscribe } from "@/lib/subscribers/service";
 
 export const dynamic = "force-dynamic";
-
-/** Only the ByteVeda sites may post here from a browser. */
-const ALLOWED_ORIGINS = [
-  "https://byteveda.org",
-  "https://www.byteveda.org",
-  "https://flexiq.byteveda.org",
-  "https://docs.byteveda.org",
-];
-
-function corsHeaders(origin: string | null): Record<string, string> {
-  const allowed =
-    origin &&
-    (ALLOWED_ORIGINS.includes(origin) ||
-      (process.env.NODE_ENV !== "production" && origin.startsWith("http://localhost:")));
-
-  return allowed
-    ? {
-        "access-control-allow-origin": origin,
-        "access-control-allow-methods": "POST, OPTIONS",
-        "access-control-allow-headers": "content-type",
-        vary: "origin",
-      }
-    : { vary: "origin" };
-}
 
 export function OPTIONS(request: NextRequest) {
   return new NextResponse(null, {
