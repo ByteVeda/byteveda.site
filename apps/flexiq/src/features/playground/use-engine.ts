@@ -15,10 +15,17 @@ const UI_INTERVAL_MS = 120;
 const EVENT_LIMIT = 40;
 
 /**
- * A backgrounded tab hands back one enormous delta on return. Clamping it keeps
- * the simulation from replaying minutes of work in a single frame.
+ * Last-resort bound on a single frame's delta — a long GC pause, a laptop waking
+ * from sleep. It sits far above any real frame on purpose: the engine advances in
+ * fixed 10 ms slices, so a large delta costs a little CPU and changes nothing
+ * about the run, whereas clamping a merely slow frame silently drops simulated
+ * time and puts the lab into slow motion on the devices least able to afford it.
+ *
+ * The one predictable source of an enormous delta — a backgrounded tab, where
+ * rAF stops entirely — rebases the clock instead of being clamped. Scrolling the
+ * lab out of view does not: frames keep arriving there, so no gap accumulates.
  */
-const MAX_FRAME_MS = 250;
+const MAX_FRAME_MS = 1000;
 
 export interface PlaygroundEngine {
   snapshot: EngineSnapshot | null;
@@ -57,6 +64,9 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
   const runningRef = useRef(running);
   const speedRef = useRef(speed);
   const visibleRef = useRef(true);
+  /** Timestamp the next frame measures its delta against. Rebased, not clamped,
+   *  whenever the clock has legitimately been stopped. */
+  const lastFrameRef = useRef(0);
 
   runningRef.current = running;
   speedRef.current = speed;
@@ -80,13 +90,13 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
 
   useEffect(() => {
     let frame = 0;
-    let last = performance.now();
     let uiAccumulator = 0;
+    lastFrameRef.current = performance.now();
 
     const loop = (now: number) => {
       frame = requestAnimationFrame(loop);
-      const dt = Math.min(MAX_FRAME_MS, now - last);
-      last = now;
+      const dt = Math.min(MAX_FRAME_MS, now - lastFrameRef.current);
+      lastFrameRef.current = now;
 
       const engine = engineRef.current;
       if (!engine) return;
@@ -105,8 +115,18 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
       }
     };
 
+    // rAF stops while the tab is hidden, so the first frame back would otherwise
+    // carry the whole absence. That time was not simulated and is not owed.
+    const onVisibilityChange = () => {
+      if (!document.hidden) lastFrameRef.current = performance.now();
+    };
+
     frame = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(frame);
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    return () => {
+      cancelAnimationFrame(frame);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, []);
 
   const subscribe = useCallback((cb: (engine: Engine) => void) => {
