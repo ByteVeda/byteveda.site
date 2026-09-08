@@ -4,6 +4,25 @@ const counter = (page: import("@playwright/test").Page, label: string) =>
   page.locator(".pg-counter", { hasText: label }).locator("b");
 
 test.describe("playground", () => {
+  test("the scenario is already running on arrival", async ({ page }) => {
+    await page.goto("/playground");
+
+    // Nothing is clicked here on purpose. A visitor lands above the fold, and
+    // the "Burst" button is far below it: a board that only moves once it is
+    // pressed reads as a broken page, not as one waiting for input.
+    await expect(counter(page, "Succeeded")).not.toHaveText("0", { timeout: 15_000 });
+  });
+
+  test("reset restarts the scenario instead of emptying the board", async ({ page }) => {
+    await page.goto("/playground");
+    await page.getByRole("button", { name: "Pause" }).click();
+    await page.getByRole("button", { name: "Reset" }).click();
+
+    await expect(counter(page, "Succeeded")).toHaveText("0");
+    // Paused, so the fresh scenario stays where reset put it: on the queue.
+    await expect(page.locator('.pg-table tbody tr[data-state="pending"]').first()).toBeVisible();
+  });
+
   test("runs jobs to completion", async ({ page }) => {
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
