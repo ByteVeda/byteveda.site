@@ -6,6 +6,7 @@
   "description": "Postgres schema, migrations, and queries shared by the admin app and the public sites.",
   "exports": {
     ".": "./src/index.ts",
+    "./constants": "./src/constants.ts",
     "./schema": "./src/schema/index.ts",
     "./queries/posts": "./src/queries/posts.ts"
   },

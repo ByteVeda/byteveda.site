@@ -9,33 +9,29 @@ import {
   uniqueIndex,
   uuid,
 } from "drizzle-orm/pg-core";
+import {
+  EMPTY_SEO,
+  POST_FORMATS,
+  POST_SITES,
+  POST_STATUSES,
+  type PostFormat,
+  type PostSeo,
+  type PostSite,
+  type PostStatus,
+} from "../constants";
 import { adminUsers } from "./auth";
 
+export type { PostFormat, PostSeo, PostSite, PostStatus };
 /**
- * Which public site a post belongs to. Only FlexiQ has a blog today; the column
- * exists so adding one is a row-level concern rather than a schema change.
+ * `site` says which public site a post belongs to — only FlexiQ has a blog
+ * today, and the column exists so adding one is a row rather than a migration.
+ * `body_format` says which editor round-trips the body without losing anything;
+ * `body_mdx` is authoritative either way.
+ *
+ * The values themselves live in `constants.ts`, which has no imports, so a
+ * client component can read them without pulling in the ORM.
  */
-export const POST_SITES = ["flexiq"] as const;
-export type PostSite = (typeof POST_SITES)[number];
-
-export const POST_STATUSES = ["draft", "published", "archived"] as const;
-export type PostStatus = (typeof POST_STATUSES)[number];
-
-/**
- * How the body was written. `body_mdx` is authoritative either way — this only
- * says which editor round-trips it without losing anything.
- */
-export const POST_FORMATS = ["richtext", "mdx"] as const;
-export type PostFormat = (typeof POST_FORMATS)[number];
-
-export type PostSeo = {
-  keywords: string[];
-  metaTitle?: string;
-  metaDescription?: string;
-  ogImage?: string;
-};
-
-export const EMPTY_SEO: PostSeo = { keywords: [] };
+export { EMPTY_SEO, POST_FORMATS, POST_SITES, POST_STATUSES };
 
 /** Column values are constrained in the database as well as in the types, because
  *  the types stop being enforced the moment anything else connects. */
