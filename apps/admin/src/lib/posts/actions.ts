@@ -14,6 +14,7 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireSession } from "@/lib/auth/session";
+import { announcePost } from "@/lib/broadcasts/service";
 import { revalidateFlexiq } from "@/lib/publish/revalidate";
 import { getTakenSlugs } from "./queries";
 import { isValidSlug, slugify, uniqueSlug } from "./slug";
@@ -193,7 +194,7 @@ export async function setPostStatus(id: string, status: PostStatus): Promise<Act
     return { ok: false, message: "Give the post a title before publishing." };
   }
 
-  await db
+  const [updated] = await db
     .update(posts)
     .set({
       status,
@@ -202,7 +203,8 @@ export async function setPostStatus(id: string, status: PostStatus): Promise<Act
       publishedAt: status === "published" ? (existing.publishedAt ?? new Date()) : null,
       updatedAt: new Date(),
     })
-    .where(eq(posts.id, id));
+    .where(eq(posts.id, id))
+    .returning();
 
   revalidatePath(`/posts/${id}`);
   revalidatePath("/posts");
@@ -212,7 +214,22 @@ export async function setPostStatus(id: string, status: PostStatus): Promise<Act
     status
   ];
 
-  return { ok: true, message: site.ok ? `${verb}.` : `${verb}. ${site.detail}` };
+  // Announcing is a side effect of publishing, not part of it. A mail failure
+  // is reported alongside the success, never as one.
+  let announced: string | null = null;
+  if (status === "published" && updated) {
+    try {
+      announced = await announcePost(updated);
+    } catch (error) {
+      console.error("[posts] announcement failed", error);
+      announced = "The announcement email did not send.";
+    }
+  }
+
+  return {
+    ok: true,
+    message: [`${verb}.`, site.ok ? null : site.detail, announced].filter(Boolean).join(" "),
+  };
 }
 
 export async function deletePost(id: string): Promise<never> {
