@@ -64,8 +64,8 @@ catalogs:
       specifier: ^4
       version: 4.3.3
     three:
-      specifier: ^0.182.0
-      version: 0.182.0
+      specifier: ^0.185.1
+      version: 0.185.1
     typescript:
       specifier: ^6
       version: 6.0.3
@@ -161,7 +161,7 @@ importers:
         version: 5.3.0
       '@react-three/fiber':
         specifier: 'catalog:'
-        version: 9.7.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(three@0.182.0)
+        version: 9.7.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(three@0.185.1)
       gray-matter:
         specifier: 'catalog:'
         version: 4.0.3
@@ -191,7 +191,7 @@ importers:
         version: 4.0.1
       three:
         specifier: 'catalog:'
-        version: 0.182.0
+        version: 0.185.1
     devDependencies:
       '@byteveda/config':
         specifier: workspace:*
@@ -2018,8 +2018,8 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  three@0.182.0:
-    resolution: {integrity: sha512-GbHabT+Irv+ihI1/f5kIIsZ+Ef9Sl5A1Y7imvS5RQjWgtTPfPnZ43JmlYI7NtCRDK9zir20lQpfg8/9Yd02OvQ==}
+  three@0.185.1:
+    resolution: {integrity: sha512-5aojFCXKwnjBRZvUnt3WFfEcvUJgkN5LlijRFN95hMy8WVkG4I0QNcJE+OuWvuJ0bOdStrbfXn0pkd6/QyiAlg==}
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -2553,7 +2553,7 @@ snapshots:
     dependencies:
       playwright: 1.62.1
 
-  '@react-three/fiber@9.7.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(three@0.182.0)':
+  '@react-three/fiber@9.7.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(three@0.185.1)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@types/webxr': 0.5.24
@@ -2564,7 +2564,7 @@ snapshots:
       react-use-measure: 2.1.7(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       scheduler: 0.27.0
       suspend-react: 0.1.3(react@19.2.8)
-      three: 0.182.0
+      three: 0.185.1
       use-sync-external-store: 1.6.0(react@19.2.8)
       zustand: 5.0.15(@types/react@19.2.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8))
     optionalDependencies:
@@ -3963,7 +3963,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  three@0.182.0: {}
+  three@0.185.1: {}
 
   tinybench@2.9.0: {}
 
