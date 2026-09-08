@@ -15,7 +15,8 @@ export const dynamic = "force-dynamic";
  */
 const FAILURES: Record<string, string> = {
   denied: "That GitHub account is not on the allowlist.",
-  state: "That sign-in link is no longer valid. Start again.",
+  state:
+    "That sign-in link is no longer valid. If you are tunnelling, start from the ADMIN_URL origin — the callback cannot read a cookie set on a different host.",
   exchange: "GitHub could not complete the sign-in. Try again.",
   config:
     "Sign-in is not configured. Set GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET and ADMIN_GITHUB_IDS.",
