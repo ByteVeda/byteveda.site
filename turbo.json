@@ -5,9 +5,10 @@
   "tasks": {
     "build": {
       "outputs": [".next/**", "!.next/cache/**", "out/**"],
-      // Inlined into the client bundle at build time, so it belongs in the hash:
-      // a different endpoint is a different build.
-      "env": ["NEXT_PUBLIC_VITALS_ENDPOINT"]
+      // Inlined into the client bundle at build time, so they belong in the hash:
+      // a different endpoint, or a build that is not on Vercel, is a different
+      // build. Strict env mode would otherwise strip both.
+      "env": ["NEXT_PUBLIC_VITALS_ENDPOINT", "NEXT_PUBLIC_VERCEL_ENV"]
     },
     "typecheck": {},
     "test": {},

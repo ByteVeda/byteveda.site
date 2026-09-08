@@ -1,6 +1,6 @@
 import { WebVitals } from "@byteveda/analytics";
+import { VercelSpeedInsights } from "@byteveda/analytics/vercel";
 import { ThemeProvider } from "@byteveda/ui";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
@@ -136,10 +136,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </ThemeProvider>
         <JsonLd data={softwareSchema} />
         {/* Field measurement. WebVitals is the portable one — it posts to whatever
-            NEXT_PUBLIC_VITALS_ENDPOINT names. SpeedInsights is a second sink that
-            leaves with Vercel if we do. */}
+            NEXT_PUBLIC_VITALS_ENDPOINT names. The second sink leaves with Vercel
+            if we do, and renders nothing anywhere else. */}
         <WebVitals />
-        <SpeedInsights />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
