@@ -181,35 +181,18 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:0c23776fba8e",
+    "id": "mastodon:9b8f55a66f15",
     "kind": "article",
     "source": "mastodon",
-    "title": "MSN",
-    "url": "https://www.msn.com/en-us/money/general/a-michigan-nuclear-plant-shut-down-for-good-is-being-switched-back-on-for-ai-power/ar-AA2bDJGZ?ocid=winp2fptaskbarhover",
-    "excerpt": "Um... ☢️ A # Michigan # NuclearPlant shut down for good is being switched back on for # AI power Story by Everett Sloane, September 6, 2026 \"A nuclear plant on the shore of Lake Michigan that shut do…",
-    "author": "DoomsdaysCW",
-    "publishedAt": "2026-09-07T21:18:16.000Z",
-    "score": 5,
+    "title": "OH: \"It has a certain gen-AI sais quoi.\" # ai # llm",
+    "url": "https://phpc.social/@Crell/117232495833508888",
+    "excerpt": "OH: \"It has a certain gen-AI sais quoi.\" # ai # llm",
+    "author": "Larry Garfield",
+    "publishedAt": "2026-09-08T00:05:25.000Z",
+    "score": 24,
     "tags": [
-      "michigan",
-      "nuclearplant",
       "ai",
-      "palisades",
-      "nuclear",
-      "coverttownship",
-      "holtecinternational",
-      "datacenters",
-      "aisucks",
-      "aidatacenters",
-      "nonukesforai",
-      "nonukes",
-      "HOLTEC",
-      "palisadesnuclearplant",
-      "palisadesnpp",
-      "waterislife",
-      "lakemichigan",
-      "rethinknotrestart",
-      "aiboom"
+      "llm"
     ],
     "labels": [
       "ai"
@@ -217,23 +200,43 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:87921b6750e3",
+    "id": "mastodon:3522cc9d3829",
     "kind": "article",
     "source": "mastodon",
-    "title": "Curious people's experience with LLMs at work vs personal projects. Mostly thinking about programming types of tasks he…",
-    "url": "https://partyon.xyz/@nullagent/117231730998051083",
-    "excerpt": "Curious people's experience with LLMs at work vs personal projects. Mostly thinking about programming types of tasks here, things you would have otherwise written yourself or had to learn about and a…",
-    "author": "nullagent",
-    "publishedAt": "2026-09-07T20:50:54.000Z",
-    "score": 9,
+    "title": "JavaScript installer pnpm recast in Rust because ECMAScript can't keep up",
+    "url": "https://www.theregister.com/devops/2026/09/04/javascript-installer-pnpm-recast-in-rust-because-ecmascript-cant-keep-up/5294394",
+    "excerpt": "Fully backward-compatible upgrade promises zero-friction speedup for monorepo wranglers.",
+    "author": "jbz",
+    "publishedAt": "2026-09-07T23:20:01.000Z",
+    "score": 5,
     "tags": [
-      "programming",
-      "llm",
-      "ai",
-      "survey"
+      "pnpm",
+      "rust",
+      "riir",
+      "opensource"
     ],
     "labels": [
-      "ai"
+      "rust",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:48decf7b104d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "bzip3: A better and stronger spiritual successor to BZip2",
+    "url": "https://github.com/iczelia/bzip3",
+    "excerpt": "18 points · compsci, performance",
+    "author": "mrunix",
+    "publishedAt": "2026-09-07T13:35:35.264-05:00",
+    "score": 18,
+    "tags": [
+      "compsci",
+      "performance"
+    ],
+    "labels": [
+      "performance"
     ],
     "mentionsByteveda": false
   },
@@ -246,7 +249,7 @@
     "excerpt": "Find OpenStreetMap drinking water along a GPX route or around any selected location in Europe.",
     "author": "Uggla",
     "publishedAt": "2026-09-07T17:50:00.000Z",
-    "score": 6,
+    "score": 10,
     "tags": [
       "opensource",
       "rust",
@@ -270,10 +273,10 @@
     "source": "lobsters",
     "title": "Rust debugging survey 2026 results",
     "url": "https://blog.rust-lang.org/2026/09/07/rust-debugging-survey-2026-results/",
-    "excerpt": "15 points · rust",
+    "excerpt": "22 points · rust",
     "author": "ettolrach",
     "publishedAt": "2026-09-07T12:00:42.881-05:00",
-    "score": 15,
+    "score": 22,
     "tags": [
       "rust"
     ],
@@ -288,10 +291,10 @@
     "source": "lobsters",
     "title": "A faster way to convert a timestamp to Hour, Min, Sec",
     "url": "https://www.benjoffe.com/fast-time-of-day",
-    "excerpt": "72 points · c++, performance",
+    "excerpt": "90 points · c++, performance",
     "author": "benjoffe",
     "publishedAt": "2026-09-07T05:27:56.386-05:00",
-    "score": 72,
+    "score": 90,
     "tags": [
       "c++",
       "performance"
@@ -307,10 +310,10 @@
     "source": "lobsters",
     "title": "\"Hammock Driven Development\" (2010)",
     "url": "https://youtu.be/f84n5oFoZBc",
-    "excerpt": "18 points · practices, video",
+    "excerpt": "22 points · practices, video",
     "author": "gunduzc",
     "publishedAt": "2026-09-07T03:31:19.589-05:00",
-    "score": 18,
+    "score": 22,
     "tags": [
       "practices",
       "video"
@@ -327,7 +330,7 @@
     "excerpt": "This is a submission for the Weekend Challenge: Generosity Edition Don't Just Ask AI. Give the...",
     "author": "Pascal CESCATO",
     "publishedAt": "2026-09-07T03:34:19Z",
-    "score": 26,
+    "score": 29,
     "tags": [
       "devchallenge",
       "weekendchallenge",
@@ -340,15 +343,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:1b60eb737427",
+    "kind": "article",
+    "source": "devto",
+    "title": "Compare Against the Schema They Shipped, Not the One You Expected",
+    "url": "https://dev.to/kenielzep97/compare-against-the-schema-they-shipped-not-the-one-you-expected-3mb8",
+    "excerpt": "My harness flagged the model for sending the wrong arguments. It compared what the model actually...",
+    "author": "Self-Correcting Systems",
+    "publishedAt": "2026-09-06T21:57:04Z",
+    "score": 29,
+    "tags": [
+      "security",
+      "ai",
+      "testing",
+      "opensource"
+    ],
+    "labels": [
+      "security",
+      "ai",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:ee0aab3ce912",
     "kind": "article",
     "source": "lobsters",
     "title": "It took a year to ship WebAssembly in Anubis",
     "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
-    "excerpt": "88 points · rust, wasm",
+    "excerpt": "93 points · rust, wasm",
     "author": "cadey",
     "publishedAt": "2026-09-06T15:41:38.430-05:00",
-    "score": 88,
+    "score": 93,
     "tags": [
       "rust",
       "wasm"
@@ -364,10 +390,10 @@
     "source": "lobsters",
     "title": "Python Iceberg",
     "url": "https://aleyan.com/projects/python-iceberg/",
-    "excerpt": "27 points · python, vibecoding, visualization",
+    "excerpt": "28 points · python, vibecoding, visualization",
     "author": "aleyan",
     "publishedAt": "2026-09-06T13:46:54.409-05:00",
-    "score": 27,
+    "score": 28,
     "tags": [
       "python",
       "vibecoding",
@@ -375,6 +401,28 @@
     ],
     "labels": [
       "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:50bfbe8145f9",
+    "kind": "article",
+    "source": "devto",
+    "title": "Two Bugs Later: What It Actually Took to Replace a DNS Library",
+    "url": "https://dev.to/shashank_chauhan/two-bugs-later-what-it-actually-took-to-replace-a-dns-library-2k2n",
+    "excerpt": "A library isn't code. A library is thirty or forty decisions somebody already made, correctly,...",
+    "author": "Shashank Chauhan",
+    "publishedAt": "2026-09-06T16:05:06Z",
+    "score": 26,
+    "tags": [
+      "hackathonraptors",
+      "go",
+      "dns",
+      "opensource"
+    ],
+    "labels": [
+      "go",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
@@ -423,10 +471,10 @@
     "source": "lobsters",
     "title": "Debian Code Search: Fast TurboPFor with Go SIMD",
     "url": "https://michael.stapelberg.ch/posts/2026-09-06-dcs-fast-turbopfor-go-simd/",
-    "excerpt": "55 points · go, performance, vibecoding",
+    "excerpt": "57 points · go, performance, vibecoding",
     "author": "stapelberg",
     "publishedAt": "2026-09-06T02:03:41.931-05:00",
-    "score": 55,
+    "score": 57,
     "tags": [
       "go",
       "performance",
@@ -629,7 +677,7 @@
     "excerpt": "AI engineering sounds fancy. New terms are everywhere: agentic development, AI-native engineering,...",
     "author": "ujja",
     "publishedAt": "2026-09-04T09:24:10Z",
-    "score": 39,
+    "score": 40,
     "tags": [
       "ai",
       "agents",
@@ -663,10 +711,10 @@
     "source": "lobsters",
     "title": "simple is not small",
     "url": "https://jyn.dev/simple-is-not-the-same-as-small/",
-    "excerpt": "66 points · practices",
+    "excerpt": "67 points · practices",
     "author": "hugoarnal",
     "publishedAt": "2026-09-03T16:24:19.683-05:00",
-    "score": 66,
+    "score": 67,
     "tags": [
       "practices"
     ],
@@ -706,60 +754,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:f4b23944b5fb",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Announcing Rust 1.98.1",
-    "url": "https://blog.rust-lang.org/2026/09/03/Rust-1.98.1/",
-    "excerpt": "34 points · rust",
-    "author": "realkc",
-    "publishedAt": "2026-09-03T09:03:38.893-05:00",
-    "score": 34,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:4b1a3af5e2ef",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Revo Programming language",
-    "url": "https://revo.lung.fyi/",
-    "excerpt": "91 points · programming, zig",
-    "author": "Drakonis",
-    "publishedAt": "2026-09-03T08:21:37.693-05:00",
-    "score": 91,
-    "tags": [
-      "programming",
-      "zig"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:96a3500c5a4b",
-    "kind": "article",
-    "source": "rss",
-    "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-    "url": "https://huggingface.co/blog/Hcompany/neomme",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-09-03T13:13:48.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -768,7 +762,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-09-05T21:46:01Z",
-    "score": 476979,
+    "score": 477145,
     "tags": [
       "Python",
       "api",
@@ -800,7 +794,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-06T22:01:27Z",
-    "score": 396209,
+    "score": 396225,
     "tags": [
       "Python",
       "books",
@@ -808,30 +802,6 @@
       "hacktoberfest",
       "list",
       "resource"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "github-trending:03bcb55f8165",
-    "kind": "trending",
-    "source": "github",
-    "title": "vinta/awesome-python",
-    "url": "https://github.com/vinta/awesome-python",
-    "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
-    "author": "vinta",
-    "publishedAt": "2026-09-01T08:48:12Z",
-    "score": 319113,
-    "tags": [
-      "Python",
-      "awesome",
-      "awesome-list",
-      "python",
-      "python-frameworks",
-      "python-libraries",
-      "python-tools"
     ],
     "labels": [
       "python"
@@ -847,7 +817,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-07T07:09:03Z",
-    "score": 282484,
+    "score": 282518,
     "tags": [
       "Python",
       "beginner-project",
@@ -874,8 +844,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-07T21:23:58Z",
-    "score": 243016,
+    "publishedAt": "2026-09-08T04:27:09Z",
+    "score": 243109,
     "tags": [
       "Python",
       "ai",
@@ -907,7 +877,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-09-07T19:00:11Z",
-    "score": 224350,
+    "score": 224361,
     "tags": [
       "Python",
       "algorithm",
@@ -938,8 +908,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-07T21:02:48Z",
-    "score": 187187,
+    "publishedAt": "2026-09-08T03:04:25Z",
+    "score": 187191,
     "tags": [
       "Python",
       "agentic-ai",
@@ -969,7 +939,7 @@
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
     "publishedAt": "2026-09-07T04:58:15Z",
-    "score": 180035,
+    "score": 180601,
     "tags": [
       "Python",
       "autogen",
@@ -986,6 +956,25 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:bc97666fba6a",
+    "kind": "trending",
+    "source": "github",
+    "title": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "excerpt": "Public repository for Agent Skills",
+    "author": "anthropics",
+    "publishedAt": "2026-09-03T16:37:14Z",
+    "score": 175074,
+    "tags": [
+      "Python",
+      "agent-skills"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:f0f9a9d19b4d",
     "kind": "trending",
     "source": "github",
@@ -994,7 +983,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-09-07T14:03:57Z",
-    "score": 131537,
+    "score": 131598,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1032,8 +1021,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-07T15:59:39Z",
-    "score": 122853,
+    "publishedAt": "2026-09-08T03:52:12Z",
+    "score": 122878,
     "tags": [
       "Rust",
       "android",
@@ -1069,8 +1058,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-07T21:22:52Z",
-    "score": 122230,
+    "publishedAt": "2026-09-08T04:24:07Z",
+    "score": 122305,
     "tags": [
       "Rust"
     ],
@@ -1087,8 +1076,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-07T19:28:15Z",
-    "score": 117974,
+    "publishedAt": "2026-09-08T03:55:39Z",
+    "score": 117985,
     "tags": [
       "Rust",
       "compiler",
@@ -1108,8 +1097,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-07T20:28:51Z",
-    "score": 110894,
+    "publishedAt": "2026-09-08T04:24:05Z",
+    "score": 110899,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1135,7 +1124,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-07T16:40:52Z",
-    "score": 108391,
+    "score": 108395,
     "tags": [
       "Rust",
       "deno",
@@ -1157,8 +1146,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-07T21:27:09Z",
-    "score": 95909,
+    "publishedAt": "2026-09-08T04:28:11Z",
+    "score": 95913,
     "tags": [
       "Rust",
       "bun",
@@ -1189,8 +1178,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-09-07T18:18:01Z",
-    "score": 92733,
+    "publishedAt": "2026-09-08T00:40:28Z",
+    "score": 92754,
     "tags": [
       "Rust",
       "awesome",
@@ -1229,8 +1218,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-07T21:17:47Z",
-    "score": 91462,
+    "publishedAt": "2026-09-08T00:42:47Z",
+    "score": 91486,
     "tags": [
       "Java",
       "docker",
@@ -1262,7 +1251,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-09-07T14:09:44Z",
-    "score": 81423,
+    "score": 81428,
     "tags": [
       "Java",
       "framework",
