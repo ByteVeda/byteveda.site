@@ -36,6 +36,13 @@ catalog:
   drizzle-kit: ^0.31.10
   pg: ^8.23.0
   "@types/pg": ^8.23.1
+  "@tiptap/react": ^3.31.3
+  "@tiptap/starter-kit": ^3.31.3
+  "@tiptap/pm": ^3.31.3
+  "@tiptap/extensions": ^3.31.3
+  turndown: ^7.2.4
+  "@types/turndown": ^5.0.6
+  marked: ^18.0.12
 
 # Replaces ignoredBuiltDependencies, removed in pnpm 11. Each ships prebuilt
 # binaries, so their install scripts stay off.
@@ -43,3 +50,8 @@ allowBuilds:
   esbuild: false
   sharp: false
   unrs-resolver: false
+
+# pnpm holds back releases younger than the workspace's minimum age. This one is
+# admin-only and never reaches a public bundle, so it is allowed through early.
+minimumReleaseAgeExclude:
+  - marked@18.0.12
