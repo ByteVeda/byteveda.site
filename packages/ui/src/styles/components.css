@@ -454,6 +454,23 @@
   }
 }
 
+/* ---------- touch targets ---------- */
+/* 44px is the smallest target a thumb hits reliably (Apple HIG), and these are
+   the shared chrome controls every app puts in its nav. Keyed on the input
+   device rather than on width: a narrow desktop window still has a mouse.
+   `auditMobileLayout` fails the build if any of them shrinks back. */
+@media (pointer: coarse) {
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .brand,
+  .btn,
+  .nav-links a {
+    min-height: 44px;
+  }
+}
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   .marquee-track,

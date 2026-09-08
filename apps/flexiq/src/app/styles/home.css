@@ -435,6 +435,15 @@
   color: var(--accent-2);
 }
 
+/* Replaying the experiment is the one thing to do on this panel, and at desktop
+   sizing it is a 31px pill floating over the canvas. See the shared rule in
+   @byteveda/ui for why this keys on the pointer rather than on the viewport. */
+@media (pointer: coarse) {
+  .lab-replay {
+    min-height: 44px;
+  }
+}
+
 .lab-counters {
   list-style: none;
   padding: 0;

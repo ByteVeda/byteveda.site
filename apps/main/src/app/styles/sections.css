@@ -675,6 +675,23 @@
   }
 }
 
+/* ---------- touch targets ---------- */
+/* The footer is the site map on a phone — every link in it is a destination, and
+   at its desktop line height each one is a 25px strip. See the shared rule in
+   @byteveda/ui for why this keys on the pointer rather than on the viewport. */
+@media (pointer: coarse) {
+  /* Full-width rows rather than word-width strips: "News" is 39px of text, and
+     a target you have to aim at is the whole problem this rule exists for. */
+  .footer-col a {
+    display: flex;
+    min-height: 44px;
+  }
+  .footer-social a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * {

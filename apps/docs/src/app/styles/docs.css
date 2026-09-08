@@ -23,3 +23,21 @@
     animation: none;
   }
 }
+
+/* ---------- touch targets ---------- */
+/* The footer is this site's index of every tool, and both it and the section
+   marker sit at 20px of line height. See the shared rule in @byteveda/ui for
+   why this keys on the pointer rather than on the viewport. */
+@media (pointer: coarse) {
+  .nav-section,
+  footer li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  /* "docs" is four characters wide; the target needs the padding the word does not. */
+  .nav-section {
+    justify-content: center;
+    min-width: 44px;
+  }
+}

@@ -16,7 +16,10 @@ export function Navbar() {
           <span aria-hidden className="notebook-mono text-faint">
             /
           </span>
-          <Link href="/" className="notebook-mono text-muted-foreground text-sm hover:text-accent">
+          <Link
+            href="/"
+            className="nav-section notebook-mono text-muted-foreground text-sm hover:text-accent"
+          >
             {site.section}
           </Link>
         </div>

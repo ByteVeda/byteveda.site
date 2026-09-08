@@ -289,6 +289,29 @@
   color: var(--accent);
 }
 
+/* The footer is the site map on a phone, and at desktop line height each link is
+   a 20px strip. Full-width rows, not word-width ones: "Java" is 27px of text.
+   The SDK tabs are the other control a reader actually drives on a phone.
+   See the shared rule in @byteveda/ui for why this keys on the pointer. */
+@media (pointer: coarse) {
+  .footer-col a {
+    display: flex;
+    align-items: center;
+    /* `.footer-col` is a flex column with `align-items: flex-start`, so the row
+       has to claim the width itself — "Java" is 27px of text otherwise. */
+    align-self: stretch;
+    min-height: 44px;
+  }
+  .footer-bottom a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .tab {
+    min-height: 44px;
+  }
+}
+
 .footer-bottom {
   border-top: 1px solid var(--line-soft);
   padding-block: 1.4rem;
