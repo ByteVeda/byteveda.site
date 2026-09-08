@@ -27,6 +27,15 @@ const EVENT_LIMIT = 40;
  */
 const MAX_FRAME_MS = 1000;
 
+export interface UseEngineOptions {
+  /**
+   * Work the scenario starts with. Applied to the freshly built engine and
+   * again on every `reset`, so a board is never handed to the reader empty —
+   * an idle queue is indistinguishable from a broken page.
+   */
+  seed?: (engine: Engine) => void;
+}
+
 export interface PlaygroundEngine {
   snapshot: EngineSnapshot | null;
   /** Finished jobs, newest first — the completed rows of the job table. */
@@ -51,7 +60,7 @@ export interface PlaygroundEngine {
   reset: () => void;
 }
 
-export function useEngine(config: EngineConfig): PlaygroundEngine {
+export function useEngine(config: EngineConfig, options: UseEngineOptions = {}): PlaygroundEngine {
   const [running, setRunning] = useState(true);
   const [speed, setSpeed] = useState(1);
   const [snapshot, setSnapshot] = useState<EngineSnapshot | null>(null);
@@ -67,9 +76,13 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
   /** Timestamp the next frame measures its delta against. Rebased, not clamped,
    *  whenever the clock has legitimately been stopped. */
   const lastFrameRef = useRef(0);
+  /** Held in a ref, not an effect dependency: the seed changes with the chosen
+   *  scenario, and reading the current one avoids rebuilding the engine twice. */
+  const seedRef = useRef(options.seed);
 
   runningRef.current = running;
   speedRef.current = speed;
+  seedRef.current = options.seed;
 
   // Rebuilding on config identity is deliberate: editing a parameter restarts
   // the scenario from a clean, reproducible state rather than mutating a run
@@ -78,14 +91,19 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
     const engine = createEngine(config);
     engineRef.current = engine;
     eventBuffer.current = [];
-    setEvents([]);
-    setRecent([]);
-    setSnapshot(engine.snapshot());
-
-    return engine.on("*", (event) => {
+    const unsubscribe = engine.on("*", (event) => {
       eventBuffer.current.unshift(event);
       if (eventBuffer.current.length > EVENT_LIMIT) eventBuffer.current.length = EVENT_LIMIT;
     });
+
+    // Seeded after the listener is attached, so the arrivals the scenario opens
+    // with are logged like any others rather than happening off the record.
+    seedRef.current?.(engine);
+    setEvents([...eventBuffer.current]);
+    setRecent([]);
+    setSnapshot(engine.snapshot());
+
+    return unsubscribe;
   }, [config]);
 
   useEffect(() => {
@@ -172,9 +190,12 @@ export function useEngine(config: EngineConfig): PlaygroundEngine {
         flush();
       },
       reset: () => {
-        engineRef.current?.reset();
+        const engine = engineRef.current;
+        if (!engine) return;
+        engine.reset();
         eventBuffer.current = [];
-        setEvents([]);
+        seedRef.current?.(engine);
+        setEvents([...eventBuffer.current]);
         setRecent([]);
         flush();
       },

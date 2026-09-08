@@ -151,6 +151,19 @@ export const PRESETS: Preset[] = [
 
 export const DEFAULT_PRESET = PRESETS[0];
 
+/**
+ * The task a burst enqueues, checked against the config actually in play.
+ *
+ * A preset names the task its scenario is about — `transform` rather than
+ * whichever task happens to be first. A hand-edited share link can carry a
+ * config that never defines it, and enqueuing an unknown task throws, so fall
+ * back to the primary task: the one every control on the page already edits.
+ */
+export function burstTask(preset: Preset, config: EngineConfig): string {
+  const named = config.tasks.some((task) => task.name === preset.burst.task);
+  return named ? preset.burst.task : config.tasks[0].name;
+}
+
 export function findPreset(id: string): Preset | undefined {
   return PRESETS.find((p) => p.id === id);
 }

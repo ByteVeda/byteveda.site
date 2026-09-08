@@ -1,6 +1,6 @@
 "use client";
 
-import type { EngineConfig } from "@byteveda/flexiq-sim";
+import type { Engine, EngineConfig } from "@byteveda/flexiq-sim";
 import { useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { DocsLink } from "@/components/docs-link";
@@ -10,7 +10,7 @@ import { CodePane } from "./code-pane";
 import { Controls } from "./controls";
 import { EventLog } from "./event-log";
 import { JobTable } from "./job-table";
-import { DEFAULT_PRESET, type Preset } from "./presets";
+import { burstTask, DEFAULT_PRESET, type Preset } from "./presets";
 import { fromSearchParams, toSearchParams } from "./share";
 import { useEngine } from "./use-engine";
 
@@ -27,7 +27,18 @@ export function Playground() {
   const [preset, setPreset] = useState<Preset>(DEFAULT_PRESET);
   const [config, setConfig] = useState<EngineConfig>(DEFAULT_PRESET.config);
   const [shared, setShared] = useState(false);
-  const engine = useEngine(config);
+
+  // The scenario each preset describes is a spike that has already happened, so
+  // the board arrives with that spike on it. Waiting for the reader to find
+  // "Burst" — three panels down, below the fold — means the page they land on
+  // is a still life of an empty queue, which reads as broken rather than idle.
+  // Every engine rebuild reseeds: editing a slider replays the same spike under
+  // the new setting, which is the comparison the playground exists to make.
+  const seed = useCallback(
+    (engine: Engine) => engine.enqueue(burstTask(preset, config), preset.burst.count),
+    [preset, config],
+  );
+  const engine = useEngine(config, { seed });
   const reducedMotion = useReducedMotion() ?? false;
   const rootRef = useRef<HTMLDivElement>(null);
 
