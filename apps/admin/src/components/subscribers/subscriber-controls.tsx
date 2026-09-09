@@ -12,7 +12,7 @@ type Message = { text: string; ok: boolean } | null;
 function Note({ message }: { message: Message }) {
   if (!message) return null;
   return (
-    <p className="save-state" data-tone={message.ok ? "ok" : "error"} style={{ marginTop: 10 }}>
+    <p className="note" data-tone={message.ok ? "ok" : "error"}>
       {message.text}
     </p>
   );
@@ -33,7 +33,7 @@ export function AddSubscriberForm() {
 
   return (
     <>
-      <div className="add-package" style={{ gridTemplateColumns: "minmax(0,1fr) auto" }}>
+      <div className="form-row form-row-invite">
         <div className="field">
           <label htmlFor="add-subscriber">Add an address</label>
           <input
@@ -47,9 +47,6 @@ export function AddSubscriberForm() {
             }}
             placeholder="someone@example.com"
           />
-          <span className="hint">
-            They still receive a confirmation link — being typed in here is not consent.
-          </span>
         </div>
         <button
           type="button"
@@ -60,6 +57,11 @@ export function AddSubscriberForm() {
           {pending ? "Sending…" : "Invite"}
         </button>
       </div>
+      {/* Below the row rather than inside the field: a hint in the field makes
+          its column taller and drops the button past the input. */}
+      <p className="form-row-hint">
+        They still receive a confirmation link — being typed in here is not consent.
+      </p>
       <Note message={message} />
     </>
   );
@@ -139,7 +141,7 @@ export function BroadcastComposer({
     <div className="panel">
       <div className="panel-head">
         <h2>Broadcast</h2>
-        <span className="sub" style={{ color: "var(--text-faint)", fontSize: "0.78rem" }}>
+        <span className="meta">
           {activeCount} confirmed subscriber{activeCount === 1 ? "" : "s"}
         </span>
       </div>
@@ -166,7 +168,7 @@ export function BroadcastComposer({
           />
         </div>
 
-        <div style={{ display: "flex", gap: 8 }}>
+        <div className="btn-row">
           <button
             type="button"
             className="abtn abtn-quiet"
@@ -192,7 +194,7 @@ export function BroadcastComposer({
         <Note message={message} />
 
         {broadcasts.length > 0 && (
-          <div className="rows" style={{ marginTop: 18 }}>
+          <div className="rows stack-top">
             {broadcasts.map((broadcast) => (
               <BroadcastRow key={broadcast.id} broadcast={broadcast} />
             ))}
@@ -208,7 +210,7 @@ function BroadcastRow({ broadcast }: { broadcast: Broadcast }) {
   const sent = broadcast.status === "sent";
 
   return (
-    <div className="row" style={{ gridTemplateColumns: "80px minmax(0,1fr) 70px 28px" }}>
+    <div className="row row-broadcast">
       <span className={`state state-${sent ? "published" : "draft"}`}>{broadcast.status}</span>
       <span className="row-title">
         {broadcast.subject}

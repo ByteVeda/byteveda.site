@@ -13,7 +13,7 @@ export default async function SettingsPage() {
   return (
     <>
       <PageHeader title="Settings" />
-      <div className="content" style={{ maxWidth: 620 }}>
+      <div className="content content-form">
         <SettingsForm initial={settings} emailReady={emailConfigured()} />
       </div>
     </>

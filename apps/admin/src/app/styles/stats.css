@@ -176,35 +176,59 @@
     text-align: center;
   }
 
+  /*
+   * Dimmed rather than hidden. Revealing it only on hover leaves it invisible
+   * on a touch screen — where it is still tappable — and it is used in the
+   * subscriber and broadcast lists as well as the tape.
+   */
   .tape-remove {
     color: var(--text-faint);
     line-height: 1;
-    opacity: 0;
+    opacity: 0.5;
     transition:
       opacity 0.12s,
       color 0.12s;
   }
   .tape-row:hover .tape-remove,
+  .row:hover .tape-remove,
   .tape-remove:focus-visible {
     opacity: 1;
   }
   .tape-remove:hover {
     color: var(--danger);
+    opacity: 1;
   }
 
   /* ---------- adding a package ---------- */
 
-  .add-package {
+  /*
+   * A row of fields with a button on the end. `align-items: end` lines the
+   * button up with the inputs, which only holds while no field carries a hint
+   * underneath — a hint makes its column taller and drops the button past the
+   * input. Hints belong in `.form-row-hint`, below the whole row.
+   */
+  .form-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 130px minmax(0, 1.4fr) auto;
     gap: 8px;
     align-items: end;
     margin-top: 20px;
     padding-top: 18px;
     border-top: 1px solid var(--line-soft);
   }
-  .add-package .field {
+  .form-row .field {
     margin-bottom: 0;
+  }
+  .form-row-hint {
+    margin-top: 8px;
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+
+  .form-row-packages {
+    grid-template-columns: minmax(0, 1fr) 130px minmax(0, 1.4fr) auto;
+  }
+  .form-row-invite {
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
   @media (max-width: 720px) {
@@ -218,7 +242,8 @@
     .tape-row .delta-flat {
       display: none;
     }
-    .add-package {
+    .form-row-packages,
+    .form-row-invite {
       grid-template-columns: minmax(0, 1fr);
     }
   }

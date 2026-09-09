@@ -62,7 +62,7 @@ export function SeedButton() {
         {pending ? "Adding…" : "Add from the catalogue"}
       </button>
       {message && (
-        <p className="stat-sub" style={{ marginTop: 10 }}>
+        <p className="note" data-tone="idle">
           {message.text}
         </p>
       )}
@@ -107,7 +107,7 @@ export function AddPackageForm() {
 
   return (
     <>
-      <div className="add-package">
+      <div className="form-row form-row-packages">
         <div className="field">
           <label htmlFor="add-project">Project</label>
           <select
@@ -166,10 +166,7 @@ export function AddPackageForm() {
       </div>
 
       {message && (
-        <p
-          className="stat-sub"
-          style={{ marginTop: 10, color: message.ok ? undefined : "var(--danger)" }}
-        >
+        <p className="note" data-tone={message.ok ? "ok" : "error"}>
           {message.text}
         </p>
       )}

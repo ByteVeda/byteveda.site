@@ -40,9 +40,9 @@ export default async function SubscribersPage() {
         }
       />
 
-      <div className="content content-narrow">
+      <div className="content content-form">
         {!settings["newsletter.enabled"] && (
-          <div className="notice notice-warn" style={{ marginBottom: 20 }}>
+          <div className="notice notice-warn block-gap">
             <span>
               Signups are turned off, so the public endpoint refuses new addresses and broadcasts
               cannot send. Turn the newsletter on in Settings.
@@ -59,11 +59,8 @@ export default async function SubscribersPage() {
             </p>
           </div>
         ) : (
-          <div className="rows" style={{ marginBottom: 24 }}>
-            <div
-              className="row row-head"
-              style={{ gridTemplateColumns: "110px minmax(0,1fr) 90px 70px 64px" }}
-            >
+          <div className="rows block-gap">
+            <div className="row row-head row-subscriber">
               <span>Status</span>
               <span>Address</span>
               <span>Source</span>
@@ -72,20 +69,11 @@ export default async function SubscribersPage() {
             </div>
 
             {subscribers.map((subscriber) => (
-              <div
-                key={subscriber.id}
-                className="row"
-                style={{ gridTemplateColumns: "110px minmax(0,1fr) 90px 70px 64px" }}
-              >
+              <div key={subscriber.id} className="row row-subscriber">
                 <span className={`state ${STATE_CLASS[subscriber.status]}`}>
                   {subscriber.status}
                 </span>
-                <span
-                  className="row-title"
-                  style={{ fontFamily: "var(--font-mono)", fontSize: "0.82rem" }}
-                >
-                  {subscriber.email}
-                </span>
+                <span className="cell-mono row-title">{subscriber.email}</span>
                 <span className="tape-eco">{subscriber.source}</span>
                 <span className="num num-dim">{ago(subscriber.createdAt)}</span>
                 <SubscriberRowActions subscriber={subscriber} />
@@ -96,7 +84,7 @@ export default async function SubscribersPage() {
 
         <AddSubscriberForm />
 
-        <div style={{ marginTop: 28 }}>
+        <div className="stack-top">
           <BroadcastComposer broadcasts={broadcasts} activeCount={counts.active} />
         </div>
       </div>

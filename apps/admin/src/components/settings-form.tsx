@@ -34,7 +34,7 @@ export function SettingsForm({ initial, emailReady }: Props) {
   return (
     <>
       {!emailReady && (
-        <div className="notice notice-warn" style={{ marginBottom: 20 }}>
+        <div className="notice notice-warn block-gap">
           <span>
             RESEND_API_KEY is not set, so nothing can send yet. These settings still save, and take
             effect once the key is in place.
@@ -42,7 +42,7 @@ export function SettingsForm({ initial, emailReady }: Props) {
         </div>
       )}
 
-      <div className="panel" style={{ marginBottom: 20 }}>
+      <div className="panel block-gap">
         <div className="panel-head">
           <h2>Email</h2>
         </div>
@@ -86,7 +86,7 @@ export function SettingsForm({ initial, emailReady }: Props) {
       </div>
 
       {message && (
-        <p className="save-state" data-tone={message.ok ? "ok" : "error"} style={{ marginTop: 14 }}>
+        <p className="note" data-tone={message.ok ? "ok" : "error"}>
           {message.text}
         </p>
       )}

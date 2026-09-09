@@ -228,8 +228,12 @@
   .content {
     padding: 24px;
   }
+  /* Lists earn the full width; a column of form fields does not. */
   .content-narrow {
     max-width: var(--admin-maxw);
+  }
+  .content-form {
+    max-width: 720px;
   }
 
   /* ---------- buttons ---------- */
@@ -333,9 +337,28 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* Status, title, tags, and a time — the four things worth scanning. */
+  /* Column templates per list. Declared here rather than inline so a header row
+     and its body rows cannot drift apart. */
   .row-post {
     grid-template-columns: 96px minmax(0, 1fr) 150px 68px;
+  }
+  .row-subscriber {
+    grid-template-columns: 104px minmax(0, 1fr) 88px 64px 60px;
+  }
+  .row-broadcast {
+    grid-template-columns: 80px minmax(0, 1fr) 70px 28px;
+  }
+
+  /* An identifier in a list — an address, a slug, a package name. */
+  .cell-mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+  }
+
+  .btn-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .row-actions {
@@ -412,8 +435,35 @@
     font-size: 0.88rem;
     font-weight: 600;
   }
+  /* Context for the panel title — a count, a state. Sits beside it, not below. */
+  .panel-head .meta {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
   .panel-head .abtn {
     margin-left: auto;
+  }
+
+  /* The result of an action, shown under the control that caused it. */
+  .note {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  .note[data-tone="error"] {
+    color: var(--danger);
+  }
+  .note[data-tone="ok"] {
+    color: var(--ok);
+  }
+  .note[data-tone="idle"] {
+    color: var(--text-faint);
+  }
+
+  .stack-top {
+    margin-top: 24px;
+  }
+  .block-gap {
+    margin-bottom: 20px;
   }
   .panel-body {
     padding: 14px;
@@ -564,7 +614,7 @@
   /* ---------- empty + error ---------- */
 
   .empty {
-    padding: 56px 20px;
+    padding: 44px 20px;
     text-align: center;
     color: var(--text-dim);
   }
