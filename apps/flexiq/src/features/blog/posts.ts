@@ -1,3 +1,4 @@
+import { isConfigured } from "@byteveda/db";
 import {
   type BlogPost,
   type BlogPostMeta,
@@ -21,16 +22,33 @@ const SITE = "flexiq" as const;
 /** A ceiling, not the mechanism. Publishing invalidates by tag immediately. */
 const REVALIDATE_SECONDS = 3600;
 
-export const getPosts = unstable_cache(() => getPublishedPosts(SITE), ["flexiq", "posts"], {
-  tags: ["blog"],
-  revalidate: REVALIDATE_SECONDS,
-});
+/**
+ * No `DATABASE_URL` at all means a build without secrets — CI, or a preview —
+ * and a deploy should not fail for it. The pages render empty and fill in on
+ * the first request once the variable is present.
+ *
+ * A database that is configured but unreachable is a different thing entirely,
+ * and is left to throw: that is an incident, and silently serving an empty blog
+ * for an hour of cache would hide it.
+ */
+function withoutDatabase<T>(empty: T): T | null {
+  if (isConfigured()) return null;
+  console.warn("[blog] DATABASE_URL is not set; rendering an empty blog");
+  return empty;
+}
+
+export const getPosts = unstable_cache(
+  async () => withoutDatabase<BlogPostMeta[]>([]) ?? (await getPublishedPosts(SITE)),
+  ["flexiq", "posts"],
+  { tags: ["blog"], revalidate: REVALIDATE_SECONDS },
+);
 
 export function getPost(slug: string): Promise<Post | null> {
-  return unstable_cache(() => getPublishedPost(slug, SITE), ["flexiq", "post", slug], {
-    tags: ["blog", `blog:${slug}`],
-    revalidate: REVALIDATE_SECONDS,
-  })();
+  return unstable_cache(
+    async () => (isConfigured() ? await getPublishedPost(slug, SITE) : null),
+    ["flexiq", "post", slug],
+    { tags: ["blog", `blog:${slug}`], revalidate: REVALIDATE_SECONDS },
+  )();
 }
 
 /**
@@ -41,9 +59,14 @@ export function getPost(slug: string): Promise<Post | null> {
  * up at the moment it runs.
  */
 export async function getStaticSlugs(): Promise<string[]> {
+  if (!isConfigured()) return [];
+
   try {
     return await getPublishedSlugs(SITE);
   } catch (error) {
+    // Unlike the readers above this one swallows a live failure too: a build
+    // should not stop because the database blinked while enumerating slugs.
+    // Every page still renders on demand.
     console.warn("[blog] could not read slugs at build time; rendering on demand", error);
     return [];
   }

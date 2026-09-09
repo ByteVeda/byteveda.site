@@ -3,6 +3,7 @@ export {
   type Database,
   getDb,
   getPool,
+  isConfigured,
   poolConfig,
   resolveSslMode,
   type SslMode,

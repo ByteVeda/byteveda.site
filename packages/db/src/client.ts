@@ -69,6 +69,17 @@ export function poolConfig(url: string, override?: string): PoolConfig {
   };
 }
 
+/**
+ * Whether a connection string exists at all.
+ *
+ * Lets a consumer tell "nobody configured a database" from "the database is
+ * down" — the first is a build running without secrets, the second is an
+ * incident. They deserve different behaviour.
+ */
+export function isConfigured(): boolean {
+  return Boolean(process.env.DATABASE_URL);
+}
+
 function connectionString(): string {
   const url = process.env.DATABASE_URL;
   if (!url) {
