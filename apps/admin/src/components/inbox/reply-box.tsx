@@ -36,7 +36,7 @@ export function ReplyBox({ threadKey, to, canSend }: Props) {
   return (
     <div className="reply-box">
       {!canSend && (
-        <div className="notice notice-warn" style={{ marginBottom: 12 }}>
+        <div className="notice notice-warn block-gap-sm">
           <span>RESEND_API_KEY is not set, so replies cannot send yet.</span>
         </div>
       )}

@@ -67,12 +67,10 @@ export function SeoPanel({ title, description, slug, body, tags, corpus, seo, on
       <div className="side-block">
         <h2>Keywords</h2>
         {candidates.length === 0 ? (
-          <p style={{ color: "var(--text-faint)", fontSize: "0.78rem" }}>
-            Write a few paragraphs and suggestions will appear here.
-          </p>
+          <p className="side-note">Write a few paragraphs and suggestions will appear here.</p>
         ) : (
           <>
-            <p style={{ color: "var(--text-faint)", fontSize: "0.74rem", marginBottom: 8 }}>
+            <p className="side-note block-gap-sm">
               {primary ? `Checking against "${primary}".` : "Choose one to check the post against."}
             </p>
             {candidates.map((candidate) => (

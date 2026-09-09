@@ -44,7 +44,7 @@ export default async function LoginPage({ searchParams }: Props) {
         <p>Posts, download numbers, and mail for byteveda.org. Sign in to continue.</p>
 
         {message && (
-          <div className="notice notice-danger" role="alert" style={{ marginBottom: 18 }}>
+          <div className="notice notice-danger block-gap">
             <span>{message}</span>
           </div>
         )}

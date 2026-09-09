@@ -38,7 +38,7 @@ export function TagInput({ tags, onChange, max = 8 }: Props) {
   return (
     <div>
       {tags.length > 0 && (
-        <div className="tag-row" style={{ marginBottom: 7 }}>
+        <div className="tag-row block-gap-sm">
           {tags.map((tag) => (
             <span key={tag} className="tag">
               {tag}

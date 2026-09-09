@@ -465,6 +465,22 @@
   .block-gap {
     margin-bottom: 20px;
   }
+  .block-gap-sm {
+    margin-bottom: 12px;
+  }
+  .push-right {
+    margin-left: auto;
+  }
+
+  /* Secondary prose: an aside in a side panel, an empty-state line, a caption. */
+  .side-note {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .greeting {
+    margin-bottom: 22px;
+    color: var(--text-dim);
+  }
   .panel-body {
     padding: 14px;
   }

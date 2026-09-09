@@ -272,9 +272,7 @@ export function PostEditor({ post, corpus, revisions }: Props) {
             {format === "richtext" && editor ? (
               <Toolbar editor={editor} />
             ) : (
-              <span style={{ color: "var(--text-faint)", fontSize: "0.78rem" }}>
-                Markdown and MDX, rendered on the right.
-              </span>
+              <span className="side-note">Markdown and MDX, rendered on the right.</span>
             )}
 
             <fieldset className="seg">
@@ -372,9 +370,7 @@ export function PostEditor({ post, corpus, revisions }: Props) {
           <div className="side-block">
             <h2>History</h2>
             {revisions.length === 0 ? (
-              <p style={{ color: "var(--text-faint)", fontSize: "0.78rem" }}>
-                Saved versions appear here.
-              </p>
+              <p className="side-note">Saved versions appear here.</p>
             ) : (
               revisions.map((revision) => (
                 <div key={revision.id} className="revision">

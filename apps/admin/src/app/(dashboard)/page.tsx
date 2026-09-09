@@ -41,7 +41,7 @@ export default async function OverviewPage() {
       <PageHeader title="Overview" />
 
       <div className="content content-narrow">
-        <p style={{ color: "var(--text-dim)", marginBottom: 22 }}>
+        <p className="greeting">
           {greeting()}, {name}.
         </p>
 
