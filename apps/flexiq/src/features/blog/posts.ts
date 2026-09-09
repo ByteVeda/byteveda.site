@@ -1,4 +1,4 @@
-import { isConfigured } from "@byteveda/db";
+import { isBuildPhase, isConfigured } from "@byteveda/db";
 import {
   type BlogPost,
   type BlogPostMeta,
@@ -37,8 +37,30 @@ function withoutDatabase<T>(empty: T): T | null {
   return empty;
 }
 
+/**
+ * The one exception to "left to throw": a read that a deploy has to survive.
+ *
+ * On a running server the throw stands, for the reason above. During
+ * `next build` it would instead abort the whole deploy — `/blog`, the feed and
+ * the sitemap all prerender through here, so an unreachable database at that
+ * moment takes down a release that has nothing to do with the blog. The empty
+ * result is capped by `REVALIDATE_SECONDS` and replaced the moment the admin
+ * publishes, since that revalidates by tag.
+ */
+async function survivingBuild<T>(read: () => Promise<T>, empty: T): Promise<T> {
+  try {
+    return await read();
+  } catch (error) {
+    if (!isBuildPhase()) throw error;
+    console.warn("[blog] could not read posts at build time; rendering an empty blog", error);
+    return empty;
+  }
+}
+
 export const getPosts = unstable_cache(
-  async () => withoutDatabase<BlogPostMeta[]>([]) ?? (await getPublishedPosts(SITE)),
+  async () =>
+    withoutDatabase<BlogPostMeta[]>([]) ??
+    (await survivingBuild(() => getPublishedPosts(SITE), [] as BlogPostMeta[])),
   ["flexiq", "posts"],
   { tags: ["blog"], revalidate: REVALIDATE_SECONDS },
 );
