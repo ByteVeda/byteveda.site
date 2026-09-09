@@ -2,10 +2,12 @@ import type { MetadataRoute } from "next";
 import { getPosts } from "@/features/blog/posts";
 import { site } from "@/lib/site";
 
-export const dynamic = "force-static";
+// Not force-static: a newly published post has to be able to reach the sitemap
+// without a rebuild.
+export const revalidate = 3600;
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getPosts().map((post) => ({
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = (await getPosts()).map((post) => ({
     url: `${site.url}/blog/${post.slug}`,
     lastModified: new Date(`${post.date}T00:00:00Z`),
     changeFrequency: "yearly" as const,

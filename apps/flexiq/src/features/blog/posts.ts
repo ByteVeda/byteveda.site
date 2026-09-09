@@ -1,66 +1,75 @@
-import { readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
-import matter from "gray-matter";
+import { isConfigured } from "@byteveda/db";
+import {
+  type BlogPost,
+  type BlogPostMeta,
+  getPublishedPost,
+  getPublishedPosts,
+  getPublishedSlugs,
+} from "@byteveda/db/queries/posts";
+import { unstable_cache } from "next/cache";
 
-const BLOG_DIR = join(process.cwd(), "content/blog");
+/**
+ * Posts come from Postgres, written by the admin console.
+ *
+ * Reads are cached and tagged, so the site stays effectively static between
+ * publishes: `revalidateTag("blog")` from the admin app is what makes a change
+ * visible, rather than a rebuild.
+ */
+export type PostMeta = BlogPostMeta;
+export type Post = BlogPost;
 
-export interface PostMeta {
-  slug: string;
-  title: string;
-  description: string;
-  /** ISO date, `YYYY-MM-DD`. */
-  date: string;
-  tags: string[];
-  author: string;
+const SITE = "flexiq" as const;
+/** A ceiling, not the mechanism. Publishing invalidates by tag immediately. */
+const REVALIDATE_SECONDS = 3600;
+
+/**
+ * No `DATABASE_URL` at all means a build without secrets — CI, or a preview —
+ * and a deploy should not fail for it. The pages render empty and fill in on
+ * the first request once the variable is present.
+ *
+ * A database that is configured but unreachable is a different thing entirely,
+ * and is left to throw: that is an incident, and silently serving an empty blog
+ * for an hour of cache would hide it.
+ */
+function withoutDatabase<T>(empty: T): T | null {
+  if (isConfigured()) return null;
+  console.warn("[blog] DATABASE_URL is not set; rendering an empty blog");
+  return empty;
 }
 
-export interface Post extends PostMeta {
-  content: string;
+export const getPosts = unstable_cache(
+  async () => withoutDatabase<BlogPostMeta[]>([]) ?? (await getPublishedPosts(SITE)),
+  ["flexiq", "posts"],
+  { tags: ["blog"], revalidate: REVALIDATE_SECONDS },
+);
+
+export function getPost(slug: string): Promise<Post | null> {
+  return unstable_cache(
+    async () => (isConfigured() ? await getPublishedPost(slug, SITE) : null),
+    ["flexiq", "post", slug],
+    { tags: ["blog", `blog:${slug}`], revalidate: REVALIDATE_SECONDS },
+  )();
 }
 
 /**
- * A slug becomes a URL path segment and a static route, so it is restricted to
- * an unambiguous alphabet rather than trusted because it came off the disk.
- * Anything else is a filename that should not have been added.
+ * Slugs to prerender at build time.
+ *
+ * Unreachable database means an empty list, not a failed build: every page is
+ * still served on demand, and a deploy should not depend on the database being
+ * up at the moment it runs.
  */
-const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+export async function getStaticSlugs(): Promise<string[]> {
+  if (!isConfigured()) return [];
 
-function parse(filename: string): Post {
-  const slug = filename.replace(/\.mdx$/, "");
-  if (!SLUG.test(slug)) {
-    throw new Error(`content/blog/${filename}: slug "${slug}" must be lowercase kebab-case`);
+  try {
+    return await getPublishedSlugs(SITE);
+  } catch (error) {
+    // Unlike the readers above this one swallows a live failure too: a build
+    // should not stop because the database blinked while enumerating slugs.
+    // Every page still renders on demand.
+    console.warn("[blog] could not read slugs at build time; rendering on demand", error);
+    return [];
   }
-
-  const raw = readFileSync(join(BLOG_DIR, filename), "utf8");
-  const { data, content } = matter(raw);
-
-  // A post missing its frontmatter is an authoring mistake, and one that would
-  // otherwise ship as an untitled entry in the index and the feed.
-  for (const field of ["title", "description", "date"] as const) {
-    if (!data[field]) throw new Error(`content/blog/${filename} is missing "${field}"`);
-  }
-
-  return {
-    slug,
-    title: String(data.title),
-    description: String(data.description),
-    date: String(data.date),
-    tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
-    author: String(data.author ?? "ByteVeda"),
-    content,
-  };
-}
-
-/** Every post, newest first. */
-export function getPosts(): Post[] {
-  return readdirSync(BLOG_DIR)
-    .filter((file) => file.endsWith(".mdx"))
-    .map(parse)
-    .sort((a, b) => b.date.localeCompare(a.date));
-}
-
-export function getPost(slug: string): Post | undefined {
-  return getPosts().find((post) => post.slug === slug);
 }
 
 export function formatDate(date: string): string {

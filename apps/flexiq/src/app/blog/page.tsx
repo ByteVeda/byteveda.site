@@ -13,8 +13,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogIndex() {
-  const posts = getPosts();
+/** Cached and tagged in the data layer; publishing invalidates it by tag. */
+export const revalidate = 3600;
+
+export default async function BlogIndex() {
+  const posts = await getPosts();
 
   return (
     <section className="blog wrap section-pad">

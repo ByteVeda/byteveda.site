@@ -4,18 +4,21 @@ import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { JsonLd } from "@/components/json-ld";
-import { formatDate, getPost, getPosts } from "@/features/blog/posts";
+import { formatDate, getPost, getStaticSlugs } from "@/features/blog/posts";
 import { site } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
-export function generateStaticParams() {
-  return getPosts().map((post) => ({ slug: post.slug }));
+/** Cached and tagged in the data layer; publishing invalidates it by tag. */
+export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  return (await getStaticSlugs()).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = await getPost(slug);
   if (!post) return {};
 
   return {
@@ -35,7 +38,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function BlogPost({ params }: Params) {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = await getPost(slug);
   if (!post) notFound();
 
   const { content } = await compileMDX({

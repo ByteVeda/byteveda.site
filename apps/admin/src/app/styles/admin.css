@@ -1,0 +1,882 @@
+/* ============================================================
+   Admin console.
+
+   The public sites are the storefront; this is the workshop. Where
+   they use generous sans-serif type and full-bleed sections, this
+   leans on aligned columns, hairline rules, and monospace for
+   anything that is a count, an identifier, or a date. Cards and
+   shadows are deliberately absent — the data lines up instead of
+   being boxed.
+   ============================================================ */
+
+:root {
+  --rail-w: 232px;
+  --topbar-h: 60px;
+  --admin-maxw: 1120px;
+
+  /* Semantic states. The shared tokens only carry one accent, and a
+     console needs to say "stop" as well as "go". */
+  --ok: var(--accent);
+  --warn: #cf9a25;
+  --danger: #d4513f;
+  --warn-soft: rgba(207, 154, 37, 0.13);
+  --danger-soft: rgba(212, 81, 63, 0.13);
+}
+
+[data-theme="light"] {
+  --warn: #9a6f0d;
+  --danger: #b23425;
+  --warn-soft: rgba(154, 111, 13, 0.1);
+  --danger-soft: rgba(178, 52, 37, 0.1);
+}
+
+@layer components {
+  /* ---------- shell ---------- */
+
+  /*
+   * `body::before` in @byteveda/ui paints an opaque page texture across the
+   * viewport at z-index 0. The public sites clear it because their content sits
+   * in a `<main>`, which that stylesheet lifts to z-index 2. The console's shell
+   * is a grid of its own, so it lifts itself — without this the sticky rail and
+   * topbar stay visible and everything static underneath is painted over.
+   */
+  .shell {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: var(--rail-w) minmax(0, 1fr);
+    min-height: 100dvh;
+  }
+
+  .rail {
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 0 14px;
+    border-right: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .rail-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 18px 16px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+  }
+  .rail-brand .mark {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    flex: none;
+  }
+  .rail-brand small {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .rail-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  /* Active state is a 2px edge tick and a brightness change, not a filled
+     pill — the rail should stay quiet enough to ignore while writing. */
+  .rail-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 8px 10px;
+    border-radius: var(--r-sm);
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    transition:
+      color 0.15s,
+      background 0.15s;
+  }
+  /* The active state drives the icon through custom properties rather than a
+     more specific descendant selector, which keeps every `… svg` rule in this
+     file at one specificity and out of each other's way. */
+  .rail-link svg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    color: var(--rail-icon, currentcolor);
+    opacity: var(--rail-icon-opacity, 0.75);
+  }
+  .rail-link:hover {
+    color: var(--text);
+    background: var(--chip);
+  }
+  .rail-link[aria-current="page"] {
+    --rail-icon: var(--accent);
+    --rail-icon-opacity: 1;
+    color: var(--text);
+    background: var(--chip);
+  }
+  .rail-link[aria-current="page"]::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    translate: 0 -50%;
+    width: 2px;
+    height: 18px;
+    border-radius: 0 2px 2px 0;
+    background: var(--accent);
+  }
+  .rail-link .count {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rail-spacer {
+    flex: 1;
+  }
+
+  .rail-foot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    padding: 10px;
+    border-top: 1px solid var(--line-soft);
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  .rail-foot img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex: none;
+  }
+  .rail-foot .who {
+    min-width: 0;
+    line-height: 1.3;
+  }
+  .who-name {
+    display: block;
+    color: var(--text);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .who-handle {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-faint);
+  }
+
+  /* ---------- topbar + content ---------- */
+
+  .main {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: var(--topbar-h);
+    padding: 0 24px;
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in oklab, var(--bg) 84%, transparent);
+    backdrop-filter: blur(12px);
+  }
+  .topbar h1 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .topbar .sub {
+    color: var(--text-faint);
+    font-size: 0.82rem;
+  }
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .content {
+    padding: 24px;
+  }
+  /* Lists earn the full width; a column of form fields does not. */
+  .content-narrow {
+    max-width: var(--admin-maxw);
+  }
+  .content-form {
+    max-width: 720px;
+  }
+
+  /* ---------- buttons ---------- */
+
+  .abtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    height: 34px;
+    padding: 0 13px;
+    border: 1px solid transparent;
+    border-radius: var(--r-sm);
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background 0.15s,
+      border-color 0.15s,
+      color 0.15s,
+      opacity 0.15s;
+  }
+  .abtn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .abtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .abtn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .abtn-primary:hover:not(:disabled) {
+    background: var(--accent-2);
+  }
+  .abtn-quiet {
+    border-color: var(--line);
+    color: var(--text-dim);
+  }
+  .abtn-quiet:hover:not(:disabled) {
+    border-color: var(--line-strong);
+    color: var(--text);
+  }
+  .abtn-danger {
+    border-color: color-mix(in oklab, var(--danger) 40%, transparent);
+    color: var(--danger);
+  }
+  .abtn-danger:hover:not(:disabled) {
+    background: var(--danger-soft);
+  }
+  .abtn-sm {
+    height: 28px;
+    padding: 0 9px;
+    font-size: 0.8rem;
+  }
+
+  /* ---------- rows: the primary way lists are shown ---------- */
+
+  .rows {
+    border-top: 1px solid var(--line);
+  }
+  .row {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    transition: background 0.12s;
+  }
+  .row:hover {
+    background: var(--chip);
+  }
+  .row-head {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom-color: var(--line);
+    color: var(--text-faint);
+    font-size: 0.75rem;
+  }
+  .row-head:hover {
+    background: none;
+  }
+  .row-title {
+    min-width: 0;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-sub {
+    display: block;
+    margin-top: 2px;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* Column templates per list. Declared here rather than inline so a header row
+     and its body rows cannot drift apart. */
+  .row-post {
+    grid-template-columns: 96px minmax(0, 1fr) 150px 68px;
+  }
+  .row-subscriber {
+    grid-template-columns: 104px minmax(0, 1fr) 88px 64px 60px;
+  }
+  .row-broadcast {
+    grid-template-columns: 80px minmax(0, 1fr) 70px 28px;
+  }
+
+  /* An identifier in a list — an address, a slug, a package name. */
+  .cell-mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+  }
+
+  .btn-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .row-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  /* Anything countable is monospace and tabular so columns line up. */
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .num-dim {
+    color: var(--text-faint);
+  }
+  .delta-up {
+    color: var(--ok);
+  }
+  .delta-down {
+    color: var(--danger);
+  }
+  .delta-flat {
+    color: var(--text-faint);
+  }
+
+  /* ---------- state ---------- */
+
+  .state {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .state::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentcolor;
+    flex: none;
+  }
+  .state-published {
+    color: var(--ok);
+  }
+  .state-draft {
+    color: var(--warn);
+  }
+  .state-archived {
+    color: var(--text-faint);
+  }
+
+  /* ---------- panels ---------- */
+
+  .panel {
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+  }
+  .panel-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .panel-head h2 {
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  /* Context for the panel title — a count, a state. Sits beside it, not below. */
+  .panel-head .meta {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .panel-head .abtn {
+    margin-left: auto;
+  }
+
+  /* The result of an action, shown under the control that caused it. */
+  .note {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  .note[data-tone="error"] {
+    color: var(--danger);
+  }
+  .note[data-tone="ok"] {
+    color: var(--ok);
+  }
+  .note[data-tone="idle"] {
+    color: var(--text-faint);
+  }
+
+  .stack-top {
+    margin-top: 24px;
+  }
+  .block-gap {
+    margin-bottom: 20px;
+  }
+  .block-gap-sm {
+    margin-bottom: 12px;
+  }
+  .push-right {
+    margin-left: auto;
+  }
+
+  /* Secondary prose: an aside in a side panel, an empty-state line, a caption. */
+  .side-note {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .greeting {
+    margin-bottom: 22px;
+    color: var(--text-dim);
+  }
+  .panel-body {
+    padding: 14px;
+  }
+
+  /* ---------- forms ---------- */
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .field > label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-dim);
+  }
+  .field .hint {
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+  .field .err {
+    color: var(--danger);
+    font-size: 0.76rem;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    width: 100%;
+    padding: 8px 11px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.88rem;
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+  }
+  .textarea {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.6;
+  }
+  .input-mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+  }
+  .input:focus-visible,
+  .textarea:focus-visible,
+  .select:focus-visible {
+    outline: none;
+    border-color: var(--accent-line);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  .input::placeholder,
+  .textarea::placeholder {
+    color: var(--text-faint);
+  }
+
+  .switch {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .switch:last-child {
+    border-bottom: none;
+  }
+  .switch input {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    accent-color: var(--accent);
+    flex: none;
+  }
+  .switch .who {
+    line-height: 1.45;
+  }
+  .switch b {
+    display: block;
+    font-weight: 500;
+    font-size: 0.88rem;
+  }
+  .switch span {
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+
+  /* ---------- overview cards ----------
+     The one place cards earn their keep: three unrelated figures that are each
+     a link somewhere. Everywhere else, rows. */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .card {
+    display: block;
+    padding: 15px 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    transition: border-color 0.15s;
+  }
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+  .card svg {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 12px;
+    color: var(--text-faint);
+  }
+  .card b {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 1.55rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .card span {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .card i {
+    font-family: var(--font-mono);
+    font-style: normal;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-dim);
+  }
+
+  /* ---------- empty + error ---------- */
+
+  .empty {
+    padding: 44px 20px;
+    text-align: center;
+    color: var(--text-dim);
+  }
+  .empty h3 {
+    margin-bottom: 5px;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .empty p {
+    margin-bottom: 16px;
+    font-size: 0.86rem;
+  }
+
+  .notice {
+    display: flex;
+    gap: 10px;
+    padding: 11px 13px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+  .notice-warn {
+    border-color: color-mix(in oklab, var(--warn) 35%, transparent);
+    background: var(--warn-soft);
+  }
+  .notice-danger {
+    border-color: color-mix(in oklab, var(--danger) 35%, transparent);
+    background: var(--danger-soft);
+  }
+  .notice svg {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    margin-top: 2px;
+  }
+
+  /* ---------- chips ---------- */
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 7px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--chip);
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+  .tag button {
+    color: var(--text-faint);
+    line-height: 1;
+  }
+  .tag button:hover {
+    color: var(--danger);
+  }
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* ---------- confirm dialog ---------- */
+
+  .dialog {
+    /* The element fills the viewport so a backdrop click is a click on it. */
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--text);
+    overflow: hidden;
+  }
+  .dialog:not([open]) {
+    display: none;
+  }
+  .dialog::backdrop {
+    background: rgba(4, 4, 8, 0.62);
+    backdrop-filter: blur(2px);
+  }
+
+  .dialog-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: min(400px, calc(100vw - 32px));
+    padding: 20px 22px 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+  }
+  .dialog-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+  .dialog-card p {
+    margin-top: 7px;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  /* A destructive confirm is the primary action of its dialog, so it is filled
+     rather than outlined — the outlined `.abtn-danger` reads as secondary. */
+  .abtn-danger-solid {
+    background: var(--danger);
+    color: #fff;
+  }
+  .abtn-danger-solid:hover:not(:disabled) {
+    background: color-mix(in oklab, var(--danger) 86%, black);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .dialog[open] .dialog-card {
+      animation: dialog-in 0.14s var(--ease-out);
+    }
+  }
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      translate: -50% calc(-50% + 6px);
+    }
+  }
+
+  /* ---------- login ---------- */
+
+  .login {
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+    padding: 24px;
+  }
+  .login-card {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+  }
+  .login-card .mark {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 18px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .login-card h1 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .login-card p {
+    margin: 7px 0 22px;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  .login-card .abtn {
+    width: 100%;
+    height: 40px;
+  }
+  .login-foot {
+    margin-top: 18px;
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width: 900px) {
+    .shell {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .rail {
+      position: static;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 2px;
+      overflow-x: auto;
+      padding: 8px 10px;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .rail-brand,
+    .rail-spacer,
+    .rail-foot {
+      display: none;
+    }
+    .rail-nav {
+      flex-direction: row;
+      padding: 0;
+    }
+    .rail-link[aria-current="page"]::before {
+      inset: auto 10px 0 10px;
+      top: auto;
+      translate: none;
+      width: auto;
+      height: 2px;
+      border-radius: 2px 2px 0 0;
+    }
+    .content,
+    .topbar {
+      padding-inline: 16px;
+    }
+  }
+}
+
+/* Keyboard focus must stay visible everywhere, including on rows and
+   links that otherwise have no border to light up. */
+.rail-link:focus-visible,
+.abtn:focus-visible,
+.row a:focus-visible,
+.tag button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail-link,
+  .abtn,
+  .row,
+  .input,
+  .textarea,
+  .select {
+    transition: none;
+  }
+}

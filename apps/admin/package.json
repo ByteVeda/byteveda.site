@@ -1,0 +1,47 @@
+{
+  "name": "@byteveda/admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port ${ADMIN_PORT:-3002}",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "collect": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/collect.ts",
+    "realtime:check": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/realtime-check.ts"
+  },
+  "dependencies": {
+    "@byteveda/db": "workspace:*",
+    "@byteveda/ui": "workspace:*",
+    "@byteveda/utils": "workspace:*",
+    "@fontsource-variable/ibm-plex-sans": "catalog:",
+    "@fontsource/ibm-plex-mono": "catalog:",
+    "@tiptap/extensions": "catalog:",
+    "@tiptap/pm": "catalog:",
+    "@tiptap/react": "catalog:",
+    "@tiptap/starter-kit": "catalog:",
+    "drizzle-orm": "catalog:",
+    "ioredis": "catalog:",
+    "lucide-react": "catalog:",
+    "marked": "catalog:",
+    "turndown": "catalog:",
+    "next": "catalog:",
+    "next-themes": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "resend": "catalog:"
+  },
+  "devDependencies": {
+    "@byteveda/config": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@types/turndown": "catalog:",
+    "tailwindcss": "catalog:",
+    "tsx": "^4.23.13",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

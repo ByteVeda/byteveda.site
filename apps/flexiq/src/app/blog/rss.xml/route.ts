@@ -4,10 +4,11 @@ import { site } from "@/lib/site";
 const escapeXml = (value: string) =>
   value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export const dynamic = "force-static";
+// Not force-static: the feed has to pick up a publish without a rebuild.
+export const revalidate = 3600;
 
-export function GET(): Response {
-  const posts = getPosts();
+export async function GET(): Promise<Response> {
+  const posts = await getPosts();
   const items = posts
     .map((post) =>
       [

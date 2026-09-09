@@ -1,0 +1,256 @@
+"use client";
+
+import type { Broadcast, Subscriber } from "@byteveda/db";
+import { Mail, Send, Trash2 } from "lucide-react";
+import { useState, useTransition } from "react";
+import { useConfirm } from "@/components/confirm";
+import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
+import { ago } from "@/lib/format";
+import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
+
+type Message = { text: string; ok: boolean } | null;
+
+function Note({ message }: { message: Message }) {
+  if (!message) return null;
+  return (
+    <p className="note" data-tone={message.ok ? "ok" : "error"}>
+      {message.text}
+    </p>
+  );
+}
+
+export function AddSubscriberForm() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState<Message>(null);
+  const [pending, startTransition] = useTransition();
+
+  function submit() {
+    startTransition(async () => {
+      const result = await addSubscriber(email);
+      setMessage({ text: result.message, ok: result.ok });
+      if (result.ok) setEmail("");
+    });
+  }
+
+  return (
+    <>
+      <div className="form-row form-row-invite">
+        <div className="field">
+          <label htmlFor="add-subscriber">Add an address</label>
+          <input
+            id="add-subscriber"
+            className="input input-mono"
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") submit();
+            }}
+            placeholder="someone@example.com"
+          />
+        </div>
+        <button
+          type="button"
+          className="abtn abtn-quiet"
+          onClick={submit}
+          disabled={pending || !email.trim()}
+        >
+          {pending ? "Sending…" : "Invite"}
+        </button>
+      </div>
+      {/* Below the row rather than inside the field: a hint in the field makes
+          its column taller and drops the button past the input. */}
+      <p className="form-row-hint">
+        They still receive a confirmation link — being typed in here is not consent.
+      </p>
+      <Note message={message} />
+    </>
+  );
+}
+
+export function SubscriberRowActions({ subscriber }: { subscriber: Subscriber }) {
+  const [pending, startTransition] = useTransition();
+  const confirm = useConfirm();
+
+  return (
+    <span className="row-actions">
+      {subscriber.status === "pending" && (
+        <button
+          type="button"
+          className="abtn abtn-quiet abtn-sm"
+          disabled={pending}
+          title="Resend the confirmation link"
+          onClick={() =>
+            startTransition(() => resendConfirmation(subscriber.id).then(() => undefined))
+          }
+        >
+          <Mail aria-hidden />
+        </button>
+      )}
+      <button
+        type="button"
+        className="tape-remove"
+        aria-label={`Remove ${subscriber.email}`}
+        disabled={pending}
+        onClick={async () => {
+          const go = await confirm({
+            title: `Remove ${subscriber.email}?`,
+            body: "They are taken off the list entirely, along with their consent record.",
+            confirmLabel: "Remove",
+            destructive: true,
+          });
+          if (!go) return;
+          startTransition(() => removeSubscriber(subscriber.id).then(() => undefined));
+        }}
+      >
+        <Trash2 width={13} height={13} aria-hidden />
+      </button>
+    </span>
+  );
+}
+
+export function BroadcastComposer({
+  broadcasts,
+  activeCount,
+}: {
+  broadcasts: Broadcast[];
+  activeCount: number;
+}) {
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
+  const [message, setMessage] = useState<Message>(null);
+  const [pending, startTransition] = useTransition();
+  const confirm = useConfirm();
+
+  function compose(send: boolean) {
+    startTransition(async () => {
+      const saved = await saveBroadcast({ subject, bodyMarkdown: body });
+      if (!saved.ok || !saved.id) {
+        setMessage({ text: saved.message, ok: false });
+        return;
+      }
+
+      if (!send) {
+        setMessage({ text: "Saved as a draft.", ok: true });
+        setSubject("");
+        setBody("");
+        return;
+      }
+
+      const result = await sendBroadcast(saved.id);
+      setMessage({ text: result.message, ok: result.ok });
+      if (result.ok) {
+        setSubject("");
+        setBody("");
+      }
+    });
+  }
+
+  return (
+    <div className="panel">
+      <div className="panel-head">
+        <h2>Broadcast</h2>
+        <span className="meta">
+          {activeCount} confirmed subscriber{activeCount === 1 ? "" : "s"}
+        </span>
+      </div>
+
+      <div className="panel-body">
+        <div className="field">
+          <label htmlFor="broadcast-subject">Subject</label>
+          <input
+            id="broadcast-subject"
+            className="input"
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
+          />
+        </div>
+        <div className="field">
+          <label htmlFor="broadcast-body">Message</label>
+          <textarea
+            id="broadcast-body"
+            className="textarea"
+            rows={7}
+            value={body}
+            onChange={(event) => setBody(event.target.value)}
+            placeholder="Markdown. An unsubscribe link is added to every copy."
+          />
+        </div>
+
+        <div className="btn-row">
+          <button
+            type="button"
+            className="abtn abtn-quiet"
+            onClick={() => compose(false)}
+            disabled={pending || !subject.trim()}
+          >
+            Save draft
+          </button>
+          <button
+            type="button"
+            className="abtn abtn-primary"
+            onClick={async () => {
+              const go = await confirm({
+                title: `Send to ${activeCount} subscriber${activeCount === 1 ? "" : "s"}?`,
+                body: `"${subject}" goes out immediately. A sent broadcast cannot be recalled.`,
+                confirmLabel: "Send now",
+              });
+              if (go) compose(true);
+            }}
+            disabled={pending || !subject.trim() || activeCount === 0}
+          >
+            <Send aria-hidden />
+            {pending ? "Sending…" : "Send now"}
+          </button>
+        </div>
+
+        <Note message={message} />
+
+        {broadcasts.length > 0 && (
+          <div className="rows stack-top">
+            {broadcasts.map((broadcast) => (
+              <BroadcastRow key={broadcast.id} broadcast={broadcast} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function BroadcastRow({ broadcast }: { broadcast: Broadcast }) {
+  const [pending, startTransition] = useTransition();
+  const sent = broadcast.status === "sent";
+
+  return (
+    <div className="row row-broadcast">
+      <span className={`state state-${sent ? "published" : "draft"}`}>{broadcast.status}</span>
+      <span className="row-title">
+        {broadcast.subject}
+        {sent && (
+          <span className="row-sub">
+            {broadcast.recipientCount} recipient{broadcast.recipientCount === 1 ? "" : "s"}
+          </span>
+        )}
+      </span>
+      {/* `ago` reads the clock, so a value sitting on a boundary can render
+          "just now" on the server and "1m" a moment later on the client. */}
+      <span className="num num-dim" suppressHydrationWarning>
+        {ago(broadcast.sentAt ?? broadcast.createdAt)}
+      </span>
+      {sent ? (
+        <span />
+      ) : (
+        <button
+          type="button"
+          className="tape-remove"
+          aria-label={`Delete ${broadcast.subject}`}
+          disabled={pending}
+          onClick={() => startTransition(() => deleteBroadcast(broadcast.id).then(() => undefined))}
+        >
+          <Trash2 width={13} height={13} aria-hidden />
+        </button>
+      )}
+    </div>
+  );
+}
