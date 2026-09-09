@@ -15,6 +15,24 @@
         "NEXT_PUBLIC_VERCEL_ENV",
         "DATABASE_URL",
         "DATABASE_SSL"
+      ],
+      // Read per request, never during the build, so they cannot change the
+      // output and do not belong in the hash above — rotating a secret should
+      // not invalidate every cached build. They are declared all the same:
+      // strict env mode hides anything undeclared, and Vercel warns about
+      // project variables that turbo would drop.
+      "passThroughEnv": [
+        "ADMIN_URL",
+        "ADMIN_GITHUB_IDS",
+        "GITHUB_CLIENT_ID",
+        "GITHUB_CLIENT_SECRET",
+        "REVALIDATE_SECRET",
+        "FLEXIQ_URL",
+        "CRON_SECRET",
+        "PEPY_API_KEY",
+        "RESEND_API_KEY",
+        "RESEND_WEBHOOK_SECRET",
+        "REDIS_URL"
       ]
     },
     "typecheck": {},
