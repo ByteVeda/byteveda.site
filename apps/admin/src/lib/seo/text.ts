@@ -53,7 +53,11 @@ export function links(source: string): string[] {
 export function isInternalLink(href: string): boolean {
   if (href.startsWith("#")) return false;
   if (href.startsWith("/")) return true;
-  return /^https?:\/\/([a-z0-9-]+\.)*byteveda\.org/i.test(href);
+
+  // The trailing `(\/|\?|#|$)` is load-bearing. Without it the pattern matches
+  // any host that merely starts with ours — `byteveda.org.example.com` would
+  // count as an internal link.
+  return /^https?:\/\/([a-z0-9-]+\.)*byteveda\.org(\/|\?|#|$)/i.test(href);
 }
 
 /** The first real paragraph — what a search engine shows and a reader reads. */

@@ -19,6 +19,19 @@ describe("normaliseSubject", () => {
   it("handles an empty subject", () => {
     expect(normaliseSubject("Re: ")).toBe("");
   });
+
+  it("stays fast on the pathological input that made this quadratic", () => {
+    // Anyone can email the inbound address, so the cost of a crafted subject
+    // is a denial-of-service question rather than a style one.
+    const started = performance.now();
+    normaliseSubject(`re${" ".repeat(50_000)}: hello`);
+    normaliseSubject(`${"Re: ".repeat(5_000)}hello`);
+    expect(performance.now() - started).toBeLessThan(250);
+  });
+
+  it("caps an absurdly long subject rather than working through it", () => {
+    expect(normaliseSubject("a".repeat(10_000)).length).toBeLessThanOrEqual(512);
+  });
 });
 
 describe("normaliseEmail", () => {
@@ -28,6 +41,13 @@ describe("normaliseEmail", () => {
 
   it("passes a bare address through, lowercased", () => {
     expect(normaliseEmail("  Ada@Example.test ")).toBe("ada@example.test");
+  });
+
+  it("stays fast on a string of unclosed angle brackets", () => {
+    const started = performance.now();
+    normaliseEmail("<".repeat(50_000));
+    normaliseEmail(`${"<=".repeat(50_000)}a@b.test`);
+    expect(performance.now() - started).toBeLessThan(250);
   });
 });
 

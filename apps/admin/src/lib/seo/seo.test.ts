@@ -66,8 +66,15 @@ describe("links and isInternalLink", () => {
   it("counts site-relative and byteveda.org targets as internal", () => {
     expect(isInternalLink("/blog/x")).toBe(true);
     expect(isInternalLink("https://flexiq.byteveda.org/blog/x")).toBe(true);
+    expect(isInternalLink("https://byteveda.org")).toBe(true);
+    expect(isInternalLink("https://byteveda.org?ref=1")).toBe(true);
     expect(isInternalLink("https://example.com")).toBe(false);
     expect(isInternalLink("#section")).toBe(false);
+  });
+
+  it("does not treat a host that merely starts with ours as internal", () => {
+    expect(isInternalLink("https://byteveda.org.example.com/phish")).toBe(false);
+    expect(isInternalLink("https://byteveda.organisation.com")).toBe(false);
   });
 });
 
