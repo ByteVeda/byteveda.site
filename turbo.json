@@ -8,10 +8,21 @@
       // Inlined into the client bundle at build time, so they belong in the hash:
       // a different endpoint, or a build that is not on Vercel, is a different
       // build. Strict env mode would otherwise strip both.
-      "env": ["NEXT_PUBLIC_VITALS_ENDPOINT", "NEXT_PUBLIC_VERCEL_ENV"]
+      // FlexiQ prerenders its blog from Postgres, so the connection is part of
+      // what the output depends on — a different database is a different build.
+      "env": [
+        "NEXT_PUBLIC_VITALS_ENDPOINT",
+        "NEXT_PUBLIC_VERCEL_ENV",
+        "DATABASE_URL",
+        "DATABASE_SSL"
+      ]
     },
     "typecheck": {},
-    "test": {},
+    // Playwright builds and serves FlexiQ, which reads the blog from Postgres.
+    // Strict env mode would otherwise hand the build an empty database.
+    "test": {
+      "env": ["DATABASE_URL", "DATABASE_SSL"]
+    },
     "lighthouse": {
       "dependsOn": ["build"],
       // Starts a server and uploads a report; there is nothing here to replay.
