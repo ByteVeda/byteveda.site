@@ -29,6 +29,20 @@
       "when": 1788897928248,
       "tag": "0003_email",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1788912497705,
+      "tag": "0004_subscriber_change_notify",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1788912630506,
+      "tag": "0005_drop_subscriber_notify",
+      "breakpoints": true
     }
   ]
 }

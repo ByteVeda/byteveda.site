@@ -7,6 +7,7 @@ import { requireSession } from "@/lib/auth/session";
 import { sendEmail } from "@/lib/email/client";
 import { confirmationEmail } from "@/lib/email/templates";
 import { env } from "@/lib/env";
+import { announce } from "@/lib/events";
 import { confirmUrl, newToken, normalise } from "./service";
 
 export type SubscriberResult = { ok: boolean; message: string };
@@ -52,6 +53,7 @@ export async function addSubscriber(email: string): Promise<SubscriberResult> {
     kind: "confirmation",
   });
 
+  announce("subscribers:changed");
   revalidatePath("/subscribers");
 
   return sent.ok
@@ -85,6 +87,8 @@ export async function removeSubscriber(id: string): Promise<SubscriberResult> {
   await requireSession();
 
   await getDb().delete(subscribers).where(eq(subscribers.id, id));
+
+  announce("subscribers:changed");
   revalidatePath("/subscribers");
 
   return { ok: true, message: "Removed." };

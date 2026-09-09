@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LiveRefresh } from "@/components/live-refresh";
 import { PageHeader } from "@/components/page-header";
 import {
   AddSubscriberForm,
@@ -31,6 +32,10 @@ export default async function SubscribersPage() {
 
   return (
     <>
+      {/* A confirmation happens in the subscriber's browser, so the status here
+          would otherwise sit stale until someone reloaded. */}
+      <LiveRefresh endpoint="/api/subscribers/stream" />
+
       <PageHeader
         title="Subscribers"
         sub={
