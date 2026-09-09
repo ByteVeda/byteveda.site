@@ -44,6 +44,7 @@ catalog:
   "@types/turndown": ^5.0.6
   marked: ^18.0.12
   resend: ^6.26.0
+  ioredis: ^6.0.0
 
 # Replaces ignoredBuiltDependencies, removed in pnpm 11. Each ships prebuilt
 # binaries, so their install scripts stay off.

@@ -8,7 +8,8 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "collect": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/collect.ts"
+    "collect": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/collect.ts",
+    "realtime:check": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/realtime-check.ts"
   },
   "dependencies": {
     "@byteveda/db": "workspace:*",
@@ -21,6 +22,7 @@
     "@tiptap/react": "catalog:",
     "@tiptap/starter-kit": "catalog:",
     "drizzle-orm": "catalog:",
+    "ioredis": "catalog:",
     "lucide-react": "catalog:",
     "marked": "catalog:",
     "turndown": "catalog:",

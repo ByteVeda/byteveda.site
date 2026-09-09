@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { getSession } from "@/lib/auth/session";
-import { subscribe } from "@/lib/events";
+import { subscribersChanged } from "@/lib/realtime";
 
 export const dynamic = "force-dynamic";
 /** Held open until the operator leaves the page or the platform cuts it. */
@@ -62,7 +62,7 @@ export async function GET(request: NextRequest) {
       // per navigation.
       request.signal.addEventListener("abort", close);
 
-      unsubscribe = subscribe("subscribers:changed", () => write("event: change\ndata: 1\n\n"));
+      unsubscribe = subscribersChanged.subscribe(() => write("event: change\ndata: 1\n\n"));
 
       // Lets the client tell a live stream from a silent one.
       write("event: ready\ndata: 1\n\n");

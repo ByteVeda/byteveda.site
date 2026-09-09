@@ -3,7 +3,7 @@ import { getDb, type Subscriber, subscribers } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { sendEmail } from "@/lib/email/client";
 import { confirmationEmail } from "@/lib/email/templates";
-import { announce } from "@/lib/events";
+import { subscribersChanged } from "@/lib/realtime";
 import { getSettings } from "@/lib/settings";
 
 export type SubscribeOutcome =
@@ -69,7 +69,7 @@ export async function subscribe(input: {
     await db.insert(subscribers).values({ email, token, source: input.source, status: "pending" });
   }
 
-  announce("subscribers:changed");
+  subscribersChanged.publish();
 
   await sendEmail({
     to: email,
@@ -90,9 +90,8 @@ export type TokenState =
 /**
  * Reads the state a token names, and changes nothing.
  *
- * The page behind an emailed link must not mutate on GET: scanners and
- * prefetchers follow those links, and a confirmation that happens because a
- * mail client looked at the message is not consent. The button does the change.
+ * The page decides what to show from this before it acts, so following a link
+ * twice lands on the settled state rather than an error.
  */
 export async function lookupByToken(token: string): Promise<TokenState> {
   if (!token) return { found: false };
@@ -128,7 +127,7 @@ export async function confirm(token: string): Promise<TokenOutcome> {
 
   // The console is watching; this is what moves the row from pending to
   // confirmed on a page nobody is touching.
-  announce("subscribers:changed");
+  subscribersChanged.publish();
 
   return { ok: true, message: "You are subscribed." };
 }
@@ -153,7 +152,7 @@ export async function unsubscribe(token: string): Promise<TokenOutcome> {
     .set({ status: "unsubscribed", unsubscribedAt: new Date() })
     .where(eq(subscribers.id, subscriber.id));
 
-  announce("subscribers:changed");
+  subscribersChanged.publish();
 
   return { ok: true, message: "You will not hear from us again." };
 }
