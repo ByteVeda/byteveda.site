@@ -56,6 +56,27 @@ jobs:
   test:
     name: Unit and browser tests
     runs-on: ubuntu-latest
+
+    # The FlexiQ blog reads from Postgres, so its browser suite needs one with
+    # posts in it. A service container plus the fixtures under `e2e/fixtures`
+    # keeps the tests exercising the real query path rather than a stub.
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
+      DATABASE_SSL: disable
+
     steps:
       - uses: actions/checkout@v7
         with:
@@ -95,6 +116,15 @@ jobs:
       - name: Install browsers
         if: steps.plan.outputs.browsers == 'true'
         run: pnpm --filter @byteveda/flexiq-site exec playwright install --with-deps chromium webkit
+
+      # Only when a browser suite is going to open: the schema and two posts are
+      # what the FlexiQ blog tests read. Skipped otherwise so a change confined
+      # to a package never touches the database.
+      - name: Seed the blog database
+        if: steps.plan.outputs.browsers == 'true'
+        run: |
+          pnpm --filter @byteveda/db db:migrate
+          pnpm --filter @byteveda/db import:posts ../../apps/flexiq/e2e/fixtures/blog
 
       # vitest for @byteveda/flexiq-sim, Playwright for all three sites — the
       # FlexiQ desktop suite plus the phone-viewport audit each app now ships.
