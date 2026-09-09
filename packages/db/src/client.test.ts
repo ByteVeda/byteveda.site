@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { poolConfig, resolveSslMode } from "./client";
+import { isBuildPhase, poolConfig, resolveSslMode } from "./client";
 
 const REMOTE = "postgresql://user:pw@db.example.com:5432/app";
 const LOCAL = "postgresql://user:pw@localhost:5432/app";
@@ -55,5 +55,22 @@ describe("poolConfig", () => {
 
   it("passes the connection string through untouched", () => {
     expect(poolConfig(REMOTE, "require").connectionString).toBe(REMOTE);
+  });
+});
+
+describe("isBuildPhase", () => {
+  it("is true while next build is prerendering", () => {
+    vi.stubEnv("NEXT_PHASE", "phase-production-build");
+    expect(isBuildPhase()).toBe(true);
+  });
+
+  it("is false on a running server, where a failed read is an incident", () => {
+    vi.stubEnv("NEXT_PHASE", "phase-production-server");
+    expect(isBuildPhase()).toBe(false);
+  });
+
+  it("is false when nothing set the phase at all", () => {
+    vi.stubEnv("NEXT_PHASE", "");
+    expect(isBuildPhase()).toBe(false);
   });
 });
