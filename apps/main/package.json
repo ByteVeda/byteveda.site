@@ -16,6 +16,7 @@
     "@byteveda/analytics": "workspace:*",
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
+    "@vercel/analytics": "catalog:",
     "@vercel/speed-insights": "catalog:",
     "@fontsource-variable/ibm-plex-sans": "catalog:",
     "@fontsource/ibm-plex-mono": "catalog:",

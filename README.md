@@ -133,8 +133,10 @@ numeric values move with Lighthouse's heuristics rather than with the diff.
 **Field data.** `<WebVitals />` from `@byteveda/analytics` sits in all three root
 layouts and posts Core Web Vitals to `NEXT_PUBLIC_VITALS_ENDPOINT`. It is inert
 when that is unset. It is built on `next/web-vitals`, so the only thing coupled
-to a provider is the URL. `main` and `flexiq` additionally mount Vercel's
-`<SpeedInsights />` as a second sink; the docs export on Pages does not.
+to a provider is the URL. `main` and `flexiq` additionally mount
+`<VercelInsights />` — Vercel Web Analytics (page views, referrers, countries)
+and Speed Insights behind one `NEXT_PUBLIC_VERCEL_ENV` guard, so both are inert
+off Vercel. The docs export on Pages mounts neither.
 
 ```bash
 pnpm lighthouse                                  # every app

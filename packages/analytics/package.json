@@ -12,11 +12,15 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
+    "@vercel/analytics": ">=2",
     "@vercel/speed-insights": ">=2",
     "next": ">=16",
     "react": ">=19"
   },
   "peerDependenciesMeta": {
+    "@vercel/analytics": {
+      "optional": true
+    },
     "@vercel/speed-insights": {
       "optional": true
     }
@@ -24,6 +28,7 @@
   "devDependencies": {
     "@byteveda/config": "workspace:*",
     "@types/node": "catalog:",
+    "@vercel/analytics": "catalog:",
     "@vercel/speed-insights": "catalog:",
     "@types/react": "catalog:",
     "next": "catalog:",
