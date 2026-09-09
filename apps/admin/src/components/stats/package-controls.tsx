@@ -6,6 +6,7 @@ import { ECOSYSTEM_LABELS, ECOSYSTEMS, type Ecosystem } from "@byteveda/db/const
 import { projects } from "@byteveda/utils";
 import { Plus, RefreshCw, X } from "lucide-react";
 import { useState, useTransition } from "react";
+import { useConfirm } from "@/components/confirm";
 import { addPackage, collectNow, removePackage, seedFromCatalogue } from "@/lib/stats/actions";
 import { adapterHints } from "@/lib/stats/hints";
 
@@ -72,6 +73,7 @@ export function SeedButton() {
 
 export function RemovePackageButton({ id, name }: { id: string; name: string }) {
   const [pending, startTransition] = useTransition();
+  const confirm = useConfirm();
 
   return (
     <button
@@ -80,8 +82,14 @@ export function RemovePackageButton({ id, name }: { id: string; name: string }) 
       aria-label={`Stop tracking ${name}`}
       title={`Stop tracking ${name}`}
       disabled={pending}
-      onClick={() => {
-        if (!window.confirm(`Stop tracking ${name}? Its recorded history goes too.`)) return;
+      onClick={async () => {
+        const go = await confirm({
+          title: `Stop tracking ${name}?`,
+          body: "Its recorded download history is removed with it.",
+          confirmLabel: "Stop tracking",
+          destructive: true,
+        });
+        if (!go) return;
         startTransition(() => removePackage(id).then(() => undefined));
       }}
     >

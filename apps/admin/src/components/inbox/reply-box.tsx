@@ -3,12 +3,14 @@
 import { Send, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
+import { useConfirm } from "@/components/confirm";
 import { deleteThread, replyToThread } from "@/lib/inbox/actions";
 
 type Props = { threadKey: string; to: string; canSend: boolean };
 
 export function ReplyBox({ threadKey, to, canSend }: Props) {
   const router = useRouter();
+  const confirm = useConfirm();
   const [body, setBody] = useState("");
   const [message, setMessage] = useState<{ text: string; ok: boolean } | null>(null);
   const [pending, startTransition] = useTransition();
@@ -24,8 +26,15 @@ export function ReplyBox({ threadKey, to, canSend }: Props) {
     });
   }
 
-  function remove() {
-    if (!window.confirm("Delete this conversation? It cannot be recovered.")) return;
+  async function remove() {
+    const go = await confirm({
+      title: "Delete this conversation?",
+      body: `Every message from ${to} in this thread is removed. It cannot be recovered.`,
+      confirmLabel: "Delete",
+      destructive: true,
+    });
+    if (!go) return;
+
     startTransition(async () => {
       await deleteThread(threadKey);
       router.push("/inbox");

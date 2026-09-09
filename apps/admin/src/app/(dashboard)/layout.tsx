@@ -1,3 +1,4 @@
+import { ConfirmProvider } from "@/components/confirm";
 import { Rail } from "@/components/rail";
 import { SignOut } from "@/components/sign-out";
 import { requireSession } from "@/lib/auth/session";
@@ -12,14 +13,16 @@ export default async function DashboardLayout({ children }: { children: React.Re
   const unread = await countUnread();
 
   return (
-    <div className="shell">
-      <Rail
-        user={{ login: user.login, name: user.name, avatarUrl: user.avatarUrl }}
-        counts={{ "/inbox": unread }}
-      >
-        <SignOut />
-      </Rail>
-      <main className="main">{children}</main>
-    </div>
+    <ConfirmProvider>
+      <div className="shell">
+        <Rail
+          user={{ login: user.login, name: user.name, avatarUrl: user.avatarUrl }}
+          counts={{ "/inbox": unread }}
+        >
+          <SignOut />
+        </Rail>
+        <main className="main">{children}</main>
+      </div>
+    </ConfirmProvider>
   );
 }

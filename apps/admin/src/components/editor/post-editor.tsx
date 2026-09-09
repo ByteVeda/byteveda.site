@@ -7,6 +7,7 @@ import StarterKit from "@tiptap/starter-kit";
 import { ExternalLink, Eye, EyeOff, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { useConfirm } from "@/components/confirm";
 import { SeoPanel } from "@/components/editor/seo-panel";
 import { TagInput } from "@/components/editor/tag-input";
 import { Toolbar } from "@/components/editor/toolbar";
@@ -36,6 +37,7 @@ type Message = { text: string; tone: "ok" | "error" | "idle" } | null;
 
 export function PostEditor({ post, corpus, revisions }: Props) {
   const router = useRouter();
+  const confirm = useConfirm();
   const [pending, startTransition] = useTransition();
 
   const [title, setTitle] = useState(post.title);
@@ -170,13 +172,28 @@ export function PostEditor({ post, corpus, revisions }: Props) {
     });
   }
 
-  function remove() {
-    if (!window.confirm(`Delete "${post.title}"? This cannot be undone.`)) return;
+  async function remove() {
+    const go = await confirm({
+      title: `Delete "${post.title}"?`,
+      body: "The post and its revision history are removed. This cannot be undone.",
+      confirmLabel: "Delete post",
+      destructive: true,
+    });
+    if (!go) return;
     startTransition(() => deletePost(post.id));
   }
 
-  function restore(revisionId: string) {
-    if (dirty && !window.confirm("You have unsaved changes. Restore anyway?")) return;
+  async function restore(revisionId: string) {
+    if (dirty) {
+      const go = await confirm({
+        title: "Restore over unsaved changes?",
+        body: "What you have typed since the last save is lost.",
+        confirmLabel: "Restore",
+        destructive: true,
+      });
+      if (!go) return;
+    }
+
     startTransition(async () => {
       const result = await restoreRevision(post.id, revisionId);
       setMessage({ text: result.message, tone: result.ok ? "ok" : "error" });

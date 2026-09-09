@@ -3,6 +3,7 @@
 import type { Broadcast, Subscriber } from "@byteveda/db";
 import { Mail, Send, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
+import { useConfirm } from "@/components/confirm";
 import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
 import { ago } from "@/lib/format";
 import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
@@ -69,6 +70,7 @@ export function AddSubscriberForm() {
 
 export function SubscriberRowActions({ subscriber }: { subscriber: Subscriber }) {
   const [pending, startTransition] = useTransition();
+  const confirm = useConfirm();
 
   return (
     <span className="row-actions">
@@ -90,8 +92,14 @@ export function SubscriberRowActions({ subscriber }: { subscriber: Subscriber })
         className="tape-remove"
         aria-label={`Remove ${subscriber.email}`}
         disabled={pending}
-        onClick={() => {
-          if (!window.confirm(`Remove ${subscriber.email}?`)) return;
+        onClick={async () => {
+          const go = await confirm({
+            title: `Remove ${subscriber.email}?`,
+            body: "They are taken off the list entirely, along with their consent record.",
+            confirmLabel: "Remove",
+            destructive: true,
+          });
+          if (!go) return;
           startTransition(() => removeSubscriber(subscriber.id).then(() => undefined));
         }}
       >
@@ -112,6 +120,7 @@ export function BroadcastComposer({
   const [body, setBody] = useState("");
   const [message, setMessage] = useState<Message>(null);
   const [pending, startTransition] = useTransition();
+  const confirm = useConfirm();
 
   function compose(send: boolean) {
     startTransition(async () => {
@@ -180,9 +189,13 @@ export function BroadcastComposer({
           <button
             type="button"
             className="abtn abtn-primary"
-            onClick={() => {
-              if (!window.confirm(`Send "${subject}" to ${activeCount} subscribers?`)) return;
-              compose(true);
+            onClick={async () => {
+              const go = await confirm({
+                title: `Send to ${activeCount} subscriber${activeCount === 1 ? "" : "s"}?`,
+                body: `"${subject}" goes out immediately. A sent broadcast cannot be recalled.`,
+                confirmLabel: "Send now",
+              });
+              if (go) compose(true);
             }}
             disabled={pending || !subject.trim() || activeCount === 0}
           >
