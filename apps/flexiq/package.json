@@ -20,6 +20,7 @@
     "@fontsource-variable/ibm-plex-sans": "catalog:",
     "@fontsource/ibm-plex-mono": "catalog:",
     "@react-three/fiber": "catalog:",
+    "@vercel/analytics": "catalog:",
     "@vercel/speed-insights": "catalog:",
     "three": "catalog:",
     "lucide-react": "catalog:",
