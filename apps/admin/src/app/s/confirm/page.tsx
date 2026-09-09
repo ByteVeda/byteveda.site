@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Mark } from "@/components/mark";
 import { SubscriptionAction } from "@/components/subscription-action";
-import { lookupByToken } from "@/lib/subscribers/service";
+import { isDirectNavigation, readFetchMetadata } from "@/lib/subscribers/navigation";
+import { confirm, lookupByToken } from "@/lib/subscribers/service";
 
 export const metadata: Metadata = { title: "Confirm subscription", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -9,15 +11,24 @@ export const dynamic = "force-dynamic";
 type Props = { searchParams: Promise<{ token?: string }> };
 
 /**
- * Reads the token and offers the button; the button does the confirming.
+ * One click from the email. Following the link is the confirmation.
  *
- * Nothing is changed by loading this page, so a mail client prefetching the
- * link cannot subscribe anyone. Following the link again after confirming
- * lands on the settled state rather than an error.
+ * Acting on GET means whatever fetches the URL performs the action, so the
+ * request has to look like a person: a top-level document navigation, not a
+ * prefetch or a scanner. When it does not, the page falls back to a button
+ * rather than either confirming silently or refusing a real reader.
+ *
+ * Following the link a second time lands on the settled state, not an error.
  */
 export default async function ConfirmPage({ searchParams }: Props) {
   const { token } = await searchParams;
   const state = await lookupByToken(token ?? "");
+
+  const clicked = isDirectNavigation(readFetchMetadata(await headers()));
+  const settled =
+    state.found && state.status !== "active" && clicked ? await confirm(token ?? "") : null;
+
+  const subscribed = state.found && (state.status === "active" || settled?.ok === true);
 
   return (
     <main className="login">
@@ -34,11 +45,12 @@ export default async function ConfirmPage({ searchParams }: Props) {
               Go to byteveda.org
             </a>
           </>
-        ) : state.status === "active" ? (
+        ) : subscribed ? (
           <>
-            <h1>Already subscribed</h1>
+            <h1>Subscribed</h1>
             <p>
-              <span className="cell-mono">{state.email}</span> is on the list. Nothing more to do.
+              <span className="cell-mono">{state.email}</span> is on the list. You will hear from us
+              when there is something worth reading.
             </p>
             <a className="abtn abtn-quiet" href="https://byteveda.org">
               Go to byteveda.org

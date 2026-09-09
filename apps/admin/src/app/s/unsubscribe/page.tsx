@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Mark } from "@/components/mark";
 import { SubscriptionAction } from "@/components/subscription-action";
-import { lookupByToken } from "@/lib/subscribers/service";
+import { isDirectNavigation, readFetchMetadata } from "@/lib/subscribers/navigation";
+import { lookupByToken, unsubscribe } from "@/lib/subscribers/service";
 
 export const metadata: Metadata = { title: "Unsubscribe", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -9,15 +11,23 @@ export const dynamic = "force-dynamic";
 type Props = { searchParams: Promise<{ token?: string }> };
 
 /**
- * One button, no second confirmation step.
+ * One click, no confirmation step.
  *
- * Making someone confirm that they meant to unsubscribe is the pattern that
- * gets mail reported as spam. The click is the confirmation — the page exists
- * only so a link scanner cannot unsubscribe somebody by looking at the message.
+ * Asking someone to confirm that they meant to unsubscribe is the pattern that
+ * gets mail reported as spam. Same fetch-metadata guard as the confirm page, so
+ * a link scanner cannot unsubscribe somebody by looking at the message.
  */
 export default async function UnsubscribePage({ searchParams }: Props) {
   const { token } = await searchParams;
   const state = await lookupByToken(token ?? "");
+
+  const clicked = isDirectNavigation(readFetchMetadata(await headers()));
+  const settled =
+    state.found && state.status !== "unsubscribed" && clicked
+      ? await unsubscribe(token ?? "")
+      : null;
+
+  const gone = state.found && (state.status === "unsubscribed" || settled?.ok === true);
 
   return (
     <main className="login">
@@ -34,9 +44,9 @@ export default async function UnsubscribePage({ searchParams }: Props) {
               Go to byteveda.org
             </a>
           </>
-        ) : state.status === "unsubscribed" ? (
+        ) : gone ? (
           <>
-            <h1>Already unsubscribed</h1>
+            <h1>Unsubscribed</h1>
             <p>
               <span className="cell-mono">{state.email}</span> will not hear from us again.
             </p>
