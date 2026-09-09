@@ -1,8 +1,16 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { poolConfig, resolveSslMode } from "./client";
 
 const REMOTE = "postgresql://user:pw@db.example.com:5432/app";
 const LOCAL = "postgresql://user:pw@localhost:5432/app";
+
+/**
+ * The override defaults to `process.env.DATABASE_SSL`, so a machine that has it
+ * set — CI points at a local Postgres with TLS off — would otherwise decide the
+ * result of every inference test. Blank it so these assert the inference.
+ */
+beforeEach(() => vi.stubEnv("DATABASE_SSL", ""));
+afterEach(() => vi.unstubAllEnvs());
 
 describe("resolveSslMode", () => {
   it("defaults a remote host to a verified TLS connection", () => {
