@@ -80,6 +80,22 @@ export function isConfigured(): boolean {
   return Boolean(process.env.DATABASE_URL);
 }
 
+/**
+ * Whether this process is `next build` rather than a running server.
+ *
+ * The third case a caller has to tell apart. A read that fails on a live server
+ * is an incident and should surface as one; the same read failing while a page
+ * is being prerendered would take the whole deploy with it, and a deploy should
+ * not depend on the database being up at the moment it runs.
+ *
+ * `NEXT_PHASE` is set by Next in the build process and its prerender workers —
+ * `phase-production-build`, from `next/constants`. Inlined as a literal rather
+ * than imported so this package stays usable from a plain script.
+ */
+export function isBuildPhase(): boolean {
+  return process.env.NEXT_PHASE === "phase-production-build";
+}
+
 function connectionString(): string {
   const url = process.env.DATABASE_URL;
   if (!url) {
