@@ -181,6 +181,40 @@
     "mentionsByteveda": true
   },
   {
+    "id": "mastodon:d24dea16a5bc",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "How to decode a filesystem file name with scrambled encoding in Python 3. The trick is os.listdir(\"./\") returns a \"cook…",
+    "url": "https://mk.absturztau.be/notes/aqzv5uyis06i00b8",
+    "excerpt": "How to decode a filesystem file name with scrambled encoding in Python 3. The trick is os.listdir(\"./\") returns a \"cooked\" Unicode string representation which may damage the string further, but os.li…",
+    "author": "niconiconi",
+    "publishedAt": "2026-09-11T01:50:39.354Z",
+    "score": 6,
+    "tags": [
+      "python"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:GitHub Blog:3ce1fd85cc17",
+    "kind": "article",
+    "source": "rss",
+    "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+    "excerpt": "When an agent makes a change to your code, you want to review it, run it, and see what changed. Great news: now you can do all three without having to leave the GitHub Copilot app . Before, doing tho…",
+    "author": "Kayla Cinnamon",
+    "publishedAt": "2026-09-10T21:31:19.000Z",
+    "score": 0,
+    "tags": [
+      "GitHub Blog"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "mastodon:fec03cf89184",
     "kind": "article",
     "source": "mastodon",
@@ -189,7 +223,7 @@
     "excerpt": "Soo, sigh, I was dismissed yesterday from a relatively new job just before I could deploy a huge application, citing my lack of AI coding use It was during my probationary period so it seems like the…",
     "author": "Rhii Alexander 🏳️‍⚧️",
     "publishedAt": "2026-09-10T20:03:25.000Z",
-    "score": 15,
+    "score": 185,
     "tags": [
       "fedihired",
       "python",
@@ -207,23 +241,29 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:447cb3ea7d21",
+    "id": "mastodon:cb5a95c5b2fb",
     "kind": "article",
     "source": "mastodon",
-    "title": "After a whirlwind tour of what # AI is doing in health tech, I’m looking for my next role. If you need an empathetic en…",
-    "url": "https://wandering.shop/@phildini/117248079021297645",
-    "excerpt": "After a whirlwind tour of what # AI is doing in health tech, I’m looking for my next role. If you need an empathetic engineering leader with deep experience in # python and broad experience in surpri…",
-    "author": "phildini",
-    "publishedAt": "2026-09-10T18:08:25.000Z",
-    "score": 36,
+    "title": "The slides for @ cxiao 's talk at # RustConf 2026, \"Reverse Engineering Rust Malware in 2026\", are now available! https…",
+    "url": "https://infosec.exchange/@decoderloop/117248341568750269",
+    "excerpt": "The slides for @ cxiao 's talk at # RustConf 2026, \"Reverse Engineering Rust Malware in 2026\", are now available! https:// github.com/decoderloop/2026-09 -09-rustconf-reversing-rust-malware-in-2026-t…",
+    "author": "Decoder Loop",
+    "publishedAt": "2026-09-10T19:15:11.000Z",
+    "score": 6,
     "tags": [
-      "ai",
-      "python",
-      "getfedihired"
+      "rustconf",
+      "rust",
+      "rustlang",
+      "rustconf2026",
+      "malware",
+      "malwareanalysis",
+      "infosec",
+      "reverseengineering",
+      "reversing"
     ],
     "labels": [
-      "ai",
-      "python"
+      "rust",
+      "security"
     ],
     "mentionsByteveda": false
   },
@@ -244,42 +284,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:6e332326bf60",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Look, I beat a copyright strike from the Beastie Boys making this shitty explainer for how FTX happened. OpenAI + Anthr…",
-    "url": "https://partyon.xyz/@nullagent/117247984813091875",
-    "excerpt": "Look, I beat a copyright strike from the Beastie Boys making this shitty explainer for how FTX happened. OpenAI + Anthropic is the SAME DAMNED STORY. Just stand back and think twice before investing…",
-    "author": "nullagent",
-    "publishedAt": "2026-09-10T17:44:28.000Z",
-    "score": 5,
-    "tags": [
-      "ipo",
-      "sec",
-      "vc",
-      "openai",
-      "anthropic",
-      "llm",
-      "ai",
-      "startups",
-      "stocks",
-      "economics"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:426ed404d014",
     "kind": "article",
     "source": "lobsters",
     "title": "Rust Is Tier-1 Language at Microsoft",
     "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
-    "excerpt": "50 points · rust",
+    "excerpt": "63 points · rust",
     "author": "mmastrac",
     "publishedAt": "2026-09-10T08:40:19.081-05:00",
-    "score": 50,
+    "score": 63,
     "tags": [
       "rust"
     ],
@@ -297,7 +310,7 @@
     "excerpt": "...but let me say this right away: coding was never the most valuable part of software...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-09-10T07:17:46Z",
-    "score": 54,
+    "score": 63,
     "tags": [
       "discuss",
       "ai",
@@ -373,7 +386,7 @@
     "excerpt": "AI can generate code faster than ever. That doesn't mean we're shipping correct software...",
     "author": "Ken W Alger",
     "publishedAt": "2026-09-09T14:32:00Z",
-    "score": 34,
+    "score": 36,
     "tags": [
       "ai",
       "testing",
@@ -400,6 +413,25 @@
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:c8a5b7d009e4",
+    "kind": "article",
+    "source": "devto",
+    "title": "AI psychosis might be a result of subscription fatigue",
+    "url": "https://dev.to/ale3oula/ai-psychosis-might-be-a-result-of-subscription-fatigue-a39",
+    "excerpt": "Continuing my thoughts after my previous article, and having too much free time lately, I have been...",
+    "author": "Alexandra",
+    "publishedAt": "2026-09-09T13:06:37Z",
+    "score": 29,
+    "tags": [
+      "ai",
+      "discuss"
+    ],
+    "labels": [
+      "ai"
     ],
     "mentionsByteveda": false
   },
@@ -453,7 +485,7 @@
     "excerpt": "Not \"AI-assisted.\" Not \"copilot suggestions I edited.\" I mean I made a rule: for 30 days, I don't...",
     "author": "Info Inlet",
     "publishedAt": "2026-09-09T09:08:18Z",
-    "score": 37,
+    "score": 38,
     "tags": [
       "ai",
       "webdev",
@@ -545,10 +577,10 @@
     "source": "lobsters",
     "title": "Reverse engineering my e-scooter and rewriting the firmware in rust",
     "url": "https://bensimms.moe/reverse-engineering-scooter/",
-    "excerpt": "71 points · hardware, reversing, rust",
+    "excerpt": "72 points · hardware, reversing, rust",
     "author": "kevinmehall",
     "publishedAt": "2026-09-08T16:03:22.480-05:00",
-    "score": 71,
+    "score": 72,
     "tags": [
       "hardware",
       "reversing",
@@ -682,7 +714,7 @@
     "excerpt": "I built an agent last year, and I was proud of it. It had a planner. It had tools. It had a...",
     "author": "James Anderson",
     "publishedAt": "2026-09-08T06:12:03Z",
-    "score": 70,
+    "score": 75,
     "tags": [
       "ai",
       "softwareengineering",
@@ -733,42 +765,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:ea8e0fdd3b9b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "A faster way to convert a timestamp to Hour, Min, Sec",
-    "url": "https://www.benjoffe.com/fast-time-of-day",
-    "excerpt": "126 points · c++, performance",
-    "author": "benjoffe",
-    "publishedAt": "2026-09-07T05:27:56.386-05:00",
-    "score": 126,
-    "tags": [
-      "c++",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:33f560bfa038",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "\"Hammock Driven Development\" (2010)",
-    "url": "https://youtu.be/f84n5oFoZBc",
-    "excerpt": "26 points · practices, video",
-    "author": "gunduzc",
-    "publishedAt": "2026-09-07T03:31:19.589-05:00",
-    "score": 26,
-    "tags": [
-      "practices",
-      "video"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -776,8 +772,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-09-09T21:40:11Z",
-    "score": 478582,
+    "publishedAt": "2026-09-10T21:57:18Z",
+    "score": 478699,
     "tags": [
       "Python",
       "api",
@@ -809,7 +805,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-10T16:15:02Z",
-    "score": 396444,
+    "score": 396472,
     "tags": [
       "Python",
       "books",
@@ -832,7 +828,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-07T07:09:03Z",
-    "score": 282883,
+    "score": 282905,
     "tags": [
       "Python",
       "beginner-project",
@@ -859,8 +855,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-10T20:34:03Z",
-    "score": 244184,
+    "publishedAt": "2026-09-11T04:02:09Z",
+    "score": 244277,
     "tags": [
       "Python",
       "ai",
@@ -891,8 +887,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-10T18:17:11Z",
-    "score": 224461,
+    "publishedAt": "2026-09-10T21:22:08Z",
+    "score": 224463,
     "tags": [
       "Python",
       "algorithm",
@@ -923,8 +919,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-10T20:03:43Z",
-    "score": 187246,
+    "publishedAt": "2026-09-11T00:07:26Z",
+    "score": 187250,
     "tags": [
       "Python",
       "agentic-ai",
@@ -953,8 +949,8 @@
     "url": "https://github.com/microsoft/markitdown",
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
-    "publishedAt": "2026-09-10T19:20:11Z",
-    "score": 182409,
+    "publishedAt": "2026-09-10T22:52:56Z",
+    "score": 182481,
     "tags": [
       "Python",
       "autogen",
@@ -979,7 +975,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-09-10T19:44:11Z",
-    "score": 175638,
+    "score": 175701,
     "tags": [
       "Python",
       "agent-skills"
@@ -997,8 +993,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-09-10T18:35:24Z",
-    "score": 132177,
+    "publishedAt": "2026-09-11T03:47:30Z",
+    "score": 132229,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1029,6 +1025,24 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:83c4d873e34c",
+    "kind": "trending",
+    "source": "github",
+    "title": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "excerpt": "Lightweight coding agent that runs in your terminal",
+    "author": "openai",
+    "publishedAt": "2026-09-11T04:23:35Z",
+    "score": 123161,
+    "tags": [
+      "Rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:1a7aeb8bfed5",
     "kind": "trending",
     "source": "github",
@@ -1036,8 +1050,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-10T09:06:25Z",
-    "score": 123103,
+    "publishedAt": "2026-09-11T03:04:18Z",
+    "score": 123127,
     "tags": [
       "Rust",
       "android",
@@ -1066,24 +1080,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:83c4d873e34c",
-    "kind": "trending",
-    "source": "github",
-    "title": "openai/codex",
-    "url": "https://github.com/openai/codex",
-    "excerpt": "Lightweight coding agent that runs in your terminal",
-    "author": "openai",
-    "publishedAt": "2026-09-10T20:23:11Z",
-    "score": 123092,
-    "tags": [
-      "Rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:b7e4f385e44a",
     "kind": "trending",
     "source": "github",
@@ -1091,8 +1087,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-10T20:35:05Z",
-    "score": 118005,
+    "publishedAt": "2026-09-11T04:04:08Z",
+    "score": 118379,
     "tags": [
       "Rust",
       "compiler",
@@ -1113,7 +1109,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-09-10T15:19:42Z",
-    "score": 110974,
+    "score": 110987,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1139,7 +1135,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-09T08:38:58Z",
-    "score": 108400,
+    "score": 108402,
     "tags": [
       "Rust",
       "deno",
@@ -1161,8 +1157,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-10T20:46:45Z",
-    "score": 95929,
+    "publishedAt": "2026-09-11T04:23:20Z",
+    "score": 95932,
     "tags": [
       "Rust",
       "bun",
@@ -1193,8 +1189,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-09-10T18:19:07Z",
-    "score": 92985,
+    "publishedAt": "2026-09-11T00:38:59Z",
+    "score": 93008,
     "tags": [
       "Rust",
       "awesome",
@@ -1233,8 +1229,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-10T19:49:48Z",
-    "score": 91673,
+    "publishedAt": "2026-09-11T02:00:52Z",
+    "score": 91712,
     "tags": [
       "Java",
       "docker",
@@ -1266,7 +1262,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-09-10T14:40:11Z",
-    "score": 81414,
+    "score": 81418,
     "tags": [
       "Java",
       "framework",
