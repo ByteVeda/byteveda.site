@@ -78,12 +78,10 @@ export function MessageBody({ text, html }: Props) {
   const rich = html?.trim() ? html : null;
   const [showHtml, setShowHtml] = useState(!plain && Boolean(rich));
 
+  // No instruction here on purpose. Whether re-opening would help is something
+  // only the fetch knows, and `ThreadOpener` says so above when it does not.
   if (!plain && !rich) {
-    return (
-      <p className="message-empty">
-        This message arrived without a body. Re-open the conversation to fetch it from Resend.
-      </p>
-    );
+    return <p className="message-empty">This message has no body.</p>;
   }
 
   return (

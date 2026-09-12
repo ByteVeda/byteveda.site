@@ -187,6 +187,12 @@
     height: 11px;
   }
 
+  /* Why a conversation is empty, where the conversation is. Only ever rendered
+     when the body could not be fetched — see `thread-opener.tsx`. */
+  .thread-notice {
+    margin-top: 18px;
+  }
+
   /* ---------- one message ---------- */
 
   .message {

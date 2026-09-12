@@ -89,11 +89,6 @@ export default async function InboxPage({ searchParams }: Props) {
           <div className="thread-view">
             {selected ? (
               <>
-                <ThreadOpener
-                  threadKey={selected.threadKey}
-                  pending={selected.unreadCount > 0 || messages.some(bodyMissing)}
-                />
-
                 <header className="thread-head">
                   <h2>
                     {selected.subject || "(no subject)"}
@@ -113,6 +108,14 @@ export default async function InboxPage({ searchParams }: Props) {
                     </span>
                   </p>
                 </header>
+
+                {/* Marks the conversation read and repairs any missing body.
+                    Below the header because it can turn into a notice, and a
+                    notice about this conversation belongs inside it. */}
+                <ThreadOpener
+                  threadKey={selected.threadKey}
+                  pending={selected.unreadCount > 0 || messages.some(bodyMissing)}
+                />
 
                 {messages.map((message) => (
                   <article key={message.id} className="message">
