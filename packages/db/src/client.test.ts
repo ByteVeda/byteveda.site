@@ -16,6 +16,7 @@ const TRANSACTION =
 beforeEach(() => {
   vi.stubEnv("DATABASE_SSL", "");
   vi.stubEnv("DATABASE_POOL_MAX", "");
+  vi.stubEnv("DATABASE_POOL_IDLE_MS", "");
 });
 afterEach(() => vi.unstubAllEnvs());
 
@@ -83,6 +84,31 @@ describe("poolConfig", () => {
     expect(poolConfig(TRANSACTION, "require").max).toBe(5);
     vi.stubEnv("DATABASE_POOL_MAX", "0");
     expect(poolConfig(TRANSACTION, "require").max).toBe(5);
+  });
+
+  it("gives an idle connection back within seconds, not tens of them", () => {
+    expect(poolConfig(REMOTE, "require").idleTimeoutMillis).toBe(2_000);
+  });
+
+  it("lets DATABASE_POOL_IDLE_MS tune that", () => {
+    vi.stubEnv("DATABASE_POOL_IDLE_MS", "500");
+    expect(poolConfig(REMOTE, "require").idleTimeoutMillis).toBe(500);
+  });
+
+  it("refuses zero, which pg reads as never disconnecting an idle client", () => {
+    vi.stubEnv("DATABASE_POOL_IDLE_MS", "0");
+    expect(poolConfig(REMOTE, "require").idleTimeoutMillis).toBe(2_000);
+  });
+
+  it("ignores a DATABASE_POOL_IDLE_MS that is not a usable number", () => {
+    vi.stubEnv("DATABASE_POOL_IDLE_MS", "soon");
+    expect(poolConfig(REMOTE, "require").idleTimeoutMillis).toBe(2_000);
+    vi.stubEnv("DATABASE_POOL_IDLE_MS", "-1");
+    expect(poolConfig(REMOTE, "require").idleTimeoutMillis).toBe(2_000);
+  });
+
+  it("recycles a connection that stays busy enough never to go idle", () => {
+    expect(poolConfig(REMOTE, "require").maxLifetimeSeconds).toBe(600);
   });
 
   it("caps how long one query may hold a pooler slot", () => {

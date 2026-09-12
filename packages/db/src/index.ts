@@ -6,8 +6,10 @@ export {
   isBuildPhase,
   isConfigured,
   type PoolerMode,
+  type PoolStats,
   poolConfig,
   poolerMode,
+  poolStats,
   resolveSslMode,
   type SslMode,
 } from "./client";
