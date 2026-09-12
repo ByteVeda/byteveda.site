@@ -6,9 +6,15 @@ import { useState, useTransition } from "react";
 import { useConfirm } from "@/components/confirm";
 import { deleteThread, replyToThread } from "@/lib/inbox/actions";
 
-type Props = { threadKey: string; to: string; canSend: boolean };
+type Props = {
+  threadKey: string;
+  to: string;
+  /** The mailbox they wrote to, which is the one this answers from. */
+  from: string;
+  canSend: boolean;
+};
 
-export function ReplyBox({ threadKey, to, canSend }: Props) {
+export function ReplyBox({ threadKey, to, from, canSend }: Props) {
   const router = useRouter();
   const confirm = useConfirm();
   const [body, setBody] = useState("");
@@ -44,6 +50,15 @@ export function ReplyBox({ threadKey, to, canSend }: Props) {
 
   return (
     <div className="reply-box">
+      <div className="reply-head">
+        <h3 id={`reply-${threadKey}`}>Reply</h3>
+        {from ? (
+          <span>
+            from <b>{from}</b>
+          </span>
+        ) : null}
+      </div>
+
       {!canSend && (
         <div className="notice notice-warn block-gap-sm">
           <span>RESEND_API_KEY is not set, so replies cannot send yet.</span>
