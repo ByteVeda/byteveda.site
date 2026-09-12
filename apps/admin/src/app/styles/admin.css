@@ -21,6 +21,10 @@
   --danger: #d4513f;
   --warn-soft: rgba(207, 154, 37, 0.13);
   --danger-soft: rgba(212, 81, 63, 0.13);
+
+  /* Behind a modal. Dark in both themes — a scrim that matches the page it
+     covers stops reading as "the page behind this is out of reach". */
+  --scrim: rgba(4, 4, 8, 0.62);
 }
 
 [data-theme="light"] {
@@ -28,6 +32,7 @@
   --danger: #b23425;
   --warn-soft: rgba(154, 111, 13, 0.1);
   --danger-soft: rgba(178, 52, 37, 0.1);
+  --scrim: rgba(28, 24, 12, 0.36);
 }
 
 @layer components {
@@ -141,11 +146,21 @@
     border-radius: 0 2px 2px 0;
     background: var(--accent);
   }
+  /* The unread badge. It is the console's only live number, and a faint grey
+     figure was indistinguishable from the label beside it — an accent pill is
+     what makes "there is mail" visible from across the room. */
   .rail-link .count {
     margin-left: auto;
+    min-width: 19px;
+    padding: 1px 6px;
+    border-radius: var(--r-pill);
+    background: var(--accent);
+    color: var(--accent-ink);
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--text-faint);
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.55;
+    text-align: center;
     font-variant-numeric: tabular-nums;
   }
 
@@ -170,8 +185,25 @@
     flex: none;
   }
   .rail-foot .who {
+    flex: 1;
     min-width: 0;
     line-height: 1.3;
+  }
+  .rail-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: none;
+  }
+  /* The shared `.icon-btn` is sized for a 64px site header; in a 232px rail two
+     of them at that size crowd out the name they sit beside. */
+  .rail-actions .icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+  .rail-actions .icon-btn svg {
+    width: 15px;
+    height: 15px;
   }
   .who-name {
     display: block;
@@ -716,7 +748,7 @@
     display: none;
   }
   .dialog::backdrop {
-    background: rgba(4, 4, 8, 0.62);
+    background: var(--scrim);
     backdrop-filter: blur(2px);
   }
 
@@ -730,7 +762,7 @@
     border: 1px solid var(--line);
     border-radius: var(--r-md);
     background: var(--surface);
-    box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+    box-shadow: var(--shadow);
   }
   .dialog-card h2 {
     font-family: var(--font-display);
