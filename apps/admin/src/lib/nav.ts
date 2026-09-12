@@ -7,11 +7,14 @@ export type NavItem = {
   icon: ComponentType<SVGProps<SVGSVGElement>>;
 };
 
+/** Named because the rail badges this one link with the live unread count. */
+export const INBOX_HREF = "/inbox";
+
 export const nav: NavItem[] = [
   { href: "/", label: "Overview", icon: Gauge },
   { href: "/posts", label: "Posts", icon: FileText },
   { href: "/stats", label: "Downloads", icon: TrendingUp },
-  { href: "/inbox", label: "Inbox", icon: Inbox },
+  { href: INBOX_HREF, label: "Inbox", icon: Inbox },
   { href: "/subscribers", label: "Subscribers", icon: Send },
   { href: "/settings", label: "Settings", icon: Settings },
 ];

@@ -26,6 +26,18 @@ export function ago(value: Date | string, now = Date.now()): string {
   });
 }
 
+/**
+ * One letter for an avatar disc — the first of a display name, or of the local
+ * part of an address. Falls back to a bullet rather than an empty circle.
+ */
+export function initial(...candidates: (string | null | undefined)[]): string {
+  for (const candidate of candidates) {
+    const letter = candidate?.trim().match(/\p{L}|\p{N}/u)?.[0];
+    if (letter) return letter.toUpperCase();
+  }
+  return "•";
+}
+
 /** Thousands separators, and a compact form once the numbers get long. */
 export function count(value: number): string {
   if (value < 10_000) return value.toLocaleString("en-US");

@@ -1,19 +1,22 @@
 "use client";
 
+import { ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useInboxUnread } from "@/components/inbox/live";
 import { Mark } from "@/components/mark";
-import { isActive, nav } from "@/lib/nav";
+import { INBOX_HREF, isActive, nav } from "@/lib/nav";
 
 type Props = {
   user: { login: string; name: string | null; avatarUrl: string | null };
-  /** Unread counts keyed by href, shown against the matching link. */
-  counts?: Record<string, number>;
   children?: React.ReactNode;
 };
 
-export function Rail({ user, counts, children }: Props) {
+export function Rail({ user, children }: Props) {
   const pathname = usePathname();
+  // The one live figure in the rail. Mail arrives without anyone asking, so the
+  // badge comes from the console's event stream rather than from this render.
+  const unread = useInboxUnread();
 
   return (
     <nav className="rail" aria-label="Admin sections">
@@ -27,21 +30,23 @@ export function Rail({ user, counts, children }: Props) {
       </Link>
 
       <div className="rail-nav">
-        {nav.map(({ href, label, icon: Icon }) => {
-          const count = counts?.[href];
-          return (
-            <Link
-              key={href}
-              href={href}
-              className="rail-link"
-              aria-current={isActive(href, pathname) ? "page" : undefined}
-            >
-              <Icon aria-hidden />
-              {label}
-              {count ? <span className="count">{count}</span> : null}
-            </Link>
-          );
-        })}
+        {nav.map(({ href, label, icon: Icon }) => (
+          <Link
+            key={href}
+            href={href}
+            className="rail-link"
+            aria-current={isActive(href, pathname) ? "page" : undefined}
+          >
+            <Icon aria-hidden />
+            {label}
+            {href === INBOX_HREF && unread > 0 ? (
+              <span className="count">
+                {unread}
+                <span className="sr-only"> unread</span>
+              </span>
+            ) : null}
+          </Link>
+        ))}
       </div>
 
       <div className="rail-spacer" />
@@ -54,7 +59,10 @@ export function Rail({ user, counts, children }: Props) {
           <b className="who-name">{user.name ?? user.login}</b>
           <span className="who-handle">@{user.login}</span>
         </span>
-        {children}
+        <div className="rail-actions">
+          <ThemeToggle />
+          {children}
+        </div>
       </div>
     </nav>
   );

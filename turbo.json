@@ -45,7 +45,9 @@
       "dependsOn": ["build"],
       // Starts a server and uploads a report; there is nothing here to replay.
       "cache": false,
-      "passThroughEnv": ["LHCI_*", "CHROME_PATH", "CI"]
+      // ADMIN_SESSION_COOKIE lets the console's run reach the pages behind its
+      // login; without it that run covers /login only.
+      "passThroughEnv": ["LHCI_*", "CHROME_PATH", "CI", "ADMIN_SESSION_COOKIE"]
     },
     "dev": {
       "cache": false,

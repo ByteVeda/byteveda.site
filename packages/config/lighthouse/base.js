@@ -21,10 +21,21 @@ const NUMBER_OF_RUNS = 3;
  *  against a local `next start` only ever produces noise. */
 const SKIP_AUDITS = ["uses-http2", "uses-long-cache-ttl", "canonical"];
 
-const SETTINGS = {
+const BASE_SETTINGS = {
   skipAudits: SKIP_AUDITS,
   chromeFlags: "--no-sandbox --disable-gpu --disable-dev-shm-usage",
 };
+
+/**
+ * Headers sent with every request in the run.
+ *
+ * The admin console is the only caller: every page worth measuring there is
+ * behind a session cookie, and without one Lighthouse measures the redirect to
+ * the login page three times.
+ */
+function settingsFor(extraHeaders) {
+  return extraHeaders ? { ...BASE_SETTINGS, extraHeaders } : BASE_SETTINGS;
+}
 
 /** Wall-clock ceilings, in ms except CLS. Warn-only — see the header. */
 const DEFAULT_TIMING = {
@@ -72,14 +83,22 @@ function budgetAssertions({ scriptBytes, totalBytes, fontBytes, domSize = 1500 }
  * `staticDistDir` is for `output: "export"` apps, which have no server to start.
  * A deployed target beats both — it measures the CDN the visitor actually hits.
  */
-function collectFor({ routes, port, startServerCommand, staticDistDir, staticFiles }) {
+function collectFor({
+  routes,
+  port,
+  startServerCommand,
+  staticDistDir,
+  staticFiles,
+  extraHeaders,
+}) {
   const target = process.env.LHCI_TARGET_URL?.replace(/\/+$/, "");
+  const settings = settingsFor(extraHeaders);
 
   if (target) {
     return {
       url: routes.map((route) => `${target}${route}`),
       numberOfRuns: NUMBER_OF_RUNS,
-      settings: SETTINGS,
+      settings,
     };
   }
 
@@ -90,7 +109,7 @@ function collectFor({ routes, port, startServerCommand, staticDistDir, staticFil
       // including the 404 shells.
       url: staticFiles,
       numberOfRuns: NUMBER_OF_RUNS,
-      settings: SETTINGS,
+      settings,
     };
   }
 
@@ -98,7 +117,7 @@ function collectFor({ routes, port, startServerCommand, staticDistDir, staticFil
     startServerCommand,
     url: routes.map((route) => `http://127.0.0.1:${port}${route}`),
     numberOfRuns: NUMBER_OF_RUNS,
-    settings: SETTINGS,
+    settings,
   };
 }
 
@@ -113,6 +132,7 @@ function collectFor({ routes, port, startServerCommand, staticDistDir, staticFil
  * @param {string[]} [options.staticFiles]     Files to audit inside that directory.
  * @param {object} options.budget              Byte and DOM ceilings — see budgetAssertions.
  * @param {object} [options.timing]            Overrides for the warn-only metrics.
+ * @param {object} [options.extraHeaders]      Sent with every request; for auditing behind a login.
  */
 function defineLighthouseConfig({
   routes,
@@ -122,10 +142,18 @@ function defineLighthouseConfig({
   staticFiles,
   budget,
   timing,
+  extraHeaders,
 }) {
   return {
     ci: {
-      collect: collectFor({ routes, port, startServerCommand, staticDistDir, staticFiles }),
+      collect: collectFor({
+        routes,
+        port,
+        startServerCommand,
+        staticDistDir,
+        staticFiles,
+        extraHeaders,
+      }),
       assert: {
         // Three runs, and the middle one decides. A single unlucky run on a
         // noisy runner should not speak for the branch.
