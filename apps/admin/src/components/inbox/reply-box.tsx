@@ -1,10 +1,9 @@
 "use client";
 
-import { Send, Trash2 } from "lucide-react";
+import { Send } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
-import { useConfirm } from "@/components/confirm";
-import { deleteThread, replyToThread } from "@/lib/inbox/actions";
+import { useEffect, useRef, useState, useTransition } from "react";
+import { replyToThread } from "@/lib/inbox/actions";
 
 type Props = {
   threadKey: string;
@@ -14,49 +13,81 @@ type Props = {
   canSend: boolean;
 };
 
+/** Where an unsent reply waits. One entry per conversation. */
+const draftKey = (threadKey: string) => `bv:inbox:draft:${threadKey}`;
+
+/** ⌘ on a Mac, Ctrl everywhere else. The other modifiers must not send. */
+function isSendChord(event: React.KeyboardEvent): boolean {
+  return event.key === "Enter" && (event.metaKey || event.ctrlKey);
+}
+
 export function ReplyBox({ threadKey, to, from, canSend }: Props) {
   const router = useRouter();
-  const confirm = useConfirm();
+  const field = useRef<HTMLTextAreaElement>(null);
   const [body, setBody] = useState("");
-  const [message, setMessage] = useState<{ text: string; ok: boolean } | null>(null);
+  const [result, setResult] = useState<{ text: string; ok: boolean } | null>(null);
   const [pending, startTransition] = useTransition();
+
+  /**
+   * Switching conversations clears the box in the same render that changes it.
+   *
+   * In an effect this shows the previous conversation's draft for a frame, over
+   * the new correspondent's name — which is the one moment where a half-written
+   * reply looks like it is about to go to the wrong person.
+   */
+  const [openThread, setOpenThread] = useState(threadKey);
+  const [restored, setRestored] = useState(false);
+  if (openThread !== threadKey) {
+    setOpenThread(threadKey);
+    setBody("");
+    setRestored(false);
+    setResult(null);
+  }
+
+  /**
+   * A half-written reply survives clicking onto another conversation, the back
+   * button, and a reload.
+   *
+   * `localStorage` rather than the server: a draft is not worth a round trip to
+   * Tokyo on every keystroke, and it is only ever wanted by the browser that
+   * was typing it.
+   */
+  useEffect(() => {
+    setBody(window.localStorage.getItem(draftKey(threadKey)) ?? "");
+    setRestored(true);
+  }, [threadKey]);
+
+  useEffect(() => {
+    if (!restored) return;
+
+    if (body) window.localStorage.setItem(draftKey(threadKey), body);
+    else window.localStorage.removeItem(draftKey(threadKey));
+  }, [body, threadKey, restored]);
 
   function send() {
     startTransition(async () => {
-      const result = await replyToThread(threadKey, body);
-      setMessage({ text: result.message, ok: result.ok });
-      if (result.ok) {
+      const sent = await replyToThread(threadKey, body);
+      setResult({ text: sent.message, ok: sent.ok });
+
+      if (sent.ok) {
+        // Only on success: a failed send leaves the words where they are, so
+        // the retry is the same button rather than typing it again.
+        window.localStorage.removeItem(draftKey(threadKey));
         setBody("");
         router.refresh();
       }
     });
   }
 
-  async function remove() {
-    const go = await confirm({
-      title: "Delete this conversation?",
-      body: `Every message from ${to} in this thread is removed. It cannot be recovered.`,
-      confirmLabel: "Delete",
-      destructive: true,
-    });
-    if (!go) return;
-
-    startTransition(async () => {
-      await deleteThread(threadKey);
-      router.push("/inbox");
-      router.refresh();
-    });
-  }
-
   return (
     <div className="reply-box">
       <div className="reply-head">
-        <h3 id={`reply-${threadKey}`}>Reply</h3>
-        {from ? (
+        <h3>Reply to {to}</h3>
+        {from && (
           <span>
             from <b>{from}</b>
           </span>
-        ) : null}
+        )}
       </div>
 
       {!canSend && (
@@ -66,10 +97,17 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
       )}
 
       <textarea
+        ref={field}
         className="textarea"
         value={body}
         onChange={(event) => setBody(event.target.value)}
-        placeholder={`Reply to ${to}`}
+        onKeyDown={(event) => {
+          if (isSendChord(event) && body.trim() && canSend && !pending) {
+            event.preventDefault();
+            send();
+          }
+        }}
+        placeholder={`Write to ${to}`}
         aria-label={`Reply to ${to}`}
       />
 
@@ -84,14 +122,11 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
           {pending ? "Sending…" : "Send reply"}
         </button>
 
-        <button type="button" className="abtn abtn-danger" onClick={remove} disabled={pending}>
-          <Trash2 aria-hidden />
-          Delete
-        </button>
+        <kbd className="reply-hint">⌘↵</kbd>
 
-        {message && (
-          <span className="save-state" data-tone={message.ok ? "ok" : "error"}>
-            {message.text}
+        {result && (
+          <span className="save-state" data-tone={result.ok ? "ok" : "error"} role="status">
+            {result.text}
           </span>
         )}
       </div>
