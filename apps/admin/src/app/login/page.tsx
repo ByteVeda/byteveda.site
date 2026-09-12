@@ -34,8 +34,8 @@ export default async function LoginPage({ searchParams }: Props) {
   const startUrl = `/api/auth/github?next=${encodeURIComponent(destination)}`;
 
   return (
-    <main className="login">
-      <div className="login-card">
+    <main className="sheet">
+      <div className="sheet-card">
         <span className="mark">
           <Mark />
         </span>
@@ -54,7 +54,7 @@ export default async function LoginPage({ searchParams }: Props) {
           Sign in with GitHub
         </a>
 
-        <p className="login-foot">Access is limited to allowlisted GitHub accounts.</p>
+        <p className="sheet-foot">Access is limited to allowlisted GitHub accounts.</p>
       </div>
     </main>
   );

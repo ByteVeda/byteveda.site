@@ -30,8 +30,8 @@ export default async function UnsubscribePage({ searchParams }: Props) {
   const gone = state.found && (state.status === "unsubscribed" || settled?.ok === true);
 
   return (
-    <main className="login">
-      <div className="login-card">
+    <main className="sheet">
+      <div className="sheet-card">
         <span className="mark">
           <Mark size={20} />
         </span>

@@ -31,8 +31,8 @@ export default async function ConfirmPage({ searchParams }: Props) {
   const subscribed = state.found && (state.status === "active" || settled?.ok === true);
 
   return (
-    <main className="login">
-      <div className="login-card">
+    <main className="sheet">
+      <div className="sheet-card">
         <span className="mark">
           <Mark size={20} />
         </span>
@@ -67,7 +67,7 @@ export default async function ConfirmPage({ searchParams }: Props) {
           </>
         )}
 
-        <p className="login-foot">You can unsubscribe from any email we send.</p>
+        <p className="sheet-foot">You can unsubscribe from any email we send.</p>
       </div>
     </main>
   );
