@@ -114,6 +114,34 @@ function poolMax(mode: PoolerMode): number {
   return mode === "session" ? 2 : 5;
 }
 
+/**
+ * How long a connection may sit unused before it is given back.
+ *
+ * This is the only thing that keeps a connection alive after a request is over.
+ * Nothing in this repo checks a client out by hand — every read goes through
+ * `pool.query`, which releases in a `finally`, and the one `transaction()` is
+ * drizzle's, which does the same — so a request cannot leak a connection. What
+ * it *can* do is leave one idle in the pool, and a warm serverless instance can
+ * then sit on it for as long as this allows while serving nobody.
+ *
+ * Two seconds rather than ten. A page render issues its handful of queries
+ * inside a few hundred milliseconds and a click follows within one, so a burst
+ * still reuses the same connection; an instance that has gone quiet gives
+ * everything back almost immediately. The cost of getting it wrong in the other
+ * direction is a TCP and TLS handshake to Tokyo, which is why this is not
+ * shorter still.
+ */
+function idleMs(): number {
+  const override = Number(process.env.DATABASE_POOL_IDLE_MS);
+
+  // Zero is rejected rather than honoured. In node-postgres it means "never
+  // disconnect an idle client", not "disconnect it immediately" — so the one
+  // value somebody would reach for to hold connections for the shortest
+  // possible time is the value that holds them forever. Measured, not assumed:
+  // `scripts/verify-pool.ts` at 0 leaves five backends open on the server.
+  return Number.isFinite(override) && override > 0 ? override : 2_000;
+}
+
 export function poolConfig(url: string, override?: string): PoolConfig {
   return {
     connectionString: url,
@@ -121,13 +149,18 @@ export function poolConfig(url: string, override?: string): PoolConfig {
     // A serverless invocation holds a connection for milliseconds and a pooler
     // charges for every one of them. Small ceiling, quick reaping.
     max: poolMax(poolerMode(url)),
-    idleTimeoutMillis: 10_000,
+    idleTimeoutMillis: idleMs(),
     connectionTimeoutMillis: 10_000,
     // A query with no ceiling is a pooler slot with no ceiling. Client-side on
     // purpose: `statement_timeout` travels as a startup parameter, and a pooler
     // is entitled to refuse those. Generous enough that only a stuck query
     // reaches it.
     query_timeout: 30_000,
+    // A ceiling on how long any one connection may exist, however busy it is.
+    // `idleTimeoutMillis` never fires on a connection that is used just often
+    // enough to stay warm, so without this a long-lived instance can hold the
+    // same server connection indefinitely. Recycled on release, never mid-query.
+    maxLifetimeSeconds: 600,
     // Lets a script exit when its work is done rather than waiting out
     // `idleTimeoutMillis`. The server never idles long enough to notice.
     allowExitOnIdle: true,
@@ -208,6 +241,30 @@ export function getPool(): Pool {
     globalForDb.__bytevedaPool = pool;
   }
   return globalForDb.__bytevedaPool;
+}
+
+/** What this process is holding right now. */
+export type PoolStats = {
+  /** Connections open, busy or idle. What the pooler's ceiling counts. */
+  total: number;
+  /** Open and unused. These go back once `idleTimeoutMillis` elapses. */
+  idle: number;
+  /** Callers queued because every connection is busy. Sustained, raise `max`. */
+  waiting: number;
+};
+
+/**
+ * The pool, from outside.
+ *
+ * Exists to make "is anything still held?" answerable rather than argued about
+ * — by a script after a request, or by a route when someone is looking into a
+ * connection ceiling. Reads counters; opens nothing.
+ */
+export function poolStats(): PoolStats {
+  const pool = globalForDb.__bytevedaPool;
+  if (!pool) return { total: 0, idle: 0, waiting: 0 };
+
+  return { total: pool.totalCount, idle: pool.idleCount, waiting: pool.waitingCount };
 }
 
 /**
