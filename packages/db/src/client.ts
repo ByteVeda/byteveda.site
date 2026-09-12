@@ -57,15 +57,80 @@ function sslConfig(mode: SslMode): PoolConfig["ssl"] {
   }
 }
 
+/**
+ * How a connection string reaches Postgres.
+ *
+ * - `transaction` A pooler that hands the server connection back at the end of
+ *                 each transaction. Hundreds of clients share a handful of
+ *                 connections, which is the only shape that suits serverless.
+ * - `session`     A pooler that pins a server connection for as long as the
+ *                 client stays connected. The ceiling counts *clients*.
+ * - `direct`      Straight to Postgres, or to something this cannot identify.
+ */
+export type PoolerMode = "transaction" | "session" | "direct";
+
+/**
+ * Supabase's pooler, by port. The one vendor check in this package.
+ *
+ * It earns its place because the failure it prevents is silent until it is
+ * total: session mode on Supavisor allows fifteen clients across every consumer
+ * of this package — both Vercel projects, every warm instance of each, local
+ * development, and drizzle-kit — and the sixteenth does not get a slow query or
+ * a degraded page. It gets `XX000 (EMAXCONNSESSION)`, and the console is down.
+ *
+ * Supavisor puts session mode on 5432 and transaction mode on 6543. Nothing in
+ * the protocol announces which one answered, so the port is the only signal
+ * available before the first connection.
+ */
+export function poolerMode(url: string): PoolerMode {
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return "direct";
+  }
+
+  if (!parsed.hostname.endsWith(".pooler.supabase.com")) return "direct";
+  return parsed.port === "6543" ? "transaction" : "session";
+}
+
+/**
+ * Connections per instance.
+ *
+ * Five against a transaction-mode pooler or a database of our own: enough for
+ * the parallel reads a page issues, and small enough that a dozen warm
+ * instances are not a problem.
+ *
+ * Two against session mode, where every one of them is held for the life of the
+ * process and counts against a ceiling shared with everything else. It costs a
+ * little latency on the pages that read in parallel. It buys seven instances of
+ * headroom instead of three, which is the difference between the console being
+ * slow and the console being down.
+ */
+function poolMax(mode: PoolerMode): number {
+  const override = Number(process.env.DATABASE_POOL_MAX);
+  if (Number.isFinite(override) && override > 0) return override;
+
+  return mode === "session" ? 2 : 5;
+}
+
 export function poolConfig(url: string, override?: string): PoolConfig {
   return {
     connectionString: url,
     ssl: sslConfig(resolveSslMode(url, override)),
     // A serverless invocation holds a connection for milliseconds and a pooler
     // charges for every one of them. Small ceiling, quick reaping.
-    max: Number(process.env.DATABASE_POOL_MAX ?? 5),
+    max: poolMax(poolerMode(url)),
     idleTimeoutMillis: 10_000,
     connectionTimeoutMillis: 10_000,
+    // A query with no ceiling is a pooler slot with no ceiling. Client-side on
+    // purpose: `statement_timeout` travels as a startup parameter, and a pooler
+    // is entitled to refuse those. Generous enough that only a stuck query
+    // reaches it.
+    query_timeout: 30_000,
+    // Lets a script exit when its work is done rather than waiting out
+    // `idleTimeoutMillis`. The server never idles long enough to notice.
+    allowExitOnIdle: true,
   };
 }
 
@@ -112,9 +177,29 @@ const globalForDb = globalThis as typeof globalThis & {
   __bytevedaDb?: Database;
 };
 
+/**
+ * Says once, at the point the first connection is opened, that this process is
+ * pinning a shared ceiling.
+ *
+ * Logged rather than thrown. Session mode is the right answer for a migration
+ * and the only answer for a local Postgres, so refusing to start would break
+ * both to protect a deployment neither of them is.
+ */
+function warnAboutSessionMode(url: string): void {
+  if (poolerMode(url) !== "session") return;
+
+  const where = hostOf(url) ?? "the pooler";
+  console.warn(
+    `[db] ${where}:5432 is Supabase's session-mode pooler: every connection is held for the life of this process, and the ceiling is fifteen clients across every project, instance and developer sharing this database. Point DATABASE_URL at port 6543 for transaction mode. Keep 5432 for drizzle-kit.`,
+  );
+}
+
 export function getPool(): Pool {
   if (!globalForDb.__bytevedaPool) {
-    const pool = new Pool(poolConfig(connectionString()));
+    const url = connectionString();
+    warnAboutSessionMode(url);
+
+    const pool = new Pool(poolConfig(url));
     // An idle client erroring out (pooler restart, network blip) emits on the
     // pool. Unhandled, it takes the process down.
     pool.on("error", (error) => {

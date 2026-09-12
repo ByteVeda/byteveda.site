@@ -840,20 +840,23 @@
     }
   }
 
-  /* ---------- login ---------- */
+  /* ---------- a page that is one card ----------
+     Sign-in and a failed render are the two states with no console around them:
+     no rail, no topbar, nothing to return to. They get the same centred card so
+     that the second one still looks like this product. */
 
-  .login {
+  .sheet {
     display: grid;
     place-items: center;
     min-height: 100dvh;
     padding: 24px;
   }
-  .login-card {
+  .sheet-card {
     width: 100%;
     max-width: 340px;
     text-align: center;
   }
-  .login-card .mark {
+  .sheet-card .mark {
     display: grid;
     place-items: center;
     width: 38px;
@@ -863,26 +866,63 @@
     background: var(--accent);
     color: var(--accent-ink);
   }
-  .login-card h1 {
+  .sheet-card h1 {
     font-family: var(--font-display);
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: -0.02em;
   }
-  .login-card p {
+  .sheet-card p {
     margin: 7px 0 22px;
     color: var(--text-dim);
     font-size: 0.88rem;
     line-height: 1.55;
   }
-  .login-card .abtn {
+  /* One card, one thing to do: the action fills the measure. */
+  .sheet-card .abtn {
     width: 100%;
     height: 40px;
   }
-  .login-foot {
+  .sheet-foot {
     margin-top: 18px;
     color: var(--text-faint);
     font-size: 0.76rem;
+  }
+
+  /* ---------- a failed render ---------- */
+
+  .fault-card {
+    max-width: 400px;
+  }
+  /* The one string that connects this screen to a stack trace. Monospace and
+     selectable, because it exists to be copied into a log search. */
+  .fault-digest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 0 0 22px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+  }
+  .fault-digest code {
+    padding: 2px 8px;
+    border-radius: var(--r-sm);
+    background: var(--chip);
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    user-select: all;
+  }
+  /* Two ways out rather than one, so neither fills the card. */
+  .fault-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .fault-actions .abtn {
+    width: auto;
   }
 
   /* ---------- responsive ---------- */
