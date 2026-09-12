@@ -18,24 +18,27 @@
  * message with a template literal.
  *
  *   console.error("[inbound] could not fetch %s", loggable(emailId));
+ *
+ * `JSON.stringify` rather than stripping the offending characters, because it
+ * escapes them instead of deleting them: a newline becomes a visible `\n` and
+ * the value keeps its meaning, where a strip quietly rewrites the thing you are
+ * trying to read. The quotes it adds are worth having too — they mark where an
+ * untrusted value starts and ends. (It is also what CodeQL's log-injection
+ * query recognises as a barrier; the only alternative it accepts is replacing
+ * newlines with the empty string, which is the lossy option.)
  */
 
-/** Longer than any identifier worth logging, short enough not to flood a line. */
-const MAX = 200;
+/** Long enough for a short stack, short enough that one value cannot flood a line. */
+const MAX = 500;
+
+function textOf(value: unknown): string {
+  if (typeof value === "string") return value;
+  // A stack is the useful part of a caught error, and escaping keeps it to one
+  // line rather than the several it would otherwise span.
+  if (value instanceof Error) return value.stack ?? `${value.name}: ${value.message}`;
+  return String(value);
+}
 
 export function loggable(value: unknown, max = MAX): string {
-  const text = typeof value === "string" ? value : String(value);
-
-  return (
-    text
-      // Explicitly, and first: a line break is the whole of the forged-entry
-      // problem, and everything after it here is tidying.
-      .replace(/\r/g, " ")
-      .replace(/\n/g, " ")
-      // The rest of what a terminal acts on rather than prints — an escape
-      // introducer that repaints the line, a bell, a backspace. `Cc` is the
-      // Unicode control category, which spares this file a literal one.
-      .replace(/\p{Cc}/gu, " ")
-      .slice(0, max)
-  );
+  return JSON.stringify(textOf(value).slice(0, max));
 }

@@ -114,7 +114,7 @@ export async function fetchInboundBody(emailId: string): Promise<InboundBody | n
 
     return { text: data?.text ?? null, html: data?.html ?? null, headers: data?.headers ?? null };
   } catch (cause) {
-    console.error("[inbound] could not fetch %s", loggable(emailId), cause);
+    console.error("[inbound] could not fetch %s: %s", loggable(emailId), loggable(cause));
     return null;
   }
 }
