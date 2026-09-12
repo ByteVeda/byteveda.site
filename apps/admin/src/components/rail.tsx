@@ -3,9 +3,11 @@
 import { ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useInboxUnread } from "@/components/inbox/live";
-import { Mark } from "@/components/mark";
 import { INBOX_HREF, isActive, nav } from "@/lib/nav";
+// Relative, not through the barrel: this file is one of the things the barrel
+// exports, and a module cannot be its own dependency.
+import { useInboxUnread } from "./inbox-live";
+import { Mark } from "./mark";
 
 type Props = {
   user: { login: string; name: string | null; avatarUrl: string | null };

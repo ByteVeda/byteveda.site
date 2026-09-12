@@ -3,7 +3,7 @@
 import type { Broadcast, Subscriber } from "@byteveda/db";
 import { Mail, Send, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components/confirm";
+import { useConfirm } from "@/components";
 import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
 import { ago } from "@/lib/format";
 import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
