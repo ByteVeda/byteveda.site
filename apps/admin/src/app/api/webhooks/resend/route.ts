@@ -1,27 +1,13 @@
 import { getDb, inboundMessages } from "@byteveda/db";
 import { type NextRequest, NextResponse } from "next/server";
-import { displayName, normaliseEmail, threadKeyFor } from "@/lib/email/thread";
+import { fetchInboundBody } from "@/lib/email/client";
+import { type InboundEvent, inboundRow } from "@/lib/email/inbound";
 import { verifySignature } from "@/lib/email/webhook";
+import { inboxChanged } from "@/lib/realtime";
 
 export const dynamic = "force-dynamic";
 
-type InboundPayload = {
-  type?: string;
-  data?: {
-    email_id?: string;
-    from?: string;
-    to?: string | string[];
-    subject?: string;
-    text?: string;
-    html?: string;
-    headers?: Record<string, string>;
-  };
-};
-
-function firstRecipient(to: string | string[] | undefined): string {
-  if (Array.isArray(to)) return to[0] ?? "";
-  return to ?? "";
-}
+type InboundPayload = { type?: string; data?: Partial<InboundEvent> };
 
 /**
  * Inbound mail from Resend.
@@ -30,6 +16,9 @@ function firstRecipient(to: string | string[] | undefined): string {
  * browser — the signature is the authentication. The raw body is read as text
  * and verified before it is parsed: re-serialising the JSON would change the
  * bytes the signature covers.
+ *
+ * Two steps, not one. The webhook says a message arrived and names it; the
+ * message itself is fetched. See `lib/email/inbound.ts` for why.
  */
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -65,24 +54,20 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "missing email_id or from" }, { status: 400 });
   }
 
-  const subject = data.subject ?? "";
+  const event = data as InboundEvent;
+  const fetched = await fetchInboundBody(event.email_id);
 
-  await getDb()
+  const [stored] = await getDb()
     .insert(inboundMessages)
-    .values({
-      resendId: data.email_id,
-      threadKey: threadKeyFor(data.from, subject),
-      fromEmail: normaliseEmail(data.from),
-      fromName: displayName(data.from),
-      toEmail: normaliseEmail(firstRecipient(data.to)),
-      subject,
-      text: data.text ?? "",
-      html: data.html ?? null,
-      headers: data.headers ?? null,
-    })
+    .values(inboundRow(event, fetched ?? {}))
     // A webhook is delivered at least once. The unique id makes a redelivery a
     // no-op instead of a duplicate in the inbox.
-    .onConflictDoNothing({ target: inboundMessages.resendId });
+    .onConflictDoNothing({ target: inboundMessages.resendId })
+    .returning({ id: inboundMessages.id });
 
-  return NextResponse.json({ received: data.email_id });
+  // Only a message that is actually new should light up an open console; a
+  // redelivery has nothing to announce.
+  if (stored) inboxChanged.publish();
+
+  return NextResponse.json({ received: event.email_id, stored: Boolean(stored) });
 }

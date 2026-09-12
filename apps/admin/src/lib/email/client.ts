@@ -2,6 +2,7 @@ import { getDb, type OutboundKind, outboundMessages } from "@byteveda/db";
 import { Resend } from "resend";
 import { configured } from "@/lib/env";
 import { getSettings } from "@/lib/settings";
+import type { InboundBody } from "./inbound";
 import type { Email } from "./templates";
 
 export type SendResult = { ok: boolean; id?: string; error?: string };
@@ -31,9 +32,19 @@ export async function sendEmail(input: {
   kind: OutboundKind;
   broadcastId?: string;
   replyTo?: string;
+  /**
+   * Send as this address instead of the configured one.
+   *
+   * For replies: someone who wrote to `conduct@byteveda.org` should get the
+   * answer from `conduct@byteveda.org`, not from whatever the console happens to
+   * announce posts as. Any address the console replies from arrived through
+   * Resend's inbound routing, so it is on a domain Resend has already verified.
+   */
+  from?: string;
 }): Promise<SendResult> {
   const settings = await getSettings();
-  const from = `${settings["email.fromName"]} <${settings["email.fromAddress"]}>`;
+  const address = input.from || settings["email.fromAddress"];
+  const from = `${settings["email.fromName"]} <${address}>`;
   const replyTo = input.replyTo || settings["email.replyTo"] || undefined;
 
   const record = async (result: SendResult) => {
@@ -68,6 +79,39 @@ export async function sendEmail(input: {
     return record({ ok: true, id: data?.id });
   } catch (error) {
     return record({ ok: false, error: error instanceof Error ? error.message : "Unknown error." });
+  }
+}
+
+/**
+ * Fetches the body of a message that arrived on the inbound webhook.
+ *
+ * Necessary because `email.received` announces an arrival without carrying it:
+ * the payload is the envelope and an id, and `GET /emails/receiving/{id}` is
+ * where the text and the HTML actually live.
+ *
+ * Returns null rather than throwing. A message whose body could not be fetched
+ * is still worth keeping — the sender, the subject and the reply button all
+ * work — and the console repairs the row the next time the thread is opened.
+ *
+ * `html_format` is left at its default, so inline images arrive as `data:` URIs
+ * embedded in the HTML rather than as `cid:` references to attachments the
+ * console would then have to resolve.
+ */
+export async function fetchInboundBody(emailId: string): Promise<InboundBody | null> {
+  if (!emailConfigured()) return null;
+
+  try {
+    const { data, error } = await resend().emails.receiving.get(emailId);
+
+    if (error) {
+      console.error(`[inbound] could not fetch ${emailId}: ${error.message}`);
+      return null;
+    }
+
+    return { text: data?.text ?? null, html: data?.html ?? null, headers: data?.headers ?? null };
+  } catch (error) {
+    console.error(`[inbound] could not fetch ${emailId}`, error);
+    return null;
   }
 }
 
