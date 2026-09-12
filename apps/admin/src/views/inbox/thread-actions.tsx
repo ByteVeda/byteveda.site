@@ -3,7 +3,7 @@
 import { Archive, ArchiveRestore, MailOpen, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { useConfirm } from "@/components/confirm";
+import { useConfirm } from "@/components";
 import { deleteThread, markThreadUnread, setThreadArchived } from "@/lib/inbox/actions";
 import type { ThreadFilter } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";

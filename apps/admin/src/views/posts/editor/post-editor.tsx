@@ -7,10 +7,7 @@ import StarterKit from "@tiptap/starter-kit";
 import { ExternalLink, Eye, EyeOff, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { useConfirm } from "@/components/confirm";
-import { SeoPanel } from "@/components/editor/seo-panel";
-import { TagInput } from "@/components/editor/tag-input";
-import { Toolbar } from "@/components/editor/toolbar";
+import { useConfirm } from "@/components";
 import {
   type ActionResult,
   deletePost,
@@ -22,6 +19,9 @@ import {
 import { containsJsx, htmlToMarkdown, markdownToHtml } from "@/lib/posts/markdown";
 import type { RevisionListItem } from "@/lib/posts/queries";
 import { isValidSlug, slugify } from "@/lib/posts/slug";
+import { SeoPanel } from "./seo-panel";
+import { TagInput } from "./tag-input";
+import { Toolbar } from "./toolbar";
 
 const FLEXIQ_URL = "https://flexiq.byteveda.org";
 /** Long enough that typing does not trigger a conversion on every keystroke. */

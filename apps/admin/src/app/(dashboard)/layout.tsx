@@ -1,7 +1,4 @@
-import { ConfirmProvider } from "@/components/confirm";
-import { InboxLiveProvider } from "@/components/inbox/live";
-import { Rail } from "@/components/rail";
-import { SignOut } from "@/components/sign-out";
+import { ConfirmProvider, InboxLiveProvider, Rail, SignOut } from "@/components";
 import { requireSession } from "@/lib/auth/session";
 import { countUnread } from "@/lib/inbox/queries";
 
