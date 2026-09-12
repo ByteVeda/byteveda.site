@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { bodyMissing, type InboundEvent, inboundRow } from "./inbound";
+import { bodyMissing, fetchFailureReason, type InboundEvent, inboundRow } from "./inbound";
 
 /** What Resend actually posts: an envelope and an id. No body. */
 const EVENT: InboundEvent = {
@@ -73,5 +73,37 @@ describe("bodyMissing", () => {
   it("is false as soon as either form of the message is present", () => {
     expect(bodyMissing({ text: "hello", html: null })).toBe(false);
     expect(bodyMissing({ text: "", html: "<p>hello</p>" })).toBe(false);
+  });
+});
+
+describe("fetchFailureReason", () => {
+  /**
+   * The bug this whole path exists for: a sending-access key sends mail
+   * perfectly and cannot read a single inbound message, and the console used to
+   * render that as a blank conversation.
+   */
+  it("names the sending-only key, and what to replace it with", () => {
+    const reason = fetchFailureReason({
+      name: "restricted_api_key",
+      message: "This API key is restricted to only send emails",
+    });
+
+    expect(reason).toContain("RESEND_API_KEY");
+    expect(reason).toContain("full-access");
+  });
+
+  it("covers the other codes an operator can act on", () => {
+    expect(fetchFailureReason({ name: "invalid_api_key" })).toContain("rejected");
+    expect(fetchFailureReason({ name: "missing_api_key" })).toContain("not set");
+    expect(fetchFailureReason({ name: "not_found" })).toContain("no longer");
+  });
+
+  // Resend's error codes are a closed union today and will not be tomorrow.
+  it("passes an unrecognised error through rather than swallowing it", () => {
+    expect(fetchFailureReason({ name: "teapot", message: "I am a teapot" })).toContain(
+      "I am a teapot",
+    );
+    expect(fetchFailureReason({})).toBe("Resend could not return it.");
+    expect(fetchFailureReason({ message: "   " })).toBe("Resend could not return it.");
   });
 });

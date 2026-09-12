@@ -27,7 +27,7 @@ jobs:
     name: Audit ${{ matrix.app }}
     runs-on: ubuntu-latest
     strategy:
-      # One app's budget blowing up should not hide the other two.
+      # One app's budget blowing up should not hide the other three.
       fail-fast: false
       matrix:
         include:
@@ -37,6 +37,13 @@ jobs:
             filter: "@byteveda/docs"
           - app: flexiq
             filter: "@byteveda/flexiq-site"
+          # The console. Without ADMIN_SESSION_COOKIE the run covers /login and
+          # stops there, which is the whole of it that a cold visitor waits on —
+          # and it still catches a dependency that doubles the shared bundle.
+          # The pages behind the login are a `workflow_dispatch` away; see
+          # apps/admin/lighthouserc.js.
+          - app: admin
+            filter: "@byteveda/admin"
     env:
       NEXT_TELEMETRY_DISABLED: 1
       LHCI_TARGET_URL: ${{ inputs.target_url }}
@@ -63,7 +70,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Three builds and nine Lighthouse runs is the expensive half of this
+      # Four builds and twelve Lighthouse runs is the expensive half of this
       # workflow. Skip the ones a change cannot reach — but never when a target
       # URL was dispatched, since that audits a deployment, not this diff.
       - name: Check whether ${{ matrix.app }} is affected

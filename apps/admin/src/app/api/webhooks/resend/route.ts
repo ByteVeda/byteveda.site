@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
 
   const [stored] = await getDb()
     .insert(inboundMessages)
-    .values(inboundRow(event, fetched ?? {}))
+    .values(inboundRow(event, fetched.ok ? fetched.body : {}))
     // A webhook is delivered at least once. The unique id makes a redelivery a
     // no-op instead of a duplicate in the inbox.
     .onConflictDoNothing({ target: inboundMessages.resendId })

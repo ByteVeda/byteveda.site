@@ -37,6 +37,42 @@ export type InboundBody = {
   headers?: Record<string, string> | null;
 };
 
+/**
+ * The result of going to fetch one.
+ *
+ * A failure carries a sentence rather than a boolean because the console is
+ * where it has to be read. The first version of this returned `null`, which
+ * rendered a permission error and a genuinely empty message as the same blank
+ * conversation — and the one thing anybody needed to know was the difference.
+ */
+export type InboundFetch = { ok: true; body: InboundBody } | { ok: false; reason: string };
+
+/**
+ * Resend's error codes, in words, with the fix rather than the diagnosis.
+ *
+ * `restricted_api_key` is the one that matters. Resend has exactly two
+ * permission levels, sending access and full access, and *every* read is behind
+ * the second — so an inbound mailbox wired up with the key that sends the
+ * newsletter stores every message with an empty body and no explanation.
+ */
+const REASONS: Record<string, string> = {
+  restricted_api_key:
+    "RESEND_API_KEY may only send mail. Reading an inbound message needs a full-access key.",
+  invalid_api_key: "Resend rejected RESEND_API_KEY.",
+  missing_api_key: "RESEND_API_KEY is not set.",
+  not_found: "Resend no longer has this message.",
+  rate_limit_exceeded: "Resend is rate limiting the console. Opening this again will retry.",
+};
+
+/** What to tell the operator when Resend refuses to hand over a body. */
+export function fetchFailureReason(error: { name?: string; message?: string }): string {
+  const known = error.name ? REASONS[error.name] : undefined;
+  if (known) return known;
+
+  const detail = error.message?.trim();
+  return detail ? `Resend could not return the message: ${detail}` : "Resend could not return it.";
+}
+
 export type InboundRow = Pick<
   InboundMessage,
   | "resendId"

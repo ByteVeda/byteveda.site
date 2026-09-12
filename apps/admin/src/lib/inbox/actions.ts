@@ -13,6 +13,15 @@ import { inboxChanged } from "@/lib/realtime";
 export type InboxResult = { ok: boolean; message: string };
 
 /**
+ * What opening a conversation did.
+ *
+ * `error` is set when a message in the thread has no body and Resend would not
+ * hand one over. The browser is the only place that report is any use — the
+ * operator is looking at the empty conversation it explains.
+ */
+export type ThreadOpened = { repaired: number; error: string | null };
+
+/**
  * Everything opening a conversation implies: its messages are readable, and it
  * is no longer unread.
  *
@@ -21,10 +30,10 @@ export type InboxResult = { ok: boolean; message: string };
  * `<Link>` prefetch renders the target page — so marking read server-side meant
  * hovering a thread in the list marked it read without anyone opening it.
  */
-export async function openThread(threadKey: string): Promise<void> {
+export async function openThread(threadKey: string): Promise<ThreadOpened> {
   await requireSession();
 
-  const repaired = await backfillBodies(threadKey);
+  const backfill = await backfillBodies(threadKey);
 
   const read = await getDb()
     .update(inboundMessages)
@@ -35,10 +44,12 @@ export async function openThread(threadKey: string): Promise<void> {
   // Nothing changed on a second visit to an already-read thread. Announcing
   // anyway would refresh every open console for no reason, and refresh this one
   // into calling back here.
-  if (read.length === 0 && repaired === 0) return;
+  if (read.length > 0 || backfill.repaired > 0) {
+    revalidatePath("/inbox");
+    inboxChanged.publish();
+  }
 
-  revalidatePath("/inbox");
-  inboxChanged.publish();
+  return backfill;
 }
 
 /**
@@ -47,39 +58,50 @@ export async function openThread(threadKey: string): Promise<void> {
  * Repairs the mail that arrived while the webhook believed the payload carried
  * the message. Nothing schedules this — a conversation is repaired when someone
  * opens it, which is the only time it matters.
+ *
+ * One reason is reported, not one per message: a thread whose bodies are
+ * missing is missing them all for the same reason, and that reason is almost
+ * always the API key.
  */
-async function backfillBodies(threadKey: string): Promise<number> {
-  if (!emailConfigured()) return 0;
+async function backfillBodies(threadKey: string): Promise<ThreadOpened> {
+  if (!emailConfigured()) {
+    return { repaired: 0, error: null };
+  }
 
   const missing = (await getThread(threadKey)).filter(bodyMissing);
-  if (missing.length === 0) return 0;
+  if (missing.length === 0) return { repaired: 0, error: null };
 
   const fetched = await Promise.all(
     missing.map(async (message) => ({
       id: message.id,
-      body: await fetchInboundBody(message.resendId),
+      result: await fetchInboundBody(message.resendId),
     })),
   );
 
   const db = getDb();
   let repaired = 0;
+  let error: string | null = null;
 
-  for (const { id, body } of fetched) {
-    if (!body || (!body.text?.trim() && !body.html?.trim())) continue;
+  for (const { id, result } of fetched) {
+    if (!result.ok) {
+      error ??= result.reason;
+      continue;
+    }
+
+    const { text, html, headers } = result.body;
+    // Resend answered, and the message really is empty. Nothing to write, and
+    // nothing to complain about either.
+    if (!text?.trim() && !html?.trim()) continue;
 
     await db
       .update(inboundMessages)
-      .set({
-        text: body.text ?? "",
-        html: body.html ?? null,
-        headers: body.headers ?? null,
-      })
+      .set({ text: text ?? "", html: html ?? null, headers: headers ?? null })
       .where(eq(inboundMessages.id, id));
 
     repaired += 1;
   }
 
-  return repaired;
+  return { repaired, error };
 }
 
 export async function deleteThread(threadKey: string): Promise<InboxResult> {
