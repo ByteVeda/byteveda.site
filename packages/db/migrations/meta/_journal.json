@@ -43,6 +43,13 @@
       "when": 1788912630506,
       "tag": "0005_drop_subscriber_notify",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1789202190628,
+      "tag": "0006_email_threads",
+      "breakpoints": true
     }
   ]
 }

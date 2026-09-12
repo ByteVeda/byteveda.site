@@ -42,6 +42,19 @@ export async function sendEmail(input: {
    * Resend's inbound routing, so it is on a domain Resend has already verified.
    */
   from?: string;
+  /**
+   * Files this send into a conversation, so it appears in the thread rather
+   * than only in the send log.
+   *
+   * `body` is what the operator typed, not what was posted to Resend: the
+   * quoting and the mail chrome in `replyEmail` exist for the recipient, who
+   * cannot see the thread. In the console the thread is right there, and a
+   * reply that repeats it is a reply nobody can read.
+   *
+   * Set on a failed send too. The attempt belongs in the conversation — with
+   * its error on it — even though nothing was delivered.
+   */
+  thread?: { key: string; body: string };
 }): Promise<SendResult> {
   const settings = await getSettings();
   const address = input.from || settings["email.fromAddress"];
@@ -54,8 +67,11 @@ export async function sendEmail(input: {
       .values({
         resendId: result.id ?? null,
         toEmail: input.to,
+        fromEmail: address,
         subject: input.email.subject,
         kind: input.kind,
+        threadKey: input.thread?.key ?? null,
+        bodyText: input.thread?.body ?? "",
         broadcastId: input.broadcastId ?? null,
         error: result.error ?? null,
       });

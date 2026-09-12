@@ -1,8 +1,8 @@
-import { getDb, inboundMessages } from "@byteveda/db";
 import { type NextRequest, NextResponse } from "next/server";
 import { fetchInboundBody } from "@/lib/email/client";
 import { type InboundEvent, inboundRow } from "@/lib/email/inbound";
 import { verifySignature } from "@/lib/email/webhook";
+import { recordInbound } from "@/lib/inbox/store";
 import { inboxChanged } from "@/lib/realtime";
 
 export const dynamic = "force-dynamic";
@@ -57,17 +57,14 @@ export async function POST(request: NextRequest) {
   const event = data as InboundEvent;
   const fetched = await fetchInboundBody(event.email_id);
 
-  const [stored] = await getDb()
-    .insert(inboundMessages)
-    .values(inboundRow(event, fetched.ok ? fetched.body : {}))
-    // A webhook is delivered at least once. The unique id makes a redelivery a
-    // no-op instead of a duplicate in the inbox.
-    .onConflictDoNothing({ target: inboundMessages.resendId })
-    .returning({ id: inboundMessages.id });
+  // Stores the message and moves its conversation. A webhook is delivered at
+  // least once, and this reports false for the second delivery — see
+  // `lib/inbox/store.ts` for why the thread has to be left alone too.
+  const stored = await recordInbound(inboundRow(event, fetched.ok ? fetched.body : {}));
 
   // Only a message that is actually new should light up an open console; a
   // redelivery has nothing to announce.
   if (stored) inboxChanged.publish();
 
-  return NextResponse.json({ received: event.email_id, stored: Boolean(stored) });
+  return NextResponse.json({ received: event.email_id, stored });
 }

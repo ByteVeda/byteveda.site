@@ -1,13 +1,12 @@
 "use server";
 
-import { getDb, inboundMessages } from "@byteveda/db";
-import { and, desc, eq, isNull } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { requireSession } from "@/lib/auth/session";
 import { emailConfigured, fetchInboundBody, sendEmail } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
 import { replyEmail } from "@/lib/email/templates";
-import { getThread } from "@/lib/inbox/queries";
+import { getConversation } from "@/lib/inbox/queries";
+import * as store from "@/lib/inbox/store";
 import { inboxChanged } from "@/lib/realtime";
 
 export type InboxResult = { ok: boolean; message: string };
@@ -20,6 +19,12 @@ export type InboxResult = { ok: boolean; message: string };
  * operator is looking at the empty conversation it explains.
  */
 export type ThreadOpened = { repaired: number; error: string | null };
+
+/** Announces to every open console, and re-renders this one. */
+function announce(): void {
+  revalidatePath("/inbox");
+  inboxChanged.publish();
+}
 
 /**
  * Everything opening a conversation implies: its messages are readable, and it
@@ -34,20 +39,12 @@ export async function openThread(threadKey: string): Promise<ThreadOpened> {
   await requireSession();
 
   const backfill = await backfillBodies(threadKey);
+  const read = await store.markThreadRead(threadKey);
 
-  const read = await getDb()
-    .update(inboundMessages)
-    .set({ readAt: new Date() })
-    .where(and(eq(inboundMessages.threadKey, threadKey), isNull(inboundMessages.readAt)))
-    .returning({ id: inboundMessages.id });
-
-  // Nothing changed on a second visit to an already-read thread. Announcing
-  // anyway would refresh every open console for no reason, and refresh this one
-  // into calling back here.
-  if (read.length > 0 || backfill.repaired > 0) {
-    revalidatePath("/inbox");
-    inboxChanged.publish();
-  }
+  // Nothing changed on a second visit to an already-read conversation.
+  // Announcing anyway would refresh every open console for no reason, and
+  // refresh this one into calling back here.
+  if (read || backfill.repaired > 0) announce();
 
   return backfill;
 }
@@ -68,17 +65,23 @@ async function backfillBodies(threadKey: string): Promise<ThreadOpened> {
     return { repaired: 0, error: null };
   }
 
-  const missing = (await getThread(threadKey)).filter(bodyMissing);
+  const conversation = await getConversation(threadKey);
+  // Only what arrived. A sent message with no body is one from before replies
+  // were kept, and Resend has nothing to return for it.
+  const missing =
+    conversation?.messages.filter(
+      (message) => message.direction === "in" && message.resendId && bodyMissing(message),
+    ) ?? [];
+
   if (missing.length === 0) return { repaired: 0, error: null };
 
   const fetched = await Promise.all(
     missing.map(async (message) => ({
       id: message.id,
-      result: await fetchInboundBody(message.resendId),
+      result: await fetchInboundBody(message.resendId as string),
     })),
   );
 
-  const db = getDb();
   let repaired = 0;
   let error: string | null = null;
 
@@ -93,32 +96,62 @@ async function backfillBodies(threadKey: string): Promise<ThreadOpened> {
     // nothing to complain about either.
     if (!text?.trim() && !html?.trim()) continue;
 
-    await db
-      .update(inboundMessages)
-      .set({ text: text ?? "", html: html ?? null, headers: headers ?? null })
-      .where(eq(inboundMessages.id, id));
-
+    await store.repairBody(id, {
+      text: text ?? null,
+      html: html ?? null,
+      headers: headers ?? null,
+    });
     repaired += 1;
   }
 
   return { repaired, error };
 }
 
+/** Puts a conversation back to unread. */
+export async function markThreadUnread(threadKey: string): Promise<InboxResult> {
+  await requireSession();
+
+  await store.markThreadUnread(threadKey);
+
+  announce();
+  return { ok: true, message: "Marked unread." };
+}
+
+/**
+ * Files a conversation away, or brings it back.
+ *
+ * Archiving is what makes the inbox finishable. Deleting was the only way to
+ * clear a thread before this, which meant the choice was between a list that
+ * grew without limit and destroying the correspondence.
+ */
+export async function setThreadArchived(
+  threadKey: string,
+  archived: boolean,
+): Promise<InboxResult> {
+  await requireSession();
+
+  await store.setThreadArchived(threadKey, archived);
+
+  announce();
+  return { ok: true, message: archived ? "Archived." : "Moved back to the inbox." };
+}
+
+/** Removes a conversation and everything received in it. */
 export async function deleteThread(threadKey: string): Promise<InboxResult> {
   await requireSession();
 
-  await getDb().delete(inboundMessages).where(eq(inboundMessages.threadKey, threadKey));
-  revalidatePath("/inbox");
-  inboxChanged.publish();
+  await store.deleteThread(threadKey);
 
+  announce();
   return { ok: true, message: "Deleted." };
 }
 
 /**
- * Replies to the most recent message in a thread.
+ * Replies to a conversation.
  *
  * The reply is quoted the way a mail client would quote it, so the recipient
- * sees the conversation rather than a bare sentence with no context.
+ * sees the conversation rather than a bare sentence with no context. What gets
+ * stored against the thread is the text that was typed — see `sendEmail`.
  */
 export async function replyToThread(threadKey: string, body: string): Promise<InboxResult> {
   await requireSession();
@@ -129,38 +162,36 @@ export async function replyToThread(threadKey: string, body: string): Promise<In
     return { ok: false, message: "Set RESEND_API_KEY before sending." };
   }
 
-  const db = getDb();
-  const [latest] = await db
-    .select()
-    .from(inboundMessages)
-    .where(eq(inboundMessages.threadKey, threadKey))
-    .orderBy(desc(inboundMessages.receivedAt))
-    .limit(1);
+  const conversation = await getConversation(threadKey);
+  if (!conversation) return { ok: false, message: "That conversation no longer exists." };
 
-  if (!latest) return { ok: false, message: "That conversation no longer exists." };
+  const { thread, messages } = conversation;
+  const quoted = [...messages].reverse().find((message) => message.direction === "in");
 
   // Answer from the address they wrote to. A reply to conduct@ that arrives
   // from hello@ reads as a different correspondent, breaks threading in the
   // recipient's client, and sends their next message to the wrong mailbox.
-  const from = latest.toEmail || undefined;
+  const from = thread.mailbox || undefined;
 
   const result = await sendEmail({
-    to: latest.fromEmail,
-    email: replyEmail({ subject: latest.subject, body: text, quoted: latest.text }),
+    to: thread.correspondentEmail,
+    email: replyEmail({ subject: thread.subject, body: text, quoted: quoted?.text ?? "" }),
     kind: "reply",
     from,
     replyTo: from,
+    thread: { key: threadKey, body: text },
   });
 
-  if (!result.ok) return { ok: false, message: result.error ?? "The reply did not send." };
+  // The attempt is in the conversation either way — `sendEmail` filed it under
+  // the thread key. What a failure must not do is move the conversation on, or
+  // the inbox would show it as answered.
+  if (!result.ok) {
+    announce();
+    return { ok: false, message: result.error ?? "The reply did not send." };
+  }
 
-  await db
-    .update(inboundMessages)
-    .set({ repliedAt: new Date(), readAt: latest.readAt ?? new Date() })
-    .where(eq(inboundMessages.id, latest.id));
+  await store.markThreadAnswered(threadKey, text);
 
-  revalidatePath("/inbox");
-  inboxChanged.publish();
-
-  return { ok: true, message: `Replied to ${latest.fromEmail}.` };
+  announce();
+  return { ok: true, message: `Replied to ${thread.correspondentEmail}.` };
 }

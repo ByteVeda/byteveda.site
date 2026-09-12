@@ -1,42 +1,51 @@
-import { CornerUpLeft, MoveRight } from "lucide-react";
+import { ArrowLeft, MoveRight, TriangleAlert } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InboxAutoRefresh } from "@/components/inbox/live";
 import { MessageBody } from "@/components/inbox/message-body";
 import { ReplyBox } from "@/components/inbox/reply-box";
+import { ThreadActions } from "@/components/inbox/thread-actions";
+import { ThreadList } from "@/components/inbox/thread-list";
 import { ThreadOpener } from "@/components/inbox/thread-opener";
 import { LocalTime } from "@/components/local-time";
 import { PageHeader } from "@/components/page-header";
 import { emailConfigured } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
-import { ago, initial } from "@/lib/format";
-import { getThread, listThreads } from "@/lib/inbox/queries";
+import { initial } from "@/lib/format";
+import {
+  type Conversation,
+  countThreads,
+  getConversation,
+  isThreadFilter,
+  listThreads,
+  type ThreadFilter,
+  type ThreadMessage,
+} from "@/lib/inbox/queries";
+import { inboxHref } from "@/lib/inbox/url";
 
 export const metadata: Metadata = { title: "Inbox" };
 export const dynamic = "force-dynamic";
 
-type Props = { searchParams: Promise<{ t?: string }> };
+type Props = { searchParams: Promise<{ t?: string; f?: string; q?: string }> };
 
 export default async function InboxPage({ searchParams }: Props) {
-  const { t } = await searchParams;
+  const { t, f, q } = await searchParams;
 
-  // Both reads at once when a conversation was named in the URL, which is every
+  const filter = isThreadFilter(f) ? f : "inbox";
+  const query = q?.trim() ?? "";
+
+  // All three at once when a conversation was named in the URL, which is every
   // navigation from the list. Only a bare `/inbox` has to see the threads first
   // to learn which one is newest.
-  const [threads, requested] = await Promise.all([
-    listThreads(),
-    t ? getThread(t) : Promise.resolve(null),
+  const [threads, counts, requested] = await Promise.all([
+    listThreads({ filter, query }),
+    countThreads(),
+    t ? getConversation(t) : Promise.resolve(null),
   ]);
 
   // Default to the newest conversation rather than an empty right-hand pane.
-  const selectedKey = t ?? threads[0]?.threadKey;
-  const messages = requested ?? (selectedKey ? await getThread(selectedKey) : []);
-  const selected = threads.find((thread) => thread.threadKey === selectedKey);
-
-  const unread = threads.reduce((total, thread) => total + thread.unreadCount, 0);
-
-  // The address they wrote to, which is also the one the reply leaves from.
-  const mailbox = messages[messages.length - 1]?.toEmail ?? "";
+  const selectedKey = requested?.thread.threadKey ?? (t ? undefined : threads[0]?.threadKey);
+  const conversation = requested ?? (selectedKey ? await getConversation(selectedKey) : null);
 
   return (
     <>
@@ -44,9 +53,9 @@ export default async function InboxPage({ searchParams }: Props) {
           notice. The stream that badges the rail also ticks this. */}
       <InboxAutoRefresh />
 
-      <PageHeader title="Inbox" sub={unread > 0 ? `${unread} unread` : undefined} />
+      <PageHeader title="Inbox" sub={summary(counts.unread, query, threads.length)} />
 
-      {threads.length === 0 ? (
+      {counts.inbox === 0 && counts.archived === 0 && !query ? (
         <div className="content">
           <div className="empty">
             <h3>No mail yet</h3>
@@ -57,98 +66,153 @@ export default async function InboxPage({ searchParams }: Props) {
           </div>
         </div>
       ) : (
-        <div className="inbox">
-          <nav className="thread-list" aria-label="Conversations">
-            {threads.map((thread) => (
-              <Link
-                key={thread.threadKey}
-                href={`/inbox?t=${encodeURIComponent(thread.threadKey)}`}
-                className="thread-item"
-                data-unread={thread.unreadCount > 0}
-                aria-current={thread.threadKey === selectedKey}
-              >
-                <span className="thread-from">
-                  {thread.unreadCount > 0 && (
-                    <>
-                      {/* The dot is decoration; the word is what a screen reader gets. */}
-                      <i className="thread-unread" aria-hidden />
-                      <span className="sr-only">Unread.</span>
-                    </>
-                  )}
-                  <b>{thread.fromName ?? thread.fromEmail}</b>
-                  <time dateTime={thread.lastReceivedAt.toISOString()}>
-                    {ago(thread.lastReceivedAt)}
-                  </time>
-                </span>
-                <span className="thread-subject">{thread.subject || "(no subject)"}</span>
-                <span className="thread-preview">{thread.preview}</span>
-              </Link>
-            ))}
-          </nav>
+        // Which half a narrow screen shows. Two panes side by side is a desk
+        // layout; on a phone it was a 40dvh list with a conversation under it,
+        // and neither half was usable.
+        <div className="inbox" data-pane={conversation ? "thread" : "list"}>
+          <ThreadList
+            threads={threads}
+            counts={counts}
+            filter={filter}
+            query={query}
+            selected={conversation?.thread.threadKey}
+          />
 
           <div className="thread-view">
-            {selected ? (
-              <>
-                <header className="thread-head">
-                  <h2>
-                    {selected.subject || "(no subject)"}
-                    {selected.repliedAt ? (
-                      <span className="thread-flag">
-                        <CornerUpLeft aria-hidden />
-                        Replied
-                      </span>
-                    ) : null}
-                  </h2>
-                  <p className="thread-route">
-                    <b>{selected.fromEmail}</b>
-                    <MoveRight aria-hidden />
-                    <b>{mailbox}</b>
-                    <span className="sr-only">
-                      {messages.length} message{messages.length === 1 ? "" : "s"}
-                    </span>
-                  </p>
-                </header>
-
-                {/* Marks the conversation read and repairs any missing body.
-                    Below the header because it can turn into a notice, and a
-                    notice about this conversation belongs inside it. */}
-                <ThreadOpener
-                  threadKey={selected.threadKey}
-                  pending={selected.unreadCount > 0 || messages.some(bodyMissing)}
-                />
-
-                {messages.map((message) => (
-                  <article key={message.id} className="message">
-                    <div className="message-meta">
-                      <span className="message-avatar" aria-hidden>
-                        {initial(message.fromName, message.fromEmail)}
-                      </span>
-                      <span className="message-who">
-                        <b>{message.fromName ?? message.fromEmail}</b>
-                        <span>{message.fromEmail}</span>
-                      </span>
-                      <LocalTime value={message.receivedAt.toISOString()} />
-                    </div>
-                    <MessageBody text={message.text} html={message.html} />
-                  </article>
-                ))}
-
-                <ReplyBox
-                  threadKey={selected.threadKey}
-                  to={selected.fromEmail}
-                  from={mailbox}
-                  canSend={emailConfigured()}
-                />
-              </>
+            {conversation ? (
+              <ConversationPane
+                conversation={conversation}
+                filter={filter}
+                query={query}
+                canSend={emailConfigured()}
+              />
             ) : (
               <div className="empty">
                 <h3>Nothing selected</h3>
-                <p>Pick a conversation on the left.</p>
+                <p>Pick a conversation on the left, or press j.</p>
               </div>
             )}
           </div>
         </div>
       )}
     </>
+  );
+}
+
+/** The line under the title: what is unread, or what a search turned up. */
+function summary(unread: number, query: string, results: number): string | undefined {
+  if (query) return `${results} result${results === 1 ? "" : "s"} for “${query}”`;
+  return unread > 0 ? `${unread} unread` : undefined;
+}
+
+function ConversationPane({
+  conversation,
+  filter,
+  query,
+  canSend,
+}: {
+  conversation: Conversation;
+  filter: ThreadFilter;
+  query: string;
+  canSend: boolean;
+}) {
+  const { thread, messages } = conversation;
+
+  // Only what arrived can be repaired: a sent message with no body is one from
+  // before replies were kept, and Resend has nothing to return for it.
+  const repairable = messages.some((message) => message.direction === "in" && bodyMissing(message));
+
+  return (
+    <>
+      <header className="thread-head">
+        <Link className="thread-back" href={inboxHref({ filter, query })}>
+          <ArrowLeft aria-hidden />
+          All conversations
+        </Link>
+
+        <h2>{thread.subject || "(no subject)"}</h2>
+
+        <p className="thread-route">
+          <b>{thread.correspondentEmail}</b>
+          <MoveRight aria-hidden />
+          <b>{thread.mailbox}</b>
+          <span className="sr-only">
+            {messages.length} message{messages.length === 1 ? "" : "s"}
+          </span>
+        </p>
+
+        <ThreadActions
+          threadKey={thread.threadKey}
+          archived={thread.archivedAt !== null}
+          correspondent={thread.correspondentEmail}
+          filter={filter}
+          query={query}
+        />
+      </header>
+
+      {/* Marks the conversation read and repairs any missing body. Below the
+          header because it can turn into a notice, and a notice about this
+          conversation belongs inside it. */}
+      <ThreadOpener threadKey={thread.threadKey} pending={isUnread(thread) || repairable} />
+
+      {messages.map((message) => (
+        <Message key={message.id} message={message} />
+      ))}
+
+      <ReplyBox
+        threadKey={thread.threadKey}
+        to={thread.correspondentEmail}
+        from={thread.mailbox}
+        canSend={canSend}
+      />
+    </>
+  );
+}
+
+function isUnread(thread: Conversation["thread"]): boolean {
+  if (!thread.lastInboundAt) return false;
+  return thread.readAt === null || thread.lastInboundAt > thread.readAt;
+}
+
+/**
+ * One message, in the direction it went.
+ *
+ * Ours are marked and set apart rather than rendered identically to theirs: a
+ * conversation where both sides look the same is one you have to read to know
+ * who said what.
+ */
+function Message({ message }: { message: ThreadMessage }) {
+  const sent = message.direction === "out";
+
+  return (
+    <article className="message" data-direction={message.direction}>
+      <div className="message-meta">
+        <span className="message-avatar" aria-hidden>
+          {sent ? "↩" : initial(message.fromName, message.fromEmail)}
+        </span>
+
+        <span className="message-who">
+          <b>{sent ? "You" : (message.fromName ?? message.fromEmail)}</b>
+          <span>{message.fromEmail || message.toEmail}</span>
+        </span>
+
+        <LocalTime value={message.at.toISOString()} />
+      </div>
+
+      {message.error && (
+        <p className="notice notice-danger block-gap-sm" role="status">
+          <TriangleAlert aria-hidden />
+          <span>This reply did not send. {message.error}</span>
+        </p>
+      )}
+
+      {sent && !message.text.trim() ? (
+        <p className="message-empty">
+          Sent, but the text was not kept — this reply predates the console storing them.
+        </p>
+      ) : (
+        <MessageBody text={message.text} html={message.html} />
+      )}
+    </article>
   );
 }

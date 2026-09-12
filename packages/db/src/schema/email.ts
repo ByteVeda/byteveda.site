@@ -85,10 +85,67 @@ export const broadcasts = pgTable(
 );
 
 /**
+ * A conversation with one correspondent.
+ *
+ * Exists because thread state is not a property of any message in the thread.
+ * Read, archived, who it is with, what it is about, when it last moved — each
+ * one was previously re-derived from the inbound rows with an `array_agg` on
+ * every render, and "archived" had nowhere to live at all. Worse, "when it last
+ * moved" could only ever mean the last message *received*, so answering a
+ * conversation did not bring it to the top of the inbox.
+ *
+ * Read is a timestamp rather than a flag: unread is `last_inbound_at` being
+ * newer than `read_at`, which makes a reply arriving in an open-and-read thread
+ * mark it unread again without anything having to remember to.
+ */
+export const emailThreads = pgTable(
+  "email_threads",
+  {
+    /** The correspondent plus the normalised subject. See `lib/email/thread.ts`. */
+    threadKey: text("thread_key").primaryKey(),
+    /** As last written, not normalised — this is the line the operator reads. */
+    subject: text("subject").notNull().default(""),
+    correspondentEmail: text("correspondent_email").notNull(),
+    correspondentName: text("correspondent_name"),
+    /** The address they wrote to, which is the one a reply leaves from. */
+    mailbox: text("mailbox").notNull().default(""),
+    /**
+     * The opening of the last message, whoever sent it.
+     *
+     * Denormalised so the list is one index scan rather than a lateral join
+     * into two message tables for every row. `touchThread` is the only writer,
+     * which is what keeps it honest.
+     */
+    preview: text("preview").notNull().default(""),
+    /** Either direction. What the inbox sorts on. */
+    lastMessageAt: timestamp("last_message_at", { withTimezone: true }).notNull().defaultNow(),
+    /** Their side only. Unread is this being newer than `read_at`. */
+    lastInboundAt: timestamp("last_inbound_at", { withTimezone: true }),
+    /** Our side only. Set means answered; newer than the inbound means we spoke last. */
+    lastOutboundAt: timestamp("last_outbound_at", { withTimezone: true }),
+    readAt: timestamp("read_at", { withTimezone: true }),
+    archivedAt: timestamp("archived_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    // The inbox is "unarchived, newest first", and nothing else is a hot path.
+    index("email_threads_active_idx").on(table.lastMessageAt).where(sql`"archived_at" is null`),
+    index("email_threads_archived_idx")
+      .on(table.lastMessageAt)
+      .where(sql`"archived_at" is not null`),
+  ],
+);
+
+/**
  * Every message sent, whatever sent it.
  *
  * Kept so a bounce, a duplicate, or "did that actually go out?" has an answer
  * that does not depend on logging into Resend.
+ *
+ * A reply carries `thread_key` and its own body, which is what makes it part of
+ * a conversation rather than only a line in a send log. Without those the
+ * console sent the mail, recorded that it had, and then showed the operator a
+ * thread with their answer missing from it.
  */
 export const outboundMessages = pgTable(
   "outbound_messages",
@@ -97,8 +154,21 @@ export const outboundMessages = pgTable(
     /** Resend's id, absent when the send failed before it got one. */
     resendId: text("resend_id"),
     toEmail: text("to_email").notNull(),
+    /** Which mailbox it left from. Per-thread for a reply, not per-console. */
+    fromEmail: text("from_email").notNull().default(""),
     subject: text("subject").notNull(),
     kind: text("kind").$type<OutboundKind>().notNull(),
+    /**
+     * Set for a reply, null for a broadcast or a confirmation. `set null` on a
+     * deleted conversation rather than `cascade`: the thread goes, the record
+     * that something was sent to that address stays.
+     */
+    threadKey: text("thread_key").references(() => emailThreads.threadKey, {
+      onDelete: "set null",
+    }),
+    /** What was written, so the thread can show it. Empty for a bulk send. */
+    bodyText: text("body_text").notNull().default(""),
+    bodyHtml: text("body_html"),
     broadcastId: uuid("broadcast_id").references(() => broadcasts.id, { onDelete: "cascade" }),
     error: text("error"),
     sentAt: timestamp("sent_at", { withTimezone: true }).notNull().defaultNow(),
@@ -106,6 +176,9 @@ export const outboundMessages = pgTable(
   (table) => [
     index("outbound_messages_sent_idx").on(table.sentAt),
     index("outbound_messages_broadcast_idx").on(table.broadcastId),
+    index("outbound_messages_thread_idx")
+      .on(table.threadKey, table.sentAt)
+      .where(sql`"thread_key" is not null`),
     check("outbound_messages_kind_check", oneOf("kind", OUTBOUND_KINDS)),
   ],
 );
@@ -115,6 +188,10 @@ export const outboundMessages = pgTable(
  *
  * `resend_id` is unique because a webhook is delivered at least once — the
  * constraint is what makes a redelivery a no-op rather than a duplicate.
+ *
+ * Carries no read or replied state of its own. Both were properties of the
+ * conversation wearing a message's clothes, and both now live on `email_threads`
+ * — where "archived" can join them and where answering can move a thread.
  */
 export const inboundMessages = pgTable(
   "inbound_messages",
@@ -122,7 +199,9 @@ export const inboundMessages = pgTable(
     id: uuid("id").primaryKey().defaultRandom(),
     resendId: text("resend_id").notNull(),
     /** Groups a conversation: the correspondent plus the normalised subject. */
-    threadKey: text("thread_key").notNull(),
+    threadKey: text("thread_key")
+      .notNull()
+      .references(() => emailThreads.threadKey, { onDelete: "cascade" }),
     fromEmail: text("from_email").notNull(),
     fromName: text("from_name"),
     toEmail: text("to_email").notNull(),
@@ -131,8 +210,6 @@ export const inboundMessages = pgTable(
     html: text("html"),
     headers: jsonb("headers").$type<Record<string, string>>(),
     receivedAt: timestamp("received_at", { withTimezone: true }).notNull().defaultNow(),
-    readAt: timestamp("read_at", { withTimezone: true }),
-    repliedAt: timestamp("replied_at", { withTimezone: true }),
   },
   (table) => [
     uniqueIndex("inbound_messages_resend_idx").on(table.resendId),
@@ -146,7 +223,13 @@ export const broadcastsRelations = relations(broadcasts, ({ many, one }) => ({
   post: one(posts, { fields: [broadcasts.postId], references: [posts.id] }),
 }));
 
+export const emailThreadsRelations = relations(emailThreads, ({ many }) => ({
+  received: many(inboundMessages),
+  sent: many(outboundMessages),
+}));
+
 export type Subscriber = typeof subscribers.$inferSelect;
 export type Broadcast = typeof broadcasts.$inferSelect;
+export type EmailThread = typeof emailThreads.$inferSelect;
 export type InboundMessage = typeof inboundMessages.$inferSelect;
 export type OutboundMessage = typeof outboundMessages.$inferSelect;
