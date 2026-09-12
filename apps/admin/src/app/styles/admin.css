@@ -27,7 +27,42 @@
   --scrim: rgba(4, 4, 8, 0.62);
 }
 
+/*
+ * The console's light theme.
+ *
+ * The shared light palette is warm paper — and it is built for the public
+ * sites, where a filled surface is a chip or a card a few hundred pixels wide
+ * and everything else sits directly on the page. The console inverts those
+ * proportions: the rail, the thread list, every panel and card are `--surface`,
+ * which is `#ffffff` there. A cold white slab across most of a warm-paper
+ * viewport reads as a rendering fault, and it leaves the page — the part being
+ * read — as the dullest thing on screen.
+ *
+ * So the console warms its surfaces and flattens the page beneath them. Same
+ * palette, same accent, same ink; a narrower and warmer ladder:
+ *
+ *   page  #efebe1  →  field  #f3f0e7  →  surface  #fbf9f3
+ *
+ * Nothing below this block is theme-aware, which is the point — every page in
+ * the console is fixed by these declarations rather than by rules of its own.
+ */
 [data-theme="light"] {
+  --bg: #f3f0e7;
+  --bg-grad-a: #f8f6f0;
+  --bg-grad-b: #efebe1;
+  --surface: #fbf9f3;
+  --surface-2: #f3f0e7;
+  --surface-3: #eae5da;
+
+  /* Structure is drawn with rules here, not with whitespace, and the shared
+     `--line-soft` at 6% ink is invisible between two rows of a dense list. */
+  --line-soft: rgba(45, 38, 18, 0.085);
+
+  /* Hover and selection. At 4.5% on white a selected conversation looked
+     exactly like an unselected one — the 2px accent edge was doing all the
+     work on its own. */
+  --chip: rgba(45, 38, 18, 0.07);
+
   --warn: #9a6f0d;
   --danger: #b23425;
   --warn-soft: rgba(154, 111, 13, 0.1);
