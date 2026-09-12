@@ -8,6 +8,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "lighthouse": "pnpm dlx @lhci/cli@0.15.1 autorun",
     "collect": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/collect.ts",
     "realtime:check": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/realtime-check.ts"
   },
