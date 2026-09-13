@@ -181,99 +181,19 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:47bf151c0fb2",
+    "id": "lobsters:025aa821e768",
     "kind": "article",
-    "source": "mastodon",
-    "title": "GitHub - nekromoff/mailove: Mailove - The fast, friendly KDE-first email client",
-    "url": "https://github.com/nekromoff/mailove/",
-    "excerpt": "Mailove - The fast, friendly KDE-first email client - nekromoff/mailove",
-    "author": "dusoft",
-    "publishedAt": "2026-09-12T20:05:24.838Z",
+    "source": "lobsters",
+    "title": "Make it anyway",
+    "url": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
+    "excerpt": "16 points · programming",
+    "author": "rcalixte",
+    "publishedAt": "2026-09-12T12:24:07.728-05:00",
     "score": 16,
     "tags": [
-      "email",
-      "mail",
-      "kde",
-      "plasma",
-      "desktop",
-      "linux",
-      "ubuntu",
-      "debian",
-      "appimage",
-      "apps",
-      "software",
-      "opensource",
-      "rpm",
-      "fedora",
-      "opensuse",
-      "deb"
-    ],
-    "labels": [
-      "opensource"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:bf4d325bdf38",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Banshee lives! 🎶 Bringing a classic # Linux music player back with a fresh snap, working podcasts, LastFM scrobbling an…",
-    "url": "https://mastodon.social/@popey/117259770941697422",
-    "excerpt": "Banshee lives! 🎶 Bringing a classic # Linux music player back with a fresh snap, working podcasts, LastFM scrobbling and a little Yaru polish.",
-    "author": "popey",
-    "publishedAt": "2026-09-12T19:41:50.000Z",
-    "score": 11,
-    "tags": [
-      "linux"
+      "programming"
     ],
     "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:c6eef33793ae",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I switched from Python to Guile as my go-to scripting language a few months ago and I've been enjoying it. Pros: - Guil…",
-    "url": "https://mathstodon.xyz/@liberty/117259691055295122",
-    "excerpt": "I switched from Python to Guile as my go-to scripting language a few months ago and I've been enjoying it. Pros: - Guile is a Scheme - Guile is slop-free - Guile is faster than Python - Guile can eas…",
-    "author": "Anna Liberty",
-    "publishedAt": "2026-09-12T19:21:31.000Z",
-    "score": 17,
-    "tags": [
-      "hoot",
-      "programming",
-      "python",
-      "scheme",
-      "guile"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:38e9c4a189e5",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Research Engineer in Cognitive Neuroscience and Human Neurophysiology",
-    "url": "https://euraxess.ec.europa.eu/jobs/464714",
-    "excerpt": "The Brain, Behavior and Neuromodulation team at the Grenoble Institute of Neurosciences (GIN, Inserm U1216, Université Grenoble Alpes) is recruiting a Research Engineer in Cognitive Neuroscience and Human Neurophysiology.",
-    "author": "Claire Boilley",
-    "publishedAt": "2026-09-12T16:52:37.000Z",
-    "score": 9,
-    "tags": [
-      "neuroscience",
-      "grenoble",
-      "python",
-      "brain",
-      "joboffer",
-      "jobsinscience",
-      "jobsinacademia",
-      "hiring"
-    ],
-    "labels": [
-      "python"
-    ],
     "mentionsByteveda": false
   },
   {
@@ -282,10 +202,10 @@
     "source": "lobsters",
     "title": "I made a build visualizer to understand Bun’s compile times",
     "url": "https://lalitm.com/post/buildprof/",
-    "excerpt": "20 points · compilers, performance",
+    "excerpt": "53 points · compilers, performance",
     "author": "lalitm",
     "publishedAt": "2026-09-12T09:48:24.716-05:00",
-    "score": 20,
+    "score": 53,
     "tags": [
       "compilers",
       "performance"
@@ -296,34 +216,15 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ad04e01b678c",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Sometimes I wonder how I got a career that involves programming. took me several hours spread across multiple days to f…",
-    "url": "https://fosstodon.org/@dantalion/117257662983153421",
-    "excerpt": "Sometimes I wonder how I got a career that involves programming. took me several hours spread across multiple days to find a heap-use-after-free bug. Turns out you can&#39;t keep using a reference fr…",
-    "author": "Dantali0n :arch: :i3:",
-    "publishedAt": "2026-09-12T10:45:45.424Z",
-    "score": 7,
-    "tags": [
-      "rust",
-      "cpp"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:920e1f7d2d76",
     "kind": "article",
     "source": "lobsters",
     "title": "Pandas Should Go Extinct",
     "url": "https://eddie.codes/posts/pandas-should-go-extinct/",
-    "excerpt": "34 points · databases, python",
+    "excerpt": "37 points · databases, python",
     "author": "ohrv",
     "publishedAt": "2026-09-11T23:23:08.739-05:00",
-    "score": 34,
+    "score": 37,
     "tags": [
       "databases",
       "python"
@@ -367,6 +268,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "mastodon:570629acfaef",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Building cgo code without a C compiler?",
+    "url": "https://golangweekly.com/issues/617",
+    "excerpt": "Go Weekly — Issue #617",
+    "author": "yzma",
+    "publishedAt": "2026-09-11T16:06:48.000Z",
+    "score": 5,
+    "tags": [
+      "golang",
+      "llamacpp",
+      "tinygo",
+      "wasm",
+      "webgpu"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "lobsters:3aa633b288b7",
     "kind": "article",
     "source": "lobsters",
@@ -392,10 +315,10 @@
     "source": "lobsters",
     "title": "Feeling sad about AI",
     "url": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
-    "excerpt": "207 points · programming",
+    "excerpt": "217 points · programming",
     "author": "andybalaam",
     "publishedAt": "2026-09-11T07:33:20.763-05:00",
-    "score": 207,
+    "score": 217,
     "tags": [
       "programming"
     ],
@@ -445,10 +368,10 @@
     "source": "lobsters",
     "title": "Soft-deprecating re.match()",
     "url": "https://hugovk.dev/blog/2026/soft-deprecating-re.match/",
-    "excerpt": "67 points · python",
+    "excerpt": "68 points · python",
     "author": "ubernostrum",
     "publishedAt": "2026-09-10T16:59:16.157-05:00",
-    "score": 67,
+    "score": 68,
     "tags": [
       "python"
     ],
@@ -516,7 +439,7 @@
     "excerpt": "...but let me say this right away: coding was never the most valuable part of software...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-09-10T07:17:46Z",
-    "score": 142,
+    "score": 146,
     "tags": [
       "discuss",
       "ai",
@@ -613,7 +536,7 @@
     "excerpt": "AI can generate code faster than ever. That doesn't mean we're shipping correct software...",
     "author": "Ken W Alger",
     "publishedAt": "2026-09-09T14:32:00Z",
-    "score": 50,
+    "score": 52,
     "tags": [
       "ai",
       "testing",
@@ -671,7 +594,7 @@
     "excerpt": "Hoi hoi! I’m @nyaomaru, a frontend engineer who has been obsessed with ramen lately. 😸🍜 Have you...",
     "author": "nyaomaru",
     "publishedAt": "2026-09-09T12:48:25Z",
-    "score": 66,
+    "score": 67,
     "tags": [
       "typescript",
       "algorithms",
@@ -690,10 +613,10 @@
     "source": "lobsters",
     "title": "A decade of rustls",
     "url": "https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/",
-    "excerpt": "73 points · networking, rust",
+    "excerpt": "74 points · networking, rust",
     "author": "wofo",
     "publishedAt": "2026-09-09T06:13:13.488-05:00",
-    "score": 73,
+    "score": 74,
     "tags": [
       "networking",
       "rust"
@@ -760,6 +683,65 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:4fe969d027a2",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Why Function Arguments Are Not Function Colors",
+    "url": "https://jerf.org/iri/post/2026/func_args_are_not_colors/",
+    "excerpt": "23 points · go, haskell, programming",
+    "author": "abhin4v",
+    "publishedAt": "2026-09-08T23:13:05.979-05:00",
+    "score": 23,
+    "tags": [
+      "go",
+      "haskell",
+      "programming"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:edaca422bdc3",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Rust: When Empty Isn't Bottom",
+    "url": "https://ettolrach.com/blog/rust_when_empty_isnt_bottom.html",
+    "excerpt": "35 points · plt, rust",
+    "author": "ettolrach",
+    "publishedAt": "2026-09-08T16:23:18.378-05:00",
+    "score": 35,
+    "tags": [
+      "plt",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:993074204a07",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Reverse engineering my e-scooter and rewriting the firmware in rust",
+    "url": "https://bensimms.moe/reverse-engineering-scooter/",
+    "excerpt": "73 points · hardware, reversing, rust",
+    "author": "kevinmehall",
+    "publishedAt": "2026-09-08T16:03:22.480-05:00",
+    "score": 73,
+    "tags": [
+      "hardware",
+      "reversing",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -768,7 +750,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-09-12T20:07:08Z",
-    "score": 479346,
+    "score": 479475,
     "tags": [
       "Python",
       "api",
@@ -799,8 +781,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-09-10T16:15:02Z",
-    "score": 396616,
+    "publishedAt": "2026-09-13T01:04:12Z",
+    "score": 396639,
     "tags": [
       "Python",
       "books",
@@ -823,7 +805,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-07T07:09:03Z",
-    "score": 283078,
+    "score": 283105,
     "tags": [
       "Python",
       "beginner-project",
@@ -850,8 +832,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-12T20:16:52Z",
-    "score": 244868,
+    "publishedAt": "2026-09-13T04:39:13Z",
+    "score": 244935,
     "tags": [
       "Python",
       "ai",
@@ -882,8 +864,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-12T19:57:24Z",
-    "score": 224512,
+    "publishedAt": "2026-09-13T04:34:30Z",
+    "score": 224520,
     "tags": [
       "Python",
       "algorithm",
@@ -914,8 +896,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-12T19:12:34Z",
-    "score": 187287,
+    "publishedAt": "2026-09-13T01:07:39Z",
+    "score": 187293,
     "tags": [
       "Python",
       "agentic-ai",
@@ -945,7 +927,7 @@
     "excerpt": "Python tool for converting files and office documents to Markdown.",
     "author": "microsoft",
     "publishedAt": "2026-09-12T20:25:34Z",
-    "score": 183183,
+    "score": 183312,
     "tags": [
       "Python",
       "autogen",
@@ -970,7 +952,7 @@
     "excerpt": "Public repository for Agent Skills",
     "author": "anthropics",
     "publishedAt": "2026-09-10T19:44:11Z",
-    "score": 175979,
+    "score": 176020,
     "tags": [
       "Python",
       "agent-skills"
@@ -988,8 +970,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-09-12T07:27:02Z",
-    "score": 144044,
+    "publishedAt": "2026-09-13T02:20:25Z",
+    "score": 144091,
     "tags": [
       "Rust",
       "clash",
@@ -1015,7 +997,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-09-12T12:29:06Z",
-    "score": 132526,
+    "score": 132552,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1053,8 +1035,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-12T20:23:03Z",
-    "score": 123610,
+    "publishedAt": "2026-09-13T01:20:05Z",
+    "score": 123670,
     "tags": [
       "Rust"
     ],
@@ -1072,7 +1054,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-09-12T06:31:17Z",
-    "score": 123265,
+    "score": 123285,
     "tags": [
       "Rust",
       "android",
@@ -1108,8 +1090,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-12T19:34:29Z",
-    "score": 118436,
+    "publishedAt": "2026-09-13T04:29:24Z",
+    "score": 118482,
     "tags": [
       "Rust",
       "compiler",
@@ -1129,8 +1111,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-12T20:05:51Z",
-    "score": 111027,
+    "publishedAt": "2026-09-13T01:52:51Z",
+    "score": 111033,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1156,7 +1138,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-09T08:38:58Z",
-    "score": 108410,
+    "score": 108416,
     "tags": [
       "Rust",
       "deno",
@@ -1178,8 +1160,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-12T20:19:52Z",
-    "score": 95949,
+    "publishedAt": "2026-09-13T04:38:44Z",
+    "score": 95953,
     "tags": [
       "Rust",
       "bun",
@@ -1210,8 +1192,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-12T19:08:46Z",
-    "score": 91833,
+    "publishedAt": "2026-09-13T00:04:11Z",
+    "score": 91849,
     "tags": [
       "Java",
       "docker",
@@ -1243,7 +1225,7 @@
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
     "publishedAt": "2026-09-12T16:32:44Z",
-    "score": 81423,
+    "score": 81425,
     "tags": [
       "Java",
       "framework",
