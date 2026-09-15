@@ -181,55 +181,36 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:69819031b714",
+    "id": "rss:Stack Overflow Blog:2f790957734b",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Inside ‘Project Lily’: The Humans Reading Your ChatGPT Chats",
-    "url": "https://www.404media.co/inside-project-lily-the-humans-reading-your-chatgpt-chats/",
-    "excerpt": "Humans are reading ChatGPT users’ prompts to improve OpenAI’s models, and those chats can include sensitive, personal information, according to leaked internal documents and real prompts seen by 404 Media.",
-    "author": "Miguel Afonso Caetano 🦾 🌹",
-    "publishedAt": "2026-09-14T21:36:47.000Z",
-    "score": 5,
+    "source": "rss",
+    "title": "AI, JD, and other letters of the law",
+    "url": "https://stackoverflow.blog/2026/09/15/ai-jd-and-other-letters-of-the-law/",
+    "excerpt": "Ryan chats with Kevin Frazier, director of the AI Innovation and Law program at the University of Texas School of Law, about the legal and social impacts of data centers, the realities of workforce d…",
+    "author": "Phoebe Sajor",
+    "publishedAt": "2026-09-15T07:40:00.000Z",
+    "score": 0,
     "tags": [
-      "ai",
-      "generativeAI",
-      "openai",
-      "privacy",
-      "dataprotection",
-      "contentmoderation"
+      "Stack Overflow Blog"
     ],
-    "labels": [
-      "ai"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:c0ca905bfe64",
+    "id": "mastodon:5df04a9b6b7e",
     "kind": "article",
     "source": "mastodon",
-    "title": "Designers and Computer Scientists Create New Decoy Fonts That Humans Can Read but A.I. Bots Cannot",
-    "url": "https://www.smithsonianmag.com/smart-news/designers-and-computer-scientists-create-new-decoy-fonts-that-humans-can-read-and-ai-bots-cannot-180989470/",
-    "excerpt": "To prevent the trawling and theft of human writing, font-makers are employing both old and new illusions to outsmart large language models",
-    "author": "TKSST • seethis.tv 🌈🪐✨",
-    "publishedAt": "2026-09-14T21:30:01.000Z",
+    "title": "RE: https:// dair-community.social/@emilymb ender/117271327519433700 A must-see and a must-show to people still defendi…",
+    "url": "https://mstdn.social/@aSweetGentleman/117272460477177996",
+    "excerpt": "RE: https:// dair-community.social/@emilymb ender/117271327519433700 A must-see and a must-show to people still defending AI. # ai # llm # tech # pbs",
+    "author": "The Human Capybara",
+    "publishedAt": "2026-09-15T01:28:57.000Z",
     "score": 7,
     "tags": [
-      "typefaces",
-      "font",
       "ai",
-      "writing",
-      "typography",
-      "design",
-      "bots",
-      "privacy",
-      "technology",
+      "llm",
       "tech",
-      "art",
-      "data",
-      "science",
-      "computers",
-      "illusion",
-      "llm"
+      "pbs"
     ],
     "labels": [
       "ai"
@@ -237,23 +218,39 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:0d80b06388d5",
+    "id": "mastodon:5bc684f6516b",
     "kind": "article",
     "source": "mastodon",
-    "title": "A handful of bros in Silicon Valley and Wall Street have wagered much of the global economy on being able to hyperscale…",
-    "url": "https://mas.to/@FantasticalEconomics/117271376665334027",
-    "excerpt": "A handful of bros in Silicon Valley and Wall Street have wagered much of the global economy on being able to hyperscale stochastic parrots into AGI super beings. Many in the know have long known that…",
-    "author": "Kyle Montanio",
-    "publishedAt": "2026-09-14T20:53:19.000Z",
-    "score": 7,
+    "title": "Release mold 2.42.1 · rui314/mold",
+    "url": "https://github.com/rui314/mold/releases/tag/v2.42.1",
+    "excerpt": "mold 2.42.1 is a new release of the high-speed linker. This release includes further performance improvements. Along with improvements made in recent releases, mold is as fast as or faster than oth...",
+    "author": "Wesley Moore",
+    "publishedAt": "2026-09-15T00:31:20.000Z",
+    "score": 8,
     "tags": [
-      "aidoomerism",
-      "ai",
-      "llm"
+      "rust",
+      "linux"
     ],
     "labels": [
-      "ai"
+      "rust"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:668906cda24d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "\"Do You Still Read the Code?\"",
+    "url": "https://zanlib.dev/blog/do-you-still-read-the-code/",
+    "excerpt": "22 points · practices, vibecoding",
+    "author": "zanlib",
+    "publishedAt": "2026-09-14T15:16:07.338-05:00",
+    "score": 22,
+    "tags": [
+      "practices",
+      "vibecoding"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -265,7 +262,7 @@
     "excerpt": "TL;DR GPT-6 Astra has started another familiar AI conversation. The model is more capable, Jensen...",
     "author": "Hemapriya Kanagala",
     "publishedAt": "2026-09-14T17:12:10Z",
-    "score": 41,
+    "score": 59,
     "tags": [
       "discuss",
       "ai",
@@ -286,47 +283,10 @@
     "excerpt": "Interested in hearing your opinions, I usually learn a lot from it.\r\n\r\nFor me it has to be Parse, Don’t Validate and early joelonsoftware.",
     "author": "mt",
     "publishedAt": "2026-09-14T10:27:32.545-05:00",
-    "score": 27,
+    "score": 47,
     "tags": [
       "ask",
       "practices"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:cfce97f9de47",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "Every time I brainstorm/daydream on how I'd design an ideal type system... I eventually end up with Rust. It's kind of…",
-    "url": "https://phpc.social/@Crell/117270016833890390",
-    "excerpt": "Every time I brainstorm/daydream on how I'd design an ideal type system... I eventually end up with Rust. It's kind of annoying, really. # Rust # Programming # Types",
-    "author": "Larry Garfield",
-    "publishedAt": "2026-09-14T15:07:30.000Z",
-    "score": 10,
-    "tags": [
-      "rust",
-      "programming",
-      "types"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:1ca00961116b",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Why Am I Still Programming",
-    "url": "https://www.youtube.com/watch?v=pOAj3mor8y8",
-    "excerpt": "18 points · practices, video",
-    "author": "tombh",
-    "publishedAt": "2026-09-14T08:28:42.300-05:00",
-    "score": 18,
-    "tags": [
-      "practices",
-      "video"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -337,13 +297,30 @@
     "source": "lobsters",
     "title": "Mergiraf: A syntax-aware git merge driver for a growing collection of programming languages and file formats",
     "url": "https://codeberg.org/mergiraf/mergiraf",
-    "excerpt": "38 points · programming, vcs",
+    "excerpt": "44 points · programming, vcs",
     "author": "hongminhee",
     "publishedAt": "2026-09-14T06:16:14.338-05:00",
-    "score": 38,
+    "score": 44,
     "tags": [
       "programming",
       "vcs"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:1f3b7cc71192",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "We are all Product Engineers now",
+    "url": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+    "excerpt": "16 points · programming, vibecoding",
+    "author": "voutilad",
+    "publishedAt": "2026-09-14T05:52:45.255-05:00",
+    "score": 16,
+    "tags": [
+      "programming",
+      "vibecoding"
     ],
     "labels": [],
     "mentionsByteveda": false
@@ -357,7 +334,7 @@
     "excerpt": "Three fixtures, three separate calls into the same reducer. Here is the complete failure_reasons each...",
     "author": "Self-Correcting Systems",
     "publishedAt": "2026-09-14T02:14:53Z",
-    "score": 28,
+    "score": 30,
     "tags": [
       "testing",
       "ai",
@@ -376,10 +353,10 @@
     "source": "lobsters",
     "title": "Purely Functional Operating Systems",
     "url": "https://eighty-twenty.org/2022/06/23/henderson-functional-operating-systems-1982",
-    "excerpt": "35 points · osdev, programming",
+    "excerpt": "36 points · osdev, programming",
     "author": "andyc",
     "publishedAt": "2026-09-13T19:03:38.791-05:00",
-    "score": 35,
+    "score": 36,
     "tags": [
       "osdev",
       "programming"
@@ -393,10 +370,10 @@
     "source": "lobsters",
     "title": "Anecdotally, programmers dislike \"reduce\"",
     "url": "https://evanhahn.com/posts/2026-09-13-programmers-dislike-reduce/",
-    "excerpt": "90 points · programming",
+    "excerpt": "96 points · programming",
     "author": "aphaelion",
     "publishedAt": "2026-09-13T18:59:05.562-05:00",
-    "score": 90,
+    "score": 96,
     "tags": [
       "programming"
     ],
@@ -412,7 +389,7 @@
     "excerpt": "Intro AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-09-13T23:30:12Z",
-    "score": 46,
+    "score": 47,
     "tags": [
       "ai",
       "webdev",
@@ -468,7 +445,7 @@
     "excerpt": "Let's Address the Elephant in the Room Again Vibe coding has always been a weird topic to...",
     "author": "Giorgi Kobaidze",
     "publishedAt": "2026-09-13T07:06:59Z",
-    "score": 73,
+    "score": 86,
     "tags": [
       "ai",
       "machinelearning",
@@ -758,7 +735,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-09-14T21:41:33Z",
-    "score": 480140,
+    "score": 480276,
     "tags": [
       "Python",
       "api",
@@ -790,7 +767,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-14T14:39:47Z",
-    "score": 396764,
+    "score": 396782,
     "tags": [
       "Python",
       "books",
@@ -805,6 +782,38 @@
     "mentionsByteveda": false
   },
   {
+    "id": "github-trending:50e500f2748b",
+    "kind": "trending",
+    "source": "github",
+    "title": "donnemartin/system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "excerpt": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+    "author": "donnemartin",
+    "publishedAt": "2026-09-15T01:10:09Z",
+    "score": 370059,
+    "tags": [
+      "Python",
+      "design",
+      "design-patterns",
+      "design-system",
+      "development",
+      "interview",
+      "interview-practice",
+      "interview-questions",
+      "programming",
+      "python",
+      "system",
+      "web",
+      "web-application",
+      "webapp"
+    ],
+    "labels": [
+      "python",
+      "webdev"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:03bcb55f8165",
     "kind": "trending",
     "source": "github",
@@ -813,7 +822,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-09-13T15:54:38Z",
-    "score": 320638,
+    "score": 320686,
     "tags": [
       "Python",
       "awesome",
@@ -837,7 +846,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-14T07:10:04Z",
-    "score": 283323,
+    "score": 283353,
     "tags": [
       "Python",
       "beginner-project",
@@ -864,8 +873,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-14T21:28:04Z",
-    "score": 245476,
+    "publishedAt": "2026-09-15T04:45:45Z",
+    "score": 245569,
     "tags": [
       "Python",
       "ai",
@@ -896,8 +905,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-14T21:17:59Z",
-    "score": 224577,
+    "publishedAt": "2026-09-15T04:48:11Z",
+    "score": 224590,
     "tags": [
       "Python",
       "algorithm",
@@ -928,8 +937,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-14T21:24:06Z",
-    "score": 187335,
+    "publishedAt": "2026-09-15T04:32:57Z",
+    "score": 187349,
     "tags": [
       "Python",
       "agentic-ai",
@@ -951,31 +960,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:13faaaa41c52",
-    "kind": "trending",
-    "source": "github",
-    "title": "microsoft/markitdown",
-    "url": "https://github.com/microsoft/markitdown",
-    "excerpt": "Python tool for converting files and office documents to Markdown.",
-    "author": "microsoft",
-    "publishedAt": "2026-09-14T16:53:38Z",
-    "score": 183974,
-    "tags": [
-      "Python",
-      "autogen",
-      "autogen-extension",
-      "langchain",
-      "markdown",
-      "microsoft-office",
-      "openai",
-      "pdf"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:62b6ffe90df0",
     "kind": "trending",
     "source": "github",
@@ -983,8 +967,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-09-14T18:14:24Z",
-    "score": 144444,
+    "publishedAt": "2026-09-14T23:53:15Z",
+    "score": 144517,
     "tags": [
       "Rust",
       "clash",
@@ -1009,8 +993,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-09-14T09:09:19Z",
-    "score": 132840,
+    "publishedAt": "2026-09-15T04:33:49Z",
+    "score": 132898,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1048,8 +1032,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-14T21:45:23Z",
-    "score": 124118,
+    "publishedAt": "2026-09-15T04:20:53Z",
+    "score": 124184,
     "tags": [
       "Rust"
     ],
@@ -1066,8 +1050,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-14T09:19:58Z",
-    "score": 123497,
+    "publishedAt": "2026-09-15T04:27:01Z",
+    "score": 123541,
     "tags": [
       "Rust",
       "android",
@@ -1103,8 +1087,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-14T21:18:54Z",
-    "score": 118862,
+    "publishedAt": "2026-09-15T04:16:55Z",
+    "score": 118958,
     "tags": [
       "Rust",
       "compiler",
@@ -1125,7 +1109,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-09-14T20:52:30Z",
-    "score": 111068,
+    "score": 111073,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1151,7 +1135,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-14T16:23:08Z",
-    "score": 108436,
+    "score": 108495,
     "tags": [
       "Rust",
       "deno",
@@ -1173,8 +1157,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-14T21:42:34Z",
-    "score": 95959,
+    "publishedAt": "2026-09-15T04:46:48Z",
+    "score": 95960,
     "tags": [
       "Rust",
       "bun",
@@ -1206,7 +1190,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-09-13T06:53:54Z",
-    "score": 94687,
+    "score": 94689,
     "tags": [
       "Java",
       "awesome-list",
@@ -1231,8 +1215,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-14T21:04:32Z",
-    "score": 92059,
+    "publishedAt": "2026-09-15T01:43:20Z",
+    "score": 92095,
     "tags": [
       "Java",
       "docker",
