@@ -181,24 +181,120 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:53d4ffe1bb19",
+    "id": "mastodon:8bf17f72ace8",
     "kind": "article",
     "source": "mastodon",
-    "title": "RE: https:// mastodon.social/@gwaldby/11727 5309271554141 Another argument in the column \"AI are a threat to the enviro…",
-    "url": "https://mstdn.social/@aSweetGentleman/117277632606534147",
-    "excerpt": "RE: https:// mastodon.social/@gwaldby/11727 5309271554141 Another argument in the column \"AI are a threat to the environment and the people\". # ai # llm # tech # pollution # health",
-    "author": "The Human Capybara",
-    "publishedAt": "2026-09-15T23:24:17.000Z",
-    "score": 9,
+    "title": "The &quot;a little bit of # LLM use is ok because of the benefit *I* get&quot;, is to me just as bad as the &quot;a lit…",
+    "url": "https://fosstodon.org/@happyborg/117280430013888316",
+    "excerpt": "The &quot;a little bit of # LLM use is ok because of the benefit *I* get&quot;, is to me just as bad as the &quot;a little bit of fascism, or genocide, or illegal war etc is ok.&quot; Add your favour…",
+    "author": "happyborg",
+    "publishedAt": "2026-09-16T11:15:42.743Z",
+    "score": 5,
     "tags": [
-      "ai",
       "llm",
-      "tech",
-      "pollution",
-      "health"
+      "llms"
     ],
     "labels": [
       "ai"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:66584fb80d85",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "LuKi Treffen am 2.10.2026 - LuKi https://www. lug-kiel.de/posts/2609-treffen/ Wir haben mit der @ toppoint vereinbart,…",
+    "url": "https://social.tchncs.de/@lugkiel/117280394819350595",
+    "excerpt": "LuKi Treffen am 2.10.2026 - LuKi https://www. lug-kiel.de/posts/2609-treffen/ Wir haben mit der @ toppoint vereinbart, dass wir am 2. Oktober das erste Treffen in ihren Räumen machen. - 18 Uhr - Holz…",
+    "author": "LuKi",
+    "publishedAt": "2026-09-16T11:06:45.000Z",
+    "score": 5,
+    "tags": [
+      "lug",
+      "lugkiel",
+      "kiel",
+      "linux",
+      "kielux"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:45175c307b58",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Spatial Data Science across Languages (SDSL) 2026",
+    "url": "https://spatial-data-science.github.io/2026/",
+    "excerpt": "Nerding out at # SDSL2026 today https:// spatial-data-science.github.io /2026/ # GISChat # Python # rlang # julialang # SpatialDataScience",
+    "author": "Anita Graser 🇪🇺🇺🇦🇬🇪",
+    "publishedAt": "2026-09-16T10:18:04.364Z",
+    "score": 5,
+    "tags": [
+      "sdsl2026",
+      "gischat",
+      "python",
+      "rlang",
+      "julialang",
+      "SpatialDataScience"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:6211b990b0bb",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "Has anyone else noticed that the people maintaining Go libraries are really aggressive in requiring the latest version…",
+    "url": "https://fosstodon.org/@shane_kerr/117279603705486276",
+    "excerpt": "Has anyone else noticed that the people maintaining Go libraries are really aggressive in requiring the latest version of Go? Within a few weeks of a new version of Go being released, at least one of…",
+    "author": "Shane Kerr",
+    "publishedAt": "2026-09-16T07:45:34.277Z",
+    "score": 5,
+    "tags": [
+      "golang"
+    ],
+    "labels": [
+      "go"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:a2b130c0f7ea",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Some things Veloren does differently",
+    "url": "https://blog.jsbarretto.com/post/veloren",
+    "excerpt": "29 points · games, graphics, rust",
+    "author": "LesleyLai",
+    "publishedAt": "2026-09-15T22:47:55.703-05:00",
+    "score": 29,
+    "tags": [
+      "games",
+      "graphics",
+      "rust"
+    ],
+    "labels": [
+      "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:4a7fcc4005ab",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Ubuntu 26.10 completes transition to Rust-based coreutils",
+    "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
+    "excerpt": "17 points · rust",
+    "author": "rajtilakjee",
+    "publishedAt": "2026-09-15T22:39:05.470-05:00",
+    "score": 17,
+    "tags": [
+      "rust"
+    ],
+    "labels": [
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -208,10 +304,10 @@
     "source": "lobsters",
     "title": "Small Programming Tricks",
     "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
-    "excerpt": "21 points · programming",
+    "excerpt": "40 points · programming",
     "author": "bugsmith",
     "publishedAt": "2026-09-15T15:50:57.381-05:00",
-    "score": 21,
+    "score": 40,
     "tags": [
       "programming"
     ],
@@ -219,24 +315,21 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:f1f7b56cfcee",
+    "id": "lobsters:e81c852b8238",
     "kind": "article",
-    "source": "mastodon",
-    "title": "Complexity Explorer",
-    "url": "https://www.complexityexplorer.org/",
-    "excerpt": "Complexity Explorer provides online courses and educational materials about complexity science. Complexity Explorer is an education project of the Santa Fe Institute - the world headquarters for complexity science.",
-    "author": "Kirk Zurell",
-    "publishedAt": "2026-09-15T20:33:05.000Z",
-    "score": 7,
+    "source": "lobsters",
+    "title": "Performance Improvements in .NET 11",
+    "url": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/",
+    "excerpt": "17 points · dotnet, performance",
+    "author": "jbe_",
+    "publishedAt": "2026-09-15T12:03:47.369-05:00",
+    "score": 17,
     "tags": [
-      "complexity",
-      "gametheory",
-      "simulation",
-      "machinelearning",
-      "interdisciplinary"
+      "dotnet",
+      "performance"
     ],
     "labels": [
-      "ml"
+      "performance"
     ],
     "mentionsByteveda": false
   },
@@ -268,7 +361,7 @@
     "excerpt": "Over the past couple of months, I've read a lot of articles about the consequences of AI dependency...",
     "author": "Elmar Chavez",
     "publishedAt": "2026-09-15T14:45:01Z",
-    "score": 34,
+    "score": 40,
     "tags": [
       "software",
       "ai",
@@ -286,10 +379,10 @@
     "source": "lobsters",
     "title": "Coreutils - rejected feature requests",
     "url": "https://www.gnu.org/software/coreutils/rejected_requests.html",
-    "excerpt": "53 points · programming, unix",
+    "excerpt": "62 points · programming, unix",
     "author": "ryan-duve",
     "publishedAt": "2026-09-15T04:06:36.640-05:00",
-    "score": 53,
+    "score": 62,
     "tags": [
       "programming",
       "unix"
@@ -322,7 +415,7 @@
     "excerpt": "I've started noticing a look on people's faces. It's in standups, in the half-second-too-fast \"yeah,...",
     "author": "James Anderson",
     "publishedAt": "2026-09-15T04:29:39Z",
-    "score": 51,
+    "score": 56,
     "tags": [
       "mentalhealth",
       "career",
@@ -340,10 +433,10 @@
     "source": "lobsters",
     "title": "GDScript: The Good, Bad, and Ugly Parts",
     "url": "https://azhdarchid.com/gdscript-good-bad-ugly/",
-    "excerpt": "27 points · games, programming",
+    "excerpt": "31 points · games, programming",
     "author": "misty",
     "publishedAt": "2026-09-14T19:29:04.599-05:00",
-    "score": 27,
+    "score": 31,
     "tags": [
       "games",
       "programming"
@@ -357,10 +450,10 @@
     "source": "lobsters",
     "title": "\"Do You Still Read the Code?\"",
     "url": "https://zanlib.dev/blog/do-you-still-read-the-code/",
-    "excerpt": "76 points · practices, vibecoding",
+    "excerpt": "79 points · practices, vibecoding",
     "author": "zanlib",
     "publishedAt": "2026-09-14T15:16:07.338-05:00",
-    "score": 76,
+    "score": 79,
     "tags": [
       "practices",
       "vibecoding"
@@ -374,10 +467,10 @@
     "source": "lobsters",
     "title": "A Letter from a Machine Learning Engineer",
     "url": "https://nemin.hu/llm-letter/index.html",
-    "excerpt": "25 points · ai",
+    "excerpt": "26 points · ai",
     "author": "nemin",
     "publishedAt": "2026-09-14T12:58:22.527-05:00",
-    "score": 25,
+    "score": 26,
     "tags": [
       "ai"
     ],
@@ -395,7 +488,7 @@
     "excerpt": "TL;DR GPT-6 Astra has started another familiar AI conversation. The model is more capable, Jensen...",
     "author": "Hemapriya Kanagala",
     "publishedAt": "2026-09-14T17:12:10Z",
-    "score": 93,
+    "score": 102,
     "tags": [
       "discuss",
       "ai",
@@ -416,7 +509,7 @@
     "excerpt": "Interested in hearing your opinions, I usually learn a lot from it.\r\n\r\nFor me it has to be Parse, Don’t Validate and early joelonsoftware.",
     "author": "mt",
     "publishedAt": "2026-09-14T10:27:32.545-05:00",
-    "score": 98,
+    "score": 100,
     "tags": [
       "ask",
       "practices"
@@ -564,7 +657,7 @@
     "excerpt": "Intro AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its...",
     "author": "Web Developer Hyper",
     "publishedAt": "2026-09-13T23:30:12Z",
-    "score": 52,
+    "score": 59,
     "tags": [
       "ai",
       "webdev",
@@ -620,7 +713,7 @@
     "excerpt": "Let's Address the Elephant in the Room Again Vibe coding has always been a weird topic to...",
     "author": "Giorgi Kobaidze",
     "publishedAt": "2026-09-13T07:06:59Z",
-    "score": 124,
+    "score": 134,
     "tags": [
       "ai",
       "machinelearning",
@@ -642,7 +735,7 @@
     "excerpt": "Someone on a Zoom call said a URL yesterday. I was still writing down the previous bullet point. By...",
     "author": "Varshith V Hegde",
     "publishedAt": "2026-09-13T07:06:09Z",
-    "score": 25,
+    "score": 26,
     "tags": [
       "ai",
       "programming",
@@ -655,94 +748,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:670c33467639",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Optimizing a single Rust Clippy lint by 3133X",
-    "url": "https://blog.goose.love/posts/making-a-clippy-lint-faster-by-3133x/",
-    "excerpt": "19 points · rust",
-    "author": "lsh",
-    "publishedAt": "2026-09-12T15:29:09.734-05:00",
-    "score": 19,
-    "tags": [
-      "rust"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:025aa821e768",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Make it anyway",
-    "url": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
-    "excerpt": "37 points · programming",
-    "author": "rcalixte",
-    "publishedAt": "2026-09-12T12:24:07.728-05:00",
-    "score": 37,
-    "tags": [
-      "programming"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:f0551dff2f3a",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "I made a build visualizer to understand Bun’s compile times",
-    "url": "https://lalitm.com/post/buildprof/",
-    "excerpt": "111 points · compilers, performance",
-    "author": "lalitm",
-    "publishedAt": "2026-09-12T09:48:24.716-05:00",
-    "score": 111,
-    "tags": [
-      "compilers",
-      "performance"
-    ],
-    "labels": [
-      "performance"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:920e1f7d2d76",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "Pandas Should Go Extinct",
-    "url": "https://eddie.codes/posts/pandas-should-go-extinct/",
-    "excerpt": "41 points · databases, python",
-    "author": "ohrv",
-    "publishedAt": "2026-09-11T23:23:08.739-05:00",
-    "score": 41,
-    "tags": [
-      "databases",
-      "python"
-    ],
-    "labels": [
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:GitHub Blog:d01781d00770",
-    "kind": "article",
-    "source": "rss",
-    "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
-    "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
-    "excerpt": "I run marketing for GitHub in Japan and Korea, and events are the heartbeat of it: a recurring webinar series for enterprise developers, community meetups in Tokyo, invite-only executive sessions in…",
-    "author": "Tomoko Tanaka",
-    "publishedAt": "2026-09-11T18:26:10.000Z",
-    "score": 0,
-    "tags": [
-      "GitHub Blog"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -751,7 +756,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-09-15T12:21:13Z",
-    "score": 480673,
+    "score": 480777,
     "tags": [
       "Python",
       "api",
@@ -783,7 +788,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-15T15:54:40Z",
-    "score": 396886,
+    "score": 396934,
     "tags": [
       "Python",
       "books",
@@ -806,7 +811,7 @@
     "excerpt": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
     "author": "donnemartin",
     "publishedAt": "2026-09-15T01:10:09Z",
-    "score": 370241,
+    "score": 370285,
     "tags": [
       "Python",
       "design",
@@ -838,7 +843,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-09-15T16:48:04Z",
-    "score": 320911,
+    "score": 320969,
     "tags": [
       "Python",
       "awesome",
@@ -862,7 +867,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-14T07:10:04Z",
-    "score": 283468,
+    "score": 283502,
     "tags": [
       "Python",
       "beginner-project",
@@ -889,8 +894,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-16T04:20:13Z",
-    "score": 245929,
+    "publishedAt": "2026-09-16T11:23:45Z",
+    "score": 246027,
     "tags": [
       "Python",
       "ai",
@@ -921,7 +926,7 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-15T22:55:05Z",
+    "publishedAt": "2026-09-16T11:17:23Z",
     "score": 224626,
     "tags": [
       "Python",
@@ -946,32 +951,27 @@
     "mentionsByteveda": false
   },
   {
-    "id": "github-trending:93c8a2e1b159",
+    "id": "github-trending:ea981792d382",
     "kind": "trending",
     "source": "github",
-    "title": "Significant-Gravitas/AutoGPT",
-    "url": "https://github.com/Significant-Gravitas/AutoGPT",
-    "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-    "author": "Significant-Gravitas",
-    "publishedAt": "2026-09-16T04:32:40Z",
-    "score": 187373,
+    "title": "yt-dlp/yt-dlp",
+    "url": "https://github.com/yt-dlp/yt-dlp",
+    "excerpt": "A feature-rich command-line audio/video downloader",
+    "author": "yt-dlp",
+    "publishedAt": "2026-09-16T07:48:51Z",
+    "score": 191520,
     "tags": [
       "Python",
-      "agentic-ai",
-      "agents",
-      "ai",
-      "artificial-intelligence",
-      "autonomous-agents",
-      "claude",
-      "gpt",
-      "llama-api",
-      "llm",
-      "openai",
-      "python"
+      "cli",
+      "downloader",
+      "python",
+      "sponsorblock",
+      "youtube-dl",
+      "youtube-downloader",
+      "yt-dlp"
     ],
     "labels": [
-      "python",
-      "ai"
+      "python"
     ],
     "mentionsByteveda": false
   },
@@ -983,8 +983,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-09-16T03:09:21Z",
-    "score": 144749,
+    "publishedAt": "2026-09-16T11:25:18Z",
+    "score": 144846,
     "tags": [
       "Rust",
       "clash",
@@ -1010,7 +1010,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-09-15T04:33:49Z",
-    "score": 133073,
+    "score": 133144,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1048,8 +1048,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-16T04:26:05Z",
-    "score": 124502,
+    "publishedAt": "2026-09-16T10:13:27Z",
+    "score": 124643,
     "tags": [
       "Rust"
     ],
@@ -1066,8 +1066,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-16T04:40:41Z",
-    "score": 123730,
+    "publishedAt": "2026-09-16T08:59:04Z",
+    "score": 123769,
     "tags": [
       "Rust",
       "android",
@@ -1103,8 +1103,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-16T04:35:41Z",
-    "score": 118921,
+    "publishedAt": "2026-09-16T11:17:07Z",
+    "score": 118911,
     "tags": [
       "Rust",
       "compiler",
@@ -1124,8 +1124,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-15T11:02:53Z",
-    "score": 111097,
+    "publishedAt": "2026-09-16T09:35:17Z",
+    "score": 111105,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1150,8 +1150,8 @@
     "url": "https://github.com/denoland/deno",
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
-    "publishedAt": "2026-09-15T22:38:21Z",
-    "score": 108457,
+    "publishedAt": "2026-09-16T10:41:03Z",
+    "score": 108446,
     "tags": [
       "Rust",
       "deno",
@@ -1173,8 +1173,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-16T04:43:46Z",
-    "score": 95973,
+    "publishedAt": "2026-09-16T11:21:15Z",
+    "score": 95972,
     "tags": [
       "Rust",
       "bun",
@@ -1206,7 +1206,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-09-13T06:53:54Z",
-    "score": 94694,
+    "score": 94697,
     "tags": [
       "Java",
       "awesome-list",
@@ -1232,7 +1232,7 @@
     "excerpt": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。",
     "author": "macrozheng",
     "publishedAt": "2026-09-15T02:34:44Z",
-    "score": 84775,
+    "score": 84780,
     "tags": [
       "Java",
       "docker",
