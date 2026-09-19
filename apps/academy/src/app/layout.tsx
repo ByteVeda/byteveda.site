@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
 import { Footer, Navbar } from "@/components/layout";
+import { Cta } from "@/components/sections";
 import { SampleProvider } from "@/features/sample/store";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <SampleProvider>
             <Navbar />
             <main className="flex-1">{children}</main>
+            <Cta />
             <Footer />
           </SampleProvider>
         </ThemeProvider>

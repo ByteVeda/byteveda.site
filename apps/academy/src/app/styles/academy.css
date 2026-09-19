@@ -231,9 +231,8 @@
 
 /* ---------- three-up rules ---------- */
 
-.cells {
-  border-bottom: 1px solid var(--line);
-}
+/* No bottom rule: the band that closes the page draws its own top one, and two
+   hairlines meeting reads as a thick line rather than a division. */
 
 @media (min-width: 52rem) {
   .cells .band-inner {
@@ -539,6 +538,39 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--accent);
+}
+
+/* ---------- closing call ---------- */
+
+/* Sits outside `main`, so it takes the same lift over the fixed page texture
+   that the footer below it needs. Surface rather than page black: the band is
+   the only thing between the last section and the footer, and a change of tone
+   is what separates the three without a third rule. */
+.cta {
+  position: relative;
+  z-index: 2;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.cta-inner {
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+}
+
+/* A sentence, not a headline — so it is set a step below the hero's and held
+   to a measure that breaks it into three lines instead of one long rule of
+   type running the width of the page. */
+.cta-title {
+  max-width: 28ch;
+  margin: 1.25rem 0 0;
+  font-size: var(--step-4);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.25rem;
 }
 
 /* ---------- footer ---------- */
