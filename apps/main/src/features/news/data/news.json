@@ -181,36 +181,17 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:1f2075b8528f",
+    "id": "mastodon:f641ce413ed4",
     "kind": "article",
     "source": "mastodon",
-    "title": "\"Inequality Emergency\": Ahead of U.N. General Assembly, Oxfam Urges Action on Climate, AI & Gaza",
-    "url": "https://youtu.be/0iE_d5tEtA0?si=wrW2_vgOEm7RUfxq#news",
-    "excerpt": "NOW ON VERDANT SQUARE RADIO == NOW PLAYING == Democracy Now! 9/18/26: \"Inequality Emergency\": Ahead of U.N. General Assembly, Oxfam Urges Action on # Climate , # AI , &amp; # Gaza https:// youtu.be/0…",
-    "author": "AntiracistHippie",
-    "publishedAt": "2026-09-18T16:17:25.000Z",
-    "score": 7,
+    "title": "Anthropic Has Set Up A Bio Research Lab For Physical Experiments",
+    "url": "https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/",
+    "excerpt": "Anthropic now has its own bio research lab in San Francisco.",
+    "author": "DCoder 🇱🇹❤🇺🇦",
+    "publishedAt": "2026-09-19T04:17:40.000Z",
+    "score": 5,
     "tags": [
-      "climate",
-      "ai",
-      "gaza",
-      "war",
-      "peace",
-      "uspol",
-      "geopolitics",
-      "antiwar",
-      "journalism",
-      "elections",
-      "democracynow",
-      "AmyGoodman",
-      "juangonzalez",
-      "nermeenshaikh",
-      "vsn",
-      "radio",
-      "SupportIndependentMedia",
-      "diversespectrumoftheleft",
-      "resist",
-      "news"
+      "ai"
     ],
     "labels": [
       "ai"
@@ -218,49 +199,44 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:8a057f29d7d3",
+    "id": "mastodon:ca38f18d9216",
     "kind": "article",
     "source": "mastodon",
-    "title": "Do you like sharp and crispy cursors? What a coincidence, so do we! Starting from GNOME 51 all our cursors are now rend…",
-    "url": "https://floss.social/@gnome/117292875067919020",
-    "excerpt": "Do you like sharp and crispy cursors? What a coincidence, so do we! Starting from GNOME 51 all our cursors are now rendered using SVG format, meaning no matter the resolution, the cursor will be cris…",
-    "author": "GNOME",
-    "publishedAt": "2026-09-18T16:00:39.000Z",
-    "score": 17,
+    "title": "Visualizing The ABA Problem: What crossbeam-epoch Solves",
+    "url": "https://sofiabelen.github.io/projects/visualizing-the-aba-problem",
+    "excerpt": "Visualizing lock-free concurrency in Rust: reproducing the aba problem to begin understanding crossbeam. I promise lots of diagrams!",
+    "author": "Sofía Belén López Vicens",
+    "publishedAt": "2026-09-18T20:38:33.000Z",
+    "score": 5,
     "tags": [
-      "opensource",
-      "foss",
-      "svg",
-      "freesoftware"
+      "rust",
+      "LockFree",
+      "concurrency",
+      "crossbeam",
+      "opensource"
     ],
     "labels": [
+      "rust",
       "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:e70b931d284c",
+    "id": "lobsters:6a34245d9210",
     "kind": "article",
-    "source": "mastodon",
-    "title": "I lost my $2m book deal because people mistook my African dialect for AI",
-    "url": "https://www.the-independent.com/arts-entertainment/books/features/jerry-falade-book-deal-ai-racism-b3050738.html",
-    "excerpt": "His debut novel sparked a ferocious bidding war, then questions over AI brought the deal crashing down. Jerry Falade denies using AI to write the book, and many believe that as a Black Nigerian writer, he was subjected to a level of scrutiny others might not have faced. As he prepares to publish his own account, he tells Alex Hannaford what really happened",
-    "author": "The Human Capybara",
-    "publishedAt": "2026-09-18T15:12:00.000Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "Benchmarking Wild vs Mold",
+    "url": "https://davidlattimore.github.io/posts/2026/09/18/benchmarking-wild-vs-mold.html",
+    "excerpt": "35 points · compilers, performance",
+    "author": "goldstein",
+    "publishedAt": "2026-09-18T10:25:08.333-05:00",
+    "score": 35,
     "tags": [
-      "ai",
-      "llm",
-      "racism",
-      "education",
-      "books",
-      "tech",
-      "nigeria",
-      "africa",
-      "colonialism"
+      "compilers",
+      "performance"
     ],
     "labels": [
-      "ai"
+      "performance"
     ],
     "mentionsByteveda": false
   },
@@ -281,83 +257,34 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:1ca1990f55d6",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "#FotoVorschlag (Feuer-)Hydrant » (Fire) #hydrant #firehydrant #rustic #rust #rusty #decay #beautifuldecay #urbanjungle…",
-    "url": "https://pixelfed.social/p/Jess.Stetson/1006568514642215239",
-    "excerpt": "#FotoVorschlag (Feuer-)Hydrant » (Fire) #hydrant #firehydrant #rustic #rust #rusty #decay #beautifuldecay #urbanjungle #foliage #nature #Natur #plants #plantlovers #fern #ferns #Farn #Farne #fernstod…",
-    "author": "𝙹𝚞𝚜𝚝 𝙹𝚎𝚜𝚜",
-    "publishedAt": "2026-09-18T14:23:55.000Z",
-    "score": 7,
-    "tags": [
-      "photography",
-      "decay",
-      "nature",
-      "natur",
-      "fern",
-      "plants",
-      "fotografie",
-      "rust",
-      "happiness",
-      "foliage",
-      "firehydrant",
-      "AmateurPhotography",
-      "rusty",
-      "hydrant",
-      "ferns",
-      "Farne",
-      "whimsical",
-      "positivevibes",
-      "farn",
-      "rustic",
-      "urbanjungle",
-      "FotoVorschlag",
-      "spreadlove",
-      "plantlovers",
-      "fernstodon",
-      "beautifuldecay",
-      "loveandhappiness",
-      "farnfreitag"
-    ],
-    "labels": [
-      "rust"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "mastodon:1da3b8f21a12",
-    "kind": "article",
-    "source": "mastodon",
-    "title": "I've turned off pull requests from non-members for Flask, Werkzeug, Jinja, and Click this week, and have enjoyed not wa…",
-    "url": "https://mas.to/@davidism/117292399049862157",
-    "excerpt": "I've turned off pull requests from non-members for Flask, Werkzeug, Jinja, and Click this week, and have enjoyed not waking up to a fresh wave of AI junk every morning. I think I'm going to update ou…",
-    "author": "David Lord :python:",
-    "publishedAt": "2026-09-18T13:59:35.000Z",
-    "score": 65,
-    "tags": [
-      "opensource",
-      "flask",
-      "python"
-    ],
-    "labels": [
-      "opensource",
-      "python"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "lobsters:da72af20f8df",
     "kind": "article",
     "source": "lobsters",
     "title": "Typst makes big strides",
     "url": "https://lwn.net/Articles/1092993/",
-    "excerpt": "34 points · a11y, programming",
+    "excerpt": "75 points · a11y, programming",
     "author": "isuffix",
     "publishedAt": "2026-09-18T08:14:17.568-05:00",
-    "score": 34,
+    "score": 75,
     "tags": [
       "a11y",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:f430759e101d",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/e1xglz/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-09-18T03:15:23.174-05:00",
+    "score": 20,
+    "tags": [
+      "ask",
       "programming"
     ],
     "labels": [],
@@ -369,10 +296,10 @@
     "source": "lobsters",
     "title": "Be alert: targeted attacks on prominent Rustaceans",
     "url": "https://blog.rust-lang.org/2026/09/17/targeted-attacks/",
-    "excerpt": "80 points · rust, security",
+    "excerpt": "92 points · rust, security",
     "author": "itamarst",
     "publishedAt": "2026-09-17T13:10:52.241-05:00",
-    "score": 80,
+    "score": 92,
     "tags": [
       "rust",
       "security"
@@ -389,10 +316,10 @@
     "source": "lobsters",
     "title": "Labeled matches: why is this not in every regex engine?",
     "url": "https://iev.ee/blog/categorize-everything-all-at-once/",
-    "excerpt": "24 points · performance, rust",
+    "excerpt": "27 points · performance, rust",
     "author": "iev",
     "publishedAt": "2026-09-17T11:44:39.414-05:00",
-    "score": 24,
+    "score": 27,
     "tags": [
       "performance",
       "rust"
@@ -409,10 +336,10 @@
     "source": "lobsters",
     "title": "The Golden Spike, and Resurrecting the Vale(n) Programming Language",
     "url": "https://verdagon.dev/blog/golden-spike-reviving-vale-valen",
-    "excerpt": "57 points · plt, rust",
+    "excerpt": "60 points · plt, rust",
     "author": "Verdagon",
     "publishedAt": "2026-09-17T10:10:44.531-05:00",
-    "score": 57,
+    "score": 60,
     "tags": [
       "plt",
       "rust"
@@ -447,7 +374,7 @@
     "excerpt": "Most of us have heard the term performance testing, whether before releasing a big new feature,...",
     "author": "Daniel Balcarek",
     "publishedAt": "2026-09-17T06:56:32Z",
-    "score": 43,
+    "score": 53,
     "tags": [
       "testing",
       "performance",
@@ -482,10 +409,10 @@
     "source": "lobsters",
     "title": "Why .tar.gz files can't be combined with cat",
     "url": "https://alexwlchan.net/2026/cat-confusion/",
-    "excerpt": "27 points · programming",
+    "excerpt": "28 points · programming",
     "author": "gavinmorrow",
     "publishedAt": "2026-09-16T17:55:11.955-05:00",
-    "score": 27,
+    "score": 28,
     "tags": [
       "programming"
     ],
@@ -522,7 +449,7 @@
     "excerpt": "A few months ago, I noticed an issue with the internal structure of the new Go map—specifically...",
     "author": "Nazar Boyko",
     "publishedAt": "2026-09-16T14:47:35Z",
-    "score": 26,
+    "score": 27,
     "tags": [
       "go",
       "performance",
@@ -597,10 +524,10 @@
     "source": "lobsters",
     "title": "Some things Veloren does differently",
     "url": "https://blog.jsbarretto.com/post/veloren",
-    "excerpt": "72 points · games, graphics, rust",
+    "excerpt": "73 points · games, graphics, rust",
     "author": "LesleyLai",
     "publishedAt": "2026-09-15T22:47:55.703-05:00",
-    "score": 72,
+    "score": 73,
     "tags": [
       "games",
       "graphics",
@@ -617,10 +544,10 @@
     "source": "lobsters",
     "title": "Ubuntu 26.10 completes transition to Rust-based coreutils",
     "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
-    "excerpt": "52 points · rust",
+    "excerpt": "53 points · rust",
     "author": "rajtilakjee",
     "publishedAt": "2026-09-15T22:39:05.470-05:00",
-    "score": 52,
+    "score": 53,
     "tags": [
       "rust"
     ],
@@ -708,7 +635,7 @@
     "excerpt": "Over the past couple of months, I've read a lot of articles about the consequences of AI dependency...",
     "author": "Elmar Chavez",
     "publishedAt": "2026-09-15T14:45:01Z",
-    "score": 68,
+    "score": 69,
     "tags": [
       "software",
       "ai",
@@ -729,7 +656,7 @@
     "excerpt": "On September 15, India — along with Sri Lanka and Tanzania — celebrates Engineer's Day, marking the...",
     "author": "Dhruv Jani",
     "publishedAt": "2026-09-15T10:44:53Z",
-    "score": 84,
+    "score": 95,
     "tags": [
       "ai",
       "discuss",
@@ -784,7 +711,7 @@
     "excerpt": "I've started noticing a look on people's faces. It's in standups, in the half-second-too-fast \"yeah,...",
     "author": "James Anderson",
     "publishedAt": "2026-09-15T04:29:39Z",
-    "score": 121,
+    "score": 125,
     "tags": [
       "mentalhealth",
       "career",
@@ -797,6 +724,23 @@
     "mentionsByteveda": false
   },
   {
+    "id": "lobsters:6bdf984fdebf",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "GDScript: The Good, Bad, and Ugly Parts",
+    "url": "https://azhdarchid.com/gdscript-good-bad-ugly/",
+    "excerpt": "32 points · games, programming",
+    "author": "misty",
+    "publishedAt": "2026-09-14T19:29:04.599-05:00",
+    "score": 32,
+    "tags": [
+      "games",
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -804,8 +748,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-09-17T13:58:56Z",
-    "score": 481369,
+    "publishedAt": "2026-09-18T19:39:43Z",
+    "score": 481466,
     "tags": [
       "Python",
       "api",
@@ -837,7 +781,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-15T15:54:40Z",
-    "score": 397107,
+    "score": 397165,
     "tags": [
       "Python",
       "books",
@@ -860,7 +804,7 @@
     "excerpt": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
     "author": "donnemartin",
     "publishedAt": "2026-09-15T01:10:09Z",
-    "score": 370627,
+    "score": 370686,
     "tags": [
       "Python",
       "design",
@@ -891,8 +835,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
-    "publishedAt": "2026-09-15T16:48:04Z",
-    "score": 321475,
+    "publishedAt": "2026-09-18T22:11:03Z",
+    "score": 321590,
     "tags": [
       "Python",
       "awesome",
@@ -916,7 +860,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-14T07:10:04Z",
-    "score": 283746,
+    "score": 283796,
     "tags": [
       "Python",
       "beginner-project",
@@ -943,8 +887,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-18T16:20:41Z",
-    "score": 246821,
+    "publishedAt": "2026-09-19T04:31:03Z",
+    "score": 246960,
     "tags": [
       "Python",
       "ai",
@@ -975,8 +919,8 @@
     "url": "https://github.com/TheAlgorithms/Python",
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
-    "publishedAt": "2026-09-18T11:54:58Z",
-    "score": 224718,
+    "publishedAt": "2026-09-18T16:52:12Z",
+    "score": 224749,
     "tags": [
       "Python",
       "algorithm",
@@ -1008,7 +952,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-09-16T07:48:51Z",
-    "score": 191932,
+    "score": 192018,
     "tags": [
       "Python",
       "cli",
@@ -1033,7 +977,7 @@
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
     "publishedAt": "2026-09-18T13:27:41Z",
-    "score": 145294,
+    "score": 145351,
     "tags": [
       "Rust",
       "clash",
@@ -1059,7 +1003,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-09-17T18:35:01Z",
-    "score": 133548,
+    "score": 133590,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1097,8 +1041,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-09-18T05:08:46Z",
-    "score": 125111,
+    "publishedAt": "2026-09-19T04:26:50Z",
+    "score": 125190,
     "tags": [
       "Rust"
     ],
@@ -1115,8 +1059,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-18T16:19:58Z",
-    "score": 123931,
+    "publishedAt": "2026-09-19T03:20:23Z",
+    "score": 123958,
     "tags": [
       "Rust",
       "android",
@@ -1152,8 +1096,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-18T15:55:32Z",
-    "score": 118925,
+    "publishedAt": "2026-09-19T04:23:56Z",
+    "score": 118942,
     "tags": [
       "Rust",
       "compiler",
@@ -1173,8 +1117,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-18T11:39:11Z",
-    "score": 111162,
+    "publishedAt": "2026-09-18T21:43:22Z",
+    "score": 111169,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1200,7 +1144,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-17T10:35:32Z",
-    "score": 108462,
+    "score": 108467,
     "tags": [
       "Rust",
       "deno",
@@ -1222,8 +1166,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-18T16:20:32Z",
-    "score": 95980,
+    "publishedAt": "2026-09-19T04:17:02Z",
+    "score": 95984,
     "tags": [
       "Rust",
       "bun",
@@ -1255,7 +1199,7 @@
     "excerpt": "Design patterns implemented in Java",
     "author": "iluwatar",
     "publishedAt": "2026-09-13T06:53:54Z",
-    "score": 94704,
+    "score": 94706,
     "tags": [
       "Java",
       "awesome-list",
@@ -1280,8 +1224,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-18T16:18:19Z",
-    "score": 92496,
+    "publishedAt": "2026-09-18T23:42:22Z",
+    "score": 92526,
     "tags": [
       "Java",
       "docker",
