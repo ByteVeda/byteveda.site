@@ -17,6 +17,7 @@
     "drizzle": "node --env-file-if-exists=.env.local --env-file-if-exists=.env node_modules/drizzle-kit/bin.cjs",
     "db:generate": "pnpm drizzle generate",
     "db:migrate": "pnpm drizzle migrate",
+    "db:deploy": "node --import tsx scripts/migrate.ts",
     "db:studio": "pnpm drizzle studio",
     "import:posts": "node --env-file-if-exists=.env.local --env-file-if-exists=.env --import tsx scripts/import-posts.ts"
   },
