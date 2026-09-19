@@ -1,6 +1,7 @@
-import { MobileMenu, ThemeToggle, Wordmark } from "@byteveda/ui";
+import { MobileMenu, ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 
+import { Wordmark } from "@/components/layout/wordmark";
 import { SampleButton } from "@/features/sample/sample-button";
 import { nav } from "@/lib/site";
 
@@ -8,7 +9,7 @@ export function Navbar() {
   return (
     <header className="nav" id="nav">
       <div className="wrap nav-inner">
-        <Wordmark href="/" label="academy" />
+        <Wordmark href="/" />
 
         <nav className="nav-links" aria-label="Primary">
           {nav.map((item) => (
@@ -21,11 +22,7 @@ export function Navbar() {
         <div className="nav-right">
           <ThemeToggle />
           <SampleButton />
-          <MobileMenu
-            items={nav}
-            brand={<Wordmark href="/" label="academy" />}
-            action={<SampleButton />}
-          />
+          <MobileMenu items={nav} brand={<Wordmark href="/" />} action={<SampleButton />} />
         </div>
       </div>
     </header>

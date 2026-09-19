@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 
 import { Footer, Navbar } from "@/components/layout";
+import { Cta } from "@/components/sections";
 import { SampleProvider } from "@/features/sample/store";
 import { site } from "@/lib/site";
 import "./globals.css";
@@ -42,8 +43,11 @@ const plexMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  // The tab reads as the name and nothing else. A tagline appended here was
+  // the first thing truncated away in a crowded tab strip anyway, and the
+  // description below is where a crawler looks for it.
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: site.name,
     template: `%s — ${site.name}`,
   },
   description: site.description,
@@ -84,7 +88,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f6f4ee" },
-    { media: "(prefers-color-scheme: dark)", color: "#08080c" },
+    { media: "(prefers-color-scheme: dark)", color: "#0d0e0d" },
   ],
 };
 
@@ -109,6 +113,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <SampleProvider>
             <Navbar />
             <main className="flex-1">{children}</main>
+            <Cta />
             <Footer />
           </SampleProvider>
         </ThemeProvider>
