@@ -44,6 +44,10 @@ export const OUTBOUND_KINDS = [
 ] as const;
 export type OutboundKind = (typeof OUTBOUND_KINDS)[number];
 
+/** What a free sample was asked for: a catalogue chapter, or a described one. */
+export const SAMPLE_KINDS = ["chapter", "custom"] as const;
+export type SampleKind = (typeof SAMPLE_KINDS)[number];
+
 export const ECOSYSTEM_LABELS: Record<Ecosystem, string> = {
   pypi: "PyPI",
   npm: "npm",

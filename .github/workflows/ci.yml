@@ -106,7 +106,7 @@ jobs:
           packages=$(pnpm turbo run test --affected --dry=json \
             | jq -r '[.tasks[] | select(.command != "<NONEXISTENT>") | .package] | join(" ")')
           echo "Affected test packages: ${packages:-none}"
-          if printf '%s' "$packages" | grep -qE '@byteveda/(main|docs|flexiq-site)'; then
+          if printf '%s' "$packages" | grep -qE '@byteveda/(main|docs|flexiq-site|academy)'; then
             echo "browsers=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -140,5 +140,6 @@ jobs:
             apps/flexiq/playwright-report
             apps/main/playwright-report
             apps/docs/playwright-report
+            apps/academy/playwright-report
           if-no-files-found: ignore
           retention-days: 14

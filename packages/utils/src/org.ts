@@ -12,4 +12,7 @@ export const MAIN_URL = `https://${MAIN_DOMAIN}`;
 export const DOCS_DOMAIN = "docs.byteveda.org";
 export const DOCS_URL = `https://${DOCS_DOMAIN}`;
 
-export const CONTACT_EMAIL = `hello@${MAIN_DOMAIN}`;
+export const ACADEMY_DOMAIN = "academy.byteveda.org";
+export const ACADEMY_URL = `https://${ACADEMY_DOMAIN}`;
+
+export const CONTACT_EMAIL = `support@${MAIN_DOMAIN}`;

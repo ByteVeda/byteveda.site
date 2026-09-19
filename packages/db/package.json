@@ -8,7 +8,8 @@
     ".": "./src/index.ts",
     "./constants": "./src/constants.ts",
     "./schema": "./src/schema/index.ts",
-    "./queries/posts": "./src/queries/posts.ts"
+    "./queries/posts": "./src/queries/posts.ts",
+    "./queries/academy": "./src/queries/academy.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",

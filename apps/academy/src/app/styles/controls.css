@@ -1,0 +1,317 @@
+/* ============================================================
+   Form controls.
+
+   @byteveda/ui ships buttons, badges and the nav shell, but nothing you can
+   type into — this app is the first surface in the monorepo that asks the
+   visitor for anything. These are the primitives `src/components/ui/*` render;
+   nothing here is page-specific, so they are the promotion candidates if a
+   second app ever needs a form.
+
+   Sizing note: 44px minimums throughout rather than only under
+   `pointer: coarse`. The order flow is one long column of controls on a phone,
+   and the shared mobile audit fails anything smaller.
+   ============================================================ */
+
+@layer components {
+  /* ---------- buttons ---------- */
+  /* @byteveda/ui styles `.btn` but has never had a disabled one — this app is
+     full of them (an order with no email, a request with no chapter). */
+  .btn:disabled,
+  .btn:disabled:hover {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* The row action in a table of thirty-six: present, not shouting. The one
+     primary button on the page is the request itself.
+
+     Fixed width because the label changes with the state of the *table*, not
+     of the row — Pick / Swap / Picked ✓. Left to size themselves the buttons
+     came out three different widths, and the widest one dragged every column
+     in an auto-layout table sideways the moment a chapter was chosen. */
+  .btn-add {
+    width: 7.25rem;
+    justify-content: center;
+  }
+
+  .btn-add[aria-pressed="true"] {
+    color: var(--accent);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+
+  /* ---------- field ---------- */
+  .field {
+    display: grid;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .field > label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--text-dim);
+  }
+
+  .field-hint {
+    font-size: 0.74rem;
+    color: var(--text-faint);
+  }
+
+  /* ---------- text / number input ---------- */
+  .input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    font: inherit;
+    font-size: 0.92rem;
+    color: var(--text);
+    caret-color: var(--accent);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    transition:
+      border-color 0.2s var(--ease),
+      box-shadow 0.2s var(--ease);
+  }
+
+  .input:hover {
+    border-color: var(--line-strong);
+  }
+
+  .input:focus-visible {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .input::placeholder {
+    color: var(--text-faint);
+  }
+
+  .input[aria-invalid="true"] {
+    border-color: var(--danger, #d4513f);
+  }
+
+  /* ---------- select ---------- */
+  /* A listbox rather than a native <select>: the option popup of a native one
+     is drawn by the OS, ignores the theme, and renders unreadable on a dark
+     background in every browser we checked. */
+  .select {
+    position: relative;
+  }
+
+  .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    font: inherit;
+    font-size: 0.92rem;
+    text-align: left;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    cursor: pointer;
+    transition:
+      border-color 0.2s var(--ease),
+      box-shadow 0.2s var(--ease);
+  }
+
+  .select-btn:hover {
+    border-color: var(--line-strong);
+  }
+
+  .select-btn:focus-visible,
+  .select-btn[aria-expanded="true"] {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .select-btn .chev {
+    flex: none;
+    color: var(--text-faint);
+    transition: transform 0.2s var(--ease);
+  }
+
+  .select-btn[aria-expanded="true"] .chev {
+    transform: rotate(180deg);
+  }
+
+  .select-list {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    max-height: 264px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    box-shadow: var(--shadow);
+  }
+
+  .select-opt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 9px 11px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+
+  .select-opt[data-active="true"] {
+    background: var(--surface-3);
+    color: var(--text);
+  }
+
+  .select-opt[aria-selected="true"] {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ---------- segmented control ---------- */
+  .seg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .seg-opt {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 0.86rem;
+    font-weight: 500;
+    color: var(--text-dim);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: var(--r-pill);
+    cursor: pointer;
+    transition: all 0.2s var(--ease);
+  }
+
+  /* Transparent, not hidden: the native radio is what gives the group its
+     arrow-key and roving-focus behaviour, and stretching it over the whole
+     pill keeps it the thing a pointer actually lands on. */
+  .seg-opt input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .seg-opt span {
+    pointer-events: none;
+  }
+
+  .seg-opt:hover {
+    border-color: var(--line-strong);
+    color: var(--text);
+  }
+
+  .seg-opt:has(input:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .seg-opt:has(input:checked) {
+    background: var(--accent);
+    border-color: transparent;
+    color: var(--accent-ink);
+    font-weight: 600;
+  }
+
+  /* ---------- table ---------- */
+  /* `position` is load-bearing: the action column's visually-hidden header is
+     absolutely positioned, and without a positioned ancestor its containing
+     block is the page — so it escapes this scroller and widens the document
+     by the full width of the table on a phone. */
+  .table-scroll {
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    min-width: 46rem;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+
+  .table th {
+    padding: 12px 14px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--text-faint);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .table td {
+    padding: 14px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .table tbody tr {
+    transition: background 0.2s var(--ease);
+  }
+
+  .table tbody tr:hover {
+    background: var(--surface);
+  }
+
+  /* The price column carries two lines: what the full set costs, struck
+     through, and what the sample costs. Fixed so the struck figure cannot
+     shuffle the columns either. */
+  .price {
+    width: 9rem;
+    text-align: right;
+  }
+
+  .price-was {
+    display: block;
+    color: var(--text-faint);
+    text-decoration: line-through;
+  }
+
+  .price-free {
+    display: block;
+    margin-top: 0.15rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+}
