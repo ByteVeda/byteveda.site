@@ -32,7 +32,9 @@
         "PEPY_API_KEY",
         "RESEND_API_KEY",
         "RESEND_WEBHOOK_SECRET",
-        "REDIS_URL"
+        "REDIS_URL",
+        "ACADEMY_ORDER_FROM",
+        "ACADEMY_ORDER_INBOX"
       ]
     },
     "typecheck": {},
