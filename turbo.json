@@ -1,7 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
-  "globalDependencies": ["pnpm-workspace.yaml", "packages/config/**"],
+  // `packages/db/migrations/**` is here because the build of every database app
+  // now applies them (see their `build` scripts). A cached build is a build that
+  // did not run, so a new migration has to be a new hash — otherwise the release
+  // that carries it can be served from a cache taken before it existed, and the
+  // migration never runs anywhere.
+  "globalDependencies": ["pnpm-workspace.yaml", "packages/config/**", "packages/db/migrations/**"],
   "tasks": {
     "build": {
       "outputs": [".next/**", "!.next/cache/**", "out/**"],
@@ -10,11 +15,20 @@
       // build. Strict env mode would otherwise strip both.
       // FlexiQ prerenders its blog from Postgres, so the connection is part of
       // what the output depends on — a different database is a different build.
+      // `DATABASE_MIGRATE*` join them because the build migrates: a build that
+      // pointed the migration somewhere else, or skipped it, is not the same
+      // build. VERCEL_ENV is how the migrate step tells a production deploy from
+      // a preview one, and a preview build must not replay a production build's
+      // cache entry.
       "env": [
         "NEXT_PUBLIC_VITALS_ENDPOINT",
         "NEXT_PUBLIC_VERCEL_ENV",
         "DATABASE_URL",
-        "DATABASE_SSL"
+        "DATABASE_SSL",
+        "DATABASE_MIGRATE",
+        "DATABASE_MIGRATE_URL",
+        "VERCEL",
+        "VERCEL_ENV"
       ],
       // Read per request, never during the build, so they cannot change the
       // output and do not belong in the hash above — rotating a secret should
