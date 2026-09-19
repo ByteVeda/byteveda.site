@@ -1,4 +1,4 @@
-import { Closing, Delivery, Hero, Promises, Strip } from "@/components/sections";
+import { Delivery, Hero, Strip } from "@/components/sections";
 import { CustomSection } from "@/features/custom/custom-section";
 import { InventorySection } from "@/features/inventory/inventory-section";
 
@@ -14,11 +14,9 @@ export default function Home() {
     <>
       <Hero />
       <Strip />
-      <Promises />
       <InventorySection />
       <CustomSection />
       <Delivery />
-      <Closing />
     </>
   );
 }
