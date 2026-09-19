@@ -2,8 +2,6 @@ import { ACADEMY_DOMAIN, ACADEMY_URL, CONTACT_EMAIL, MAIN_URL, ORG } from "@byte
 
 export const site = {
   name: "ByteVeda Academy",
-  /** The wordmark reads "academy" next to the ByteVeda bracket. */
-  wordmark: "academy",
   domain: ACADEMY_DOMAIN,
   url: ACADEMY_URL,
   tagline: "Chapter-wise assignments, emailed in 24 hours",

@@ -46,6 +46,21 @@
   border-top: 1px solid var(--line);
 }
 
+/* ---------- wordmark ---------- */
+
+/* Text, no leaf: the shared lockup is ByteVeda's, and this header has to name
+   the surface as well as the company. Second word in the accent, which is the
+   only place on the page the accent is used decoratively. */
+.brand-text {
+  gap: 0.34em;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.brand-text span {
+  color: var(--accent);
+}
+
 /* The nav is sticky, so an in-page jump has to clear it. */
 [id="top"],
 [id="inventory"],
