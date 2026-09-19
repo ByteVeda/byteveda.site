@@ -15,6 +15,7 @@
 import { randomBytes } from "node:crypto";
 import { isConfigured as dbConfigured } from "@byteveda/db";
 import { claimSample, hasClaimedSample, releaseSample } from "@byteveda/db/queries/academy";
+import { after } from "next/server";
 import { Resend } from "resend";
 
 import type { Email } from "@/lib/email/templates";
@@ -50,6 +51,54 @@ const OFFLINE = {
 const SPENT =
   "That address has already had its free sample. Reply to the email we sent if you need another chapter.";
 
+/**
+ * How long each step of a request took, as one line.
+ *
+ * A request that answers slowly has three places to be slow in — two round
+ * trips to Postgres and one to Resend — and from outside they are one number.
+ * Marks are deltas rather than totals so the line names the step to blame
+ * rather than leaving it to be subtracted.
+ */
+function stopwatch() {
+  const marks: string[] = [];
+  let last = performance.now();
+
+  return {
+    mark(step: string) {
+      const now = performance.now();
+      marks.push(`${step} ${Math.round(now - last)}ms`);
+      last = now;
+    },
+    summary(): string {
+      return marks.join(", ");
+    },
+  };
+}
+
+/**
+ * What actually went wrong, down the chain of causes.
+ *
+ * `%s` on the error drizzle throws prints the query and then `[cause]: [Error]`
+ * — the wrapper, and a promise that the reason exists somewhere below it. That
+ * cost an incident: a certificate Node would not verify and a table that did not
+ * exist both read as "could not reach the database".
+ */
+function describe(error: unknown, depth = 4): string {
+  const parts: string[] = [];
+
+  for (let cause = error, step = 0; cause && step < depth; step++) {
+    if (typeof cause !== "object") {
+      parts.push(String(cause));
+      break;
+    }
+    const { message, code } = cause as { message?: string; code?: string };
+    if (message) parts.push(code ? `${message} (${code})` : message);
+    cause = (cause as { cause?: unknown }).cause;
+  }
+
+  return parts.join(" <- ") || String(error);
+}
+
 async function send(input: {
   to: string;
   email: Email;
@@ -79,6 +128,7 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
 
   const { email, item, line } = order;
   const reference = newReference();
+  const elapsed = stopwatch();
 
   try {
     // Asked before claiming so the common case gets a sentence rather than a
@@ -86,6 +136,7 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
     if (await hasClaimedSample(email)) {
       return { ok: false, status: 409, reason: SPENT };
     }
+    elapsed.mark("check");
 
     const claim = await claimSample({
       email,
@@ -97,6 +148,7 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
       request: item.kind === "custom" ? { ...item.request } : null,
       listValue: line.price,
     });
+    elapsed.mark("claim");
 
     if (!claim.ok) {
       // Lost the race against a request from the same address.
@@ -105,7 +157,7 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
   } catch (cause) {
     // A live database that cannot be reached is an incident, and the cap
     // cannot be enforced without it. Refuse rather than give a sheet away.
-    console.error("[samples] could not reach the database: %s", cause);
+    console.error(`[samples] could not reach the database: ${describe(cause)}`);
     return OFFLINE;
   }
 
@@ -115,6 +167,7 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
     email: orderNotificationEmail({ reference, email, line }),
     replyTo: email,
   });
+  elapsed.mark("notify");
 
   if (!notified.ok) {
     console.error("[samples] %s could not reach the inbox: %s", reference, notified.error);
@@ -129,16 +182,22 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
     };
   }
 
-  const receipted = await send({
-    to: email,
-    email: orderReceivedEmail({ reference, line }),
-    replyTo: env.orderInbox(),
+  // The receipt is not part of the answer. Its failure is already logged rather
+  // than surfaced — the request is filed and will be delivered either way — so
+  // waiting for it only holds the visitor on a spinner for the length of a
+  // second round trip to Resend. `after` sends it once the response is gone.
+  after(async () => {
+    const receipted = await send({
+      to: email,
+      email: orderReceivedEmail({ reference, line }),
+      replyTo: env.orderInbox(),
+    });
+
+    if (!receipted.ok) {
+      console.error("[samples] %s receipt failed: %s", reference, receipted.error);
+    }
   });
 
-  if (!receipted.ok) {
-    // Logged, not surfaced: the request is filed and will be delivered.
-    console.error("[samples] %s receipt failed: %s", reference, receipted.error);
-  }
-
+  console.log(`[samples] ${reference} filed — ${elapsed.summary()}`);
   return { ok: true, reference };
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@byteveda/analytics/vercel";
 import { Hourglass } from "lucide-react";
 import Link from "next/link";
 import { useId, useState } from "react";
@@ -35,6 +36,12 @@ export function SamplePage() {
     setSending(true);
     setError(null);
 
+    // Measured here rather than on the server, because this is the wait the
+    // person actually sat through: their network, the cold start and both round
+    // trips the route makes, which the function's own timing cannot see.
+    const started = performance.now();
+    const took = () => Math.round(performance.now() - started);
+
     try {
       const response = await fetch("/api/orders", {
         method: "POST",
@@ -47,13 +54,18 @@ export function SamplePage() {
       } | null;
 
       if (!response.ok || !payload?.reference) {
+        track("sample_failed", { kind: item.kind, status: response.status, ms: took() });
         setError(payload?.error ?? "We could not send that. Try again in a minute.");
         return;
       }
 
+      track("sample_requested", { kind: item.kind, ms: took() });
       setPlaced({ reference: payload.reference, email });
       clear();
     } catch {
+      // No status: the request never came back, so there is nothing to report
+      // but how long it took to give up.
+      track("sample_failed", { kind: item.kind, status: 0, ms: took() });
       setError("That did not reach us. Check your connection and try again.");
     } finally {
       setSending(false);
