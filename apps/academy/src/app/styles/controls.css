@@ -14,6 +14,13 @@
 
 @layer components {
   /* ---------- buttons ---------- */
+  /* The shared button is a pill. Every field on this page is a round-rect at
+     `--r-sm`, and the design file squares the buttons off to match — on a page
+     that is mostly a table and a form, the pill was the odd shape out. */
+  .btn {
+    border-radius: var(--r-sm);
+  }
+
   /* @byteveda/ui styles `.btn` but has never had a disabled one — this app is
      full of them (an order with no email, a request with no chapter). */
   .btn:disabled,
