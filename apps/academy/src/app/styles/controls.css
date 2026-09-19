@@ -25,7 +25,17 @@
   }
 
   /* The row action in a table of thirty-six: present, not shouting. The one
-     primary button on the page is the order itself. */
+     primary button on the page is the request itself.
+
+     Fixed width because the label changes with the state of the *table*, not
+     of the row — Pick / Swap / Picked ✓. Left to size themselves the buttons
+     came out three different widths, and the widest one dragged every column
+     in an auto-layout table sideways the moment a chapter was chosen. */
+  .btn-add {
+    width: 7.25rem;
+    justify-content: center;
+  }
+
   .btn-add[aria-pressed="true"] {
     color: var(--accent);
     border-color: var(--accent-line);
@@ -273,6 +283,31 @@
 
   .table tbody tr:hover {
     background: var(--surface);
+  }
+
+  /* The price column carries two lines: what the full set costs, struck
+     through, and what the sample costs. Fixed so the struck figure cannot
+     shuffle the columns either. */
+  .price {
+    width: 9rem;
+    text-align: right;
+  }
+
+  .price-was {
+    display: block;
+    color: var(--text-faint);
+    text-decoration: line-through;
+  }
+
+  .price-free {
+    display: block;
+    margin-top: 0.15rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
   }
 
   .num {

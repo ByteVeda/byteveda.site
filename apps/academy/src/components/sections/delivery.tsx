@@ -22,13 +22,15 @@ const STEPS = [
 export function Delivery() {
   return (
     <section className="cells reveal" id="delivery">
-      {STEPS.map((step) => (
-        <div className="cell" key={step.index}>
-          <p className="step-index">{step.index}</p>
-          <h3>{step.title}</h3>
-          <p>{step.body}</p>
-        </div>
-      ))}
+      <div className="band-inner">
+        {STEPS.map((step) => (
+          <div className="cell" key={step.index}>
+            <p className="step-index">{step.index}</p>
+            <h3>{step.title}</h3>
+            <p>{step.body}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

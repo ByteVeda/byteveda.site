@@ -1,16 +1,21 @@
 /**
- * What an order is, on both sides of the wire.
+ * What a sample request is, on both sides of the wire.
  *
  * The browser sends *what was asked for* — a catalogue id, or the parameters of
  * a made-to-order request — and never a price. Every rupee is recomputed here
  * from the same pure functions the quote panel uses, so a tampered payload
- * cannot buy a chapter pack for one rupee and there is no second pricing rule to
- * keep in sync.
+ * cannot buy a chapter pack for one rupee and there is no second pricing rule
+ * to keep in sync.
  *
- * Nothing is charged yet: today the request buys a free sample, and only the
- * team's work order prints the figures. Pricing stays on this side of the wire
- * regardless — it is the rule that has to be right on the day payment opens, not
- * something to wire up then.
+ * Nothing is charged yet: the request buys one free sample, and only the team's
+ * work order prints the figure. Pricing stays on this side of the wire
+ * regardless — it is the rule that has to be right on the day payment opens,
+ * not something to wire up then.
+ *
+ * One line, not a list. A sample is free, which makes the address the whole of
+ * the price, which makes "how many" a policy rather than a quantity. The page
+ * is a single-select and this is the copy of that rule a POST cannot get
+ * around.
  */
 
 import { type Chapter, chapters, describeChapter, describeContents } from "@/lib/inventory";
@@ -29,33 +34,23 @@ import {
 /** Same shape the admin console accepts; deliberately stricter than the RFC. */
 const EMAIL_SHAPE = /^[^@\s]+@[^@\s.]+\.[^@\s]+$/;
 
-/** One order is one email; nobody needs more lines than this in a single send. */
-export const MAX_ITEMS = 50;
-
 export type CartItem =
   | { readonly kind: "chapter"; readonly chapterId: string }
   | { readonly kind: "custom"; readonly request: CustomRequest };
 
-/** A cart entry plus the key React and the cart itself dedupe on. */
-export type CartEntry = CartItem & { readonly key: string };
-
 export type OrderLine = {
   readonly title: string;
   readonly meta: string;
+  /** What the full set would cost. Nothing is charged for the sample. */
   readonly price: number;
   /** Someone has to sit down and set this one before it can ship. */
   readonly madeToOrder: boolean;
 };
 
-export type OrderRequest = {
-  readonly email: string;
-  readonly items: readonly CartItem[];
-};
-
 export type ResolvedOrder = {
   readonly email: string;
-  readonly lines: readonly OrderLine[];
-  readonly total: number;
+  readonly item: CartItem;
+  readonly line: OrderLine;
 };
 
 export type OrderValidation =
@@ -95,10 +90,6 @@ export function resolveLine(item: CartItem): OrderLine | null {
     return chapter ? chapterLine(chapter) : null;
   }
   return customLine(item.request);
-}
-
-export function orderTotal(lines: readonly OrderLine[]): number {
-  return lines.reduce((sum, line) => sum + line.price, 0);
 }
 
 export function isValidEmail(value: string): boolean {
@@ -145,21 +136,21 @@ export type ItemParse =
   | { readonly ok: false; readonly reason: string };
 
 /**
- * Reads one untrusted cart item.
+ * Reads one untrusted item.
  *
- * Shared by the route handler and the cart's own restore-from-storage path:
+ * Shared by the route handler and the page's own restore-from-storage path:
  * `sessionStorage` is as much outside this program as a POST body is, and
  * whatever wrote it may have been an older build.
  */
 export function parseCartItem(value: unknown): ItemParse {
   if (typeof value !== "object" || value === null) {
-    return { ok: false, reason: "One of the items is not readable." };
+    return { ok: false, reason: "That item is not readable." };
   }
   const item = value as Record<string, unknown>;
 
   if (item.kind === "chapter") {
     if (typeof item.chapterId !== "string") {
-      return { ok: false, reason: "One of the items is not readable." };
+      return { ok: false, reason: "That item is not readable." };
     }
     if (!findChapter(item.chapterId)) {
       return { ok: false, reason: "That chapter is no longer in the inventory." };
@@ -175,11 +166,11 @@ export function parseCartItem(value: unknown): ItemParse {
     return { ok: true, item: { kind: "custom", request } };
   }
 
-  return { ok: false, reason: "One of the items is not readable." };
+  return { ok: false, reason: "That item is not readable." };
 }
 
 /**
- * Turns an untrusted JSON body into a priced order, or says why it cannot.
+ * Turns an untrusted JSON body into one priced line, or says why it cannot.
  * Pure — the route handler adds no rules of its own.
  */
 export function validateOrder(payload: unknown): OrderValidation {
@@ -192,21 +183,17 @@ export function validateOrder(payload: unknown): OrderValidation {
     return { ok: false, reason: "A delivery email address is required." };
   }
   if (!Array.isArray(body.items) || body.items.length === 0) {
-    return { ok: false, reason: "The order has nothing in it." };
+    return { ok: false, reason: "Nothing was picked." };
   }
-  if (body.items.length > MAX_ITEMS) {
-    return { ok: false, reason: `An order can hold at most ${MAX_ITEMS} items.` };
-  }
-
-  const lines: OrderLine[] = [];
-  for (const raw of body.items) {
-    const parsed = parseCartItem(raw);
-    if (!parsed.ok) return { ok: false, reason: parsed.reason };
-
-    const line = resolveLine(parsed.item);
-    if (!line) return { ok: false, reason: "That chapter is no longer in the inventory." };
-    lines.push(line);
+  if (body.items.length > 1) {
+    return { ok: false, reason: "One free sample per email address." };
   }
 
-  return { ok: true, email: body.email.trim(), lines, total: orderTotal(lines) };
+  const parsed = parseCartItem(body.items[0]);
+  if (!parsed.ok) return { ok: false, reason: parsed.reason };
+
+  const line = resolveLine(parsed.item);
+  if (!line) return { ok: false, reason: "That chapter is no longer in the inventory." };
+
+  return { ok: true, email: body.email.trim(), item: parsed.item, line };
 }

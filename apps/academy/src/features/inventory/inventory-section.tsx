@@ -44,7 +44,7 @@ const SUBJECTS = [
  * adding it. Cards would make that a scavenger hunt.
  */
 export function InventorySection() {
-  const { holds, toggleChapter } = useSamples();
+  const { item, holds, pickChapter } = useSamples();
   const [filter, setFilter] = useState<ChapterFilter>(NO_FILTER);
   const [limit, setLimit] = useState(PAGE);
 
@@ -132,15 +132,19 @@ export function InventorySection() {
               <tr>
                 <th>Chapter</th>
                 <th>Contents</th>
-                <th style={{ textAlign: "right" }}>Price</th>
+                <th className="price">Sample</th>
                 <th>
-                  <span className="sr-only">Add to your sample request</span>
+                  <span className="sr-only">Pick as your free sample</span>
                 </th>
               </tr>
             </thead>
             <tbody>
               {visible.map((chapter) => {
                 const added = holds(chapter.id);
+                // One sample per address, so every other row offers a swap
+                // rather than a second pick. Saying so on the button is the
+                // only place the rule is visible before someone tries it.
+                const taken = item !== null && !added;
                 return (
                   <tr key={chapter.id}>
                     <td>
@@ -153,17 +157,28 @@ export function InventorySection() {
                     <td style={{ color: "var(--text-dim)", whiteSpace: "nowrap" }}>
                       {describeContents(chapter)}
                     </td>
-                    <td className="num" style={{ textAlign: "right", fontWeight: 600 }}>
-                      ₹{chapter.price}
+                    <td className="num price">
+                      <s className="price-was">₹{chapter.price}</s>
+                      <span className="price-free">Free</span>
                     </td>
                     <td style={{ textAlign: "right" }}>
                       <button
                         type="button"
                         className="btn btn-ghost btn-add"
-                        onClick={() => toggleChapter(chapter.id)}
+                        onClick={() => pickChapter(chapter.id)}
                         aria-pressed={added}
+                        // Six buttons reading "Pick" tell a screen reader
+                        // nothing. Each name starts with the visible label, so
+                        // "click Pick" still finds the right control.
+                        aria-label={
+                          added
+                            ? `Picked: ${chapter.title}`
+                            : taken
+                              ? `Swap for ${chapter.title}`
+                              : `Pick ${chapter.title}`
+                        }
                       >
-                        {added ? "Added ✓" : "Add"}
+                        {added ? "Picked ✓" : taken ? "Swap" : "Pick"}
                       </button>
                     </td>
                   </tr>

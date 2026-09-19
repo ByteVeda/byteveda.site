@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useId, useState } from "react";
 
 import { Field, TextInput } from "@/components/ui";
-import type { CartItem } from "@/lib/orders/model";
 import { isValidEmail } from "@/lib/orders/model";
 import { TURNAROUND } from "@/lib/site";
 import { useSamples } from "./store";
@@ -13,16 +12,16 @@ import { useSamples } from "./store";
 type Placed = { reference: string; email: string };
 
 /**
- * Ask for the sheets, rather than buy them.
+ * Ask for the sheet, rather than buy it.
  *
- * Buying is not open yet, so this page is not a checkout: it collects the
- * chapters someone wants to look at and the address to send them to. No rupee
+ * Buying is not open yet, so this page is not a checkout: it collects the one
+ * chapter someone wants to look at and the address to send it to. No rupee
  * figure appears anywhere on it — the inventory is a price list, but a number
  * printed beside something being given away reads as a bill, and a total under
  * a button that takes no payment reads as a broken one.
  */
 export function SamplePage() {
-  const { entries, rows, ready, remove, clear } = useSamples();
+  const { item, line, ready, clear } = useSamples();
   const emailId = useId();
 
   const [email, setEmail] = useState("");
@@ -31,20 +30,16 @@ export function SamplePage() {
   const [placed, setPlaced] = useState<Placed | null>(null);
 
   async function submit() {
+    if (!item) return;
+
     setSending(true);
     setError(null);
-
-    const items: CartItem[] = entries.map((entry) =>
-      entry.kind === "chapter"
-        ? { kind: "chapter", chapterId: entry.chapterId }
-        : { kind: "custom", request: entry.request },
-    );
 
     try {
       const response = await fetch("/api/orders", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ email, items }),
+        body: JSON.stringify({ email, items: [item] }),
       });
       const payload = (await response.json().catch(() => null)) as {
         reference?: string;
@@ -72,9 +67,9 @@ export function SamplePage() {
         <h1 className="display">Reference {placed.reference}</h1>
         <div className="placed">
           <p>
-            The samples are on their way to <span className="reference">{placed.email}</span> —
-            print-ready, answer key included, within {TURNAROUND}. Reply to that email to ask for a
-            different chapter, or to tell us the format needs changing.
+            The sample is on its way to <span className="reference">{placed.email}</span> —
+            print-ready, answer key included, within {TURNAROUND}. Reply to that email if the format
+            needs changing.
           </p>
           <Link className="btn btn-primary" href="/#inventory">
             Back to the inventory <span className="arr">→</span>
@@ -84,13 +79,13 @@ export function SamplePage() {
     );
   }
 
-  // The heading is the same in all three states on purpose. The saved list is
+  // The heading is the same in all three states on purpose. The saved pick is
   // only read after mount, and a heading that changes a frame later reads as a
   // page that loaded wrong.
   const head = (
     <>
-      <p className="kicker">Samples</p>
-      <h1 className="display">Request samples.</h1>
+      <p className="kicker">Sample</p>
+      <h1 className="display">Request your sample.</h1>
     </>
   );
 
@@ -103,7 +98,7 @@ export function SamplePage() {
     );
   }
 
-  if (rows.length === 0) {
+  if (!line) {
     return (
       <>
         {head}
@@ -124,35 +119,28 @@ export function SamplePage() {
     <>
       {head}
       <p className="sample-sub">
-        A sample sheet for each, with its answer key, emailed within {TURNAROUND}. Free — see the
-        format before you commit to anything.
+        One sheet, with its answer key, emailed within {TURNAROUND}. Free — see the format before
+        you commit to anything.
       </p>
 
       <div className="sample-lines">
-        {rows.map((row) => (
-          <div className="sample-line" key={row.key}>
-            <div style={{ minWidth: 0 }}>
-              <b>{row.line.title}</b>
-              <span>{row.line.meta}</span>
-            </div>
-            <div className="sample-line-right">
-              <button
-                type="button"
-                className="btn btn-ghost"
-                onClick={() => remove(row.key)}
-                aria-label={`Remove ${row.line.title}`}
-              >
-                Remove
-              </button>
-            </div>
+        <div className="sample-line">
+          <div style={{ minWidth: 0 }}>
+            <b>{line.title}</b>
+            <span>{line.meta}</span>
           </div>
-        ))}
+          <div className="sample-line-right">
+            <Link className="btn btn-ghost" href="/#inventory">
+              Change
+            </Link>
+          </div>
+        </div>
       </div>
 
       <Field
-        label="Email for the samples"
+        label="Email for the sample"
         htmlFor={emailId}
-        hint="The sample sheets and their answer keys go to this address."
+        hint="One free sample per address. The sheet and its answer key go here."
         className="mt-6"
       >
         <TextInput
@@ -175,7 +163,7 @@ export function SamplePage() {
         {sending
           ? "Sending…"
           : isValidEmail(email)
-            ? `Request ${rows.length === 1 ? "this sample" : `these ${rows.length} samples`}`
+            ? "Request this sample"
             : "Add an email to send"}
       </button>
 
@@ -188,8 +176,8 @@ export function SamplePage() {
       <p className="soon">
         <Hourglass size={16} aria-hidden />
         <span>
-          Buying full chapter packs is coming soon. Samples are free and nothing is charged today —
-          when ordering opens we will mail everyone who asked for one.
+          Buying full chapter packs is coming soon. The sample is free and nothing is charged today
+          — when ordering opens we will mail everyone who asked for one.
         </span>
       </p>
 

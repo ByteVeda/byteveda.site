@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: result.reason }, { status: result.status });
   }
 
-  // No total in the response: the samples are free and the page shows no money.
+  // No price in the response: the sample is free and the page shows no money.
   // The figure stays server-side, in the work order the team gets.
   return NextResponse.json({ reference: result.reference });
 }

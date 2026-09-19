@@ -39,7 +39,7 @@ const SUBJECTS = subjects.map((subject) => ({ value: subject, label: subject }))
  * how a request form turns into an abandoned one.
  */
 export function CustomSection() {
-  const { addCustom } = useSamples();
+  const { pickCustom } = useSamples();
 
   const [board, setBoard] = useState<Board>("CBSE");
   const [cls, setCls] = useState<ClassLevel>("10");
@@ -81,122 +81,124 @@ export function CustomSection() {
 
   return (
     <section className="custom" id="custom">
-      <div className="custom-form">
-        <p className="kicker">Made to order</p>
-        <h2 className="display">Not in the inventory? Set it to my requirement.</h2>
-        <p className="lede">
-          Any chapter, any question count, any difficulty. The price quotes as you fill it in.
-        </p>
+      <div className="band-inner">
+        <div className="custom-form">
+          <p className="kicker">Made to order</p>
+          <h2 className="display">Not in the inventory? Set it to my requirement.</h2>
+          <p className="lede">
+            Any chapter, any question count, any difficulty. The price quotes as you fill it in.
+          </p>
 
-        <div className="custom-grid">
-          <Field label="Board" labelId={ids.board}>
-            <Select value={board} options={BOARDS} labelledBy={ids.board} onChange={setBoard} />
-          </Field>
+          <div className="custom-grid">
+            <Field label="Board" labelId={ids.board}>
+              <Select value={board} options={BOARDS} labelledBy={ids.board} onChange={setBoard} />
+            </Field>
 
-          <Field label="Class" labelId={ids.cls}>
-            <Select value={cls} options={CLASSES} labelledBy={ids.cls} onChange={setCls} />
-          </Field>
+            <Field label="Class" labelId={ids.cls}>
+              <Select value={cls} options={CLASSES} labelledBy={ids.cls} onChange={setCls} />
+            </Field>
 
-          <Field label="Subject" labelId={ids.subject}>
-            <Select
-              value={subject}
-              options={SUBJECTS}
-              labelledBy={ids.subject}
-              onChange={setSubject}
-            />
-          </Field>
+            <Field label="Subject" labelId={ids.subject}>
+              <Select
+                value={subject}
+                options={SUBJECTS}
+                labelledBy={ids.subject}
+                onChange={setSubject}
+              />
+            </Field>
 
-          <Field label="Chapter or topic" htmlFor={ids.chapter}>
-            <TextInput
-              id={ids.chapter}
-              value={chapter}
-              placeholder="e.g. Trigonometry — heights and distances"
-              onChange={(event) => setChapter(event.target.value)}
-            />
-          </Field>
+            <Field label="Chapter or topic" htmlFor={ids.chapter}>
+              <TextInput
+                id={ids.chapter}
+                value={chapter}
+                placeholder="e.g. Trigonometry — heights and distances"
+                onChange={(event) => setChapter(event.target.value)}
+              />
+            </Field>
 
-          <Field label="Questions" htmlFor={ids.questions}>
-            <TextInput
-              id={ids.questions}
-              type="number"
-              inputMode="numeric"
-              min={QUESTIONS.min}
-              max={QUESTIONS.max}
-              step={QUESTIONS.step}
-              value={questions}
-              onChange={(event) => setQuestions(event.target.value)}
-            />
-          </Field>
+            <Field label="Questions" htmlFor={ids.questions}>
+              <TextInput
+                id={ids.questions}
+                type="number"
+                inputMode="numeric"
+                min={QUESTIONS.min}
+                max={QUESTIONS.max}
+                step={QUESTIONS.step}
+                value={questions}
+                onChange={(event) => setQuestions(event.target.value)}
+              />
+            </Field>
 
-          <Field label="Difficulty" labelId={ids.difficulty}>
-            <Select
-              value={difficulty}
-              options={DIFFICULTY_OPTIONS}
-              labelledBy={ids.difficulty}
-              onChange={setDifficulty}
-            />
-          </Field>
+            <Field label="Difficulty" labelId={ids.difficulty}>
+              <Select
+                value={difficulty}
+                options={DIFFICULTY_OPTIONS}
+                labelledBy={ids.difficulty}
+                onChange={setDifficulty}
+              />
+            </Field>
 
-          <Field label="Answer key" labelId={ids.answerKey}>
-            <Select
-              value={answerKey}
-              options={ANSWER_KEY_OPTIONS}
-              labelledBy={ids.answerKey}
-              onChange={setAnswerKey}
-            />
-          </Field>
+            <Field label="Answer key" labelId={ids.answerKey}>
+              <Select
+                value={answerKey}
+                options={ANSWER_KEY_OPTIONS}
+                labelledBy={ids.answerKey}
+                onChange={setAnswerKey}
+              />
+            </Field>
 
-          <Field
-            label="Copies"
-            htmlFor={ids.copies}
-            hint="Eleven or more takes the class-set rate."
+            <Field
+              label="Copies"
+              htmlFor={ids.copies}
+              hint="Eleven or more takes the class-set rate."
+            >
+              <TextInput
+                id={ids.copies}
+                type="number"
+                inputMode="numeric"
+                min={COPIES.min}
+                max={COPIES.max}
+                value={copies}
+                onChange={(event) => setCopies(event.target.value)}
+              />
+            </Field>
+          </div>
+        </div>
+
+        <div className="quote">
+          <p className="label-xs">Quote for your request</p>
+          <p className="quote-chapter">{named ? chapter.trim() : "Name the chapter on the left"}</p>
+          <p className="quote-meta">{describeRequest(request, quote)}</p>
+
+          <div className="quote-lines">
+            {quote.lines.map((line) => (
+              <div className="quote-line" key={line.label}>
+                <span>{line.label}</span>
+                <b className="num">{line.value}</b>
+              </div>
+            ))}
+          </div>
+
+          <div className="quote-total">
+            <span className="label-xs">Total</span>
+            <b className="num">₹{quote.total}</b>
+          </div>
+
+          <button
+            type="button"
+            className="btn btn-primary mt-6 w-full"
+            disabled={!named}
+            onClick={() => pickCustom({ ...request, chapter: chapter.trim() })}
           >
-            <TextInput
-              id={ids.copies}
-              type="number"
-              inputMode="numeric"
-              min={COPIES.min}
-              max={COPIES.max}
-              value={copies}
-              onChange={(event) => setCopies(event.target.value)}
-            />
-          </Field>
+            {named ? "Ask for a sample of this" : "Enter a chapter to continue"}
+          </button>
+
+          <p className="quote-note">
+            The quote is what the full set will cost once buying opens. Ask now and a free sample
+            sheet set to this requirement is emailed within {TURNAROUND} — one per email address,
+            and if we cannot set it the way you want, you hear that before anything is charged.
+          </p>
         </div>
-      </div>
-
-      <div className="quote">
-        <p className="label-xs">Quote for your request</p>
-        <p className="quote-chapter">{named ? chapter.trim() : "Name the chapter on the left"}</p>
-        <p className="quote-meta">{describeRequest(request, quote)}</p>
-
-        <div className="quote-lines">
-          {quote.lines.map((line) => (
-            <div className="quote-line" key={line.label}>
-              <span>{line.label}</span>
-              <b className="num">{line.value}</b>
-            </div>
-          ))}
-        </div>
-
-        <div className="quote-total">
-          <span className="label-xs">Total</span>
-          <b className="num">₹{quote.total}</b>
-        </div>
-
-        <button
-          type="button"
-          className="btn btn-primary mt-6 w-full"
-          disabled={!named}
-          onClick={() => addCustom({ ...request, chapter: chapter.trim() })}
-        >
-          {named ? "Ask for a sample of this" : "Enter a chapter to continue"}
-        </button>
-
-        <p className="quote-note">
-          The quote is what the full set will cost once buying opens. Ask now and a free sample
-          sheet set to this requirement is emailed within {TURNAROUND} — if we cannot set it the way
-          you want, you hear that before anything is charged.
-        </p>
       </div>
     </section>
   );

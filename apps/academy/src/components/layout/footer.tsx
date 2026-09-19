@@ -19,7 +19,7 @@ export function Footer() {
             <span className="label-xs">Sheets</span>
             <Link href="/#inventory">Inventory</Link>
             <Link href="/#custom">Custom request</Link>
-            <Link href="/sample">Your samples</Link>
+            <Link href="/sample">Your sample</Link>
           </div>
           <div className="foot-col">
             <span className="label-xs">Contact</span>

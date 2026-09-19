@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { type Chapter, chapters } from "@/lib/inventory";
-import { MAX_ITEMS, validateOrder } from "./model";
+import { validateOrder } from "./model";
 
 function firstStocked(): Chapter {
   const chapter = chapters.find((c) => c.inStock);
@@ -41,8 +41,7 @@ describe("validateOrder", () => {
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.lines[0].price).toBe(stocked.price);
-    expect(result.total).toBe(stocked.price);
+    expect(result.line.price).toBe(stocked.price);
   });
 
   it("prices a custom request by re-running the quote", () => {
@@ -50,21 +49,19 @@ describe("validateOrder", () => {
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.lines[0]).toMatchObject({
+    expect(result.line).toMatchObject({
       title: "Trigonometry — made to order",
       price: 295,
       madeToOrder: true,
     });
   });
 
-  it("sums every line", () => {
-    const result = validateOrder(
-      order({ items: [{ kind: "chapter", chapterId: stocked.id }, custom] }),
-    );
+  it("keeps the item alongside the line, for the record that gets written", () => {
+    const result = validateOrder(order());
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.total).toBe(stocked.price + 295);
+    expect(result.item).toEqual({ kind: "chapter", chapterId: stocked.id });
   });
 
   it.each([
@@ -89,13 +86,14 @@ describe("validateOrder", () => {
     expect(validateOrder(payload).ok).toBe(false);
   });
 
-  it("rejects an order longer than the cap", () => {
-    const items = Array.from({ length: MAX_ITEMS + 1 }, () => ({
-      kind: "chapter",
-      chapterId: stocked.id,
-    }));
+  it("refuses a second sample in the same request", () => {
+    // The page is a single-select; this is the copy of that rule that a
+    // hand-rolled POST cannot get around.
+    const result = validateOrder(
+      order({ items: [{ kind: "chapter", chapterId: stocked.id }, custom] }),
+    );
 
-    expect(validateOrder(order({ items }))).toMatchObject({ ok: false });
+    expect(result).toMatchObject({ ok: false, reason: "One free sample per email address." });
   });
 
   it("clamps an out-of-range custom request rather than rejecting it", () => {
@@ -105,7 +103,7 @@ describe("validateOrder", () => {
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.lines[0].meta).toContain("120 questions");
+    expect(result.line.meta).toContain("120 questions");
   });
 
   it("trims the delivery address", () => {

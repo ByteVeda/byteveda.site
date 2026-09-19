@@ -140,6 +140,9 @@ importers:
       '@byteveda/analytics':
         specifier: workspace:*
         version: link:../../packages/analytics
+      '@byteveda/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@byteveda/ui':
         specifier: workspace:*
         version: link:../../packages/ui

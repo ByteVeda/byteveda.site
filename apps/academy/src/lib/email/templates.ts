@@ -52,102 +52,83 @@ ${footer}
 </table></td></tr></table></body></html>`;
 }
 
-/** `total: null` lists the chapters with no money in them. */
-function linesTable(lines: readonly OrderLine[], total: number | null): string {
-  const rows = lines
-    .map(
-      (line) => `<tr>
+/** `priced` prints what the full set would cost. Only the team's copy sets it. */
+function lineTable(line: OrderLine, priced: boolean): string {
+  const value = priced
+    ? `
+<tr>
+<td style="padding:14px 0;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:${DIM};">List value</td>
+<td style="padding:14px 0;text-align:right;font-size:22px;font-weight:700;color:${ACCENT};">₹${line.price}</td>
+</tr>`
+    : "";
+
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0;border-top:2px solid ${LINE};">
+<tr>
 <td style="padding:10px 0;border-bottom:1px solid ${LINE};">
 <div style="font-weight:600;">${escapeHtml(line.title)}</div>
 <div style="font-size:13px;color:${DIM};">${escapeHtml(line.meta)}</div>
-</td>${
-        total === null
-          ? ""
-          : `
-<td style="padding:10px 0;border-bottom:1px solid ${LINE};text-align:right;white-space:nowrap;vertical-align:top;font-weight:600;">₹${line.price}</td>`
-      }
-</tr>`,
-    )
-    .join("");
-
-  const footer =
-    total === null
-      ? ""
-      : `
-<tr>
-<td style="padding:14px 0;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:${DIM};">List value</td>
-<td style="padding:14px 0;text-align:right;font-size:22px;font-weight:700;color:${ACCENT};">₹${total}</td>
-</tr>`;
-
-  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:18px 0;border-top:2px solid ${LINE};">
-${rows}${footer}
+</td>
+</tr>${value}
 </table>`;
 }
 
-function linesText(lines: readonly OrderLine[], total: number | null): string[] {
-  const rows = lines.map((line) =>
-    total === null
-      ? `- ${line.title} (${line.meta})`
-      : `- ${line.title} (${line.meta}) — ₹${line.price}`,
-  );
-  return total === null ? rows : [...rows, `List value: ₹${total}`];
+function lineText(line: OrderLine, priced: boolean): string[] {
+  const rows = [`- ${line.title} (${line.meta})`];
+  return priced ? [...rows, `List value: ₹${line.price}`] : rows;
 }
 
-/** Goes to whoever asked for the sheets. No prices: the samples are free. */
-export function orderReceivedEmail(input: {
-  reference: string;
-  lines: readonly OrderLine[];
-}): Email {
-  const { reference, lines } = input;
-  const count = lines.length;
+/** Goes to whoever asked for the sheet. No price: the sample is free. */
+export function orderReceivedEmail(input: { reference: string; line: OrderLine }): Email {
+  const { reference, line } = input;
 
   return {
-    subject: `Your sample request — ${reference}`,
+    subject: `Your sample — ${reference}`,
     html: layout(
-      `<p style="margin:0 0 14px;">We have your request for ${count === 1 ? "a sample" : `${count} samples`}. Reference <strong>${escapeHtml(reference)}</strong>.</p>
-${linesTable(lines, null)}
-<p style="margin:0 0 14px;">Print-ready sample sheets with the answer key go out within ${TURNAROUND}. If one is not what you expected, reply to this email and tell us what to change.</p>
-<p style="margin:0;color:${DIM};font-size:14px;">The samples are free and nothing has been charged. Buying full chapter packs is coming soon — we will email you when it opens.</p>`,
+      `<p style="margin:0 0 14px;">We have your request. Reference <strong>${escapeHtml(reference)}</strong>.</p>
+${lineTable(line, false)}
+<p style="margin:0 0 14px;">A print-ready sheet with its answer key goes out within ${TURNAROUND}. If it is not what you expected, reply to this email and tell us what to change.</p>
+<p style="margin:0;color:${DIM};font-size:14px;">The sample is free and nothing has been charged. It is one per address, so this is yours. Buying full chapter packs is coming soon — we will email you when it opens.</p>`,
       `Sent by ${escapeHtml(site.name)} · ${escapeHtml(site.domain)}`,
     ),
     text: [
-      `We have your request for ${count === 1 ? "a sample" : `${count} samples`}. Reference ${reference}.`,
+      `We have your request. Reference ${reference}.`,
       "",
-      ...linesText(lines, null),
+      ...lineText(line, false),
       "",
-      `Print-ready sample sheets with the answer key go out within ${TURNAROUND}. Reply to this email if one is not what you expected.`,
+      `A print-ready sheet with its answer key goes out within ${TURNAROUND}. Reply to this email if it is not what you expected.`,
       "",
-      "The samples are free and nothing has been charged. Buying full chapter packs is coming soon — we will email you when it opens.",
+      "The sample is free and nothing has been charged. It is one per address, so this is yours. Buying full chapter packs is coming soon — we will email you when it opens.",
       "",
       `${site.name} · ${site.domain}`,
     ].join("\n"),
   };
 }
 
-/** Goes to the team inbox — this is the work order, prices and all. */
+/** Goes to the team inbox — this is the work order, price and all. */
 export function orderNotificationEmail(input: {
   reference: string;
   email: string;
-  lines: readonly OrderLine[];
-  total: number;
+  line: OrderLine;
 }): Email {
-  const { reference, email, lines, total } = input;
-  const madeToOrder = lines.filter((line) => line.madeToOrder).length;
+  const { reference, email, line } = input;
+  const setting = line.madeToOrder
+    ? "Needs setting before it can go."
+    : "On the shelf; send as it stands.";
 
   return {
-    subject: `[${reference}] samples · ${lines.length} ${lines.length === 1 ? "chapter" : "chapters"} · ${email}`,
+    subject: `[${reference}] sample · ${line.title} · ${email}`,
     html: layout(
-      `<p style="margin:0 0 14px;">Sample request from <strong>${escapeHtml(email)}</strong>. Send sheets, not invoices.</p>
-${linesTable(lines, total)}
-<p style="margin:0;color:${DIM};font-size:14px;">${madeToOrder} of ${lines.length} need setting. Due within ${TURNAROUND}.</p>`,
+      `<p style="margin:0 0 14px;">Sample request from <strong>${escapeHtml(email)}</strong>. Send a sheet, not an invoice.</p>
+${lineTable(line, true)}
+<p style="margin:0;color:${DIM};font-size:14px;">${setting} Due within ${TURNAROUND}.</p>`,
       `Reference ${escapeHtml(reference)}`,
     ),
     text: [
-      `Sample request from ${email}. Send sheets, not invoices.`,
+      `Sample request from ${email}. Send a sheet, not an invoice.`,
       "",
-      ...linesText(lines, total),
+      ...lineText(line, true),
       "",
-      `${madeToOrder} of ${lines.length} need setting. Due within ${TURNAROUND}.`,
+      `${setting} Due within ${TURNAROUND}.`,
       `Reference ${reference}`,
     ].join("\n"),
   };

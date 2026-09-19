@@ -6,11 +6,11 @@ import { useSamples } from "./store";
 
 /** The nav's way to the request. Client-side for the count. */
 export function SampleButton() {
-  const { count } = useSamples();
+  const { line } = useSamples();
 
   return (
     <Link className="btn btn-primary" href="/sample">
-      Samples ({count})
+      Sample ({line ? 1 : 0})
     </Link>
   );
 }

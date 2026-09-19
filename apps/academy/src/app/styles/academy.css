@@ -215,15 +215,28 @@
   white-space: nowrap;
 }
 
+/* ---------- full-bleed bands ---------- */
+
+/* A band's rules run to the screen edges — that is what sets it apart from the
+   centred sections around it. Its *contents* must not: left to bleed as well,
+   a three-up or a form ends up a third of a screen out of line with the nav
+   above it and the footer below. Same column as `.wrap`, minus the padding,
+   because the cells and halves bring their own. */
+.band-inner {
+  display: grid;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+}
+
 /* ---------- three-up rules ---------- */
 
 .cells {
-  display: grid;
   border-bottom: 1px solid var(--line);
 }
 
 @media (min-width: 52rem) {
-  .cells {
+  .cells .band-inner {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -246,14 +259,6 @@
   .cell:last-child {
     border-right: 0;
   }
-}
-
-.cell-index {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--accent);
 }
 
 .cell h3 {
@@ -366,13 +371,29 @@
   border-radius: var(--r-md);
 }
 
+/* The bar names the picked chapter, where it used to hold a two-word count.
+   A title is long, arbitrary, and set in the display face — so the column has
+   to be allowed to shrink inside the flex row and the text has to be allowed
+   to wrap, or "Chemical Reactions and Equations" runs off a phone. */
+.sample-bar > div {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
 .sample-bar b {
   display: block;
   margin-top: 0.35rem;
   font-family: var(--font-display);
-  font-size: var(--step-2);
+  font-size: var(--step-1);
   font-weight: 600;
   letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 40rem) {
+  .sample-bar b {
+    font-size: var(--step-2);
+  }
 }
 
 .label-xs {
@@ -387,15 +408,17 @@
 /* ---------- custom request ---------- */
 
 .custom {
-  display: grid;
   margin-top: clamp(3rem, 6vw, 4.5rem);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 @media (min-width: 62rem) {
-  .custom {
-    grid-template-columns: 1.1fr 0.9fr;
+  /* The form has eight fields; the quote has five short lines and a button.
+     Splitting them evenly made the quote a broad white panel that was mostly
+     empty — the narrower column is the one that needed the room. */
+  .custom .band-inner {
+    grid-template-columns: 1.3fr 0.7fr;
   }
 }
 
@@ -425,14 +448,22 @@
   }
 }
 
+/* Tighter than the form beside it. The form's padding is what keeps its fields
+   off the page's edge; the panel's only has to keep the quote off its own, and
+   at the form's measure the white ran to a third of the panel. Right-hand
+   padding stays a full gutter so the ₹ column still ends on the page's
+   column, where the nav button and the table's last cell end. */
 .quote {
-  padding: clamp(2.5rem, 5vw, 4rem) var(--gutter);
+  padding: clamp(1.75rem, 2.5vw, 2.25rem) var(--gutter) clamp(1.75rem, 2.5vw, 2.25rem)
+    clamp(1.5rem, 2.5vw, 2.25rem);
   background: var(--surface);
   border-top: 1px solid var(--line);
   min-width: 0;
 }
 
 @media (min-width: 62rem) {
+  /* One rule, on the side that divides it from the form. The other three edges
+     are already drawn — by the change of tone, and by the band's own rules. */
   .quote {
     border-top: 0;
     border-left: 1px solid var(--line);
@@ -508,26 +539,6 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--accent);
-}
-
-/* ---------- closing ---------- */
-
-.closing {
-  padding-block: clamp(4rem, 9vw, 7rem);
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-}
-
-.closing h2 {
-  max-width: 20ch;
-  font-size: var(--step-4);
-}
-
-.closing p {
-  max-width: 44ch;
-  margin: 1.25rem 0 2rem;
-  color: var(--text-dim);
-  font-size: var(--step-1);
 }
 
 /* ---------- footer ---------- */

@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@byteveda/analytics": "workspace:*",
+    "@byteveda/db": "workspace:*",
     "@byteveda/ui": "workspace:*",
     "@byteveda/utils": "workspace:*",
     "@fontsource-variable/ibm-plex-sans": "catalog:",

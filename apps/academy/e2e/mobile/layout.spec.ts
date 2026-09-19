@@ -11,7 +11,10 @@ test("picking a chapter still works at phone width", async ({ page }) => {
   await page.goto("/");
 
   // The inventory is a table, which is the control most likely to be
-  // unreachable on a narrow screen. Adding from it is the whole product.
-  await page.getByRole("button", { name: "Add", exact: true }).first().click();
-  await expect(page.locator(".sample-bar b")).toContainText("1 chapter");
+  // unreachable on a narrow screen. Picking from it is the whole product.
+  await page
+    .getByRole("button", { name: /^Pick / })
+    .first()
+    .click();
+  await expect(page.locator(".sample-bar b")).toHaveText("Chemical Reactions and Equations");
 });
