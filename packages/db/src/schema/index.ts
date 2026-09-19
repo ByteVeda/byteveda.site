@@ -1,3 +1,4 @@
+export * from "./academy";
 export * from "./auth";
 export * from "./email";
 export * from "./posts";
