@@ -43,8 +43,11 @@ const plexMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  // The tab reads as the name and nothing else. A tagline appended here was
+  // the first thing truncated away in a crowded tab strip anyway, and the
+  // description below is where a crawler looks for it.
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: site.name,
     template: `%s — ${site.name}`,
   },
   description: site.description,
