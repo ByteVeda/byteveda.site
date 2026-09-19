@@ -1,5 +1,12 @@
 import { cn, ORG } from "@byteveda/utils";
+import Image from "next/image";
 import Link from "next/link";
+
+import mark from "./assets/byteveda-mark.png";
+
+/** Rendered size. The artwork is taller than it is wide; height leads. */
+const MARK_HEIGHT = 28;
+const MARK_WIDTH = Math.round((mark.width / mark.height) * MARK_HEIGHT);
 
 type WordmarkProps = {
   href?: string;
@@ -8,24 +15,30 @@ type WordmarkProps = {
   className?: string;
 };
 
-/** The ByteVeda brand lockup — teal bracket mark + wordmark. */
+/**
+ * The ByteVeda brand lockup — leaf mark + wordmark.
+ *
+ * A bitmap rather than the inline SVG that used to live here: the mark is a
+ * multi-tone gradient, so it cannot take `currentColor` and there is nothing
+ * for a single path to carry. One source at three times the rendered size, so
+ * a retina screen has pixels to use and `next/image` can size the rest down.
+ *
+ * No tile behind it. The old bracket was a white glyph that needed the accent
+ * square to sit on; this one brings its own colour.
+ */
 export function Wordmark({ href = "/", label = ORG.toLowerCase(), className }: WordmarkProps) {
   return (
     <Link href={href} className={cn("brand", className)} aria-label={`${ORG} home`}>
-      <span className="mark" aria-hidden>
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth={2.1}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <title>{ORG}</title>
-          <path d="M5 7h9a4 4 0 0 1 0 8H9l5 6" />
-          <path d="M9 3v18" />
-        </svg>
-      </span>
+      {/* Decorative: the lockup spells the name out, and the link is labelled. */}
+      <Image
+        className="mark"
+        src={mark}
+        width={MARK_WIDTH}
+        height={MARK_HEIGHT}
+        alt=""
+        aria-hidden
+        priority
+      />
       <span>
         <b>{label}</b>
         <span className="dot">.</span>
