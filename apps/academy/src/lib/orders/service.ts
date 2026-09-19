@@ -15,6 +15,7 @@
 import { randomBytes } from "node:crypto";
 import { isConfigured as dbConfigured } from "@byteveda/db";
 import { claimSample, hasClaimedSample, releaseSample } from "@byteveda/db/queries/academy";
+import { after } from "next/server";
 import { Resend } from "resend";
 
 import type { Email } from "@/lib/email/templates";
@@ -181,16 +182,21 @@ export async function submitOrder(order: ResolvedOrder): Promise<SubmitResult> {
     };
   }
 
-  const receipted = await send({
-    to: email,
-    email: orderReceivedEmail({ reference, line }),
-    replyTo: env.orderInbox(),
-  });
+  // The receipt is not part of the answer. Its failure is already logged rather
+  // than surfaced — the request is filed and will be delivered either way — so
+  // waiting for it only holds the visitor on a spinner for the length of a
+  // second round trip to Resend. `after` sends it once the response is gone.
+  after(async () => {
+    const receipted = await send({
+      to: email,
+      email: orderReceivedEmail({ reference, line }),
+      replyTo: env.orderInbox(),
+    });
 
-  if (!receipted.ok) {
-    // Logged, not surfaced: the request is filed and will be delivered.
-    console.error("[samples] %s receipt failed: %s", reference, receipted.error);
-  }
+    if (!receipted.ok) {
+      console.error("[samples] %s receipt failed: %s", reference, receipted.error);
+    }
+  });
 
   console.log(`[samples] ${reference} filed — ${elapsed.summary()}`);
   return { ok: true, reference };
