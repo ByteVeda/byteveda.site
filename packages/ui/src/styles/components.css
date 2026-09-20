@@ -66,21 +66,13 @@
   font-size: 1.12rem;
   letter-spacing: -0.02em;
 }
+/* The mark brings its own colour now, so it needs no tile to sit on and no
+   glow to lift it. Height-driven: the artwork is taller than it is wide, and
+   pinning the height is what keeps it level with the wordmark beside it. */
 .brand .mark {
-  width: 26px;
-  height: 26px;
-  border-radius: 7px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  display: grid;
-  place-items: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 14px -4px var(--accent);
-}
-.brand .mark svg {
-  width: 16px;
-  height: 16px;
+  height: 28px;
+  width: auto;
+  flex: none;
 }
 .brand b {
   font-weight: 600;
@@ -105,7 +97,6 @@
   color: var(--text);
   border-color: var(--line-strong);
 }
-/* biome-ignore lint/style/noDescendingSpecificity: scoped to a different element than `.brand .mark svg` */
 .icon-btn svg {
   width: 17px;
   height: 17px;

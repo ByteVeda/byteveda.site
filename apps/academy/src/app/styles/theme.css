@@ -1,0 +1,45 @@
+/* ============================================================
+   Academy palette — dark.
+
+   @byteveda/ui ships Midnight: a blue-black neutral under FlexiQ's saturated
+   green, which is the right register for the surfaces that sell software. This
+   one sells worksheets, and its own design file settles on a warmer, greener
+   black under a mint accent — quieter at 9pm, and legible printed beside the
+   sheets it ships. Only the dark scale is restated here; light stays the
+   shared warm paper.
+
+   Unlayered on purpose. The shared tokens are unlayered too, so this wins on
+   source order alone and nothing here has to out-specify anything.
+
+   The `:not()` is load-bearing, not decoration. A bare `:root` here matches
+   whatever the theme is and — being later in the cascade at the same
+   specificity — repaints the light page in these colours. It is still needed
+   alongside the attribute selector to cover the first paint, before
+   next-themes has written `data-theme` onto <html>.
+   ============================================================ */
+
+:root:not([data-theme="light"]),
+[data-theme="dark"] {
+  --bg: #0d0e0d;
+  --bg-grad-a: #141714;
+  --bg-grad-b: #0d0e0d;
+  --surface: #161816;
+  --surface-2: #1a1d1a;
+  --surface-3: #222622;
+  --line: rgba(238, 239, 236, 0.13);
+  --line-soft: rgba(238, 239, 236, 0.07);
+  --line-strong: rgba(238, 239, 236, 0.28);
+  --text: #eeefec;
+  --text-dim: #98a098;
+  --text-faint: #6f776f;
+  --grid-line: rgba(124, 196, 160, 0.07);
+  --accent: #7cc4a0;
+  --accent-2: #8ed0ae;
+  /* The mint is light enough to be a background, so the ink on it is the page
+     black rather than white — the shared token assumes the reverse. */
+  --accent-ink: #0d0e0d;
+  --accent-soft: rgba(124, 196, 160, 0.13);
+  --accent-line: rgba(124, 196, 160, 0.3);
+  --chip: rgba(238, 239, 236, 0.05);
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.66);
+}
