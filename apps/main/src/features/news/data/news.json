@@ -181,43 +181,55 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:f641ce413ed4",
+    "id": "mastodon:605da9a13fde",
     "kind": "article",
     "source": "mastodon",
-    "title": "Anthropic Has Set Up A Bio Research Lab For Physical Experiments",
-    "url": "https://www.engadget.com/2262087/anthropic-has-set-up-a-bio-research-lab-for-physical-experiments/",
-    "excerpt": "Anthropic now has its own bio research lab in San Francisco.",
-    "author": "DCoder 🇱🇹❤🇺🇦",
-    "publishedAt": "2026-09-19T04:17:40.000Z",
-    "score": 5,
+    "title": "Raspberry Pi als Heimserver – #9 – Dockhand Am 17.09.2023 habe ich im zweiten Teil meiner Server-Reihe mit dem Titel Ra…",
+    "url": "https://www.myhome.zone/raspberry-pi-als-heimserver-9-dockhand/",
+    "excerpt": "Raspberry Pi als Heimserver – #9 – Dockhand Am 17.09.2023 habe ich im zweiten Teil meiner Server-Reihe mit dem Titel Raspberry Pi als Heimserver – #2 – OMV &amp; Docker ausführlich erläutert, wie sic…",
+    "author": "myHome.zone",
+    "publishedAt": "2026-09-19T10:00:07.000Z",
+    "score": 6,
     "tags": [
-      "ai"
+      "bash",
+      "cronjob",
+      "docker",
+      "dockhand",
+      "hardware",
+      "hawser",
+      "heimserver",
+      "linux",
+      "opensource",
+      "portainer",
+      "putty",
+      "raspberrypi",
+      "smarthome",
+      "software",
+      "ssh",
+      "vserver",
+      "watchtower"
     ],
     "labels": [
-      "ai"
+      "devops",
+      "opensource"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ca38f18d9216",
+    "id": "mastodon:1a39f0512880",
     "kind": "article",
     "source": "mastodon",
-    "title": "Visualizing The ABA Problem: What crossbeam-epoch Solves",
-    "url": "https://sofiabelen.github.io/projects/visualizing-the-aba-problem",
-    "excerpt": "Visualizing lock-free concurrency in Rust: reproducing the aba problem to begin understanding crossbeam. I promise lots of diagrams!",
-    "author": "Sofía Belén López Vicens",
-    "publishedAt": "2026-09-18T20:38:33.000Z",
-    "score": 5,
+    "title": "What surprises me with # rust is that some very popular crates have the worst documentation. Things that should be simp…",
+    "url": "https://mastodon.social/@mboelen/117297108250997484",
+    "excerpt": "What surprises me with # rust is that some very popular crates have the worst documentation. Things that should be simple or easy to implement, apparently result in a debugging session. At the same t…",
+    "author": "Michael Boelen",
+    "publishedAt": "2026-09-19T09:57:12.000Z",
+    "score": 6,
     "tags": [
-      "rust",
-      "LockFree",
-      "concurrency",
-      "crossbeam",
-      "opensource"
+      "rust"
     ],
     "labels": [
-      "rust",
-      "opensource"
+      "rust"
     ],
     "mentionsByteveda": false
   },
@@ -227,10 +239,10 @@
     "source": "lobsters",
     "title": "Benchmarking Wild vs Mold",
     "url": "https://davidlattimore.github.io/posts/2026/09/18/benchmarking-wild-vs-mold.html",
-    "excerpt": "35 points · compilers, performance",
+    "excerpt": "45 points · compilers, performance",
     "author": "goldstein",
     "publishedAt": "2026-09-18T10:25:08.333-05:00",
-    "score": 35,
+    "score": 45,
     "tags": [
       "compilers",
       "performance"
@@ -262,10 +274,10 @@
     "source": "lobsters",
     "title": "Typst makes big strides",
     "url": "https://lwn.net/Articles/1092993/",
-    "excerpt": "75 points · a11y, programming",
+    "excerpt": "89 points · a11y, programming",
     "author": "isuffix",
     "publishedAt": "2026-09-18T08:14:17.568-05:00",
-    "score": 75,
+    "score": 89,
     "tags": [
       "a11y",
       "programming"
@@ -282,7 +294,7 @@
     "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
     "author": "caius",
     "publishedAt": "2026-09-18T03:15:23.174-05:00",
-    "score": 20,
+    "score": 21,
     "tags": [
       "ask",
       "programming"
@@ -296,10 +308,10 @@
     "source": "lobsters",
     "title": "Be alert: targeted attacks on prominent Rustaceans",
     "url": "https://blog.rust-lang.org/2026/09/17/targeted-attacks/",
-    "excerpt": "92 points · rust, security",
+    "excerpt": "95 points · rust, security",
     "author": "itamarst",
     "publishedAt": "2026-09-17T13:10:52.241-05:00",
-    "score": 92,
+    "score": 95,
     "tags": [
       "rust",
       "security"
@@ -316,10 +328,10 @@
     "source": "lobsters",
     "title": "Labeled matches: why is this not in every regex engine?",
     "url": "https://iev.ee/blog/categorize-everything-all-at-once/",
-    "excerpt": "27 points · performance, rust",
+    "excerpt": "28 points · performance, rust",
     "author": "iev",
     "publishedAt": "2026-09-17T11:44:39.414-05:00",
-    "score": 27,
+    "score": 28,
     "tags": [
       "performance",
       "rust"
@@ -374,7 +386,7 @@
     "excerpt": "Most of us have heard the term performance testing, whether before releasing a big new feature,...",
     "author": "Daniel Balcarek",
     "publishedAt": "2026-09-17T06:56:32Z",
-    "score": 53,
+    "score": 56,
     "tags": [
       "testing",
       "performance",
@@ -656,7 +668,7 @@
     "excerpt": "On September 15, India — along with Sri Lanka and Tanzania — celebrates Engineer's Day, marking the...",
     "author": "Dhruv Jani",
     "publishedAt": "2026-09-15T10:44:53Z",
-    "score": 95,
+    "score": 103,
     "tags": [
       "ai",
       "discuss",
@@ -711,7 +723,7 @@
     "excerpt": "I've started noticing a look on people's faces. It's in standups, in the half-second-too-fast \"yeah,...",
     "author": "James Anderson",
     "publishedAt": "2026-09-15T04:29:39Z",
-    "score": 125,
+    "score": 126,
     "tags": [
       "mentalhealth",
       "career",
@@ -749,7 +761,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-09-18T19:39:43Z",
-    "score": 481466,
+    "score": 481526,
     "tags": [
       "Python",
       "api",
@@ -781,7 +793,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-09-15T15:54:40Z",
-    "score": 397165,
+    "score": 397191,
     "tags": [
       "Python",
       "books",
@@ -804,7 +816,7 @@
     "excerpt": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
     "author": "donnemartin",
     "publishedAt": "2026-09-15T01:10:09Z",
-    "score": 370686,
+    "score": 370713,
     "tags": [
       "Python",
       "design",
@@ -836,7 +848,7 @@
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
     "publishedAt": "2026-09-18T22:11:03Z",
-    "score": 321590,
+    "score": 321643,
     "tags": [
       "Python",
       "awesome",
@@ -860,7 +872,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-09-14T07:10:04Z",
-    "score": 283796,
+    "score": 283834,
     "tags": [
       "Python",
       "beginner-project",
@@ -887,8 +899,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-09-19T04:31:03Z",
-    "score": 246960,
+    "publishedAt": "2026-09-19T10:51:42Z",
+    "score": 247017,
     "tags": [
       "Python",
       "ai",
@@ -920,7 +932,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-09-18T16:52:12Z",
-    "score": 224749,
+    "score": 224757,
     "tags": [
       "Python",
       "algorithm",
@@ -952,7 +964,7 @@
     "excerpt": "A feature-rich command-line audio/video downloader",
     "author": "yt-dlp",
     "publishedAt": "2026-09-16T07:48:51Z",
-    "score": 192018,
+    "score": 192065,
     "tags": [
       "Python",
       "cli",
@@ -976,8 +988,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-09-18T13:27:41Z",
-    "score": 145351,
+    "publishedAt": "2026-09-19T08:52:02Z",
+    "score": 145407,
     "tags": [
       "Rust",
       "clash",
@@ -1003,7 +1015,7 @@
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
     "publishedAt": "2026-09-17T18:35:01Z",
-    "score": 133590,
+    "score": 133629,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1042,7 +1054,7 @@
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
     "publishedAt": "2026-09-19T04:26:50Z",
-    "score": 125190,
+    "score": 125239,
     "tags": [
       "Rust"
     ],
@@ -1059,8 +1071,8 @@
     "url": "https://github.com/rustdesk/rustdesk",
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
-    "publishedAt": "2026-09-19T03:20:23Z",
-    "score": 123958,
+    "publishedAt": "2026-09-19T09:41:27Z",
+    "score": 123976,
     "tags": [
       "Rust",
       "android",
@@ -1096,8 +1108,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-09-19T04:23:56Z",
-    "score": 118942,
+    "publishedAt": "2026-09-19T10:43:15Z",
+    "score": 118951,
     "tags": [
       "Rust",
       "compiler",
@@ -1117,8 +1129,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-09-18T21:43:22Z",
-    "score": 111169,
+    "publishedAt": "2026-09-19T10:21:31Z",
+    "score": 111176,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1144,7 +1156,7 @@
     "excerpt": "A modern runtime for JavaScript and TypeScript.",
     "author": "denoland",
     "publishedAt": "2026-09-17T10:35:32Z",
-    "score": 108467,
+    "score": 108469,
     "tags": [
       "Rust",
       "deno",
@@ -1166,8 +1178,8 @@
     "url": "https://github.com/oven-sh/bun",
     "excerpt": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
     "author": "oven-sh",
-    "publishedAt": "2026-09-19T04:17:02Z",
-    "score": 95984,
+    "publishedAt": "2026-09-19T10:48:24Z",
+    "score": 95988,
     "tags": [
       "Rust",
       "bun",
@@ -1224,8 +1236,8 @@
     "url": "https://github.com/Stirling-Tools/Stirling-PDF",
     "excerpt": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
     "author": "Stirling-Tools",
-    "publishedAt": "2026-09-18T23:42:22Z",
-    "score": 92526,
+    "publishedAt": "2026-09-19T09:10:09Z",
+    "score": 92541,
     "tags": [
       "Java",
       "docker",
