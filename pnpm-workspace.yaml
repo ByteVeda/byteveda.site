@@ -43,7 +43,7 @@ catalog:
   "@tiptap/extensions": ^3.31.3
   turndown: ^7.2.4
   "@types/turndown": ^5.0.6
-  marked: ^18.0.12
+  marked: ^18.0.13
   resend: ^6.26.0
   ioredis: ^6.0.0
 
