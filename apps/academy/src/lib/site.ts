@@ -1,5 +1,5 @@
 import { ACADEMY_DOMAIN, ACADEMY_URL, CONTACT_EMAIL, MAIN_URL, ORG } from "@byteveda/utils";
-import { PRICING } from "./pricing";
+import { PRICING } from "@/features/pricing";
 
 export const site = {
   name: "ByteVeda Academy",

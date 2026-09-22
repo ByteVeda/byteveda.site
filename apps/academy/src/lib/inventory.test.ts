@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
-
+import { MIX_TOTAL, PRICING } from "@/features/pricing";
 import { chapters, describeContents, describeFree, listChapters, NO_FILTER } from "./inventory";
-import { MIX_TOTAL, PRICING } from "./pricing";
 
 describe("the catalogue", () => {
   it("prices every chapter the same, stocked or not", () => {

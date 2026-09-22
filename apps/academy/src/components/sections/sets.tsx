@@ -1,4 +1,4 @@
-import { SETS } from "@/lib/pricing";
+import { SETS } from "@/features/pricing";
 
 /**
  * The three subject sets, drawn as cards.

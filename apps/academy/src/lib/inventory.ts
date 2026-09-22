@@ -6,12 +6,12 @@
  * a new worksheet, not when a request comes in. `listChapters` is the only read
  * path the UI uses, so swapping the source for a query later is a one-file job.
  *
- * Every chapter carries the same mix — see `lib/pricing` — so the row only
+ * Every chapter carries the same mix — see `features/pricing` — so the row only
  * records what varies: how many board questions and NCERT exercise questions
  * ride along free, and whether there is an advanced block to buy on top.
  */
 
-import { MIX, MIX_TOTAL, PRICING } from "./pricing";
+import { MIX, MIX_TOTAL, PRICING } from "@/features/pricing";
 
 export type Board = "CBSE" | "ICSE";
 export type ClassLevel = "9" | "10";

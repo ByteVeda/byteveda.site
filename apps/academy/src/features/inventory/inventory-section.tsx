@@ -3,6 +3,7 @@
 import { useId, useMemo, useState } from "react";
 
 import { Field, Segmented, TextInput } from "@/components/ui";
+import { MIX_LABEL, MIX_TOTAL } from "@/features/pricing/model";
 import { SampleBar } from "@/features/sample/sample-bar";
 import { useSamples } from "@/features/sample/store";
 import {
@@ -15,7 +16,6 @@ import {
   NO_FILTER,
   subjects,
 } from "@/lib/inventory";
-import { MIX_LABEL, MIX_TOTAL } from "@/lib/pricing";
 
 /** Six rows is about a screen; the rest is one click away. */
 const PAGE = 6;

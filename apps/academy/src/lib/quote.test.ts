@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { PRICING } from "./pricing";
+import { PRICING } from "@/features/pricing";
 import { type CustomRequest, describeRequest, quoteFor } from "./quote";
 
 const base: CustomRequest = {
