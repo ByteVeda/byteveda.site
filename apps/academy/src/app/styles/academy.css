@@ -29,7 +29,7 @@
 
 .display {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.03em;
   text-wrap: balance;
@@ -48,16 +48,36 @@
 
 /* ---------- wordmark ---------- */
 
-/* Text, no leaf: the shared lockup is ByteVeda's, and this header has to name
-   the surface as well as the company. Second word in the accent, which is the
-   only place on the page the accent is used decoratively. */
+/* Leaf plus the full name: the shared lockup is ByteVeda's alone, and this
+   header has to name the surface as well as the company. Second word in the
+   accent, which is the only place on the page the accent is used
+   decoratively. */
 .brand-text {
-  gap: 0.34em;
+  gap: 0.55em;
   font-size: 1.18rem;
   font-weight: 700;
 }
 
-.brand-text span {
+/* The mark is a dark-green leaf on transparent — it reads on paper and
+   disappears into the header's near-black. So it keeps the light tile the
+   favicon puts it on, unchanged between themes: the artwork has one set of
+   colours and this is the only ground both of them sit on. */
+.brand-tile {
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+/* `.brand .mark` in the shared sheet sets the header height for the lockup
+   that has no tile; inside one, the tile is what has to measure 32px. */
+.brand-tile .mark {
+  height: 20px;
+}
+
+.brand-text .brand-surface {
   color: var(--accent);
 }
 
@@ -668,6 +688,14 @@
   z-index: 2;
   background: var(--surface);
   border-top: 1px solid var(--line);
+}
+
+/* Light `--surface` is a white card colour, and a band the width of the page
+   set in it reads as a hole punched in the warm paper rather than a change of
+   tone. The tinted surface is the same step away from the page, in the
+   palette the rest of the light theme is mixed from. */
+[data-theme="light"] .cta {
+  background: var(--surface-2);
 }
 
 .cta-inner {

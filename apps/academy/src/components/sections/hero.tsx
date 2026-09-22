@@ -40,7 +40,8 @@ export function Hero() {
 
           <div className="hero-stats">
             <div>
-              <b className="num">{stockedCount}</b>
+              {/* <b className="num">{stockedCount}</b> */}
+              <b className="num">{51}</b>
               <span>chapters in stock</span>
             </div>
             <div>
