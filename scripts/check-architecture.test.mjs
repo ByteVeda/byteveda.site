@@ -602,3 +602,56 @@ test("code outside features/ may still open the component barrel", () => {
 
   assert.deepEqual(check(root), []);
 });
+
+/** Everything shared/ sits below, plus a `shared/format.ts` that reaches for `written`. */
+function sharedReaching(written) {
+  return {
+    "apps/demo/src/components/index.ts": 'export { Mark } from "./mark";\n',
+    "apps/demo/src/components/mark.tsx": "export const Mark = () => null;\n",
+    "apps/demo/src/lib/index.ts": 'export { env } from "./env";\n',
+    "apps/demo/src/lib/env.ts": "export const env = {};\n",
+    "apps/demo/src/features/one/index.ts": 'export { one } from "./model";\n',
+    "apps/demo/src/features/one/model.ts": "export const one = 1;\n",
+    "apps/demo/src/shared/format.ts": `import { thing } from "${written}";\nexport const ago = thing;\n`,
+  };
+}
+
+test("shared/ may not reach lib, features or components by a relative path", () => {
+  for (const written of [
+    "../lib",
+    "../lib/index",
+    "../lib/env",
+    "../features/one",
+    "../components",
+    "../components/index",
+    "../components/mark",
+  ]) {
+    const violations = check(fixture(sharedReaching(written)));
+    assert.ok(
+      violations.some((violation) => violation.rule === "shared-isolation"),
+      written,
+    );
+    assert.equal(violations[0].path, "apps/demo/src/shared/format.ts");
+    assert.match(violations[0].reason, /bottom of the app/);
+  }
+});
+
+test("a relative reach out of shared/ past a feature's doors reports both rules", () => {
+  const root = fixture({
+    ...sharedReaching("../features/one/queries"),
+    "apps/demo/src/features/one/queries.ts": "export const thing = [];\n",
+  });
+
+  assert.deepEqual(rulesOf(check(root)), ["feature-doors", "shared-isolation"]);
+});
+
+test("shared/ may still talk to itself, and to anything outside the app", () => {
+  const root = fixture({
+    ...sharedReaching("./bytes"),
+    "apps/demo/src/shared/bytes.ts": "export const thing = 1;\n",
+    "apps/demo/src/shared/nested/deep.ts":
+      'import { thing } from "../bytes";\nimport { clsx } from "clsx";\nexport const deep = [thing, clsx];\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});

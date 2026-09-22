@@ -180,10 +180,13 @@
                 "patterns": [
                   {
                     "group": [
+                      "@/lib",
                       "@/lib/*",
                       "@/lib/**",
+                      "@/features",
                       "@/features/*",
                       "@/features/**",
+                      "@/components",
                       "@/components/*",
                       "@/components/**"
                     ],

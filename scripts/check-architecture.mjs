@@ -63,6 +63,13 @@
  *                  is the same module and the same violation. Only the barrel itself:
  *                  `@/components/<file>` is how a feature names the component it wants.
  *
+ *   shared-isolation
+ *                  The last edge of that same shape. `shared/` is the bottom of the app
+ *                  and imports nothing of ours; `biome.json` holds it to that by the
+ *                  aliased spelling of `@/lib`, `@/features` and `@/components`, and the
+ *                  relative spelling is resolved and caught here. An import that stays
+ *                  inside `shared/` resolves to `@/shared/…` and is not one of these.
+ *
  * All of the rules see the resolved form, so a relative import is checked like any other.
  * One that stays inside its own feature — `./model`, `../queries` from that feature's
  * `components/` — is how a feature talks to itself and is left alone.
@@ -89,6 +96,9 @@ const SERVER_FILES = new Set(["queries", "store", "service", "events"]);
 
 /** The app-wide component barrel, both spellings that resolve to the same module. */
 const COMPONENT_BARREL = new Set(["@/components", "@/components/index"]);
+
+/** Everything `shared/` sits below. Matched as the module itself or anything under it. */
+const OURS = ["@/lib", "@/features", "@/components"];
 
 const FEATURE_PREFIX = "@/features/";
 const SOURCE_FILE = /\.tsx?$/;
@@ -390,6 +400,7 @@ export function checkArchitecture(root) {
       const client = isClientFile(source);
       const route = isRouteFile(relPath);
       const inLib = relPath.startsWith(`apps/${app}/src/lib/`);
+      const inShared = relPath.startsWith(`apps/${app}/src/shared/`);
       const ownFeature = featureOf(relPath);
       const isModel = isModelFile(relPath);
       const imports = readImports(source);
@@ -482,6 +493,23 @@ export function checkArchitecture(root) {
             line,
             rule: "component-barrel",
             reason: `a relative import is still an import: "${shown}" is the app-wide component barrel, which is all client components and pulls them into every server module that touches this feature — name the one you want, "@/components/<name>"`,
+          });
+        }
+
+        // And the last one of that shape. `biome.json` keeps `@/lib`, `@/features` and
+        // `@/components` out of shared/ by their aliased spelling; a relative reach out of
+        // shared/ is invisible to it and is caught here. An import that stays inside
+        // shared/ resolves to `@/shared/…` and matches none of these.
+        if (
+          inShared &&
+          viaRelative &&
+          OURS.some((ours) => specifier === ours || specifier.startsWith(`${ours}/`))
+        ) {
+          violations.push({
+            path: relPath,
+            line,
+            rule: "shared-isolation",
+            reason: `a relative import is still an import: shared/ is the bottom of the app and imports nothing of ours, so it may not reach "${shown}" — if it needs that, it is not shared code`,
           });
         }
 

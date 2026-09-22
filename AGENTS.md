@@ -187,9 +187,15 @@ that can be decided from the specifier string plus the path of the importing fil
 If your failure message is a paragraph of prose about doors, it came from `biome.json`
 and that is the file to read.
 
+Biome matches the specifier you wrote, so every one of those bans is about the `@/…`
+spelling of it. Each has a mirror in the script below that resolves the relative spelling
+of the same import — `feature-doors`, `component-barrel`, `lib-type-only` and
+`shared-isolation`, in that order. Write a new `overrides` entry and it needs one too,
+or `../../` walks straight past it.
+
 **`pnpm check:arch`** — `scripts/check-architecture.mjs`. It owns the rules Biome
 structurally cannot express, because they depend on file *contents*, directory *shape*,
-or a specifier Biome never resolves. Eight rules, each named in the failure output:
+or a specifier Biome never resolves. Nine rules, each named in the failure output:
 
 | Rule | What it catches |
 | --- | --- |
@@ -199,6 +205,7 @@ or a specifier Biome never resolves. Eight rules, each named in the failure outp
 | `lib-type-only` | `lib/` importing a feature. A type-only import is erased before bundling and is allowed; Biome cannot tell `import type` from a value import. |
 | `feature-doors` | The relative spelling of rule 3. `../inbox/queries` is invisible to Biome, which matches the literal specifier; the script resolves it against `src/` first. |
 | `component-barrel` | The relative spelling of the `@/components` ban, for the same reason. `@/components/<file>` stays legal in both spellings — it is the barrel itself that is off limits. |
+| `shared-isolation` | The relative spelling of the `shared/` rule. An import that stays inside `shared/` resolves to `@/shared/…` and is fine; one that resolves to `@/lib`, `@/features` or `@/components` is not. |
 | `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Covers `features/<name>/model.ts` and `features/<name>/components/model.ts` alike, so a components-only feature is held to it too. Every other rule assumes a model is client-safe; this is the one that checks. |
 | `curated-barrel` | `export *` in a feature's `index.ts` or its `components/index.ts`. A star puts every symbol of that module on the door, including whatever is added to it later. |
 
