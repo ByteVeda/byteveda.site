@@ -427,3 +427,33 @@ export async function countWorkspaces(scope: MailScope): Promise<WorkspaceCounts
 
   return empty;
 }
+
+/** One address the console may send as, and whose mail it is. */
+export type SendableAddress = { email: string; workspace: MailWorkspace };
+
+/**
+ * The addresses a new message may be sent from.
+ *
+ * Taken from the mailboxes that have actually received mail rather than from a
+ * list somebody maintains, because that is the same thing as "verified": every
+ * address here arrived through Resend's inbound routing, which only accepts
+ * mail for domains Resend has already been given. A hand-kept list would be a
+ * second place to be wrong, and the failure — a send refused by the API long
+ * after the operator has written the message — is the annoying kind.
+ *
+ * Scoped like every other read here. Somebody with the academy's mail is
+ * offered the academy's addresses and cannot send as ByteVeda by editing a
+ * form, because the action checks this same list again.
+ */
+export async function listSendableAddresses(scope: MailScope): Promise<SendableAddress[]> {
+  const workspaces = visibleWorkspaces(scope);
+  if (workspaces.length === 0) return [];
+
+  const rows = await getDb()
+    .selectDistinct({ email: emailThreads.mailbox, workspace: emailThreads.workspace })
+    .from(emailThreads)
+    .where(and(inArray(emailThreads.workspace, workspaces), isNotNull(emailThreads.mailbox)))
+    .orderBy(emailThreads.mailbox);
+
+  return rows.filter((row) => row.email.includes("@"));
+}

@@ -21,6 +21,7 @@ import type { AttachmentScope } from "./store";
 export function parseScope(kind: string | null, id: string | null): AttachmentScope | null {
   if (!id) return null;
   if (kind === "reply") return { kind: "reply", id };
+  if (kind === "compose") return { kind: "compose", id };
   if (kind === "broadcast") return { kind: "broadcast", id };
   return null;
 }
@@ -36,6 +37,11 @@ export async function authoriseScope(
   access: AccessSnapshot,
 ): Promise<Verdict> {
   if (scope.kind === "broadcast") return requires(access, "broadcasts.send");
+  // A composed message has no conversation to check against — the draft id is
+  // a handle on a form, not on anything stored. `mail.send` is the same gate
+  // the send itself passes, and the send is where the chosen from-address is
+  // checked against the workspaces this operator may write as.
+  if (scope.kind === "compose") return requires(access, "mail.send");
   return reachThread(scope.id, access, "mail.send");
 }
 

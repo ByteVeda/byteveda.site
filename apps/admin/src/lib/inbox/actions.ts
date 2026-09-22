@@ -7,10 +7,11 @@ import { readableWorkspaces } from "@/lib/auth/roles";
 import { getSession, type SessionContext } from "@/lib/auth/session";
 import { emailConfigured, fetchInboundBody, sendEmail } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
-import { replyEmail } from "@/lib/email/templates";
-import { getConversation } from "@/lib/inbox/queries";
+import { composedEmail, replyEmail } from "@/lib/email/templates";
+import { normaliseEmail, threadKeyFor } from "@/lib/email/thread";
+import { getConversation, listSendableAddresses } from "@/lib/inbox/queries";
 import * as store from "@/lib/inbox/store";
-import { reachThread } from "@/lib/mail/access";
+import { reachThread, requires } from "@/lib/mail/access";
 import { inboxChanged } from "@/lib/realtime";
 
 export type InboxResult = { ok: boolean; message: string };
@@ -256,4 +257,107 @@ export async function replyToThread(threadKey: string, body: string): Promise<In
 function attached(files: { filename: string }[]): string {
   if (files.length === 1) return `Sent ${files[0].filename}`;
   return `Sent ${files.length} files`;
+}
+
+/** Deliberately stricter than the RFC, and the same shape the academy uses. */
+const EMAIL_SHAPE = /^[^@\s]+@[^@\s.]+\.[^@\s]+$/;
+
+export type ComposeDraft = {
+  /** Which of our addresses it goes out as. Checked against the readable set. */
+  from: string;
+  to: string;
+  subject: string;
+  body: string;
+  /** The attachment scope the files were staged under. */
+  draftId: string;
+};
+
+/**
+ * Writes to somebody who has not written in.
+ *
+ * The console could only ever answer mail, which is fine until the thing you
+ * need to do is send a sheet — the work order names a customer who has never
+ * emailed this inbox, and the only way to reach them was another mail client
+ * and no record of it here.
+ *
+ * A composed message opens a conversation rather than standing alone, keyed
+ * the way an inbound reply will be keyed, so the answer lands in it. What goes
+ * out is therefore in the inbox next to everything else, which is the point:
+ * the send log is for auditing, and the thread is for knowing where you are.
+ *
+ * The from-address is re-checked against `listSendableAddresses` rather than
+ * trusted from the form. That list is already scoped to the workspaces this
+ * operator may read, so the check is also what stops somebody with the
+ * academy's mail sending as ByteVeda.
+ */
+export async function composeMessage(draft: ComposeDraft): Promise<InboxResult> {
+  const session = await getSession();
+  if (!session) return { ok: false, message: "Your session has expired. Sign in again." };
+
+  const verdict = requires(session.access, "mail.send");
+  if (!verdict.ok) return { ok: false, message: verdict.message };
+
+  const to = normaliseEmail(draft.to);
+  if (!EMAIL_SHAPE.test(to)) return { ok: false, message: "That is not an email address." };
+
+  const subject = draft.subject.trim();
+  if (!subject) return { ok: false, message: "Give it a subject." };
+
+  const scope = { kind: "compose", id: draft.draftId } as const;
+  const body = draft.body.trim();
+  const files = await attachments.loadForSend(scope);
+  if (!body && files.length === 0) return { ok: false, message: "Write something first." };
+
+  if (!emailConfigured()) {
+    return { ok: false, message: "Set RESEND_API_KEY before sending." };
+  }
+
+  const from = normaliseEmail(draft.from);
+  const sendable = await listSendableAddresses({
+    allowed: readableWorkspaces(session.access),
+  });
+  const sender = sendable.find((address) => address.email === from);
+  if (!sender) {
+    return { ok: false, message: "You cannot send as that address." };
+  }
+
+  // Before the send: the outbound row points at this key by foreign key, and
+  // a failed attempt still belongs in a conversation somebody can open.
+  const threadKey = threadKeyFor(to, subject);
+  await store.openOutboundThread({
+    threadKey,
+    subject,
+    to,
+    from: sender.email,
+    workspace: sender.workspace,
+    body: body || attached(files),
+  });
+
+  const result = await sendEmail({
+    to,
+    email: composedEmail({ subject, body }),
+    kind: "transactional",
+    from: sender.email,
+    replyTo: sender.email,
+    thread: { key: threadKey, body },
+    attachments: files.map((file) => ({
+      filename: file.filename,
+      contentType: file.contentType,
+      content: file.content,
+    })),
+  });
+
+  if (!result.ok) {
+    announce();
+    return { ok: false, message: result.error ?? "The message did not send." };
+  }
+
+  // Only now do the files stop being drafts, so a failed send is retried with
+  // the same button rather than four uploads.
+  if (result.messageId) await attachments.claim(scope, result.messageId);
+
+  await store.markThreadAnswered(threadKey, body || attached(files));
+
+  announce();
+  return { ok: true, message: `Sent to ${to}.` };
 }

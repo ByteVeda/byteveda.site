@@ -15,12 +15,14 @@ import {
   countWorkspaces,
   getConversation,
   isThreadFilter,
+  listSendableAddresses,
   listThreads,
   type ThreadFilter,
   type ThreadMessage,
 } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";
 import { isMailWorkspace } from "@/lib/mail/workspaces";
+import { ComposeBox } from "./compose-box";
 import { MessageBody } from "./message-body";
 import { ReplyBox } from "./reply-box";
 import { ThreadActions } from "./thread-actions";
@@ -48,11 +50,15 @@ export async function InboxPage({ searchParams }: Props) {
 
   // All four at once when a conversation was named in the URL, which is every
   // navigation from the list.
-  const [threads, counts, workspaceCounts, conversation] = await Promise.all([
+  const [threads, counts, workspaceCounts, conversation, sendable] = await Promise.all([
     listThreads({ ...scope, filter, query }),
     countThreads(scope),
     countWorkspaces(scope),
     t ? getConversation(t, scope) : Promise.resolve(null),
+    // Not narrowed by the open tab: composing from the ByteVeda tab to an
+    // academy address is a decision the operator is allowed to make, and the
+    // action checks the same list again.
+    can(access, "mail.send") ? listSendableAddresses({ allowed }) : Promise.resolve([]),
   ]);
 
   // Staged for the conversation that is actually open, and only then: this is a
@@ -79,6 +85,12 @@ export async function InboxPage({ searchParams }: Props) {
             query={query}
           />
         )}
+
+        <ComposeBox
+          addresses={sendable}
+          canSend={emailConfigured()}
+          maxFileBytes={maxFileBytes()}
+        />
       </PageHeader>
 
       {allowed.length === 0 ? (

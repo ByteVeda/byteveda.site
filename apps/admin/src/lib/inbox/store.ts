@@ -1,4 +1,5 @@
 import { emailThreads, getDb, inboundMessages } from "@byteveda/db";
+import type { MailWorkspace } from "@byteveda/db/constants";
 import { and, eq } from "drizzle-orm";
 import type { InboundRow } from "@/lib/email/inbound";
 import { replyTargetOf } from "@/lib/email/thread";
@@ -98,6 +99,53 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
 
     return true;
   });
+}
+
+/**
+ * Opens a conversation for a message the console is starting.
+ *
+ * Called before the send rather than after it, because `outbound_messages`
+ * points at a thread by foreign key and a send filed against a key that does
+ * not exist yet would be refused by Postgres. A thread whose send then fails is
+ * the right outcome anyway: the attempt and its error belong in the console,
+ * which is the whole reason the outbound row is written either way.
+ *
+ * The key is the one an inbound reply will compute — sender plus subject, see
+ * `threadKeyFor` — so when they write back their message lands in this
+ * conversation instead of starting a second one beside it.
+ *
+ * Read at the moment it is created. Nobody needs telling about a message they
+ * just wrote themselves.
+ */
+export async function openOutboundThread(input: {
+  threadKey: string;
+  subject: string;
+  to: string;
+  from: string;
+  workspace: MailWorkspace;
+  body: string;
+  at?: Date;
+}): Promise<void> {
+  const at = input.at ?? new Date();
+
+  await getDb()
+    .insert(emailThreads)
+    .values({
+      threadKey: input.threadKey,
+      subject: input.subject,
+      correspondentEmail: input.to,
+      correspondentName: null,
+      mailbox: input.from,
+      workspace: input.workspace,
+      preview: previewOf(input.body),
+      lastMessageAt: at,
+      lastOutboundAt: at,
+      readAt: at,
+      createdAt: at,
+    })
+    // Writing again to somebody about the same thing continues the
+    // conversation. `markThreadAnswered` moves it on once the send lands.
+    .onConflictDoNothing();
 }
 
 /**
