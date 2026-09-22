@@ -9,6 +9,7 @@
 
 export { isSuperAdminId, superAdmins } from "./allowlist";
 export { LoginPage } from "./components";
+export { safeEqual, sessionCookieOptions } from "./crypto";
 export {
   type AccessSnapshot,
   accessFor,
@@ -16,10 +17,7 @@ export {
   can,
   canReadWorkspace,
   hasOverrides,
-  PERMISSIONS,
   type Permission,
-  permissionsFor,
-  RESERVED_PERMISSIONS,
   readableWorkspaces,
   roleLabel,
   SESSION_COOKIE,
@@ -29,6 +27,5 @@ export {
 } from "./model";
 export { getSession } from "./queries";
 export { refuse, requirePermission, requireSession } from "./service";
-export { safeEqual, sessionCookieOptions } from "./session";
 export { createSession, revokeSessionsFor } from "./store";
 export { callbackUrl, originOf, safeNext } from "./urls";

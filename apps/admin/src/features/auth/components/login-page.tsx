@@ -1,6 +1,9 @@
 import { OctocatIcon } from "@byteveda/ui";
 import { redirect } from "next/navigation";
-import { Mark } from "@/components";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the auth front door — every server module that
+// imports `@/features/auth` for `refuse()` would pull the whole UI graph with it.
+import { Mark } from "@/components/mark";
 import { getSession } from "../queries";
 import { safeNext } from "../urls";
 

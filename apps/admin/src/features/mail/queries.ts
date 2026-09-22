@@ -1,6 +1,6 @@
 import { emailThreads, getDb } from "@byteveda/db";
 import { eq } from "drizzle-orm";
-import { type AccessSnapshot, canReadWorkspace, type Permission } from "@/features/auth";
+import { type AccessSnapshot, canReadWorkspace, type Permission } from "@/features/auth/model";
 import { ALLOWED, missing, requires, type Verdict } from "./model";
 
 export async function reachThread(

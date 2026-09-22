@@ -2,8 +2,8 @@ import { randomBytes } from "node:crypto";
 import { getDb, sessions } from "@byteveda/db";
 import { eq, lt } from "drizzle-orm";
 import { cookies } from "next/headers";
+import { hashToken } from "./crypto";
 import { SESSION_COOKIE, SESSION_TTL_MS } from "./model";
-import { hashToken } from "./session";
 
 /**
  * Issues a session and returns the raw token. Only its SHA-256 digest is

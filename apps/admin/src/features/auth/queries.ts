@@ -2,8 +2,8 @@ import { adminCustomRoles, adminUsers, getDb, sessions } from "@byteveda/db";
 import { and, eq, gt } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { isSuperAdminId } from "./allowlist";
+import { hashToken } from "./crypto";
 import { accessFor, SESSION_COOKIE, SESSION_TTL_MS, type SessionContext } from "./model";
-import { hashToken } from "./session";
 
 /** Past half its life, an active session is extended. */
 const RENEW_AFTER_MS = SESSION_TTL_MS / 2;
