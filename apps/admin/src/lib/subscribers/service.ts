@@ -2,8 +2,8 @@ import { randomBytes } from "node:crypto";
 import { getDb, type Subscriber, subscribers } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { confirmationEmail, sendEmail } from "@/features/mail";
+import { getSettings } from "@/features/settings";
 import { subscribersChanged } from "@/lib/realtime";
-import { getSettings } from "@/lib/settings";
 
 export type SubscribeOutcome =
   | { ok: true; state: "pending" | "already-active" }

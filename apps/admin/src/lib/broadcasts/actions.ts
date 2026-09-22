@@ -5,8 +5,8 @@ import { desc, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import * as attachments from "@/features/attachments";
 import { refuse } from "@/features/auth";
+import { getSettings } from "@/features/settings";
 import { emailConfigured } from "@/lib/email/client";
-import { getSettings } from "@/lib/settings";
 import { sendBroadcastNow } from "./service";
 
 export type BroadcastResult = { ok: boolean; message: string };

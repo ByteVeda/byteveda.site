@@ -1,7 +1,7 @@
 import type { OutboundKind } from "@byteveda/db";
 import { checkMessage } from "@/features/attachments/model";
+import { getSettings } from "@/features/settings";
 import { type Attachment, emailConfigured, receiveMessage, sendMessage } from "@/lib/email/client";
-import { getSettings } from "@/lib/settings";
 import { type Email, fetchFailureReason, type InboundFetch, type SendResult } from "./model";
 import { recordOutbound } from "./store";
 

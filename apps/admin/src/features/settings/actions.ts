@@ -2,15 +2,16 @@
 
 import { revalidatePath } from "next/cache";
 import { refuse } from "@/features/auth";
-import { SETTINGS, type SettingKey, setSetting } from "@/lib/settings";
+import { SETTINGS, type SettingKey } from "./model";
+import { setSetting } from "./store";
 
 export type SettingsResult = { ok: boolean; message: string };
 
 /**
  * Writes one setting.
  *
- * The key is checked against the registry rather than trusted: a server action
- * is a public endpoint, and this one writes to a key-value table.
+ * The key is checked against the catalogue in `./model` rather than trusted: a
+ * server action is a public endpoint, and this one writes to a key-value table.
  */
 export async function updateSetting(key: string, value: unknown): Promise<SettingsResult> {
   const refused = await refuse("settings.write");

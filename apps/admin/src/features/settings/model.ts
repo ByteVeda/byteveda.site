@@ -1,9 +1,9 @@
 /**
  * What the settings are, with no imports at all.
  *
- * Kept apart from the store so the settings form — a client component — can
- * render the labels and defaults without importing the database module, which
- * would pull `pg` into the browser bundle.
+ * The key, the type, the default and the two lines of copy that go beside it —
+ * everything the form renders and everything the store validates a stored row
+ * against. Client-safe, like every `model.ts`.
  */
 export const SETTINGS = {
   "newsletter.enabled": {

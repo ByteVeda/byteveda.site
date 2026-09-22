@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import { defaults } from "@/lib/settings/registry";
+import { defaults } from "../model";
 import { SettingsForm } from "./settings-form";
 
 /**

@@ -1,13 +1,6 @@
 import { getDb, settings } from "@byteveda/db";
 import { inArray } from "drizzle-orm";
-import {
-  defaults,
-  SETTING_KEYS,
-  SETTINGS,
-  type SettingKey,
-  type SettingsSnapshot,
-  type SettingValue,
-} from "./registry";
+import { defaults, SETTING_KEYS, SETTINGS, type SettingKey, type SettingsSnapshot } from "./model";
 
 /**
  * Every setting, with defaults filled in.
@@ -32,14 +25,4 @@ export async function getSettings(): Promise<SettingsSnapshot> {
   }
 
   return snapshot;
-}
-
-export async function setSetting<K extends SettingKey>(
-  key: K,
-  value: SettingValue<K>,
-): Promise<void> {
-  await getDb()
-    .insert(settings)
-    .values({ key, value, updatedAt: new Date() })
-    .onConflictDoUpdate({ target: settings.key, set: { value, updatedAt: new Date() } });
 }

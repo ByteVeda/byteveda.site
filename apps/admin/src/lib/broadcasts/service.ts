@@ -4,8 +4,8 @@ import { marked } from "marked";
 import * as attachments from "@/features/attachments";
 import { checkMessage } from "@/features/attachments/model";
 import { announcementEmail, broadcastEmail, sendMany } from "@/features/mail";
+import { getSettings } from "@/features/settings";
 import { env } from "@/lib/env";
-import { getSettings } from "@/lib/settings";
 import { activeSubscribers } from "@/lib/subscribers/queries";
 import { unsubscribeUrl } from "@/lib/subscribers/service";
 

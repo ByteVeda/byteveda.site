@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useTransition } from "react";
-// From ./registry, not the folder index: the index reaches the database, and
+import { updateSetting } from "../actions";
+// From `../model`, not the feature's index: the index reaches the database, and
 // importing it here would pull `pg` into the browser bundle.
-import { SETTINGS, type SettingKey, type SettingsSnapshot } from "@/lib/settings/registry";
-import { updateSetting } from "@/lib/settings-actions";
+import { SETTINGS, type SettingKey, type SettingsSnapshot } from "../model";
 
 type Props = {
   initial: SettingsSnapshot;
