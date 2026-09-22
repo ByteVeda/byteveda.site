@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { getSession } from "@/features/auth";
 import { authoriseScope, parseScope } from "@/lib/attachments/access";
 import { listStaged, pruneStale, stage } from "@/lib/attachments/store";
-import { getSession } from "@/lib/auth/session";
 import { checkAttachment, maxFileBytes } from "@/lib/email/attachments";
 
 export const dynamic = "force-dynamic";

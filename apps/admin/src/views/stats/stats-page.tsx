@@ -1,7 +1,6 @@
 import { ECOSYSTEM_LABELS } from "@byteveda/db";
 import { PageHeader } from "@/components";
-import { can } from "@/lib/auth/roles";
-import { requirePermission } from "@/lib/auth/session";
+import { can, requirePermission } from "@/features/auth";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { ago, count, delta } from "@/shared/format";
 import { AddPackageForm, CollectButton, RemovePackageButton, SeedButton } from "./package-controls";

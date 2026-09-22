@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { getSession } from "@/lib/auth/session";
+import { getSession } from "@/features/auth";
 import { subscribersChanged } from "@/lib/realtime";
 import { eventStream } from "@/lib/realtime/stream";
 

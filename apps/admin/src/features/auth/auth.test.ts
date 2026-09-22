@@ -12,7 +12,7 @@ import {
   roleLabel,
   SUPER_ADMIN_GITHUB_IDS,
   sanitisePermissions,
-} from "./roles";
+} from "./model";
 import { safeNext } from "./urls";
 
 describe("parseAllowlist", () => {

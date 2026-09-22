@@ -1,6 +1,6 @@
 import { emailThreads, getDb } from "@byteveda/db";
 import { eq } from "drizzle-orm";
-import { type AccessSnapshot, can, canReadWorkspace, type Permission } from "@/lib/auth/roles";
+import { type AccessSnapshot, can, canReadWorkspace, type Permission } from "@/features/auth";
 
 /**
  * Whether an operator may touch a particular conversation.

@@ -1,8 +1,8 @@
 import { OctocatIcon } from "@byteveda/ui";
 import { redirect } from "next/navigation";
 import { Mark } from "@/components";
-import { getSession } from "@/lib/auth/session";
-import { safeNext } from "@/lib/auth/urls";
+import { getSession } from "../queries";
+import { safeNext } from "../urls";
 
 /**
  * What went wrong, said plainly. Each one names the thing to do next rather

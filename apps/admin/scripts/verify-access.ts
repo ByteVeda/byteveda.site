@@ -26,8 +26,8 @@ import {
   sessions,
 } from "@byteveda/db";
 import { eq } from "drizzle-orm";
+import { accessFor, can, canReadWorkspace, readableWorkspaces } from "../src/features/auth/model";
 import * as attachments from "../src/lib/attachments/store";
-import { accessFor, can, canReadWorkspace, readableWorkspaces } from "../src/lib/auth/roles";
 import { listMembers } from "../src/lib/members/queries";
 import { admit } from "../src/lib/members/service";
 

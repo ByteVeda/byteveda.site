@@ -1,6 +1,5 @@
 import { LiveRefresh, PageHeader } from "@/components";
-import { can } from "@/lib/auth/roles";
-import { requirePermission } from "@/lib/auth/session";
+import { can, requirePermission } from "@/features/auth";
 import { listBroadcasts } from "@/lib/broadcasts/actions";
 import { maxFileBytes } from "@/lib/email/attachments";
 import { getSettings } from "@/lib/settings";

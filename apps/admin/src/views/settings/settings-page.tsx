@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components";
-import { can } from "@/lib/auth/roles";
-import { requirePermission } from "@/lib/auth/session";
+import { can, requirePermission } from "@/features/auth";
 import { emailConfigured } from "@/lib/email/client";
 import { getSettings } from "@/lib/settings";
 import { SettingsForm } from "./settings-form";

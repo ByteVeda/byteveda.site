@@ -12,7 +12,7 @@ import {
 import { Ban, KeyRound, Trash2, UndoDot, UserPlus } from "lucide-react";
 import { useState, useTransition } from "react";
 import { useConfirm } from "@/components";
-import type { Permission } from "@/lib/auth/roles";
+import type { Permission } from "@/features/auth/model";
 import { inviteMember, removeMember, setMemberStatus } from "@/lib/members/actions";
 import { AccessDialog } from "./access-dialog";
 import type { RoleOption } from "./types";

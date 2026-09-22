@@ -1,6 +1,5 @@
 import { AccessProvider, ConfirmProvider, InboxLiveProvider, Rail, SignOut } from "@/components";
-import { readableWorkspaces } from "@/lib/auth/roles";
-import { requireSession } from "@/lib/auth/session";
+import { readableWorkspaces, requireSession } from "@/features/auth";
 import { countUnread } from "@/lib/inbox/queries";
 
 /**

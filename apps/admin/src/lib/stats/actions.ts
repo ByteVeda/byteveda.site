@@ -3,7 +3,7 @@
 import { ECOSYSTEMS, type Ecosystem, getDb, projectPackages } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { refuse } from "@/lib/auth/session";
+import { refuse } from "@/features/auth";
 import { catalogueSuggestions } from "./catalogue";
 import { collectAll, collectPackage } from "./collect";
 

@@ -3,7 +3,7 @@
 import { getDb, subscribers } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { refuse } from "@/lib/auth/session";
+import { refuse } from "@/features/auth";
 import { sendEmail } from "@/lib/email/client";
 import { confirmationEmail } from "@/lib/email/templates";
 import { env } from "@/lib/env";

@@ -1,4 +1,4 @@
-import type { Permission } from "@/lib/auth/roles";
+import type { Permission } from "@/features/auth/model";
 
 /**
  * A custom role as the browser sees it.

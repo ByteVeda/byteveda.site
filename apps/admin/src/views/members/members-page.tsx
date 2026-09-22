@@ -1,7 +1,6 @@
 import { MAIL_WORKSPACE_LABELS, MAIL_WORKSPACES } from "@byteveda/db/constants";
 import { PageHeader } from "@/components";
-import { can, hasOverrides, roleLabel } from "@/lib/auth/roles";
-import { requirePermission } from "@/lib/auth/session";
+import { can, hasOverrides, requirePermission, roleLabel } from "@/features/auth";
 import { listCustomRoles, listMembers, type Member } from "@/lib/members/queries";
 import { ago } from "@/shared/format";
 import { InviteForm, MemberControls } from "./member-controls";
@@ -156,7 +155,7 @@ function MemberRow({
           locked={access.superAdmin || isSelf}
           lockedReason={
             access.superAdmin
-              ? "Super admins are set in lib/auth/roles.ts."
+              ? "Super admins are set in features/auth/model.ts."
               : "This is you. Ask the other super admin."
           }
         />

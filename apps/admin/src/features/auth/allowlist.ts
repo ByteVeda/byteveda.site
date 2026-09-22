@@ -3,7 +3,7 @@
  *
  * This file used to answer "who may sign in", and that question now has two
  * halves. The set below is the one that cannot be widened from inside the
- * console: it is a hardcoded list in `roles.ts`, plus whatever `ADMIN_GITHUB_IDS`
+ * console: it is a hardcoded list in `model.ts`, plus whatever `ADMIN_GITHUB_IDS`
  * names, and both require a deploy to change. Everybody else is a row in
  * `admin_users` that a super admin created — see `lib/members/service.ts`.
  *
@@ -16,7 +16,7 @@
  * the freed name can then be registered by somebody else.
  */
 
-import { SUPER_ADMIN_GITHUB_IDS } from "./roles";
+import { SUPER_ADMIN_GITHUB_IDS } from "./model";
 
 export function parseAllowlist(raw: string | undefined): number[] {
   if (!raw) return [];
@@ -52,7 +52,7 @@ export function superAdmins(): number[] {
 
   if (merged.size === 0) {
     throw new Error(
-      "There are no super admins, so nobody can sign in. Add your numeric GitHub user ID to SUPER_ADMIN_GITHUB_IDS in lib/auth/roles.ts, or to ADMIN_GITHUB_IDS.",
+      "There are no super admins, so nobody can sign in. Add your numeric GitHub user ID to SUPER_ADMIN_GITHUB_IDS in features/auth/model.ts, or to ADMIN_GITHUB_IDS.",
     );
   }
 

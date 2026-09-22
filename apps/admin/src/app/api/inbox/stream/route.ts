@@ -1,7 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { readableWorkspaces } from "@/lib/auth/roles";
-import { getSession } from "@/lib/auth/session";
+import { getSession, readableWorkspaces } from "@/features/auth";
 import { countUnread } from "@/lib/inbox/queries";
 import { inboxChanged } from "@/lib/realtime";
 import { eventStream } from "@/lib/realtime/stream";

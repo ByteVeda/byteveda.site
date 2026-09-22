@@ -15,9 +15,15 @@ import {
 } from "@byteveda/db/constants";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { isSuperAdminId } from "@/lib/auth/allowlist";
-import { basePermissionsFor, type Permission, sanitisePermissions } from "@/lib/auth/roles";
-import { refuse, requireSession, revokeSessionsFor } from "@/lib/auth/session";
+import {
+  basePermissionsFor,
+  isSuperAdminId,
+  type Permission,
+  refuse,
+  requireSession,
+  revokeSessionsFor,
+  sanitisePermissions,
+} from "@/features/auth";
 import { findUserByLogin } from "@/lib/github/client";
 import { findCustomRole, findMember } from "./queries";
 
@@ -159,7 +165,7 @@ export async function setMemberAccess(id: string, draft: AccessDraft): Promise<M
   if (isSuperAdminId(member.githubId)) {
     return {
       ok: false,
-      message: `${member.login} is a super admin, which is set in lib/auth/roles.ts. Nothing here applies to them.`,
+      message: `${member.login} is a super admin, which is set in features/auth/model.ts. Nothing here applies to them.`,
     };
   }
 
@@ -233,7 +239,7 @@ export async function setMemberStatus(id: string, status: string): Promise<Membe
   if (isSuperAdminId(member.githubId)) {
     return {
       ok: false,
-      message: `${member.login} is a super admin, and that is set in lib/auth/roles.ts. Remove the id there to withdraw it.`,
+      message: `${member.login} is a super admin, and that is set in features/auth/model.ts. Remove the id there to withdraw it.`,
     };
   }
 
@@ -273,7 +279,7 @@ export async function removeMember(id: string): Promise<MemberResult> {
   if (isSuperAdminId(member.githubId)) {
     return {
       ok: false,
-      message: `${member.login} is a super admin: the next sign-in writes the row straight back. Remove the id from lib/auth/roles.ts instead.`,
+      message: `${member.login} is a super admin: the next sign-in writes the row straight back. Remove the id from features/auth/model.ts instead.`,
     };
   }
 

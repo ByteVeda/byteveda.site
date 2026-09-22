@@ -9,7 +9,7 @@ import {
   type MailWorkspace,
 } from "@byteveda/db/constants";
 import { useMemo, useState, useTransition } from "react";
-import { basePermissionsFor, type Permission, permissionsFor } from "@/lib/auth/roles";
+import { basePermissionsFor, type Permission, permissionsFor } from "@/features/auth/model";
 import { type AccessDraft, setMemberAccess } from "@/lib/members/actions";
 import { Modal } from "./modal";
 import { PermissionPicker } from "./permission-picker";

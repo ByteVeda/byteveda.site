@@ -1,10 +1,13 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import {
+  getSession,
+  type Permission,
+  readableWorkspaces,
+  type SessionContext,
+} from "@/features/auth";
 import * as attachments from "@/lib/attachments/store";
-import type { Permission } from "@/lib/auth/roles";
-import { readableWorkspaces } from "@/lib/auth/roles";
-import { getSession, type SessionContext } from "@/lib/auth/session";
 import { emailConfigured, fetchInboundBody, sendEmail } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
 import { composedEmail, replyEmail } from "@/lib/email/templates";

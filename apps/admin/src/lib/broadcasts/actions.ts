@@ -3,8 +3,8 @@
 import { broadcasts, getDb } from "@byteveda/db";
 import { desc, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
+import { refuse } from "@/features/auth";
 import * as attachments from "@/lib/attachments/store";
-import { refuse } from "@/lib/auth/session";
 import { emailConfigured } from "@/lib/email/client";
 import { getSettings } from "@/lib/settings";
 import { sendBroadcastNow } from "./service";

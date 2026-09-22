@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { SESSION_COOKIE } from "@/lib/auth/constants";
+import { SESSION_COOKIE } from "@/features/auth/model";
 
 /**
  * A cheap gate, not the authorisation check.

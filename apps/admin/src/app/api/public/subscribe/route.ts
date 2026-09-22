@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { originOf } from "@/lib/auth/urls";
+import { originOf } from "@/features/auth";
 import { subscribe } from "@/lib/subscribers/service";
 import { corsHeaders } from "@/shared/cors";
 

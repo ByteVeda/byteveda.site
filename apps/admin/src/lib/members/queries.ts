@@ -7,8 +7,7 @@ import {
   sessions,
 } from "@byteveda/db";
 import { asc, desc, eq, gt, sql } from "drizzle-orm";
-import { superAdmins } from "@/lib/auth/allowlist";
-import { type AccessSnapshot, accessFor } from "@/lib/auth/roles";
+import { type AccessSnapshot, accessFor, superAdmins } from "@/features/auth";
 
 /** A member as the access page shows them: the row, plus what it resolves to. */
 export type Member = {

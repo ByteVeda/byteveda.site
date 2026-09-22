@@ -46,7 +46,7 @@ export function isThreadFilter(value: string | undefined): value is ThreadFilter
  * scope impossible to forget rather than to remember it at each call site.
  *
  * `allowed` comes from the session — see `readableWorkspaces` in
- * `lib/auth/roles.ts`. `workspace` is the tab, and it can only ever narrow.
+ * `features/auth/model.ts`. `workspace` is the tab, and it can only ever narrow.
  */
 export type MailScope = {
   allowed: readonly MailWorkspace[];

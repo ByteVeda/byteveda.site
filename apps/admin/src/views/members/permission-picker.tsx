@@ -7,7 +7,7 @@ import {
   type AdminResource,
   resourceOf,
 } from "@byteveda/db/constants";
-import { PERMISSIONS, type Permission, RESERVED_PERMISSIONS } from "@/lib/auth/roles";
+import { PERMISSIONS, type Permission, RESERVED_PERMISSIONS } from "@/features/auth/model";
 
 /**
  * Which permissions are ticked, grouped by the thing they are about.
@@ -44,7 +44,7 @@ export function PermissionPicker({
 
   // Reserved grants are not offered at all. Showing a permanently disabled
   // `members.manage` would invite the question of how to enable it, and the
-  // answer is a commit to lib/auth/roles.ts, not a checkbox.
+  // answer is a commit to features/auth/model.ts, not a checkbox.
   const grantable = PERMISSIONS.filter((permission) => !RESERVED_PERMISSIONS.includes(permission));
 
   function toggle(permission: Permission) {

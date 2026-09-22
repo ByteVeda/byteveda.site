@@ -1,12 +1,14 @@
 import { type NextRequest, NextResponse } from "next/server";
 import {
+  callbackUrl,
   createSession,
+  originOf,
   SESSION_COOKIE,
   STATE_COOKIE,
   safeEqual,
+  safeNext,
   sessionCookieOptions,
-} from "@/lib/auth/session";
-import { callbackUrl, originOf, safeNext } from "@/lib/auth/urls";
+} from "@/features/auth";
 import { exchangeCode, fetchUser } from "@/lib/github/client";
 import { admit } from "@/lib/members/service";
 import { clientIp, userAgent } from "@/shared/request";

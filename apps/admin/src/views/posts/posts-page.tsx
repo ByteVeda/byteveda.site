@@ -1,8 +1,7 @@
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components";
-import { can } from "@/lib/auth/roles";
-import { requirePermission } from "@/lib/auth/session";
+import { can, requirePermission } from "@/features/auth";
 import { createDraft } from "@/lib/posts/actions";
 import { listPosts } from "@/lib/posts/queries";
 import { ago } from "@/shared/format";

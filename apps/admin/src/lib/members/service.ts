@@ -1,6 +1,6 @@
 import { type AdminUser, adminUsers, getDb } from "@byteveda/db";
 import { eq } from "drizzle-orm";
-import { isSuperAdminId } from "@/lib/auth/allowlist";
+import { isSuperAdminId } from "@/features/auth";
 import type { GitHubUser } from "@/lib/github/client";
 import { findMemberByGithubId } from "./queries";
 

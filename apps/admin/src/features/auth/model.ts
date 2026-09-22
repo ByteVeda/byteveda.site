@@ -4,7 +4,7 @@
  * Deliberately a plain module: the rail, the members page and half a dozen
  * buttons are client components that have to ask the same questions the server
  * asks, and `@byteveda/db` drags `pg` into any bundle that touches it. Only the
- * constants module is safe to import here.
+ * constants module, and `import type` — which is erased — are safe here.
  *
  * The rule this file exists to keep: **the answer is computed in one place.**
  * A permission checked one way on the server and another way in the browser is
@@ -12,6 +12,7 @@
  * matters is whichever one an attacker skips.
  */
 
+import type { AdminUser } from "@byteveda/db";
 import {
   ADMIN_PERMISSIONS,
   ADMIN_ROLE_LABELS,
@@ -314,3 +315,33 @@ export function roleLabel(
 export function hasOverrides(access: Pick<AccessSnapshot, "extra" | "denied">): boolean {
   return access.extra.length > 0 || access.denied.length > 0;
 }
+
+/**
+ * Cookie names, kept free of anything that runs.
+ *
+ * The proxy runs on the edge runtime, where `pg` and `node:crypto` do not
+ * exist, and it imports this module for these two strings. Everything above is
+ * pure and everything that is not lives in `session.ts`, which is what keeps
+ * that import cheap.
+ */
+export const SESSION_COOKIE = "bv_admin_session";
+export const STATE_COOKIE = "bv_oauth_state";
+
+/**
+ * Two clocks, on purpose. The row in Postgres is the authority and rolls
+ * forward while the operator is active, so an idle session dies in a week. The
+ * cookie outlives it, which is what lets the roll happen at all — a React
+ * Server Component may read cookies but may not write them, so the renewal
+ * cannot reach the browser. The cookie's own expiry is therefore the hard
+ * ceiling on one continuous login.
+ */
+export const SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+export const COOKIE_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+
+export type SessionContext = {
+  user: AdminUser;
+  sessionId: string;
+  expiresAt: Date;
+  /** What this operator may do, resolved once per request. See the rules above. */
+  access: AccessSnapshot;
+};

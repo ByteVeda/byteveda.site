@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { requirePermission } from "@/lib/auth/session";
+import { requirePermission } from "@/features/auth";
 import { getCorpus, getPostById, listRevisions } from "@/lib/posts/queries";
 import { PostEditor } from "./editor/post-editor";
 

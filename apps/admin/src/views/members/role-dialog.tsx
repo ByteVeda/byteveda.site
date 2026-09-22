@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { type Permission, permissionsFor } from "@/lib/auth/roles";
+import { type Permission, permissionsFor } from "@/features/auth/model";
 import { createRole, type RoleDraft, updateRole } from "@/lib/members/actions";
 import { Modal } from "./modal";
 import { PermissionPicker } from "./permission-picker";

@@ -1,6 +1,6 @@
 "use server";
 
-import { getSession } from "@/lib/auth/session";
+import { getSession } from "@/features/auth";
 import { authoriseScope, parseScope } from "./access";
 import { discard } from "./store";
 

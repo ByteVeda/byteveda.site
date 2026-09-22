@@ -11,7 +11,7 @@ import {
 import { Lock, Pencil, Plus, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
 import { useConfirm } from "@/components";
-import { type Permission, permissionsFor } from "@/lib/auth/roles";
+import { type Permission, permissionsFor } from "@/features/auth/model";
 import { deleteRole } from "@/lib/members/actions";
 import { RoleDialog } from "./role-dialog";
 import type { RoleOption } from "./types";
@@ -26,7 +26,7 @@ import type { RoleOption } from "./types";
  * write "Editor" again rather than discover it already exists.
  *
  * The built-in rows are locked, and say why. Editing them is a commit to
- * `lib/auth/roles.ts`, which is a reviewable, revertable, attributable act,
+ * `features/auth/model.ts`, which is a reviewable, revertable, attributable act,
  * and that is the property worth keeping for the roles most people are on.
  */
 export function RolesPanel({ roles, manage }: { roles: RoleOption[]; manage: boolean }) {

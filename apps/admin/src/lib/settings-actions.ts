@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { refuse } from "@/lib/auth/session";
+import { refuse } from "@/features/auth";
 import { SETTINGS, type SettingKey, setSetting } from "@/lib/settings";
 
 export type SettingsResult = { ok: boolean; message: string };

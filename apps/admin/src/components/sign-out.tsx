@@ -1,5 +1,5 @@
 import { LogOut } from "lucide-react";
-import { signOut } from "@/lib/auth/actions";
+import { signOut } from "@/features/auth/actions";
 
 export function SignOut() {
   return (

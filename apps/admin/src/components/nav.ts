@@ -1,6 +1,6 @@
 import { FileText, Gauge, Inbox, Send, Settings, TrendingUp, Users } from "lucide-react";
 import type { ComponentType, SVGProps } from "react";
-import { type AccessSnapshot, can, type Permission } from "@/lib/auth/roles";
+import { type AccessSnapshot, can, type Permission } from "@/features/auth/model";
 
 export type NavItem = {
   href: string;
@@ -12,7 +12,7 @@ export type NavItem = {
    *
    * The link disappearing is presentation, not protection: the page itself
    * calls `requirePermission`, and a typed URL lands on the overview with an
-   * explanation. See `lib/auth/session.ts`.
+   * explanation. See `features/auth/service.ts`.
    */
   permission?: Permission;
 };
