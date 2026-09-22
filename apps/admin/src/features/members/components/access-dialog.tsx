@@ -10,10 +10,10 @@ import {
 } from "@byteveda/db/constants";
 import { useMemo, useState, useTransition } from "react";
 import { basePermissionsFor, type Permission, permissionsFor } from "@/features/auth/model";
-import { type AccessDraft, setMemberAccess } from "@/lib/members/actions";
+import { type AccessDraft, setMemberAccess } from "../actions";
+import type { RoleOption } from "../model";
 import { Modal } from "./modal";
 import { PermissionPicker } from "./permission-picker";
-import type { RoleOption } from "./types";
 
 /**
  * Everything one member is allowed to do, on one screen.

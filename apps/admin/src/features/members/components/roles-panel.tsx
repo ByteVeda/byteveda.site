@@ -10,11 +10,11 @@ import {
 } from "@byteveda/db/constants";
 import { Lock, Pencil, Plus, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components";
+import { useConfirm } from "@/components/confirm";
 import { type Permission, permissionsFor } from "@/features/auth/model";
-import { deleteRole } from "@/lib/members/actions";
+import { deleteRole } from "../actions";
+import type { RoleOption } from "../model";
 import { RoleDialog } from "./role-dialog";
-import type { RoleOption } from "./types";
 
 /**
  * Every role the console has, whether the source ships it or a super admin

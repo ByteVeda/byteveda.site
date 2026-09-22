@@ -5,7 +5,7 @@
  * halves. The set below is the one that cannot be widened from inside the
  * console: it is a hardcoded list in `model.ts`, plus whatever `ADMIN_GITHUB_IDS`
  * names, and both require a deploy to change. Everybody else is a row in
- * `admin_users` that a super admin created — see `lib/members/service.ts`.
+ * `admin_users` that a super admin created — see `features/members/service.ts`.
  *
  * `ADMIN_GITHUB_IDS` survives as a fallback rather than as the way in. It is
  * how a deployment whose operators are not in the source list keeps working,

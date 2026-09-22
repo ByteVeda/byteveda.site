@@ -2,10 +2,10 @@
 
 import { useState, useTransition } from "react";
 import { type Permission, permissionsFor } from "@/features/auth/model";
-import { createRole, type RoleDraft, updateRole } from "@/lib/members/actions";
+import { createRole, type RoleDraft, updateRole } from "../actions";
+import type { RoleOption } from "../model";
 import { Modal } from "./modal";
 import { PermissionPicker } from "./permission-picker";
-import type { RoleOption } from "./types";
 
 /**
  * Writing a role, or editing one.

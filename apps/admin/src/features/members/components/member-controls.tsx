@@ -11,11 +11,11 @@ import {
 } from "@byteveda/db/constants";
 import { Ban, KeyRound, Trash2, UndoDot, UserPlus } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components";
+import { useConfirm } from "@/components/confirm";
 import type { Permission } from "@/features/auth/model";
-import { inviteMember, removeMember, setMemberStatus } from "@/lib/members/actions";
+import { inviteMember, removeMember, setMemberStatus } from "../actions";
+import type { RoleOption } from "../model";
 import { AccessDialog } from "./access-dialog";
-import type { RoleOption } from "./types";
 
 type Message = { text: string; ok: boolean } | null;
 

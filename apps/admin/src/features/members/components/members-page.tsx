@@ -1,11 +1,14 @@
 import { MAIL_WORKSPACE_LABELS, MAIL_WORKSPACES } from "@byteveda/db/constants";
-import { PageHeader } from "@/components";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the members front door — every server module
+// that imports `@/features/members` would pull the whole UI graph with it.
+import { PageHeader } from "@/components/page-header";
 import { can, hasOverrides, requirePermission, roleLabel } from "@/features/auth";
-import { listCustomRoles, listMembers, type Member } from "@/lib/members/queries";
 import { ago } from "@/shared/format";
+import type { RoleOption } from "../model";
+import { listCustomRoles, listMembers, type Member } from "../queries";
 import { InviteForm, MemberControls } from "./member-controls";
 import { RolesPanel } from "./roles-panel";
-import type { RoleOption } from "./types";
 
 /**
  * Who has access, and what to.
