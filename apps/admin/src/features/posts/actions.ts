@@ -14,7 +14,7 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { refuse, requirePermission, requireSession } from "@/features/auth";
-import { announcePost } from "@/lib/broadcasts/service";
+import { announcePost } from "@/features/broadcasts";
 import { revalidateFlexiq } from "@/lib/revalidate";
 import { isValidSlug, slugify, uniqueSlug } from "./model";
 import { getTakenSlugs } from "./queries";
