@@ -3,7 +3,9 @@ import { type AdminUser, adminUsers, getDb, sessions } from "@byteveda/db";
 import { and, eq, gt, lt } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { isSuperAdminId } from "./allowlist";
 import { SESSION_COOKIE, STATE_COOKIE } from "./constants";
+import { type AccessSnapshot, accessFor, can, type Permission } from "./roles";
 
 export { SESSION_COOKIE, STATE_COOKIE };
 
@@ -24,6 +26,8 @@ export type SessionContext = {
   user: AdminUser;
   sessionId: string;
   expiresAt: Date;
+  /** What this operator may do, resolved once per request. See `roles.ts`. */
+  access: AccessSnapshot;
 };
 
 export function hashToken(token: string): string {
@@ -96,6 +100,19 @@ export async function getSession(): Promise<SessionContext | null> {
 
   if (!row) return null;
 
+  const superAdmin = isSuperAdminId(row.user.githubId);
+
+  /*
+   * Suspension takes effect on the next request, not on the next login.
+   *
+   * `suspendMember` deletes the member's sessions, so this is the second lock
+   * on the same door — but it is the one that closes it for a session issued
+   * in the same second, or one the delete missed because the row was written by
+   * another instance. A super admin cannot be locked out this way; their access
+   * does not come from the row.
+   */
+  if (!superAdmin && row.user.status !== "active") return null;
+
   let expiresAt = row.session.expiresAt;
   if (expiresAt.getTime() - Date.now() < RENEW_AFTER_MS) {
     expiresAt = new Date(Date.now() + SESSION_TTL_MS);
@@ -105,7 +122,12 @@ export async function getSession(): Promise<SessionContext | null> {
       .where(eq(sessions.id, row.session.id));
   }
 
-  return { user: row.user, sessionId: row.session.id, expiresAt };
+  return {
+    user: row.user,
+    sessionId: row.session.id,
+    expiresAt,
+    access: accessFor(row.user, superAdmin),
+  };
 }
 
 /** For pages and actions that must not run without a signed-in operator. */
@@ -113,6 +135,54 @@ export async function requireSession(): Promise<SessionContext> {
   const session = await getSession();
   if (!session) redirect("/login");
   return session;
+}
+
+/**
+ * For a page that a role may not be allowed to see at all.
+ *
+ * Bounces to the overview with the refused permission named, rather than
+ * rendering an empty version of the page. The rail does not show a link the
+ * operator cannot follow, so arriving here means a typed URL, a bookmark from
+ * before a role changed, or a stale tab — and each of those deserves the
+ * sentence the overview prints instead of a page with nothing on it.
+ */
+export async function requirePermission(permission: Permission): Promise<SessionContext> {
+  const session = await requireSession();
+  if (!can(session.access, permission)) redirect(`/?denied=${encodeURIComponent(permission)}`);
+  return session;
+}
+
+/**
+ * For a server action, which cannot redirect a form it is halfway through.
+ *
+ * Returns the refusal to hand straight back to the caller, or null when the
+ * operator is allowed. Two lines at the top of an action:
+ *
+ *     const refused = await refuse("posts.write");
+ *     if (refused) return refused;
+ *
+ * Every action needs its own check. The browser hiding a button is a courtesy;
+ * a server action is a public endpoint with a URL, and the only thing standing
+ * between a demoted operator and a published post is this call.
+ */
+export async function refuse(
+  permission: Permission,
+): Promise<{ ok: false; message: string } | null> {
+  const session = await getSession();
+  if (!session) return { ok: false, message: "Your session has expired. Sign in again." };
+  if (!can(session.access, permission)) {
+    return { ok: false, message: "Your role does not allow that." };
+  }
+  return null;
+}
+
+/** Ends every session a member has. What suspending or removing one implies. */
+export async function revokeSessionsFor(userId: string): Promise<number> {
+  const deleted = await getDb()
+    .delete(sessions)
+    .where(eq(sessions.userId, userId))
+    .returning({ id: sessions.id });
+  return deleted.length;
 }
 
 /** Call from a server action or route handler — it writes to the cookie store. */
