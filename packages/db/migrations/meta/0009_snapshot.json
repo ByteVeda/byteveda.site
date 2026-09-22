@@ -97,9 +97,7 @@
         "sample_requests_email_key": {
           "name": "sample_requests_email_key",
           "nullsNotDistinct": false,
-          "columns": [
-            "email"
-          ]
+          "columns": ["email"]
         }
       },
       "policies": {},
@@ -171,9 +169,7 @@
         "admin_custom_roles_key_unique": {
           "name": "admin_custom_roles_key_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "key"
-          ]
+          "columns": ["key"]
         }
       },
       "policies": {},
@@ -293,12 +289,8 @@
           "name": "admin_users_custom_role_id_admin_custom_roles_id_fk",
           "tableFrom": "admin_users",
           "tableTo": "admin_custom_roles",
-          "columnsFrom": [
-            "custom_role_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["custom_role_id"],
+          "columnsTo": ["id"],
           "onDelete": "set null",
           "onUpdate": "no action"
         }
@@ -308,9 +300,7 @@
         "admin_users_github_id_unique": {
           "name": "admin_users_github_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "github_id"
-          ]
+          "columns": ["github_id"]
         }
       },
       "policies": {},
@@ -410,12 +400,8 @@
           "name": "sessions_user_id_admin_users_id_fk",
           "tableFrom": "sessions",
           "tableTo": "admin_users",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -425,9 +411,7 @@
         "sessions_token_hash_unique": {
           "name": "sessions_token_hash_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "token_hash"
-          ]
+          "columns": ["token_hash"]
         }
       },
       "policies": {},
@@ -537,12 +521,8 @@
           "name": "broadcasts_post_id_posts_id_fk",
           "tableFrom": "broadcasts",
           "tableTo": "posts",
-          "columnsFrom": [
-            "post_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["post_id"],
+          "columnsTo": ["id"],
           "onDelete": "set null",
           "onUpdate": "no action"
         }
@@ -664,12 +644,8 @@
           "name": "email_attachments_message_id_outbound_messages_id_fk",
           "tableFrom": "email_attachments",
           "tableTo": "outbound_messages",
-          "columnsFrom": [
-            "message_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["message_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -677,12 +653,8 @@
           "name": "email_attachments_uploaded_by_admin_users_id_fk",
           "tableFrom": "email_attachments",
           "tableTo": "admin_users",
-          "columnsFrom": [
-            "uploaded_by"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["uploaded_by"],
+          "columnsTo": ["id"],
           "onDelete": "set null",
           "onUpdate": "no action"
         }
@@ -969,12 +941,8 @@
           "name": "inbound_messages_thread_key_email_threads_thread_key_fk",
           "tableFrom": "inbound_messages",
           "tableTo": "email_threads",
-          "columnsFrom": [
-            "thread_key"
-          ],
-          "columnsTo": [
-            "thread_key"
-          ],
+          "columnsFrom": ["thread_key"],
+          "columnsTo": ["thread_key"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1125,12 +1093,8 @@
           "name": "outbound_messages_thread_key_email_threads_thread_key_fk",
           "tableFrom": "outbound_messages",
           "tableTo": "email_threads",
-          "columnsFrom": [
-            "thread_key"
-          ],
-          "columnsTo": [
-            "thread_key"
-          ],
+          "columnsFrom": ["thread_key"],
+          "columnsTo": ["thread_key"],
           "onDelete": "set null",
           "onUpdate": "no action"
         },
@@ -1138,12 +1102,8 @@
           "name": "outbound_messages_broadcast_id_broadcasts_id_fk",
           "tableFrom": "outbound_messages",
           "tableTo": "broadcasts",
-          "columnsFrom": [
-            "broadcast_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["broadcast_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1375,12 +1335,8 @@
           "name": "post_revisions_post_id_posts_id_fk",
           "tableFrom": "post_revisions",
           "tableTo": "posts",
-          "columnsFrom": [
-            "post_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["post_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -1388,12 +1344,8 @@
           "name": "post_revisions_author_id_admin_users_id_fk",
           "tableFrom": "post_revisions",
           "tableTo": "admin_users",
-          "columnsFrom": [
-            "author_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["author_id"],
+          "columnsTo": ["id"],
           "onDelete": "set null",
           "onUpdate": "no action"
         }
@@ -1686,12 +1638,8 @@
           "name": "collection_runs_package_id_project_packages_id_fk",
           "tableFrom": "collection_runs",
           "tableTo": "project_packages",
-          "columnsFrom": [
-            "package_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["package_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1782,12 +1730,8 @@
           "name": "download_snapshots_package_id_project_packages_id_fk",
           "tableFrom": "download_snapshots",
           "tableTo": "project_packages",
-          "columnsFrom": [
-            "package_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["package_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1839,12 +1783,8 @@
           "name": "package_totals_package_id_project_packages_id_fk",
           "tableFrom": "package_totals",
           "tableTo": "project_packages",
-          "columnsFrom": [
-            "package_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["package_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -1947,10 +1887,7 @@
     "academy.sample_kind": {
       "name": "sample_kind",
       "schema": "academy",
-      "values": [
-        "chapter",
-        "custom"
-      ]
+      "values": ["chapter", "custom"]
     },
     "public.admin_permission": {
       "name": "admin_permission",
@@ -1976,28 +1913,17 @@
     "public.admin_role": {
       "name": "admin_role",
       "schema": "public",
-      "values": [
-        "admin",
-        "editor",
-        "support",
-        "viewer"
-      ]
+      "values": ["admin", "editor", "support", "viewer"]
     },
     "public.admin_status": {
       "name": "admin_status",
       "schema": "public",
-      "values": [
-        "active",
-        "suspended"
-      ]
+      "values": ["active", "suspended"]
     },
     "public.mail_workspace": {
       "name": "mail_workspace",
       "schema": "public",
-      "values": [
-        "byteveda",
-        "academy"
-      ]
+      "values": ["byteveda", "academy"]
     }
   },
   "schemas": {
