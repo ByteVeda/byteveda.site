@@ -6,7 +6,12 @@ import { useState, useTransition } from "react";
 import { SETTINGS, type SettingKey, type SettingsSnapshot } from "@/lib/settings/registry";
 import { updateSetting } from "@/lib/settings-actions";
 
-type Props = { initial: SettingsSnapshot; emailReady: boolean };
+type Props = {
+  initial: SettingsSnapshot;
+  emailReady: boolean;
+  /** A role that may see the settings but not change them. Defaults to writable. */
+  readOnly?: boolean;
+};
 
 const BOOLEAN_KEYS = (Object.keys(SETTINGS) as SettingKey[]).filter(
   (key) => SETTINGS[key].type === "boolean",
@@ -15,7 +20,7 @@ const STRING_KEYS = (Object.keys(SETTINGS) as SettingKey[]).filter(
   (key) => SETTINGS[key].type === "string",
 );
 
-export function SettingsForm({ initial, emailReady }: Props) {
+export function SettingsForm({ initial, emailReady, readOnly = false }: Props) {
   const [values, setValues] = useState<SettingsSnapshot>(initial);
   const [message, setMessage] = useState<{ text: string; ok: boolean } | null>(null);
   const [, startTransition] = useTransition();
@@ -33,6 +38,15 @@ export function SettingsForm({ initial, emailReady }: Props) {
 
   return (
     <>
+      {readOnly && (
+        <div className="notice notice-warn block-gap">
+          <span>
+            These are how the console sends mail. Your role can read them; changing one is an
+            admin's.
+          </span>
+        </div>
+      )}
+
       {!emailReady && (
         <div className="notice notice-warn block-gap">
           <span>
@@ -52,6 +66,7 @@ export function SettingsForm({ initial, emailReady }: Props) {
               <input
                 type="checkbox"
                 checked={values[key] as boolean}
+                disabled={readOnly}
                 onChange={(event) => save(key, event.target.checked)}
               />
               <span className="who">
@@ -75,6 +90,7 @@ export function SettingsForm({ initial, emailReady }: Props) {
                 id={key}
                 className="input"
                 defaultValue={values[key] as string}
+                readOnly={readOnly}
                 onBlur={(event) => {
                   if (event.target.value !== values[key]) save(key, event.target.value);
                 }}

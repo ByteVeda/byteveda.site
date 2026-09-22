@@ -13,7 +13,7 @@ import {
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { requireSession } from "@/lib/auth/session";
+import { refuse, requirePermission, requireSession } from "@/lib/auth/session";
 import { announcePost } from "@/lib/broadcasts/service";
 import { revalidateFlexiq } from "@/lib/publish/revalidate";
 import { getTakenSlugs } from "./queries";
@@ -104,7 +104,9 @@ function normalise(draft: PostDraft): PostDraft {
 
 /** Creates an empty draft and opens it. The slug is provisional and editable. */
 export async function createDraft(): Promise<never> {
-  await requireSession();
+  // Redirects rather than returning a refusal: this one ends in `redirect`, so
+  // there is no result for a caller to read.
+  await requirePermission("posts.write");
 
   const taken = await getTakenSlugs("flexiq");
   const slug = uniqueSlug(slugify(`untitled ${new Date().toISOString().slice(0, 10)}`), taken);
@@ -119,6 +121,9 @@ export async function createDraft(): Promise<never> {
 }
 
 export async function savePost(id: string, input: PostDraft): Promise<ActionResult> {
+  const refused = await refuse("posts.write");
+  if (refused) return refused;
+
   const { user } = await requireSession();
   const draft = normalise(input);
 
@@ -184,7 +189,10 @@ export async function savePost(id: string, input: PostDraft): Promise<ActionResu
 }
 
 export async function setPostStatus(id: string, status: PostStatus): Promise<ActionResult> {
-  await requireSession();
+  // Publishing, not editing: this is the one that puts words in front of the
+  // public, and it is the permission an editor is trusted with separately.
+  const refused = await refuse("posts.publish");
+  if (refused) return refused;
 
   const db = getDb();
   const [existing] = await db.select().from(posts).where(eq(posts.id, id)).limit(1);
@@ -233,7 +241,7 @@ export async function setPostStatus(id: string, status: PostStatus): Promise<Act
 }
 
 export async function deletePost(id: string): Promise<never> {
-  await requireSession();
+  await requirePermission("posts.write");
 
   const db = getDb();
   const [existing] = await db.select().from(posts).where(eq(posts.id, id)).limit(1);
@@ -247,6 +255,9 @@ export async function deletePost(id: string): Promise<never> {
 
 /** Puts a past revision back into the editor, keeping the current one recoverable. */
 export async function restoreRevision(postId: string, revisionId: string): Promise<ActionResult> {
+  const refused = await refuse("posts.write");
+  if (refused) return refused;
+
   const { user } = await requireSession();
 
   const db = getDb();

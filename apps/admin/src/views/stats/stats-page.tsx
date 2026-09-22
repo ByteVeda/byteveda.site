@@ -1,5 +1,7 @@
 import { ECOSYSTEM_LABELS } from "@byteveda/db";
 import { PageHeader } from "@/components";
+import { can } from "@/lib/auth/roles";
+import { requirePermission } from "@/lib/auth/session";
 import { ago, count, delta } from "@/lib/format";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { AddPackageForm, CollectButton, RemovePackageButton, SeedButton } from "./package-controls";
@@ -16,14 +18,18 @@ function note(status: string, recordedDays: number, detail: string | null): stri
 }
 
 export async function StatsPage() {
+  const { access } = await requirePermission("stats.read");
   const { projects, daily, last30, previous30, lastRunAt, packageCount } = await getStatsOverview();
 
   const overall = delta(last30, previous30);
+  // Reading the numbers and deciding which packages are tracked are different
+  // jobs; the second one costs API calls and changes what everybody sees.
+  const write = can(access, "stats.write");
 
   return (
     <>
       <PageHeader title="Downloads" sub={lastRunAt ? `Collected ${ago(lastRunAt)} ago` : undefined}>
-        {packageCount > 0 && <CollectButton />}
+        {packageCount > 0 && write && <CollectButton />}
       </PageHeader>
 
       <div className="content content-narrow">
@@ -34,7 +40,7 @@ export async function StatsPage() {
               Add the packages from the project catalogue, then collect. You can correct any name
               afterwards.
             </p>
-            <SeedButton />
+            {write && <SeedButton />}
           </div>
         ) : (
           <>
@@ -95,7 +101,9 @@ export async function StatsPage() {
                             {problem ? "" : packageDelta.label}
                           </span>
 
-                          <RemovePackageButton id={pkg.packageId} name={pkg.packageName} />
+                          {write && (
+                            <RemovePackageButton id={pkg.packageId} name={pkg.packageName} />
+                          )}
                         </div>
                       );
                     })}
@@ -104,7 +112,7 @@ export async function StatsPage() {
               })}
             </div>
 
-            <AddPackageForm />
+            {write && <AddPackageForm />}
           </>
         )}
       </div>

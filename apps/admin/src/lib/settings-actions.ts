@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { requireSession } from "@/lib/auth/session";
+import { refuse } from "@/lib/auth/session";
 import { SETTINGS, type SettingKey, setSetting } from "@/lib/settings";
 
 export type SettingsResult = { ok: boolean; message: string };
@@ -13,7 +13,8 @@ export type SettingsResult = { ok: boolean; message: string };
  * is a public endpoint, and this one writes to a key-value table.
  */
 export async function updateSetting(key: string, value: unknown): Promise<SettingsResult> {
-  await requireSession();
+  const refused = await refuse("settings.write");
+  if (refused) return refused;
 
   const definition = SETTINGS[key as SettingKey];
   if (!definition) return { ok: false, message: "Unknown setting." };

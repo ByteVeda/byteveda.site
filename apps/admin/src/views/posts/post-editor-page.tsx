@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { requirePermission } from "@/lib/auth/session";
 import { getCorpus, getPostById, listRevisions } from "@/lib/posts/queries";
 import { PostEditor } from "./editor/post-editor";
 
@@ -12,6 +13,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function EditPostPage({ params }: Props) {
+  // `posts.write`, not `posts.read`: this page is an editor, and every control
+  // on it writes. A reader gets the list, where their rows are not links.
+  await requirePermission("posts.write");
+
   const { id } = await params;
 
   const post = await getPostById(id);
