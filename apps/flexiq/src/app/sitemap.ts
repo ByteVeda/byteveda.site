@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getPosts } from "@/features/blog/posts";
+import { getPosts } from "@/features/blog";
 import { site } from "@/lib/site";
 
 // Not force-static: a newly published post has to be able to reach the sitemap

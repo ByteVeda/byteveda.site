@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playground } from "@/features/playground";
+import { Playground } from "@/features/playground/components/playground";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {

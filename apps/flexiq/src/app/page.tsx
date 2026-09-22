@@ -1,4 +1,4 @@
-import { Cta, Hero, Interop, Lab, Ledger, SdkProvider, Source } from "@/features/home";
+import { Cta, Hero, Interop, Lab, Ledger, SdkProvider, Source } from "@/features/home/components";
 import { getVersion } from "@/lib/version";
 
 /**

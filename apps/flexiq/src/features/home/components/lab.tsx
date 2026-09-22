@@ -7,9 +7,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Code } from "@/components/code";
 import { DocsLink } from "@/components/docs-link";
 import { EXPERIMENTS, type Experiment } from "@/content/pitch";
-import { Stage } from "@/features/playground/canvas/stage";
-import { EventLog } from "@/features/playground/event-log";
-import { useEngine } from "@/features/playground/use-engine";
+import { EventLog, Stage, useEngine } from "@/features/playground/components";
 import { docsUrl, type Sdk, sdkDocsUrl } from "@/lib/docs";
 import { useSdk } from "./sdk-context";
 

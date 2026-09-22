@@ -1,4 +1,4 @@
-import { getPosts } from "@/features/blog/posts";
+import { getPosts } from "@/features/blog";
 import { site } from "@/lib/site";
 
 const escapeXml = (value: string) =>

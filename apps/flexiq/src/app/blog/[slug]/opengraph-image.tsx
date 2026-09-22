@@ -1,4 +1,4 @@
-import { getPost, getStaticSlugs } from "@/features/blog/posts";
+import { getPost, getStaticSlugs } from "@/features/blog";
 import { OG_CONTENT_TYPE, OG_SIZE, ogImage } from "@/lib/og";
 import { site } from "@/lib/site";
 

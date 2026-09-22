@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Code } from "@/components/code";
 import { HERO_PANES } from "@/content/hero";
 import { HERO, PROCESS_LIST } from "@/content/pitch";
-import { HeroField } from "@/features/hero-fx";
+import { HeroField } from "@/features/hero-fx/components";
 import { SDK_LABEL, SDKS, type Sdk, sdkDocsUrl } from "@/lib/docs";
 import { LANG_FOR_SDK } from "@/lib/highlight";
 import { site } from "@/lib/site";
