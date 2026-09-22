@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
 import { type AttachedFile, AttachmentPicker } from "@/features/attachments/components";
-import { replyToThread } from "@/lib/inbox/actions";
+import { replyToThread } from "../actions";
 
 type Props = {
   threadKey: string;

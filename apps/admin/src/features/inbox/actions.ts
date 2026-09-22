@@ -20,9 +20,9 @@ import {
   threadKeyFor,
 } from "@/features/mail";
 import { emailConfigured } from "@/lib/email/client";
-import { getConversation, listSendableAddresses } from "@/lib/inbox/queries";
-import * as store from "@/lib/inbox/store";
 import { inboxChanged } from "@/lib/realtime";
+import { getConversation, listSendableAddresses } from "./queries";
+import * as store from "./store";
 
 export type InboxResult = { ok: boolean; message: string };
 

@@ -1,24 +1,31 @@
 import type { MailWorkspace } from "@byteveda/db/constants";
 import { ArrowLeft, MoveRight, Paperclip, TriangleAlert } from "lucide-react";
 import Link from "next/link";
-import { InboxAutoRefresh, LocalTime, PageHeader } from "@/components";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the inbox front door — every server module
+// that imports `@/features/inbox` would pull the whole UI graph with it.
+import { InboxAutoRefresh } from "@/components/inbox-live";
+import { LocalTime } from "@/components/local-time";
+import { PageHeader } from "@/components/page-header";
 import { formatBytes, listStaged, maxFileBytes } from "@/features/attachments";
 import { can, readableWorkspaces, requirePermission } from "@/features/auth";
 import { bodyMissing, isMailWorkspace } from "@/features/mail";
 import { emailConfigured } from "@/lib/email/client";
+import { initial } from "@/shared/format";
 import {
   type Conversation,
+  inboxHref,
+  isThreadFilter,
+  type ThreadFilter,
+  type ThreadMessage,
+} from "../model";
+import {
   countThreads,
   countWorkspaces,
   getConversation,
-  isThreadFilter,
   listSendableAddresses,
   listThreads,
-  type ThreadFilter,
-  type ThreadMessage,
-} from "@/lib/inbox/queries";
-import { inboxHref } from "@/lib/inbox/url";
-import { initial } from "@/shared/format";
+} from "../queries";
 import { ComposeBox } from "./compose-box";
 import { MessageBody } from "./message-body";
 import { ReplyBox } from "./reply-box";

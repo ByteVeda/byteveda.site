@@ -4,10 +4,9 @@ import type { MailWorkspace } from "@byteveda/db/constants";
 import { Archive, ArchiveRestore, MailOpen, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
-import { useConfirm } from "@/components";
-import { deleteThread, markThreadUnread, setThreadArchived } from "@/lib/inbox/actions";
-import type { ThreadFilter } from "@/lib/inbox/queries";
-import { inboxHref } from "@/lib/inbox/url";
+import { useConfirm } from "@/components/confirm";
+import { deleteThread, markThreadUnread, setThreadArchived } from "../actions";
+import { inboxHref, type ThreadFilter } from "../model";
 import { useShortcuts } from "./shortcuts";
 
 type Props = {

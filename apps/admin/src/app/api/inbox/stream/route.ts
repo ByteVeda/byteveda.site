@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { getSession, readableWorkspaces } from "@/features/auth";
-import { countUnread } from "@/lib/inbox/queries";
+import { countUnread } from "@/features/inbox";
 import { inboxChanged } from "@/lib/realtime";
 import { eventStream } from "@/lib/realtime/stream";
 

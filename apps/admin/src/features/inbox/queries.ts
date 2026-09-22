@@ -1,13 +1,10 @@
 import {
-  type EmailAttachment,
-  type EmailThread,
   emailAttachments,
   emailThreads,
   getDb,
   inboundMessages,
   outboundMessages,
 } from "@byteveda/db";
-import { MAIL_WORKSPACES, type MailWorkspace } from "@byteveda/db/constants";
 import {
   and,
   desc,
@@ -22,90 +19,29 @@ import {
   type SQL,
   sql,
 } from "drizzle-orm";
+import {
+  type Conversation,
+  type ListOptions,
+  type MailScope,
+  type SendableAddress,
+  type SentAttachment,
+  type ThreadCounts,
+  type ThreadFilter,
+  type ThreadMessage,
+  type ThreadSummary,
+  visibleWorkspaces,
+  type WorkspaceCounts,
+} from "./model";
 
 /**
- * Which conversations the list is showing.
+ * Reading the inbox.
  *
- * Three, not four. "Everything including the archive" sounds useful until you
- * notice it is the state where archiving does nothing, and search inside a
- * chip is easier to predict than search that quietly widens the selection.
- */
-export const THREAD_FILTERS = ["inbox", "unread", "archived"] as const;
-export type ThreadFilter = (typeof THREAD_FILTERS)[number];
-
-export function isThreadFilter(value: string | undefined): value is ThreadFilter {
-  return THREAD_FILTERS.includes(value as ThreadFilter);
-}
-
-/**
- * Which mail the caller may see, and which of it they are looking at.
- *
- * Every read in this module takes one. There is no unscoped version on purpose:
- * an operator with academy-only access must not be able to reach a ByteVeda
+ * Every function here takes a `MailScope` — what this operator may see, and
+ * which of it they are looking at. There is no unscoped version on purpose: an
+ * operator with academy-only access must not be able to reach a ByteVeda
  * conversation by editing a URL, and the way to guarantee that is to make the
  * scope impossible to forget rather than to remember it at each call site.
- *
- * `allowed` comes from the session — see `readableWorkspaces` in
- * `features/auth/model.ts`. `workspace` is the tab, and it can only ever narrow.
  */
-export type MailScope = {
-  allowed: readonly MailWorkspace[];
-  workspace?: MailWorkspace;
-};
-
-/** The workspaces a scope actually resolves to. Empty means "show nothing". */
-export function visibleWorkspaces(scope: MailScope): MailWorkspace[] {
-  const allowed = MAIL_WORKSPACES.filter((workspace) => scope.allowed.includes(workspace));
-  return scope.workspace ? allowed.filter((workspace) => workspace === scope.workspace) : allowed;
-}
-
-/** One conversation, as the list needs it. */
-export type ThreadSummary = {
-  threadKey: string;
-  subject: string;
-  correspondentEmail: string;
-  correspondentName: string | null;
-  mailbox: string;
-  /** Which business it belongs to. Shown when the list spans more than one. */
-  workspace: MailWorkspace;
-  preview: string;
-  lastMessageAt: Date;
-  unread: boolean;
-  archived: boolean;
-  /** Anything has been sent in this conversation. */
-  answered: boolean;
-  /** The last message was ours, so the preview is our words. */
-  weSpokeLast: boolean;
-};
-
-/**
- * One message in a conversation, whichever way it went.
- *
- * The two tables have different shapes — an arriving message has a Resend id
- * and headers, a sent one has an error and a kind — so the thread view reads
- * this rather than either of them. `direction` is what it renders from.
- */
-export type ThreadMessage = {
-  id: string;
-  direction: "in" | "out";
-  fromEmail: string;
-  fromName: string | null;
-  toEmail: string;
-  text: string;
-  html: string | null;
-  at: Date;
-  /** Inbound only. Names the message at Resend, for the body backfill. */
-  resendId: string | null;
-  /** Outbound only. Set when the send failed, and worth saying so in the thread. */
-  error: string | null;
-  /** Outbound only, so far. What Resend has of an arriving file stays at Resend. */
-  attachments: SentAttachment[];
-};
-
-/** A file that went out with a message, without the bytes. */
-export type SentAttachment = Pick<EmailAttachment, "id" | "filename" | "contentType" | "byteSize">;
-
-export type Conversation = { thread: EmailThread; messages: ThreadMessage[] };
 
 /**
  * Unread is a comparison, not a flag: their last message being newer than the
@@ -173,13 +109,6 @@ function matching(query: string): SQL {
     ),
   ) as SQL;
 }
-
-export type ListOptions = MailScope & {
-  filter?: ThreadFilter;
-  /** Free text. Blank means no search. */
-  query?: string;
-  limit?: number;
-};
 
 /**
  * Conversations, newest activity first.
@@ -371,8 +300,6 @@ export async function countUnread(scope: MailScope): Promise<number> {
   return row?.total ?? 0;
 }
 
-export type ThreadCounts = Record<ThreadFilter, number>;
-
 const NO_THREADS: ThreadCounts = { inbox: 0, unread: 0, archived: 0 };
 
 /** What each filter would show, in one pass rather than three. */
@@ -391,9 +318,6 @@ export async function countThreads(scope: MailScope): Promise<ThreadCounts> {
 
   return { inbox: row?.inbox ?? 0, unread: row?.unread ?? 0, archived: row?.archived ?? 0 };
 }
-
-/** What the workspace tabs badge: how much mail each one is holding. */
-export type WorkspaceCounts = Record<MailWorkspace, { inbox: number; unread: number }>;
 
 /**
  * Per-workspace totals, in one grouped pass rather than a query per tab.
@@ -427,9 +351,6 @@ export async function countWorkspaces(scope: MailScope): Promise<WorkspaceCounts
 
   return empty;
 }
-
-/** One address the console may send as, and whose mail it is. */
-export type SendableAddress = { email: string; workspace: MailWorkspace };
 
 /**
  * The addresses a new message may be sent from.

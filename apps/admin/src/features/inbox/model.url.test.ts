@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { inboxHref } from "./url";
+import { inboxHref } from "./model";
 
 describe("inboxHref", () => {
   it("is the bare path for the default view", () => {

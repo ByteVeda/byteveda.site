@@ -1,6 +1,6 @@
 import { AccessProvider, ConfirmProvider, InboxLiveProvider, Rail, SignOut } from "@/components";
 import { readableWorkspaces, requireSession } from "@/features/auth";
-import { countUnread } from "@/lib/inbox/queries";
+import { countUnread } from "@/features/inbox";
 
 /**
  * The real gate. Middleware only checks that a cookie exists; this resolves it

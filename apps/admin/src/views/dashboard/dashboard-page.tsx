@@ -2,7 +2,7 @@ import { FileText, Inbox, ShieldAlert, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { PageHeader } from "@/components";
 import { can, readableWorkspaces, requireSession } from "@/features/auth";
-import { countUnread } from "@/lib/inbox/queries";
+import { countUnread } from "@/features/inbox";
 import { countPostsByStatus, listPosts } from "@/lib/posts/queries";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { countByStatus } from "@/lib/subscribers/queries";

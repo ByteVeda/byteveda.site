@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { recordInbound } from "@/features/inbox";
 import { fetchInboundBody, type InboundEvent, inboundRow, verifySignature } from "@/features/mail";
-import { recordInbound } from "@/lib/inbox/store";
 import { inboxChanged } from "@/lib/realtime";
 
 export const dynamic = "force-dynamic";
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
 
   // Stores the message and moves its conversation. A webhook is delivered at
   // least once, and this reports false for the second delivery — see
-  // `lib/inbox/store.ts` for why the thread has to be left alone too.
+  // `features/inbox/store.ts` for why the thread has to be left alone too.
   const stored = await recordInbound(inboundRow(event, fetched.ok ? fetched.body : {}));
 
   // Only a message that is actually new should light up an open console; a

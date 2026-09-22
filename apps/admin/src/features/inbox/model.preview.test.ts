@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { previewOf } from "./preview";
+import { previewOf } from "./model";
 
 describe("previewOf", () => {
   it("collapses the whitespace a mail body is full of", () => {

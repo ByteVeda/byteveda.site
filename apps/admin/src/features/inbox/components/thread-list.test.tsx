@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
-import type { ThreadCounts, ThreadSummary } from "@/lib/inbox/queries";
+import type { ThreadCounts, ThreadSummary } from "../model";
 import { ThreadList } from "./thread-list";
 
 // The list navigates, so it holds a router. Rendering it outside a request has

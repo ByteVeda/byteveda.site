@@ -4,8 +4,8 @@ import { PenLine, Send, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState, useTransition } from "react";
 import { type AttachedFile, AttachmentPicker } from "@/features/attachments/components";
-import { composeMessage } from "@/lib/inbox/actions";
-import type { SendableAddress } from "@/lib/inbox/queries";
+import { composeMessage } from "../actions";
+import type { SendableAddress } from "../model";
 
 type Props = {
   /** The addresses this operator may send as. Empty means no composer at all. */

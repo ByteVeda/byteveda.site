@@ -2,7 +2,7 @@ import { emailThreads, getDb, inboundMessages } from "@byteveda/db";
 import type { MailWorkspace } from "@byteveda/db/constants";
 import { and, eq } from "drizzle-orm";
 import { type InboundRow, replyTargetOf, workspaceOf } from "@/features/mail";
-import { previewOf } from "./preview";
+import { previewOf } from "./model";
 import { UNREAD } from "./queries";
 
 /**

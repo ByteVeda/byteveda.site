@@ -2,7 +2,7 @@
 
 import { TriangleAlert } from "lucide-react";
 import { useEffect, useState } from "react";
-import { openThread } from "@/lib/inbox/actions";
+import { openThread } from "../actions";
 
 type Props = {
   threadKey: string;
