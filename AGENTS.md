@@ -67,7 +67,7 @@ Five are the same reason: `model.ts` is client-safe, so it cannot touch `node:cr
 `process.env` or `@/lib/env`, and the code that needs those has to live somewhere.
 
 - `admin/features/auth/crypto.ts` — token hashing and cookie options; `node:crypto`, `process.env`.
-- `admin/features/auth/allowlist.ts` — who may sign in; `process.env`.
+- `admin/features/auth/allowlist.ts` — who may sign in; `@/lib/env`.
 - `admin/features/auth/urls.ts` — absolute URLs; `@/lib/env`.
 - `admin/features/attachments/limits.ts` — upload ceilings; `process.env`.
 - `admin/features/mail/webhook.ts` — Svix signature verification; `node:crypto`.

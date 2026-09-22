@@ -38,8 +38,9 @@ export const RESEND_MAX_EMAIL_BYTES = 40 * 1024 * 1024;
  *
  * A deployment that is not behind that limit — a container, or a self-hosted
  * Node server — raises it with `ADMIN_MAX_ATTACHMENT_BYTES`. That is an
- * environment read, so it lives in `limits.ts`; this is what the browser has,
- * and what the checks below assume when nobody passes the resolved one in.
+ * environment read, so it lives in `limits.ts`; this is what the checks below
+ * assume when nobody passes the resolved one in. The browser is handed that
+ * resolved number as a prop rather than left to guess it here.
  */
 export const DEFAULT_MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024;
 
@@ -150,10 +151,11 @@ const ACCEPTED: Accepted = { ok: true };
  * there. The message names the number, because "too large" without it sends
  * somebody back to the file manager to guess.
  *
- * `perFile` is the ceiling the deployment resolved. The server passes what
- * `maxFileBytes()` worked out; the browser has no environment to read and so
- * gets the default, which is exactly what it resolved before this was a
- * parameter.
+ * `perFile` is the ceiling the deployment resolved. Both callers that matter
+ * pass what `maxFileBytes()` worked out — the upload route directly, and the
+ * picker from the prop its page was given. The browser has no environment to
+ * read, so being told is the only way the two checks can agree; the default
+ * stands in only where nobody has resolved anything.
  */
 export function checkAttachment(
   candidate: { filename: string; byteSize: number },

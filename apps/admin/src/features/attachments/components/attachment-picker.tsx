@@ -87,10 +87,14 @@ export function AttachmentPicker({
     let attached = files;
 
     for (const file of chosen) {
+      // The ceiling the *server* resolved, not the default this bundle would
+      // work out on its own: `ADMIN_MAX_ATTACHMENT_BYTES` is unreadable here,
+      // so without the prop the browser refuses what the route would take.
       const verdict = checkAttachment(
         { filename: file.name, byteSize: file.size },
         attached,
         bodyBytes,
+        maxFileBytes,
       );
 
       if (!verdict.ok) {

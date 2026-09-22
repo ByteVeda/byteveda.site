@@ -16,6 +16,7 @@
  * the freed name can then be registered by somebody else.
  */
 
+import { optional } from "@/lib/env";
 import { SUPER_ADMIN_GITHUB_IDS } from "./model";
 
 export function parseAllowlist(raw: string | undefined): number[] {
@@ -47,7 +48,7 @@ export function parseAllowlist(raw: string | undefined): number[] {
 export function superAdmins(): number[] {
   const merged = new Set([
     ...SUPER_ADMIN_GITHUB_IDS,
-    ...parseAllowlist(process.env.ADMIN_GITHUB_IDS),
+    ...parseAllowlist(optional("ADMIN_GITHUB_IDS")),
   ]);
 
   if (merged.size === 0) {

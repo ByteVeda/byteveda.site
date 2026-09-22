@@ -1,3 +1,4 @@
+import { optional } from "@/lib/env";
 import { getJson } from "../http";
 import type { Adapter, DailyPoint, FetchResult, LifetimeTotal } from "../types";
 
@@ -43,7 +44,7 @@ export function parsePepyTotal(body: PepyBody): LifetimeTotal | undefined {
  * figure — the daily series from pypistats is unaffected.
  */
 async function lifetimeTotal(packageName: string): Promise<LifetimeTotal | undefined> {
-  const key = process.env.PEPY_API_KEY;
+  const key = optional("PEPY_API_KEY");
   if (!key) return undefined;
 
   const result = await getJson<PepyBody>(
