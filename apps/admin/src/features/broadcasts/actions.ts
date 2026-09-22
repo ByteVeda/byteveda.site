@@ -11,7 +11,19 @@ import { sendBroadcastNow } from "./service";
 
 export type BroadcastResult = { ok: boolean; message: string };
 
+/**
+ * The drafts and the sends, for the composer.
+ *
+ * Guarded like every write in this file, and for the same reason: an exported
+ * `"use server"` function is a URL anybody can post to, and the rows carry the
+ * subject and body of everything the console has ever mailed the list. The
+ * page already hides the composer from an operator without the grant — this is
+ * what makes that more than a hidden button.
+ */
 export async function listBroadcasts(limit = 25) {
+  const refused = await refuse("broadcasts.send");
+  if (refused) return [];
+
   return getDb().select().from(broadcasts).orderBy(desc(broadcasts.createdAt)).limit(limit);
 }
 
