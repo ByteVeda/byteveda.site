@@ -56,6 +56,13 @@
  *                  against the app's `src/` and rewritten to its `@/` form first, so it
  *                  is held to the same four doors.
  *
+ *   component-barrel
+ *                  The same division for `@/components`. `biome.json` bans that exact
+ *                  specifier from anything under `features/`, which leaves the relative
+ *                  spelling of it — `../../../components` — invisible; resolved here, it
+ *                  is the same module and the same violation. Only the barrel itself:
+ *                  `@/components/<file>` is how a feature names the component it wants.
+ *
  * All of the rules see the resolved form, so a relative import is checked like any other.
  * One that stays inside its own feature — `./model`, `../queries` from that feature's
  * `components/` — is how a feature talks to itself and is left alone.
@@ -79,6 +86,9 @@ const DOORS = new Set(["model", "actions", "components"]);
 
 /** The half of a feature that only ever runs on the server. */
 const SERVER_FILES = new Set(["queries", "store", "service", "events"]);
+
+/** The app-wide component barrel, both spellings that resolve to the same module. */
+const COMPONENT_BARREL = new Set(["@/components", "@/components/index"]);
 
 const FEATURE_PREFIX = "@/features/";
 const SOURCE_FILE = /\.tsx?$/;
@@ -459,6 +469,19 @@ export function checkArchitecture(root) {
             line,
             rule: "feature-doors",
             reason: `a relative import is still an import: "${shown}" reaches past another feature's doors — use its barrel "@/features/${segments[0]}", or /model, /actions, /components`,
+          });
+        }
+
+        // The same division for the app-wide component barrel: `biome.json` bans the
+        // aliased "@/components" from anything under features/, and a relative spelling of
+        // it is invisible to that, so it is caught here. Only the barrel itself —
+        // "@/components/<file>" is how a feature is supposed to name the one it wants.
+        if (ownFeature !== null && viaRelative && COMPONENT_BARREL.has(specifier)) {
+          violations.push({
+            path: relPath,
+            line,
+            rule: "component-barrel",
+            reason: `a relative import is still an import: "${shown}" is the app-wide component barrel, which is all client components and pulls them into every server module that touches this feature — name the one you want, "@/components/<name>"`,
           });
         }
 

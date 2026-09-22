@@ -543,3 +543,62 @@ test("an export * outside a barrel, or inside a comment, is left alone", () => {
 
   assert.deepEqual(check(root), []);
 });
+
+/** The app-wide component barrel and one component on it, plus a feature that reaches it. */
+function appComponents(reach) {
+  return {
+    "apps/demo/src/components/index.ts": 'export { Mark } from "./mark";\n',
+    "apps/demo/src/components/mark.tsx": "export const Mark = () => null;\n",
+    "apps/demo/src/features/one/index.ts": 'export { One } from "./components";\n',
+    "apps/demo/src/features/one/components/index.ts": 'export { One } from "./panel";\n',
+    "apps/demo/src/features/one/components/panel.tsx": reach,
+  };
+}
+
+test("a feature may not reach the component barrel by a relative path", () => {
+  for (const written of ["../../../components", "../../../components/index"]) {
+    const root = fixture(
+      appComponents(`import { Mark } from "${written}";\nexport const One = () => Mark;\n`),
+    );
+
+    const violations = check(root);
+    assert.deepEqual(rulesOf(violations), ["component-barrel"], written);
+    assert.equal(violations[0].path, "apps/demo/src/features/one/components/panel.tsx");
+    assert.match(violations[0].reason, /app-wide component barrel/);
+  }
+});
+
+test("a feature may name the component it wants, by either spelling", () => {
+  for (const written of ["../../../components/mark", "@/components/mark"]) {
+    const root = fixture(
+      appComponents(`import { Mark } from "${written}";\nexport const One = () => Mark;\n`),
+    );
+
+    assert.deepEqual(check(root), [], written);
+  }
+});
+
+test("a feature's own components/index.ts is not the app barrel", () => {
+  const root = fixture({
+    ...appComponents("export const One = () => null;\n"),
+    "apps/demo/src/features/one/components/host.tsx":
+      'import { One } from "./index";\nexport const Host = () => One;\n',
+    "apps/demo/src/features/two/index.ts": 'export { Two } from "./components";\n',
+    "apps/demo/src/features/two/components/index.ts": 'export { Two } from "./panel";\n',
+    "apps/demo/src/features/two/components/panel.tsx":
+      'import { Two } from "../../two/components";\nexport const Two = () => Two;\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("code outside features/ may still open the component barrel", () => {
+  const root = fixture({
+    "apps/demo/src/components/index.ts": 'export { Mark } from "./mark";\n',
+    "apps/demo/src/components/mark.tsx": "export const Mark = () => null;\n",
+    "apps/demo/src/app/page.tsx":
+      'import { Mark } from "../components";\nexport default function Page() {\n  return Mark;\n}\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
