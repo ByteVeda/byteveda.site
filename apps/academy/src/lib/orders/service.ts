@@ -17,11 +17,10 @@ import { isConfigured as dbConfigured } from "@byteveda/db";
 import { claimSample, hasClaimedSample, releaseSample } from "@byteveda/db/queries/academy";
 import { after } from "next/server";
 import { Resend } from "resend";
-
+import type { ResolvedOrder } from "@/features/orders";
 import type { Email } from "@/lib/email/templates";
 import { orderNotificationEmail, orderReceivedEmail } from "@/lib/email/templates";
 import { configured, env } from "@/lib/env";
-import type { ResolvedOrder } from "@/lib/orders/model";
 
 export type SubmitResult =
   | { ok: true; reference: string }

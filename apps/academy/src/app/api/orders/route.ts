@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 
-import { validateOrder } from "@/lib/orders/model";
+import { validateOrder } from "@/features/orders";
 import { submitOrder } from "@/lib/orders/service";
 
 export const dynamic = "force-dynamic";

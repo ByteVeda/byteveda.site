@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useId, useState } from "react";
 
 import { Field, TextInput } from "@/components/ui";
-import { isValidEmail } from "@/lib/orders/model";
+import { isValidEmail } from "@/features/orders/model";
 import { TURNAROUND } from "@/lib/site";
 import { useSamples } from "./store";
 
