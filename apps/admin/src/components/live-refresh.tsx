@@ -13,8 +13,8 @@ type Props = {
  *
  * Some changes happen in someone else's browser — a subscriber following a
  * confirmation link — so the open page has no other way to hear about them.
- * A Postgres trigger announces the write, the endpoint forwards it, and this
- * turns it into a refresh.
+ * The code that performs the change announces it on the realtime bus, the
+ * endpoint forwards that to the browser, and this turns it into a refresh.
  *
  * An event stream rather than polling: nothing is sent while nothing happens,
  * and the update is immediate rather than up to an interval late. `EventSource`
@@ -30,13 +30,6 @@ export function LiveRefresh({ endpoint }: Props) {
     const source = new EventSource(endpoint);
 
     source.addEventListener("change", () => router.refresh());
-
-    // The server could not hold a listener — most likely a transaction-mode
-    // pooler, which never delivers. Say so once instead of looking idle.
-    source.addEventListener("unavailable", () => {
-      console.warn(`[live] ${endpoint} cannot push updates; reload to see changes.`);
-      source.close();
-    });
 
     return () => source.close();
   }, [endpoint, router]);
