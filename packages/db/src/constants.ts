@@ -48,9 +48,52 @@ export type OutboundKind = (typeof OUTBOUND_KINDS)[number];
 export const SAMPLE_KINDS = ["chapter", "custom"] as const;
 export type SampleKind = (typeof SAMPLE_KINDS)[number];
 
+/**
+ * What a member of the console may do, as a job rather than as a checklist.
+ *
+ * Four roles and no more: a role people cannot name is one they assign wrongly.
+ * Which permissions each one carries is decided in the application — see
+ * `apps/admin/src/lib/auth/roles.ts` — because a permission is a statement
+ * about the code, and the code is where it can be kept true.
+ *
+ * "Super admin" is deliberately absent. It is not a row anyone can be given;
+ * it is a hardcoded list of GitHub IDs, and no write to this database can
+ * widen it.
+ */
+export const ADMIN_ROLES = ["admin", "editor", "support", "viewer"] as const;
+export type AdminRole = (typeof ADMIN_ROLES)[number];
+
+/** Suspended keeps the record and the history; only signing in stops. */
+export const ADMIN_STATUSES = ["active", "suspended"] as const;
+export type AdminStatus = (typeof ADMIN_STATUSES)[number];
+
+/**
+ * Which business the mail belongs to.
+ *
+ * One Resend account and one inbound webhook carry both, so the mailbox the
+ * message arrived at is the only thing that separates a reader's question about
+ * FlexiQ from a parent's question about a worksheet. Stamping the conversation
+ * with it makes that separation something a query can filter on and something a
+ * permission can be granted against, rather than a convention in a subject line.
+ */
+export const MAIL_WORKSPACES = ["byteveda", "academy"] as const;
+export type MailWorkspace = (typeof MAIL_WORKSPACES)[number];
+
 export const ECOSYSTEM_LABELS: Record<Ecosystem, string> = {
   pypi: "PyPI",
   npm: "npm",
   crates: "crates.io",
   maven: "Maven Central",
+};
+
+export const ADMIN_ROLE_LABELS: Record<AdminRole, string> = {
+  admin: "Admin",
+  editor: "Editor",
+  support: "Support",
+  viewer: "Viewer",
+};
+
+export const MAIL_WORKSPACE_LABELS: Record<MailWorkspace, string> = {
+  byteveda: "ByteVeda",
+  academy: "Academy",
 };

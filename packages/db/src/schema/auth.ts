@@ -1,10 +1,36 @@
 import { relations } from "drizzle-orm";
-import { bigint, index, inet, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { bigint, index, inet, pgEnum, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import {
+  ADMIN_ROLES,
+  ADMIN_STATUSES,
+  type AdminRole,
+  type AdminStatus,
+  MAIL_WORKSPACES,
+  type MailWorkspace,
+} from "../constants";
+
+export type { AdminRole, AdminStatus };
+export { ADMIN_ROLES, ADMIN_STATUSES };
+
+/** Real Postgres enums, so the closed set is the column's type. */
+export const adminRole = pgEnum("admin_role", ADMIN_ROLES);
+export const adminStatus = pgEnum("admin_status", ADMIN_STATUSES);
+export const mailWorkspace = pgEnum("mail_workspace", MAIL_WORKSPACES);
 
 /**
- * Everyone allowed into the admin app. Rows are created on first successful
- * login, never by hand — the allowlist itself lives in `ADMIN_GITHUB_IDS`, so a
- * row here is a record of someone who got in, not a grant of access.
+ * Everyone who may use the admin app, and what they may do in it.
+ *
+ * This table used to be a log: a row appeared on first successful login, and
+ * the grant itself lived in `ADMIN_GITHUB_IDS` so that no write to the database
+ * could widen access. That is still true of the part that matters — the super
+ * admins are a hardcoded list in the application and cannot be edited from
+ * inside it — but everybody else is now a row here, written by a super admin
+ * before they have ever signed in. Otherwise "give this person access to the
+ * academy mail" means a deploy, and a console nobody can be added to is a
+ * console with one operator.
+ *
+ * A row is therefore a grant. `status` is how one is taken back without losing
+ * the record of who had it, and deleting the row is how it is erased.
  */
 export const adminUsers = pgTable("admin_users", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -14,7 +40,30 @@ export const adminUsers = pgTable("admin_users", {
   name: text("name"),
   email: text("email"),
   avatarUrl: text("avatar_url"),
+  /**
+   * What they may do. Which permissions the role carries is decided in
+   * `apps/admin/src/lib/auth/roles.ts`, not here — a permission is a claim
+   * about what the code allows, and only the code can keep it honest.
+   */
+  role: adminRole("role").notNull().default("viewer"),
+  status: adminStatus("status").notNull().default("active"),
+  /**
+   * Which mail they may read, independent of the role.
+   *
+   * Orthogonal on purpose: "admin, academy mail only" and "support, both
+   * inboxes" are both real, and folding the two axes into one role list would
+   * need a role per combination. Empty means no mail at all; a super admin
+   * ignores this column entirely.
+   */
+  mailWorkspaces: mailWorkspace("mail_workspaces")
+    .array()
+    .notNull()
+    .$type<MailWorkspace[]>()
+    .default([]),
+  /** Who let them in. Null for a super admin, or for a row that predates this. */
+  invitedBy: uuid("invited_by"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  /** Null until they first sign in, which is what makes a row read as "invited". */
   lastLoginAt: timestamp("last_login_at", { withTimezone: true }),
 });
 

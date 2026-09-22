@@ -1,6 +1,7 @@
 import { relations, sql } from "drizzle-orm";
 import {
   check,
+  customType,
   index,
   integer,
   jsonb,
@@ -13,15 +14,28 @@ import {
 import {
   BROADCAST_STATUSES,
   type BroadcastStatus,
+  type MailWorkspace,
   OUTBOUND_KINDS,
   type OutboundKind,
   SUBSCRIBER_STATUSES,
   type SubscriberStatus,
 } from "../constants";
+import { adminUsers, mailWorkspace } from "./auth";
 import { posts } from "./posts";
 
-export type { BroadcastStatus, OutboundKind, SubscriberStatus };
+export type { BroadcastStatus, MailWorkspace, OutboundKind, SubscriberStatus };
 export { BROADCAST_STATUSES, OUTBOUND_KINDS, SUBSCRIBER_STATUSES };
+
+/**
+ * `bytea`, which drizzle-orm has no column builder for.
+ *
+ * A custom type rather than base64 in a `text` column: the encoding is the
+ * transport's business, and storing it would cost a third more space in
+ * Postgres for a value that has to be decoded to be checked.
+ */
+const bytea = customType<{ data: Buffer; driverData: Buffer }>({
+  dataType: () => "bytea",
+});
 
 function oneOf(column: string, values: readonly string[]) {
   return sql.raw(`"${column}" in (${values.map((value) => `'${value}'`).join(", ")})`);
@@ -110,6 +124,16 @@ export const emailThreads = pgTable(
     /** The address they wrote to, which is the one a reply leaves from. */
     mailbox: text("mailbox").notNull().default(""),
     /**
+     * Which business this conversation belongs to, derived from `mailbox` when
+     * the first message arrives.
+     *
+     * Stored rather than computed on read. The inbox filters and counts by it
+     * on every render, and a `case` over the address in each of those queries
+     * is both unindexable and a second copy of the classification rule — the
+     * one in `lib/mail/workspaces.ts` is the only one.
+     */
+    workspace: mailWorkspace("workspace").notNull().default("byteveda"),
+    /**
      * The opening of the last message, whoever sent it.
      *
      * Denormalised so the list is one index scan rather than a lateral join
@@ -128,10 +152,14 @@ export const emailThreads = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [
-    // The inbox is "unarchived, newest first", and nothing else is a hot path.
-    index("email_threads_active_idx").on(table.lastMessageAt).where(sql`"archived_at" is null`),
+    // The inbox is "this workspace, unarchived, newest first", and nothing else
+    // is a hot path. Workspace leads because it is an equality test and the
+    // sort follows it.
+    index("email_threads_active_idx")
+      .on(table.workspace, table.lastMessageAt)
+      .where(sql`"archived_at" is null`),
     index("email_threads_archived_idx")
-      .on(table.lastMessageAt)
+      .on(table.workspace, table.lastMessageAt)
       .where(sql`"archived_at" is not null`),
   ],
 );
@@ -218,6 +246,52 @@ export const inboundMessages = pgTable(
   ],
 );
 
+/**
+ * A file on its way out with a message, or one that already went.
+ *
+ * Staged before the send rather than posted with it. Resend allows 40MB per
+ * email, a serverless request body allows 4.5MB, and those two numbers can only
+ * be reconciled by uploading one file per request and assembling the message
+ * afterwards. Staging is what the `scope` column names: `reply:<thread key>` or
+ * `broadcast:<id>`, the composer the file is sitting in.
+ *
+ * `message_id` is what "sent" means. Null is a file waiting in a composer —
+ * which is also what makes an abandoned upload findable, and prunable.
+ *
+ * The bytes live in Postgres. Object storage would be the answer at a different
+ * scale; at this one it would be a second set of credentials, a second thing to
+ * back up, and a lifecycle rule to keep an orphan from being billed forever,
+ * all for files that are deleted by a foreign key here.
+ */
+export const emailAttachments = pgTable(
+  "email_attachments",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    /** Which composer it was staged in. See the note above. */
+    scope: text("scope").notNull(),
+    /**
+     * The message it went out with, once it has. `cascade`: an attachment
+     * without its message is a file nothing can name.
+     */
+    messageId: uuid("message_id").references(() => outboundMessages.id, { onDelete: "cascade" }),
+    /** As the recipient will see it. Sanitised on the way in, never as uploaded. */
+    filename: text("filename").notNull(),
+    contentType: text("content_type").notNull().default("application/octet-stream"),
+    /** Raw bytes, before Base64. What every limit in `lib/email/attachments.ts` counts. */
+    byteSize: integer("byte_size").notNull(),
+    content: bytea("content").notNull(),
+    uploadedBy: uuid("uploaded_by").references(() => adminUsers.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    // Listing a composer's staged files, and sweeping the ones nobody sent.
+    index("email_attachments_scope_idx")
+      .on(table.scope, table.createdAt)
+      .where(sql`"message_id" is null`),
+    index("email_attachments_message_idx").on(table.messageId),
+  ],
+);
+
 export const broadcastsRelations = relations(broadcasts, ({ many, one }) => ({
   messages: many(outboundMessages),
   post: one(posts, { fields: [broadcasts.postId], references: [posts.id] }),
@@ -228,8 +302,24 @@ export const emailThreadsRelations = relations(emailThreads, ({ many }) => ({
   sent: many(outboundMessages),
 }));
 
+export const outboundMessagesRelations = relations(outboundMessages, ({ many, one }) => ({
+  attachments: many(emailAttachments),
+  thread: one(emailThreads, {
+    fields: [outboundMessages.threadKey],
+    references: [emailThreads.threadKey],
+  }),
+}));
+
+export const emailAttachmentsRelations = relations(emailAttachments, ({ one }) => ({
+  message: one(outboundMessages, {
+    fields: [emailAttachments.messageId],
+    references: [outboundMessages.id],
+  }),
+}));
+
 export type Subscriber = typeof subscribers.$inferSelect;
 export type Broadcast = typeof broadcasts.$inferSelect;
 export type EmailThread = typeof emailThreads.$inferSelect;
 export type InboundMessage = typeof inboundMessages.$inferSelect;
 export type OutboundMessage = typeof outboundMessages.$inferSelect;
+export type EmailAttachment = typeof emailAttachments.$inferSelect;
