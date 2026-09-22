@@ -168,14 +168,15 @@ that can be decided from the specifier string plus the path of the importing fil
 - the feature doors on `@/features/*/*` (allowing `model`, `actions`, `components`),
 - the extra `components/<file>` allowance for `app/**/page.tsx` and `app/**/layout.tsx`,
 - `lib/` may not import `@/features/**`,
-- `shared/` may not import `@/lib`, `@/features` or `@/components`.
+- `shared/` may not import `@/lib`, `@/features` or `@/components`,
+- a file under `features/` may not import the `@/components` barrel itself.
 
 If your failure message is a paragraph of prose about doors, it came from `biome.json`
 and that is the file to read.
 
 **`pnpm check:arch`** — `scripts/check-architecture.mjs`. It owns the rules Biome
 structurally cannot express, because they depend on file *contents*, directory *shape*,
-or a specifier Biome never resolves. Five rules, each named in the failure output:
+or a specifier Biome never resolves. Seven rules, each named in the failure output:
 
 | Rule | What it catches |
 | --- | --- |
@@ -184,6 +185,8 @@ or a specifier Biome never resolves. Five rules, each named in the failure outpu
 | `route-reach` | Only `app/**/page.tsx` and `app/**/layout.tsx` may name a component file — and not even they may reach deeper than that file. |
 | `lib-type-only` | `lib/` importing a feature. A type-only import is erased before bundling and is allowed; Biome cannot tell `import type` from a value import. |
 | `feature-doors` | The relative spelling of rule 3. `../inbox/queries` is invisible to Biome, which matches the literal specifier; the script resolves it against `src/` first. |
+| `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, or reading `process.env`. `import type` and `@byteveda/db/constants` are fine. Every other rule assumes a model is client-safe; this is the one that checks. |
+| `curated-barrel` | `export *` in a feature's `index.ts` or its `components/index.ts`. A star puts every symbol of that module on the door, including whatever is added to it later. |
 
 If your failure message is `path:line [rule-name] reason`, it came from the script.
 
@@ -195,10 +198,11 @@ The script covers every `.ts`/`.tsx` under `apps/*/src`. Deliberately **not**
 outside any bundle, and they reach into feature internals on purpose because they cannot
 load `next/headers`.
 
-One thing neither tool checks: a feature's components should import cross-feature UI by
-its own path (`@/components/mark`), not through the `@/components` barrel, which is all
-client components and pulls them into every server module that touches the feature.
-That one is held by habit. Treat it as a rule anyway.
+What still nobody checks: whether a barrel's *named* re-exports are the right ones. A
+curated `index.ts` can still put a component on the server door, and a
+`components/index.ts` can still put a server component on the client door. Proving either
+means following the re-export graph, which neither tool does — `client-door` catches the
+symptom, not the cause.
 
 ## The exceptions that exist
 
