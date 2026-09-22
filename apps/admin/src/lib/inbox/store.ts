@@ -1,6 +1,7 @@
 import { emailThreads, getDb, inboundMessages } from "@byteveda/db";
 import { and, eq } from "drizzle-orm";
 import type { InboundRow } from "@/lib/email/inbound";
+import { replyTargetOf } from "@/lib/email/thread";
 import { workspaceOf } from "@/lib/mail/workspaces";
 import { previewOf } from "./preview";
 import { UNREAD } from "./queries";
@@ -36,14 +37,21 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
   // time somebody asks for a sample. See `lib/mail/workspaces.ts`.
   const workspace = workspaceOf(row.toEmail, row.fromEmail);
 
+  // Who a reply goes to, which is not always who sent it. `inbound_messages`
+  // keeps the real `From` either way — that row is the record of what arrived,
+  // and only the conversation's correspondent is the reply target. The thread
+  // key stays keyed on the sender so that changing this cannot re-group mail
+  // that is already filed.
+  const correspondent = replyTargetOf(row.fromEmail, row.headers);
+
   return getDb().transaction(async (tx) => {
     await tx
       .insert(emailThreads)
       .values({
         threadKey: row.threadKey,
         subject: row.subject,
-        correspondentEmail: row.fromEmail,
-        correspondentName: row.fromName,
+        correspondentEmail: correspondent.email,
+        correspondentName: correspondent.name ?? row.fromName,
         mailbox: row.toEmail,
         workspace,
         preview,
@@ -66,7 +74,14 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
       .set({
         // The subject is the conversation's, set when it opened. Later messages
         // are "Re: " that, and taking theirs would retitle the thread.
-        ...(row.fromName ? { correspondentName: row.fromName } : {}),
+        //
+        // The name comes from the same place the address did. Taking the
+        // sender's display name while the address stays the reply target is
+        // how a thread ends up labelled "ByteVeda Academy" over a student's
+        // address.
+        ...((correspondent.name ?? row.fromName)
+          ? { correspondentName: correspondent.name ?? row.fromName }
+          : {}),
         // Both, together: the workspace is derived from the mailbox, and a
         // thread whose last message came to another address belongs with that
         // address. Updating one without the other is how they disagree.
@@ -161,13 +176,45 @@ export async function deleteThread(threadKey: string): Promise<void> {
   await getDb().delete(emailThreads).where(eq(emailThreads.threadKey, threadKey));
 }
 
-/** Writes a body that was fetched from Resend after the fact. */
+/**
+ * Writes a body that was fetched from Resend after the fact.
+ *
+ * The headers arrive with it, and they are where `Reply-To` lives — so a
+ * message repaired here had its conversation's correspondent worked out
+ * without them. Repairing the body re-derives that too, which is what heals a
+ * thread filed before any of this existed: the academy's work orders were all
+ * pointing a reply back at the academy, and the address of the person actually
+ * waiting was sitting unread in these headers the whole time.
+ *
+ * Only ever narrows towards the truth. `replyTargetOf` falls back to the
+ * sender, so a message with no `Reply-To` rewrites the correspondent to what
+ * it already was.
+ */
 export async function repairBody(
   id: string,
   body: { text: string | null; html: string | null; headers: Record<string, string> | null },
 ): Promise<void> {
-  await getDb()
-    .update(inboundMessages)
-    .set({ text: body.text ?? "", html: body.html ?? null, headers: body.headers ?? null })
-    .where(eq(inboundMessages.id, id));
+  await getDb().transaction(async (tx) => {
+    const [message] = await tx
+      .update(inboundMessages)
+      .set({ text: body.text ?? "", html: body.html ?? null, headers: body.headers ?? null })
+      .where(eq(inboundMessages.id, id))
+      .returning({
+        threadKey: inboundMessages.threadKey,
+        fromEmail: inboundMessages.fromEmail,
+        fromName: inboundMessages.fromName,
+      });
+
+    if (!message?.threadKey || !body.headers) return;
+
+    const correspondent = replyTargetOf(message.fromEmail, body.headers);
+
+    await tx
+      .update(emailThreads)
+      .set({
+        correspondentEmail: correspondent.email,
+        correspondentName: correspondent.name ?? message.fromName,
+      })
+      .where(eq(emailThreads.threadKey, message.threadKey));
+  });
 }
