@@ -2,12 +2,16 @@
  * Made-to-order pricing. The panel beside the request form re-quotes on every
  * keystroke, so this has to be a pure function of the form state — no clock,
  * no network, no rounding that depends on what was quoted a moment ago.
+ *
+ * A set chapter is the same chapter the shelf sells — the same mix, the same
+ * free board and NCERT questions, the same optional advanced block. The only
+ * thing a custom request adds is the setting: someone has to write and solve a
+ * chapter nobody has asked for before, and that is charged once, however many
+ * copies come off it.
  */
 
 import type { Board, ClassLevel } from "./inventory";
-
-export type Difficulty = "practice" | "board" | "advanced";
-export type AnswerKey = "steps" | "answers" | "none";
+import { MIX_LABEL, MIX_TOTAL, PRICING } from "./pricing";
 
 export type CustomRequest = {
   board: Board;
@@ -15,52 +19,28 @@ export type CustomRequest = {
   subject: string;
   /** Free text — the chapter or topic to set against. */
   chapter: string;
-  questions: number;
-  difficulty: Difficulty;
-  answerKey: AnswerKey;
+  /** The paid HOTS block on top of the standard mix. */
+  advanced: boolean;
   copies: number;
 };
 
-export const QUESTIONS = { min: 10, max: 120, step: 5, default: 30 } as const;
 export const COPIES = { min: 1, max: 60, default: 1 } as const;
 
-export const PRICING = {
-  /** Setting and typesetting, charged once however long the sheet is. */
-  setting: 149,
-  /** Per block of ten questions, or part of one. */
-  perTenQuestions: 22,
-  difficulty: { practice: 0, board: 40, advanced: 80 },
-  answerKey: { steps: 40, answers: 15, none: 0 },
-  /** Above this many copies the order is a class set and takes the rate below. */
-  classSetFrom: 11,
-  classSetRate: 0.7,
-} as const;
+export type AdvancedChoice = "no" | "yes";
 
-export const DIFFICULTY_OPTIONS: readonly { value: Difficulty; label: string }[] = [
-  { value: "practice", label: "Practice — textbook level" },
-  { value: "board", label: "Board-level mixed" },
-  { value: "advanced", label: "Advanced / HOTS" },
+export const ADVANCED_OPTIONS: readonly { value: AdvancedChoice; label: string }[] = [
+  { value: "no", label: "Standard mix only" },
+  { value: "yes", label: `Add advanced / HOTS (+₹${PRICING.advanced})` },
 ];
-
-export const ANSWER_KEY_OPTIONS: readonly { value: AnswerKey; label: string }[] = [
-  { value: "steps", label: "Step-by-step solutions" },
-  { value: "answers", label: "Final answers only" },
-  { value: "none", label: "No key" },
-];
-
-const DIFFICULTY_SHORT: Record<Difficulty, string> = {
-  practice: "practice",
-  board: "board-level",
-  advanced: "advanced",
-};
 
 export type QuoteLine = {
   label: string;
-  /** Already formatted — "₹149", "×12", "included". */
+  /** Already formatted — "₹149", "×12", "free". */
   value: string;
 };
 
 export type Quote = {
+  /** What the sheet holds, before the free board and NCERT questions. */
   questions: number;
   copies: number;
   /** True once the class-set rate applies. */
@@ -74,42 +54,32 @@ function clamp(value: number, min: number, max: number, fallback: number): numbe
   return Math.min(max, Math.max(min, Math.round(value)));
 }
 
-function labelOf<T extends string>(
-  options: readonly { value: T; label: string }[],
-  value: T,
-): string {
-  return options.find((o) => o.value === value)?.label ?? value;
-}
-
 export function quoteFor(request: CustomRequest): Quote {
-  const questions = clamp(request.questions, QUESTIONS.min, QUESTIONS.max, QUESTIONS.default);
   const copies = clamp(request.copies, COPIES.min, COPIES.max, COPIES.default);
 
-  const questionFee = Math.ceil(questions / 10) * PRICING.perTenQuestions;
-  const difficultyFee = PRICING.difficulty[request.difficulty];
-  const answerKeyFee = PRICING.answerKey[request.answerKey];
-
-  const perCopy = PRICING.setting + questionFee + difficultyFee + answerKeyFee;
+  const advancedFee = request.advanced ? PRICING.advanced : 0;
+  const perCopy = PRICING.chapter + advancedFee;
   const classSet = copies >= PRICING.classSetFrom;
-  const gross = perCopy * copies;
-  const total = Math.round(classSet ? gross * PRICING.classSetRate : gross);
+  const copiesFee = Math.round(perCopy * copies * (classSet ? PRICING.classSetRate : 1));
+
+  // The setting fee is labour on one chapter, not on one copy of it, so the
+  // class-set rate never touches it — a school ordering forty copies is buying
+  // forty prints of the same afternoon's work.
+  const total = PRICING.setting + copiesFee;
 
   return {
-    questions,
+    questions: MIX_TOTAL,
     copies,
     classSet,
     total,
     lines: [
-      { label: "Set and typeset", value: `₹${PRICING.setting}` },
-      { label: `${questions} questions`, value: `₹${questionFee}` },
+      { label: `Chapter set · ${MIX_LABEL}`, value: `₹${PRICING.chapter}` },
+      { label: "Board questions · NCERT exercise · answer key", value: "free" },
       {
-        label: labelOf(DIFFICULTY_OPTIONS, request.difficulty),
-        value: difficultyFee ? `₹${difficultyFee}` : "included",
+        label: "Advanced / HOTS block",
+        value: advancedFee ? `₹${advancedFee}` : "not added",
       },
-      {
-        label: labelOf(ANSWER_KEY_OPTIONS, request.answerKey),
-        value: answerKeyFee ? `₹${answerKeyFee}` : "included",
-      },
+      { label: "Written and solved for your chapter", value: `₹${PRICING.setting}` },
       {
         label: `${copies} ${copies === 1 ? "copy" : "copies"}${classSet ? " · class-set rate −30%" : ""}`,
         value: copies === 1 ? "—" : `×${copies}`,
@@ -118,15 +88,16 @@ export function quoteFor(request: CustomRequest): Quote {
   };
 }
 
-/** "CBSE · Class 10 · Mathematics · 30 questions · board-level · 12 copies" */
+/** "CBSE · Class 10 · Mathematics · 50 questions · board and NCERT free · 12 copies" */
 export function describeRequest(request: CustomRequest, quote: Quote): string {
   const parts = [
     request.board,
     `Class ${request.cls}`,
     request.subject,
     `${quote.questions} questions`,
-    DIFFICULTY_SHORT[request.difficulty],
+    "board and NCERT free",
   ];
+  if (request.advanced) parts.push("advanced block");
   if (quote.copies > 1) parts.push(`${quote.copies} copies`);
   return parts.join(" · ");
 }

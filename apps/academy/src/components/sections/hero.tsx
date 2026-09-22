@@ -1,10 +1,10 @@
-import { PRICING, stockedCount } from "@/lib/inventory";
+import { MIX_LABEL, PRICING } from "@/lib/pricing";
 import { TURNAROUND } from "@/lib/site";
 
 const TRACE = [
   { term: "you type", detail: "“Chemical Reactions and Equations”" },
-  { term: "inventory", detail: "3 sheets · 64 questions · in stock", hit: true },
-  { term: "you ask", detail: "a free sample sheet · answer key included" },
+  { term: "inventory", detail: `₹19 · ${MIX_LABEL} · in stock`, hit: true },
+  { term: "free with it", detail: "14 board questions · 20 NCERT · answer key" },
   { term: "inbox", detail: "under 24 hours — print and start" },
 ];
 
@@ -23,9 +23,10 @@ export function Hero() {
           <p className="kicker">Chapter-wise assignments</p>
           <h1 className="display">Want to test yourself?</h1>
           <p className="lede">
-            Pick a chapter, get the sheet. We keep a stocked inventory of CBSE and ICSE assignments
-            for Class 9 and 10 — and set the ones we don&rsquo;t hold to your requirement. Ask for a
-            free sample and it lands in your inbox within {TURNAROUND}.
+            Pick a chapter, get the sheet — ₹{PRICING.chapter} for {MIX_LABEL}, with the board
+            questions and the NCERT exercise thrown in free. CBSE and ICSE, Class 9 and 10, stocked
+            or set to your requirement. Ask for a free sample and it lands in your inbox within{" "}
+            {TURNAROUND}.
           </p>
 
           <div className="hero-actions">
@@ -47,8 +48,8 @@ export function Hero() {
               <span>emailed, worst case</span>
             </div>
             <div>
-              <b className="num">₹{PRICING.perSheet}</b>
-              <span>per worksheet</span>
+              <b className="num">₹{PRICING.chapter}</b>
+              <span>per chapter</span>
             </div>
           </div>
         </div>

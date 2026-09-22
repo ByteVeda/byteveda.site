@@ -347,6 +347,14 @@
   color: var(--text-faint);
 }
 
+/* Two lines: what the chapter holds, and what rides along with it for nothing.
+   `nowrap` on both — the column is short enough to keep on one line each, and a
+   wrapped "+ 14 board · 20 NCERT, free" reads as two separate claims. */
+.contents {
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
 .more-row {
   display: flex;
   justify-content: center;
@@ -428,7 +436,7 @@
 }
 
 @media (min-width: 62rem) {
-  /* The form has eight fields; the quote has five short lines and a button.
+  /* The form has six fields; the quote has five short lines and a button.
      Splitting them evenly made the quote a broad white panel that was mostly
      empty — the narrower column is the one that needed the room. */
   .custom .band-inner {

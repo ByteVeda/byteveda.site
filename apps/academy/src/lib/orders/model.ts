@@ -19,17 +19,7 @@
  */
 
 import { type Chapter, chapters, describeChapter, describeContents } from "@/lib/inventory";
-import {
-  ANSWER_KEY_OPTIONS,
-  type AnswerKey,
-  COPIES,
-  type CustomRequest,
-  DIFFICULTY_OPTIONS,
-  type Difficulty,
-  describeRequest,
-  QUESTIONS,
-  quoteFor,
-} from "@/lib/quote";
+import { COPIES, type CustomRequest, describeRequest, quoteFor } from "@/lib/quote";
 
 /** Same shape the admin console accepts; deliberately stricter than the RFC. */
 const EMAIL_SHAPE = /^[^@\s]+@[^@\s.]+\.[^@\s]+$/;
@@ -96,14 +86,6 @@ export function isValidEmail(value: string): boolean {
   return EMAIL_SHAPE.test(value.trim());
 }
 
-function isDifficulty(value: unknown): value is Difficulty {
-  return DIFFICULTY_OPTIONS.some((o) => o.value === value);
-}
-
-function isAnswerKey(value: unknown): value is AnswerKey {
-  return ANSWER_KEY_OPTIONS.some((o) => o.value === value);
-}
-
 function parseCustomRequest(value: unknown): CustomRequest | null {
   if (typeof value !== "object" || value === null) return null;
   const r = value as Record<string, unknown>;
@@ -113,9 +95,8 @@ function parseCustomRequest(value: unknown): CustomRequest | null {
   if (!chapter || !subject) return null;
   if (r.board !== "CBSE" && r.board !== "ICSE") return null;
   if (r.cls !== "9" && r.cls !== "10") return null;
-  if (!isDifficulty(r.difficulty) || !isAnswerKey(r.answerKey)) return null;
-  if (typeof r.questions !== "number" || typeof r.copies !== "number") return null;
-  if (!Number.isFinite(r.questions) || !Number.isFinite(r.copies)) return null;
+  if (typeof r.advanced !== "boolean") return null;
+  if (typeof r.copies !== "number" || !Number.isFinite(r.copies)) return null;
 
   // Out-of-range numbers are clamped rather than rejected: `quoteFor` clamps
   // too, so rejecting here would only disagree with the price the panel showed.
@@ -124,10 +105,8 @@ function parseCustomRequest(value: unknown): CustomRequest | null {
     cls: r.cls,
     subject,
     chapter,
-    questions: Math.min(QUESTIONS.max, Math.max(QUESTIONS.min, Math.round(r.questions))),
+    advanced: r.advanced,
     copies: Math.min(COPIES.max, Math.max(COPIES.min, Math.round(r.copies))),
-    difficulty: r.difficulty,
-    answerKey: r.answerKey,
   };
 }
 

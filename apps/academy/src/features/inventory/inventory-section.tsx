@@ -10,11 +10,12 @@ import {
   type ChapterFilter,
   type ClassLevel,
   describeChapter,
-  describeContents,
+  describeFree,
   listChapters,
   NO_FILTER,
   subjects,
 } from "@/lib/inventory";
+import { MIX_LABEL, MIX_TOTAL } from "@/lib/pricing";
 
 /** Six rows is about a screen; the rest is one click away. */
 const PAGE = 6;
@@ -71,7 +72,8 @@ export function InventorySection() {
           <h2 className="display">Find your chapter.</h2>
         </div>
         <p className="result-count">
-          {rows.length} {rows.length === 1 ? "chapter" : "chapters"} · answer key included
+          {rows.length} {rows.length === 1 ? "chapter" : "chapters"} · {MIX_LABEL} · board, NCERT
+          and the answer key free
         </p>
       </div>
 
@@ -145,6 +147,7 @@ export function InventorySection() {
                 // rather than a second pick. Saying so on the button is the
                 // only place the rule is visible before someone tries it.
                 const taken = item !== null && !added;
+                const free = describeFree(chapter);
                 return (
                   <tr key={chapter.id}>
                     <td>
@@ -154,8 +157,15 @@ export function InventorySection() {
                         {chapter.inStock ? "" : " · made to order"}
                       </div>
                     </td>
-                    <td style={{ color: "var(--text-dim)", whiteSpace: "nowrap" }}>
-                      {describeContents(chapter)}
+                    <td className="contents">
+                      <div>{MIX_TOTAL} Qs</div>
+                      {/* The free questions are the reason to read this column
+                          at all — every chapter's mix is the same 25/15/10, and
+                          what differs is how much rides along with it. */}
+                      <div className="chapter-meta">
+                        {free ? `+ ${free}, free` : "answer key included"}
+                        {chapter.advancedPrice ? ` · advanced +₹${chapter.advancedPrice}` : ""}
+                      </div>
                     </td>
                     <td className="num price">
                       <s className="price-was">₹{chapter.price}</s>

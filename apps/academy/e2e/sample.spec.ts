@@ -37,8 +37,12 @@ test.describe("the counter", () => {
   test("holds one chapter at a time, and says so on every other row", async ({ page }) => {
     await page.goto("/");
 
-    await expect(page.getByRole("button", { name: /^Pick / })).toHaveCount(6);
-    await page
+    // Scoped to the table: this is about the six rows, not every button on the
+    // page.
+    const table = page.locator(".table");
+
+    await expect(table.getByRole("button", { name: /^Pick / })).toHaveCount(6);
+    await table
       .getByRole("button", { name: /^Pick / })
       .first()
       .click();
@@ -47,11 +51,11 @@ test.describe("the counter", () => {
     // One free sample per address, so the other five rows stop offering a
     // second one. Saying "Swap" is the only place that rule is visible before
     // somebody runs into it.
-    await expect(page.getByRole("button", { name: /^Picked: / })).toHaveCount(1);
-    await expect(page.getByRole("button", { name: /^Swap for / })).toHaveCount(5);
-    await expect(page.getByRole("button", { name: /^Pick / })).toHaveCount(0);
+    await expect(table.getByRole("button", { name: /^Picked: / })).toHaveCount(1);
+    await expect(table.getByRole("button", { name: /^Swap for / })).toHaveCount(5);
+    await expect(table.getByRole("button", { name: /^Pick / })).toHaveCount(0);
 
-    await page
+    await table
       .getByRole("button", { name: /^Swap for / })
       .first()
       .click();
@@ -64,7 +68,7 @@ test.describe("the counter", () => {
     await page.goto("/");
 
     const row = page.locator(".table tbody tr").first();
-    await expect(row.locator(".price-was")).toHaveText("₹129");
+    await expect(row.locator(".price-was")).toHaveText("₹19");
     await expect(row.locator(".price-free")).toHaveText("Free");
   });
 
@@ -94,7 +98,7 @@ test.describe("the counter", () => {
       .getByRole("button", { name: /^Pick / })
       .first()
       .click();
-    await page.getByRole("button", { name: `Picked: ${FIRST}` }).click();
+    await page.getByRole("button", { name: `Picked: ${FIRST}`, exact: true }).click();
 
     await expect(page.locator(".sample-bar b")).toHaveText("Nothing picked yet");
     await expect(page.getByRole("link", { name: "Sample (0)" })).toBeVisible();
@@ -293,14 +297,17 @@ test.describe("the custom request", () => {
     await page.goto("/");
 
     const quote = page.locator(".quote");
-    await expect(quote.locator(".quote-total b")).toHaveText("₹295");
+    // 149 to set it, 19 for the chapter. The board questions and the NCERT
+    // exercise are on the panel at "free".
+    await expect(quote.locator(".quote-total b")).toHaveText("₹168");
+    await expect(quote).toContainText("free");
     await expect(quote.getByRole("button")).toBeDisabled();
 
     await page.getByLabel("Chapter or topic").fill("Heights and distances");
     await page.getByLabel("Copies").fill("12");
 
-    // 295 a copy, twelve copies, less the 30% class-set rate.
-    await expect(quote.locator(".quote-total b")).toHaveText("₹2478");
+    // The setting is charged once; twelve copies at ₹19 take the class-set rate.
+    await expect(quote.locator(".quote-total b")).toHaveText("₹309");
     await expect(quote).toContainText("class-set rate");
 
     await quote.getByRole("button", { name: /Ask for a sample of this/ }).click();

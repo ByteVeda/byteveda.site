@@ -29,7 +29,7 @@ export function SampleBar() {
       <p className="soon">
         <span>
           One free sample per email address — picking another chapter swaps it. Buying the full
-          chapter packs is coming soon; the prices above are what they will cost.
+          chapters is coming soon; the prices above are what they will cost.
         </span>
       </p>
     </>

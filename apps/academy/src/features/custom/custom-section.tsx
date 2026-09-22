@@ -5,15 +5,13 @@ import { useId, useMemo, useState } from "react";
 import { Field, Select, TextInput } from "@/components/ui";
 import { useSamples } from "@/features/sample/store";
 import { type Board, type ClassLevel, subjects } from "@/lib/inventory";
+import { MIX_LABEL } from "@/lib/pricing";
 import {
-  ANSWER_KEY_OPTIONS,
-  type AnswerKey,
+  ADVANCED_OPTIONS,
+  type AdvancedChoice,
   COPIES,
   type CustomRequest,
-  DIFFICULTY_OPTIONS,
-  type Difficulty,
   describeRequest,
-  QUESTIONS,
   quoteFor,
 } from "@/lib/quote";
 import { TURNAROUND } from "@/lib/site";
@@ -45,10 +43,8 @@ export function CustomSection() {
   const [cls, setCls] = useState<ClassLevel>("10");
   const [subject, setSubject] = useState<string>(SUBJECTS[0]?.value ?? "Mathematics");
   const [chapter, setChapter] = useState("");
-  const [difficulty, setDifficulty] = useState<Difficulty>("board");
-  const [answerKey, setAnswerKey] = useState<AnswerKey>("steps");
+  const [advanced, setAdvanced] = useState<AdvancedChoice>("no");
   // Held as text so the field can be empty mid-edit; `quoteFor` clamps.
-  const [questions, setQuestions] = useState(String(QUESTIONS.default));
   const [copies, setCopies] = useState(String(COPIES.default));
 
   const ids = {
@@ -56,9 +52,7 @@ export function CustomSection() {
     cls: useId(),
     subject: useId(),
     chapter: useId(),
-    questions: useId(),
-    difficulty: useId(),
-    answerKey: useId(),
+    advanced: useId(),
     copies: useId(),
   };
 
@@ -68,12 +62,10 @@ export function CustomSection() {
       cls,
       subject,
       chapter,
-      difficulty,
-      answerKey,
-      questions: Number(questions),
+      advanced: advanced === "yes",
       copies: Number(copies),
     }),
-    [board, cls, subject, chapter, difficulty, answerKey, questions, copies],
+    [board, cls, subject, chapter, advanced, copies],
   );
 
   const quote = useMemo(() => quoteFor(request), [request]);
@@ -86,7 +78,8 @@ export function CustomSection() {
           <p className="kicker">Made to order</p>
           <h2 className="display">Not in the inventory? Set it to my requirement.</h2>
           <p className="lede">
-            Any chapter, any question count, any difficulty. The price quotes as you fill it in.
+            Any chapter on either syllabus, set to the same mix as the shelf — {MIX_LABEL}, with the
+            board questions and the NCERT exercise free on top. The price quotes as you fill it in.
           </p>
 
           <div className="custom-grid">
@@ -116,34 +109,16 @@ export function CustomSection() {
               />
             </Field>
 
-            <Field label="Questions" htmlFor={ids.questions}>
-              <TextInput
-                id={ids.questions}
-                type="number"
-                inputMode="numeric"
-                min={QUESTIONS.min}
-                max={QUESTIONS.max}
-                step={QUESTIONS.step}
-                value={questions}
-                onChange={(event) => setQuestions(event.target.value)}
-              />
-            </Field>
-
-            <Field label="Difficulty" labelId={ids.difficulty}>
+            <Field
+              label="Advanced block"
+              labelId={ids.advanced}
+              hint="Higher-order and case-study questions, on top of the mix."
+            >
               <Select
-                value={difficulty}
-                options={DIFFICULTY_OPTIONS}
-                labelledBy={ids.difficulty}
-                onChange={setDifficulty}
-              />
-            </Field>
-
-            <Field label="Answer key" labelId={ids.answerKey}>
-              <Select
-                value={answerKey}
-                options={ANSWER_KEY_OPTIONS}
-                labelledBy={ids.answerKey}
-                onChange={setAnswerKey}
+                value={advanced}
+                options={ADVANCED_OPTIONS}
+                labelledBy={ids.advanced}
+                onChange={setAdvanced}
               />
             </Field>
 
