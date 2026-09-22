@@ -15,7 +15,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { refuse, requirePermission, requireSession } from "@/lib/auth/session";
 import { announcePost } from "@/lib/broadcasts/service";
-import { revalidateFlexiq } from "@/lib/publish/revalidate";
+import { revalidateFlexiq } from "@/lib/revalidate";
 import { getTakenSlugs } from "./queries";
 import { isValidSlug, slugify, uniqueSlug } from "./slug";
 

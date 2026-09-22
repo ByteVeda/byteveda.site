@@ -16,9 +16,9 @@ import {
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { isSuperAdminId } from "@/lib/auth/allowlist";
-import { findUserByLogin } from "@/lib/auth/github";
 import { basePermissionsFor, type Permission, sanitisePermissions } from "@/lib/auth/roles";
 import { refuse, requireSession, revokeSessionsFor } from "@/lib/auth/session";
+import { findUserByLogin } from "@/lib/github/client";
 import { findCustomRole, findMember } from "./queries";
 
 export type MemberResult = { ok: boolean; message: string };

@@ -1,8 +1,8 @@
 "use client";
 
 import { useId, useState } from "react";
-import { count } from "@/lib/format";
 import type { DailyTotal } from "@/lib/stats/queries";
+import { count } from "@/shared/format";
 
 type Props = { daily: DailyTotal[] };
 

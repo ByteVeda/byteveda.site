@@ -3,9 +3,9 @@ import Link from "next/link";
 import { PageHeader } from "@/components";
 import { can } from "@/lib/auth/roles";
 import { requirePermission } from "@/lib/auth/session";
-import { ago } from "@/lib/format";
 import { createDraft } from "@/lib/posts/actions";
 import { listPosts } from "@/lib/posts/queries";
+import { ago } from "@/shared/format";
 
 export async function PostsPage() {
   const { access } = await requirePermission("posts.read");

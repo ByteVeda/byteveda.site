@@ -8,7 +8,6 @@ import { requirePermission } from "@/lib/auth/session";
 import { formatBytes, maxFileBytes } from "@/lib/email/attachments";
 import { emailConfigured } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
-import { initial } from "@/lib/format";
 import {
   type Conversation,
   countThreads,
@@ -22,6 +21,7 @@ import {
 } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";
 import { isMailWorkspace } from "@/lib/mail/workspaces";
+import { initial } from "@/shared/format";
 import { ComposeBox } from "./compose-box";
 import { MessageBody } from "./message-body";
 import { ReplyBox } from "./reply-box";

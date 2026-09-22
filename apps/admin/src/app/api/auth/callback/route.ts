@@ -1,5 +1,4 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { exchangeCode, fetchUser } from "@/lib/auth/github";
 import {
   createSession,
   SESSION_COOKIE,
@@ -8,8 +7,9 @@ import {
   sessionCookieOptions,
 } from "@/lib/auth/session";
 import { callbackUrl, originOf, safeNext } from "@/lib/auth/urls";
+import { exchangeCode, fetchUser } from "@/lib/github/client";
 import { admit } from "@/lib/members/service";
-import { clientIp, userAgent } from "@/lib/request";
+import { clientIp, userAgent } from "@/shared/request";
 
 export const dynamic = "force-dynamic";
 

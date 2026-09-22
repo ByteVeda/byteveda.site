@@ -4,7 +4,7 @@ import { ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { roleLabel } from "@/lib/auth/roles";
-import { INBOX_HREF, isActive, navFor } from "@/lib/nav";
+import { INBOX_HREF, isActive, navFor } from "@/shared/nav";
 // Relative, not through the barrel: this file is one of the things the barrel
 // exports, and a module cannot be its own dependency.
 import { useAccess } from "./access";

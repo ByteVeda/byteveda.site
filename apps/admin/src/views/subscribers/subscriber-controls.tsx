@@ -5,8 +5,8 @@ import { Mail, Send, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
 import { type AttachedFile, AttachmentPicker, useConfirm } from "@/components";
 import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
-import { ago } from "@/lib/format";
 import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
+import { ago } from "@/shared/format";
 
 type Message = { text: string; ok: boolean } | null;
 

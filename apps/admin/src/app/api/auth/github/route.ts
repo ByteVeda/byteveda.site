@@ -1,8 +1,8 @@
 import { randomBytes } from "node:crypto";
 import { type NextRequest, NextResponse } from "next/server";
-import { authorizeUrl } from "@/lib/auth/github";
 import { STATE_COOKIE } from "@/lib/auth/session";
 import { callbackUrl, safeNext } from "@/lib/auth/urls";
+import { authorizeUrl } from "@/lib/github/client";
 
 export const dynamic = "force-dynamic";
 

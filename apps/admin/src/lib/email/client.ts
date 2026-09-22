@@ -1,8 +1,8 @@
 import { getDb, type OutboundKind, outboundMessages } from "@byteveda/db";
 import { Resend } from "resend";
 import { configured } from "@/lib/env";
-import { loggable } from "@/lib/log";
 import { getSettings } from "@/lib/settings";
+import { loggable } from "@/shared/log";
 import { checkMessage } from "./attachments";
 import { fetchFailureReason, type InboundFetch } from "./inbound";
 import type { Email } from "./templates";
@@ -204,7 +204,7 @@ export async function fetchInboundBody(emailId: string): Promise<InboundFetch> {
 
   // The id and Resend's message both originate outside this system — the id
   // arrived on the webhook — so neither goes into the format string. See
-  // `lib/log.ts` for what that buys.
+  // `shared/log.ts` for what that buys.
   try {
     const { data, error } = await resend().emails.receiving.get(emailId);
 

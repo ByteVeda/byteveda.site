@@ -7,8 +7,8 @@ import {
   projectPackages,
 } from "@byteveda/db";
 import { sql } from "drizzle-orm";
-import { adapterFor } from "./sources";
-import type { DailyPoint } from "./types";
+import { adapterFor } from "@/lib/registries/sources";
+import type { DailyPoint } from "@/lib/registries/types";
 
 export type PackageOutcome = {
   packageId: string;

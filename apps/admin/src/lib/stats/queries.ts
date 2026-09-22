@@ -8,7 +8,7 @@ import {
 } from "@byteveda/db";
 import { projects } from "@byteveda/utils";
 import { desc, gte } from "drizzle-orm";
-import { daysAgo } from "./http";
+import { daysAgo } from "@/lib/registries/http";
 
 /** Two 30-day windows: one to show, one to compare against. */
 export const WINDOW_DAYS = 30;

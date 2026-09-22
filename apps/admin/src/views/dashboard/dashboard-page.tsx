@@ -3,11 +3,11 @@ import Link from "next/link";
 import { PageHeader } from "@/components";
 import { can, readableWorkspaces } from "@/lib/auth/roles";
 import { requireSession } from "@/lib/auth/session";
-import { count, delta } from "@/lib/format";
 import { countUnread } from "@/lib/inbox/queries";
 import { countPostsByStatus, listPosts } from "@/lib/posts/queries";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { countByStatus } from "@/lib/subscribers/queries";
+import { count, delta } from "@/shared/format";
 
 function greeting(at = new Date()): string {
   const hour = at.getHours();

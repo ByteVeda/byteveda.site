@@ -3,9 +3,9 @@ import { can } from "@/lib/auth/roles";
 import { requirePermission } from "@/lib/auth/session";
 import { listBroadcasts } from "@/lib/broadcasts/actions";
 import { maxFileBytes } from "@/lib/email/attachments";
-import { ago } from "@/lib/format";
 import { getSettings } from "@/lib/settings";
 import { countByStatus, listSubscribers } from "@/lib/subscribers/queries";
+import { ago } from "@/shared/format";
 import { AddSubscriberForm, BroadcastComposer, SubscriberRowActions } from "./subscriber-controls";
 
 /** Confirmed is the only status that gets mail; the rest are shown as state. */

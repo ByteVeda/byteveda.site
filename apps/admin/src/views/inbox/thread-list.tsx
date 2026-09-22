@@ -5,9 +5,9 @@ import { Archive, CornerUpLeft, Inbox, Mail, Search, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { ago, count, initial } from "@/lib/format";
 import type { ThreadCounts, ThreadFilter, ThreadSummary } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";
+import { ago, count, initial } from "@/shared/format";
 import { useShortcuts } from "./shortcuts";
 
 type Props = {

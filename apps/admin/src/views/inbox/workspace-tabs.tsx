@@ -1,8 +1,8 @@
 import { MAIL_WORKSPACE_LABELS, type MailWorkspace } from "@byteveda/db/constants";
 import Link from "next/link";
-import { count } from "@/lib/format";
 import type { ThreadFilter, WorkspaceCounts } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";
+import { count } from "@/shared/format";
 
 type Props = {
   allowed: MailWorkspace[];
