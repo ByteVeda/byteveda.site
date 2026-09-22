@@ -3,8 +3,8 @@
 import type { Subscriber } from "@byteveda/db";
 import { Mail, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components";
-import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
+import { useConfirm } from "@/components/confirm";
+import { addSubscriber, removeSubscriber, resendConfirmation } from "../actions";
 
 type Message = { text: string; ok: boolean } | null;
 

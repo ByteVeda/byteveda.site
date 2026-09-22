@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isDirectNavigation, readFetchMetadata } from "./navigation";
+import { isDirectNavigation, readFetchMetadata } from "./model";
 
 const meta = (headers: Record<string, string>) => readFetchMetadata(new Headers(headers));
 

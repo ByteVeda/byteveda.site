@@ -4,8 +4,8 @@ import { PageHeader } from "@/components";
 import { can, readableWorkspaces, requireSession } from "@/features/auth";
 import { countUnread } from "@/features/inbox";
 import { countPostsByStatus, listPosts } from "@/features/posts";
+import { countByStatus } from "@/features/subscribers";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
-import { countByStatus } from "@/lib/subscribers/queries";
 import { count, delta } from "@/shared/format";
 
 function greeting(at = new Date()): string {

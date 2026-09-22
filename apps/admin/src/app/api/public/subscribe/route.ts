@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { originOf } from "@/features/auth";
-import { subscribe } from "@/lib/subscribers/service";
+import { subscribe } from "@/features/subscribers";
 import { corsHeaders } from "@/shared/cors";
 
 export const dynamic = "force-dynamic";

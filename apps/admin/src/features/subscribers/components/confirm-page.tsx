@@ -1,7 +1,11 @@
 import { headers } from "next/headers";
-import { Mark } from "@/components";
-import { isDirectNavigation, readFetchMetadata } from "@/lib/subscribers/navigation";
-import { confirm, lookupByToken } from "@/lib/subscribers/service";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the subscribers front door — every server
+// module that imports `@/features/subscribers` would pull the whole UI graph
+// with it.
+import { Mark } from "@/components/mark";
+import { isDirectNavigation, readFetchMetadata } from "../model";
+import { confirm, lookupByToken } from "../service";
 import { SubscriptionAction } from "./subscription-action";
 
 type Props = { searchParams: Promise<{ token?: string }> };

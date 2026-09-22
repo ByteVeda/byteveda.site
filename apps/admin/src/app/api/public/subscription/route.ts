@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { confirm, unsubscribe } from "@/lib/subscribers/service";
+import { confirm, unsubscribe } from "@/features/subscribers";
 
 export const dynamic = "force-dynamic";
 

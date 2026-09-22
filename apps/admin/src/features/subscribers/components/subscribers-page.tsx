@@ -1,10 +1,15 @@
-import { LiveRefresh, PageHeader } from "@/components";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the subscribers front door — every server
+// module that imports `@/features/subscribers` would pull the whole UI graph
+// with it.
+import { LiveRefresh } from "@/components/live-refresh";
+import { PageHeader } from "@/components/page-header";
 import { maxFileBytes } from "@/features/attachments";
 import { can, requirePermission } from "@/features/auth";
 import { BroadcastComposer, listBroadcasts } from "@/features/broadcasts";
 import { getSettings } from "@/features/settings";
-import { countByStatus, listSubscribers } from "@/lib/subscribers/queries";
 import { ago } from "@/shared/format";
+import { countByStatus, listSubscribers } from "../queries";
 import { AddSubscriberForm, SubscriberRowActions } from "./subscriber-controls";
 
 /** Confirmed is the only status that gets mail; the rest are shown as state. */

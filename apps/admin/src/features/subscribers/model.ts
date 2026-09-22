@@ -1,4 +1,11 @@
 /**
+ * What the confirm and unsubscribe pages decide before they touch a row.
+ *
+ * Pure rules with no imports at all, so they run wherever they are needed. The
+ * rows themselves are `queries.ts` and the state changes are `service.ts`.
+ */
+
+/**
  * Whether a request looks like a person clicking a link.
  *
  * Acting on GET means whatever fetches the URL performs the action, and mail

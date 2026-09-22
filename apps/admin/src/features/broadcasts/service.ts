@@ -5,9 +5,8 @@ import * as attachments from "@/features/attachments";
 import { checkMessage } from "@/features/attachments/model";
 import { announcementEmail, broadcastEmail, sendMany } from "@/features/mail";
 import { getSettings } from "@/features/settings";
+import { activeSubscribers, unsubscribeUrl } from "@/features/subscribers";
 import { env } from "@/lib/env";
-import { activeSubscribers } from "@/lib/subscribers/queries";
-import { unsubscribeUrl } from "@/lib/subscribers/service";
 
 const FLEXIQ_URL = "https://flexiq.byteveda.org";
 
