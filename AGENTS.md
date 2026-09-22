@@ -12,9 +12,8 @@ answering "where does subscriber confirmation live?" meant opening three folders
 
 ## The shape
 
-Every app under `apps/` follows the same layout. Not every app has every folder — a
-mostly-static marketing site has no `shared/` — but where a folder exists, it means
-this and nothing else:
+This is the layout every app under `apps/` is aimed at. Not every app has every folder —
+a mostly-static marketing site has no `shared/` — and `admin` is the one that arrived:
 
 ```
 apps/<app>/src/
@@ -34,6 +33,28 @@ apps/<app>/src/
 
 `views/` does not exist. It used to; it is gone, and a screen now sits in
 `features/<name>/components/` next to the queries it renders.
+
+**Two places where the tree is not there yet**, both outside issue #361's scope — it
+named `admin` and `academy` — and both worth knowing before you read the list above as a
+description:
+
+- **`lib/` in the marketing sites still holds constants, not only adapters.**
+  `flexiq/src/lib/{site,docs,highlight}.ts` and the `site.ts` in `main` and `docs` talk to
+  nothing outside the process: they are names, URLs and nav arrays, and `highlight.ts` is
+  a 187-line regex tokenizer. (`flexiq/src/lib/version.ts` and `og.tsx` do qualify:
+  `version.ts` fetches the GitHub releases API.) They pass every tool because nothing
+  checks what a `lib/` file *is*, only what it imports. The `lib/` line above is the rule
+  for anything you add; these are what it has not been applied to yet.
+- **"A page.tsx is a few lines" describes `admin` and no one else.** Admin averages 10
+  lines across its 13 route files. Academy averages 55 across 3, `main` 49 across 4,
+  `docs` 64 across 2, `flexiq` 65 across 5, with every app's `layout.tsx` between 111 and
+  146. Most of that bulk is metadata, fonts and JSON-LD, which is a route's own business —
+  but not all of it: `main/src/app/(routes)/news/page.tsx:15-17` picks the lead article
+  and splits the rest out of the feed, which is a rule about news that a feature should
+  own.
+
+Neither is a licence. They are the direction of travel, so that a reader who opens
+`flexiq/src/lib/` and finds a tokenizer knows which of the two is wrong.
 
 ## The file vocabulary
 
