@@ -321,8 +321,8 @@ export function hasOverrides(access: Pick<AccessSnapshot, "extra" | "denied">): 
  *
  * The proxy runs on the edge runtime, where `pg` and `node:crypto` do not
  * exist, and it imports this module for these two strings. Everything above is
- * pure and everything that is not lives in `session.ts`, which is what keeps
- * that import cheap.
+ * pure and everything that is not lives in `queries.ts` and `store.ts`, which
+ * is what keeps that import cheap.
  */
 export const SESSION_COOKIE = "bv_admin_session";
 export const STATE_COOKIE = "bv_oauth_state";

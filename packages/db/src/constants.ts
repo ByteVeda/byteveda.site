@@ -53,7 +53,7 @@ export type SampleKind = (typeof SAMPLE_KINDS)[number];
  *
  * Four roles and no more: a role people cannot name is one they assign wrongly.
  * Which permissions each one carries is decided in the application — see
- * `apps/admin/src/lib/auth/roles.ts` — because a permission is a statement
+ * `apps/admin/src/features/auth/model.ts` — because a permission is a statement
  * about the code, and the code is where it can be kept true.
  *
  * A super admin may also define roles of their own, which are rows in

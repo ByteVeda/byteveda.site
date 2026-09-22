@@ -2,8 +2,8 @@
  * What the settings are, with no imports at all.
  *
  * The key, the type, the default and the two lines of copy that go beside it —
- * everything the form renders and everything the store validates a stored row
- * against. Client-safe, like every `model.ts`.
+ * everything the form renders and everything a stored row is checked against
+ * on read. Client-safe, like every `model.ts`.
  */
 export const SETTINGS = {
   "newsletter.enabled": {

@@ -84,7 +84,7 @@ export const adminUsers = pgTable("admin_users", {
   avatarUrl: text("avatar_url"),
   /**
    * What they may do. Which permissions the role carries is decided in
-   * `apps/admin/src/lib/auth/roles.ts`, not here — a permission is a claim
+   * `apps/admin/src/features/auth/model.ts`, not here — a permission is a claim
    * about what the code allows, and only the code can keep it honest.
    */
   role: adminRole("role").notNull().default("viewer"),
