@@ -64,6 +64,7 @@
 /* The nav is sticky, so an in-page jump has to clear it. */
 [id="top"],
 [id="inventory"],
+[id="sets"],
 [id="custom"],
 [id="delivery"] {
   scroll-margin-top: 88px;
@@ -425,6 +426,99 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-faint);
+}
+
+/* ---------- subject sets ---------- */
+
+.sets {
+  padding-block: clamp(3rem, 6vw, 4.5rem) 0;
+}
+
+/* Same voice as the inventory's count, one section down. Its own class rather
+   than that one's: two `.result-count` elements on a page turn every "the
+   count says…" selector into a guess. */
+.sets-note {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+
+.set-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 52rem) {
+  .set-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Drawn as a card because that is the shape the thing has: a set is a stack of
+   questions, so the page draws a stack. The two edges under it are shadows
+   rather than elements — a real sibling would need a stacking context and
+   would land in the accessibility tree as a third empty card.
+   `margin-bottom` is what those edges sit in; without it they run into
+   whatever the grid puts below. */
+.set-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.9rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow:
+    0 5px 0 -1px var(--surface),
+    0 5px 0 0 var(--line),
+    0 10px 0 -1px var(--surface),
+    0 10px 0 0 var(--line);
+}
+
+.set-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* What is actually in it, set as the headline — the number is what separates
+   these three from each other. */
+.set-size {
+  margin-top: 0.9rem;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.set-unit {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.set-body {
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  text-wrap: pretty;
+}
+
+/* Bottom right, and pushed there rather than placed: the three summaries run to
+   different lengths and the prices still have to line up across the row. */
+.set-price {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--accent);
 }
 
 /* ---------- custom request ---------- */

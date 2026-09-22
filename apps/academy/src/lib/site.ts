@@ -6,7 +6,7 @@ export const site = {
   url: ACADEMY_URL,
   tagline: "Chapter-wise assignments, emailed in 24 hours",
   description:
-    "Stocked CBSE and ICSE worksheets for Class 9 and 10, with answer keys. Pick a chapter from the inventory or have one set to your requirement, and ask for a free sample — it lands in your inbox within 24 hours.",
+    "Stocked CBSE and ICSE worksheets for Class 9 and 10 at ₹19 a chapter, with the board questions, the NCERT exercise and the answer key free. Board and HOTS sets by subject. Pick a chapter or have one set to your requirement, and ask for a free sample — it lands in your inbox within 24 hours.",
   org: ORG,
   orgUrl: MAIN_URL,
   contactEmail: CONTACT_EMAIL,
@@ -15,6 +15,7 @@ export const site = {
 /** Rooted, not bare fragments: the nav also renders on /sample. */
 export const nav = [
   { label: "Inventory", href: "/#inventory" },
+  { label: "Subject sets", href: "/#sets" },
   { label: "Custom request", href: "/#custom" },
   { label: "Delivery", href: "/#delivery" },
 ] as const;

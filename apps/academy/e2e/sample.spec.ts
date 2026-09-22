@@ -318,20 +318,60 @@ test.describe("the custom request", () => {
       "Heights and distances — made to order",
     );
     // The quote stays on the landing page, where it is a quote rather than a bill.
-    await expect(page.locator(".sample-page")).not.toContainText("2478");
+    await expect(page.locator(".sample-page")).not.toContainText("309");
   });
 
-  test("picks a difficulty through the custom listbox", async ({ page }) => {
+  test("adds the advanced block through the custom listbox", async ({ page }) => {
     await page.goto("/");
 
-    const difficulty = page.getByRole("combobox", { name: "Difficulty" });
-    await expect(difficulty).toContainText("Board-level mixed");
+    const advanced = page.getByRole("combobox", { name: "Advanced block" });
+    await expect(advanced).toContainText("Standard mix only");
 
-    await difficulty.click();
-    await page.getByRole("option", { name: "Advanced / HOTS" }).click();
+    await advanced.click();
+    await page.getByRole("option", { name: /Add advanced/ }).click();
 
-    await expect(difficulty).toContainText("Advanced / HOTS");
-    // 149 setting + 66 questions + 80 advanced + 40 solutions.
-    await expect(page.locator(".quote-total b")).toHaveText("₹335");
+    await expect(advanced).toContainText("Add advanced");
+    // 149 setting + 19 chapter + 20 advanced.
+    await expect(page.locator(".quote-total b")).toHaveText("₹188");
+  });
+});
+
+test.describe("the subject sets", () => {
+  test("shows three sets, priced per subject", async ({ page }) => {
+    await page.goto("/");
+
+    const cards = page.locator(".set-card");
+    await expect(cards).toHaveCount(3);
+
+    await expect(cards.nth(0)).toContainText("Subject set");
+    await expect(cards.nth(0)).toContainText("Every chapter");
+    await expect(cards.nth(0).locator(".set-price")).toHaveText("₹199");
+
+    await expect(cards.nth(1)).toContainText("Board set");
+    await expect(cards.nth(1)).toContainText("100 questions");
+    await expect(cards.nth(1).locator(".set-price")).toHaveText("₹499");
+
+    await expect(cards.nth(2)).toContainText("HOTS set");
+    await expect(cards.nth(2)).toContainText("125 questions");
+    await expect(cards.nth(2).locator(".set-price")).toHaveText("₹699");
+
+    await expect(page.locator(".set-unit").first()).toHaveText("per subject");
+  });
+
+  test("is a price list, not a second checkout", async ({ page }) => {
+    await page.goto("/");
+
+    // The sets are read, not picked. Buying is not open for them any more than
+    // it is for a chapter, and a button here would say otherwise.
+    await expect(page.locator(".sets").getByRole("button")).toHaveCount(0);
+    await expect(page.locator(".sets .soon")).toContainText("Buying opens with the chapters");
+  });
+
+  test("is reachable from the nav", async ({ page }) => {
+    await page.goto("/");
+
+    await page.getByRole("link", { name: "Subject sets" }).first().click();
+    await expect(page).toHaveURL(/#sets$/);
+    await expect(page.locator("#sets")).toBeVisible();
   });
 });

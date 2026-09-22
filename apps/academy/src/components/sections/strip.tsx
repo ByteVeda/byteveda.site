@@ -13,6 +13,9 @@ const TERMS = [
   "Social Science",
   "English",
   "Answer keys included",
+  "Board questions free",
+  "NCERT exercise free",
+  "Board and HOTS sets",
   "Emailed in 24h",
 ];
 
