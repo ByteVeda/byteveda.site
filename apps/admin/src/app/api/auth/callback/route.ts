@@ -1,15 +1,17 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { exchangeCode, fetchUser } from "@/lib/auth/github";
 import {
+  callbackUrl,
   createSession,
+  originOf,
   SESSION_COOKIE,
   STATE_COOKIE,
   safeEqual,
+  safeNext,
   sessionCookieOptions,
-} from "@/lib/auth/session";
-import { callbackUrl, originOf, safeNext } from "@/lib/auth/urls";
-import { admit } from "@/lib/members/service";
-import { clientIp, userAgent } from "@/lib/request";
+} from "@/features/auth";
+import { admit } from "@/features/members";
+import { exchangeCode, fetchUser } from "@/lib/github/client";
+import { clientIp, userAgent } from "@/shared/request";
 
 export const dynamic = "force-dynamic";
 
@@ -54,7 +56,7 @@ export async function GET(request: NextRequest) {
   }
 
   /*
-   * Two ways in, decided in one place — see `lib/members/service.ts`. A
+   * Two ways in, decided in one place — see `features/members/service.ts`. A
    * hardcoded super admin needs no row; anybody else needs one that a super
    * admin created, and it has to be active. The row is also refreshed here,
    * which is why this is a write rather than a check.

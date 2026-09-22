@@ -1,8 +1,14 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { authoriseScope, parseScope } from "@/lib/attachments/access";
-import { listStaged, pruneStale, stage } from "@/lib/attachments/store";
-import { getSession } from "@/lib/auth/session";
-import { checkAttachment, maxFileBytes } from "@/lib/email/attachments";
+import {
+  authoriseScope,
+  checkAttachment,
+  listStaged,
+  maxFileBytes,
+  parseScope,
+  pruneStale,
+  stage,
+} from "@/features/attachments";
+import { getSession } from "@/features/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +25,7 @@ export const dynamic = "force-dynamic";
  *
  * Resend allows 40MB per email. The only way to reach it is to upload the files
  * one at a time, keep them, and assemble the message at the send — which is
- * what `lib/attachments/store.ts` is for.
+ * what `features/attachments/store.ts` is for.
  *
  * Inside the cookie gate: the proxy has already bounced anonymous requests, and
  * this resolves the session properly and then asks whether the operator may
@@ -60,7 +66,12 @@ export async function POST(request: NextRequest) {
   // Resend's 40MB is a budget for the whole message, and the browser's copy of
   // this check can be out of date by the time the bytes arrive.
   const staged = await listStaged(scope);
-  const verdict = checkAttachment({ filename: file.name, byteSize: file.size }, staged);
+  const verdict = checkAttachment(
+    { filename: file.name, byteSize: file.size },
+    staged,
+    0,
+    maxFileBytes(),
+  );
   if (!verdict.ok) {
     return NextResponse.json({ ok: false, message: verdict.message }, { status: 413 });
   }

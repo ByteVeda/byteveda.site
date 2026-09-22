@@ -50,6 +50,13 @@ jobs:
       - name: Biome check
         run: pnpm exec biome check
 
+      # The layering rules Biome cannot express: the "use client" import boundary,
+      # the feature front door, the one lawful deep reach into a feature's
+      # components. Its own fixture tests run first, so a check that has quietly
+      # stopped checking anything fails here rather than passing forever.
+      - name: Architecture check
+        run: pnpm check:arch:test && pnpm check:arch
+
       - name: Typecheck and build
         run: pnpm turbo run typecheck build --affected
 

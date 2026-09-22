@@ -11,6 +11,7 @@
     "includes": [
       "apps/**",
       "packages/**",
+      "scripts/**",
       "*.ts",
       "*.tsx",
       "*.mjs",
@@ -22,5 +23,127 @@
       "!pnpm-lock.yaml",
       "!apps/main/src/features/news/data/news.json"
     ]
-  }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "patterns": [
+              {
+                "group": [
+                  "@/features/*/*",
+                  "@/features/*/*/**",
+                  "!@/features/*/model",
+                  "!@/features/*/actions",
+                  "!@/features/*/components"
+                ],
+                "message": "A feature has four doors and everything else about it is private: the barrel \"@/features/<name>\" for server code, and \"@/features/<name>/model\", \"/actions\" or \"/components\" for client code. Only app/**/page.tsx and app/**/layout.tsx may name a component file directly, as \"@/features/<name>/components/<file>\"."
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/*/src/app/**/page.tsx", "apps/*/src/app/**/layout.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@/features/*/*",
+                      "@/features/*/*/**",
+                      "!@/features/*/model",
+                      "!@/features/*/actions",
+                      "!@/features/*/components",
+                      "!@/features/*/components/*"
+                    ],
+                    "message": "A page or a layout is a server component, so it reaches its screen by that component's own path: \"@/features/<name>/components/<file>\". Every other path into a feature is private — its server API is the barrel \"@/features/<name>\"."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/*/src/lib/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@/features/*", "@/features/**"],
+                    "message": "lib/ holds adapters to the world outside this process and nothing else, so it sits below features/ and may not import one. Domain code belongs in features/<name>/."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/academy/src/lib/site.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@/features/*", "@/features/**", "!@/features/pricing"],
+                    "message": "lib/ may not import a feature. Named exemption: site.ts value-imports PRICING from \"@/features/pricing\" to put a price in the site meta description. The real fix is for the site metadata to take the price as an argument rather than import the feature; until it does, this one edge is allowed and no other."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/*/src/shared/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@/lib",
+                      "@/lib/*",
+                      "@/lib/**",
+                      "@/features",
+                      "@/features/*",
+                      "@/features/**",
+                      "@/components",
+                      "@/components/*",
+                      "@/components/**"
+                    ],
+                    "message": "shared/ is the bottom of the app: generic, app-agnostic helpers that import nothing of ours. If it needs @/lib, @/features or @/components, it is not shared code."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

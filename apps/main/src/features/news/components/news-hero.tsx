@@ -1,5 +1,5 @@
 import { Button, HeroNet, RelativeTime } from "@byteveda/ui";
-import type { NewsItem } from "../types";
+import type { NewsItem } from "../model";
 
 function summarize(text: string, max = 190): string {
   const clean = text

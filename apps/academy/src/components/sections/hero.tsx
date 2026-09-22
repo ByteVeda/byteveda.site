@@ -1,4 +1,4 @@
-import { MIX_LABEL, PRICING } from "@/lib/pricing";
+import { MIX_LABEL, PRICING } from "@/features/pricing";
 import { TURNAROUND } from "@/lib/site";
 
 const TRACE = [

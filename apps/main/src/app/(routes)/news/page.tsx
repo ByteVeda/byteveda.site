@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Trending } from "@/components/sections";
-import { getNewsItems, NewsFeed, NewsHero } from "@/features/news";
+import { getNewsItems } from "@/features/news";
+import { NewsFeed, NewsHero } from "@/features/news/components";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {

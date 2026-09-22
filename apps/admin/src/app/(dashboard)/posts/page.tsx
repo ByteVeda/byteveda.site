@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export { PostsPage as default } from "@/views/posts";
+export { PostsPage as default } from "@/features/posts/components/posts-page";
 
 export const metadata: Metadata = { title: "Posts" };
 export const dynamic = "force-dynamic";

@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { getSession } from "@/lib/auth/session";
-import { subscribersChanged } from "@/lib/realtime";
+import { getSession } from "@/features/auth";
+import { subscribersChanged } from "@/features/subscribers";
 import { eventStream } from "@/lib/realtime/stream";
 
 export const dynamic = "force-dynamic";

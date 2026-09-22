@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { SamplePage } from "@/features/sample/sample-page";
+import { SamplePage } from "@/features/sample/components/sample-page";
 
 export const metadata: Metadata = {
   title: "Request samples",

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { JsonLd } from "@/components/json-ld";
-import { formatDate, getPost, getStaticSlugs } from "@/features/blog/posts";
+import { formatDate, getPost, getStaticSlugs } from "@/features/blog";
 import { site } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };

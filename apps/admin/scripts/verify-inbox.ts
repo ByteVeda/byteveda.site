@@ -17,15 +17,20 @@
  */
 import { closeDb, emailThreads, getDb, outboundMessages } from "@byteveda/db";
 import { MAIL_WORKSPACES } from "@byteveda/db/constants";
-import type { InboundRow } from "../src/lib/email/inbound";
-import { countThreads, countUnread, getConversation, listThreads } from "../src/lib/inbox/queries";
+import {
+  countThreads,
+  countUnread,
+  getConversation,
+  listThreads,
+} from "../src/features/inbox/queries";
 import {
   markThreadAnswered,
   markThreadRead,
   markThreadUnread,
   recordInbound,
   setThreadArchived,
-} from "../src/lib/inbox/store";
+} from "../src/features/inbox/store";
+import type { InboundRow } from "../src/features/mail/model";
 
 let failures = 0;
 

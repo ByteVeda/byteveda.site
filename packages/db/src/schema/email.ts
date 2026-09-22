@@ -115,7 +115,7 @@ export const broadcasts = pgTable(
 export const emailThreads = pgTable(
   "email_threads",
   {
-    /** The correspondent plus the normalised subject. See `lib/email/thread.ts`. */
+    /** The correspondent plus the normalised subject. See `features/mail/model.ts`. */
     threadKey: text("thread_key").primaryKey(),
     /** As last written, not normalised — this is the line the operator reads. */
     subject: text("subject").notNull().default(""),
@@ -130,7 +130,7 @@ export const emailThreads = pgTable(
      * Stored rather than computed on read. The inbox filters and counts by it
      * on every render, and a `case` over the address in each of those queries
      * is both unindexable and a second copy of the classification rule — the
-     * one in `lib/mail/workspaces.ts` is the only one.
+     * one in `features/mail/model.ts` is the only one.
      */
     workspace: mailWorkspace("workspace").notNull().default("byteveda"),
     /**
@@ -277,7 +277,7 @@ export const emailAttachments = pgTable(
     /** As the recipient will see it. Sanitised on the way in, never as uploaded. */
     filename: text("filename").notNull(),
     contentType: text("content_type").notNull().default("application/octet-stream"),
-    /** Raw bytes, before Base64. What every limit in `lib/email/attachments.ts` counts. */
+    /** Raw bytes, before Base64. What every limit in `features/attachments/model.ts` counts. */
     byteSize: integer("byte_size").notNull(),
     content: bytea("content").notNull(),
     uploadedBy: uuid("uploaded_by").references(() => adminUsers.id, { onDelete: "set null" }),

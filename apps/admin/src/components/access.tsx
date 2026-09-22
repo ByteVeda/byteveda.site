@@ -7,7 +7,7 @@ import {
   can as canDo,
   canReadWorkspace as canReadMail,
   type Permission,
-} from "@/lib/auth/roles";
+} from "@/features/auth/model";
 
 /**
  * What the signed-in operator may do, for the parts of the console that run in

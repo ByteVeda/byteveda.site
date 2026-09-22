@@ -1,6 +1,6 @@
 import { Delivery, Hero, Sets, Strip } from "@/components/sections";
-import { CustomSection } from "@/features/custom/custom-section";
-import { InventorySection } from "@/features/inventory/inventory-section";
+import { CustomSection } from "@/features/custom/components";
+import { InventorySection } from "@/features/inventory/components";
 
 /**
  * The shop: what we stock, what we will set, and what happens next.

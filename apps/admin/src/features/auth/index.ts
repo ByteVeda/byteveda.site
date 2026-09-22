@@ -1,0 +1,33 @@
+/**
+ * Who may sign in, and what they may do once they have.
+ *
+ * The public surface of the feature: server code — a page, a route handler, a
+ * server action — imports from here and never from a file inside. Client
+ * components must not, because this barrel reaches the database; they import
+ * `@/features/auth/model`, which is the same rules with nothing behind them.
+ *
+ * The sign-in page is not here: a route reaches it by its own path, so that a
+ * server component never sits behind a door a client component may open.
+ */
+
+export { isSuperAdminId, superAdmins } from "./allowlist";
+export { safeEqual, sessionCookieOptions } from "./crypto";
+export {
+  type AccessSnapshot,
+  accessFor,
+  basePermissionsFor,
+  can,
+  canReadWorkspace,
+  hasOverrides,
+  type Permission,
+  readableWorkspaces,
+  roleLabel,
+  SESSION_COOKIE,
+  type SessionContext,
+  STATE_COOKIE,
+  sanitisePermissions,
+} from "./model";
+export { getSession } from "./queries";
+export { refuse, requirePermission, requireSession } from "./service";
+export { createSession, revokeSessionsFor } from "./store";
+export { callbackUrl, originOf, safeNext } from "./urls";

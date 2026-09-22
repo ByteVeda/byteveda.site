@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Contribute } from "@/features/contribute";
+import { Contribute } from "@/features/contribute/components";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {

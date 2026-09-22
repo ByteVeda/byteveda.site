@@ -26,10 +26,10 @@ import {
   sessions,
 } from "@byteveda/db";
 import { eq } from "drizzle-orm";
-import * as attachments from "../src/lib/attachments/store";
-import { accessFor, can, canReadWorkspace, readableWorkspaces } from "../src/lib/auth/roles";
-import { listMembers } from "../src/lib/members/queries";
-import { admit } from "../src/lib/members/service";
+import * as attachments from "../src/features/attachments";
+import { accessFor, can, canReadWorkspace, readableWorkspaces } from "../src/features/auth/model";
+import { listMembers } from "../src/features/members/queries";
+import { admit } from "../src/features/members/service";
 
 let failures = 0;
 

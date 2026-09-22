@@ -1,9 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { fetchInboundBody } from "@/lib/email/client";
-import { type InboundEvent, inboundRow } from "@/lib/email/inbound";
-import { verifySignature } from "@/lib/email/webhook";
-import { recordInbound } from "@/lib/inbox/store";
-import { inboxChanged } from "@/lib/realtime";
+import { inboxChanged, recordInbound } from "@/features/inbox";
+import { fetchInboundBody, type InboundEvent, inboundRow, verifySignature } from "@/features/mail";
 
 export const dynamic = "force-dynamic";
 
@@ -18,7 +15,7 @@ type InboundPayload = { type?: string; data?: Partial<InboundEvent> };
  * bytes the signature covers.
  *
  * Two steps, not one. The webhook says a message arrived and names it; the
- * message itself is fetched. See `lib/email/inbound.ts` for why.
+ * message itself is fetched. See `features/mail/model.ts` for why.
  */
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -59,7 +56,7 @@ export async function POST(request: NextRequest) {
 
   // Stores the message and moves its conversation. A webhook is delivered at
   // least once, and this reports false for the second delivery — see
-  // `lib/inbox/store.ts` for why the thread has to be left alone too.
+  // `features/inbox/store.ts` for why the thread has to be left alone too.
   const stored = await recordInbound(inboundRow(event, fetched.ok ? fetched.body : {}));
 
   // Only a message that is actually new should light up an open console; a

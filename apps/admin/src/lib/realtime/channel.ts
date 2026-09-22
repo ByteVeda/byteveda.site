@@ -19,8 +19,9 @@ export type Channel<T> = {
  *   postsChanged.publish({ site: "flexiq" });
  *   const stop = postsChanged.subscribe(({ site }) => …);
  *
- * Declare channels in `channels.ts` rather than inline, so the set of them is
- * readable in one place and two callers cannot drift on a name.
+ * Declare channels in the owning feature's `events.ts` rather than inline, so
+ * a feature's channels are readable in one place and two callers cannot drift
+ * on a name.
  */
 export function defineChannel<T = void>(name: string): Channel<T> {
   return {

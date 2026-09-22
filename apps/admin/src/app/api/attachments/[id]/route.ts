@@ -1,7 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { authoriseDownload } from "@/lib/attachments/access";
-import { describe, load } from "@/lib/attachments/store";
-import { getSession } from "@/lib/auth/session";
+import { authoriseDownload, describe, load } from "@/features/attachments";
+import { getSession } from "@/features/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +12,7 @@ export const dynamic = "force-dynamic";
  * would mean pulling 4MB out of Postgres to decide not to send it.
  *
  * The permission is the message's, not the file's — see
- * `lib/attachments/access.ts`. A conversation in a workspace this operator
+ * `features/attachments/queries.ts`. A conversation in a workspace this operator
  * cannot read answers 404, the same as an id that was never issued.
  */
 export async function GET(_request: NextRequest, context: { params: Promise<{ id: string }> }) {

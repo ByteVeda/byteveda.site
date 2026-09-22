@@ -2,7 +2,7 @@ import { MobileMenu, ThemeToggle } from "@byteveda/ui";
 import Link from "next/link";
 
 import { Wordmark } from "@/components/layout/wordmark";
-import { SampleButton } from "@/features/sample/sample-button";
+import { SampleButton } from "@/features/sample/components";
 import { nav } from "@/lib/site";
 
 export function Navbar() {
