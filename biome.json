@@ -49,6 +49,37 @@
   },
   "overrides": [
     {
+      "includes": ["apps/*/src/features/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "paths": {
+                  "@/components": {
+                    "message": "A feature must not open the app-wide component barrel. \"@/components\" is all client components, so one import of it pulls that whole graph into every server module that touches this feature — name the component you want by its own path, \"@/components/<name>\"."
+                  }
+                },
+                "patterns": [
+                  {
+                    "group": [
+                      "@/features/*/*",
+                      "@/features/*/*/**",
+                      "!@/features/*/model",
+                      "!@/features/*/actions",
+                      "!@/features/*/components"
+                    ],
+                    "message": "A feature has four doors and everything else about it is private: the barrel \"@/features/<name>\" for server code, and \"@/features/<name>/model\", \"/actions\" or \"/components\" for client code. Only app/**/page.tsx and app/**/layout.tsx may name a component file directly, as \"@/features/<name>/components/<file>\"."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
       "includes": ["apps/*/src/app/**/page.tsx", "apps/*/src/app/**/layout.tsx"],
       "linter": {
         "rules": {

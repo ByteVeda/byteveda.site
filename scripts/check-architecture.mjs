@@ -32,6 +32,21 @@
  *                  take `import type` from `@/features/orders`, and this is the rule
  *                  that holds them to types.
  *
+ *   model-client-safe
+ *                  A `features/<name>/model.ts` is the half of a feature that the browser
+ *                  loads too, and every other rule here rests on that being true. It may
+ *                  not value-import `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a
+ *                  `node:` built-in or `@/lib/*`, and it may not read `process.env`. An
+ *                  `import type` erases before bundling and is fine, and
+ *                  `@byteveda/db/constants` is a pure entry point several models already
+ *                  use. Nothing else checks this: `client-door` only ever reads the files
+ *                  that *import* a model, never the model itself.
+ *
+ *   curated-barrel A feature's `index.ts`, and its `components/index.ts`, are curated
+ *                  named re-exports — never `export *`. A star export puts every symbol
+ *                  of that module on the door, including whatever is added to it later,
+ *                  which is how a component ends up on a server barrel.
+ *
  *   feature-doors  The relative half of the rule `biome.json` enforces on `@/features/…`.
  *                  `noRestrictedImports` matches the literal specifier, so
  *                  `../inbox/queries` from inside `features/posts/` walks through every
@@ -176,6 +191,20 @@ function stripComments(line, inBlock) {
   return { text: out, inBlock };
 }
 
+/** The file's lines with every comment removed, so nothing in a comment reads as code. */
+export function strippedLines(source) {
+  const out = [];
+  let inBlock = false;
+
+  for (const line of source.split("\n")) {
+    const { text, inBlock: stillOpen } = stripComments(line, inBlock);
+    inBlock = stillOpen;
+    out.push(text);
+  }
+
+  return out;
+}
+
 /**
  * Every module specifier in the file, with the 1-based line it sits on and whether its
  * statement was type-only. A line scanner rather than an AST: the repo is Biome-formatted,
@@ -189,21 +218,16 @@ function stripComments(line, inBlock) {
  * produce a specifier or leak its `type` onto something further down the file.
  */
 export function readImports(source) {
-  const lines = source.split("\n");
   const found = [];
   let head = null;
-  let inBlock = false;
 
-  for (let i = 0; i < lines.length; i += 1) {
-    const { text, inBlock: stillOpen } = stripComments(lines[i], inBlock);
-    inBlock = stillOpen;
-
+  strippedLines(source).forEach((text, i) => {
     // A dynamic import can sit anywhere, and is never type-only.
     const dynamic = text.match(/\bimport\(\s*["']([^"']+)["']\s*\)/);
     if (dynamic) found.push({ line: i + 1, specifier: dynamic[1], typeOnly: false });
 
     if (head === null) {
-      if (!MODULE_STATEMENT.test(text)) continue;
+      if (!MODULE_STATEMENT.test(text)) return;
       head = text;
     }
 
@@ -217,15 +241,47 @@ export function readImports(source) {
         typeOnly: /^\s*(?:import|export)\s+type\b/.test(head),
       });
       head = null;
-      continue;
+      return;
     }
 
     // A statement that ended without naming a module — `export { a };`, a type alias,
     // anything else that opens with one of those keywords — closes the head.
     if (/[;}]\s*$/.test(text)) head = null;
-  }
+  });
 
   return found;
+}
+
+/**
+ * Why a specifier cannot be value-imported by a `model.ts`, or null if it can.
+ * `@byteveda/db/constants` is a pure entry point — plain arrays and string unions, no
+ * driver — which is why several models already read from it.
+ */
+function clientUnsafe(specifier) {
+  if (specifier === "@byteveda/db/constants") return null;
+  if (specifier === "@byteveda/db" || specifier.startsWith("@byteveda/db/")) {
+    return "it is the database client";
+  }
+  if (specifier === "drizzle-orm" || specifier.startsWith("drizzle-orm/")) {
+    return "it is the query builder";
+  }
+  if (specifier === "resend" || specifier.startsWith("resend/")) return "it is the mail client";
+  if (specifier === "ioredis" || specifier.startsWith("ioredis/")) return "it is the Redis client";
+  if (specifier.startsWith("node:")) return "it is a Node built-in";
+  if (specifier === "@/lib" || specifier.startsWith("@/lib/")) {
+    return "lib/ adapts to things outside this process";
+  }
+  return null;
+}
+
+/** `apps/admin/src/features/seo/model.ts` — the feature root's model, not a test beside it. */
+function isModelFile(relPath) {
+  return /^apps\/[^/]+\/src\/features\/[^/]+\/model\.ts$/.test(relPath);
+}
+
+/** A feature's front door or its components door — both are curated, named re-exports. */
+function isBarrelFile(relPath) {
+  return /^apps\/[^/]+\/src\/features\/[^/]+\/(?:components\/)?index\.ts$/.test(relPath);
 }
 
 /** `@/features/inbox/components/x` -> `["inbox", "components", "x"]`; anything else -> null. */
@@ -317,7 +373,34 @@ export function checkArchitecture(root) {
       const route = isRouteFile(relPath);
       const inLib = relPath.startsWith(`apps/${app}/src/lib/`);
       const ownFeature = featureOf(relPath);
+      const isModel = isModelFile(relPath);
       const imports = readImports(source);
+
+      // Rules that read the file rather than its imports. A model is the one file in a
+      // feature both halves of the app share, so it is the one file whose client-safety
+      // nothing else can vouch for; a barrel is a promise about what is on the door.
+      if (isModel || isBarrelFile(relPath)) {
+        strippedLines(source).forEach((text, i) => {
+          if (isModel && /\bprocess\s*\.\s*env\b/.test(text)) {
+            violations.push({
+              path: relPath,
+              line: i + 1,
+              rule: "model-client-safe",
+              reason:
+                "a model.ts runs in the browser too, so it may not read process.env — put the read in an adapter under lib/, or in a file of its own the feature owns",
+            });
+          }
+          if (!isModel && /^\s*export\s*\*/.test(text)) {
+            violations.push({
+              path: relPath,
+              line: i + 1,
+              rule: "curated-barrel",
+              reason:
+                'a barrel is curated named re-exports, never "export *" — a star puts every symbol of that module on the door, including whatever gets added to it later',
+            });
+          }
+        });
+      }
 
       for (const { line, specifier: written, typeOnly } of imports) {
         const specifier = toAlias(written, file, srcDir);
@@ -384,6 +467,18 @@ export function checkArchitecture(root) {
               line,
               rule: "route-reach",
               reason: `a route reaches its screen by that component's own path, "@/features/${segments[0]}/components/<file>" — not a path inside it`,
+            });
+          }
+        }
+
+        if (isModel && !typeOnly) {
+          const why = clientUnsafe(specifier);
+          if (why) {
+            violations.push({
+              path: relPath,
+              line,
+              rule: "model-client-safe",
+              reason: `a model.ts is the half of a feature the browser also loads, so it may not value-import "${shown}" — ${why}; an "import type" is erased before bundling and is fine`,
             });
           }
         }

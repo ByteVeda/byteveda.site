@@ -390,3 +390,104 @@ test("a relative import that leaves src/ is nobody's business", () => {
 
   assert.deepEqual(check(root), []);
 });
+
+/** A feature whose model is whatever `model` says, with a barrel over it. */
+function featureWith(model, barrel = 'export { one } from "./model";\n') {
+  return {
+    "apps/demo/src/features/one/index.ts": barrel,
+    "apps/demo/src/features/one/model.ts": model,
+  };
+}
+
+test("a model may not value-import the database, a driver or a Node built-in", () => {
+  for (const specifier of [
+    "@byteveda/db",
+    "@byteveda/db/schema",
+    "drizzle-orm",
+    "resend",
+    "ioredis",
+    "node:crypto",
+    "@/lib/env",
+  ]) {
+    const root = fixture(
+      featureWith(`import { thing } from "${specifier}";\nexport const one = thing;\n`),
+    );
+    const violations = check(root);
+    assert.deepEqual(rulesOf(violations), ["model-client-safe"], specifier);
+    assert.equal(violations[0].path, "apps/demo/src/features/one/model.ts");
+    assert.equal(violations[0].line, 1);
+  }
+});
+
+test("a model may take those as types, and @byteveda/db/constants as a value", () => {
+  const root = fixture(
+    featureWith(
+      [
+        'import type { Row } from "@byteveda/db";',
+        'import { MAIL_WORKSPACES } from "@byteveda/db/constants";',
+        "export const one = MAIL_WORKSPACES;",
+        "export type Thing = Row;",
+        "",
+      ].join("\n"),
+    ),
+  );
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a model may not read process.env", () => {
+  const root = fixture(featureWith("export const one = process.env.ADMIN_URL ?? null;\n"));
+
+  const violations = check(root);
+  assert.deepEqual(rulesOf(violations), ["model-client-safe"]);
+  assert.match(violations[0].reason, /process\.env/);
+});
+
+test("process.env in a model's own comment is not a read", () => {
+  const root = fixture(
+    featureWith("// The half that reads process.env lives in limits.ts.\nexport const one = 1;\n"),
+  );
+
+  assert.deepEqual(check(root), []);
+});
+
+test("only a feature-root model.ts is held to client safety", () => {
+  const root = fixture({
+    ...featureWith("export const one = 1;\n"),
+    "apps/demo/src/features/one/queries.ts":
+      'import { getDb } from "@byteveda/db";\nexport const rows = getDb;\n',
+    "apps/demo/src/features/one/model.test.ts":
+      'import { getDb } from "@byteveda/db";\nexport const fake = getDb;\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a feature barrel may not export *", () => {
+  const root = fixture(featureWith("export const one = 1;\n", 'export * from "./model";\n'));
+
+  const violations = check(root);
+  assert.deepEqual(rulesOf(violations), ["curated-barrel"]);
+  assert.equal(violations[0].path, "apps/demo/src/features/one/index.ts");
+  assert.equal(violations[0].line, 1);
+});
+
+test("a components barrel may not export * either", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/components/index.ts": 'export * from "./panel";\n',
+    "apps/demo/src/features/one/components/panel.tsx": "export const Panel = () => null;\n",
+  });
+
+  assert.deepEqual(rulesOf(check(root)), ["curated-barrel"]);
+});
+
+test("an export * outside a barrel, or inside a comment, is left alone", () => {
+  const root = fixture({
+    ...featureWith("export const one = 1;\n"),
+    "apps/demo/src/features/one/helpers.ts": 'export * from "./model";\n',
+    "apps/demo/src/features/two/index.ts": '// export * from "./model";\nexport const two = 2;\n',
+    "apps/demo/src/features/two/model.ts": "export const two = 2;\n",
+  });
+
+  assert.deepEqual(check(root), []);
+});
