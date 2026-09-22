@@ -435,6 +435,58 @@ test("a model may take those as types, and @byteveda/db/constants as a value", (
   assert.deepEqual(check(root), []);
 });
 
+test("a model may not value-import its own feature's server half", () => {
+  for (const server of ["queries", "store", "service", "events"]) {
+    for (const written of [`./${server}`, `@/features/one/${server}`]) {
+      const root = fixture({
+        ...featureWith(`import { thing } from "${written}";\nexport const one = thing;\n`),
+        [`apps/demo/src/features/one/${server}.ts`]:
+          'import { getDb } from "@byteveda/db";\nexport const thing = getDb;\n',
+      });
+
+      const violations = check(root);
+      assert.deepEqual(rulesOf(violations), ["model-client-safe"], written);
+      assert.match(violations[0].reason, /server half/);
+    }
+  }
+});
+
+test("a model may take a type from its own server half, and its components may import it", () => {
+  const root = fixture({
+    ...featureWith('import type { Row } from "./queries";\nexport type One = Row;\n'),
+    "apps/demo/src/features/one/queries.ts":
+      'import { getDb } from "@byteveda/db";\nexport type Row = { id: string };\nexport const rows = getDb;\n',
+    "apps/demo/src/features/one/components/panel.tsx":
+      'import { rows } from "../queries";\nexport const Panel = () => rows;\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a components-only feature's model is still held to client safety", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/components/index.ts": 'export { Panel } from "./panel";\n',
+    "apps/demo/src/features/one/components/panel.tsx": "export const Panel = () => null;\n",
+    "apps/demo/src/features/one/components/model.ts":
+      'import { getDb } from "@byteveda/db";\nexport const one = getDb;\n',
+  });
+
+  const violations = check(root);
+  assert.deepEqual(rulesOf(violations), ["model-client-safe"]);
+  assert.equal(violations[0].path, "apps/demo/src/features/one/components/model.ts");
+});
+
+test("a model.tsx and an index.tsx are not invisible", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/index.tsx": 'export * from "./model";\n',
+    "apps/demo/src/features/one/model.tsx":
+      'import { getDb } from "@byteveda/db";\nexport const one = getDb;\n',
+  });
+
+  // front-door as well: a front door is an index.ts, and an index.tsx is not one.
+  assert.deepEqual(rulesOf(check(root)), ["curated-barrel", "front-door", "model-client-safe"]);
+});
+
 test("a model may not read process.env", () => {
   const root = fixture(featureWith("export const one = process.env.ADMIN_URL ?? null;\n"));
 

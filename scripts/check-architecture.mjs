@@ -39,8 +39,10 @@
  *                  `node:` built-in or `@/lib/*`, and it may not read `process.env`. An
  *                  `import type` erases before bundling and is fine, and
  *                  `@byteveda/db/constants` is a pure entry point several models already
- *                  use. Nothing else checks this: `client-door` only ever reads the files
- *                  that *import* a model, never the model itself.
+ *                  use. It may not reach its own feature's server half either —
+ *                  `./queries`, `./store`, `./service`, `./events` — which is the same
+ *                  hole one hop out. Nothing else checks any of this: `client-door` only
+ *                  ever reads the files that *import* a model, never the model itself.
  *
  *   curated-barrel A feature's `index.ts`, and its `components/index.ts`, are curated
  *                  named re-exports — never `export *`. A star export puts every symbol
@@ -74,6 +76,9 @@ import { fileURLToPath } from "node:url";
 
 /** A feature's named doors. Server code also has the barrel; client code has only these. */
 const DOORS = new Set(["model", "actions", "components"]);
+
+/** The half of a feature that only ever runs on the server. */
+const SERVER_FILES = new Set(["queries", "store", "service", "events"]);
 
 const FEATURE_PREFIX = "@/features/";
 const SOURCE_FILE = /\.tsx?$/;
@@ -274,14 +279,17 @@ function clientUnsafe(specifier) {
   return null;
 }
 
-/** `apps/admin/src/features/seo/model.ts` — the feature root's model, not a test beside it. */
+/**
+ * `apps/admin/src/features/seo/model.ts` — a feature's model, not a test beside it. A
+ * components-only feature keeps its model inside `components/`, which is still a model.
+ */
 function isModelFile(relPath) {
-  return /^apps\/[^/]+\/src\/features\/[^/]+\/model\.ts$/.test(relPath);
+  return /^apps\/[^/]+\/src\/features\/[^/]+\/(?:components\/)?model\.tsx?$/.test(relPath);
 }
 
 /** A feature's front door or its components door — both are curated, named re-exports. */
 function isBarrelFile(relPath) {
-  return /^apps\/[^/]+\/src\/features\/[^/]+\/(?:components\/)?index\.ts$/.test(relPath);
+  return /^apps\/[^/]+\/src\/features\/[^/]+\/(?:components\/)?index\.tsx?$/.test(relPath);
 }
 
 /** `@/features/inbox/components/x` -> `["inbox", "components", "x"]`; anything else -> null. */
@@ -407,15 +415,34 @@ export function checkArchitecture(root) {
         if (specifier === null) continue;
         const segments = featurePath(specifier);
 
-        // Relative imports inside a feature's own folder are how a feature talks to
-        // itself — `./model`, `../queries` from its own components. Only the ones that
-        // cross out of it are the rules' business.
-        if (segments && written !== specifier && segments[0] === ownFeature) continue;
-
         // A relative import is reported as written and as resolved, so the line the
         // reader opens matches and the rule that fired still makes sense.
         const viaRelative = written !== specifier;
         const shown = viaRelative ? `${written}" -> "${specifier}` : specifier;
+        const ownFeatureImport = Boolean(segments) && segments[0] === ownFeature;
+
+        // A model is the client-safe half of its own feature, so the server half is out
+        // of bounds to it too — and `./queries` is the same module as
+        // `@/features/<name>/queries`, one hop from the driver it imports.
+        if (
+          isModel &&
+          !typeOnly &&
+          ownFeatureImport &&
+          segments.length === 2 &&
+          SERVER_FILES.has(segments[1])
+        ) {
+          violations.push({
+            path: relPath,
+            line,
+            rule: "model-client-safe",
+            reason: `a model.ts is the client-safe half of its feature, so it may not value-import its own "${shown}" — that is the server half, and whatever it pulls in lands in the browser bundle too`,
+          });
+        }
+
+        // Relative imports inside a feature's own folder are how a feature talks to
+        // itself — `./model`, `../queries` from its own components. Only the ones that
+        // cross out of it are the rules' business.
+        if (segments && viaRelative && ownFeatureImport) continue;
 
         // Biome owns the aliased form of this rule; only the relative form reaches here,
         // because `noRestrictedImports` matches the literal specifier and never sees it.
