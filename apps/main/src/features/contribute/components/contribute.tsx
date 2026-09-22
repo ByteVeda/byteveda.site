@@ -6,7 +6,7 @@ import {
   discussionsUrl,
   maintainers,
   profileUrl,
-} from "../model";
+} from "./model";
 
 function ContributeFigure() {
   return (
