@@ -415,6 +415,9 @@
   .row-broadcast {
     grid-template-columns: 80px minmax(0, 1fr) 70px 28px;
   }
+  .row-member {
+    grid-template-columns: minmax(0, 1fr) 104px 140px 92px minmax(0, 320px);
+  }
 
   /* An identifier in a list — an address, a slug, a package name. */
   .cell-mono {
@@ -925,6 +928,184 @@
     width: auto;
   }
 
+  /* ---------- members ---------- */
+
+  /*
+   * Access, as a list of people rather than a table of flags. The controls sit
+   * in the row and write as they are touched — there is no save button, so the
+   * row is never showing a state the database does not have.
+   */
+
+  .member-who {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+  .member-who img {
+    border-radius: 50%;
+    flex: none;
+  }
+  .member-who > span {
+    min-width: 0;
+  }
+
+  .member-mail {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+
+  /* A signed-in member, marked on their last-seen time rather than in a column
+     of its own — it is the same fact, one step fresher. */
+  .member-live {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: var(--ok);
+    vertical-align: middle;
+  }
+
+  .member-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .member-actions .input {
+    width: auto;
+  }
+  .member-actions .note {
+    flex-basis: 100%;
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .member-scopes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .member-scopes .field-label {
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+
+  /* A checkbox with its word beside it, small enough to live inside a row. */
+  .tick {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .tick input {
+    accent-color: var(--accent);
+  }
+
+  /* Why a row cannot be edited, in place of the controls it would have had. */
+  .member-locked {
+    justify-content: flex-end;
+    color: var(--text-faint);
+    font-size: 0.74rem;
+    text-align: right;
+  }
+
+  .row-member[data-suspended="true"] .member-who,
+  .row-member[data-suspended="true"] .member-mail {
+    opacity: 0.55;
+  }
+
+  .input-sm {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  .form-row-member {
+    grid-template-columns: minmax(0, 1fr) 140px auto;
+  }
+
+  /* ---------- attachments ---------- */
+
+  /*
+   * Files on an outgoing message, and on one that has gone.
+   *
+   * Deliberately plain: a filename, a size, and a way to remove it. An
+   * attachment is not a thumbnail gallery — it is a list of things that will be
+   * 40MB at most, and the only questions are "which files" and "how much room
+   * is left".
+   */
+
+  .attachments {
+    margin-top: 10px;
+  }
+
+  .attachment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0 0 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .attachment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 9px;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--r-sm);
+    background: var(--surface-2);
+    font-size: 0.82rem;
+  }
+  .attachment > svg {
+    width: 14px;
+    height: 14px;
+    flex: none;
+    color: var(--text-faint);
+  }
+  .attachment-name,
+  .attachment a {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .attachment a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 2px;
+  }
+  .attachment a:hover {
+    text-decoration-color: var(--accent);
+  }
+  .attachment-size {
+    margin-left: auto;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    white-space: nowrap;
+  }
+
+  .attachment-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .attachment-hint {
+    color: var(--text-faint);
+    font-size: 0.74rem;
+  }
+
+  /* On a message that has already been sent, the files sit under its body. */
+  .message-attachments {
+    margin-top: 10px;
+  }
+
   /* ---------- responsive ---------- */
 
   @media (max-width: 900px) {
@@ -962,6 +1143,27 @@
     .content,
     .topbar {
       padding-inline: 16px;
+    }
+  }
+
+  /* A member's row is five columns of controls; below this it is a card. */
+  @media (max-width: 1000px) {
+    .row-member {
+      grid-template-columns: minmax(0, 1fr) 104px;
+      row-gap: 8px;
+    }
+    .row-member .member-mail,
+    .row-member .num {
+      text-align: left;
+    }
+    .member-actions,
+    .member-locked {
+      grid-column: 1 / -1;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .form-row-member {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 }

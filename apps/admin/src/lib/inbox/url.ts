@@ -1,9 +1,12 @@
+import type { MailWorkspace } from "@byteveda/db/constants";
 import type { ThreadFilter } from "./queries";
 
 export type InboxParams = {
   thread?: string | null;
   filter?: ThreadFilter;
   query?: string;
+  /** Which business's mail. Absent means every one this operator may read. */
+  workspace?: MailWorkspace;
 };
 
 /**
@@ -15,11 +18,13 @@ export type InboxParams = {
  * the other two, which is why nothing builds these by hand.
  *
  * The default filter is left out rather than written as `f=inbox`: the plain
- * `/inbox` is the address of the inbox.
+ * `/inbox` is the address of the inbox. The same goes for the workspace —
+ * absent is "everything I can read", which is the inbox's own address.
  */
 export function inboxHref(params: InboxParams = {}): string {
   const search = new URLSearchParams();
 
+  if (params.workspace) search.set("w", params.workspace);
   if (params.filter && params.filter !== "inbox") search.set("f", params.filter);
 
   const query = params.query?.trim();

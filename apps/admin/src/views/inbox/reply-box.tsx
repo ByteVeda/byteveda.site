@@ -3,6 +3,7 @@
 import { Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
+import { type AttachedFile, AttachmentPicker } from "@/components";
 import { replyToThread } from "@/lib/inbox/actions";
 
 type Props = {
@@ -11,6 +12,10 @@ type Props = {
   /** The mailbox they wrote to, which is the one this answers from. */
   from: string;
   canSend: boolean;
+  /** Files already staged against this conversation, from an earlier visit. */
+  attachments: AttachedFile[];
+  /** The per-file ceiling as the server resolves it. See `lib/email/attachments.ts`. */
+  maxFileBytes: number;
 };
 
 /** Where an unsent reply waits. One entry per conversation. */
@@ -21,10 +26,11 @@ function isSendChord(event: React.KeyboardEvent): boolean {
   return event.key === "Enter" && (event.metaKey || event.ctrlKey);
 }
 
-export function ReplyBox({ threadKey, to, from, canSend }: Props) {
+export function ReplyBox({ threadKey, to, from, canSend, attachments, maxFileBytes }: Props) {
   const router = useRouter();
   const field = useRef<HTMLTextAreaElement>(null);
   const [body, setBody] = useState("");
+  const [files, setFiles] = useState<AttachedFile[]>(attachments);
   const [result, setResult] = useState<{ text: string; ok: boolean } | null>(null);
   const [pending, startTransition] = useTransition();
 
@@ -40,6 +46,10 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
   if (openThread !== threadKey) {
     setOpenThread(threadKey);
     setBody("");
+    // The files come from the server for whichever conversation is open, so
+    // this takes the new ones rather than clearing: an attachment is staged in
+    // Postgres, and it is still there when the conversation is opened again.
+    setFiles(attachments);
     setRestored(false);
     setResult(null);
   }
@@ -71,13 +81,19 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
 
       if (sent.ok) {
         // Only on success: a failed send leaves the words where they are, so
-        // the retry is the same button rather than typing it again.
+        // the retry is the same button rather than typing it again. The files
+        // behave the same way — they stay staged until something goes out.
         window.localStorage.removeItem(draftKey(threadKey));
         setBody("");
+        setFiles([]);
         router.refresh();
       }
     });
   }
+
+  // A file with no covering note is a reply; so is a note with no file. Only
+  // the empty message is not.
+  const sendable = canSend && (body.trim().length > 0 || files.length > 0);
 
   return (
     <div className="reply-box">
@@ -102,7 +118,7 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
         value={body}
         onChange={(event) => setBody(event.target.value)}
         onKeyDown={(event) => {
-          if (isSendChord(event) && body.trim() && canSend && !pending) {
+          if (isSendChord(event) && sendable && !pending) {
             event.preventDefault();
             send();
           }
@@ -111,12 +127,22 @@ export function ReplyBox({ threadKey, to, from, canSend }: Props) {
         aria-label={`Reply to ${to}`}
       />
 
+      <AttachmentPicker
+        kind="reply"
+        owner={threadKey}
+        files={files}
+        onChange={setFiles}
+        maxFileBytes={maxFileBytes}
+        bodyBytes={body.length}
+        disabled={!canSend || pending}
+      />
+
       <div className="reply-actions">
         <button
           type="button"
           className="abtn abtn-primary"
           onClick={send}
-          disabled={pending || !body.trim() || !canSend}
+          disabled={pending || !sendable}
         >
           <Send aria-hidden />
           {pending ? "Sending…" : "Send reply"}

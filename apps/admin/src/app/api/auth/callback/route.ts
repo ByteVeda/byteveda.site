@@ -1,6 +1,4 @@
-import { adminUsers, getDb } from "@byteveda/db";
 import { type NextRequest, NextResponse } from "next/server";
-import { isAllowed } from "@/lib/auth/allowlist";
 import { exchangeCode, fetchUser } from "@/lib/auth/github";
 import {
   createSession,
@@ -10,12 +8,13 @@ import {
   sessionCookieOptions,
 } from "@/lib/auth/session";
 import { callbackUrl, originOf, safeNext } from "@/lib/auth/urls";
+import { admit } from "@/lib/members/service";
 import { clientIp, userAgent } from "@/lib/request";
 
 export const dynamic = "force-dynamic";
 
 /** Reason codes the login page knows how to explain. */
-type Failure = "denied" | "state" | "exchange" | "config";
+type Failure = "denied" | "suspended" | "state" | "exchange" | "config";
 
 function fail(request: NextRequest, reason: Failure) {
   // `originOf`, never `nextUrl.origin`: behind a tunnel the latter combines the
@@ -54,41 +53,28 @@ export async function GET(request: NextRequest) {
     );
   }
 
+  /*
+   * Two ways in, decided in one place — see `lib/members/service.ts`. A
+   * hardcoded super admin needs no row; anybody else needs one that a super
+   * admin created, and it has to be active. The row is also refreshed here,
+   * which is why this is a write rather than a check.
+   */
+  let admission: Awaited<ReturnType<typeof admit>>;
   try {
-    if (!isAllowed(profile.id)) {
-      console.warn(`[auth] rejected ${profile.login} (${profile.id}): not on the allowlist`);
-      return fail(request, "denied");
-    }
+    admission = await admit(profile);
   } catch (error) {
-    console.error("[auth] allowlist is not usable", error);
+    // A malformed ADMIN_GITHUB_IDS throws out of the super-admin list, and the
+    // person who can fix it is the one staring at this.
+    console.error("[auth] could not decide whether to admit the account", error);
     return fail(request, "config");
   }
 
-  const [user] = await getDb()
-    .insert(adminUsers)
-    .values({
-      githubId: profile.id,
-      login: profile.login,
-      name: profile.name,
-      email: profile.email,
-      avatarUrl: profile.avatarUrl,
-      lastLoginAt: new Date(),
-    })
-    .onConflictDoUpdate({
-      target: adminUsers.githubId,
-      set: {
-        login: profile.login,
-        name: profile.name,
-        email: profile.email,
-        avatarUrl: profile.avatarUrl,
-        lastLoginAt: new Date(),
-      },
-    })
-    .returning();
+  if (!admission.ok) {
+    console.warn(`[auth] rejected ${profile.login} (${profile.id}): ${admission.reason}`);
+    return fail(request, admission.reason);
+  }
 
-  if (!user) return fail(request, "exchange");
-
-  const { token } = await createSession(user.id, {
+  const { token } = await createSession(admission.user.id, {
     ip: clientIp(request),
     userAgent: userAgent(request),
   });

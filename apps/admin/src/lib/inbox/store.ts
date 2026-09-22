@@ -1,6 +1,7 @@
 import { emailThreads, getDb, inboundMessages } from "@byteveda/db";
 import { and, eq } from "drizzle-orm";
 import type { InboundRow } from "@/lib/email/inbound";
+import { workspaceOf } from "@/lib/mail/workspaces";
 import { previewOf } from "./preview";
 import { UNREAD } from "./queries";
 
@@ -30,6 +31,10 @@ import { UNREAD } from "./queries";
  */
 export async function recordInbound(row: InboundRow, receivedAt = new Date()): Promise<boolean> {
   const preview = previewOf(row.text, row.html);
+  // Which business the conversation belongs to, decided from the address it
+  // arrived at and the one it came from — the academy writes to itself every
+  // time somebody asks for a sample. See `lib/mail/workspaces.ts`.
+  const workspace = workspaceOf(row.toEmail, row.fromEmail);
 
   return getDb().transaction(async (tx) => {
     await tx
@@ -40,6 +45,7 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
         correspondentEmail: row.fromEmail,
         correspondentName: row.fromName,
         mailbox: row.toEmail,
+        workspace,
         preview,
         lastMessageAt: receivedAt,
         lastInboundAt: receivedAt,
@@ -61,7 +67,11 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
         // The subject is the conversation's, set when it opened. Later messages
         // are "Re: " that, and taking theirs would retitle the thread.
         ...(row.fromName ? { correspondentName: row.fromName } : {}),
+        // Both, together: the workspace is derived from the mailbox, and a
+        // thread whose last message came to another address belongs with that
+        // address. Updating one without the other is how they disagree.
         mailbox: row.toEmail,
+        workspace,
         preview,
         lastMessageAt: receivedAt,
         lastInboundAt: receivedAt,

@@ -57,6 +57,13 @@
       "when": 1789814737195,
       "tag": "0007_academy_samples",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1790050390750,
+      "tag": "0008_rbac_and_attachments",
+      "breakpoints": true
     }
   ]
 }

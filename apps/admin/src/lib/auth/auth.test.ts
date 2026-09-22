@@ -1,5 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { isAllowed, parseAllowlist } from "./allowlist";
+import { isSuperAdminId, parseAllowlist, superAdmins } from "./allowlist";
+import {
+  accessFor,
+  can,
+  canReadWorkspace,
+  PERMISSIONS,
+  permissionsFor,
+  readableWorkspaces,
+  roleLabel,
+  SUPER_ADMIN_GITHUB_IDS,
+} from "./roles";
 import { safeNext } from "./urls";
 
 describe("parseAllowlist", () => {
@@ -24,14 +34,76 @@ describe("parseAllowlist", () => {
   });
 });
 
-describe("isAllowed", () => {
+describe("isSuperAdminId", () => {
   it("admits an id on the list and refuses one that is not", () => {
-    expect(isAllowed(67143288, [67143288, 1])).toBe(true);
-    expect(isAllowed(999, [67143288, 1])).toBe(false);
+    expect(isSuperAdminId(67143288, [67143288, 1])).toBe(true);
+    expect(isSuperAdminId(999, [67143288, 1])).toBe(false);
   });
 
   it("refuses everyone when the list is empty", () => {
-    expect(isAllowed(67143288, [])).toBe(false);
+    expect(isSuperAdminId(67143288, [])).toBe(false);
+  });
+});
+
+describe("superAdmins", () => {
+  it("is the hardcoded list, so an empty environment still has a way in", () => {
+    delete process.env.ADMIN_GITHUB_IDS;
+    expect(superAdmins()).toEqual([...SUPER_ADMIN_GITHUB_IDS]);
+  });
+
+  it("merges ADMIN_GITHUB_IDS without duplicating what is already in source", () => {
+    process.env.ADMIN_GITHUB_IDS = `4242, ${SUPER_ADMIN_GITHUB_IDS[0]}`;
+    const ids = superAdmins();
+
+    expect(ids).toContain(4242);
+    expect(ids.filter((id) => id === SUPER_ADMIN_GITHUB_IDS[0])).toHaveLength(1);
+    delete process.env.ADMIN_GITHUB_IDS;
+  });
+});
+
+describe("accessFor", () => {
+  const editor = { role: "editor" as const, mailWorkspaces: ["academy" as const] };
+
+  it("gives a super admin everything, whatever their row says", () => {
+    const access = accessFor({ role: "viewer", mailWorkspaces: [] }, true);
+
+    expect(access.superAdmin).toBe(true);
+    expect(access.permissions).toEqual(PERMISSIONS);
+    expect(access.workspaces).toEqual(["byteveda", "academy"]);
+    expect(roleLabel(access)).toBe("Super admin");
+  });
+
+  it("gives everybody else exactly what their role carries", () => {
+    const access = accessFor(editor, false);
+
+    expect(access.permissions).toEqual(permissionsFor("editor"));
+    expect(can(access, "posts.publish")).toBe(true);
+    expect(can(access, "settings.write")).toBe(false);
+    expect(can(access, "members.manage")).toBe(false);
+  });
+
+  it("scopes mail by workspace as well as by permission", () => {
+    const access = accessFor(editor, false);
+
+    expect(canReadWorkspace(access, "academy")).toBe(true);
+    expect(canReadWorkspace(access, "byteveda")).toBe(false);
+    expect(readableWorkspaces(access)).toEqual(["academy"]);
+  });
+
+  it("gives no mail at all to a role without the permission, however it is scoped", () => {
+    const access = accessFor({ role: "viewer", mailWorkspaces: ["byteveda"] }, false);
+    const noMail = { ...access, permissions: [] };
+
+    expect(canReadWorkspace(noMail, "byteveda")).toBe(false);
+    expect(readableWorkspaces(noMail)).toEqual([]);
+  });
+});
+
+describe("members.manage", () => {
+  it("belongs to nobody but a super admin", () => {
+    for (const role of ["admin", "editor", "support", "viewer"] as const) {
+      expect(permissionsFor(role)).not.toContain("members.manage");
+    }
   });
 });
 

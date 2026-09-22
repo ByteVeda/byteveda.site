@@ -81,6 +81,71 @@
     height: 12px;
   }
 
+  /* ---------- which business's mail ----------
+     The bigger of the two axes — which mailbox, and then which of its mail —
+     so it sits in the top bar above the list rather than inside it. Segmented
+     rather than pill-shaped, to read as a switch between two places instead of
+     a filter within one. */
+
+  .workspace-tabs {
+    display: flex;
+    gap: 2px;
+    padding: 2px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-pill);
+    background: var(--surface-2);
+  }
+  .workspace-tabs a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: var(--r-pill);
+    color: var(--text-faint);
+    font-size: 0.78rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition:
+      background 0.12s,
+      color 0.12s;
+  }
+  .workspace-tabs a:hover {
+    color: var(--text-dim);
+  }
+  .workspace-tabs a[aria-current="true"] {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+  }
+  .workspace-tabs b {
+    padding: 0 5px;
+    border-radius: var(--r-pill);
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+
+  /* The same fact on a row, for when the list is showing both at once. */
+  .thread-workspace {
+    margin-right: 6px;
+    padding: 1px 6px;
+    border-radius: var(--r-pill);
+    background: var(--chip);
+    color: var(--text-faint);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    vertical-align: 1px;
+  }
+  .thread-workspace[data-workspace="academy"] {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
   .thread-tabs {
     display: flex;
     flex: none;

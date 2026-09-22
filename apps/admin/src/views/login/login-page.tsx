@@ -10,12 +10,12 @@ import { safeNext } from "@/lib/auth/urls";
  * person who can hit it is the one who can fix it.
  */
 const FAILURES: Record<string, string> = {
-  denied: "That GitHub account is not on the allowlist.",
+  denied: "That GitHub account has not been given access. Ask a super admin to add it.",
+  suspended: "Access for that account has been suspended.",
   state:
     "That sign-in link is no longer valid. If you are tunnelling, start from the ADMIN_URL origin — the callback cannot read a cookie set on a different host.",
   exchange: "GitHub could not complete the sign-in. Try again.",
-  config:
-    "Sign-in is not configured. Set GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET and ADMIN_GITHUB_IDS.",
+  config: "Sign-in is not configured. Set GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET.",
 };
 
 type Props = { searchParams: Promise<{ error?: string; next?: string }> };
@@ -50,7 +50,7 @@ export async function LoginPage({ searchParams }: Props) {
           Sign in with GitHub
         </a>
 
-        <p className="sheet-foot">Access is limited to allowlisted GitHub accounts.</p>
+        <p className="sheet-foot">Access is by invitation, against a GitHub account.</p>
       </div>
     </main>
   );

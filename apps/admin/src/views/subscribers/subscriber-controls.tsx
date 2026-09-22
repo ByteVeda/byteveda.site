@@ -3,7 +3,7 @@
 import type { Broadcast, Subscriber } from "@byteveda/db";
 import { Mail, Send, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components";
+import { type AttachedFile, AttachmentPicker, useConfirm } from "@/components";
 import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
 import { ago } from "@/lib/format";
 import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
@@ -112,37 +112,68 @@ export function SubscriberRowActions({ subscriber }: { subscriber: Subscriber })
 export function BroadcastComposer({
   broadcasts,
   activeCount,
+  maxFileBytes,
 }: {
   broadcasts: Broadcast[];
   activeCount: number;
+  /** The per-file ceiling as the server resolves it. See `lib/email/attachments.ts`. */
+  maxFileBytes: number;
 }) {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
+  const [files, setFiles] = useState<AttachedFile[]>([]);
   const [message, setMessage] = useState<Message>(null);
   const [pending, startTransition] = useTransition();
   const confirm = useConfirm();
 
+  /**
+   * The draft this composer is writing, once it has one.
+   *
+   * A file has to be attached to something, and until the draft is saved there
+   * is nothing to attach it to — so the first attachment saves the draft and
+   * keeps its id. Everything after that is an edit of the same row.
+   */
+  const [draftId, setDraftId] = useState<string | null>(null);
+
+  /** Saves what is typed and returns the draft's id, creating one if needed. */
+  async function persist(): Promise<string | null> {
+    const saved = await saveBroadcast({
+      id: draftId ?? undefined,
+      subject,
+      bodyMarkdown: body,
+    });
+
+    if (!saved.ok || !saved.id) {
+      setMessage({ text: saved.message, ok: false });
+      return null;
+    }
+
+    setDraftId(saved.id);
+    return saved.id;
+  }
+
+  function clear() {
+    setSubject("");
+    setBody("");
+    setFiles([]);
+    setDraftId(null);
+  }
+
   function compose(send: boolean) {
     startTransition(async () => {
-      const saved = await saveBroadcast({ subject, bodyMarkdown: body });
-      if (!saved.ok || !saved.id) {
-        setMessage({ text: saved.message, ok: false });
-        return;
-      }
+      const id = await persist();
+      if (!id) return;
 
       if (!send) {
         setMessage({ text: "Saved as a draft.", ok: true });
-        setSubject("");
-        setBody("");
+        // The draft keeps its id and its files — a saved draft is something to
+        // come back to, and clearing the composer would strand both.
         return;
       }
 
-      const result = await sendBroadcast(saved.id);
+      const result = await sendBroadcast(id);
       setMessage({ text: result.message, ok: result.ok });
-      if (result.ok) {
-        setSubject("");
-        setBody("");
-      }
+      if (result.ok) clear();
     });
   }
 
@@ -177,6 +208,17 @@ export function BroadcastComposer({
           />
         </div>
 
+        <AttachmentPicker
+          kind="broadcast"
+          owner={draftId}
+          files={files}
+          onChange={setFiles}
+          onNeedOwner={persist}
+          maxFileBytes={maxFileBytes}
+          bodyBytes={body.length}
+          disabled={pending || !subject.trim()}
+        />
+
         <div className="btn-row">
           <button
             type="button"
@@ -192,7 +234,13 @@ export function BroadcastComposer({
             onClick={async () => {
               const go = await confirm({
                 title: `Send to ${activeCount} subscriber${activeCount === 1 ? "" : "s"}?`,
-                body: `"${subject}" goes out immediately. A sent broadcast cannot be recalled.`,
+                body:
+                  files.length > 0
+                    ? // Worth saying: a broadcast is one send per recipient, so
+                      // an attachment is sent that many times, and Resend's
+                      // five-a-second rate limit paces the whole run.
+                      `"${subject}" goes out immediately, with ${files.length} file${files.length === 1 ? "" : "s"} attached to every copy. A sent broadcast cannot be recalled.`
+                    : `"${subject}" goes out immediately. A sent broadcast cannot be recalled.`,
                 confirmLabel: "Send now",
               });
               if (go) compose(true);

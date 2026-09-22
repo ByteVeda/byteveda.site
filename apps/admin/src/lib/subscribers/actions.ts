@@ -3,7 +3,7 @@
 import { getDb, subscribers } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { requireSession } from "@/lib/auth/session";
+import { refuse } from "@/lib/auth/session";
 import { sendEmail } from "@/lib/email/client";
 import { confirmationEmail } from "@/lib/email/templates";
 import { env } from "@/lib/env";
@@ -26,7 +26,8 @@ function origin(): string {
  * any.
  */
 export async function addSubscriber(email: string): Promise<SubscriberResult> {
-  await requireSession();
+  const refused = await refuse("subscribers.write");
+  if (refused) return refused;
 
   const address = normalise(email);
   if (!EMAIL_SHAPE.test(address)) {
@@ -62,7 +63,8 @@ export async function addSubscriber(email: string): Promise<SubscriberResult> {
 }
 
 export async function resendConfirmation(id: string): Promise<SubscriberResult> {
-  await requireSession();
+  const refused = await refuse("subscribers.write");
+  if (refused) return refused;
 
   const [subscriber] = await getDb()
     .select()
@@ -84,7 +86,8 @@ export async function resendConfirmation(id: string): Promise<SubscriberResult> 
 }
 
 export async function removeSubscriber(id: string): Promise<SubscriberResult> {
-  await requireSession();
+  const refused = await refuse("subscribers.write");
+  if (refused) return refused;
 
   await getDb().delete(subscribers).where(eq(subscribers.id, id));
 

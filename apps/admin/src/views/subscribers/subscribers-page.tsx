@@ -1,5 +1,8 @@
 import { LiveRefresh, PageHeader } from "@/components";
+import { can } from "@/lib/auth/roles";
+import { requirePermission } from "@/lib/auth/session";
 import { listBroadcasts } from "@/lib/broadcasts/actions";
+import { maxFileBytes } from "@/lib/email/attachments";
 import { ago } from "@/lib/format";
 import { getSettings } from "@/lib/settings";
 import { countByStatus, listSubscribers } from "@/lib/subscribers/queries";
@@ -14,12 +17,17 @@ const STATE_CLASS: Record<string, string> = {
 };
 
 export async function SubscribersPage() {
+  const { access } = await requirePermission("subscribers.read");
+
   const [subscribers, counts, broadcasts, settings] = await Promise.all([
     listSubscribers(),
     countByStatus(),
     listBroadcasts(),
     getSettings(),
   ]);
+
+  const write = can(access, "subscribers.write");
+  const broadcast = can(access, "broadcasts.send");
 
   return (
     <>
@@ -72,17 +80,23 @@ export async function SubscribersPage() {
                 <span className="cell-mono row-title">{subscriber.email}</span>
                 <span className="tape-eco">{subscriber.source}</span>
                 <span className="num num-dim">{ago(subscriber.createdAt)}</span>
-                <SubscriberRowActions subscriber={subscriber} />
+                {write ? <SubscriberRowActions subscriber={subscriber} /> : <span />}
               </div>
             ))}
           </div>
         )}
 
-        <AddSubscriberForm />
+        {write && <AddSubscriberForm />}
 
-        <div className="stack-top">
-          <BroadcastComposer broadcasts={broadcasts} activeCount={counts.active} />
-        </div>
+        {broadcast && (
+          <div className="stack-top">
+            <BroadcastComposer
+              broadcasts={broadcasts}
+              activeCount={counts.active}
+              maxFileBytes={maxFileBytes()}
+            />
+          </div>
+        )}
       </div>
     </>
   );

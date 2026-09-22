@@ -1,6 +1,8 @@
 import { broadcasts, getDb, type Post } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { marked } from "marked";
+import * as attachments from "@/lib/attachments/store";
+import { checkMessage } from "@/lib/email/attachments";
 import { sendMany } from "@/lib/email/client";
 import { announcementEmail, broadcastEmail } from "@/lib/email/templates";
 import { env } from "@/lib/env";
@@ -40,11 +42,27 @@ export async function sendBroadcastNow(broadcastId: string): Promise<SendOutcome
     return { ok: false, message: "Nobody has confirmed a subscription yet." };
   }
 
-  await db.update(broadcasts).set({ status: "sending" }).where(eq(broadcasts.id, broadcastId));
+  const scope = { kind: "broadcast", id: broadcastId } as const;
+  const files = await attachments.loadForSend(scope);
 
   const bodyHtml = marked.parse(broadcast.bodyMarkdown, { gfm: true, async: false });
 
-  const { sent, failed, firstError } = await sendMany(
+  /*
+   * The 40MB check before the first send rather than on each one.
+   *
+   * Every copy of a broadcast carries the same files, so the first refusal
+   * would be every refusal — and the status has already moved to `sending` by
+   * then, which would strand the broadcast in a state it cannot leave. Checked
+   * here, nothing has been touched yet.
+   */
+  if (files.length > 0) {
+    const verdict = checkMessage(files, Buffer.byteLength(bodyHtml, "utf8"));
+    if (!verdict.ok) return { ok: false, message: verdict.message };
+  }
+
+  await db.update(broadcasts).set({ status: "sending" }).where(eq(broadcasts.id, broadcastId));
+
+  const { sent, failed, firstError, firstMessageId } = await sendMany(
     recipients.map((subscriber) => ({
       to: subscriber.email,
       email: broadcastEmail({
@@ -54,8 +72,21 @@ export async function sendBroadcastNow(broadcastId: string): Promise<SendOutcome
         unsubscribeUrl: unsubscribeUrl(origin(), subscriber.token),
       }),
     })),
-    { kind: "broadcast", broadcastId },
+    {
+      kind: "broadcast",
+      broadcastId,
+      attachments: files.map((file) => ({
+        filename: file.filename,
+        contentType: file.contentType,
+        content: file.content,
+      })),
+    },
   );
+
+  // One copy of each file, filed against the first message that carried it —
+  // see `claim`. Only on a send that reached somebody: a broadcast that failed
+  // outright keeps its attachments staged for the retry.
+  if (firstMessageId) await attachments.claim(scope, firstMessageId);
 
   await db
     .update(broadcasts)

@@ -3,7 +3,7 @@
 import { ECOSYSTEMS, type Ecosystem, getDb, projectPackages } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { requireSession } from "@/lib/auth/session";
+import { refuse } from "@/lib/auth/session";
 import { catalogueSuggestions } from "./catalogue";
 import { collectAll, collectPackage } from "./collect";
 
@@ -11,7 +11,8 @@ export type StatsResult = { ok: boolean; message: string };
 
 /** Fills the table from the project catalogue. Existing rows are left alone. */
 export async function seedFromCatalogue(): Promise<StatsResult> {
-  await requireSession();
+  const refused = await refuse("stats.write");
+  if (refused) return refused;
 
   const suggestions = catalogueSuggestions();
   if (suggestions.length === 0) return { ok: false, message: "Nothing to add." };
@@ -37,7 +38,8 @@ export async function addPackage(input: {
   ecosystem: string;
   packageName: string;
 }): Promise<StatsResult> {
-  await requireSession();
+  const refused = await refuse("stats.write");
+  if (refused) return refused;
 
   const projectSlug = input.projectSlug.trim();
   const packageName = input.packageName.trim();
@@ -69,7 +71,8 @@ export async function addPackage(input: {
 }
 
 export async function removePackage(id: string): Promise<StatsResult> {
-  await requireSession();
+  const refused = await refuse("stats.write");
+  if (refused) return refused;
 
   await getDb().delete(projectPackages).where(eq(projectPackages.id, id));
   revalidatePath("/stats");
@@ -78,7 +81,8 @@ export async function removePackage(id: string): Promise<StatsResult> {
 
 /** The same work the cron does, on demand. */
 export async function collectNow(): Promise<StatsResult> {
-  await requireSession();
+  const refused = await refuse("stats.write");
+  if (refused) return refused;
 
   const outcomes = await collectAll();
   revalidatePath("/stats");
