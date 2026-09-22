@@ -23,7 +23,7 @@ export type AttachedFile = {
 
 type Props = {
   /** Which composer these belong to. See `lib/attachments/store.ts`. */
-  kind: "reply" | "broadcast";
+  kind: "reply" | "compose" | "broadcast";
   /**
    * What the composer is attached to — a thread key, or a draft id.
    *

@@ -1210,6 +1210,13 @@
     color: var(--text-faint);
     font-size: 0.76rem;
   }
+  /* The compose dialog reports a send here rather than opening a second one. */
+  .dialog-status[data-tone="ok"] {
+    color: var(--ok);
+  }
+  .dialog-status[data-tone="error"] {
+    color: var(--danger);
+  }
 
   .dialog-split {
     display: grid;

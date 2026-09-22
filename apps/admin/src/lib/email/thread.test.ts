@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { displayName, normaliseEmail, normaliseSubject, threadKeyFor } from "./thread";
+import {
+  displayName,
+  normaliseEmail,
+  normaliseSubject,
+  replyTargetOf,
+  threadKeyFor,
+} from "./thread";
 
 describe("normaliseSubject", () => {
   it("strips a reply prefix and folds whitespace and case", () => {
@@ -83,5 +89,61 @@ describe("threadKeyFor", () => {
 
   it("groups subjectless mail from one person rather than splitting every message", () => {
     expect(threadKeyFor("ada@example.test", "")).toBe(threadKeyFor("ada@example.test", "Re:"));
+  });
+});
+
+describe("replyTargetOf", () => {
+  it("falls back to the sender when there is no Reply-To", () => {
+    expect(replyTargetOf("Ada <ada@example.test>", null)).toEqual({
+      email: "ada@example.test",
+      name: "Ada",
+    });
+    expect(replyTargetOf("ada@example.test", {})).toEqual({
+      email: "ada@example.test",
+      name: null,
+    });
+  });
+
+  it("answers the academy's work order to the student, not to the academy", () => {
+    // The shape that made these unanswerable: the academy sends from its own
+    // alias and puts the person waiting for the sheet in Reply-To.
+    expect(
+      replyTargetOf("ByteVeda Academy <academy@byteveda.org>", {
+        "Reply-To": "student@example.test",
+      }),
+    ).toEqual({ email: "student@example.test", name: null });
+  });
+
+  it("matches the header whatever the sending server capitalised", () => {
+    expect(replyTargetOf("a@example.test", { "reply-to": "b@example.test" }).email).toBe(
+      "b@example.test",
+    );
+    expect(replyTargetOf("a@example.test", { "REPLY-TO": "b@example.test" }).email).toBe(
+      "b@example.test",
+    );
+  });
+
+  it("takes the display name from the Reply-To, not from the sender", () => {
+    expect(
+      replyTargetOf("ByteVeda Academy <academy@byteveda.org>", {
+        "Reply-To": '"Ada Lovelace" <ada@example.test>',
+      }),
+    ).toEqual({ email: "ada@example.test", name: "Ada Lovelace" });
+  });
+
+  it("takes only the first of several, rather than fanning a reply out", () => {
+    expect(
+      replyTargetOf("a@example.test", { "Reply-To": "b@example.test, c@example.test" }).email,
+    ).toBe("b@example.test");
+  });
+
+  it("ignores a Reply-To that is empty, malformed, or just the sender again", () => {
+    expect(replyTargetOf("a@example.test", { "Reply-To": "" }).email).toBe("a@example.test");
+    expect(replyTargetOf("a@example.test", { "Reply-To": "not-an-address" }).email).toBe(
+      "a@example.test",
+    );
+    expect(replyTargetOf("a@example.test", { "Reply-To": "A@Example.TEST" }).email).toBe(
+      "a@example.test",
+    );
   });
 });

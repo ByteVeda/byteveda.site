@@ -18,6 +18,15 @@ import { safeFilename } from "@/lib/email/attachments";
 export type AttachmentScope =
   /** A reply in the inbox, keyed by the conversation it belongs to. */
   | { kind: "reply"; id: string }
+  /**
+   * A message being written to somebody who has not written in.
+   *
+   * Keyed by a draft id rather than by a conversation, because there is no
+   * conversation yet — the thread is opened by the send. A sheet going out to
+   * a customer is the case this exists for, and the file has to be uploaded
+   * before the address it is going to is even final.
+   */
+  | { kind: "compose"; id: string }
   /** A broadcast, keyed by its draft. */
   | { kind: "broadcast"; id: string };
 

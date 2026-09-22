@@ -14,17 +14,26 @@ const base: CustomRequest = {
 
 describe("quoteFor", () => {
   it("charges the setting once and the chapter per copy", () => {
-    // 149 setting + 19 chapter
-    expect(quoteFor(base).total).toBe(168);
+    expect(quoteFor(base).total).toBe(PRICING.setting + PRICING.chapter);
   });
 
   it("adds the advanced block to every copy", () => {
-    expect(quoteFor({ ...base, advanced: true }).total).toBe(188);
-    expect(quoteFor({ ...base, advanced: true, copies: 3 }).total).toBe(149 + 39 * 3);
+    expect(quoteFor({ ...base, advanced: true }).total).toBe(
+      PRICING.setting + PRICING.chapter + PRICING.advanced,
+    );
+    expect(quoteFor({ ...base, advanced: true, copies: 3 }).total).toBe(
+      PRICING.setting + (PRICING.chapter + PRICING.advanced) * 3,
+    );
   });
 
-  it("leaves the board questions, the NCERT exercise and the key free", () => {
-    expect(quoteFor(base).lines.filter((line) => line.value === "free")).toHaveLength(1);
+  it("gives a made-to-order chapter away for what the shelf charges", () => {
+    expect(PRICING.setting).toBe(0);
+    expect(quoteFor(base).total).toBe(PRICING.chapter);
+  });
+
+  it("leaves the board questions, the NCERT exercise, the key and the setting free", () => {
+    // Two "free" lines now: the questions that ride along, and the labour.
+    expect(quoteFor(base).lines.filter((line) => line.value === "free")).toHaveLength(2);
   });
 
   it("holds the mix fixed however the request is filled in", () => {
@@ -33,7 +42,7 @@ describe("quoteFor", () => {
   });
 
   it("multiplies the copies but never the setting", () => {
-    expect(quoteFor({ ...base, copies: 10 }).total).toBe(149 + 19 * 10);
+    expect(quoteFor({ ...base, copies: 10 }).total).toBe(PRICING.setting + PRICING.chapter * 10);
   });
 
   it("applies the class-set rate from eleven copies", () => {
@@ -41,7 +50,9 @@ describe("quoteFor", () => {
 
     const classSet = quoteFor({ ...base, copies: 12 });
     expect(classSet.classSet).toBe(true);
-    expect(classSet.total).toBe(PRICING.setting + Math.round(19 * 12 * 0.7));
+    expect(classSet.total).toBe(
+      PRICING.setting + Math.round(PRICING.chapter * 12 * PRICING.classSetRate),
+    );
   });
 
   it("clamps the copy count the form can be pushed past", () => {

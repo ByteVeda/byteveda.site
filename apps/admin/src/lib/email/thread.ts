@@ -71,6 +71,44 @@ export function displayName(address: string): string | null {
   return unquoted || null;
 }
 
+/**
+ * Who a reply to this message should actually go to.
+ *
+ * `Reply-To` exists to say "answer somewhere other than where this came from",
+ * and reading it is ordinary mail behaviour rather than a special case — every
+ * client does it. The console did not, which is how the academy's work orders
+ * ended up unanswerable: the academy sends them from its own sending alias
+ * with the customer in `Reply-To`, so the conversation offered to reply to
+ * ByteVeda, from ByteVeda, about a sheet a student was waiting for.
+ *
+ * Header names are matched case-insensitively — a header map is whatever the
+ * sending server felt like capitalising — and a `Reply-To` that parses to
+ * nothing, or back to the sender, is ignored so the fallback stays the `From`.
+ */
+export function replyTargetOf(
+  fromAddress: string,
+  headers: Record<string, string> | null | undefined,
+): { email: string; name: string | null } {
+  const from = { email: normaliseEmail(fromAddress), name: displayName(fromAddress) };
+  if (!headers) return from;
+
+  const raw = Object.entries(headers).find(
+    ([name]) => name.trim().toLowerCase() === "reply-to",
+  )?.[1];
+  if (!raw) return from;
+
+  // Only the first address. A `Reply-To` may list several, and a reply box
+  // that silently fanned out to all of them would be a surprise.
+  const first = raw.split(",")[0] ?? "";
+  const email = normaliseEmail(first);
+
+  // `@` alone is the cheap test that this is an address at all, and it is the
+  // right one here: anything stranger is refused by the send, not by us.
+  if (!email.includes("@") || email === from.email) return from;
+
+  return { email, name: displayName(first) };
+}
+
 export function threadKeyFor(fromAddress: string, subject: string): string {
   const normalised = normaliseSubject(subject);
   // A subject that is only "Re:" leaves nothing; fall back so the whole

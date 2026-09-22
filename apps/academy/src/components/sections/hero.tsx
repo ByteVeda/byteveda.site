@@ -3,7 +3,7 @@ import { TURNAROUND } from "@/lib/site";
 
 const TRACE = [
   { term: "you type", detail: "“Chemical Reactions and Equations”" },
-  { term: "inventory", detail: `₹19 · ${MIX_LABEL} · in stock`, hit: true },
+  { term: "inventory", detail: `₹${PRICING.chapter} · ${MIX_LABEL} · in stock`, hit: true },
   { term: "free with it", detail: "14 board questions · 20 NCERT · answer key" },
   { term: "inbox", detail: "under 24 hours — print and start" },
 ];

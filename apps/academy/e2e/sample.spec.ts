@@ -297,17 +297,22 @@ test.describe("the custom request", () => {
     await page.goto("/");
 
     const quote = page.locator(".quote");
-    // 149 to set it, 19 for the chapter. The board questions and the NCERT
-    // exercise are on the panel at "free".
-    await expect(quote.locator(".quote-total b")).toHaveText("₹168");
+    // Nothing to set it, 19 for the chapter — a made-to-order chapter costs
+    // what the shelf charges. The setting, the board questions and the NCERT
+    // exercise are all on the panel at "free".
+    //
+    // Figures are literal rather than imported from PRICING: this is the
+    // storefront, and a test that recomputed the price from the same constant
+    // the page reads would agree with it however wrong it was.
+    await expect(quote.locator(".quote-total b")).toHaveText("₹19");
     await expect(quote).toContainText("free");
     await expect(quote.getByRole("button")).toBeDisabled();
 
     await page.getByLabel("Chapter or topic").fill("Heights and distances");
     await page.getByLabel("Copies").fill("12");
 
-    // The setting is charged once; twelve copies at ₹19 take the class-set rate.
-    await expect(quote.locator(".quote-total b")).toHaveText("₹309");
+    // Twelve copies at ₹19 take the class-set rate: round(19 × 12 × 0.7).
+    await expect(quote.locator(".quote-total b")).toHaveText("₹160");
     await expect(quote).toContainText("class-set rate");
 
     await quote.getByRole("button", { name: /Ask for a sample of this/ }).click();
@@ -318,7 +323,7 @@ test.describe("the custom request", () => {
       "Heights and distances — made to order",
     );
     // The quote stays on the landing page, where it is a quote rather than a bill.
-    await expect(page.locator(".sample-page")).not.toContainText("309");
+    await expect(page.locator(".sample-page")).not.toContainText("160");
   });
 
   test("adds the advanced block through the custom listbox", async ({ page }) => {
@@ -331,8 +336,8 @@ test.describe("the custom request", () => {
     await page.getByRole("option", { name: /Add advanced/ }).click();
 
     await expect(advanced).toContainText("Add advanced");
-    // 149 setting + 19 chapter + 20 advanced.
-    await expect(page.locator(".quote-total b")).toHaveText("₹188");
+    // 19 chapter + 20 advanced. Setting is free.
+    await expect(page.locator(".quote-total b")).toHaveText("₹39");
   });
 });
 

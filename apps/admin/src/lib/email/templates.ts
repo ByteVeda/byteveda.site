@@ -120,6 +120,27 @@ export function broadcastEmail(input: {
 }
 
 /** A reply sent from the inbox. Quoted original included, as a mail client would. */
+/**
+ * A message the console started, rather than one it is answering.
+ *
+ * `replyEmail` with nothing to quote would nearly do, except for the subject:
+ * that one prefixes "Re:", and a sheet going out to somebody who never wrote
+ * in should not arrive claiming to be a reply to a message they never sent.
+ */
+export function composedEmail(input: { subject: string; body: string }): Email {
+  return {
+    subject: input.subject,
+    html: layout(
+      input.body
+        .split(/\n{2,}/)
+        .map((paragraph) => `<p style="margin:0 0 14px;">${escapeHtml(paragraph)}</p>`)
+        .join(""),
+      "Sent from the ByteVeda console.",
+    ),
+    text: input.body,
+  };
+}
+
 export function replyEmail(input: { subject: string; body: string; quoted: string }): Email {
   const quoted = input.quoted.trim();
 
