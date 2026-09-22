@@ -53,6 +53,8 @@ next-env.d.ts
 .claude/
 CLAUDE.md
 AGENTS.md
+# ...except the root one, which is the committed architecture guide, not a generated per-app file.
+!/AGENTS.md
 
 # local task notes
 tasks/
