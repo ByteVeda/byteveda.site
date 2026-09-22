@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { refuse } from "@/features/auth";
 import { confirmationEmail, sendEmail } from "@/features/mail";
 import { env } from "@/lib/env";
-import { subscribersChanged } from "@/lib/realtime";
+import { subscribersChanged } from "./events";
 import { confirmUrl, newToken, normalise } from "./service";
 
 export type SubscriberResult = { ok: boolean; message: string };

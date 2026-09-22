@@ -21,5 +21,6 @@
 export { ConfirmPage } from "./components/confirm-page";
 export { SubscribersPage } from "./components/subscribers-page";
 export { UnsubscribePage } from "./components/unsubscribe-page";
+export { subscribersChanged } from "./events";
 export { activeSubscribers, countByStatus } from "./queries";
 export { confirm, subscribe, unsubscribe, unsubscribeUrl } from "./service";

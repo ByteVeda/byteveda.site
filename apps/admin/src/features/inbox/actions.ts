@@ -20,7 +20,7 @@ import {
   threadKeyFor,
 } from "@/features/mail";
 import { emailConfigured } from "@/lib/email/client";
-import { inboxChanged } from "@/lib/realtime";
+import { inboxChanged } from "./events";
 import { getConversation, listSendableAddresses } from "./queries";
 import * as store from "./store";
 

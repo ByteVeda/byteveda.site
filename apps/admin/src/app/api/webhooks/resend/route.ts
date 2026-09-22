@@ -1,7 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { recordInbound } from "@/features/inbox";
+import { inboxChanged, recordInbound } from "@/features/inbox";
 import { fetchInboundBody, type InboundEvent, inboundRow, verifySignature } from "@/features/mail";
-import { inboxChanged } from "@/lib/realtime";
 
 export const dynamic = "force-dynamic";
 

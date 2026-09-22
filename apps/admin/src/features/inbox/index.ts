@@ -9,5 +9,6 @@
  */
 
 export { InboxPage } from "./components";
+export { inboxChanged } from "./events";
 export { countUnread } from "./queries";
 export { recordInbound } from "./store";

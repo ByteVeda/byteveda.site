@@ -1,8 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { getSession, readableWorkspaces } from "@/features/auth";
-import { countUnread } from "@/features/inbox";
-import { inboxChanged } from "@/lib/realtime";
+import { countUnread, inboxChanged } from "@/features/inbox";
 import { eventStream } from "@/lib/realtime/stream";
 
 export const dynamic = "force-dynamic";
