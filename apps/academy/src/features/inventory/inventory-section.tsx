@@ -15,7 +15,7 @@ import {
   listChapters,
   NO_FILTER,
   subjects,
-} from "@/lib/inventory";
+} from "./model";
 
 /** Six rows is about a screen; the rest is one click away. */
 const PAGE = 6;

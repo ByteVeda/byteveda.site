@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { type Chapter, chapters } from "@/features/inventory";
 import { PRICING } from "@/features/pricing";
-import { type Chapter, chapters } from "@/lib/inventory";
 import { validateOrder } from "./model";
 
 function firstStocked(): Chapter {

@@ -18,7 +18,7 @@
  * around.
  */
 
-import { type Chapter, chapters, describeChapter, describeContents } from "@/lib/inventory";
+import { type Chapter, chapters, describeChapter, describeContents } from "@/features/inventory";
 import { COPIES, type CustomRequest, describeRequest, quoteFor } from "@/lib/quote";
 
 /** Same shape the admin console accepts; deliberately stricter than the RFC. */

@@ -12,8 +12,8 @@
  * charge for it" is worth saying rather than hiding in a total.
  */
 
+import type { Board, ClassLevel } from "@/features/inventory";
 import { MIX_LABEL, MIX_TOTAL, PRICING } from "@/features/pricing";
-import type { Board, ClassLevel } from "./inventory";
 
 export type CustomRequest = {
   board: Board;

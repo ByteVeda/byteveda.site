@@ -3,9 +3,9 @@
 import { useId, useMemo, useState } from "react";
 
 import { Field, Select, TextInput } from "@/components/ui";
+import { type Board, type ClassLevel, subjects } from "@/features/inventory/model";
 import { MIX_LABEL } from "@/features/pricing/model";
 import { useSamples } from "@/features/sample/store";
-import { type Board, type ClassLevel, subjects } from "@/lib/inventory";
 import {
   ADVANCED_OPTIONS,
   type AdvancedChoice,
