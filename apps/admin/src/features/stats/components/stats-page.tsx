@@ -1,8 +1,9 @@
 import { ECOSYSTEM_LABELS } from "@byteveda/db";
-import { PageHeader } from "@/components";
+import { PageHeader } from "@/components/page-header";
 import { can, requirePermission } from "@/features/auth";
-import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { ago, count, delta } from "@/shared/format";
+import { WINDOW_DAYS } from "../model";
+import { getStatsOverview } from "../queries";
 import { AddPackageForm, CollectButton, RemovePackageButton, SeedButton } from "./package-controls";
 import { Sparkline } from "./sparkline";
 import { TrendChart } from "./trend-chart";

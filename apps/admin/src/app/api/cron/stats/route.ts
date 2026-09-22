@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { collectAll } from "@/lib/stats/collect";
+import { collectAll } from "@/features/stats";
 
 export const dynamic = "force-dynamic";
 /** Registries are slow and there are several; the default 10s is not enough. */

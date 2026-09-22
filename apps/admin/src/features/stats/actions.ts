@@ -4,8 +4,8 @@ import { ECOSYSTEMS, type Ecosystem, getDb, projectPackages } from "@byteveda/db
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { refuse } from "@/features/auth";
-import { catalogueSuggestions } from "./catalogue";
-import { collectAll, collectPackage } from "./collect";
+import { catalogueSuggestions } from "./model";
+import { collectAll, collectPackage } from "./service";
 
 export type StatsResult = { ok: boolean; message: string };
 

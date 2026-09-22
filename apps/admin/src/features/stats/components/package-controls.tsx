@@ -6,9 +6,9 @@ import { ECOSYSTEM_LABELS, ECOSYSTEMS, type Ecosystem } from "@byteveda/db/const
 import { projects } from "@byteveda/utils";
 import { Plus, RefreshCw, X } from "lucide-react";
 import { useState, useTransition } from "react";
-import { useConfirm } from "@/components";
-import { addPackage, collectNow, removePackage, seedFromCatalogue } from "@/lib/stats/actions";
-import { adapterHints } from "@/lib/stats/hints";
+import { useConfirm } from "@/components/confirm";
+import { addPackage, collectNow, removePackage, seedFromCatalogue } from "../actions";
+import { adapterHints } from "../model";
 
 type Message = { text: string; ok: boolean } | null;
 

@@ -9,8 +9,7 @@
  *   pnpm --filter @byteveda/admin collect
  */
 import { closeDb, getDb, projectPackages } from "@byteveda/db";
-import { catalogueSuggestions } from "../src/lib/stats/catalogue";
-import { collectAll } from "../src/lib/stats/collect";
+import { catalogueSuggestions, collectAll } from "../src/features/stats";
 
 async function seed() {
   const suggestions = catalogueSuggestions();

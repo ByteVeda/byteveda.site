@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { catalogueSuggestions, suggestionsFor } from "./catalogue";
+import { catalogueSuggestions, suggestionsFor } from "./model";
 
 const base = {
   slug: "flexiq",

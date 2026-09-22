@@ -1,7 +1,6 @@
 import {
   collectionRuns,
   downloadSnapshots,
-  type Ecosystem,
   getDb,
   packageTotals,
   projectPackages,
@@ -9,40 +8,9 @@ import {
 import { projects } from "@byteveda/utils";
 import { desc, gte } from "drizzle-orm";
 import { daysAgo } from "@/lib/registries/http";
+import { type DailyTotal, type PackageStats, type ProjectStats, WINDOW_DAYS } from "./model";
 
-/** Two 30-day windows: one to show, one to compare against. */
-export const WINDOW_DAYS = 30;
 const HISTORY_DAYS = WINDOW_DAYS * 2;
-
-export type PackageStats = {
-  packageId: string;
-  ecosystem: Ecosystem;
-  packageName: string;
-  /**
-   * One entry per day for the recent window, oldest first. `null` means no row
-   * was ever recorded for that day — which is not the same as zero downloads,
-   * and must not be drawn as a point on the baseline.
-   */
-  spark: (number | null)[];
-  /** Days in the window that actually have a row. */
-  recordedDays: number;
-  last30: number;
-  previous30: number;
-  total: number | null;
-  totalSource: string | null;
-  status: "ok" | "failed" | "unsupported" | "never";
-  detail: string | null;
-  lastRunAt: Date | null;
-};
-
-export type ProjectStats = {
-  slug: string;
-  name: string;
-  packages: PackageStats[];
-  /** Sum across ecosystems, which is the number worth ranking projects by. */
-  last30: number;
-  previous30: number;
-};
 
 function emptyDays(count: number, endingToday = new Date()): string[] {
   return Array.from({ length: count }, (_, index) =>
@@ -57,8 +25,6 @@ function emptyDays(count: number, endingToday = new Date()): string[] {
  * dozen packages and sixty days it is a few hundred rows, and doing the shaping
  * in TypeScript keeps it readable and testable.
  */
-export type DailyTotal = { day: string; downloads: number | null };
-
 export async function getStatsOverview(): Promise<{
   projects: ProjectStats[];
   /** All packages summed per day — the headline series. */
