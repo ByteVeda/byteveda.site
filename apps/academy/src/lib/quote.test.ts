@@ -33,7 +33,7 @@ describe("quoteFor", () => {
   });
 
   it("multiplies the copies but never the setting", () => {
-    expect(quoteFor({ ...base, copies: 10 }).total).toBe(149 + 19 * 10);
+    expect(quoteFor({ ...base, copies: 10 }).total).toBe(PRICING.setting + PRICING.chapter * 10);
   });
 
   it("applies the class-set rate from eleven copies", () => {
@@ -41,7 +41,9 @@ describe("quoteFor", () => {
 
     const classSet = quoteFor({ ...base, copies: 12 });
     expect(classSet.classSet).toBe(true);
-    expect(classSet.total).toBe(PRICING.setting + Math.round(19 * 12 * 0.7));
+    expect(classSet.total).toBe(
+      PRICING.setting + Math.round(PRICING.chapter * 12 * PRICING.classSetRate),
+    );
   });
 
   it("clamps the copy count the form can be pushed past", () => {
