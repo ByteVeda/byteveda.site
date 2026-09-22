@@ -1,6 +1,7 @@
 import { adminCustomRoles, adminUsers, getDb, sessions } from "@byteveda/db";
 import { and, eq, gt } from "drizzle-orm";
 import { cookies } from "next/headers";
+import { cache } from "react";
 import { isSuperAdminId } from "./allowlist";
 import { hashToken } from "./crypto";
 import { accessFor, SESSION_COOKIE, SESSION_TTL_MS, type SessionContext } from "./model";
@@ -11,8 +12,18 @@ const RENEW_AFTER_MS = SESSION_TTL_MS / 2;
 /**
  * Resolves the current session, or null. Expiry is part of the query rather
  * than a check afterwards, so a stale row cannot authenticate even briefly.
+ *
+ * Memoised for the request, because a dashboard render asks twice: the layout
+ * calls `requireSession` to gate everything below it, and the page then calls
+ * `requirePermission` to gate itself. Both are right to ask — neither can
+ * assume the other ran — and the answer cannot change between them. Without
+ * this they were two identical three-table joins per request, and, past half a
+ * session's life, two renewal *writes*.
+ *
+ * `cache` is per-request, not a cache in the revalidation sense: a suspension
+ * or a role change still takes effect on the operator's next request.
  */
-export async function getSession(): Promise<SessionContext | null> {
+export const getSession = cache(async function getSession(): Promise<SessionContext | null> {
   const store = await cookies();
   const token = store.get(SESSION_COOKIE)?.value;
   if (!token) return null;
@@ -59,4 +70,4 @@ export async function getSession(): Promise<SessionContext | null> {
     expiresAt,
     access: accessFor(row.user, superAdmin, row.customRole),
   };
-}
+});
