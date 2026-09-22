@@ -110,14 +110,12 @@
     font-size: 1rem;
     letter-spacing: -0.02em;
   }
+  /* No tile. The logo is a multi-tone leaf that brings its own colour — the
+     accent square existed to make a flat white glyph legible, and the glyph
+     has gone. */
   .rail-brand .mark {
     display: grid;
     place-items: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 7px;
-    background: var(--accent);
-    color: var(--accent-ink);
     flex: none;
   }
   .rail-brand small {
@@ -415,8 +413,15 @@
   .row-broadcast {
     grid-template-columns: 80px minmax(0, 1fr) 70px 28px;
   }
+  /* The name column is `1fr`, so these tracks plus the gaps are the row's real
+     minimum: put this list in a container narrower than that and the name gets
+     0px and every column lands on top of the one before it. It belongs in
+     `.content-narrow`, not `.content-form`. */
   .row-member {
-    grid-template-columns: minmax(0, 1fr) 104px 140px 92px minmax(0, 320px);
+    grid-template-columns: minmax(0, 1fr) 132px 140px 92px minmax(0, 240px);
+  }
+  .row-role {
+    grid-template-columns: minmax(0, 190px) minmax(0, 1fr) minmax(0, 210px) 96px;
   }
 
   /* An identifier in a list — an address, a slug, a package name. */
@@ -553,6 +558,14 @@
   }
   .panel-body {
     padding: 14px;
+  }
+  /* A list inside a panel: the panel head is already a rule above it, and the
+     panel's own border closes it off below. */
+  .panel > .rows {
+    border-top: none;
+  }
+  .panel > .rows > .row:last-child {
+    border-bottom: none;
   }
 
   /* ---------- forms ---------- */
@@ -808,7 +821,10 @@
     font-weight: 600;
     letter-spacing: -0.015em;
   }
-  .dialog-card p {
+  /* The direct child only. This is the confirm dialog's body copy, and a
+     descendant selector would also claim every paragraph in the form dialogs
+     built on the same card — at a higher specificity than their own classes. */
+  .dialog-card > p {
     margin-top: 7px;
     color: var(--text-dim);
     font-size: 0.88rem;
@@ -862,12 +878,8 @@
   .sheet-card .mark {
     display: grid;
     place-items: center;
-    width: 38px;
-    height: 38px;
+    width: fit-content;
     margin: 0 auto 18px;
-    border-radius: 11px;
-    background: var(--accent);
-    color: var(--accent-ink);
   }
   .sheet-card h1 {
     font-family: var(--font-display);
@@ -985,12 +997,6 @@
     align-items: center;
     gap: 10px;
   }
-  .member-scopes .field-label {
-    color: var(--text-dim);
-    font-size: 0.82rem;
-    font-weight: 500;
-  }
-
   /* A checkbox with its word beside it, small enough to live inside a row. */
   .tick {
     display: inline-flex;
@@ -1024,6 +1030,229 @@
 
   .form-row-member {
     grid-template-columns: minmax(0, 1fr) 140px auto;
+  }
+
+  /* ---------- roles and permissions ---------- */
+
+  .member-role {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+  }
+  /* "+2 −1": this person's grant is not their role's. Small, but the one thing
+     on the row a reader has to look twice at. */
+  .member-exceptions {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .role-grants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .role-why {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .role-lock {
+    color: var(--text-faint);
+  }
+
+  /* One permission: a checkbox, the verb, and a line saying what it hands over. */
+  .perm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+    gap: 10px;
+  }
+  /* A `<div role="group">` rather than a fieldset: a legend is laid out by
+     rules of its own that a flex or grid fieldset has never handled the same
+     way twice across browsers, and the heading here has to sit in a row with
+     the all/none control. */
+  .perm-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 11px 11px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--surface-2);
+    transition: border-color 0.15s;
+  }
+  .perm-group[data-active="true"] {
+    border-color: color-mix(in oklab, var(--accent) 34%, var(--line));
+  }
+  .perm-legend {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  .perm-all {
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 400;
+  }
+  .perm-all:hover:not(:disabled) {
+    color: var(--accent);
+  }
+
+  .perm {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px;
+    padding: 5px 6px;
+    border-radius: var(--r-sm);
+    cursor: pointer;
+  }
+  .perm:hover {
+    background: var(--chip);
+  }
+  .perm input {
+    margin-top: 3px;
+    accent-color: var(--accent);
+  }
+  .perm-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+  }
+  .perm-verb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+  }
+  .perm[data-on="true"] .perm-verb {
+    color: var(--text);
+    font-weight: 500;
+  }
+  /* Only the differences are labelled. A tick that matches the role is the
+     default state and needs no word for it. */
+  .perm-flag {
+    padding: 0 5px;
+    border-radius: var(--r-sm);
+    background: color-mix(in oklab, var(--ok) 18%, transparent);
+    color: var(--ok);
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .perm-flag-off {
+    background: color-mix(in oklab, var(--danger) 16%, transparent);
+    color: var(--danger);
+  }
+  .perm-hint {
+    color: var(--text-faint);
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* ---------- form dialogs ---------- */
+
+  /* Wider than the confirm dialog, and scrolls: a permission matrix is taller
+     than a short viewport, and the actions have to stay reachable. */
+  .dialog-card-wide {
+    display: flex;
+    flex-direction: column;
+    width: min(760px, calc(100vw - 32px));
+    max-height: min(88vh, 860px);
+    padding: 0;
+  }
+  .dialog-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 18px 13px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .dialog-sub {
+    margin-top: 3px;
+    color: var(--text-faint);
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+  .dialog-close {
+    margin-left: auto;
+    color: var(--text-faint);
+    line-height: 1;
+  }
+  .dialog-close:hover {
+    color: var(--text);
+  }
+  .dialog-body {
+    padding: 16px 18px;
+    overflow-y: auto;
+  }
+  .dialog-card-wide .dialog-actions {
+    align-items: center;
+    margin-top: 0;
+    padding: 12px 18px;
+    border-top: 1px solid var(--line-soft);
+    background: var(--surface-2);
+    border-radius: 0 0 var(--r-md) var(--r-md);
+  }
+  /* What the draft currently amounts to, beside the button that will save it. */
+  .dialog-status {
+    margin-right: auto;
+    color: var(--text-faint);
+    font-size: 0.76rem;
+  }
+
+  .dialog-split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0 16px;
+  }
+  .dialog-section {
+    margin: 4px 0 12px;
+  }
+  .dialog-section h3 {
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .dialog-section .side-note {
+    line-height: 1.5;
+  }
+
+  /* A label outside a `<label>` — a group of checkboxes has no single control
+     to point at, so the heading is a span and matches `.field > label`. */
+  .field-label {
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+  .scope-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  /* The row version of `.tick` is bare; inside a form it needs an edge. */
+  .tick-box {
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    background: var(--bg);
+    font-size: 0.82rem;
+  }
+  .tick-box:has(input:checked) {
+    border-color: color-mix(in oklab, var(--accent) 45%, var(--line));
+    background: var(--chip);
+    color: var(--text);
   }
 
   /* ---------- attachments ---------- */
@@ -1149,12 +1378,23 @@
   /* A member's row is five columns of controls; below this it is a card. */
   @media (max-width: 1000px) {
     .row-member {
-      grid-template-columns: minmax(0, 1fr) 104px;
+      grid-template-columns: minmax(0, 1fr) 132px;
+      row-gap: 8px;
+    }
+    .row-role {
+      grid-template-columns: minmax(0, 1fr) auto;
       row-gap: 8px;
     }
     .row-member .member-mail,
     .row-member .num {
       text-align: left;
+    }
+    .role-grants,
+    .role-why {
+      grid-column: 1 / -1;
+    }
+    .role-why {
+      white-space: normal;
     }
     .member-actions,
     .member-locked {

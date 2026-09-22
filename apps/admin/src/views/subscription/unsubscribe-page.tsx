@@ -29,7 +29,7 @@ export async function UnsubscribePage({ searchParams }: Props) {
     <main className="sheet">
       <div className="sheet-card">
         <span className="mark">
-          <Mark size={20} />
+          <Mark />
         </span>
 
         {!state.found ? (

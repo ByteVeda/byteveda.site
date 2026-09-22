@@ -1,5 +1,5 @@
 import { createHash, randomBytes, timingSafeEqual } from "node:crypto";
-import { type AdminUser, adminUsers, getDb, sessions } from "@byteveda/db";
+import { type AdminUser, adminCustomRoles, adminUsers, getDb, sessions } from "@byteveda/db";
 import { and, eq, gt, lt } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
@@ -91,10 +91,14 @@ export async function getSession(): Promise<SessionContext | null> {
   if (!token) return null;
 
   const db = getDb();
+  // The custom role joins here rather than being fetched when something asks
+  // for it: `access` is resolved once per request and handed to the browser,
+  // and a role read later would be a second answer to the same question.
   const [row] = await db
-    .select({ session: sessions, user: adminUsers })
+    .select({ session: sessions, user: adminUsers, customRole: adminCustomRoles })
     .from(sessions)
     .innerJoin(adminUsers, eq(sessions.userId, adminUsers.id))
+    .leftJoin(adminCustomRoles, eq(adminUsers.customRoleId, adminCustomRoles.id))
     .where(and(eq(sessions.tokenHash, hashToken(token)), gt(sessions.expiresAt, new Date())))
     .limit(1);
 
@@ -126,7 +130,7 @@ export async function getSession(): Promise<SessionContext | null> {
     user: row.user,
     sessionId: row.session.id,
     expiresAt,
-    access: accessFor(row.user, superAdmin),
+    access: accessFor(row.user, superAdmin, row.customRole),
   };
 }
 

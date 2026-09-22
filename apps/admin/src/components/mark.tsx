@@ -1,19 +1,18 @@
-/** The ByteVeda bracket glyph, matching the wordmark on the public sites. */
-export function Mark({ size = 16 }: { size?: number }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width={size}
-      height={size}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.1}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M5 7h9a4 4 0 0 1 0 8H9l5 6" />
-      <path d="M9 3v18" />
-    </svg>
-  );
+import { BrandMark } from "@byteveda/ui";
+
+/**
+ * The ByteVeda logo, as the public sites draw it.
+ *
+ * This used to be an inline bracket glyph — a single white path that needed
+ * the accent tile behind it to be legible, and which was never the logo. The
+ * real mark is a multi-tone leaf: it cannot take `currentColor`, there is
+ * nothing for one path to carry, and it brings its own colour, so the tile it
+ * used to sit on comes off with it.
+ *
+ * Wrapping `BrandMark` rather than importing it at each of the five call sites
+ * keeps the console's sizes in one place, and keeps "which artwork is the
+ * logo" a question with one answer and one import to change.
+ */
+export function Mark({ size = 30 }: { size?: number }) {
+  return <BrandMark height={size} />;
 }

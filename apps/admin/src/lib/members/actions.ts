@@ -1,6 +1,12 @@
 "use server";
 
-import { type AdminRole, type AdminStatus, adminUsers, getDb } from "@byteveda/db";
+import {
+  type AdminRole,
+  type AdminStatus,
+  adminCustomRoles,
+  adminUsers,
+  getDb,
+} from "@byteveda/db";
 import {
   ADMIN_ROLES,
   ADMIN_STATUSES,
@@ -11,8 +17,9 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { isSuperAdminId } from "@/lib/auth/allowlist";
 import { findUserByLogin } from "@/lib/auth/github";
+import { basePermissionsFor, type Permission, sanitisePermissions } from "@/lib/auth/roles";
 import { refuse, requireSession, revokeSessionsFor } from "@/lib/auth/session";
-import { findMember } from "./queries";
+import { findCustomRole, findMember } from "./queries";
 
 export type MemberResult = { ok: boolean; message: string };
 
@@ -55,6 +62,8 @@ function cleanWorkspaces(values: string[]): MailWorkspace[] {
 export async function inviteMember(input: {
   handle: string;
   role: string;
+  /** A custom role to start them on. The built-in `role` is kept underneath it. */
+  customRoleId?: string | null;
   workspaces: string[];
 }): Promise<MemberResult> {
   const refused = await guard();
@@ -65,6 +74,11 @@ export async function inviteMember(input: {
   const handle = input.handle.trim().replace(/^@/, "");
   if (!handle) return { ok: false, message: "Give a GitHub login or a numeric user id." };
   if (!isRole(input.role)) return { ok: false, message: "Pick a role." };
+
+  const custom = input.customRoleId ? await findCustomRole(input.customRoleId) : null;
+  if (input.customRoleId && !custom) {
+    return { ok: false, message: "That role has been deleted. Reload and pick another." };
+  }
 
   const numeric = /^\d+$/.test(handle) ? Number(handle) : null;
   const profile = numeric === null ? await findUserByLogin(handle) : null;
@@ -91,6 +105,7 @@ export async function inviteMember(input: {
       name: profile?.name ?? null,
       avatarUrl: profile?.avatarUrl ?? null,
       role: input.role,
+      customRoleId: custom?.id ?? null,
       status: "active",
       mailWorkspaces: workspaces,
       invitedBy: actor.id,
@@ -108,50 +123,88 @@ export async function inviteMember(input: {
 }
 
 /**
- * Changes what a member may do.
+ * What one member may do, and where, written in a single act.
  *
- * A super admin's role is not editable here, and refusing is better than
- * silently ignoring it: their access comes from the hardcoded list, so a
- * successful-looking change to the column would be a lie about what the console
- * will do next.
+ * Three columns used to be three actions firing as fast as the boxes were
+ * ticked. Granular access is not that shape: "editor, both inboxes, but no
+ * publishing" is one decision, and applying its parts one at a time means a
+ * window in which somebody is an editor who can publish — and a half-applied
+ * grant if the person closes the tab. So the dialog gathers the whole answer
+ * and this writes it once.
+ *
+ * `permissions` is the set the operator ticked — what they want to be true —
+ * rather than a pair of override lists. The diff against the role is computed
+ * here, which is what keeps an override *an override*: change the role later
+ * and everything they did not explicitly touch follows it.
  */
-export async function setMemberRole(id: string, role: string): Promise<MemberResult> {
+export type AccessDraft = {
+  /** A built-in role's key, or a custom role's id when `custom` is true. */
+  role: string;
+  custom: boolean;
+  /** The effective permissions, as ticked. */
+  permissions: string[];
+  workspaces: string[];
+};
+
+export async function setMemberAccess(id: string, draft: AccessDraft): Promise<MemberResult> {
   const refused = await guard();
   if (refused) return refused;
-
-  if (!isRole(role)) return { ok: false, message: "That is not a role." };
 
   const member = await findMember(id);
   if (!member) return { ok: false, message: "That member no longer exists." };
+
+  // Refused rather than applied. A super admin's permissions come from the
+  // hardcoded list and `accessFor` never reads these columns for them, so a
+  // change that appeared to work would be a lie about what happens next.
   if (isSuperAdminId(member.githubId)) {
     return {
       ok: false,
-      message: `${member.login} is a super admin. That is set in the source, not here.`,
+      message: `${member.login} is a super admin, which is set in lib/auth/roles.ts. Nothing here applies to them.`,
     };
   }
 
-  await getDb().update(adminUsers).set({ role }).where(eq(adminUsers.id, id));
+  const custom = draft.custom ? await findCustomRole(draft.role) : null;
+  if (draft.custom && !custom) {
+    return { ok: false, message: "That role has been deleted. Reload and pick another." };
+  }
 
-  revalidatePath("/members");
-  return { ok: true, message: `${member.login} is now a ${role}.` };
-}
+  if (!custom && !isRole(draft.role)) {
+    return { ok: false, message: "That is not a role." };
+  }
 
-/** Which inboxes a member may read. Nothing to do with their role. */
-export async function setMemberWorkspaces(id: string, workspaces: string[]): Promise<MemberResult> {
-  const refused = await guard();
-  if (refused) return refused;
+  // The built-in role underneath a custom one is kept rather than cleared, so
+  // deleting the custom role drops them back to something rather than nothing.
+  const role: AdminRole = custom ? member.role : (draft.role as AdminRole);
 
-  const [updated] = await getDb()
+  const wanted = new Set(sanitisePermissions(draft.permissions));
+  const base = basePermissionsFor(role, custom);
+
+  const extra = [...wanted].filter((permission) => !base.includes(permission));
+  const denied = base.filter((permission) => !wanted.has(permission));
+
+  await getDb()
     .update(adminUsers)
-    .set({ mailWorkspaces: cleanWorkspaces(workspaces) })
-    .where(eq(adminUsers.id, id))
-    .returning({ login: adminUsers.login });
-
-  if (!updated) return { ok: false, message: "That member no longer exists." };
+    .set({
+      role,
+      customRoleId: custom?.id ?? null,
+      extraPermissions: sanitisePermissions(extra),
+      deniedPermissions: sanitisePermissions(denied),
+      mailWorkspaces: cleanWorkspaces(draft.workspaces),
+    })
+    .where(eq(adminUsers.id, id));
 
   revalidatePath("/members");
   revalidatePath("/inbox");
-  return { ok: true, message: `Updated the mail access for ${updated.login}.` };
+
+  const label = custom?.label ?? role;
+  const exceptions = extra.length + denied.length;
+
+  return {
+    ok: true,
+    message: `${member.login} is now ${label}${
+      exceptions > 0 ? ` with ${exceptions} exception${exceptions === 1 ? "" : "s"}` : ""
+    }.`,
+  };
 }
 
 /**
@@ -228,4 +281,154 @@ export async function removeMember(id: string): Promise<MemberResult> {
 
   revalidatePath("/members");
   return { ok: true, message: `${member.login} no longer has access.` };
+}
+
+/* ---------------------------------------------------------------- custom roles */
+
+export type RoleDraft = {
+  label: string;
+  description: string;
+  permissions: string[];
+};
+
+/**
+ * A stable handle for a role, derived from its name.
+ *
+ * Kept when the label is edited later: the key is what a log line and a
+ * support conversation say, and renaming "Release manager" to "Releases"
+ * should not make last month's audit trail refer to something that no longer
+ * exists.
+ */
+function slugify(label: string): string {
+  return label
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 48);
+}
+
+/** The checks both writers share: a usable name, and at least one grant. */
+function validateRole(
+  draft: RoleDraft,
+): { label: string; permissions: Permission[] } | MemberResult {
+  const label = draft.label.trim().replace(/\s+/g, " ");
+
+  if (label.length < 2) return { ok: false, message: "Give the role a name." };
+  if (label.length > 48) return { ok: false, message: "That name is too long for a role." };
+
+  // A role reserving the built-in names would put two different answers behind
+  // one word in every dropdown in the console.
+  if ((ADMIN_ROLES as readonly string[]).includes(label.toLowerCase())) {
+    return { ok: false, message: `“${label}” is a built-in role. Pick another name.` };
+  }
+
+  const permissions = sanitisePermissions(draft.permissions);
+  if (permissions.length === 0) {
+    return { ok: false, message: "A role with no permissions grants nothing. Tick at least one." };
+  }
+
+  return { label, permissions };
+}
+
+function isRefusal(value: unknown): value is MemberResult {
+  return typeof value === "object" && value !== null && "ok" in value;
+}
+
+/**
+ * Writes a role of the operator's own.
+ *
+ * What it can hold is bounded by the same catalogue every built-in role is:
+ * `sanitisePermissions` drops anything that is not a real permission and
+ * anything reserved, so a custom role can only recombine grants the code
+ * already enforces. It cannot mint a new power, and it cannot carry
+ * `members.manage` — the grant that grants grants stays a super admin's.
+ */
+export async function createRole(draft: RoleDraft): Promise<MemberResult> {
+  const refused = await guard();
+  if (refused) return refused;
+
+  const checked = validateRole(draft);
+  if (isRefusal(checked)) return checked;
+
+  const { user: actor } = await requireSession();
+  const key = slugify(checked.label);
+  if (!key) return { ok: false, message: "That name has no letters or digits in it." };
+
+  const [created] = await getDb()
+    .insert(adminCustomRoles)
+    .values({
+      key,
+      label: checked.label,
+      description: draft.description.trim() || null,
+      permissions: checked.permissions,
+      createdBy: actor.id,
+    })
+    .onConflictDoNothing({ target: adminCustomRoles.key })
+    .returning({ label: adminCustomRoles.label });
+
+  if (!created) return { ok: false, message: "A role with that name already exists." };
+
+  revalidatePath("/members");
+  return { ok: true, message: `“${created.label}” is ready to assign.` };
+}
+
+/**
+ * Edits one.
+ *
+ * Every member on the role is affected at once, which is the point of a role
+ * and the reason the dialog says how many that is before it saves. Their own
+ * exceptions survive: those are stored as a diff against the role, so removing
+ * a permission from the role removes it from everybody who inherited it and
+ * leaves it with whoever was granted it by name.
+ */
+export async function updateRole(id: string, draft: RoleDraft): Promise<MemberResult> {
+  const refused = await guard();
+  if (refused) return refused;
+
+  const checked = validateRole(draft);
+  if (isRefusal(checked)) return checked;
+
+  const [updated] = await getDb()
+    .update(adminCustomRoles)
+    .set({
+      label: checked.label,
+      description: draft.description.trim() || null,
+      permissions: checked.permissions,
+      updatedAt: new Date(),
+    })
+    .where(eq(adminCustomRoles.id, id))
+    .returning({ label: adminCustomRoles.label });
+
+  if (!updated) return { ok: false, message: "That role no longer exists." };
+
+  revalidatePath("/members");
+  revalidatePath("/inbox");
+  return { ok: true, message: `“${updated.label}” updated.` };
+}
+
+/**
+ * Deletes one.
+ *
+ * Nobody loses their account. The foreign key nulls `custom_role_id`, and the
+ * built-in role kept underneath it takes over — which is why that column is
+ * never cleared when a custom role is assigned. Tidying up a role should not
+ * be a way to lock the console's last editor out.
+ */
+export async function deleteRole(id: string): Promise<MemberResult> {
+  const refused = await guard();
+  if (refused) return refused;
+
+  const [deleted] = await getDb()
+    .delete(adminCustomRoles)
+    .where(eq(adminCustomRoles.id, id))
+    .returning({ label: adminCustomRoles.label });
+
+  if (!deleted) return { ok: false, message: "That role no longer exists." };
+
+  revalidatePath("/members");
+  revalidatePath("/inbox");
+  return {
+    ok: true,
+    message: `“${deleted.label}” is gone. Anyone on it is back on their built-in role.`,
+  };
 }

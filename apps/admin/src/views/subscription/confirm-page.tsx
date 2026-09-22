@@ -30,7 +30,7 @@ export async function ConfirmPage({ searchParams }: Props) {
     <main className="sheet">
       <div className="sheet-card">
         <span className="mark">
-          <Mark size={20} />
+          <Mark />
         </span>
 
         {!state.found ? (
