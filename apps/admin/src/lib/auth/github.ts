@@ -3,6 +3,8 @@ import { env } from "@/lib/env";
 const AUTHORIZE_URL = "https://github.com/login/oauth/authorize";
 const TOKEN_URL = "https://github.com/login/oauth/access_token";
 const USER_URL = "https://api.github.com/user";
+/** The public profile of somebody else, by login. `USER_URL` is "whoever this token is". */
+const PROFILE_URL = "https://api.github.com/users";
 
 export type GitHubUser = {
   id: number;
@@ -46,6 +48,47 @@ export async function exchangeCode(code: string, redirectUri: string): Promise<s
     throw new Error(body.error_description ?? "GitHub returned no access token");
   }
   return body.access_token;
+}
+
+/**
+ * Looks up an account by its login, so an invite can be typed as `@someone`
+ * rather than as a number nobody knows.
+ *
+ * Unauthenticated, which is all this needs: the profile is public and the
+ * endpoint allows sixty calls an hour per address — several orders of magnitude
+ * more invites than this console will ever send. A rate limit or a network
+ * failure comes back as `null` and the members page then asks for the numeric
+ * id instead, because the id is what is actually stored either way.
+ */
+export async function findUserByLogin(login: string): Promise<GitHubUser | null> {
+  const handle = login.trim().replace(/^@/, "");
+  // GitHub logins are alphanumeric with single hyphens; anything else is not a
+  // login, and putting it in a URL path would be a request we cannot predict.
+  if (!/^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$/.test(handle)) return null;
+
+  const response = await fetch(`${PROFILE_URL}/${handle}`, {
+    headers: { accept: "application/vnd.github+json", "user-agent": "byteveda-admin" },
+    cache: "no-store",
+  });
+
+  if (!response.ok) return null;
+
+  const user = (await response.json()) as {
+    id: number;
+    login: string;
+    name: string | null;
+    avatar_url: string | null;
+  };
+
+  return {
+    id: user.id,
+    login: user.login,
+    name: user.name,
+    // The public profile carries an address only when its owner published one,
+    // and an invite does not need it — the row is keyed by id.
+    email: null,
+    avatarUrl: user.avatar_url,
+  };
 }
 
 export async function fetchUser(accessToken: string): Promise<GitHubUser> {
