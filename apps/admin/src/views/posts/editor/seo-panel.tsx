@@ -2,7 +2,7 @@
 
 import type { PostSeo } from "@byteveda/db";
 import { useMemo } from "react";
-import { auditPost, auditScore, extractKeywords } from "@/lib/seo";
+import { auditPost, auditScore, extractKeywords } from "@/features/seo/model";
 
 type Props = {
   title: string;

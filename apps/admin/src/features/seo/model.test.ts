@@ -1,7 +1,18 @@
 import { describe, expect, it } from "vitest";
-import { type AuditInput, auditPost, auditScore } from "./audit";
-import { extractKeywords, phrases, toRuns } from "./keywords";
-import { firstParagraph, headings, isInternalLink, links, stripMarkup, wordCount } from "./text";
+import {
+  type AuditInput,
+  auditPost,
+  auditScore,
+  extractKeywords,
+  firstParagraph,
+  headings,
+  isInternalLink,
+  links,
+  phrases,
+  stripMarkup,
+  toRuns,
+  wordCount,
+} from "./model";
 
 const POST = `---
 title: Retries and the dead-letter queue
