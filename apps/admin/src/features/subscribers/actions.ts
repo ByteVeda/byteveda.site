@@ -13,10 +13,6 @@ export type SubscriberResult = { ok: boolean; message: string };
 
 const EMAIL_SHAPE = /^[^@\s]+@[^@\s.]+\.[^@\s]+$/;
 
-function origin(): string {
-  return env.adminUrl() ?? "https://admin.byteveda.org";
-}
-
 /**
  * Adds an address by hand.
  *
@@ -49,7 +45,7 @@ export async function addSubscriber(email: string): Promise<SubscriberResult> {
 
   const sent = await sendEmail({
     to: address,
-    email: confirmationEmail(confirmUrl(origin(), token)),
+    email: confirmationEmail(confirmUrl(env.adminOrigin(), token)),
     kind: "confirmation",
   });
 
@@ -75,7 +71,7 @@ export async function resendConfirmation(id: string): Promise<SubscriberResult> 
 
   const sent = await sendEmail({
     to: subscriber.email,
-    email: confirmationEmail(confirmUrl(origin(), subscriber.token)),
+    email: confirmationEmail(confirmUrl(env.adminOrigin(), subscriber.token)),
     kind: "confirmation",
   });
 

@@ -10,10 +10,6 @@ import { env } from "@/lib/env";
 
 const FLEXIQ_URL = "https://flexiq.byteveda.org";
 
-function origin(): string {
-  return env.adminUrl() ?? "https://admin.byteveda.org";
-}
-
 export type SendOutcome = { ok: boolean; message: string };
 
 /**
@@ -67,7 +63,7 @@ export async function sendBroadcastNow(broadcastId: string): Promise<SendOutcome
         subject: broadcast.subject,
         bodyHtml,
         bodyText: broadcast.bodyMarkdown,
-        unsubscribeUrl: unsubscribeUrl(origin(), subscriber.token),
+        unsubscribeUrl: unsubscribeUrl(env.adminOrigin(), subscriber.token),
       }),
     })),
     {
@@ -151,7 +147,7 @@ export async function announcePost(post: Post): Promise<string | null> {
         title: post.title,
         description: post.description,
         url,
-        unsubscribeUrl: unsubscribeUrl(origin(), subscriber.token),
+        unsubscribeUrl: unsubscribeUrl(env.adminOrigin(), subscriber.token),
       }),
     })),
     { kind: "announcement", broadcastId: broadcast.id },

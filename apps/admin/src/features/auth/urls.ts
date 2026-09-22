@@ -5,11 +5,13 @@ import { env } from "@/lib/env";
  * which is what a deployment behind a proxy with a rewritten Host needs;
  * otherwise the request's own origin keeps localhost and preview URLs working
  * without configuration.
+ *
+ * The one place the configured origin is not the last word: everything else
+ * that needs it is composing a link outside a request and takes
+ * `env.adminOrigin()` as it comes.
  */
 export function originOf(request: Request): string {
-  const configured = env.adminUrl();
-  if (configured) return configured.replace(/\/$/, "");
-  return new URL(request.url).origin;
+  return env.adminUrl() ? env.adminOrigin() : new URL(request.url).origin;
 }
 
 export function callbackUrl(request: Request): string {
