@@ -1,9 +1,10 @@
 /**
- * What more than one view uses.
+ * What more than one feature uses.
  *
- * The test for whether something belongs here is whether a second view, or the
- * dashboard layout, imports it. Everything else lives beside the view that
- * renders it, under `src/views/`, so that deleting a page deletes its parts.
+ * The test for whether something belongs here is whether a second feature, or
+ * the dashboard layout, imports it. Everything else lives beside the page that
+ * renders it, under `src/features/<name>/components/`, so that deleting a page
+ * deletes its parts.
  */
 export { AccessProvider, useAccess, useCan, useCanReadWorkspace } from "./access";
 export { type ConfirmOptions, ConfirmProvider, useConfirm } from "./confirm";

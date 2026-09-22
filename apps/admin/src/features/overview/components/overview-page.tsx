@@ -1,6 +1,16 @@
+/**
+ * The console's front page, assembled from every other feature.
+ *
+ * A surface rather than a domain: it owns no rows, no rules and no writes, so
+ * it has no server files of its own and nothing to put behind a barrel. What it
+ * shows belongs to inbox, posts, stats and subscribers, and it reaches each of
+ * them through its front door — which is exactly what a cross-feature surface
+ * is for, and the reason this page does not live inside any one of them.
+ */
+
 import { FileText, Inbox, ShieldAlert, TrendingUp } from "lucide-react";
 import Link from "next/link";
-import { PageHeader } from "@/components";
+import { PageHeader } from "@/components/page-header";
 import { can, readableWorkspaces, requireSession } from "@/features/auth";
 import { countUnread } from "@/features/inbox";
 import { countPostsByStatus, listPosts } from "@/features/posts";
