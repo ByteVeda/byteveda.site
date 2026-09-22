@@ -30,7 +30,7 @@ export function Rail({ user, children }: Props) {
     <nav className="rail" aria-label="Admin sections">
       <Link href="/" className="rail-brand">
         <span className="mark">
-          <Mark size={14} />
+          <Mark size={22} />
         </span>
         <span>
           byteveda <small>admin</small>
