@@ -56,12 +56,120 @@ export type SampleKind = (typeof SAMPLE_KINDS)[number];
  * `apps/admin/src/lib/auth/roles.ts` — because a permission is a statement
  * about the code, and the code is where it can be kept true.
  *
- * "Super admin" is deliberately absent. It is not a row anyone can be given;
- * it is a hardcoded list of GitHub IDs, and no write to this database can
- * widen it.
+ * A super admin may also define roles of their own, which are rows in
+ * `admin_custom_roles` carrying an explicit permission list. Those cannot be
+ * in this enum — it is a column's type, and a new value would mean a migration
+ * per role — so a member is either on one of these four or on a custom one,
+ * and `custom_role_id` is what says which.
+ *
+ * "Super admin" is deliberately absent from both. It is not a row anyone can be
+ * given; it is a hardcoded list of GitHub IDs, and no write to this database
+ * can widen it.
  */
 export const ADMIN_ROLES = ["admin", "editor", "support", "viewer"] as const;
 export type AdminRole = (typeof ADMIN_ROLES)[number];
+
+/**
+ * Everything the console can be asked to allow, named `resource.verb`.
+ *
+ * Here rather than in the admin app because the set is now a Postgres enum:
+ * a custom role stores its permissions as a column, and the column's type
+ * should be the closed set rather than `text[]` that any typo fits into. The
+ * admin app re-exports this as `PERMISSIONS` and remains the only place that
+ * decides which of them each built-in role carries.
+ *
+ * Groups of two or three — read, write, and the irreversible one — because
+ * "may edit a post" and "may put it in front of the public" are genuinely
+ * different grants, and so are "may read the mail" and "may answer it as us".
+ */
+export const ADMIN_PERMISSIONS = [
+  "posts.read",
+  "posts.write",
+  "posts.publish",
+  "stats.read",
+  "stats.write",
+  "subscribers.read",
+  "subscribers.write",
+  "broadcasts.send",
+  "mail.read",
+  "mail.send",
+  "mail.manage",
+  "settings.read",
+  "settings.write",
+  "members.read",
+  "members.manage",
+] as const;
+
+export type AdminPermission = (typeof ADMIN_PERMISSIONS)[number];
+
+/**
+ * The thing a permission is about, derived from the name rather than declared.
+ *
+ * Deriving it means a new permission cannot be added to a resource that does
+ * not exist, and cannot be forgotten by the screen that groups them.
+ */
+export type AdminResource = AdminPermission extends `${infer Resource}.${string}`
+  ? Resource
+  : never;
+
+/** The order resources are shown in, which is roughly the order of the rail. */
+export const ADMIN_RESOURCES = [
+  "posts",
+  "stats",
+  "subscribers",
+  "broadcasts",
+  "mail",
+  "settings",
+  "members",
+] as const satisfies readonly AdminResource[];
+
+export function resourceOf(permission: AdminPermission): AdminResource {
+  return permission.slice(0, permission.indexOf(".")) as AdminResource;
+}
+
+export const ADMIN_RESOURCE_LABELS: Record<AdminResource, string> = {
+  posts: "Posts",
+  stats: "Downloads",
+  subscribers: "Subscribers",
+  broadcasts: "Broadcasts",
+  mail: "Inbox",
+  settings: "Settings",
+  members: "Members",
+};
+
+/**
+ * What ticking one actually hands over, in the second person.
+ *
+ * Written out rather than generated from the verb: "manage" means archiving a
+ * conversation in one place and editing every grant in the console in another,
+ * and a screen that says "Manage" twice has told the person nothing.
+ */
+export const ADMIN_PERMISSION_LABELS: Record<AdminPermission, { verb: string; hint: string }> = {
+  "posts.read": { verb: "Read", hint: "See every post, draft ones included." },
+  "posts.write": { verb: "Write", hint: "Create and edit posts, and upload their images." },
+  "posts.publish": { verb: "Publish", hint: "Put a post in front of the public, or take it down." },
+  "stats.read": { verb: "Read", hint: "See download figures and the registries behind them." },
+  "stats.write": { verb: "Write", hint: "Add or remove a tracked package, and force a refresh." },
+  "subscribers.read": { verb: "Read", hint: "See the list and each address's state." },
+  "subscribers.write": { verb: "Write", hint: "Add, edit and unsubscribe addresses." },
+  "broadcasts.send": {
+    verb: "Send",
+    hint: "Mail the whole list. This one cannot be taken back.",
+  },
+  "mail.read": { verb: "Read", hint: "Open conversations in the granted inboxes." },
+  "mail.send": { verb: "Send", hint: "Reply as ByteVeda, with attachments." },
+  "mail.manage": { verb: "Manage", hint: "Archive, reopen and assign conversations." },
+  "settings.read": { verb: "Read", hint: "See the console's configuration." },
+  "settings.write": {
+    verb: "Write",
+    hint: "Change it, including anything integrations depend on.",
+  },
+  "members.read": { verb: "Read", hint: "See who has access and what it amounts to." },
+  "members.manage": {
+    verb: "Manage",
+    hint: "Grant and withdraw access. Reserved for super admins.",
+  },
+};
 
 /** Suspended keeps the record and the history; only signing in stops. */
 export const ADMIN_STATUSES = ["active", "suspended"] as const;
