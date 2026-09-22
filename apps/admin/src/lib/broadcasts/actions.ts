@@ -3,7 +3,8 @@
 import { broadcasts, getDb } from "@byteveda/db";
 import { desc, eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { requireSession } from "@/lib/auth/session";
+import * as attachments from "@/lib/attachments/store";
+import { refuse } from "@/lib/auth/session";
 import { emailConfigured } from "@/lib/email/client";
 import { getSettings } from "@/lib/settings";
 import { sendBroadcastNow } from "./service";
@@ -19,7 +20,8 @@ export async function saveBroadcast(input: {
   subject: string;
   bodyMarkdown: string;
 }): Promise<BroadcastResult & { id?: string }> {
-  await requireSession();
+  const refused = await refuse("broadcasts.send");
+  if (refused) return refused;
 
   const subject = input.subject.trim();
   if (!subject) return { ok: false, message: "Give the broadcast a subject." };
@@ -46,7 +48,8 @@ export async function saveBroadcast(input: {
 }
 
 export async function sendBroadcast(id: string): Promise<BroadcastResult> {
-  await requireSession();
+  const refused = await refuse("broadcasts.send");
+  if (refused) return refused;
 
   if (!emailConfigured()) return { ok: false, message: "Set RESEND_API_KEY before sending." };
 
@@ -61,7 +64,8 @@ export async function sendBroadcast(id: string): Promise<BroadcastResult> {
 }
 
 export async function deleteBroadcast(id: string): Promise<BroadcastResult> {
-  await requireSession();
+  const refused = await refuse("broadcasts.send");
+  if (refused) return refused;
 
   const db = getDb();
   const [existing] = await db.select().from(broadcasts).where(eq(broadcasts.id, id)).limit(1);
@@ -71,8 +75,20 @@ export async function deleteBroadcast(id: string): Promise<BroadcastResult> {
     return { ok: false, message: "A sent broadcast cannot be deleted." };
   }
 
+  // Anything staged against the draft goes with it. The foreign key only covers
+  // files that were sent — a staged one belongs to a composer, and this is the
+  // composer being thrown away.
+  await attachments.discardAll({ kind: "broadcast", id });
   await db.delete(broadcasts).where(eq(broadcasts.id, id));
   revalidatePath("/subscribers");
 
   return { ok: true, message: "Deleted." };
+}
+
+/** What is attached to a draft, for the composer to show after a reload. */
+export async function listBroadcastAttachments(id: string): Promise<attachments.StagedFile[]> {
+  const refused = await refuse("broadcasts.send");
+  if (refused) return [];
+
+  return attachments.listStaged({ kind: "broadcast", id });
 }
