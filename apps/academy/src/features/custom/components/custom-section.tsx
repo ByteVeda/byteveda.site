@@ -5,7 +5,7 @@ import { useId, useMemo, useState } from "react";
 import { Field, Select, TextInput } from "@/components/ui";
 import { type Board, type ClassLevel, subjects } from "@/features/inventory/model";
 import { MIX_LABEL } from "@/features/pricing/model";
-import { useSamples } from "@/features/sample/store";
+import { useSamples } from "@/features/sample/components";
 import { TURNAROUND } from "@/lib/site";
 import {
   ADVANCED_OPTIONS,
@@ -14,7 +14,7 @@ import {
   type CustomRequest,
   describeRequest,
   quoteFor,
-} from "./model";
+} from "../model";
 
 const BOARDS = [
   { value: "CBSE", label: "CBSE" },
