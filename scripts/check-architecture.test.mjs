@@ -172,7 +172,7 @@ test("lib may take a type from a feature, and site.ts may take the price", () =>
   const root = fixture({
     "apps/academy/src/features/orders/index.ts": "export type Order = { id: string };\n",
     "apps/academy/src/features/pricing/index.ts": "export const PRICING = { set: 1 };\n",
-    "apps/academy/src/lib/orders/service.ts":
+    "apps/academy/src/lib/mailer.ts":
       'import type { Order } from "@/features/orders";\nexport const send = (order: Order) => order;\n',
     "apps/academy/src/lib/site.ts":
       'import { PRICING } from "@/features/pricing";\nexport const site = { price: PRICING.set };\n',

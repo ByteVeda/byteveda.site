@@ -96,29 +96,6 @@
       }
     },
     {
-      "includes": [
-        "apps/academy/src/lib/orders/service.ts",
-        "apps/academy/src/lib/email/templates.ts"
-      ],
-      "linter": {
-        "rules": {
-          "style": {
-            "noRestrictedImports": {
-              "level": "error",
-              "options": {
-                "patterns": [
-                  {
-                    "group": ["@/features/*", "@/features/**", "!@/features/orders"],
-                    "message": "lib/ may not import a feature. Named exemption: these two files are the Resend adapter and take `import type` only from \"@/features/orders\" — a type is erased before bundling, so no feature code reaches lib/ at runtime. Biome cannot tell a type-only import from a value one, so scripts/check-architecture.mjs is what holds this edge to types."
-                  }
-                ]
-              }
-            }
-          }
-        }
-      }
-    },
-    {
       "includes": ["apps/academy/src/lib/site.ts"],
       "linter": {
         "rules": {

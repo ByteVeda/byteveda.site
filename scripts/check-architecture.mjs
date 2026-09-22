@@ -27,10 +27,9 @@
  *
  *   lib-type-only  `lib/` is adapters to the world outside this process, so it sits
  *                  below `features/` and may not depend on one. A type-only import is
- *                  erased before bundling and leaves no runtime edge, which Biome
- *                  cannot see — `biome.json` exempts the two academy adapter files that
- *                  take `import type` from `@/features/orders`, and this is the rule
- *                  that holds them to types.
+ *                  erased before bundling and leaves no runtime edge, which Biome cannot
+ *                  see, so a `lib/` file may still take a type from a feature. No file
+ *                  currently does; the one value edge left is `site.ts` below.
  *
  *   client-safe    A `"use client"` file says which half of the app it runs in, so it may
  *                  not value-import `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis` or

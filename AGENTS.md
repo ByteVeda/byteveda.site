@@ -39,12 +39,16 @@ named `admin` and `academy` — and both worth knowing before you read the list 
 description:
 
 - **`lib/` in the marketing sites still holds constants, not only adapters.**
-  `flexiq/src/lib/{site,docs,highlight}.ts` and the `site.ts` in `main` and `docs` talk to
-  nothing outside the process: they are names, URLs and nav arrays, and `highlight.ts` is
-  a 187-line regex tokenizer. (`flexiq/src/lib/version.ts` and `og.tsx` do qualify:
-  `version.ts` fetches the GitHub releases API.) They pass every tool because nothing
-  checks what a `lib/` file *is*, only what it imports. The `lib/` line above is the rule
-  for anything you add; these are what it has not been applied to yet.
+  `flexiq/src/lib/{site,docs,highlight}.ts` and the `site.ts` in `main`, `docs` and
+  `academy` talk to nothing outside the process: they are names, URLs and nav arrays, and
+  `highlight.ts` is a 187-line regex tokenizer. (`flexiq/src/lib/version.ts` and `og.tsx`
+  do qualify: `version.ts` fetches the GitHub releases API.) They pass every tool because
+  nothing checks what a `lib/` file *is*, only what it imports. The `lib/` line above is
+  the rule for anything you add; these are what it has not been applied to yet. Academy's
+  `lib/` is down to `env.ts` and that `site.ts`, which is as far as issue #361's third
+  criterion goes — it also expected "the Resend adapter" to remain, and there is no such
+  file: the Resend client is constructed inside `features/orders/service.ts`, where the
+  decision to send lives.
 - **"A page.tsx is a few lines" describes `admin` and no one else.** Admin averages 10
   lines across its 13 route files. Academy averages 55 across 3, `main` 49 across 4,
   `docs` 64 across 2, `flexiq` 65 across 5, with every app's `layout.tsx` between 111 and
@@ -82,25 +86,29 @@ has no server API to put on one. All of that is correct, not unfinished.
 **A file outside the vocabulary needs a reason** that survives the question "why does
 this feature have a word the others don't?" Across all 23 features in the four apps that
 have a `features/` directory — `admin`, `academy`, `flexiq`, `main`; `docs` has none —
-six entries have earned one.
+seven entries have earned one.
 
-Five are the same reason: `model.ts` is client-safe, so it cannot touch `node:crypto`,
-`process.env` or `@/lib/env`, and the code that needs those has to live somewhere.
+Six are the same reason: `model.ts` is client-safe, so it cannot touch `node:crypto`,
+`process.env` or `@/lib/*`, and the code that needs those has to live somewhere.
 
 - `admin/features/auth/crypto.ts` — token hashing and cookie options; `node:crypto`, `process.env`.
 - `admin/features/auth/allowlist.ts` — who may sign in; `@/lib/env`.
 - `admin/features/auth/urls.ts` — absolute URLs; `@/lib/env`.
 - `admin/features/attachments/limits.ts` — upload ceilings; `process.env`.
 - `admin/features/mail/webhook.ts` — Svix signature verification; `node:crypto`.
+- `academy/features/orders/templates.ts` — the two order emails as HTML and text; `@/lib/site`.
+  Domain, not an adapter: it builds strings from an `OrderLine` and reaches nothing outside
+  the process. Admin keeps the same thing in `features/mail/model.ts`, which academy's
+  cannot be, because a model may not take `site` and `TURNAROUND` from `@/lib/site`.
 
-The sixth is a different reason and the only off-vocabulary *directory*:
+The seventh is a different reason and the only off-vocabulary *directory*:
 
 - `main/features/news/data/` — a checked-in `news.json` snapshot that `model.ts` imports
   and `pnpm fetch:news` refreshes. Data, not code; client-safe, so the model may have it.
 
-Six is the whole list as of this writing, and it is a snapshot, not a law — re-derive it
+Seven is the whole list as of this writing, and it is a snapshot, not a law — re-derive it
 before you trust it. No tool checks this rule: the vocabulary is enforced by review, so
-the census only stays honest if someone adding a seventh entry updates this list and
+the census only stays honest if someone adding an eighth entry updates this list and
 says why.
 
 ## The four rules
@@ -300,12 +308,14 @@ loosened rule. **The real fix is for the site metadata to take the price as an a
 rather than import the feature.** Until someone does that, this edge is allowed and no
 other.
 
-Separately, Biome flags `import type` exactly like a value import — it cannot tell them
-apart. Two academy adapters (`lib/orders/service.ts` and `lib/email/templates.ts`) take
-`import type` only from `@/features/orders`, which is erased before bundling and leaves
-no runtime edge. They are exempted in `biome.json` for that reason, and the arch script's
-`lib-type-only` rule is what actually holds them to types. Remove the type-only-ness and
-the script fails even though Biome stays quiet.
+There used to be a second one. Biome flags `import type` exactly like a value import — it
+cannot tell them apart — so `lib/orders/service.ts` and `lib/email/templates.ts` were
+exempted by name for taking a type from `@/features/orders`. The exemption's own message
+called them "the Resend adapter", and neither was: `service.ts` held the one-free-sample
+rule, and `templates.ts` built HTML from an `OrderLine` and never touched Resend. Both are
+`features/orders/` now and the exemption is gone. If a `lib/` file ever does need a type
+from a feature, it needs no exemption from the arch script — `lib-type-only` allows
+`import type` outright — only from Biome, which cannot see the difference.
 
 ## When a rule is wrong
 

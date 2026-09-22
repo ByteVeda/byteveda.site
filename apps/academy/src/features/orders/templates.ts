@@ -13,8 +13,8 @@
  * the shortlist is worth is the person filling it.
  */
 
-import type { OrderLine } from "@/features/orders";
 import { site, TURNAROUND } from "@/lib/site";
+import type { OrderLine } from "./model";
 
 export type Email = { subject: string; html: string; text: string };
 
