@@ -1,9 +1,7 @@
 import { emailThreads, getDb, inboundMessages } from "@byteveda/db";
 import type { MailWorkspace } from "@byteveda/db/constants";
 import { and, eq } from "drizzle-orm";
-import type { InboundRow } from "@/lib/email/inbound";
-import { replyTargetOf } from "@/lib/email/thread";
-import { workspaceOf } from "@/lib/mail/workspaces";
+import { type InboundRow, replyTargetOf, workspaceOf } from "@/features/mail";
 import { previewOf } from "./preview";
 import { UNREAD } from "./queries";
 
@@ -35,7 +33,7 @@ export async function recordInbound(row: InboundRow, receivedAt = new Date()): P
   const preview = previewOf(row.text, row.html);
   // Which business the conversation belongs to, decided from the address it
   // arrived at and the one it came from — the academy writes to itself every
-  // time somebody asks for a sample. See `lib/mail/workspaces.ts`.
+  // time somebody asks for a sample. See `features/mail/model.ts`.
   const workspace = workspaceOf(row.toEmail, row.fromEmail);
 
   // Who a reply goes to, which is not always who sent it. `inbound_messages`

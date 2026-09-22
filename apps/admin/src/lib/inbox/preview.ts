@@ -8,7 +8,7 @@
  * Everything here runs on a string an unauthenticated sender chose: anyone can
  * email the inbound address. That rules out any pattern whose cost grows faster
  * than the input, which is what the length cap below is really for — see
- * `lib/email/thread.ts` for the same reasoning applied to subjects.
+ * `features/mail/model.ts` for the same reasoning applied to subjects.
  */
 
 /** Characters kept. Two clamped lines in the list, with room for a wide one. */

@@ -18,7 +18,7 @@ const ORIGIN = process.env.ADMIN_ORIGIN ?? "http://127.0.0.1:3103";
 const SESSION = process.env.ADMIN_SESSION ?? "";
 const SECRET = process.env.RESEND_WEBHOOK_SECRET ?? "";
 
-/** Same construction as `lib/email/webhook.ts` verifies. */
+/** Same construction as `features/mail/webhook.ts` verifies. */
 function sign(id: string, timestamp: string, body: string): string {
   const key = Buffer.from(SECRET.replace(/^whsec_/, ""), "base64");
   return createHmac("sha256", key).update(`${id}.${timestamp}.${body}`).digest("base64");

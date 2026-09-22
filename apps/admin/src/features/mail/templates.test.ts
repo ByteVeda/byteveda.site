@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { composedEmail, confirmationEmail, replyEmail } from "./templates";
+import { composedEmail, confirmationEmail, replyEmail } from "./model";
 
 /** The wordmark row, which only belongs on mail nobody signs. */
 const MASTHEAD = "byteveda<span";

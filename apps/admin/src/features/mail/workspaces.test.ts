@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isMailWorkspace, workspaceOf } from "./workspaces";
+import { isMailWorkspace, workspaceOf } from "./model";
 
 describe("workspaceOf", () => {
   it("files the academy's own mailboxes under the academy", () => {

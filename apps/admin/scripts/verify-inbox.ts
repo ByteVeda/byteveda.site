@@ -17,7 +17,7 @@
  */
 import { closeDb, emailThreads, getDb, outboundMessages } from "@byteveda/db";
 import { MAIL_WORKSPACES } from "@byteveda/db/constants";
-import type { InboundRow } from "../src/lib/email/inbound";
+import type { InboundRow } from "../src/features/mail/model";
 import { countThreads, countUnread, getConversation, listThreads } from "../src/lib/inbox/queries";
 import {
   markThreadAnswered,

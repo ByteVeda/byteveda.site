@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { bodyMissing, fetchFailureReason, type InboundEvent, inboundRow } from "./inbound";
+import { bodyMissing, fetchFailureReason, type InboundEvent, inboundRow } from "./model";
 
 /** What Resend actually posts: an envelope and an id. No body. */
 const EVENT: InboundEvent = {

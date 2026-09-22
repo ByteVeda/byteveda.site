@@ -1,7 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { fetchInboundBody } from "@/lib/email/client";
-import { type InboundEvent, inboundRow } from "@/lib/email/inbound";
-import { verifySignature } from "@/lib/email/webhook";
+import { fetchInboundBody, type InboundEvent, inboundRow, verifySignature } from "@/features/mail";
 import { recordInbound } from "@/lib/inbox/store";
 import { inboxChanged } from "@/lib/realtime";
 
@@ -18,7 +16,7 @@ type InboundPayload = { type?: string; data?: Partial<InboundEvent> };
  * bytes the signature covers.
  *
  * Two steps, not one. The webhook says a message arrived and names it; the
- * message itself is fetched. See `lib/email/inbound.ts` for why.
+ * message itself is fetched. See `features/mail/model.ts` for why.
  */
 export async function POST(request: NextRequest) {
   const body = await request.text();

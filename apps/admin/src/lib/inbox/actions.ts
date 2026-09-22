@@ -7,14 +7,21 @@ import {
   readableWorkspaces,
   type SessionContext,
 } from "@/features/auth";
+import {
+  bodyMissing,
+  composedEmail,
+  fetchInboundBody,
+  normaliseEmail,
+  reachThread,
+  replyEmail,
+  requires,
+  sendEmail,
+  threadKeyFor,
+} from "@/features/mail";
 import * as attachments from "@/lib/attachments/store";
-import { emailConfigured, fetchInboundBody, sendEmail } from "@/lib/email/client";
-import { bodyMissing } from "@/lib/email/inbound";
-import { composedEmail, replyEmail } from "@/lib/email/templates";
-import { normaliseEmail, threadKeyFor } from "@/lib/email/thread";
+import { emailConfigured } from "@/lib/email/client";
 import { getConversation, listSendableAddresses } from "@/lib/inbox/queries";
 import * as store from "@/lib/inbox/store";
-import { reachThread, requires } from "@/lib/mail/access";
 import { inboxChanged } from "@/lib/realtime";
 
 export type InboxResult = { ok: boolean; message: string };

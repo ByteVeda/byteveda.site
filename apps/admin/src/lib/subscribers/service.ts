@@ -1,8 +1,7 @@
 import { randomBytes } from "node:crypto";
 import { getDb, type Subscriber, subscribers } from "@byteveda/db";
 import { eq } from "drizzle-orm";
-import { sendEmail } from "@/lib/email/client";
-import { confirmationEmail } from "@/lib/email/templates";
+import { confirmationEmail, sendEmail } from "@/features/mail";
 import { subscribersChanged } from "@/lib/realtime";
 import { getSettings } from "@/lib/settings";
 

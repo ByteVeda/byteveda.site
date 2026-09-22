@@ -1,7 +1,7 @@
 import { getDb, outboundMessages } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import type { AccessSnapshot } from "@/features/auth";
-import { missing, reachThread, requires, type Verdict } from "@/lib/mail/access";
+import { missing, reachThread, requires, type Verdict } from "@/features/mail";
 import type { AttachmentScope } from "./store";
 
 /**

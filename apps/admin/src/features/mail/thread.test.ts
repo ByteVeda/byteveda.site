@@ -5,7 +5,7 @@ import {
   normaliseSubject,
   replyTargetOf,
   threadKeyFor,
-} from "./thread";
+} from "./model";
 
 describe("normaliseSubject", () => {
   it("strips a reply prefix and folds whitespace and case", () => {
