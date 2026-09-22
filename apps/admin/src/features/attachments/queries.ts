@@ -1,11 +1,18 @@
-import { getDb, outboundMessages } from "@byteveda/db";
-import { eq } from "drizzle-orm";
+import { emailAttachments, getDb, outboundMessages } from "@byteveda/db";
+import { and, asc, eq, isNull } from "drizzle-orm";
 import type { AccessSnapshot } from "@/features/auth";
 import { missing, reachThread, requires, type Verdict } from "@/features/mail";
-import type { AttachmentScope } from "./store";
+import {
+  type AttachmentRecord,
+  type AttachmentScope,
+  type LoadedFile,
+  parseScope,
+  type StagedFile,
+  scopeKey,
+} from "./model";
 
 /**
- * Who may attach a file, and who may read one back.
+ * Who may attach a file, who may read one back, and what is currently attached.
  *
  * Attachments inherit their permissions from the message they belong to, so the
  * question is never "may this operator use attachments" but "may this operator
@@ -17,14 +24,14 @@ import type { AttachmentScope } from "./store";
  * cannot answer it differently.
  */
 
-/** Reads `?scope=reply&for=<thread key>` into something typed, or nothing. */
-export function parseScope(kind: string | null, id: string | null): AttachmentScope | null {
-  if (!id) return null;
-  if (kind === "reply") return { kind: "reply", id };
-  if (kind === "compose") return { kind: "compose", id };
-  if (kind === "broadcast") return { kind: "broadcast", id };
-  return null;
-}
+/** Everything about a stored file except the bytes. Shared with `store.ts`. */
+export const METADATA = {
+  id: emailAttachments.id,
+  filename: emailAttachments.filename,
+  contentType: emailAttachments.contentType,
+  byteSize: emailAttachments.byteSize,
+  createdAt: emailAttachments.createdAt,
+};
 
 /**
  * Whether this operator may put a file in this composer.
@@ -83,4 +90,57 @@ export async function authoriseDownload(
   if (!message.threadKey) return requires(access, "subscribers.read");
 
   return reachThread(message.threadKey, access, "mail.read");
+}
+
+/** What is currently attached to a composer, oldest first — the order they were picked. */
+export async function listStaged(scope: AttachmentScope): Promise<StagedFile[]> {
+  return getDb()
+    .select(METADATA)
+    .from(emailAttachments)
+    .where(and(eq(emailAttachments.scope, scopeKey(scope)), isNull(emailAttachments.messageId)))
+    .orderBy(asc(emailAttachments.createdAt));
+}
+
+/** The same files, with their bytes, for a send that is about to happen. */
+export async function loadForSend(scope: AttachmentScope): Promise<LoadedFile[]> {
+  return getDb()
+    .select({ ...METADATA, content: emailAttachments.content })
+    .from(emailAttachments)
+    .where(and(eq(emailAttachments.scope, scopeKey(scope)), isNull(emailAttachments.messageId)))
+    .orderBy(asc(emailAttachments.createdAt));
+}
+
+/**
+ * Files one attachment out of storage for download, by id.
+ *
+ * Deliberately not scoped: the caller has already decided whether this operator
+ * may see the conversation it belongs to, and a download route that re-derived
+ * that from the file would be making an authorisation decision in the wrong
+ * place. See `app/api/attachments/[id]/route.ts`.
+ */
+export async function load(id: string): Promise<LoadedFile | null> {
+  const [row] = await getDb()
+    .select({ ...METADATA, content: emailAttachments.content })
+    .from(emailAttachments)
+    .where(eq(emailAttachments.id, id))
+    .limit(1);
+
+  return row ?? null;
+}
+
+/**
+ * Everything about an attachment except the bytes.
+ *
+ * Read before `load`, and the reason is the size of the column: deciding
+ * whether somebody may download a 4MB file should not cost 4MB of transfer when
+ * the answer is no.
+ */
+export async function describe(id: string): Promise<AttachmentRecord | null> {
+  const [row] = await getDb()
+    .select({ ...METADATA, scope: emailAttachments.scope, messageId: emailAttachments.messageId })
+    .from(emailAttachments)
+    .where(eq(emailAttachments.id, id))
+    .limit(1);
+
+  return row ?? null;
 }

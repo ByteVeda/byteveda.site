@@ -1,14 +1,21 @@
 /**
- * What may be attached to a message, and how much of it.
+ * What may be attached to a message, how much of it, and which composer it is
+ * waiting in.
  *
- * Pure functions with no imports: these are the rules Resend and the hosting
+ * Pure rules with no value imports: these are the limits Resend and the hosting
  * platform impose, and they are checked in three places — the browser before an
  * upload starts, the route handler that receives it, and the send itself. One
  * module so the three cannot disagree, and no I/O so all three can run it.
  *
+ * The one thing that is not here is the deployment's per-file override, which
+ * reads `process.env` and so lives in `limits.ts`. This file is the half the
+ * browser imports.
+ *
  * Every number below is Resend's, documented, with the source next to it:
  * https://resend.com/docs/dashboard/emails/attachments
  */
+
+import type { EmailAttachment } from "@byteveda/db";
 
 /**
  * Resend's ceiling: "Emails can be no larger than 40MB (including attachments
@@ -29,16 +36,12 @@ export const RESEND_MAX_EMAIL_BYTES = 40 * 1024 * 1024;
  * request, and a 40MB email is assembled from several of them. 4MB leaves room
  * for the multipart framing.
  *
- * `ADMIN_MAX_ATTACHMENT_BYTES` raises it for a deployment that is not behind
- * that limit — a container, or a self-hosted Node server.
+ * A deployment that is not behind that limit — a container, or a self-hosted
+ * Node server — raises it with `ADMIN_MAX_ATTACHMENT_BYTES`. That is an
+ * environment read, so it lives in `limits.ts`; this is what the browser has,
+ * and what the checks below assume when nobody passes the resolved one in.
  */
-export function maxFileBytes(): number {
-  const configured = Number(process.env.ADMIN_MAX_ATTACHMENT_BYTES);
-  if (Number.isInteger(configured) && configured > 0) {
-    return Math.min(configured, RESEND_MAX_EMAIL_BYTES);
-  }
-  return 4 * 1024 * 1024;
-}
+export const DEFAULT_MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024;
 
 /**
  * Room left for everything in the message that is not an attachment: the MIME
@@ -146,11 +149,17 @@ const ACCEPTED: Accepted = { ok: true };
  * file is too big on its own, or it does not fit alongside what is already
  * there. The message names the number, because "too large" without it sends
  * somebody back to the file manager to guess.
+ *
+ * `perFile` is the ceiling the deployment resolved. The server passes what
+ * `maxFileBytes()` worked out; the browser has no environment to read and so
+ * gets the default, which is exactly what it resolved before this was a
+ * parameter.
  */
 export function checkAttachment(
   candidate: { filename: string; byteSize: number },
   existing: readonly Sized[] = [],
   bodyBytes = 0,
+  perFile = DEFAULT_MAX_ATTACHMENT_BYTES,
 ): Verdict {
   const { filename, byteSize } = candidate;
 
@@ -163,7 +172,6 @@ export function checkAttachment(
     };
   }
 
-  const perFile = maxFileBytes();
   if (byteSize > perFile) {
     return {
       ok: false,
@@ -208,3 +216,55 @@ export function formatBytes(bytes: number): string {
   if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
+
+/**
+ * Where a file waits between being chosen and being sent.
+ *
+ * Uploads are staged rather than posted with the message, and the reason is
+ * arithmetic: Resend allows 40MB per email, a serverless request body allows
+ * 4.5MB, and the only way to have both is one file per request with the message
+ * assembled afterwards. `scope` is the composer it is waiting in.
+ *
+ * A staged row with no `message_id` is a file in a composer. Once the message
+ * goes out the row is claimed by it, which is also what stops the sweep in
+ * `store.ts` from taking it.
+ */
+export type AttachmentScope =
+  /** A reply in the inbox, keyed by the conversation it belongs to. */
+  | { kind: "reply"; id: string }
+  /**
+   * A message being written to somebody who has not written in.
+   *
+   * Keyed by a draft id rather than by a conversation, because there is no
+   * conversation yet — the thread is opened by the send. A sheet going out to
+   * a customer is the case this exists for, and the file has to be uploaded
+   * before the address it is going to is even final.
+   */
+  | { kind: "compose"; id: string }
+  /** A broadcast, keyed by its draft. */
+  | { kind: "broadcast"; id: string };
+
+export function scopeKey(scope: AttachmentScope): string {
+  return `${scope.kind}:${scope.id}`;
+}
+
+/** Reads `?scope=reply&for=<thread key>` into something typed, or nothing. */
+export function parseScope(kind: string | null, id: string | null): AttachmentScope | null {
+  if (!id) return null;
+  if (kind === "reply") return { kind: "reply", id };
+  if (kind === "compose") return { kind: "compose", id };
+  if (kind === "broadcast") return { kind: "broadcast", id };
+  return null;
+}
+
+/** What the composer shows: everything but the bytes. */
+export type StagedFile = Pick<
+  EmailAttachment,
+  "id" | "filename" | "contentType" | "byteSize" | "createdAt"
+>;
+
+/** What a send needs. Reading `content` is what makes this the expensive one. */
+export type LoadedFile = StagedFile & { content: Buffer };
+
+/** Enough to decide whether somebody may have the file, without reading it. */
+export type AttachmentRecord = StagedFile & { scope: string; messageId: string | null };

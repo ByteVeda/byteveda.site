@@ -1,7 +1,8 @@
 "use server";
 
 import { getSession } from "@/features/auth";
-import { authoriseScope, parseScope } from "./access";
+import { parseScope } from "./model";
+import { authoriseScope } from "./queries";
 import { discard } from "./store";
 
 export type AttachmentResult = { ok: boolean; message: string };

@@ -6,7 +6,6 @@
  * renders it, under `src/views/`, so that deleting a page deletes its parts.
  */
 export { AccessProvider, useAccess, useCan, useCanReadWorkspace } from "./access";
-export { type AttachedFile, AttachmentPicker } from "./attachment-picker";
 export { type ConfirmOptions, ConfirmProvider, useConfirm } from "./confirm";
 export { InboxAutoRefresh, InboxLiveProvider, useInboxUnread } from "./inbox-live";
 export { LiveRefresh } from "./live-refresh";

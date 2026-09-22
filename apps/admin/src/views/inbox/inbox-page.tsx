@@ -2,10 +2,9 @@ import type { MailWorkspace } from "@byteveda/db/constants";
 import { ArrowLeft, MoveRight, Paperclip, TriangleAlert } from "lucide-react";
 import Link from "next/link";
 import { InboxAutoRefresh, LocalTime, PageHeader } from "@/components";
+import { formatBytes, listStaged, maxFileBytes } from "@/features/attachments";
 import { can, readableWorkspaces, requirePermission } from "@/features/auth";
 import { bodyMissing, isMailWorkspace } from "@/features/mail";
-import { listStaged } from "@/lib/attachments/store";
-import { formatBytes, maxFileBytes } from "@/lib/email/attachments";
 import { emailConfigured } from "@/lib/email/client";
 import {
   type Conversation,

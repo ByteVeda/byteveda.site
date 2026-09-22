@@ -1,58 +1,21 @@
-import { type EmailAttachment, emailAttachments, getDb } from "@byteveda/db";
-import { and, asc, eq, isNull, lt } from "drizzle-orm";
-import { safeFilename } from "@/lib/email/attachments";
+import { emailAttachments, getDb } from "@byteveda/db";
+import { and, eq, isNull, lt } from "drizzle-orm";
+import { type AttachmentScope, type StagedFile, safeFilename, scopeKey } from "./model";
+import { METADATA } from "./queries";
 
 /**
- * Where a file waits between being chosen and being sent.
+ * Putting a file into a composer, and taking it out again.
  *
  * Uploads are staged rather than posted with the message, and the reason is
  * arithmetic: Resend allows 40MB per email, a serverless request body allows
  * 4.5MB, and the only way to have both is one file per request with the message
- * assembled afterwards. `scope` is the composer it is waiting in.
+ * assembled afterwards. See `AttachmentScope` in `model.ts` for what a file is
+ * waiting in.
  *
  * A staged row with no `message_id` is a file in a composer. Once the message
  * goes out the row is claimed by it, which is also what stops the sweep below
  * from taking it.
  */
-
-export type AttachmentScope =
-  /** A reply in the inbox, keyed by the conversation it belongs to. */
-  | { kind: "reply"; id: string }
-  /**
-   * A message being written to somebody who has not written in.
-   *
-   * Keyed by a draft id rather than by a conversation, because there is no
-   * conversation yet — the thread is opened by the send. A sheet going out to
-   * a customer is the case this exists for, and the file has to be uploaded
-   * before the address it is going to is even final.
-   */
-  | { kind: "compose"; id: string }
-  /** A broadcast, keyed by its draft. */
-  | { kind: "broadcast"; id: string };
-
-export function scopeKey(scope: AttachmentScope): string {
-  return `${scope.kind}:${scope.id}`;
-}
-
-/** What the composer shows: everything but the bytes. */
-export type StagedFile = Pick<
-  EmailAttachment,
-  "id" | "filename" | "contentType" | "byteSize" | "createdAt"
->;
-
-/** What a send needs. Reading `content` is what makes this the expensive one. */
-export type LoadedFile = StagedFile & { content: Buffer };
-
-/** Enough to decide whether somebody may have the file, without reading it. */
-export type AttachmentRecord = StagedFile & { scope: string; messageId: string | null };
-
-const METADATA = {
-  id: emailAttachments.id,
-  filename: emailAttachments.filename,
-  contentType: emailAttachments.contentType,
-  byteSize: emailAttachments.byteSize,
-  createdAt: emailAttachments.createdAt,
-};
 
 /**
  * How long an unsent upload survives.
@@ -91,59 +54,6 @@ export async function stage(input: {
     .returning(METADATA);
 
   return row;
-}
-
-/** What is currently attached to a composer, oldest first — the order they were picked. */
-export async function listStaged(scope: AttachmentScope): Promise<StagedFile[]> {
-  return getDb()
-    .select(METADATA)
-    .from(emailAttachments)
-    .where(and(eq(emailAttachments.scope, scopeKey(scope)), isNull(emailAttachments.messageId)))
-    .orderBy(asc(emailAttachments.createdAt));
-}
-
-/** The same files, with their bytes, for a send that is about to happen. */
-export async function loadForSend(scope: AttachmentScope): Promise<LoadedFile[]> {
-  return getDb()
-    .select({ ...METADATA, content: emailAttachments.content })
-    .from(emailAttachments)
-    .where(and(eq(emailAttachments.scope, scopeKey(scope)), isNull(emailAttachments.messageId)))
-    .orderBy(asc(emailAttachments.createdAt));
-}
-
-/**
- * Files one attachment out of storage for download, by id.
- *
- * Deliberately not scoped: the caller has already decided whether this operator
- * may see the conversation it belongs to, and a download route that re-derived
- * that from the file would be making an authorisation decision in the wrong
- * place. See `app/api/attachments/[id]/route.ts`.
- */
-export async function load(id: string): Promise<LoadedFile | null> {
-  const [row] = await getDb()
-    .select({ ...METADATA, content: emailAttachments.content })
-    .from(emailAttachments)
-    .where(eq(emailAttachments.id, id))
-    .limit(1);
-
-  return row ?? null;
-}
-
-/**
- * Everything about an attachment except the bytes.
- *
- * Read before `load`, and the reason is the size of the column: deciding
- * whether somebody may download a 4MB file should not cost 4MB of transfer when
- * the answer is no.
- */
-export async function describe(id: string): Promise<AttachmentRecord | null> {
-  const [row] = await getDb()
-    .select({ ...METADATA, scope: emailAttachments.scope, messageId: emailAttachments.messageId })
-    .from(emailAttachments)
-    .where(eq(emailAttachments.id, id))
-    .limit(1);
-
-  return row ?? null;
 }
 
 /**

@@ -3,7 +3,7 @@
 import { Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useTransition } from "react";
-import { type AttachedFile, AttachmentPicker } from "@/components";
+import { type AttachedFile, AttachmentPicker } from "@/features/attachments/components";
 import { replyToThread } from "@/lib/inbox/actions";
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
   canSend: boolean;
   /** Files already staged against this conversation, from an earlier visit. */
   attachments: AttachedFile[];
-  /** The per-file ceiling as the server resolves it. See `lib/email/attachments.ts`. */
+  /** The per-file ceiling as the server resolves it. See `features/attachments/limits.ts`. */
   maxFileBytes: number;
 };
 

@@ -2,13 +2,8 @@
 
 import { Paperclip, X } from "lucide-react";
 import { useId, useRef, useState } from "react";
-import { removeAttachment } from "@/lib/attachments/actions";
-import {
-  checkAttachment,
-  formatBytes,
-  RESEND_MAX_EMAIL_BYTES,
-  remainingBytes,
-} from "@/lib/email/attachments";
+import { removeAttachment } from "../actions";
+import { checkAttachment, formatBytes, RESEND_MAX_EMAIL_BYTES, remainingBytes } from "../model";
 
 /**
  * A file staged against a composer. Structurally what `listStaged` returns,
@@ -22,7 +17,7 @@ export type AttachedFile = {
 };
 
 type Props = {
-  /** Which composer these belong to. See `lib/attachments/store.ts`. */
+  /** Which composer these belong to. See `AttachmentScope` in `../model.ts`. */
   kind: "reply" | "compose" | "broadcast";
   /**
    * What the composer is attached to — a thread key, or a draft id.

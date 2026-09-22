@@ -1,7 +1,7 @@
 import { LiveRefresh, PageHeader } from "@/components";
+import { maxFileBytes } from "@/features/attachments";
 import { can, requirePermission } from "@/features/auth";
 import { listBroadcasts } from "@/lib/broadcasts/actions";
-import { maxFileBytes } from "@/lib/email/attachments";
 import { getSettings } from "@/lib/settings";
 import { countByStatus, listSubscribers } from "@/lib/subscribers/queries";
 import { ago } from "@/shared/format";

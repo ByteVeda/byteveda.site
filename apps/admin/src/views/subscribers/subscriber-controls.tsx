@@ -3,7 +3,8 @@
 import type { Broadcast, Subscriber } from "@byteveda/db";
 import { Mail, Send, Trash2 } from "lucide-react";
 import { useState, useTransition } from "react";
-import { type AttachedFile, AttachmentPicker, useConfirm } from "@/components";
+import { useConfirm } from "@/components";
+import { type AttachedFile, AttachmentPicker } from "@/features/attachments/components";
 import { deleteBroadcast, saveBroadcast, sendBroadcast } from "@/lib/broadcasts/actions";
 import { addSubscriber, removeSubscriber, resendConfirmation } from "@/lib/subscribers/actions";
 import { ago } from "@/shared/format";
@@ -116,7 +117,7 @@ export function BroadcastComposer({
 }: {
   broadcasts: Broadcast[];
   activeCount: number;
-  /** The per-file ceiling as the server resolves it. See `lib/email/attachments.ts`. */
+  /** The per-file ceiling as the server resolves it. See `features/attachments/limits.ts`. */
   maxFileBytes: number;
 }) {
   const [subject, setSubject] = useState("");

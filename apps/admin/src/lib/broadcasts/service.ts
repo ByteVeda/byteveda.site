@@ -1,9 +1,9 @@
 import { broadcasts, getDb, type Post } from "@byteveda/db";
 import { eq } from "drizzle-orm";
 import { marked } from "marked";
+import * as attachments from "@/features/attachments";
+import { checkMessage } from "@/features/attachments/model";
 import { announcementEmail, broadcastEmail, sendMany } from "@/features/mail";
-import * as attachments from "@/lib/attachments/store";
-import { checkMessage } from "@/lib/email/attachments";
 import { env } from "@/lib/env";
 import { getSettings } from "@/lib/settings";
 import { activeSubscribers } from "@/lib/subscribers/queries";

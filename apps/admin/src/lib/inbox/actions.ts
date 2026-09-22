@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import * as attachments from "@/features/attachments";
 import {
   getSession,
   type Permission,
@@ -18,7 +19,6 @@ import {
   sendEmail,
   threadKeyFor,
 } from "@/features/mail";
-import * as attachments from "@/lib/attachments/store";
 import { emailConfigured } from "@/lib/email/client";
 import { getConversation, listSendableAddresses } from "@/lib/inbox/queries";
 import * as store from "@/lib/inbox/store";

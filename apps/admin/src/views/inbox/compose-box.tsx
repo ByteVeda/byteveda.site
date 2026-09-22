@@ -3,7 +3,7 @@
 import { PenLine, Send, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState, useTransition } from "react";
-import { type AttachedFile, AttachmentPicker } from "@/components";
+import { type AttachedFile, AttachmentPicker } from "@/features/attachments/components";
 import { composeMessage } from "@/lib/inbox/actions";
 import type { SendableAddress } from "@/lib/inbox/queries";
 
