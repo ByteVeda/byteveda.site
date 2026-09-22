@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { containsJsx, htmlToMarkdown, markdownToHtml } from "./markdown";
+import { containsJsx, htmlToMarkdown, markdownToHtml } from "./model";
 
 describe("htmlToMarkdown", () => {
   it("uses ATX headings and hyphen bullets", () => {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PageHeader } from "@/components";
 import { can, readableWorkspaces, requireSession } from "@/features/auth";
 import { countUnread } from "@/features/inbox";
-import { countPostsByStatus, listPosts } from "@/lib/posts/queries";
+import { countPostsByStatus, listPosts } from "@/features/posts";
 import { getStatsOverview, WINDOW_DAYS } from "@/lib/stats/queries";
 import { countByStatus } from "@/lib/subscribers/queries";
 import { count, delta } from "@/shared/format";

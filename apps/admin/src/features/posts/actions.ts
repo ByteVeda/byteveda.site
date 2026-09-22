@@ -16,8 +16,8 @@ import { redirect } from "next/navigation";
 import { refuse, requirePermission, requireSession } from "@/features/auth";
 import { announcePost } from "@/lib/broadcasts/service";
 import { revalidateFlexiq } from "@/lib/revalidate";
+import { isValidSlug, slugify, uniqueSlug } from "./model";
 import { getTakenSlugs } from "./queries";
-import { isValidSlug, slugify, uniqueSlug } from "./slug";
 
 export type PostDraft = {
   title: string;

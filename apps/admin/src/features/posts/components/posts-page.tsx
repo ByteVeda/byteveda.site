@@ -1,10 +1,13 @@
 import { Plus } from "lucide-react";
 import Link from "next/link";
-import { PageHeader } from "@/components";
+// Deep, not through `@/components`: that barrel re-exports the console's client
+// components, and this file is on the posts front door — every server module
+// that imports `@/features/posts` would pull the whole UI graph with it.
+import { PageHeader } from "@/components/page-header";
 import { can, requirePermission } from "@/features/auth";
-import { createDraft } from "@/lib/posts/actions";
-import { listPosts } from "@/lib/posts/queries";
 import { ago } from "@/shared/format";
+import { createDraft } from "../actions";
+import { listPosts } from "../queries";
 
 export async function PostsPage() {
   const { access } = await requirePermission("posts.read");

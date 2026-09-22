@@ -1,22 +1,6 @@
 import { adminUsers, getDb, type Post, type PostSite, postRevisions, posts } from "@byteveda/db";
 import { and, desc, eq, ne } from "drizzle-orm";
-
-export type PostListItem = {
-  id: string;
-  slug: string;
-  title: string;
-  status: Post["status"];
-  tags: string[];
-  updatedAt: Date;
-  publishedAt: Date | null;
-};
-
-export type RevisionListItem = {
-  id: string;
-  title: string;
-  createdAt: Date;
-  authorLogin: string | null;
-};
+import type { PostListItem, RevisionListItem } from "./model";
 
 export async function listPosts(site: PostSite = "flexiq"): Promise<PostListItem[]> {
   return getDb()

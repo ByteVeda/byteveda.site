@@ -7,7 +7,7 @@ import StarterKit from "@tiptap/starter-kit";
 import { ExternalLink, Eye, EyeOff, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { useConfirm } from "@/components";
+import { useConfirm } from "@/components/confirm";
 import {
   type ActionResult,
   deletePost,
@@ -15,10 +15,15 @@ import {
   restoreRevision,
   savePost,
   setPostStatus,
-} from "@/lib/posts/actions";
-import { containsJsx, htmlToMarkdown, markdownToHtml } from "@/lib/posts/markdown";
-import type { RevisionListItem } from "@/lib/posts/queries";
-import { isValidSlug, slugify } from "@/lib/posts/slug";
+} from "../actions";
+import {
+  containsJsx,
+  htmlToMarkdown,
+  isValidSlug,
+  markdownToHtml,
+  type RevisionListItem,
+  slugify,
+} from "../model";
 import { SeoPanel } from "./seo-panel";
 import { TagInput } from "./tag-input";
 import { Toolbar } from "./toolbar";

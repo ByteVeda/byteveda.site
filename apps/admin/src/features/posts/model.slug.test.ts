@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isValidSlug, slugify, uniqueSlug } from "./slug";
+import { isValidSlug, slugify, uniqueSlug } from "./model";
 
 describe("slugify", () => {
   it("lowercases and joins words with single hyphens", () => {
