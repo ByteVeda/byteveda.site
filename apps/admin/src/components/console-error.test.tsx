@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
-import ConsoleError from "./error";
+import { ConsoleError } from "./console-error";
 
 /**
  * The boundary only ever renders when something else has already gone wrong, so
