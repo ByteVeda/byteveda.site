@@ -1,5 +1,6 @@
 "use client";
 
+import type { MailWorkspace } from "@byteveda/db/constants";
 import { Archive, ArchiveRestore, MailOpen, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
@@ -16,6 +17,8 @@ type Props = {
   correspondent: string;
   filter: ThreadFilter;
   query: string;
+  /** Carried so that leaving a conversation returns to the tab it was opened from. */
+  workspace: MailWorkspace | undefined;
 };
 
 /**
@@ -28,13 +31,20 @@ type Props = {
  * list behind it, so continuing to show it is a view of something that is not
  * there.
  */
-export function ThreadActions({ threadKey, archived, correspondent, filter, query }: Props) {
+export function ThreadActions({
+  threadKey,
+  archived,
+  correspondent,
+  filter,
+  query,
+  workspace,
+}: Props) {
   const router = useRouter();
   const confirm = useConfirm();
   const [pending, startTransition] = useTransition();
 
   function leave() {
-    router.push(inboxHref({ filter, query }));
+    router.push(inboxHref({ filter, query, workspace }));
     router.refresh();
   }
 

@@ -1,12 +1,18 @@
-import { ArrowLeft, MoveRight, TriangleAlert } from "lucide-react";
+import type { MailWorkspace } from "@byteveda/db/constants";
+import { ArrowLeft, MoveRight, Paperclip, TriangleAlert } from "lucide-react";
 import Link from "next/link";
 import { InboxAutoRefresh, LocalTime, PageHeader } from "@/components";
+import { listStaged } from "@/lib/attachments/store";
+import { can, readableWorkspaces } from "@/lib/auth/roles";
+import { requirePermission } from "@/lib/auth/session";
+import { formatBytes, maxFileBytes } from "@/lib/email/attachments";
 import { emailConfigured } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
 import { initial } from "@/lib/format";
 import {
   type Conversation,
   countThreads,
+  countWorkspaces,
   getConversation,
   isThreadFilter,
   listThreads,
@@ -14,32 +20,46 @@ import {
   type ThreadMessage,
 } from "@/lib/inbox/queries";
 import { inboxHref } from "@/lib/inbox/url";
+import { isMailWorkspace } from "@/lib/mail/workspaces";
 import { MessageBody } from "./message-body";
 import { ReplyBox } from "./reply-box";
 import { ThreadActions } from "./thread-actions";
 import { ThreadList } from "./thread-list";
 import { ThreadOpener } from "./thread-opener";
+import { WorkspaceTabs } from "./workspace-tabs";
 
-type Props = { searchParams: Promise<{ t?: string; f?: string; q?: string }> };
+type Props = { searchParams: Promise<{ t?: string; f?: string; q?: string; w?: string }> };
 
 export async function InboxPage({ searchParams }: Props) {
-  const { t, f, q } = await searchParams;
-
-  const filter = isThreadFilter(f) ? f : "inbox";
-  const query = q?.trim() ?? "";
-
-  // All three at once when a conversation was named in the URL, which is every
-  // navigation from the list. Only a bare `/inbox` has to see the threads first
-  // to learn which one is newest.
-  const [threads, counts, requested] = await Promise.all([
-    listThreads({ filter, query }),
-    countThreads(),
-    t ? getConversation(t) : Promise.resolve(null),
+  const [{ access }, { t, f, q, w }] = await Promise.all([
+    requirePermission("mail.read"),
+    searchParams,
   ]);
 
-  // Default to the newest conversation rather than an empty right-hand pane.
-  const selectedKey = requested?.thread.threadKey ?? (t ? undefined : threads[0]?.threadKey);
-  const conversation = requested ?? (selectedKey ? await getConversation(selectedKey) : null);
+  const allowed = readableWorkspaces(access);
+  const filter = isThreadFilter(f) ? f : "inbox";
+  const query = q?.trim() ?? "";
+  // A workspace in the URL that this operator cannot read is not an error, it
+  // is simply not one of theirs — the tabs show what they have, and an
+  // unreadable one falls back to all of them rather than to an empty page.
+  const workspace = isMailWorkspace(w) && allowed.includes(w) ? w : undefined;
+
+  const scope = { allowed, workspace };
+
+  // All four at once when a conversation was named in the URL, which is every
+  // navigation from the list.
+  const [threads, counts, workspaceCounts, conversation] = await Promise.all([
+    listThreads({ ...scope, filter, query }),
+    countThreads(scope),
+    countWorkspaces(scope),
+    t ? getConversation(t, scope) : Promise.resolve(null),
+  ]);
+
+  // Staged for the conversation that is actually open, and only then: this is a
+  // second round trip, and the list does not need it.
+  const staged = conversation
+    ? await listStaged({ kind: "reply", id: conversation.thread.threadKey })
+    : [];
 
   return (
     <>
@@ -47,9 +67,28 @@ export async function InboxPage({ searchParams }: Props) {
           notice. The stream that badges the rail also ticks this. */}
       <InboxAutoRefresh />
 
-      <PageHeader title="Inbox" sub={summary(counts.unread, query, threads.length)} />
+      <PageHeader title="Inbox" sub={summary(counts.unread, query, threads.length)}>
+        {/* Only when there is a choice to make. One workspace is not a set of
+            tabs, it is a heading nobody asked for. */}
+        {allowed.length > 1 && (
+          <WorkspaceTabs
+            allowed={allowed}
+            selected={workspace}
+            counts={workspaceCounts}
+            filter={filter}
+            query={query}
+          />
+        )}
+      </PageHeader>
 
-      {counts.inbox === 0 && counts.archived === 0 && !query ? (
+      {allowed.length === 0 ? (
+        <div className="content">
+          <div className="empty">
+            <h3>No mailboxes</h3>
+            <p>Your account has no mail access yet. A super admin can grant it under Members.</p>
+          </div>
+        </div>
+      ) : counts.inbox === 0 && counts.archived === 0 && !query ? (
         <div className="content">
           <div className="empty">
             <h3>No mail yet</h3>
@@ -69,6 +108,8 @@ export async function InboxPage({ searchParams }: Props) {
             counts={counts}
             filter={filter}
             query={query}
+            workspace={workspace}
+            showWorkspace={allowed.length > 1 && !workspace}
             selected={conversation?.thread.threadKey}
           />
 
@@ -78,7 +119,11 @@ export async function InboxPage({ searchParams }: Props) {
                 conversation={conversation}
                 filter={filter}
                 query={query}
-                canSend={emailConfigured()}
+                workspace={workspace}
+                staged={staged}
+                canSend={emailConfigured() && can(access, "mail.send")}
+                canManage={can(access, "mail.manage")}
+                maxFileBytes={maxFileBytes()}
               />
             ) : (
               <div className="empty">
@@ -103,12 +148,20 @@ function ConversationPane({
   conversation,
   filter,
   query,
+  workspace,
+  staged,
   canSend,
+  canManage,
+  maxFileBytes: perFile,
 }: {
   conversation: Conversation;
   filter: ThreadFilter;
   query: string;
+  workspace: MailWorkspace | undefined;
+  staged: { id: string; filename: string; contentType: string; byteSize: number }[];
   canSend: boolean;
+  canManage: boolean;
+  maxFileBytes: number;
 }) {
   const { thread, messages } = conversation;
 
@@ -119,7 +172,7 @@ function ConversationPane({
   return (
     <>
       <header className="thread-head">
-        <Link className="thread-back" href={inboxHref({ filter, query })}>
+        <Link className="thread-back" href={inboxHref({ filter, query, workspace })}>
           <ArrowLeft aria-hidden />
           All conversations
         </Link>
@@ -135,13 +188,16 @@ function ConversationPane({
           </span>
         </p>
 
-        <ThreadActions
-          threadKey={thread.threadKey}
-          archived={thread.archivedAt !== null}
-          correspondent={thread.correspondentEmail}
-          filter={filter}
-          query={query}
-        />
+        {canManage && (
+          <ThreadActions
+            threadKey={thread.threadKey}
+            archived={thread.archivedAt !== null}
+            correspondent={thread.correspondentEmail}
+            filter={filter}
+            query={query}
+            workspace={workspace}
+          />
+        )}
       </header>
 
       {/* Marks the conversation read and repairs any missing body. Below the
@@ -153,12 +209,20 @@ function ConversationPane({
         <Message key={message.id} message={message} />
       ))}
 
-      <ReplyBox
-        threadKey={thread.threadKey}
-        to={thread.correspondentEmail}
-        from={thread.mailbox}
-        canSend={canSend}
-      />
+      {canSend ? (
+        <ReplyBox
+          threadKey={thread.threadKey}
+          to={thread.correspondentEmail}
+          from={thread.mailbox}
+          canSend={canSend}
+          attachments={staged}
+          maxFileBytes={perFile}
+        />
+      ) : (
+        <p className="notice notice-warn block-gap">
+          <span>Your role can read this conversation but not answer it.</span>
+        </p>
+      )}
     </>
   );
 }
@@ -200,12 +264,29 @@ function Message({ message }: { message: ThreadMessage }) {
         </p>
       )}
 
-      {sent && !message.text.trim() ? (
+      {sent && !message.text.trim() && message.attachments.length === 0 ? (
         <p className="message-empty">
           Sent, but the text was not kept — this reply predates the console storing them.
         </p>
       ) : (
         <MessageBody text={message.text} html={message.html} />
+      )}
+
+      {message.attachments.length > 0 && (
+        <ul className="attachment-list message-attachments">
+          {message.attachments.map((file) => (
+            <li key={file.id} className="attachment">
+              <Paperclip aria-hidden />
+              {/* A plain link, not a fetch: the browser's own download is what
+                  an operator expects of a file, and the route is behind the
+                  same session cookie as this page. */}
+              <a href={`/api/attachments/${file.id}`} download={file.filename}>
+                {file.filename}
+              </a>
+              <span className="attachment-size">{formatBytes(file.byteSize)}</span>
+            </li>
+          ))}
+        </ul>
       )}
     </article>
   );

@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+import { readableWorkspaces } from "@/lib/auth/roles";
 import { getSession } from "@/lib/auth/session";
 import { countUnread } from "@/lib/inbox/queries";
 import { inboxChanged } from "@/lib/realtime";
@@ -25,9 +26,15 @@ export const maxDuration = 300;
  * checks a cookie exists, and this checks it names a live session.
  */
 export async function GET(request: NextRequest) {
-  if (!(await getSession())) {
+  const session = await getSession();
+  if (!session) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
+
+  // The badge counts what this operator could open, and no more. Resolved once
+  // here rather than per announcement: the stream is held open for minutes, but
+  // a role change ends the session's grants at the next page load anyway.
+  const scope = { allowed: readableWorkspaces(session.access) };
 
   return eventStream(request, (stream) => {
     // Serialised: the count is read once per announcement however many arrive
@@ -37,7 +44,7 @@ export async function GET(request: NextRequest) {
     const announce = (changed: boolean) => {
       pending = pending
         .then(async () => {
-          const unread = await countUnread();
+          const unread = await countUnread(scope);
           stream.send("unread", { unread });
           if (changed) stream.send("change", { unread });
         })

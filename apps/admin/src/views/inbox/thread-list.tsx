@@ -1,5 +1,6 @@
 "use client";
 
+import { MAIL_WORKSPACE_LABELS, type MailWorkspace } from "@byteveda/db/constants";
 import { Archive, CornerUpLeft, Inbox, Mail, Search, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -14,6 +15,10 @@ type Props = {
   counts: ThreadCounts;
   filter: ThreadFilter;
   query: string;
+  /** The workspace tab in force, carried into every link so it survives. */
+  workspace: MailWorkspace | undefined;
+  /** Tag each row with its workspace — only worth it when the list mixes them. */
+  showWorkspace: boolean;
   selected: string | undefined;
 };
 
@@ -33,7 +38,15 @@ const DEBOUNCE_MS = 250;
  * the data — the rows are rendered from what the server already fetched, and
  * every navigation is a `<Link>` to a URL the server can answer on its own.
  */
-export function ThreadList({ threads, counts, filter, query, selected }: Props) {
+export function ThreadList({
+  threads,
+  counts,
+  filter,
+  query,
+  workspace,
+  showWorkspace,
+  selected,
+}: Props) {
   const router = useRouter();
   const [, startTransition] = useTransition();
   const searchBox = useRef<HTMLInputElement>(null);
@@ -64,12 +77,12 @@ export function ThreadList({ threads, counts, filter, query, selected }: Props) 
       // No thread key: a new search should land on its own first result rather
       // than hold a conversation open that is no longer in the list.
       startTransition(() => {
-        router.replace(inboxHref({ filter, query: draft }), { scroll: false });
+        router.replace(inboxHref({ filter, query: draft, workspace }), { scroll: false });
       });
     }, DEBOUNCE_MS);
 
     return () => clearTimeout(timer);
-  }, [draft, query, filter, router]);
+  }, [draft, query, filter, workspace, router]);
 
   function step(by: number) {
     if (threads.length === 0) return;
@@ -79,7 +92,7 @@ export function ThreadList({ threads, counts, filter, query, selected }: Props) 
     const next = current === -1 ? (by > 0 ? 0 : threads.length - 1) : current + by;
 
     const thread = threads[Math.max(0, Math.min(threads.length - 1, next))];
-    router.push(inboxHref({ thread: thread.threadKey, filter, query }));
+    router.push(inboxHref({ thread: thread.threadKey, filter, query, workspace }));
   }
 
   useShortcuts({
@@ -123,7 +136,7 @@ export function ThreadList({ threads, counts, filter, query, selected }: Props) 
         {TABS.map((tab) => (
           <Link
             key={tab.filter}
-            href={inboxHref({ filter: tab.filter, query })}
+            href={inboxHref({ filter: tab.filter, query, workspace })}
             aria-current={tab.filter === filter}
             scroll={false}
           >
@@ -141,7 +154,7 @@ export function ThreadList({ threads, counts, filter, query, selected }: Props) 
           threads.map((thread) => (
             <Link
               key={thread.threadKey}
-              href={inboxHref({ thread: thread.threadKey, filter, query })}
+              href={inboxHref({ thread: thread.threadKey, filter, query, workspace })}
               className="thread-item"
               data-unread={thread.unread}
               aria-current={thread.threadKey === selected}
@@ -171,7 +184,17 @@ export function ThreadList({ threads, counts, filter, query, selected }: Props) 
                   </time>
                 </span>
 
-                <span className="thread-subject">{thread.subject || "(no subject)"}</span>
+                <span className="thread-subject">
+                  {/* Which business it came in on, when the list is showing
+                      more than one. Under the tab for a single workspace it
+                      would be the same word on every row. */}
+                  {showWorkspace && (
+                    <b className="thread-workspace" data-workspace={thread.workspace}>
+                      {MAIL_WORKSPACE_LABELS[thread.workspace]}
+                    </b>
+                  )}
+                  {thread.subject || "(no subject)"}
+                </span>
 
                 <span className="thread-preview">
                   {thread.weSpokeLast && <em>You:</em>} {thread.preview}

@@ -1,10 +1,13 @@
 import {
+  type EmailAttachment,
   type EmailThread,
+  emailAttachments,
   emailThreads,
   getDb,
   inboundMessages,
   outboundMessages,
 } from "@byteveda/db";
+import { MAIL_WORKSPACES, type MailWorkspace } from "@byteveda/db/constants";
 import {
   and,
   desc,
@@ -12,6 +15,7 @@ import {
   exists,
   gt,
   ilike,
+  inArray,
   isNotNull,
   isNull,
   or,
@@ -33,6 +37,28 @@ export function isThreadFilter(value: string | undefined): value is ThreadFilter
   return THREAD_FILTERS.includes(value as ThreadFilter);
 }
 
+/**
+ * Which mail the caller may see, and which of it they are looking at.
+ *
+ * Every read in this module takes one. There is no unscoped version on purpose:
+ * an operator with academy-only access must not be able to reach a ByteVeda
+ * conversation by editing a URL, and the way to guarantee that is to make the
+ * scope impossible to forget rather than to remember it at each call site.
+ *
+ * `allowed` comes from the session — see `readableWorkspaces` in
+ * `lib/auth/roles.ts`. `workspace` is the tab, and it can only ever narrow.
+ */
+export type MailScope = {
+  allowed: readonly MailWorkspace[];
+  workspace?: MailWorkspace;
+};
+
+/** The workspaces a scope actually resolves to. Empty means "show nothing". */
+export function visibleWorkspaces(scope: MailScope): MailWorkspace[] {
+  const allowed = MAIL_WORKSPACES.filter((workspace) => scope.allowed.includes(workspace));
+  return scope.workspace ? allowed.filter((workspace) => workspace === scope.workspace) : allowed;
+}
+
 /** One conversation, as the list needs it. */
 export type ThreadSummary = {
   threadKey: string;
@@ -40,6 +66,8 @@ export type ThreadSummary = {
   correspondentEmail: string;
   correspondentName: string | null;
   mailbox: string;
+  /** Which business it belongs to. Shown when the list spans more than one. */
+  workspace: MailWorkspace;
   preview: string;
   lastMessageAt: Date;
   unread: boolean;
@@ -70,7 +98,12 @@ export type ThreadMessage = {
   resendId: string | null;
   /** Outbound only. Set when the send failed, and worth saying so in the thread. */
   error: string | null;
+  /** Outbound only, so far. What Resend has of an arriving file stays at Resend. */
+  attachments: SentAttachment[];
 };
+
+/** A file that went out with a message, without the bytes. */
+export type SentAttachment = Pick<EmailAttachment, "id" | "filename" | "contentType" | "byteSize">;
 
 export type Conversation = { thread: EmailThread; messages: ThreadMessage[] };
 
@@ -141,7 +174,7 @@ function matching(query: string): SQL {
   ) as SQL;
 }
 
-export type ListOptions = {
+export type ListOptions = MailScope & {
   filter?: ThreadFilter;
   /** Free text. Blank means no search. */
   query?: string;
@@ -155,9 +188,17 @@ export type ListOptions = {
  * is with, the last line, whether it was answered — is on the thread, which is
  * the point of the thread existing.
  */
-export async function listThreads(options: ListOptions = {}): Promise<ThreadSummary[]> {
+export async function listThreads(options: ListOptions): Promise<ThreadSummary[]> {
   const { filter = "inbox", query = "", limit = 200 } = options;
   const search = query.trim();
+
+  const workspaces = visibleWorkspaces(options);
+  // No workspace to read is not an empty inbox; it is no inbox. Answered here
+  // rather than as `where workspace in ()`, which is a round trip to Tokyo to
+  // be told what this already knows.
+  if (workspaces.length === 0) return [];
+
+  const scoped = and(inArray(emailThreads.workspace, workspaces), FILTERS[filter]) as SQL;
 
   const rows = await getDb()
     .select({
@@ -167,6 +208,7 @@ export async function listThreads(options: ListOptions = {}): Promise<ThreadSumm
       correspondentName: emailThreads.correspondentName,
       mailbox: emailThreads.mailbox,
       preview: emailThreads.preview,
+      workspace: emailThreads.workspace,
       lastMessageAt: emailThreads.lastMessageAt,
       lastInboundAt: emailThreads.lastInboundAt,
       lastOutboundAt: emailThreads.lastOutboundAt,
@@ -174,7 +216,7 @@ export async function listThreads(options: ListOptions = {}): Promise<ThreadSumm
       archivedAt: emailThreads.archivedAt,
     })
     .from(emailThreads)
-    .where(search ? and(FILTERS[filter], matching(search)) : FILTERS[filter])
+    .where(search ? and(scoped, matching(search)) : scoped)
     .orderBy(desc(emailThreads.lastMessageAt))
     .limit(limit);
 
@@ -184,6 +226,7 @@ export async function listThreads(options: ListOptions = {}): Promise<ThreadSumm
     correspondentEmail: row.correspondentEmail,
     correspondentName: row.correspondentName,
     mailbox: row.mailbox,
+    workspace: row.workspace,
     preview: row.preview,
     lastMessageAt: row.lastMessageAt,
     unread: isUnread(row),
@@ -208,11 +251,27 @@ function isUnread(row: { readAt: Date | null; lastInboundAt: Date | null }): boo
  * trip spent waiting for the previous one is the largest single cost in
  * rendering this page — see the dashboard layout for the same reasoning.
  */
-export async function getConversation(threadKey: string): Promise<Conversation | null> {
+export async function getConversation(
+  threadKey: string,
+  scope: MailScope,
+): Promise<Conversation | null> {
   const db = getDb();
+  const workspaces = visibleWorkspaces({ allowed: scope.allowed });
 
-  const [[thread], received, sent] = await Promise.all([
-    db.select().from(emailThreads).where(eq(emailThreads.threadKey, threadKey)).limit(1),
+  if (workspaces.length === 0) return null;
+
+  const [[thread], received, sent, files] = await Promise.all([
+    db
+      .select()
+      .from(emailThreads)
+      .where(
+        // The workspace is part of the lookup, not a check afterwards. A
+        // conversation this operator may not read has to be indistinguishable
+        // from one that does not exist — anything else confirms, to somebody
+        // guessing thread keys, that it is there.
+        and(eq(emailThreads.threadKey, threadKey), inArray(emailThreads.workspace, workspaces)),
+      )
+      .limit(1),
 
     db
       .select()
@@ -225,9 +284,37 @@ export async function getConversation(threadKey: string): Promise<Conversation |
       .from(outboundMessages)
       .where(eq(outboundMessages.threadKey, threadKey))
       .orderBy(outboundMessages.sentAt),
+
+    // What went out with each reply. Metadata only: `content` is a 4MB column,
+    // and the thread view renders a filename and a size.
+    db
+      .select({
+        id: emailAttachments.id,
+        messageId: emailAttachments.messageId,
+        filename: emailAttachments.filename,
+        contentType: emailAttachments.contentType,
+        byteSize: emailAttachments.byteSize,
+      })
+      .from(emailAttachments)
+      .innerJoin(outboundMessages, eq(emailAttachments.messageId, outboundMessages.id))
+      .where(eq(outboundMessages.threadKey, threadKey))
+      .orderBy(emailAttachments.createdAt),
   ]);
 
   if (!thread) return null;
+
+  const attached = new Map<string, SentAttachment[]>();
+  for (const file of files) {
+    if (!file.messageId) continue;
+    const list = attached.get(file.messageId) ?? [];
+    list.push({
+      id: file.id,
+      filename: file.filename,
+      contentType: file.contentType,
+      byteSize: file.byteSize,
+    });
+    attached.set(file.messageId, list);
+  }
 
   const messages: ThreadMessage[] = [
     ...received.map(
@@ -242,6 +329,7 @@ export async function getConversation(threadKey: string): Promise<Conversation |
         at: message.receivedAt,
         resendId: message.resendId,
         error: null,
+        attachments: [],
       }),
     ),
     ...sent.map(
@@ -256,6 +344,7 @@ export async function getConversation(threadKey: string): Promise<Conversation |
         at: message.sentAt,
         resendId: null,
         error: message.error,
+        attachments: attached.get(message.id) ?? [],
       }),
     ),
   ].sort((a, b) => a.at.getTime() - b.at.getTime());
@@ -263,27 +352,78 @@ export async function getConversation(threadKey: string): Promise<Conversation |
   return { thread, messages };
 }
 
-/** Unread conversations, for the badge on the rail. Archived ones do not count. */
-export async function countUnread(): Promise<number> {
+/**
+ * Unread conversations, for the badge on the rail. Archived ones do not count.
+ *
+ * Scoped like everything else: the badge has to agree with the list it links
+ * to, and an operator who cannot read the academy's mail must not be told there
+ * are three of them.
+ */
+export async function countUnread(scope: MailScope): Promise<number> {
+  const workspaces = visibleWorkspaces(scope);
+  if (workspaces.length === 0) return 0;
+
   const [row] = await getDb()
     .select({ total: sql<number>`count(*)::int` })
     .from(emailThreads)
-    .where(FILTERS.unread);
+    .where(and(inArray(emailThreads.workspace, workspaces), FILTERS.unread));
 
   return row?.total ?? 0;
 }
 
 export type ThreadCounts = Record<ThreadFilter, number>;
 
+const NO_THREADS: ThreadCounts = { inbox: 0, unread: 0, archived: 0 };
+
 /** What each filter would show, in one pass rather than three. */
-export async function countThreads(): Promise<ThreadCounts> {
+export async function countThreads(scope: MailScope): Promise<ThreadCounts> {
+  const workspaces = visibleWorkspaces(scope);
+  if (workspaces.length === 0) return NO_THREADS;
+
   const [row] = await getDb()
     .select({
       inbox: sql<number>`count(*) filter (where ${emailThreads.archivedAt} is null)::int`,
       unread: sql<number>`count(*) filter (where ${FILTERS.unread})::int`,
       archived: sql<number>`count(*) filter (where ${emailThreads.archivedAt} is not null)::int`,
     })
-    .from(emailThreads);
+    .from(emailThreads)
+    .where(inArray(emailThreads.workspace, workspaces));
 
   return { inbox: row?.inbox ?? 0, unread: row?.unread ?? 0, archived: row?.archived ?? 0 };
+}
+
+/** What the workspace tabs badge: how much mail each one is holding. */
+export type WorkspaceCounts = Record<MailWorkspace, { inbox: number; unread: number }>;
+
+/**
+ * Per-workspace totals, in one grouped pass rather than a query per tab.
+ *
+ * Every workspace the operator may read appears in the result, including the
+ * ones with nothing in them — a tab that vanishes when its inbox empties is a
+ * tab that moves under the cursor.
+ */
+export async function countWorkspaces(scope: MailScope): Promise<WorkspaceCounts> {
+  const workspaces = visibleWorkspaces({ allowed: scope.allowed });
+
+  const empty = Object.fromEntries(
+    workspaces.map((workspace) => [workspace, { inbox: 0, unread: 0 }]),
+  ) as WorkspaceCounts;
+
+  if (workspaces.length === 0) return empty;
+
+  const rows = await getDb()
+    .select({
+      workspace: emailThreads.workspace,
+      inbox: sql<number>`count(*) filter (where ${emailThreads.archivedAt} is null)::int`,
+      unread: sql<number>`count(*) filter (where ${FILTERS.unread})::int`,
+    })
+    .from(emailThreads)
+    .where(inArray(emailThreads.workspace, workspaces))
+    .groupBy(emailThreads.workspace);
+
+  for (const row of rows) {
+    empty[row.workspace] = { inbox: row.inbox, unread: row.unread };
+  }
+
+  return empty;
 }

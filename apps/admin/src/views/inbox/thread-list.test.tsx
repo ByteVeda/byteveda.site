@@ -16,6 +16,7 @@ function thread(overrides: Partial<ThreadSummary> = {}): ThreadSummary {
     correspondentEmail: "ada@example.test",
     correspondentName: "Ada Lovelace",
     mailbox: "hello@byteveda.org",
+    workspace: "byteveda",
     preview: "Does the cap apply before or after the jitter?",
     lastMessageAt: new Date("2026-09-01T10:00:00Z"),
     unread: false,
@@ -35,6 +36,8 @@ function render(threads: ThreadSummary[], props: Partial<Parameters<typeof Threa
       counts={counts}
       filter="inbox"
       query=""
+      workspace={undefined}
+      showWorkspace={false}
       selected={undefined}
       {...props}
     />,

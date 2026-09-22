@@ -1,15 +1,41 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { requireSession } from "@/lib/auth/session";
+import * as attachments from "@/lib/attachments/store";
+import type { Permission } from "@/lib/auth/roles";
+import { readableWorkspaces } from "@/lib/auth/roles";
+import { getSession, type SessionContext } from "@/lib/auth/session";
 import { emailConfigured, fetchInboundBody, sendEmail } from "@/lib/email/client";
 import { bodyMissing } from "@/lib/email/inbound";
 import { replyEmail } from "@/lib/email/templates";
 import { getConversation } from "@/lib/inbox/queries";
 import * as store from "@/lib/inbox/store";
+import { reachThread } from "@/lib/mail/access";
 import { inboxChanged } from "@/lib/realtime";
 
 export type InboxResult = { ok: boolean; message: string };
+
+/**
+ * Every action here, before it does anything.
+ *
+ * Three questions in one call: is there a session, does the role carry the
+ * permission, and is the conversation one this operator may see. The last is
+ * the one that is easy to forget — a thread key is in the URL, and an operator
+ * scoped to the academy's mail could otherwise archive a ByteVeda conversation
+ * by pasting one into a fetch.
+ */
+async function permit(
+  threadKey: string,
+  permission: Permission,
+): Promise<{ ok: true; session: SessionContext } | { ok: false; message: string }> {
+  const session = await getSession();
+  if (!session) return { ok: false, message: "Your session has expired. Sign in again." };
+
+  const verdict = await reachThread(threadKey, session.access, permission);
+  if (!verdict.ok) return { ok: false, message: verdict.message };
+
+  return { ok: true, session };
+}
 
 /**
  * What opening a conversation did.
@@ -36,9 +62,13 @@ function announce(): void {
  * hovering a thread in the list marked it read without anyone opening it.
  */
 export async function openThread(threadKey: string): Promise<ThreadOpened> {
-  await requireSession();
+  const allowed = await permit(threadKey, "mail.read");
+  // Nothing to report: the page that called this is already showing whatever
+  // the refusal would say, and a notice about a conversation the operator
+  // cannot see would be a notice about nothing.
+  if (!allowed.ok) return { repaired: 0, error: null };
 
-  const backfill = await backfillBodies(threadKey);
+  const backfill = await backfillBodies(threadKey, allowed.session);
   const read = await store.markThreadRead(threadKey);
 
   // Nothing changed on a second visit to an already-read conversation.
@@ -60,12 +90,14 @@ export async function openThread(threadKey: string): Promise<ThreadOpened> {
  * missing is missing them all for the same reason, and that reason is almost
  * always the API key.
  */
-async function backfillBodies(threadKey: string): Promise<ThreadOpened> {
+async function backfillBodies(threadKey: string, session: SessionContext): Promise<ThreadOpened> {
   if (!emailConfigured()) {
     return { repaired: 0, error: null };
   }
 
-  const conversation = await getConversation(threadKey);
+  const conversation = await getConversation(threadKey, {
+    allowed: readableWorkspaces(session.access),
+  });
   // Only what arrived. A sent message with no body is one from before replies
   // were kept, and Resend has nothing to return for it.
   const missing =
@@ -109,7 +141,8 @@ async function backfillBodies(threadKey: string): Promise<ThreadOpened> {
 
 /** Puts a conversation back to unread. */
 export async function markThreadUnread(threadKey: string): Promise<InboxResult> {
-  await requireSession();
+  const allowed = await permit(threadKey, "mail.manage");
+  if (!allowed.ok) return allowed;
 
   await store.markThreadUnread(threadKey);
 
@@ -128,7 +161,8 @@ export async function setThreadArchived(
   threadKey: string,
   archived: boolean,
 ): Promise<InboxResult> {
-  await requireSession();
+  const allowed = await permit(threadKey, "mail.manage");
+  if (!allowed.ok) return allowed;
 
   await store.setThreadArchived(threadKey, archived);
 
@@ -138,8 +172,13 @@ export async function setThreadArchived(
 
 /** Removes a conversation and everything received in it. */
 export async function deleteThread(threadKey: string): Promise<InboxResult> {
-  await requireSession();
+  const allowed = await permit(threadKey, "mail.manage");
+  if (!allowed.ok) return allowed;
 
+  // Anything still waiting in the reply box goes with it. The foreign key only
+  // covers files that were sent; a staged upload belongs to a composer, and
+  // this is the composer being closed for good.
+  await attachments.discardAll({ kind: "reply", id: threadKey });
   await store.deleteThread(threadKey);
 
   announce();
@@ -154,15 +193,23 @@ export async function deleteThread(threadKey: string): Promise<InboxResult> {
  * stored against the thread is the text that was typed — see `sendEmail`.
  */
 export async function replyToThread(threadKey: string, body: string): Promise<InboxResult> {
-  await requireSession();
+  const allowed = await permit(threadKey, "mail.send");
+  if (!allowed.ok) return allowed;
+
+  const scope = { kind: "reply", id: threadKey } as const;
 
   const text = body.trim();
-  if (!text) return { ok: false, message: "Write something first." };
+  // A file with a sentence is a reply; a file on its own is one too. What is
+  // refused is an empty message with nothing attached.
+  const files = await attachments.loadForSend(scope);
+  if (!text && files.length === 0) return { ok: false, message: "Write something first." };
   if (!emailConfigured()) {
     return { ok: false, message: "Set RESEND_API_KEY before sending." };
   }
 
-  const conversation = await getConversation(threadKey);
+  const conversation = await getConversation(threadKey, {
+    allowed: readableWorkspaces(allowed.session.access),
+  });
   if (!conversation) return { ok: false, message: "That conversation no longer exists." };
 
   const { thread, messages } = conversation;
@@ -180,6 +227,11 @@ export async function replyToThread(threadKey: string, body: string): Promise<In
     from,
     replyTo: from,
     thread: { key: threadKey, body: text },
+    attachments: files.map((file) => ({
+      filename: file.filename,
+      contentType: file.contentType,
+      content: file.content,
+    })),
   });
 
   // The attempt is in the conversation either way — `sendEmail` filed it under
@@ -190,8 +242,18 @@ export async function replyToThread(threadKey: string, body: string): Promise<In
     return { ok: false, message: result.error ?? "The reply did not send." };
   }
 
-  await store.markThreadAnswered(threadKey, text);
+  // Only now do the files stop being drafts. A failed send leaves them staged,
+  // which is what makes the retry the same button rather than four uploads.
+  if (result.messageId) await attachments.claim(scope, result.messageId);
+
+  await store.markThreadAnswered(threadKey, text || attached(files));
 
   announce();
   return { ok: true, message: `Replied to ${thread.correspondentEmail}.` };
+}
+
+/** What the inbox list shows as the last line when the reply was only files. */
+function attached(files: { filename: string }[]): string {
+  if (files.length === 1) return `Sent ${files[0].filename}`;
+  return `Sent ${files.length} files`;
 }

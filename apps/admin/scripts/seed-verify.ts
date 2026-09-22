@@ -91,6 +91,20 @@ async function main() {
       lastInboundAt: at(2 * DAY),
       readAt: at(2 * DAY),
     },
+    // The academy's own mail, which arrived at a different address and belongs
+    // under a different tab. Seeded so the workspace switch has something on
+    // both sides of it.
+    {
+      threadKey: "parent@example.test::the worksheet",
+      subject: "The worksheet",
+      correspondentEmail: "parent@example.test",
+      correspondentName: "A Parent",
+      mailbox: "orders@byteveda.org",
+      workspace: "academy",
+      preview: "Can we get the answer key with it?",
+      lastMessageAt: at(30 * MINUTE),
+      lastInboundAt: at(30 * MINUTE),
+    },
     // Filed away. Only visible under the Archived filter.
     {
       threadKey: "jean@example.test::old thread",
@@ -139,6 +153,17 @@ async function main() {
       text: "Would you be up for twenty minutes on the compiler work in March?",
       html: null,
       receivedAt: at(2 * DAY),
+    },
+    {
+      resendId: "verify-academy",
+      threadKey: "parent@example.test::the worksheet",
+      fromEmail: "parent@example.test",
+      fromName: "A Parent",
+      toEmail: "orders@byteveda.org",
+      subject: "The worksheet",
+      text: "Can we get the answer key with it? My daughter is in class 9.",
+      html: null,
+      receivedAt: at(30 * MINUTE),
     },
     {
       resendId: "verify-archived",
