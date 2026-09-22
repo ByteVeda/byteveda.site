@@ -1,9 +1,9 @@
 import type { MailWorkspace } from "@byteveda/db/constants";
 import { ArrowLeft, MoveRight, Paperclip, TriangleAlert } from "lucide-react";
 import Link from "next/link";
-// Deep, not through `@/components`: that barrel re-exports the console's client
-// components, and this file is on the inbox front door — every server module
-// that imports `@/features/inbox` would pull the whole UI graph with it.
+// Deep, not through `@/components`: that barrel is all client components, so
+// opening it inside a feature drags them into every server module that touches
+// the feature.
 import { InboxAutoRefresh } from "@/components/inbox-live";
 import { LocalTime } from "@/components/local-time";
 import { PageHeader } from "@/components/page-header";

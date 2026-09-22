@@ -1,7 +1,7 @@
 import { MAIL_WORKSPACE_LABELS, MAIL_WORKSPACES } from "@byteveda/db/constants";
-// Deep, not through `@/components`: that barrel re-exports the console's client
-// components, and this file is on the members front door — every server module
-// that imports `@/features/members` would pull the whole UI graph with it.
+// Deep, not through `@/components`: that barrel is all client components, so
+// opening it inside a feature drags them into every server module that touches
+// the feature.
 import { PageHeader } from "@/components/page-header";
 import { can, hasOverrides, requirePermission, roleLabel } from "@/features/auth";
 import { ago } from "@/shared/format";

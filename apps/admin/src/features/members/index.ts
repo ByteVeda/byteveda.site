@@ -7,10 +7,8 @@
  * reaches the database; they import `@/features/members/model` for the role
  * shape a dropdown reads and `@/features/members/actions` for the writes.
  *
- * The page component is exported straight from its file rather than through
- * `components/`, which would put a server component behind the door a client
- * component is allowed to open.
+ * The members page is not here: a route reaches it by its own path, so that a
+ * server component never sits behind a door a client component may open.
  */
 
-export { MembersPage } from "./components/members-page";
 export { admit } from "./service";

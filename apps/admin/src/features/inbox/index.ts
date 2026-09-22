@@ -6,9 +6,11 @@
  * must not, because this barrel reaches the database; they import
  * `@/features/inbox/model`, which is the same vocabulary with nothing behind
  * it.
+ *
+ * The inbox page is not here: a route reaches it by its own path, so that a
+ * server component never sits behind a door a client component may open.
  */
 
-export { InboxPage } from "./components";
 export { inboxChanged } from "./events";
 export { countUnread } from "./queries";
 export { recordInbound } from "./store";

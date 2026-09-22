@@ -13,14 +13,12 @@
  * because this barrel reaches the database; they import
  * `@/features/subscribers/actions` for the writes.
  *
- * The three page components are exported straight from their files rather than
- * through `components/`, which would put a server component behind the door a
- * client component is allowed to open.
+ * The three page components are not here: a route reaches its page by the
+ * page's own path, so that a server component never sits behind a door a
+ * client component may open. Two of them read `next/headers`, which is also
+ * what kept this door shut to the command-line checks.
  */
 
-export { ConfirmPage } from "./components/confirm-page";
-export { SubscribersPage } from "./components/subscribers-page";
-export { UnsubscribePage } from "./components/unsubscribe-page";
 export { subscribersChanged } from "./events";
 export { activeSubscribers, countByStatus } from "./queries";
 export { confirm, subscribe, unsubscribe, unsubscribeUrl } from "./service";

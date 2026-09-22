@@ -10,7 +10,7 @@
  * Run `--listen` in one terminal and the plain form in another to prove the
  * cross-instance path, which is the whole reason Redis is involved.
  */
-import { subscribersChanged } from "../src/features/subscribers/events";
+import { subscribersChanged } from "../src/features/subscribers";
 import { closeRealtime, isDistributed, subscriberReady } from "../src/lib/realtime";
 
 const TIMEOUT_MS = 8000;

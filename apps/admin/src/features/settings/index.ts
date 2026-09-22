@@ -7,10 +7,8 @@
  * import `@/features/settings/model` for what the settings are and
  * `@/features/settings/actions` for the one write.
  *
- * The page component is exported straight from its file rather than through
- * `components/`, which would put a server component behind the door a client
- * component is allowed to open.
+ * The settings page is not here: a route reaches it by its own path, so that a
+ * server component never sits behind a door a client component may open.
  */
 
-export { SettingsPage } from "./components/settings-page";
 export { getSettings } from "./queries";

@@ -1,12 +1,12 @@
-// Deep, not through `@/components`: that barrel re-exports the console's client
-// components, and this file is on the subscribers front door — every server
-// module that imports `@/features/subscribers` would pull the whole UI graph
-// with it.
+// Deep, not through `@/components`: that barrel is all client components, so
+// opening it inside a feature drags them into every server module that touches
+// the feature.
 import { LiveRefresh } from "@/components/live-refresh";
 import { PageHeader } from "@/components/page-header";
 import { maxFileBytes } from "@/features/attachments";
 import { can, requirePermission } from "@/features/auth";
-import { BroadcastComposer, listBroadcasts } from "@/features/broadcasts";
+import { listBroadcasts } from "@/features/broadcasts";
+import { BroadcastComposer } from "@/features/broadcasts/components";
 import { getSettings } from "@/features/settings";
 import { ago } from "@/shared/format";
 import { countByStatus, listSubscribers } from "../queries";

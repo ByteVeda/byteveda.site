@@ -7,11 +7,10 @@
  * barrel reaches the database; they import `@/features/broadcasts/actions` for
  * the writes.
  *
- * The composer is exported straight from its file rather than through a
- * `components/` barrel, because the only thing that renders it is the
- * subscribers page, which is a server component and comes in this way.
+ * The composer is not here. It is a client component, and the subscribers page
+ * that renders it reaches it through `./components` — the door that carries no
+ * database behind it.
  */
 
 export { listBroadcasts } from "./actions";
-export { BroadcastComposer } from "./components/broadcast-composer";
 export { announcePost } from "./service";

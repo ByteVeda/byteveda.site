@@ -7,11 +7,9 @@
  * import `@/features/posts/model` for the rules and `@/features/posts/actions`
  * for the writes.
  *
- * The two page components are exported straight from their files rather than
- * through `components/`, which would put a server component behind the door a
- * client component is allowed to open.
+ * The two page components are not here: a route reaches its page by the page's
+ * own path, so that a server component never sits behind a door a client
+ * component may open.
  */
 
-export { EditPostPage, generateMetadata } from "./components/post-editor-page";
-export { PostsPage } from "./components/posts-page";
 export { countPostsByStatus, listPosts } from "./queries";
