@@ -181,17 +181,19 @@ that can be decided from the specifier string plus the path of the importing fil
 - the feature doors on `@/features/*/*` (allowing `model`, `actions`, `components`),
 - the extra `components/<file>` allowance for `app/**/page.tsx` and `app/**/layout.tsx`,
 - `lib/` may not import `@/features/**`,
-- `shared/` may not import `@/lib`, `@/features` or `@/components`,
-- a file under `features/` may not import the `@/components` barrel itself.
+- `shared/` may not import `@/lib`, `@/features` or `@/components`.
 
 If your failure message is a paragraph of prose about doors, it came from `biome.json`
 and that is the file to read.
 
 Biome matches the specifier you wrote, so every one of those bans is about the `@/…`
 spelling of it. Each has a mirror in the script below that resolves the relative spelling
-of the same import — `feature-doors`, `component-barrel`, `lib-type-only` and
-`shared-isolation`, in that order. Write a new `overrides` entry and it needs one too,
-or `../../` walks straight past it.
+of the same import — `feature-doors`, `lib-type-only` and `shared-isolation`, in that
+order. Write a new `overrides` entry and it needs one too, or `../../` walks straight
+past it. The `@/components` ban used to live here as well and does not any more: saying
+it in Biome needed a `paths` entry, which is exact-match only and so missed
+`@/components/index`, and the `overrides` entry carrying it had to restate the whole
+feature-doors glob list. It is one line in the script instead — `component-barrel`.
 
 **`pnpm check:arch`** — `scripts/check-architecture.mjs`. It owns the rules Biome
 structurally cannot express, because they depend on file *contents*, directory *shape*,
@@ -204,7 +206,7 @@ or a specifier Biome never resolves. Nine rules, each named in the failure outpu
 | `route-reach` | Only `app/**/page.tsx` and `app/**/layout.tsx` may name a component file — and not even they may reach deeper than that file. |
 | `lib-type-only` | `lib/` importing a feature. A type-only import is erased before bundling and is allowed; Biome cannot tell `import type` from a value import. |
 | `feature-doors` | The relative spelling of rule 3. `../inbox/queries` is invisible to Biome, which matches the literal specifier; the script resolves it against `src/` first. |
-| `component-barrel` | The relative spelling of the `@/components` ban, for the same reason. `@/components/<file>` stays legal in both spellings — it is the barrel itself that is off limits. |
+| `component-barrel` | A file under `features/` opening the `@/components` barrel, in any spelling — `@/components`, `@/components/index`, or a relative path that resolves to either. `@/components/<file>` stays legal: it is the barrel itself that is off limits. |
 | `shared-isolation` | The relative spelling of the `shared/` rule. An import that stays inside `shared/` resolves to `@/shared/…` and is fine; one that resolves to `@/lib`, `@/features` or `@/components` is not. |
 | `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Covers `features/<name>/model.ts` and `features/<name>/components/model.ts` alike, so a components-only feature is held to it too. Every other rule assumes a model is client-safe; this is the one that checks. |
 | `curated-barrel` | `export *` in a feature's `index.ts` or its `components/index.ts`. A star puts every symbol of that module on the door, including whatever is added to it later. |
@@ -221,26 +223,35 @@ load `next/headers`.
 
 ### What no tool checks
 
-Know where the structure is held by a tool and where it is held by people. Three gaps,
-each confirmed against the current checks rather than assumed:
+Know where the structure is held by a tool and where it is held by people. This list is
+worth only what its last check is worth: it named the relative spelling of the
+`@/components` ban as open for one commit after `component-barrel` had closed it. **Prove
+a gap before you write it here, and prove it again before you trust it.** Three, each
+re-confirmed against the tools as they stand:
 
 - **A barrel's *named* re-exports.** `curated-barrel` bans `export *`, but a curated
   `index.ts` can still put a component on the server door — `export { Card } from
-  "./components";` passes both tools. That is exactly the shape that once put the inbox
-  client graph in a webhook route. Proving it wrong means following the re-export graph,
-  which neither tool does; `client-door` catches the symptom, not the cause.
+  "./components";` beside `export { listThings } from "./queries";` passes both tools.
+  That is exactly the shape that once put the inbox client graph in a webhook route.
+  Proving it wrong means following the re-export graph, which neither tool does;
+  `client-door` catches the symptom, not the cause.
 - **A `components/index.ts` exporting a server component.** Nothing reads a component to
   decide which half it belongs to, so a server component sitting on the client door is
   invisible to both tools.
-- **The relative spelling of the `@/components` ban.** Biome matches the literal
-  specifier, so `@/components` from inside a feature errors while `../../components` —
-  the same barrel, same graph — does not, and the arch script has no rule for it. The
-  `feature-doors` rule exists because relative spellings evade Biome; this one is the
-  same hole, still open.
+- **A relative path that climbs out of its own app.** Every relative rule resolves the
+  specifier against the importing app's own `src/`, and anything landing outside it is
+  skipped rather than judged. `../../../../admin/src/lib/env` from academy is nobody's
+  business as far as these checks go. No such import exists and none would typecheck,
+  and catching it would mean teaching the script every app's alias map.
 
 Two more are judgement, not oversight: whether a file outside the vocabulary has earned
 its name, and whether a barrel export is still used outside the feature. Neither is
 mechanical, and both are what review is for.
+
+What is *not* on this list, because it is checked: both spellings of every import rule.
+Aliased and relative are the same import, and each is caught once, by the tool that owns
+it — `biome.json` for the `@/…` form of the door rules, the script for the relative form
+and for all of `component-barrel`.
 
 ## The exceptions that exist
 
