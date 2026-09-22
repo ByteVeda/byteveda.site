@@ -26,8 +26,18 @@ export const PRICING = {
   chapter: 19,
   /** The HOTS block on top, where the chapter has one. */
   advanced: 20,
-  /** Setting a chapter we do not stock. Charged once, however many copies. */
-  setting: 149,
+  /**
+   * Setting a chapter we do not stock — writing it and solving it.
+   *
+   * Free. It was ₹149, charged once however many copies, and dropping it is
+   * the offer: a made-to-order chapter now costs exactly what the same chapter
+   * off the shelf costs, so "not in the inventory" stops being a surcharge and
+   * becomes a thing we do. The number stays here rather than being deleted
+   * along with the machinery around it — the fee is charged once per request
+   * and never per copy, and that rule is worth keeping intact for the day it
+   * is priced again.
+   */
+  setting: 0,
   /** Above this many copies the order is a class set and takes the rate below. */
   classSetFrom: 11,
   classSetRate: 0.7,

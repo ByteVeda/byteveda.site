@@ -6,8 +6,10 @@
  * A set chapter is the same chapter the shelf sells — the same mix, the same
  * free board and NCERT questions, the same optional advanced block. The only
  * thing a custom request adds is the setting: someone has to write and solve a
- * chapter nobody has asked for before, and that is charged once, however many
- * copies come off it.
+ * chapter nobody has asked for before. That is free, so a made-to-order
+ * chapter now costs what the same chapter off the shelf costs — but it is
+ * still quoted as its own line, because "we wrote this one for you and did not
+ * charge for it" is worth saying rather than hiding in a total.
  */
 
 import type { Board, ClassLevel } from "./inventory";
@@ -79,7 +81,10 @@ export function quoteFor(request: CustomRequest): Quote {
         label: "Advanced / HOTS block",
         value: advancedFee ? `₹${advancedFee}` : "not added",
       },
-      { label: "Written and solved for your chapter", value: `₹${PRICING.setting}` },
+      {
+        label: "Written and solved for your chapter",
+        value: PRICING.setting > 0 ? `₹${PRICING.setting}` : "free",
+      },
       {
         label: `${copies} ${copies === 1 ? "copy" : "copies"}${classSet ? " · class-set rate −30%" : ""}`,
         value: copies === 1 ? "—" : `×${copies}`,
