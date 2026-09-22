@@ -33,14 +33,13 @@
             "patterns": [
               {
                 "group": [
-                  "@/features/*/queries",
-                  "@/features/*/store",
-                  "@/features/*/service",
-                  "@/features/*/events",
-                  "@/features/*/components/**",
-                  "@/features/*/*/**"
+                  "@/features/*/*",
+                  "@/features/*/*/**",
+                  "!@/features/*/model",
+                  "!@/features/*/actions",
+                  "!@/features/*/components"
                 ],
-                "message": "A feature's internals are private. Server code reaches another feature through its barrel, \"@/features/<name>\"; client code reaches it through \"@/features/<name>/model\", \"/actions\" or \"/components\". Only app/**/page.tsx and app/**/layout.tsx may name a component file directly, as \"@/features/<name>/components/<file>\"."
+                "message": "A feature has four doors and everything else about it is private: the barrel \"@/features/<name>\" for server code, and \"@/features/<name>/model\", \"/actions\" or \"/components\" for client code. Only app/**/page.tsx and app/**/layout.tsx may name a component file directly, as \"@/features/<name>/components/<file>\"."
               }
             ]
           }
@@ -60,11 +59,11 @@
                 "patterns": [
                   {
                     "group": [
-                      "@/features/*/queries",
-                      "@/features/*/store",
-                      "@/features/*/service",
-                      "@/features/*/events",
+                      "@/features/*/*",
                       "@/features/*/*/**",
+                      "!@/features/*/model",
+                      "!@/features/*/actions",
+                      "!@/features/*/components",
                       "!@/features/*/components/*"
                     ],
                     "message": "A page or a layout is a server component, so it reaches its screen by that component's own path: \"@/features/<name>/components/<file>\". Every other path into a feature is private — its server API is the barrel \"@/features/<name>\"."
@@ -140,7 +139,7 @@
       }
     },
     {
-      "includes": ["apps/flexiq/src/features/home/lab.tsx"],
+      "includes": ["apps/flexiq/src/features/home/lab.tsx", "apps/flexiq/src/app/**"],
       "linter": {
         "rules": {
           "style": {
@@ -150,15 +149,18 @@
                 "patterns": [
                   {
                     "group": [
-                      "@/features/*/queries",
-                      "@/features/*/store",
-                      "@/features/*/service",
-                      "@/features/*/events",
-                      "@/features/*/components/**",
+                      "@/features/*/*",
                       "@/features/*/*/**",
-                      "!@/features/playground/canvas/*"
+                      "!@/features/*/model",
+                      "!@/features/*/actions",
+                      "!@/features/*/components",
+                      "!@/features/*/components/*",
+                      "!@/features/blog/posts",
+                      "!@/features/playground/canvas/*",
+                      "!@/features/playground/event-log",
+                      "!@/features/playground/use-engine"
                     ],
-                    "message": "A feature's internals are private. Named exemption: apps/flexiq is not on the features-over-lib layout yet (issue #361 covers admin and academy), and this file's reach into \"@/features/playground/canvas/stage\" predates the rule. It is the only one — every other file in flexiq is held to the rule."
+                    "message": "A feature's internals are private. Named exemptions, four specifiers and no more: apps/flexiq is not on the features-over-lib layout yet (issue #361 covers admin and academy) and has no model/actions/components vocabulary to reach through, so these four reaches predate the rule. A follow-up task puts flexiq behind the doors and deletes this whole override."
                   }
                 ]
               }
