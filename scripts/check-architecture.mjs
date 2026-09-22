@@ -4,9 +4,9 @@
  *
  * `biome.json` already bans the deep import paths, because those rules key off the
  * *specifier* and the *path of the file doing the importing*, which is all
- * `noRestrictedImports` and `overrides[].includes` can see. The four rules below key
- * off file *contents* (`"use client"`, `import type`) or directory *shape* (does this
- * feature have a front door?), so they need a reader.
+ * `noRestrictedImports` and `overrides[].includes` can see. The rules below key off file
+ * *contents* (`"use client"`, `import type`), directory *shape* (does this feature have a
+ * front door?), or a specifier Biome cannot resolve, so they need a reader.
  *
  *   client-door    A `"use client"` file may open only a feature's client-safe doors:
  *                  `@/features/<name>/model`, `/actions`, `/components`. The bare
@@ -20,10 +20,9 @@
  *
  *   route-reach    A `page.tsx` or a `layout.tsx` anywhere under `app/` may name a
  *                  component file directly — `@/features/<name>/components/<file>` —
- *                  because a page or
- *                  a layout is a server component and so cannot sit behind the
- *                  client-safe `components/index.ts`, and must not sit on the root
- *                  barrel. No other file may, and not even a route may reach deeper
+ *                  because a page or a layout is a server component, so it cannot sit
+ *                  behind the client-safe `components/index.ts` and must not sit on the
+ *                  root barrel. No other file may, and not even a route may reach deeper
  *                  than the component file itself.
  *
  *   lib-type-only  `lib/` is adapters to the world outside this process, so it sits
@@ -32,6 +31,17 @@
  *                  cannot see — `biome.json` exempts the two academy adapter files that
  *                  take `import type` from `@/features/orders`, and this is the rule
  *                  that holds them to types.
+ *
+ *   feature-doors  The relative half of the rule `biome.json` enforces on `@/features/…`.
+ *                  `noRestrictedImports` matches the literal specifier, so
+ *                  `../inbox/queries` from inside `features/posts/` walks through every
+ *                  rule in the config untouched. Here a relative specifier is resolved
+ *                  against the app's `src/` and rewritten to its `@/` form first, so it
+ *                  is held to the same four doors.
+ *
+ * All of the rules see the resolved form, so a relative import is checked like any other.
+ * One that stays inside its own feature — `./model`, `../queries` from that feature's
+ * `components/` — is how a feature talks to itself and is left alone.
  *
  * Scope: every `.ts`/`.tsx` under `apps/<app>/src`. Deliberately NOT `apps/<app>/scripts`
  * — those live outside `src/`, outside the app's import graph and outside the bundle.
@@ -47,12 +57,20 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-/** The doors a `"use client"` file may open into another feature. */
-const CLIENT_DOORS = new Set(["model", "actions", "components"]);
+/** A feature's named doors. Server code also has the barrel; client code has only these. */
+const DOORS = new Set(["model", "actions", "components"]);
 
 const FEATURE_PREFIX = "@/features/";
 const SOURCE_FILE = /\.tsx?$/;
 const SKIPPED_DIRS = new Set(["node_modules", ".next", ".turbo", "dist"]);
+
+/**
+ * The opening line of a statement that can name a module: `import …`, `export {`,
+ * `export *`, `export type {`. Deliberately not plain `export`, so `export const q = …`
+ * and `export default function …` cannot open one. Deliberately not `import(` or
+ * `import.meta` either — a dynamic import is matched on its own.
+ */
+const MODULE_STATEMENT = /^\s*(?:import[\s{*"']|export\s+type\s*[{*]|export\s*[{*])/;
 
 /**
  * Named exemptions. Each one is a rule in its own right, not a hole: it says which app
@@ -119,33 +137,108 @@ export function isClientFile(source) {
 }
 
 /**
+ * Strips comments from one line: a line comment runs to the end of the line, a block
+ * comment carries across lines. Quote state is tracked, so a `//` inside a string is left
+ * alone. Returns the stripped text and whether a block comment is still open after it.
+ */
+function stripComments(line, inBlock) {
+  let out = "";
+  let quote = null;
+  let i = 0;
+
+  while (i < line.length) {
+    const two = line.slice(i, i + 2);
+
+    if (inBlock) {
+      if (two === "*/") {
+        inBlock = false;
+        i += 2;
+      } else {
+        i += 1;
+      }
+      continue;
+    }
+
+    if (quote) {
+      out += line[i];
+      if (line[i] === "\\") {
+        out += line[i + 1] ?? "";
+        i += 2;
+        continue;
+      }
+      if (line[i] === quote) quote = null;
+      i += 1;
+      continue;
+    }
+
+    if (line[i] === '"' || line[i] === "'" || line[i] === "`") {
+      quote = line[i];
+      out += line[i];
+      i += 1;
+      continue;
+    }
+
+    if (two === "//") return { text: out, inBlock: false };
+    if (two === "/*") {
+      inBlock = true;
+      i += 2;
+      continue;
+    }
+
+    out += line[i];
+    i += 1;
+  }
+
+  return { text: out, inBlock };
+}
+
+/**
  * Every module specifier in the file, with the 1-based line it sits on and whether its
- * statement was type-only. A line scanner rather than an AST: imports are one statement
- * per line group and Biome formats them, so the statement head is the nearest preceding
- * `import`/`export` line. Covers `import x from`, `export x from`, bare `import "x"`
- * and dynamic `import("x")`.
+ * statement was type-only. A line scanner rather than an AST: the repo is Biome-formatted,
+ * so an import is one statement per line group. Covers `import x from`, `export x from`,
+ * bare `import "x"` and dynamic `import("x")`.
+ *
+ * Two things keep it from inventing imports. Comments are stripped first, so a
+ * commented-out import is not an import. And a `from "…"` only counts while a *module*
+ * statement is open — `import …`, `export {`, `export *`, `export type {` — so neither
+ * `export const q = \`select * from "…"\`` nor a lingering `export type X = {` block can
+ * produce a specifier or leak its `type` onto something further down the file.
  */
 export function readImports(source) {
   const lines = source.split("\n");
   const found = [];
-  let head = "";
+  let head = null;
+  let inBlock = false;
 
   for (let i = 0; i < lines.length; i += 1) {
-    const line = lines[i];
-    if (/^\s*(?:import|export)\b/.test(line)) head = line;
+    const { text, inBlock: stillOpen } = stripComments(lines[i], inBlock);
+    inBlock = stillOpen;
+
+    // A dynamic import can sit anywhere, and is never type-only.
+    const dynamic = text.match(/\bimport\(\s*["']([^"']+)["']\s*\)/);
+    if (dynamic) found.push({ line: i + 1, specifier: dynamic[1], typeOnly: false });
+
+    if (head === null) {
+      if (!MODULE_STATEMENT.test(text)) continue;
+      head = text;
+    }
 
     const match =
-      line.match(/\bfrom\s*["']([^"']+)["']/) ??
-      line.match(/^\s*import\s+["']([^"']+)["']/) ??
-      line.match(/\bimport\(\s*["']([^"']+)["']\s*\)/);
-    if (!match) continue;
+      text.match(/\bfrom\s*["']([^"']+)["']/) ?? text.match(/^\s*import\s+["']([^"']+)["']/);
 
-    found.push({
-      line: i + 1,
-      specifier: match[1],
-      typeOnly: /^\s*(?:import|export)\s+type\b/.test(head),
-    });
-    head = "";
+    if (match) {
+      found.push({
+        line: i + 1,
+        specifier: match[1],
+        typeOnly: /^\s*(?:import|export)\s+type\b/.test(head),
+      });
+      head = null;
+      continue;
+    }
+
+    // A statement that ended without naming a module — `export { a };`, a type alias,
+    // anything else that opens with one of those keywords — closes the head.
+    if (/[;}]\s*$/.test(text)) head = null;
   }
 
   return found;
@@ -159,6 +252,30 @@ function featurePath(specifier) {
 
 function isRouteFile(relPath) {
   return /^apps\/[^/]+\/src\/app\/(?:.*\/)?(?:page|layout)\.tsx$/.test(relPath);
+}
+
+/** The feature a file lives in, or null if it lives outside `features/`. */
+function featureOf(relPath) {
+  const match = relPath.match(/^apps\/[^/]+\/src\/features\/([^/]+)\//);
+  return match ? match[1] : null;
+}
+
+/**
+ * The `@/`-aliased form of a specifier. Biome matches the literal string, so a relative
+ * import is invisible to it — `../inbox/queries` from inside `features/posts/` walks
+ * straight through every rule in `biome.json`. Resolving it here closes that, and is the
+ * one part of these checks Biome structurally cannot do.
+ *
+ * Returns null when a relative import lands outside the app's `src/`, which is nothing
+ * these rules have an opinion about.
+ */
+function toAlias(specifier, file, srcDir) {
+  if (!specifier.startsWith(".")) return specifier;
+  const inside = relative(srcDir, resolve(dirname(file), specifier))
+    .split("\\")
+    .join("/");
+  if (inside === "" || inside === ".." || inside.startsWith("../")) return null;
+  return `@/${inside}`;
 }
 
 /** Directory shape: does every feature that needs a front door have one? */
@@ -216,10 +333,41 @@ export function checkArchitecture(root) {
       const client = isClientFile(source);
       const route = isRouteFile(relPath);
       const inLib = relPath.startsWith(`apps/${app}/src/lib/`);
+      const ownFeature = featureOf(relPath);
       const imports = readImports(source);
 
-      for (const { line, specifier, typeOnly } of imports) {
+      for (const { line, specifier: written, typeOnly } of imports) {
+        const specifier = toAlias(written, file, srcDir);
+        if (specifier === null) continue;
         const segments = featurePath(specifier);
+
+        // Relative imports inside a feature's own folder are how a feature talks to
+        // itself — `./model`, `../queries` from its own components. Only the ones that
+        // cross out of it are the rules' business.
+        if (segments && written !== specifier && segments[0] === ownFeature) continue;
+
+        // A relative import is reported as written and as resolved, so the line the
+        // reader opens matches and the rule that fired still makes sense.
+        const viaRelative = written !== specifier;
+        const shown = viaRelative ? `${written}" -> "${specifier}` : specifier;
+
+        // Biome owns the aliased form of this rule; only the relative form reaches here,
+        // because `noRestrictedImports` matches the literal specifier and never sees it.
+        // A reach into `components/` is left to route-reach, which knows about routes.
+        if (
+          segments &&
+          viaRelative &&
+          segments.length > 1 &&
+          !(segments[1] === "components" && segments.length > 2) &&
+          !(segments.length === 2 && DOORS.has(segments[1]))
+        ) {
+          violations.push({
+            path: relPath,
+            line,
+            rule: "feature-doors",
+            reason: `a relative import is still an import: "${shown}" reaches past another feature's doors — use its barrel "@/features/${segments[0]}", or /model, /actions, /components`,
+          });
+        }
 
         if (segments && client && !exempt(app, "client-door")) {
           if (segments.length === 1) {
@@ -227,14 +375,14 @@ export function checkArchitecture(root) {
               path: relPath,
               line,
               rule: "client-door",
-              reason: `a "use client" file may not import the feature barrel "${specifier}" — it re-exports queries.ts, which drags the database driver into the browser bundle; use /model, /actions or /components`,
+              reason: `a "use client" file may not import the feature barrel "${shown}" — it re-exports queries.ts, which drags the database driver into the browser bundle; use /model, /actions or /components`,
             });
-          } else if (!(segments.length === 2 && CLIENT_DOORS.has(segments[1]))) {
+          } else if (!(segments.length === 2 && DOORS.has(segments[1]))) {
             violations.push({
               path: relPath,
               line,
               rule: "client-door",
-              reason: `a "use client" file may open only a feature's client-safe doors (model, actions, components); "${specifier}" is not one`,
+              reason: `a "use client" file may open only a feature's client-safe doors (model, actions, components); "${shown}" is not one`,
             });
           }
         }
@@ -266,7 +414,7 @@ export function checkArchitecture(root) {
               path: relPath,
               line,
               rule: "lib-type-only",
-              reason: `lib/ is adapters only and sits below features/: it may not value-import "${specifier}" (a type-only import is erased before bundling and is fine)`,
+              reason: `lib/ is adapters only and sits below features/: it may not value-import "${shown}" (a type-only import is erased before bundling and is fine)`,
             });
           }
         }

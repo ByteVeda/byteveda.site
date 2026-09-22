@@ -245,3 +245,146 @@ test("import scanning finds every shape and tracks type-only statements", () => 
     ],
   );
 });
+
+test("a commented-out import is not an import", () => {
+  const imports = readImports(
+    [
+      '// import { a } from "@/features/one/queries";',
+      "/*",
+      ' import { b } from "@/features/two/queries";',
+      "*/",
+      'import { c } from "@/features/three/model"; // keep this one',
+      'const url = "https://example.com"; // not a comment inside the string',
+    ].join("\n"),
+  );
+
+  assert.deepEqual(
+    imports.map(({ line, specifier }) => [line, specifier]),
+    [[5, "@/features/three/model"]],
+  );
+});
+
+test("a string that reads like an import is not an import", () => {
+  const imports = readImports(
+    [
+      'export const query = `select * from "@/features/orders"`;',
+      'const msg = `select * from "@/features/pricing"`;',
+    ].join("\n"),
+  );
+
+  assert.deepEqual(imports, []);
+});
+
+test("a type alias cannot leak its type onto a later dynamic import", () => {
+  const imports = readImports(
+    [
+      "export type Config = {",
+      "  a: string;",
+      "};",
+      "",
+      'const loader = () => import("@/features/orders");',
+    ].join("\n"),
+  );
+
+  assert.deepEqual(
+    imports.map(({ line, specifier, typeOnly }) => [line, specifier, typeOnly]),
+    [[5, "@/features/orders", false]],
+  );
+});
+
+test("a commented-out import in a client file raises no violation", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/index.ts": "export const one = 1;\n",
+    "apps/demo/src/features/one/queries.ts": "export const rows = [];\n",
+    "apps/demo/src/features/two/index.ts": "export const two = 2;\n",
+    "apps/demo/src/features/two/panel.tsx": `${CLIENT}// import { rows } from "@/features/one/queries";\nexport const Panel = () => null;\n`,
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a relative import out of a feature is resolved and caught", () => {
+  const root = fixture({
+    "apps/demo/src/features/inbox/index.ts": "export const inbox = 1;\n",
+    "apps/demo/src/features/inbox/queries.ts": "export const rows = [];\n",
+    "apps/demo/src/features/posts/index.ts": "export const posts = 1;\n",
+    "apps/demo/src/features/posts/service.ts":
+      'import { rows } from "../inbox/queries";\nexport const use = rows;\n',
+  });
+
+  const violations = check(root);
+  assert.deepEqual(rulesOf(violations), ["feature-doors"]);
+  assert.match(violations[0].reason, /\.\.\/inbox\/queries" -> "@\/features\/inbox\/queries/);
+});
+
+test("a relative import of another feature's door is fine", () => {
+  const root = fixture({
+    "apps/demo/src/features/inbox/index.ts": "export const inbox = 1;\n",
+    "apps/demo/src/features/inbox/model.ts": "export const name = 'inbox';\n",
+    "apps/demo/src/features/posts/index.ts": "export const posts = 1;\n",
+    "apps/demo/src/features/posts/service.ts":
+      'import { name } from "../inbox/model";\nimport { inbox } from "../inbox";\nexport const use = [name, inbox];\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a relative reach into another feature's components is a route question", () => {
+  const files = {
+    "apps/demo/src/features/inbox/index.ts": "export const inbox = 1;\n",
+    "apps/demo/src/features/inbox/components/inbox-page.tsx":
+      "export const InboxPage = () => null;\n",
+    "apps/demo/src/features/posts/index.ts": "export const posts = 1;\n",
+  };
+
+  const caught = check(
+    fixture({
+      ...files,
+      "apps/demo/src/features/posts/service.ts":
+        'import { InboxPage } from "../inbox/components/inbox-page";\nexport const use = InboxPage;\n',
+    }),
+  );
+  assert.deepEqual(rulesOf(caught), ["route-reach"]);
+
+  const allowed = check(
+    fixture({
+      ...files,
+      "apps/demo/src/app/inbox/page.tsx":
+        'export { InboxPage as default } from "../../features/inbox/components/inbox-page";\n',
+    }),
+  );
+  assert.deepEqual(allowed, []);
+});
+
+test("a relative import inside its own feature is how a feature talks to itself", () => {
+  const root = fixture({
+    "apps/demo/src/features/inbox/index.ts": "export const inbox = 1;\n",
+    "apps/demo/src/features/inbox/queries.ts": "export const rows = [];\n",
+    "apps/demo/src/features/inbox/components/inbox-page.tsx":
+      'import { rows } from "../queries";\nexport const InboxPage = () => rows;\n',
+    "apps/demo/src/features/inbox/components/list.tsx": `${CLIENT}import { rows } from "../queries";\nexport const List = () => rows;\n`,
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
+test("a relative import from lib into a feature is resolved and caught", () => {
+  const root = fixture({
+    "apps/demo/src/features/orders/index.ts": "export const orders = 1;\n",
+    "apps/demo/src/lib/mailer.ts":
+      'import { orders } from "../features/orders";\nexport const send = () => orders;\n',
+  });
+
+  const violations = check(root);
+  assert.deepEqual(rulesOf(violations), ["lib-type-only"]);
+  assert.match(violations[0].reason, /"\.\.\/features\/orders" -> "@\/features\/orders"/);
+});
+
+test("a relative import that leaves src/ is nobody's business", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/index.ts":
+      'import { helper } from "../../../../packages/utils/helper";\nexport const one = helper;\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
