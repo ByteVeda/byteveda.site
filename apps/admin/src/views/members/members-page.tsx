@@ -12,6 +12,11 @@ import { InviteForm, MemberControls } from "./member-controls";
  * Only a super admin can change anything here — `members.manage` is in no
  * role's permission set — but `members.read` lets an admin see the list, which
  * is the difference between "you cannot do this" and "you cannot see who can".
+ *
+ * A list, not a form, so it takes the full width. It used to be `content-form`
+ * at 720px, which is narrower than the row's own columns add up to: the name
+ * column collapsed to nothing and the header printed "Member" and "Role" on
+ * top of each other. The invite panel is the form, and it constrains itself.
  */
 export async function MembersPage() {
   const { access, user } = await requirePermission("members.read");
@@ -27,7 +32,7 @@ export async function MembersPage() {
         sub={`${members.length} with access${pending > 0 ? `, ${pending} not signed in yet` : ""}`}
       />
 
-      <div className="content content-form">
+      <div className="content content-narrow">
         {!manage && (
           <div className="notice notice-warn block-gap">
             <span>

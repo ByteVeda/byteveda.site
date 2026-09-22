@@ -413,6 +413,10 @@
   .row-broadcast {
     grid-template-columns: 80px minmax(0, 1fr) 70px 28px;
   }
+  /* The name column is `1fr`, so these tracks plus the gaps are the row's real
+     minimum: put this list in a container narrower than that and the name gets
+     0px and every column lands on top of the one before it. It belongs in
+     `.content-narrow`, not `.content-form`. */
   .row-member {
     grid-template-columns: minmax(0, 1fr) 104px 140px 92px minmax(0, 320px);
   }
