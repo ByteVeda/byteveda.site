@@ -4,11 +4,14 @@ import {
   accessFor,
   can,
   canReadWorkspace,
+  hasOverrides,
   PERMISSIONS,
   permissionsFor,
   readableWorkspaces,
+  resolvePermissions,
   roleLabel,
   SUPER_ADMIN_GITHUB_IDS,
+  sanitisePermissions,
 } from "./roles";
 import { safeNext } from "./urls";
 
@@ -104,6 +107,100 @@ describe("members.manage", () => {
     for (const role of ["admin", "editor", "support", "viewer"] as const) {
       expect(permissionsFor(role)).not.toContain("members.manage");
     }
+  });
+
+  it("cannot be stored on a custom role or granted to one person", () => {
+    expect(sanitisePermissions(["members.manage", "posts.read"])).toEqual(["posts.read"]);
+  });
+
+  it("is dropped at resolution even if a row somehow holds it", () => {
+    const permissions = resolvePermissions({ role: "viewer", extra: ["members.manage"] });
+    expect(permissions).not.toContain("members.manage");
+  });
+});
+
+describe("sanitisePermissions", () => {
+  it("drops anything that is not a permission", () => {
+    expect(sanitisePermissions(["posts.read", "posts.delete", ""])).toEqual(["posts.read"]);
+  });
+
+  it("returns catalogue order, so two equal sets compare equal", () => {
+    expect(sanitisePermissions(["mail.read", "posts.read"])).toEqual(
+      sanitisePermissions(["posts.read", "mail.read"]),
+    );
+  });
+});
+
+describe("resolvePermissions", () => {
+  const releaseManager = {
+    id: "role-1",
+    key: "release-manager",
+    label: "Release manager",
+    permissions: ["posts.read", "posts.publish"] as const,
+  };
+
+  it("uses the custom role in place of the built-in one, not on top of it", () => {
+    const permissions = resolvePermissions({ role: "admin", customRole: releaseManager });
+
+    expect(permissions).toEqual(["posts.read", "posts.publish"]);
+    expect(permissions).not.toContain("settings.write");
+  });
+
+  it("adds a grant made to one person by name", () => {
+    const permissions = resolvePermissions({
+      role: "support",
+      extra: ["posts.publish"],
+    });
+
+    expect(permissions).toContain("posts.publish");
+    expect(permissions).toContain("mail.send");
+  });
+
+  it("lets denied win over the role and over an extra that contradicts it", () => {
+    const permissions = resolvePermissions({
+      role: "editor",
+      extra: ["posts.publish"],
+      denied: ["posts.publish"],
+    });
+
+    expect(permissions).not.toContain("posts.publish");
+    expect(permissions).toContain("posts.write");
+  });
+});
+
+describe("a member on a custom role", () => {
+  const role = {
+    id: "role-1",
+    key: "release-manager",
+    label: "Release manager",
+    permissions: ["posts.read", "posts.publish"] as const,
+  };
+
+  it("is named by the role, and keeps the built-in one underneath for a fallback", () => {
+    const access = accessFor(
+      { role: "viewer", mailWorkspaces: [], deniedPermissions: ["posts.publish"] },
+      false,
+      role,
+    );
+
+    expect(roleLabel(access)).toBe("Release manager");
+    expect(access.role).toBe("viewer");
+    expect(access.customRole?.id).toBe("role-1");
+    expect(can(access, "posts.read")).toBe(true);
+    expect(can(access, "posts.publish")).toBe(false);
+    expect(hasOverrides(access)).toBe(true);
+  });
+
+  it("is ignored entirely for a super admin, as their row always is", () => {
+    const access = accessFor(
+      { role: "viewer", mailWorkspaces: [], deniedPermissions: ["posts.read"] },
+      true,
+      role,
+    );
+
+    expect(access.customRole).toBeNull();
+    expect(access.permissions).toEqual(PERMISSIONS);
+    expect(hasOverrides(access)).toBe(false);
   });
 });
 

@@ -9,16 +9,13 @@ import {
   MAIL_WORKSPACES,
   type MailWorkspace,
 } from "@byteveda/db/constants";
-import { Ban, Trash2, UndoDot, UserPlus } from "lucide-react";
+import { Ban, KeyRound, Trash2, UndoDot, UserPlus } from "lucide-react";
 import { useState, useTransition } from "react";
 import { useConfirm } from "@/components";
-import {
-  inviteMember,
-  removeMember,
-  setMemberRole,
-  setMemberStatus,
-  setMemberWorkspaces,
-} from "@/lib/members/actions";
+import type { Permission } from "@/lib/auth/roles";
+import { inviteMember, removeMember, setMemberStatus } from "@/lib/members/actions";
+import { AccessDialog } from "./access-dialog";
+import type { RoleOption } from "./types";
 
 type Message = { text: string; ok: boolean } | null;
 
@@ -34,38 +31,42 @@ function Note({ message }: { message: Message }) {
 /**
  * What one member's row can do.
  *
- * Every control writes immediately — there is no save button, because there is
- * no form: a role is one value and a mailbox is one checkbox, and a page of
- * pending changes is a page somebody walks away from half applied.
+ * Two of the three controls that used to live here have moved into a dialog,
+ * and the row is better for it: a role, a scope and fifteen permissions do not
+ * fit beside a name, and the version that tried made the table overlap itself.
+ * What is left are the two acts that are genuinely one click — suspend, and
+ * remove — plus the button that opens everything else.
  *
  * Nothing here is the enforcement. Each action re-asks the server whether this
  * operator may manage members, and refuses if not; this is what stops them
  * being offered the question.
  */
 export function MemberControls({
-  id,
-  login,
-  role,
-  status,
-  workspaces,
+  member,
+  roles,
   locked,
   lockedReason,
 }: {
-  id: string;
-  login: string;
-  role: AdminRole;
-  status: AdminStatus;
-  workspaces: MailWorkspace[];
+  member: {
+    id: string;
+    login: string;
+    name: string | null;
+    role: AdminRole;
+    customRoleId: string | null;
+    status: AdminStatus;
+    permissions: readonly Permission[];
+    workspaces: readonly MailWorkspace[];
+  };
+  roles: RoleOption[];
   locked: boolean;
   lockedReason: string;
 }) {
   const [message, setMessage] = useState<Message>(null);
   const [pending, startTransition] = useTransition();
+  const [editing, setEditing] = useState(false);
   const confirm = useConfirm();
 
-  const [currentRole, setCurrentRole] = useState(role);
-  const [currentStatus, setCurrentStatus] = useState(status);
-  const [mail, setMail] = useState(workspaces);
+  const [currentStatus, setCurrentStatus] = useState(member.status);
 
   if (locked) {
     return (
@@ -83,34 +84,12 @@ export function MemberControls({
     });
   }
 
-  function changeRole(next: AdminRole) {
-    const previous = currentRole;
-    setCurrentRole(next);
-    run(
-      () => setMemberRole(id, next),
-      () => setCurrentRole(previous),
-    );
-  }
-
-  function toggleWorkspace(workspace: MailWorkspace) {
-    const previous = mail;
-    const next = mail.includes(workspace)
-      ? mail.filter((candidate) => candidate !== workspace)
-      : [...mail, workspace];
-
-    setMail(next);
-    run(
-      () => setMemberWorkspaces(id, next),
-      () => setMail(previous),
-    );
-  }
-
   async function toggleStatus() {
     const next: AdminStatus = currentStatus === "active" ? "suspended" : "active";
 
     if (next === "suspended") {
       const go = await confirm({
-        title: `Suspend ${login}?`,
+        title: `Suspend ${member.login}?`,
         body: "They are signed out immediately and cannot sign back in until this is undone. Their account and its history stay.",
         confirmLabel: "Suspend",
         destructive: true,
@@ -121,14 +100,14 @@ export function MemberControls({
     const previous = currentStatus;
     setCurrentStatus(next);
     run(
-      () => setMemberStatus(id, next),
+      () => setMemberStatus(member.id, next),
       () => setCurrentStatus(previous),
     );
   }
 
   async function remove() {
     const go = await confirm({
-      title: `Remove ${login}?`,
+      title: `Remove ${member.login}?`,
       body: "Their access, their sessions and the record that they were here all go. Suspending is the reversible one.",
       confirmLabel: "Remove",
       destructive: true,
@@ -136,47 +115,29 @@ export function MemberControls({
     if (!go) return;
 
     run(
-      () => removeMember(id),
+      () => removeMember(member.id),
       () => undefined,
     );
   }
 
   return (
     <span className="member-actions row-actions">
-      <select
-        className="input input-sm"
-        aria-label={`Role for ${login}`}
-        value={currentRole}
+      <button
+        type="button"
+        className="abtn abtn-sm"
+        onClick={() => setEditing(true)}
         disabled={pending}
-        onChange={(event) => changeRole(event.target.value as AdminRole)}
       >
-        {ADMIN_ROLES.map((option) => (
-          <option key={option} value={option}>
-            {ADMIN_ROLE_LABELS[option]}
-          </option>
-        ))}
-      </select>
-
-      <span className="member-scopes">
-        {MAIL_WORKSPACES.map((workspace) => (
-          <label key={workspace} className="tick">
-            <input
-              type="checkbox"
-              checked={mail.includes(workspace)}
-              disabled={pending}
-              onChange={() => toggleWorkspace(workspace)}
-            />
-            {MAIL_WORKSPACE_LABELS[workspace]}
-          </label>
-        ))}
-      </span>
+        <KeyRound aria-hidden />
+        Access
+      </button>
 
       <button
         type="button"
         className="abtn abtn-quiet abtn-sm"
         onClick={toggleStatus}
         disabled={pending}
-        title={currentStatus === "active" ? `Suspend ${login}` : `Restore ${login}`}
+        title={currentStatus === "active" ? `Suspend ${member.login}` : `Restore ${member.login}`}
       >
         {currentStatus === "active" ? <Ban aria-hidden /> : <UndoDot aria-hidden />}
         {currentStatus === "active" ? "Suspend" : "Restore"}
@@ -187,12 +148,21 @@ export function MemberControls({
         className="tape-remove"
         onClick={remove}
         disabled={pending}
-        aria-label={`Remove ${login}`}
+        aria-label={`Remove ${member.login}`}
       >
         <Trash2 width={13} height={13} aria-hidden />
       </button>
 
       <Note message={message} />
+
+      {editing && (
+        <AccessDialog
+          member={member}
+          roles={roles}
+          onClose={() => setEditing(false)}
+          onSaved={(text, ok) => setMessage({ text, ok })}
+        />
+      )}
     </span>
   );
 }
@@ -205,19 +175,31 @@ export function MemberControls({
  * freed name registered by a stranger, and a grant that followed the name would
  * follow it to them.
  *
+ * Deliberately the short version of the access dialog: a role and a scope, and
+ * nothing about exceptions. Somebody being invited does not yet have a shape
+ * that needs one, and the row's Access button is a click away if they turn out
+ * to.
+ *
  * No invitation is sent. There is nothing to accept: the row is the access, and
  * they sign in with GitHub whenever they are told to.
  */
-export function InviteForm() {
+export function InviteForm({ roles }: { roles: RoleOption[] }) {
   const [handle, setHandle] = useState("");
-  const [role, setRole] = useState<AdminRole>("viewer");
+  const [role, setRole] = useState<string>("viewer");
   const [workspaces, setWorkspaces] = useState<MailWorkspace[]>([...MAIL_WORKSPACES]);
   const [message, setMessage] = useState<Message>(null);
   const [pending, startTransition] = useTransition();
 
+  const custom = roles.find((option) => option.id === role) ?? null;
+
   function submit() {
     startTransition(async () => {
-      const result = await inviteMember({ handle, role, workspaces });
+      const result = await inviteMember({
+        handle,
+        role: custom ? "viewer" : (role as AdminRole),
+        customRoleId: custom?.id ?? null,
+        workspaces,
+      });
       setMessage({ text: result.message, ok: result.ok });
       if (result.ok) setHandle("");
     });
@@ -251,13 +233,24 @@ export function InviteForm() {
               id="invite-role"
               className="input"
               value={role}
-              onChange={(event) => setRole(event.target.value as AdminRole)}
+              onChange={(event) => setRole(event.target.value)}
             >
-              {ADMIN_ROLES.map((option) => (
-                <option key={option} value={option}>
-                  {ADMIN_ROLE_LABELS[option]}
-                </option>
-              ))}
+              <optgroup label="Built in">
+                {ADMIN_ROLES.map((option) => (
+                  <option key={option} value={option}>
+                    {ADMIN_ROLE_LABELS[option]}
+                  </option>
+                ))}
+              </optgroup>
+              {roles.length > 0 && (
+                <optgroup label="Custom">
+                  {roles.map((option) => (
+                    <option key={option.id} value={option.id}>
+                      {option.label}
+                    </option>
+                  ))}
+                </optgroup>
+              )}
             </select>
           </div>
 
