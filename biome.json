@@ -139,37 +139,6 @@
       }
     },
     {
-      "includes": ["apps/flexiq/src/features/home/lab.tsx", "apps/flexiq/src/app/**"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noRestrictedImports": {
-              "level": "error",
-              "options": {
-                "patterns": [
-                  {
-                    "group": [
-                      "@/features/*/*",
-                      "@/features/*/*/**",
-                      "!@/features/*/model",
-                      "!@/features/*/actions",
-                      "!@/features/*/components",
-                      "!@/features/*/components/*",
-                      "!@/features/blog/posts",
-                      "!@/features/playground/canvas/*",
-                      "!@/features/playground/event-log",
-                      "!@/features/playground/use-engine"
-                    ],
-                    "message": "A feature's internals are private. Named exemptions, four specifiers and no more: apps/flexiq is not on the features-over-lib layout yet (issue #361 covers admin and academy) and has no model/actions/components vocabulary to reach through, so these four reaches predate the rule. A follow-up task puts flexiq behind the doors and deletes this whole override."
-                  }
-                ]
-              }
-            }
-          }
-        }
-      }
-    },
-    {
       "includes": ["apps/*/src/shared/**"],
       "linter": {
         "rules": {

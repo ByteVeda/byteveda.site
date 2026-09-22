@@ -73,31 +73,15 @@ const SKIPPED_DIRS = new Set(["node_modules", ".next", ".turbo", "dist"]);
 const MODULE_STATEMENT = /^\s*(?:import[\s{*"']|export\s+type\s*[{*]|export\s*[{*])/;
 
 /**
- * Named exemptions. Each one is a rule in its own right, not a hole: it says which app
- * is out of scope for which check, and why. An app absent from this list is governed.
- */
-const EXEMPTIONS = [
-  // apps/flexiq predates the features-over-lib vocabulary — issue #361 restructured
-  // apps/admin and apps/academy only. flexiq has no model.ts/actions.ts and no
-  // components/ barrels, so the client door and the front door have nothing to key off
-  // there. Delete this entry the day flexiq adopts the vocabulary. Every other rule,
-  // and every other app, is governed.
-  { app: "flexiq", rules: new Set(["client-door", "front-door"]) },
-];
-
-/**
- * The one lawful `lib/` -> `features/` value import. Both files are pinned in place by
- * issue #361 and nothing behaviour-preserving removes the edge; the real fix is for the
- * site metadata to take the price as an argument rather than import the feature.
+ * The one lawful `lib/` -> `features/` value import, and the only exemption left in this
+ * file: every app is held to every rule above. Both files are pinned in place by issue
+ * #361 and nothing behaviour-preserving removes the edge; the real fix is for the site
+ * metadata to take the price as an argument rather than import the feature.
  */
 const LIB_VALUE_IMPORT_EXEMPTION = {
   file: "apps/academy/src/lib/site.ts",
   specifier: "@/features/pricing",
 };
-
-function exempt(app, rule) {
-  return EXEMPTIONS.some((entry) => entry.app === app && entry.rules.has(rule));
-}
 
 /** Every `.ts`/`.tsx` file under `dir`, depth first. */
 function sourceFiles(dir, found = []) {
@@ -282,7 +266,6 @@ function toAlias(specifier, file, srcDir) {
 function checkFrontDoors(root, app, violations) {
   const featuresDir = join(root, "apps", app, "src", "features");
   if (!existsSync(featuresDir)) return;
-  if (exempt(app, "front-door")) return;
 
   for (const entry of readdirSync(featuresDir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
@@ -369,7 +352,7 @@ export function checkArchitecture(root) {
           });
         }
 
-        if (segments && client && !exempt(app, "client-door")) {
+        if (segments && client) {
           if (segments.length === 1) {
             violations.push({
               path: relPath,

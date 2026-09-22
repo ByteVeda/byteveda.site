@@ -191,14 +191,16 @@ test("the site.ts exemption is that file and that feature, nothing else", () => 
   assert.deepEqual(rulesOf(check(root)), ["lib-type-only"]);
 });
 
-test("the flexiq exemption is named, scoped and load-bearing", () => {
+test("no app is exempt from the client door or the front door", () => {
   const files = (app) => ({
     [`apps/${app}/src/features/hero-fx/index.ts`]: "export const HeroField = () => null;\n",
     [`apps/${app}/src/features/home/posts.ts`]: "export const posts = [];\n",
     [`apps/${app}/src/features/home/hero.tsx`]: `${CLIENT}import { HeroField } from "@/features/hero-fx";\nexport const Hero = () => HeroField;\n`,
   });
 
-  assert.deepEqual(check(fixture(files("flexiq"))), []);
+  // flexiq was the one app these two rules ever spared; it is on the doors now, and the
+  // same tree is caught under its name exactly as it is under any other.
+  assert.deepEqual(rulesOf(check(fixture(files("flexiq")))), ["client-door", "front-door"]);
   assert.deepEqual(rulesOf(check(fixture(files("demo")))), ["client-door", "front-door"]);
 });
 
