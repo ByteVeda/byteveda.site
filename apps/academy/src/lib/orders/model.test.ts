@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { type Chapter, chapters } from "@/lib/inventory";
+import { PRICING } from "@/lib/pricing";
 import { validateOrder } from "./model";
 
 function firstStocked(): Chapter {
@@ -18,9 +19,7 @@ const custom = {
     cls: "10",
     subject: "Mathematics",
     chapter: "Trigonometry",
-    questions: 30,
-    difficulty: "board",
-    answerKey: "steps",
+    advanced: false,
     copies: 1,
   },
 };
@@ -41,7 +40,7 @@ describe("validateOrder", () => {
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.line.price).toBe(stocked.price);
+    expect(result.line.price).toBe(PRICING.chapter);
   });
 
   it("prices a custom request by re-running the quote", () => {
@@ -51,7 +50,7 @@ describe("validateOrder", () => {
     if (!result.ok) return;
     expect(result.line).toMatchObject({
       title: "Trigonometry — made to order",
-      price: 295,
+      price: PRICING.setting + PRICING.chapter,
       madeToOrder: true,
     });
   });
@@ -79,8 +78,12 @@ describe("validateOrder", () => {
       order({ items: [{ ...custom, request: { ...custom.request, chapter: "  " } }] }),
     ],
     [
-      "a custom request with a non-numeric question count",
-      order({ items: [{ ...custom, request: { ...custom.request, questions: "lots" } }] }),
+      "a custom request with a non-numeric copy count",
+      order({ items: [{ ...custom, request: { ...custom.request, copies: "lots" } }] }),
+    ],
+    [
+      "a custom request that does not say whether it wants the advanced block",
+      order({ items: [{ ...custom, request: { ...custom.request, advanced: "yes" } }] }),
     ],
   ])("rejects %s", (_case, payload) => {
     expect(validateOrder(payload).ok).toBe(false);
@@ -98,12 +101,12 @@ describe("validateOrder", () => {
 
   it("clamps an out-of-range custom request rather than rejecting it", () => {
     const result = validateOrder(
-      order({ items: [{ ...custom, request: { ...custom.request, questions: 5000, copies: 0 } }] }),
+      order({ items: [{ ...custom, request: { ...custom.request, copies: 900 } }] }),
     );
 
     expect(result).toMatchObject({ ok: true });
     if (!result.ok) return;
-    expect(result.line.meta).toContain("120 questions");
+    expect(result.line.meta).toContain("60 copies");
   });
 
   it("trims the delivery address", () => {

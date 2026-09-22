@@ -29,7 +29,7 @@
 
 .display {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.03em;
   text-wrap: balance;
@@ -48,22 +48,43 @@
 
 /* ---------- wordmark ---------- */
 
-/* Text, no leaf: the shared lockup is ByteVeda's, and this header has to name
-   the surface as well as the company. Second word in the accent, which is the
-   only place on the page the accent is used decoratively. */
+/* Leaf plus the full name: the shared lockup is ByteVeda's alone, and this
+   header has to name the surface as well as the company. Second word in the
+   accent, which is the only place on the page the accent is used
+   decoratively. */
 .brand-text {
-  gap: 0.34em;
+  gap: 0.55em;
   font-size: 1.18rem;
   font-weight: 700;
 }
 
-.brand-text span {
+/* The mark is a dark-green leaf on transparent — it reads on paper and
+   disappears into the header's near-black. So it keeps the light tile the
+   favicon puts it on, unchanged between themes: the artwork has one set of
+   colours and this is the only ground both of them sit on. */
+.brand-tile {
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+/* `.brand .mark` in the shared sheet sets the header height for the lockup
+   that has no tile; inside one, the tile is what has to measure 32px. */
+.brand-tile .mark {
+  height: 20px;
+}
+
+.brand-text .brand-surface {
   color: var(--accent);
 }
 
 /* The nav is sticky, so an in-page jump has to clear it. */
 [id="top"],
 [id="inventory"],
+[id="sets"],
 [id="custom"],
 [id="delivery"] {
   scroll-margin-top: 88px;
@@ -347,6 +368,14 @@
   color: var(--text-faint);
 }
 
+/* Two lines: what the chapter holds, and what rides along with it for nothing.
+   `nowrap` on both — the column is short enough to keep on one line each, and a
+   wrapped "+ 14 board · 20 NCERT, free" reads as two separate claims. */
+.contents {
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
 .more-row {
   display: flex;
   justify-content: center;
@@ -419,6 +448,99 @@
   color: var(--text-faint);
 }
 
+/* ---------- subject sets ---------- */
+
+.sets {
+  padding-block: clamp(3rem, 6vw, 4.5rem) 0;
+}
+
+/* Same voice as the inventory's count, one section down. Its own class rather
+   than that one's: two `.result-count` elements on a page turn every "the
+   count says…" selector into a guess. */
+.sets-note {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+
+.set-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 52rem) {
+  .set-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Drawn as a card because that is the shape the thing has: a set is a stack of
+   questions, so the page draws a stack. The two edges under it are shadows
+   rather than elements — a real sibling would need a stacking context and
+   would land in the accessibility tree as a third empty card.
+   `margin-bottom` is what those edges sit in; without it they run into
+   whatever the grid puts below. */
+.set-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.9rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow:
+    0 5px 0 -1px var(--surface),
+    0 5px 0 0 var(--line),
+    0 10px 0 -1px var(--surface),
+    0 10px 0 0 var(--line);
+}
+
+.set-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* What is actually in it, set as the headline — the number is what separates
+   these three from each other. */
+.set-size {
+  margin-top: 0.9rem;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.set-unit {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.set-body {
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  text-wrap: pretty;
+}
+
+/* Bottom right, and pushed there rather than placed: the three summaries run to
+   different lengths and the prices still have to line up across the row. */
+.set-price {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+
 /* ---------- custom request ---------- */
 
 .custom {
@@ -428,7 +550,7 @@
 }
 
 @media (min-width: 62rem) {
-  /* The form has eight fields; the quote has five short lines and a button.
+  /* The form has six fields; the quote has five short lines and a button.
      Splitting them evenly made the quote a broad white panel that was mostly
      empty — the narrower column is the one that needed the room. */
   .custom .band-inner {
@@ -566,6 +688,14 @@
   z-index: 2;
   background: var(--surface);
   border-top: 1px solid var(--line);
+}
+
+/* Light `--surface` is a white card colour, and a band the width of the page
+   set in it reads as a hole punched in the warm paper rather than a change of
+   tone. The tinted surface is the same step away from the page, in the
+   palette the rest of the light theme is mixed from. */
+[data-theme="light"] .cta {
+  background: var(--surface-2);
 }
 
 .cta-inner {

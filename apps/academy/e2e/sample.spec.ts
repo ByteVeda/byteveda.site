@@ -37,8 +37,12 @@ test.describe("the counter", () => {
   test("holds one chapter at a time, and says so on every other row", async ({ page }) => {
     await page.goto("/");
 
-    await expect(page.getByRole("button", { name: /^Pick / })).toHaveCount(6);
-    await page
+    // Scoped to the table: this is about the six rows, not every button on the
+    // page.
+    const table = page.locator(".table");
+
+    await expect(table.getByRole("button", { name: /^Pick / })).toHaveCount(6);
+    await table
       .getByRole("button", { name: /^Pick / })
       .first()
       .click();
@@ -47,11 +51,11 @@ test.describe("the counter", () => {
     // One free sample per address, so the other five rows stop offering a
     // second one. Saying "Swap" is the only place that rule is visible before
     // somebody runs into it.
-    await expect(page.getByRole("button", { name: /^Picked: / })).toHaveCount(1);
-    await expect(page.getByRole("button", { name: /^Swap for / })).toHaveCount(5);
-    await expect(page.getByRole("button", { name: /^Pick / })).toHaveCount(0);
+    await expect(table.getByRole("button", { name: /^Picked: / })).toHaveCount(1);
+    await expect(table.getByRole("button", { name: /^Swap for / })).toHaveCount(5);
+    await expect(table.getByRole("button", { name: /^Pick / })).toHaveCount(0);
 
-    await page
+    await table
       .getByRole("button", { name: /^Swap for / })
       .first()
       .click();
@@ -64,7 +68,7 @@ test.describe("the counter", () => {
     await page.goto("/");
 
     const row = page.locator(".table tbody tr").first();
-    await expect(row.locator(".price-was")).toHaveText("₹129");
+    await expect(row.locator(".price-was")).toHaveText("₹19");
     await expect(row.locator(".price-free")).toHaveText("Free");
   });
 
@@ -94,7 +98,7 @@ test.describe("the counter", () => {
       .getByRole("button", { name: /^Pick / })
       .first()
       .click();
-    await page.getByRole("button", { name: `Picked: ${FIRST}` }).click();
+    await page.getByRole("button", { name: `Picked: ${FIRST}`, exact: true }).click();
 
     await expect(page.locator(".sample-bar b")).toHaveText("Nothing picked yet");
     await expect(page.getByRole("link", { name: "Sample (0)" })).toBeVisible();
@@ -293,14 +297,17 @@ test.describe("the custom request", () => {
     await page.goto("/");
 
     const quote = page.locator(".quote");
-    await expect(quote.locator(".quote-total b")).toHaveText("₹295");
+    // 149 to set it, 19 for the chapter. The board questions and the NCERT
+    // exercise are on the panel at "free".
+    await expect(quote.locator(".quote-total b")).toHaveText("₹168");
+    await expect(quote).toContainText("free");
     await expect(quote.getByRole("button")).toBeDisabled();
 
     await page.getByLabel("Chapter or topic").fill("Heights and distances");
     await page.getByLabel("Copies").fill("12");
 
-    // 295 a copy, twelve copies, less the 30% class-set rate.
-    await expect(quote.locator(".quote-total b")).toHaveText("₹2478");
+    // The setting is charged once; twelve copies at ₹19 take the class-set rate.
+    await expect(quote.locator(".quote-total b")).toHaveText("₹309");
     await expect(quote).toContainText("class-set rate");
 
     await quote.getByRole("button", { name: /Ask for a sample of this/ }).click();
@@ -311,20 +318,60 @@ test.describe("the custom request", () => {
       "Heights and distances — made to order",
     );
     // The quote stays on the landing page, where it is a quote rather than a bill.
-    await expect(page.locator(".sample-page")).not.toContainText("2478");
+    await expect(page.locator(".sample-page")).not.toContainText("309");
   });
 
-  test("picks a difficulty through the custom listbox", async ({ page }) => {
+  test("adds the advanced block through the custom listbox", async ({ page }) => {
     await page.goto("/");
 
-    const difficulty = page.getByRole("combobox", { name: "Difficulty" });
-    await expect(difficulty).toContainText("Board-level mixed");
+    const advanced = page.getByRole("combobox", { name: "Advanced block" });
+    await expect(advanced).toContainText("Standard mix only");
 
-    await difficulty.click();
-    await page.getByRole("option", { name: "Advanced / HOTS" }).click();
+    await advanced.click();
+    await page.getByRole("option", { name: /Add advanced/ }).click();
 
-    await expect(difficulty).toContainText("Advanced / HOTS");
-    // 149 setting + 66 questions + 80 advanced + 40 solutions.
-    await expect(page.locator(".quote-total b")).toHaveText("₹335");
+    await expect(advanced).toContainText("Add advanced");
+    // 149 setting + 19 chapter + 20 advanced.
+    await expect(page.locator(".quote-total b")).toHaveText("₹188");
+  });
+});
+
+test.describe("the subject sets", () => {
+  test("shows three sets, priced per subject", async ({ page }) => {
+    await page.goto("/");
+
+    const cards = page.locator(".set-card");
+    await expect(cards).toHaveCount(3);
+
+    await expect(cards.nth(0)).toContainText("Subject set");
+    await expect(cards.nth(0)).toContainText("Every chapter");
+    await expect(cards.nth(0).locator(".set-price")).toHaveText("₹199");
+
+    await expect(cards.nth(1)).toContainText("Board set");
+    await expect(cards.nth(1)).toContainText("100 questions");
+    await expect(cards.nth(1).locator(".set-price")).toHaveText("₹499");
+
+    await expect(cards.nth(2)).toContainText("HOTS set");
+    await expect(cards.nth(2)).toContainText("125 questions");
+    await expect(cards.nth(2).locator(".set-price")).toHaveText("₹699");
+
+    await expect(page.locator(".set-unit").first()).toHaveText("per subject");
+  });
+
+  test("is a price list, not a second checkout", async ({ page }) => {
+    await page.goto("/");
+
+    // The sets are read, not picked. Buying is not open for them any more than
+    // it is for a chapter, and a button here would say otherwise.
+    await expect(page.locator(".sets").getByRole("button")).toHaveCount(0);
+    await expect(page.locator(".sets .soon")).toContainText("Buying opens with the chapters");
+  });
+
+  test("is reachable from the nav", async ({ page }) => {
+    await page.goto("/");
+
+    await page.getByRole("link", { name: "Subject sets" }).first().click();
+    await expect(page).toHaveURL(/#sets$/);
+    await expect(page.locator("#sets")).toBeVisible();
   });
 });

@@ -24,7 +24,7 @@ type SampleContextValue = {
 const SampleContext = createContext<SampleContextValue | null>(null);
 
 /** Versioned: a shape change should drop an old pick, not try to read it. */
-const STORAGE_KEY = "academy.sample.v1";
+const STORAGE_KEY = "academy.sample.v2";
 
 function restore(): CartItem | null {
   try {

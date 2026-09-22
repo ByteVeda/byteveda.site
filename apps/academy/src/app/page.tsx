@@ -1,4 +1,4 @@
-import { Delivery, Hero, Strip } from "@/components/sections";
+import { Delivery, Hero, Sets, Strip } from "@/components/sections";
 import { CustomSection } from "@/features/custom/custom-section";
 import { InventorySection } from "@/features/inventory/inventory-section";
 
@@ -15,6 +15,7 @@ export default function Home() {
       <Hero />
       <Strip />
       <InventorySection />
+      <Sets />
       <CustomSection />
       <Delivery />
     </>

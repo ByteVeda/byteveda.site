@@ -14,7 +14,35 @@ import mark from "./assets/byteveda-mark.png";
 
 /** Rendered size. The artwork is taller than it is wide; height leads. */
 const MARK_HEIGHT = 28;
-const MARK_WIDTH = Math.round((mark.width / mark.height) * MARK_HEIGHT);
+
+/**
+ * The leaf on its own, for a lockup that sets its own wording.
+ *
+ * A bitmap rather than the inline SVG that used to live here: the mark is a
+ * multi-tone gradient, so it cannot take `currentColor` and there is nothing
+ * for a single path to carry. One source at three times the rendered size, so
+ * a retina screen has pixels to use and `next/image` can size the rest down.
+ */
+export function BrandMark({ height = MARK_HEIGHT, className }: BrandMarkProps) {
+  return (
+    // Decorative: every lockup that uses it spells the name out beside it.
+    <Image
+      className={cn("mark", className)}
+      src={mark}
+      width={Math.round((mark.width / mark.height) * height)}
+      height={height}
+      alt=""
+      aria-hidden
+      priority
+    />
+  );
+}
+
+type BrandMarkProps = {
+  /** Rendered height in px; the width follows the artwork's ratio. */
+  height?: number;
+  className?: string;
+};
 
 type WordmarkProps = {
   href?: string;
@@ -26,27 +54,13 @@ type WordmarkProps = {
 /**
  * The ByteVeda brand lockup — leaf mark + wordmark.
  *
- * A bitmap rather than the inline SVG that used to live here: the mark is a
- * multi-tone gradient, so it cannot take `currentColor` and there is nothing
- * for a single path to carry. One source at three times the rendered size, so
- * a retina screen has pixels to use and `next/image` can size the rest down.
- *
  * No tile behind it. The old bracket was a white glyph that needed the accent
  * square to sit on; this one brings its own colour.
  */
 export function Wordmark({ href = "/", label = ORG.toLowerCase(), className }: WordmarkProps) {
   return (
     <Link href={href} className={cn("brand", className)} aria-label={`${ORG} home`}>
-      {/* Decorative: the lockup spells the name out, and the link is labelled. */}
-      <Image
-        className="mark"
-        src={mark}
-        width={MARK_WIDTH}
-        height={MARK_HEIGHT}
-        alt=""
-        aria-hidden
-        priority
-      />
+      <BrandMark />
       <span>
         <b>{label}</b>
         <span className="dot">.</span>
