@@ -2,9 +2,8 @@
 
 import type { ReactNode } from "react";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-
+import type { CustomRequest } from "@/features/custom/model";
 import { type CartItem, type OrderLine, parseCartItem, resolveLine } from "@/lib/orders/model";
-import type { CustomRequest } from "@/lib/quote";
 
 type SampleContextValue = {
   /** What was picked, or nothing. One free sample per address. */

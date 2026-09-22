@@ -6,6 +6,7 @@ import { Field, Select, TextInput } from "@/components/ui";
 import { type Board, type ClassLevel, subjects } from "@/features/inventory/model";
 import { MIX_LABEL } from "@/features/pricing/model";
 import { useSamples } from "@/features/sample/store";
+import { TURNAROUND } from "@/lib/site";
 import {
   ADVANCED_OPTIONS,
   type AdvancedChoice,
@@ -13,8 +14,7 @@ import {
   type CustomRequest,
   describeRequest,
   quoteFor,
-} from "@/lib/quote";
-import { TURNAROUND } from "@/lib/site";
+} from "./model";
 
 const BOARDS = [
   { value: "CBSE", label: "CBSE" },

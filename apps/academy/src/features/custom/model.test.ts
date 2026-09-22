@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { PRICING } from "@/features/pricing";
-import { type CustomRequest, describeRequest, quoteFor } from "./quote";
+import { type CustomRequest, describeRequest, quoteFor } from "./model";
 
 const base: CustomRequest = {
   board: "CBSE",
