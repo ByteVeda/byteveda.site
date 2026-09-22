@@ -197,7 +197,7 @@ feature-doors glob list. It is one line in the script instead — `component-bar
 
 **`pnpm check:arch`** — `scripts/check-architecture.mjs`. It owns the rules Biome
 structurally cannot express, because they depend on file *contents*, directory *shape*,
-or a specifier Biome never resolves. Nine rules, each named in the failure output:
+or a specifier Biome never resolves. Ten rules, each named in the failure output:
 
 | Rule | What it catches |
 | --- | --- |
@@ -208,7 +208,8 @@ or a specifier Biome never resolves. Nine rules, each named in the failure outpu
 | `feature-doors` | The relative spelling of rule 3. `../inbox/queries` is invisible to Biome, which matches the literal specifier; the script resolves it against `src/` first. |
 | `component-barrel` | A file under `features/` opening the `@/components` barrel, in any spelling — `@/components`, `@/components/index`, or a relative path that resolves to either. `@/components/<file>` stays legal: it is the barrel itself that is off limits. |
 | `shared-isolation` | The relative spelling of the `shared/` rule. An import that stays inside `shared/` resolves to `@/shared/…` and is fine; one that resolves to `@/lib`, `@/features` or `@/components` is not. |
-| `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Covers `features/<name>/model.ts` and `features/<name>/components/model.ts` alike, so a components-only feature is held to it too. Every other rule assumes a model is client-safe; this is the one that checks. |
+| `client-safe` | A `"use client"` file value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis` or a `node:` built-in. `client-door` above only ever inspects `@/features/…` specifiers, so a client component naming the driver directly used to pass. `import type` and `@byteveda/db/constants` are fine, and so is `@/lib/*` — see the bullet below on what that costs. |
+| `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Covers `features/<name>/model.ts` and `features/<name>/components/model.ts` alike, so a components-only feature is held to it too. The same driver list as `client-safe`, plus `@/lib/*`, which only a model is held to. |
 | `curated-barrel` | `export *` in a feature's `index.ts` or its `components/index.ts`. A star puts every symbol of that module on the door, including whatever is added to it later. |
 
 If your failure message is `path:line [rule-name] reason`, it came from the script.
@@ -226,9 +227,21 @@ load `next/headers`.
 Know where the structure is held by a tool and where it is held by people. This list is
 worth only what its last check is worth: it named the relative spelling of the
 `@/components` ban as open for one commit after `component-barrel` had closed it. **Prove
-a gap before you write it here, and prove it again before you trust it.** Three, each
+a gap before you write it here, and prove it again before you trust it.** Four, each
 re-confirmed against the tools as they stand:
 
+- **A client component reading `process.env` through `@/lib/*`.** `client-safe` bars a
+  `"use client"` file from the drivers, but not from `@/lib` — it cannot. `academy`,
+  `flexiq` and `main` client components take fifteen value imports from
+  `@/lib/{site,docs,highlight,version}`, all of them constants that happen to live in an
+  adapter folder, and a blanket ban would be fifteen false positives. The cost is that
+  `process.env` in a bundle is not an error: it is `undefined`, and the code carries on
+  with whatever default sits behind the `??`. That is exactly the bug commit `94cace5`
+  fixed — `features/attachments/model.ts` resolved the upload ceiling from
+  `ADMIN_MAX_ATTACHMENT_BYTES`, the browser had no environment to read it from, and the
+  picker silently refused files the upload route would have accepted. It never threw and
+  no tool saw it. The shape to watch for: a number or a flag that the server resolves from
+  the environment and the browser has to re-derive. Hand it across as a prop.
 - **A barrel's *named* re-exports.** `curated-barrel` bans `export *`, but a curated
   `index.ts` can still put a component on the server door — `export { Card } from
   "./components";` beside `export { listThings } from "./queries";` passes both tools.

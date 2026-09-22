@@ -32,6 +32,16 @@
  *                  take `import type` from `@/features/orders`, and this is the rule
  *                  that holds them to types.
  *
+ *   client-safe    A `"use client"` file says which half of the app it runs in, so it may
+ *                  not value-import `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis` or
+ *                  a `node:` built-in. `client-door` only ever inspects `@/features/…`
+ *                  specifiers, so before this rule a client component could import the
+ *                  driver by name and pass. Not `@/lib/*`: client components legitimately
+ *                  open `@/lib/{site,docs,highlight,version}` — fifteen value imports
+ *                  across academy, flexiq and main — and the cost of that, `process.env`
+ *                  reading `undefined` in the browser, is a review matter written up in
+ *                  `AGENTS.md` under "What no tool checks".
+ *
  *   model-client-safe
  *                  A `features/<name>/model.ts` is the half of a feature that the browser
  *                  loads too, and every other rule here rests on that being true. It may
@@ -281,9 +291,12 @@ export function readImports(source) {
 }
 
 /**
- * Why a specifier cannot be value-imported by a `model.ts`, or null if it can.
- * `@byteveda/db/constants` is a pure entry point — plain arrays and string unions, no
+ * Why a specifier cannot be value-imported by anything the browser loads, or null if it
+ * can. `@byteveda/db/constants` is a pure entry point — plain arrays and string unions, no
  * driver — which is why several models already read from it.
+ *
+ * Deliberately not `@/lib/*`: that one is a rule about a `model.ts`, not about the browser
+ * bundle, and `modelUnsafe` below adds it back for the file it applies to.
  */
 function clientUnsafe(specifier) {
   if (specifier === "@byteveda/db/constants") return null;
@@ -296,6 +309,20 @@ function clientUnsafe(specifier) {
   if (specifier === "resend" || specifier.startsWith("resend/")) return "it is the mail client";
   if (specifier === "ioredis" || specifier.startsWith("ioredis/")) return "it is the Redis client";
   if (specifier.startsWith("node:")) return "it is a Node built-in";
+  return null;
+}
+
+/**
+ * The same list plus `@/lib/*`, which only a `model.ts` is held to. A `"use client"` file
+ * may open `@/lib/site`, `@/lib/docs`, `@/lib/highlight` and `@/lib/version` — fifteen such
+ * value imports across academy, flexiq and main — so the ban cannot be blanket. What it
+ * costs there is `process.env` reading as `undefined` in the browser rather than failing
+ * loudly, which is a review matter and is written up in `AGENTS.md` under "What no tool
+ * checks".
+ */
+function modelUnsafe(specifier) {
+  const why = clientUnsafe(specifier);
+  if (why) return why;
   if (specifier === "@/lib" || specifier.startsWith("@/lib/")) {
     return "lib/ adapts to things outside this process";
   }
@@ -555,13 +582,29 @@ export function checkArchitecture(root) {
         }
 
         if (isModel && !typeOnly) {
-          const why = clientUnsafe(specifier);
+          const why = modelUnsafe(specifier);
           if (why) {
             violations.push({
               path: relPath,
               line,
               rule: "model-client-safe",
               reason: `a model.ts is the half of a feature the browser also loads, so it may not value-import "${shown}" — ${why}; an "import type" is erased before bundling and is fine`,
+            });
+          }
+        }
+
+        // And the file that says it runs in the browser, held to the same drivers. Every
+        // other client rule here is about which *feature* door was opened; none of them
+        // looks at what a client component imports from outside `features/`, so a
+        // `"use client"` file could value-import the driver directly and pass.
+        if (client && !typeOnly) {
+          const why = clientUnsafe(specifier);
+          if (why) {
+            violations.push({
+              path: relPath,
+              line,
+              rule: "client-safe",
+              reason: `a "use client" file is the browser half by definition, so it may not value-import "${shown}" — ${why}; an "import type" is erased before bundling and is fine`,
             });
           }
         }

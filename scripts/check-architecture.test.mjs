@@ -515,6 +515,62 @@ test("only a feature-root model.ts is held to client safety", () => {
   assert.deepEqual(check(root), []);
 });
 
+/** A `"use client"` component whose imports are whatever `body` says. */
+function clientComponent(body) {
+  return {
+    "apps/demo/src/features/one/components/index.ts": 'export { Panel } from "./panel";\n',
+    "apps/demo/src/features/one/components/panel.tsx": `${CLIENT}${body}`,
+  };
+}
+
+test('a "use client" file may not value-import a driver or a Node built-in', () => {
+  for (const specifier of [
+    "@byteveda/db",
+    "@byteveda/db/schema",
+    "drizzle-orm",
+    "resend",
+    "ioredis",
+    "node:crypto",
+  ]) {
+    const root = fixture(
+      clientComponent(`import { thing } from "${specifier}";\nexport const Panel = () => thing;\n`),
+    );
+
+    const violations = check(root);
+    assert.deepEqual(rulesOf(violations), ["client-safe"], specifier);
+    assert.equal(violations[0].path, "apps/demo/src/features/one/components/panel.tsx");
+    assert.equal(violations[0].line, 2);
+  }
+});
+
+test('a "use client" file may take those as types, and open db/constants and @/lib', () => {
+  const root = fixture(
+    clientComponent(
+      [
+        'import type { Row } from "@byteveda/db";',
+        'import { MAIL_WORKSPACES } from "@byteveda/db/constants";',
+        'import { SITE } from "@/lib/site";',
+        "export const Panel = (row) => [MAIL_WORKSPACES, SITE, row];",
+        "",
+      ].join("\n"),
+    ),
+  );
+
+  // `@/lib/*` is barred from a model.ts and not from a client file: academy, flexiq and
+  // main all render `@/lib/site` client-side. What that costs is documented, not checked.
+  assert.deepEqual(check(root), []);
+});
+
+test("a component without the directive is a server component and may open the driver", () => {
+  const root = fixture({
+    "apps/demo/src/features/one/index.ts": 'export { Panel } from "./components/panel";\n',
+    "apps/demo/src/features/one/components/panel.tsx":
+      'import { getDb } from "@byteveda/db";\nexport const Panel = () => getDb();\n',
+  });
+
+  assert.deepEqual(check(root), []);
+});
+
 test("a feature barrel may not export *", () => {
   const root = fixture(featureWith("export const one = 1;\n", 'export * from "./model";\n'));
 
