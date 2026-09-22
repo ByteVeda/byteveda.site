@@ -57,10 +57,13 @@
  *                  is held to the same four doors.
  *
  *   component-barrel
- *                  The same division for `@/components`. `biome.json` bans that exact
- *                  specifier from anything under `features/`, which leaves the relative
- *                  spelling of it — `../../../components` — invisible; resolved here, it
- *                  is the same module and the same violation. Only the barrel itself:
+ *                  A file under `features/` may not open the app-wide `@/components`
+ *                  barrel, in any spelling — `@/components`, `@/components/index`, or a
+ *                  relative path that resolves to either. This is the one import rule
+ *                  Biome does not share: saying it there needs a `paths` entry, which is
+ *                  exact-match only and so missed `@/components/index`, and the override
+ *                  carrying it had to restate the whole feature-doors glob list. One test
+ *                  on the resolved specifier says it once. Only the barrel itself:
  *                  `@/components/<file>` is how a feature names the component it wants.
  *
  *   shared-isolation
@@ -483,16 +486,18 @@ export function checkArchitecture(root) {
           });
         }
 
-        // The same division for the app-wide component barrel: `biome.json` bans the
-        // aliased "@/components" from anything under features/, and a relative spelling of
-        // it is invisible to that, so it is caught here. Only the barrel itself —
-        // "@/components/<file>" is how a feature is supposed to name the one it wants.
-        if (ownFeature !== null && viaRelative && COMPONENT_BARREL.has(specifier)) {
+        // The app-wide component barrel, in every spelling. This one is not split with
+        // Biome: expressing it there took a `paths` entry, which is exact-match only, so
+        // "@/components/index" slipped it — and the override that carried it had to
+        // restate the whole feature-doors glob list to exist at all. Here it is one test
+        // on the resolved specifier. Only the barrel itself: "@/components/<file>" is how
+        // a feature names the one component it wants.
+        if (ownFeature !== null && COMPONENT_BARREL.has(specifier)) {
           violations.push({
             path: relPath,
             line,
             rule: "component-barrel",
-            reason: `a relative import is still an import: "${shown}" is the app-wide component barrel, which is all client components and pulls them into every server module that touches this feature — name the one you want, "@/components/<name>"`,
+            reason: `a feature must not open the app-wide component barrel: "${shown}" is all client components, and one import of it pulls that whole graph into every server module that touches this feature — name the one you want, "@/components/<name>"`,
           });
         }
 

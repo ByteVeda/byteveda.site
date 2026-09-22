@@ -555,8 +555,13 @@ function appComponents(reach) {
   };
 }
 
-test("a feature may not reach the component barrel by a relative path", () => {
-  for (const written of ["../../../components", "../../../components/index"]) {
+test("a feature may not reach the component barrel, in any spelling", () => {
+  for (const written of [
+    "@/components",
+    "@/components/index",
+    "../../../components",
+    "../../../components/index",
+  ]) {
     const root = fixture(
       appComponents(`import { Mark } from "${written}";\nexport const One = () => Mark;\n`),
     );
