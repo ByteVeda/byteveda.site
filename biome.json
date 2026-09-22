@@ -11,6 +11,7 @@
     "includes": [
       "apps/**",
       "packages/**",
+      "scripts/**",
       "*.ts",
       "*.tsx",
       "*.mjs",
@@ -22,5 +23,176 @@
       "!pnpm-lock.yaml",
       "!apps/main/src/features/news/data/news.json"
     ]
-  }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "patterns": [
+              {
+                "group": [
+                  "@/features/*/queries",
+                  "@/features/*/store",
+                  "@/features/*/service",
+                  "@/features/*/events",
+                  "@/features/*/components/**",
+                  "@/features/*/*/**"
+                ],
+                "message": "A feature's internals are private. Server code reaches another feature through its barrel, \"@/features/<name>\"; client code reaches it through \"@/features/<name>/model\", \"/actions\" or \"/components\". Only app/**/page.tsx and app/**/layout.tsx may name a component file directly, as \"@/features/<name>/components/<file>\"."
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/*/src/app/**/page.tsx", "apps/*/src/app/**/layout.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@/features/*/queries",
+                      "@/features/*/store",
+                      "@/features/*/service",
+                      "@/features/*/events",
+                      "@/features/*/*/**",
+                      "!@/features/*/components/*"
+                    ],
+                    "message": "A page or a layout is a server component, so it reaches its screen by that component's own path: \"@/features/<name>/components/<file>\". Every other path into a feature is private — its server API is the barrel \"@/features/<name>\"."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/*/src/lib/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@/features/*", "@/features/**"],
+                    "message": "lib/ holds adapters to the world outside this process and nothing else, so it sits below features/ and may not import one. Domain code belongs in features/<name>/."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": [
+        "apps/academy/src/lib/orders/service.ts",
+        "apps/academy/src/lib/email/templates.ts"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@/features/*", "@/features/**", "!@/features/orders"],
+                    "message": "lib/ may not import a feature. Named exemption: these two files are the Resend adapter and take `import type` only from \"@/features/orders\" — a type is erased before bundling, so no feature code reaches lib/ at runtime. Biome cannot tell a type-only import from a value one, so scripts/check-architecture.mjs is what holds this edge to types."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/academy/src/lib/site.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["@/features/*", "@/features/**", "!@/features/pricing"],
+                    "message": "lib/ may not import a feature. Named exemption: site.ts value-imports PRICING from \"@/features/pricing\" to put a price in the site meta description. The real fix is for the site metadata to take the price as an argument rather than import the feature; until it does, this one edge is allowed and no other."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/flexiq/src/features/home/lab.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@/features/*/queries",
+                      "@/features/*/store",
+                      "@/features/*/service",
+                      "@/features/*/events",
+                      "@/features/*/components/**",
+                      "@/features/*/*/**",
+                      "!@/features/playground/canvas/*"
+                    ],
+                    "message": "A feature's internals are private. Named exemption: apps/flexiq is not on the features-over-lib layout yet (issue #361 covers admin and academy), and this file's reach into \"@/features/playground/canvas/stage\" predates the rule. It is the only one — every other file in flexiq is held to the rule."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["apps/*/src/shared/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "@/lib/*",
+                      "@/lib/**",
+                      "@/features/*",
+                      "@/features/**",
+                      "@/components/*",
+                      "@/components/**"
+                    ],
+                    "message": "shared/ is the bottom of the app: generic, app-agnostic helpers that import nothing of ours. If it needs @/lib, @/features or @/components, it is not shared code."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }
