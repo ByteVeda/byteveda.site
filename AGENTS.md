@@ -52,22 +52,35 @@ app.
 | `index.ts` | Public API — curated *named* re-exports, never `export *`. | — |
 
 **A feature that needs none of a file simply does not have it.** There are no empty
-placeholders. `features/seo` is a `model.ts`, a test and an `index.ts`; `features/hero-fx`
-is a `components/` folder and nothing more. That is correct, not unfinished.
+placeholders. `admin/features/seo` is a `model.ts`, a test and an `index.ts`;
+`flexiq/features/hero-fx` is a `components/` folder and nothing more. A feature that is
+*only* components keeps its model inside them — `main/features/contribute` is
+`components/{contribute.tsx,model.ts,index.ts}` and has no front door at all, because it
+has no server API to put on one. All of that is correct, not unfinished.
 
 **A file outside the vocabulary needs a reason** that survives the question "why does
-this feature have a word the others don't?" A handful have earned one, all for the same
-reason: `model.ts` is client-safe, so it cannot touch `node:crypto`, `process.env` or
-`@/lib/env`, and the code that needs those has to live somewhere.
+this feature have a word the others don't?" Across all 23 features in the four apps that
+have a `features/` directory — `admin`, `academy`, `flexiq`, `main`; `docs` has none —
+six entries have earned one.
 
-- `features/auth/crypto.ts` — token hashing and cookie options; `node:crypto`, `process.env`.
-- `features/auth/allowlist.ts` — who may sign in; `process.env`.
-- `features/auth/urls.ts` — absolute URLs; `@/lib/env`.
-- `features/attachments/limits.ts` — upload ceilings; `process.env`.
-- `features/mail/webhook.ts` — Svix signature verification; `node:crypto`.
+Five are the same reason: `model.ts` is client-safe, so it cannot touch `node:crypto`,
+`process.env` or `@/lib/env`, and the code that needs those has to live somewhere.
 
-Five files is the whole list. If you are about to add a sixth, the bar is that
-sentence, not convenience.
+- `admin/features/auth/crypto.ts` — token hashing and cookie options; `node:crypto`, `process.env`.
+- `admin/features/auth/allowlist.ts` — who may sign in; `process.env`.
+- `admin/features/auth/urls.ts` — absolute URLs; `@/lib/env`.
+- `admin/features/attachments/limits.ts` — upload ceilings; `process.env`.
+- `admin/features/mail/webhook.ts` — Svix signature verification; `node:crypto`.
+
+The sixth is a different reason and the only off-vocabulary *directory*:
+
+- `main/features/news/data/` — a checked-in `news.json` snapshot that `model.ts` imports
+  and `pnpm fetch:news` refreshes. Data, not code; client-safe, so the model may have it.
+
+Six is the whole list as of this writing, and it is a snapshot, not a law — re-derive it
+before you trust it. No tool checks this rule: the vocabulary is enforced by review, so
+the census only stays honest if someone adding a seventh entry updates this list and
+says why.
 
 ## The four rules
 
@@ -185,7 +198,7 @@ or a specifier Biome never resolves. Seven rules, each named in the failure outp
 | `route-reach` | Only `app/**/page.tsx` and `app/**/layout.tsx` may name a component file — and not even they may reach deeper than that file. |
 | `lib-type-only` | `lib/` importing a feature. A type-only import is erased before bundling and is allowed; Biome cannot tell `import type` from a value import. |
 | `feature-doors` | The relative spelling of rule 3. `../inbox/queries` is invisible to Biome, which matches the literal specifier; the script resolves it against `src/` first. |
-| `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Every other rule assumes a model is client-safe; this is the one that checks. |
+| `model-client-safe` | A `model.ts` value-importing `@byteveda/db`, `drizzle-orm`, `resend`, `ioredis`, a `node:` built-in or `@/lib/*`, reading `process.env`, or reaching its own feature's server half (`./queries`, `./store`, `./service`, `./events`) — that last one is the same hole one hop out. `import type` and `@byteveda/db/constants` are fine. Covers `features/<name>/model.ts` and `features/<name>/components/model.ts` alike, so a components-only feature is held to it too. Every other rule assumes a model is client-safe; this is the one that checks. |
 | `curated-barrel` | `export *` in a feature's `index.ts` or its `components/index.ts`. A star puts every symbol of that module on the door, including whatever is added to it later. |
 
 If your failure message is `path:line [rule-name] reason`, it came from the script.
@@ -198,11 +211,28 @@ The script covers every `.ts`/`.tsx` under `apps/*/src`. Deliberately **not**
 outside any bundle, and they reach into feature internals on purpose because they cannot
 load `next/headers`.
 
-What still nobody checks: whether a barrel's *named* re-exports are the right ones. A
-curated `index.ts` can still put a component on the server door, and a
-`components/index.ts` can still put a server component on the client door. Proving either
-means following the re-export graph, which neither tool does — `client-door` catches the
-symptom, not the cause.
+### What no tool checks
+
+Know where the structure is held by a tool and where it is held by people. Three gaps,
+each confirmed against the current checks rather than assumed:
+
+- **A barrel's *named* re-exports.** `curated-barrel` bans `export *`, but a curated
+  `index.ts` can still put a component on the server door — `export { Card } from
+  "./components";` passes both tools. That is exactly the shape that once put the inbox
+  client graph in a webhook route. Proving it wrong means following the re-export graph,
+  which neither tool does; `client-door` catches the symptom, not the cause.
+- **A `components/index.ts` exporting a server component.** Nothing reads a component to
+  decide which half it belongs to, so a server component sitting on the client door is
+  invisible to both tools.
+- **The relative spelling of the `@/components` ban.** Biome matches the literal
+  specifier, so `@/components` from inside a feature errors while `../../components` —
+  the same barrel, same graph — does not, and the arch script has no rule for it. The
+  `feature-doors` rule exists because relative spellings evade Biome; this one is the
+  same hole, still open.
+
+Two more are judgement, not oversight: whether a file outside the vocabulary has earned
+its name, and whether a barrel export is still used outside the feature. Neither is
+mechanical, and both are what review is for.
 
 ## The exceptions that exist
 
