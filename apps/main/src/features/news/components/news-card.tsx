@@ -1,6 +1,5 @@
 import { RelativeTime } from "@byteveda/ui";
-import type { NewsItem } from "../types";
-import { sourceLabel } from "../utils";
+import { type NewsItem, sourceLabel } from "../model";
 
 /**
  * Shared `.feed-item` card for a news/release item. Used by the homepage feed

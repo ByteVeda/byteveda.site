@@ -1,5 +1,17 @@
-import { site } from "@/lib/site";
-import type { ContributeStep, Maintainer } from "./types";
+import { GITHUB_URL } from "@byteveda/utils";
+
+export type Maintainer = {
+  login: string;
+  name: string;
+  role: string;
+};
+
+export type ContributeStep = {
+  number: string;
+  title: string;
+  description: string;
+  command?: string;
+};
 
 export const maintainers: Maintainer[] = [
   {
@@ -14,7 +26,7 @@ export const contributeSteps: ContributeStep[] = [
     number: "01",
     title: "Pick a project",
     description: "Clone any repo from the ByteVeda organization and jump into its README.",
-    command: `git clone ${site.githubUrl}/<repo>.git`,
+    command: `git clone ${GITHUB_URL}/<repo>.git`,
   },
   {
     number: "02",
@@ -31,8 +43,8 @@ export const contributeSteps: ContributeStep[] = [
   },
 ];
 
-export const contributeGuideUrl = `${site.githubUrl}/.github/blob/main/CONTRIBUTING.md`;
-export const discussionsUrl = `${site.githubUrl}/.github/discussions`;
+export const contributeGuideUrl = `${GITHUB_URL}/.github/blob/main/CONTRIBUTING.md`;
+export const discussionsUrl = `${GITHUB_URL}/.github/discussions`;
 
 export function avatarUrl(login: string, size = 128): string {
   return `https://github.com/${login}.png?size=${size}`;

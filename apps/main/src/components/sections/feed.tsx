@@ -1,5 +1,6 @@
 import { Button } from "@byteveda/ui";
-import { getArticles, getReleases, NewsCard } from "@/features/news";
+import { getArticles, getReleases } from "@/features/news";
+import { NewsCard } from "@/features/news/components";
 import { site } from "@/lib/site";
 
 const RELEASE_LIMIT = 4;

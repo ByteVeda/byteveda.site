@@ -3,15 +3,15 @@
 import { Button, RelativeTime } from "@byteveda/ui";
 import { useMemo, useState } from "react";
 import { site } from "@/lib/site";
-import type { NewsItem } from "../types";
 import {
   CATEGORY_FILTER,
   CATEGORY_TAG,
   NEWS_CATEGORIES,
   type NewsCategory,
+  type NewsItem,
   newsCategory,
   sourceLabel,
-} from "../utils";
+} from "../model";
 
 type Filter = NewsCategory | "all";
 

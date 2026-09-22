@@ -1,3 +1,10 @@
-export * from "./components";
-export * from "./types";
-export * from "./utils";
+export {
+  avatarUrl,
+  type ContributeStep,
+  contributeGuideUrl,
+  contributeSteps,
+  discussionsUrl,
+  type Maintainer,
+  maintainers,
+  profileUrl,
+} from "./model";
