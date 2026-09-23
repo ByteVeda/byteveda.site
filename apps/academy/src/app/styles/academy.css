@@ -561,6 +561,28 @@
   color: var(--text-faint);
 }
 
+.set-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* Said on the card itself, not only in the note under the grid: a price with
+   nothing beside it reads as something you can buy today. */
+.set-soon {
+  flex: none;
+  padding: 0.2rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+
 /* What is actually in it, set as the headline — the number is what separates
    these three from each other. */
 .set-size {
