@@ -376,6 +376,62 @@
   white-space: nowrap;
 }
 
+/* On a phone the four columns do not fit, and a 46rem table in a scroller
+   crushes the chapter name to a word per line while the contents run off the
+   edge. Each row becomes a card instead: chapter, then contents, then the
+   price and the action side by side. The header row labels nothing once the
+   columns are gone, so it goes. */
+@media (width < 52rem) {
+  .inventory .table {
+    min-width: 0;
+  }
+
+  .inventory .table thead {
+    display: none;
+  }
+
+  .inventory .table tbody {
+    display: block;
+  }
+
+  .inventory .table tr {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.6rem 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .inventory .table td {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .inventory .table td:nth-child(-n + 2) {
+    grid-column: 1 / -1;
+  }
+
+  /* Wrapping is the point here: the width is the phone's, not the column's. */
+  .inventory .chapter-contents {
+    white-space: normal;
+  }
+
+  .inventory .table .price {
+    width: auto;
+    text-align: left;
+  }
+
+  .inventory .price-was,
+  .inventory .price-free {
+    display: inline;
+  }
+
+  .inventory .price-free {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
 .more-row {
   display: flex;
   justify-content: center;
