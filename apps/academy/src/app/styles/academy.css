@@ -371,7 +371,7 @@
 /* Two lines: what the chapter holds, and what rides along with it for nothing.
    `nowrap` on both — the column is short enough to keep on one line each, and a
    wrapped "+ 14 board · 20 NCERT, free" reads as two separate claims. */
-.contents {
+.chapter-contents {
   color: var(--text-dim);
   white-space: nowrap;
 }
