@@ -156,7 +156,7 @@ export function InventorySection() {
                         {chapter.inStock ? "" : " · made to order"}
                       </div>
                     </td>
-                    <td className="contents">
+                    <td className="chapter-contents">
                       <div>{MIX_TOTAL} Qs</div>
                       {/* The free questions are the reason to read this column
                           at all — every chapter's mix is the same 25/15/10, and
