@@ -25,7 +25,10 @@ export function Sets() {
       <div className="set-grid">
         {SETS.map((set) => (
           <article className="set-card" key={set.tier}>
-            <p className="set-name">{set.name}</p>
+            <div className="set-head">
+              <p className="set-name">{set.name}</p>
+              <span className="set-soon">Coming soon</span>
+            </div>
 
             <p className="set-size">
               {set.questions === null ? "Every chapter" : `${set.questions} questions`}
