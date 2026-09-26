@@ -1,5 +1,5 @@
-import { cn } from "@byteveda/utils";
 import type { HTMLAttributes } from "react";
+import { cn } from "./internal";
 
 type Variant = "default" | "outline" | "accent";
 

@@ -1,5 +1,5 @@
-import { cn } from "@byteveda/utils";
 import { type CSSProperties, Fragment, type ReactNode } from "react";
+import { cn } from "./internal";
 
 type MarqueeProps<T> = {
   items: T[];

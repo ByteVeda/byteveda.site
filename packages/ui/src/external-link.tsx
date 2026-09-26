@@ -1,7 +1,7 @@
-import { cn } from "@byteveda/utils";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowUpRight } from "./icons";
+import { cn } from "./internal";
 
 type ExternalLinkProps = {
   href: string;

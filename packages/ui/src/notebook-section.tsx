@@ -1,5 +1,5 @@
-import { cn } from "@byteveda/utils";
 import type { HTMLAttributes, ReactNode } from "react";
+import { cn } from "./internal";
 
 type NotebookSectionProps = Omit<HTMLAttributes<HTMLElement>, "title"> & {
   id?: string;
