@@ -14,6 +14,15 @@ import { cn } from "./internal";
 /** Rendered size. The artwork is taller than it is wide; height leads. */
 const MARK_HEIGHT = 28;
 
+/**
+ * Width over height of `assets/byteveda-mark.png`, 63×84. Written down rather
+ * than read off the import: Turbopack hands a PNG that lives in `node_modules`
+ * to its importer as a bare URL string, not the `{ src, width, height }` it
+ * gives an app's own images, so `mark.width` is `undefined` once this package
+ * is installed from npm. `next/image` takes either shape for `src`.
+ */
+const MARK_RATIO = 63 / 84;
+
 /** The artwork is ByteVeda's, so the name travels with it. */
 const ORG = "ByteVeda";
 
@@ -31,7 +40,7 @@ export function BrandMark({ height = MARK_HEIGHT, className }: BrandMarkProps) {
     <Image
       className={cn("mark", className)}
       src={mark}
-      width={Math.round((mark.width / mark.height) * height)}
+      width={Math.round(MARK_RATIO * height)}
       height={height}
       alt=""
       aria-hidden
