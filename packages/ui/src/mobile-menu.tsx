@@ -1,9 +1,9 @@
 "use client";
 
-import { cn, isExternalUrl } from "@byteveda/utils";
 import Link from "next/link";
 import { type ReactNode, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { cn, isExternalUrl } from "./internal";
 
 export type MobileMenuItem = {
   label: string;

@@ -1,18 +1,50 @@
 {
   "name": "@byteveda/ui",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Shared ByteVeda design system: primitives, theme tokens, and hero effects.",
+  "license": "MIT",
+  "homepage": "https://github.com/ByteVeda/byteveda.site/tree/main/packages/ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByteVeda/byteveda.site.git",
+    "directory": "packages/ui"
+  },
+  "bugs": "https://github.com/ByteVeda/byteveda.site/issues",
+  "keywords": [
+    "byteveda",
+    "design-system",
+    "react",
+    "nextjs",
+    "tailwindcss"
+  ],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
     ".": "./src/index.ts",
     "./styles/*": "./src/styles/*"
   },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "./styles/*": "./dist/styles/*"
+    },
+    "types": "./dist/index.d.ts"
+  },
   "scripts": {
+    "build": "tsdown",
+    "prepack": "tsdown",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@byteveda/utils": "workspace:*",
     "lucide-react": "catalog:"
   },
   "peerDependencies": {
@@ -29,6 +61,7 @@
     "next-themes": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
+    "tsdown": "^0.23.0",
     "typescript": "catalog:"
   }
 }

@@ -9,7 +9,7 @@
   "globalDependencies": ["pnpm-workspace.yaml", "packages/config/**", "packages/db/migrations/**"],
   "tasks": {
     "build": {
-      "outputs": [".next/**", "!.next/cache/**", "out/**"],
+      "outputs": [".next/**", "!.next/cache/**", "out/**", "dist/**"],
       // Inlined into the client bundle at build time, so they belong in the hash:
       // a different endpoint, or a build that is not on Vercel, is a different
       // build. Strict env mode would otherwise strip both.
