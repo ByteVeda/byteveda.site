@@ -181,42 +181,71 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:2dc2fb6fcb27",
+    "id": "mastodon:a9fa2ac8fbea",
     "kind": "article",
     "source": "mastodon",
-    "title": "@ wwahammy makes a really good point, though. I think *outside of tech*, the response to LLM-gen-AI is very negative as…",
-    "url": "https://fedi.copyleft.org/@bkuhn/117453326313999565",
-    "excerpt": "@ wwahammy makes a really good point, though. I think *outside of tech*, the response to LLM-gen-AI is very negative as companies inappropriately apply it to non-tech fields. At least that's what I s…",
-    "author": "Bradley M. Kühn",
-    "publishedAt": "2026-10-17T00:05:30.000Z",
+    "title": "UK Grid Monitor Major update v2026.10.17.1. Severe drought was declared for parts of Southern England, so I added monit…",
+    "url": "https://universeodon.com/@g7izu/117456788799050541",
+    "excerpt": "UK Grid Monitor Major update v2026.10.17.1. Severe drought was declared for parts of Southern England, so I added monitoring of Englands major reservoirs to the monitor app. Yesterday it was announce…",
+    "author": "𝑮7𝑰𝙕𝑼 𝑹𝙍𝑫",
+    "publishedAt": "2026-10-17T14:46:04.000Z",
     "score": 5,
     "tags": [
-      "llmgenai",
-      "llm",
-      "ai"
+      "ukgrid",
+      "southwestwater",
+      "wessexwater",
+      "environmentagency",
+      "python",
+      "g7izu"
     ],
     "labels": [
-      "ai"
+      "python"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:bf4fb7c80e07",
+    "id": "mastodon:514a8704d6c9",
     "kind": "article",
     "source": "mastodon",
-    "title": "Problems with the Rust language",
-    "url": "https://oxetene.net/problems-with-the-rust-language/",
-    "excerpt": "Hello there, I'm a human with way too many interests.",
-    "author": "jbz",
-    "publishedAt": "2026-10-17T00:00:13.000Z",
-    "score": 11,
+    "title": "just found out about this new little # Rust gem. \"let-else\" saves readability where before you could only use many nest…",
+    "url": "https://mastodon.social/@hbons/117456655580392951",
+    "excerpt": "just found out about this new little # Rust gem. \"let-else\" saves readability where before you could only use many nested if-statement in contexts where you can't use \"?\".",
+    "author": "Hylke Bons 🥜",
+    "publishedAt": "2026-10-17T14:12:11.000Z",
+    "score": 12,
     "tags": [
-      "rust",
-      "rustlang",
-      "riir"
+      "rust"
     ],
     "labels": [
       "rust"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "mastodon:d68f8145b396",
+    "kind": "article",
+    "source": "mastodon",
+    "title": "GitHub - morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "excerpt": "Reverse engineer anything with agents, from app behavior down to native binaries. - morluto/rea",
+    "author": "Pedram",
+    "publishedAt": "2026-10-17T13:44:28.000Z",
+    "score": 5,
+    "tags": [
+      "artificialintelligence",
+      "ai",
+      "softwaredevelopment",
+      "reverseengineering",
+      "mcp",
+      "opensource",
+      "cybersecurity",
+      "developertools",
+      "llm"
+    ],
+    "labels": [
+      "ai",
+      "opensource",
+      "security"
     ],
     "mentionsByteveda": false
   },
@@ -247,23 +276,20 @@
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ad35c0e8401e",
+    "id": "lobsters:db194c9bd4cb",
     "kind": "article",
-    "source": "mastodon",
-    "title": "This wraps up this @ eurorust ! Congrats to all the amazing speakers that came from across the world who made this edit…",
-    "url": "https://fosstodon.org/@to/117451556974143841",
-    "excerpt": "This wraps up this @ eurorust ! Congrats to all the amazing speakers that came from across the world who made this edition possible 🎉 # eurorust26 # rustLang # rust",
-    "author": "Adrian Tombu #EuroRust26",
-    "publishedAt": "2026-10-16T16:35:32.933Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-10-16T03:19:09.534-05:00",
+    "score": 17,
     "tags": [
-      "eurorust26",
-      "rustlang",
-      "rust"
+      "ask",
+      "programming"
     ],
-    "labels": [
-      "rust"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -326,10 +352,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.99.1",
     "url": "https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/",
-    "excerpt": "30 points · release, rust",
+    "excerpt": "32 points · release, rust",
     "author": "BD103",
     "publishedAt": "2026-10-15T18:03:00.345-05:00",
-    "score": 30,
+    "score": 32,
     "tags": [
       "release",
       "rust"
@@ -428,10 +454,10 @@
     "source": "lobsters",
     "title": "The geometric model of maintenance",
     "url": "https://entropicthoughts.com/geometric-model-of-maintenance",
-    "excerpt": "17 points · programming",
+    "excerpt": "18 points · programming",
     "author": "lcapaldo",
     "publishedAt": "2026-10-15T05:48:58.656-05:00",
-    "score": 17,
+    "score": 18,
     "tags": [
       "programming"
     ],
@@ -447,7 +473,7 @@
     "excerpt": "When an AI agent commits a change to code, it makes a claim about what it changed: \"fixed typos\" or...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-10-15T08:48:27Z",
-    "score": 32,
+    "score": 34,
     "tags": [
       "ai",
       "cloudflare",
@@ -465,10 +491,10 @@
     "source": "lobsters",
     "title": "Haxy on Haxy",
     "url": "https://try.haxy.net/haxy:haxy",
-    "excerpt": "51 points · practices, vcs, zig",
+    "excerpt": "52 points · practices, vcs, zig",
     "author": "krig",
     "publishedAt": "2026-10-15T02:58:35.798-05:00",
-    "score": 51,
+    "score": 52,
     "tags": [
       "practices",
       "vcs",
@@ -486,7 +512,7 @@
     "excerpt": "Do you also hate upgrading Angular versions? Because I do. I maintain a few open-source projects, and...",
     "author": "Daniel Balcarek",
     "publishedAt": "2026-10-15T07:10:18Z",
-    "score": 46,
+    "score": 57,
     "tags": [
       "ai",
       "vibecoding",
@@ -593,7 +619,7 @@
     "excerpt": "Hoi hoi! 👋 I'm @nyaomaru, a frontend engineer who is obsessed with gamba. 😸🦐 Recently, I was...",
     "author": "nyaomaru",
     "publishedAt": "2026-10-14T15:35:25Z",
-    "score": 63,
+    "score": 66,
     "tags": [
       "typescript",
       "opensource",
@@ -655,10 +681,10 @@
     "source": "lobsters",
     "title": "OpenFatigue™ — Open is the new closed",
     "url": "https://openfatigue.ai/",
-    "excerpt": "26 points · ai, satire, vibecoding",
+    "excerpt": "27 points · ai, satire, vibecoding",
     "author": "kngl",
     "publishedAt": "2026-10-14T06:24:24.996-05:00",
-    "score": 26,
+    "score": 27,
     "tags": [
       "ai",
       "satire",
@@ -700,7 +726,7 @@
     "excerpt": "Are AI models running directly in the browser finally good enough to use in production? Let's find...",
     "author": "Sylwia Laskowska",
     "publishedAt": "2026-10-14T07:05:48Z",
-    "score": 149,
+    "score": 160,
     "tags": [
       "ai",
       "react",
@@ -733,27 +759,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "devto:1abd9f3cc4b6",
-    "kind": "article",
-    "source": "devto",
-    "title": "Someone hacked the freezers at 400 French supermarkets",
-    "url": "https://dev.to/peter/someone-hacked-the-freezers-at-400-french-supermarkets-5flm",
-    "excerpt": "Friends ask me some version of this a lot: how would a bad actor with super powerful AI actually hurt...",
-    "author": "Peter Kim Frank",
-    "publishedAt": "2026-10-13T18:25:56Z",
-    "score": 29,
-    "tags": [
-      "news",
-      "security",
-      "ai"
-    ],
-    "labels": [
-      "security",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -762,7 +767,7 @@
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
     "publishedAt": "2026-10-15T18:31:49Z",
-    "score": 489530,
+    "score": 489657,
     "tags": [
       "Python",
       "api",
@@ -794,7 +799,7 @@
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
     "publishedAt": "2026-10-16T01:18:57Z",
-    "score": 399241,
+    "score": 399320,
     "tags": [
       "Python",
       "books",
@@ -816,8 +821,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
-    "publishedAt": "2026-10-16T17:25:26Z",
-    "score": 328012,
+    "publishedAt": "2026-10-17T08:58:57Z",
+    "score": 328134,
     "tags": [
       "Python",
       "awesome",
@@ -841,7 +846,7 @@
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
     "publishedAt": "2026-10-12T07:22:00Z",
-    "score": 286941,
+    "score": 287027,
     "tags": [
       "Python",
       "beginner-project",
@@ -868,8 +873,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-10-17T04:17:27Z",
-    "score": 254468,
+    "publishedAt": "2026-10-17T15:26:42Z",
+    "score": 254598,
     "tags": [
       "Python",
       "ai",
@@ -901,7 +906,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-10-16T20:23:44Z",
-    "score": 225320,
+    "score": 225342,
     "tags": [
       "Python",
       "algorithm",
@@ -933,7 +938,7 @@
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
     "publishedAt": "2026-10-13T08:57:11Z",
-    "score": 194930,
+    "score": 194931,
     "tags": [
       "Rust"
     ],
@@ -950,8 +955,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-10-17T04:15:50Z",
-    "score": 187617,
+    "publishedAt": "2026-10-17T15:18:12Z",
+    "score": 187620,
     "tags": [
       "Python",
       "agentic-ai",
@@ -980,8 +985,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-10-17T03:07:59Z",
-    "score": 167771,
+    "publishedAt": "2026-10-17T15:04:32Z",
+    "score": 167789,
     "tags": [
       "Python",
       "audio",
@@ -1019,8 +1024,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-10-17T02:33:08Z",
-    "score": 151916,
+    "publishedAt": "2026-10-17T15:21:47Z",
+    "score": 152038,
     "tags": [
       "Rust",
       "clash",
@@ -1045,8 +1050,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-10-17T03:44:39Z",
-    "score": 145266,
+    "publishedAt": "2026-10-17T15:20:54Z",
+    "score": 145493,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1084,8 +1089,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-10-17T04:02:39Z",
-    "score": 129552,
+    "publishedAt": "2026-10-17T04:22:37Z",
+    "score": 129616,
     "tags": [
       "Rust"
     ],
@@ -1103,7 +1108,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-10-16T03:18:22Z",
-    "score": 126047,
+    "score": 126107,
     "tags": [
       "Rust",
       "android",
@@ -1139,8 +1144,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-10-17T04:10:48Z",
-    "score": 120419,
+    "publishedAt": "2026-10-17T13:56:57Z",
+    "score": 120446,
     "tags": [
       "Rust",
       "compiler",
@@ -1161,7 +1166,7 @@
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
     "publishedAt": "2026-10-15T20:53:23Z",
-    "score": 111956,
+    "score": 111963,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1186,8 +1191,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-10-17T00:37:30Z",
-    "score": 98371,
+    "publishedAt": "2026-10-17T14:51:11Z",
+    "score": 98440,
     "tags": [
       "Rust",
       "awesome",
@@ -1227,7 +1232,7 @@
     "excerpt": "Ghidra is a software reverse engineering (SRE) framework",
     "author": "NationalSecurityAgency",
     "publishedAt": "2026-10-16T16:52:06Z",
-    "score": 89724,
+    "score": 90049,
     "tags": [
       "Java",
       "disassembler",
@@ -1247,8 +1252,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-10-17T04:09:40Z",
-    "score": 81703,
+    "publishedAt": "2026-10-17T09:29:51Z",
+    "score": 81705,
     "tags": [
       "Java",
       "framework",
