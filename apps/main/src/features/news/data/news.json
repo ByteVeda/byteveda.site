@@ -181,89 +181,172 @@
     "mentionsByteveda": true
   },
   {
-    "id": "mastodon:2dc2fb6fcb27",
+    "id": "mastodon:ce732433e607",
     "kind": "article",
     "source": "mastodon",
-    "title": "@ wwahammy makes a really good point, though. I think *outside of tech*, the response to LLM-gen-AI is very negative as…",
-    "url": "https://fedi.copyleft.org/@bkuhn/117453326313999565",
-    "excerpt": "@ wwahammy makes a really good point, though. I think *outside of tech*, the response to LLM-gen-AI is very negative as companies inappropriately apply it to non-tech fields. At least that's what I s…",
-    "author": "Bradley M. Kühn",
-    "publishedAt": "2026-10-17T00:05:30.000Z",
+    "title": "not saying it works every time, but if you want to pass # Flathub 's Quality Guidelines and get featured #1 on the fron…",
+    "url": "https://mastodon.social/@hbons/117467662261776520",
+    "excerpt": "not saying it works every time, but if you want to pass # Flathub 's Quality Guidelines and get featured #1 on the front page, you at least need a good app icon! ;) # linux # gnome # kde # icon # des…",
+    "author": "Hylke Bons 🥜",
+    "publishedAt": "2026-10-19T12:51:20.000Z",
     "score": 5,
     "tags": [
-      "llmgenai",
-      "llm",
-      "ai"
+      "flatpak",
+      "flathub",
+      "linux",
+      "gnome",
+      "kde",
+      "icon",
+      "design"
     ],
-    "labels": [
-      "ai"
-    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:bf4fb7c80e07",
+    "id": "mastodon:094706d98354",
     "kind": "article",
     "source": "mastodon",
-    "title": "Problems with the Rust language",
-    "url": "https://oxetene.net/problems-with-the-rust-language/",
-    "excerpt": "Hello there, I'm a human with way too many interests.",
-    "author": "jbz",
-    "publishedAt": "2026-10-17T00:00:13.000Z",
-    "score": 11,
+    "title": "Linux-Distribution Ubuntu 26.10 im Test: Linux 7.3 und KI-Funktion",
+    "url": "https://www.heise.de/tests/Linux-Distribution-Ubuntu-26-10-im-Test-Linux-7-3-und-KI-Funktion-11489069.html?wt_mc=sm.red.ho.mastodon.mastodon.md_beitraege.md_beitraege&utm_source=mastodon",
+    "excerpt": "Das diesjährige Herbst-Release von Ubuntu Linux bringt Gnome 51, einen taufrischen Kernel, viel Rust – und macht erste Schritte zum KI-Desktop.",
+    "author": "c't Magazin",
+    "publishedAt": "2026-10-19T12:33:03.000Z",
+    "score": 5,
     "tags": [
+      "canonical",
+      "gnome",
+      "it",
+      "kunstlicheintelligenz",
+      "linux",
+      "linuxdesktop",
+      "opensource",
       "rust",
-      "rustlang",
-      "riir"
+      "ubuntu",
+      "news"
     ],
     "labels": [
+      "opensource",
       "rust"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:3861e07bd3dc",
+    "id": "lobsters:a2c5e470b259",
     "kind": "article",
-    "source": "mastodon",
-    "title": "I can finally, reliably, create virtual machines in my # homelab with # terraform . Built on # qemu , # Debian , # gola…",
-    "url": "https://mastodon.social/@invirtuate/117451941938647134",
-    "excerpt": "I can finally, reliably, create virtual machines in my # homelab with # terraform . Built on # qemu , # Debian , # golang , and # postgresql . # tech # technology # selfhosted",
-    "author": "Invirtuate",
-    "publishedAt": "2026-10-16T18:13:27.000Z",
-    "score": 6,
+    "source": "lobsters",
+    "title": "Superoptimizing an FPU emulator",
+    "url": "https://purplesyringa.moe/blog/superoptimizing-an-fpu-emulator/",
+    "excerpt": "29 points · performance, rust",
+    "author": "herabit",
+    "publishedAt": "2026-10-18T18:51:14.119-05:00",
+    "score": 29,
     "tags": [
-      "homelab",
-      "terraform",
-      "qemu",
-      "debian",
-      "golang",
-      "postgresql",
-      "tech",
-      "technology",
-      "selfhosted"
+      "performance",
+      "rust"
     ],
     "labels": [
-      "go"
+      "performance",
+      "rust"
     ],
     "mentionsByteveda": false
   },
   {
-    "id": "mastodon:ad35c0e8401e",
+    "id": "devto:4258da9a8353",
     "kind": "article",
-    "source": "mastodon",
-    "title": "This wraps up this @ eurorust ! Congrats to all the amazing speakers that came from across the world who made this edit…",
-    "url": "https://fosstodon.org/@to/117451556974143841",
-    "excerpt": "This wraps up this @ eurorust ! Congrats to all the amazing speakers that came from across the world who made this edition possible 🎉 # eurorust26 # rustLang # rust",
-    "author": "Adrian Tombu #EuroRust26",
-    "publishedAt": "2026-10-16T16:35:32.933Z",
-    "score": 6,
+    "source": "devto",
+    "title": "I Built a New Tab Extension for DEV",
+    "url": "https://dev.to/sizzlebop/i-built-a-new-tab-extension-for-dev-4kmm",
+    "excerpt": "I spend a lot of time on DEV these days. Reading posts, finding interesting projects, participating...",
+    "author": "Jessica Doering",
+    "publishedAt": "2026-10-18T17:13:41Z",
+    "score": 43,
     "tags": [
-      "eurorust26",
-      "rustlang",
-      "rust"
+      "showdev",
+      "webdev",
+      "opensource",
+      "javascript"
     ],
     "labels": [
-      "rust"
+      "webdev",
+      "opensource",
+      "typescript"
     ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:5595764a0709",
+    "kind": "article",
+    "source": "devto",
+    "title": "Fine-Tuning Qwen3-8B with Tinker: From 50% to 76% Accuracy, and Burning Through My Budget",
+    "url": "https://dev.to/gramli/fine-tuning-qwen3-8b-with-tinker-from-50-to-76-accuracy-and-burning-through-my-budget-48mh",
+    "excerpt": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 2: Side Hustle Oktoberfest?...",
+    "author": "Daniel Balcarek",
+    "publishedAt": "2026-10-18T07:03:07Z",
+    "score": 51,
+    "tags": [
+      "devchallenge",
+      "hf26challenge",
+      "ai",
+      "machinelearning"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "devto:13ce148c3ca3",
+    "kind": "article",
+    "source": "devto",
+    "title": "My Agent Turned \"I Haven't Decided\" Into \"Not Yet.\" Now the Model Isn't Allowed to Write Its Own Memory.",
+    "url": "https://dev.to/kenielzep97/my-agent-turned-i-havent-decided-into-not-yet-now-the-model-isnt-allowed-to-write-its-own-23ma",
+    "excerpt": "These are two separate runs of my agent. The two questions and two answers are copied word for word...",
+    "author": "Self-Correcting Systems",
+    "publishedAt": "2026-10-18T01:05:05Z",
+    "score": 27,
+    "tags": [
+      "agents",
+      "ollama",
+      "python",
+      "testing"
+    ],
+    "labels": [
+      "python"
+    ],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:660e667f6b48",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "Intuitive concurrent programming in any language",
+    "url": "https://www.lf-lang.org/",
+    "excerpt": "24 points · programming",
+    "author": "mpweiher",
+    "publishedAt": "2026-10-17T07:17:20.307-05:00",
+    "score": 24,
+    "tags": [
+      "programming"
+    ],
+    "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "lobsters:db194c9bd4cb",
+    "kind": "article",
+    "source": "lobsters",
+    "title": "What are you doing this weekend?",
+    "url": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
+    "excerpt": "Feel free to tell what you plan on doing this weekend and even ask for help or feedback.\r\n\r\nPlease keep in mind it’s more than OK to do nothing at all too!",
+    "author": "caius",
+    "publishedAt": "2026-10-16T03:19:09.534-05:00",
+    "score": 19,
+    "tags": [
+      "ask",
+      "programming"
+    ],
+    "labels": [],
     "mentionsByteveda": false
   },
   {
@@ -326,10 +409,10 @@
     "source": "lobsters",
     "title": "Announcing Rust 1.99.1",
     "url": "https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/",
-    "excerpt": "30 points · release, rust",
+    "excerpt": "33 points · release, rust",
     "author": "BD103",
     "publishedAt": "2026-10-15T18:03:00.345-05:00",
-    "score": 30,
+    "score": 33,
     "tags": [
       "release",
       "rust"
@@ -391,6 +474,28 @@
     "mentionsByteveda": false
   },
   {
+    "id": "devto:6d7d6e1d0516",
+    "kind": "article",
+    "source": "devto",
+    "title": "Scope-Creep Guard: A Local Gemma AI That Tells Clients \"That's Out of Scope\" (So You Don't Have To) published: true",
+    "url": "https://dev.to/vidisha_gupta_/scope-creep-guard-a-local-gemma-ai-that-tells-clients-thats-out-of-scope-so-you-dont-have-18n2",
+    "excerpt": "This is a submission for the Hacktoberfest Open-Source AI Challenge Week 2: Side Hustle ...",
+    "author": "Vidisha Gupta",
+    "publishedAt": "2026-10-15T18:10:40Z",
+    "score": 27,
+    "tags": [
+      "devchallenge",
+      "hf26challenge",
+      "ai",
+      "opensource"
+    ],
+    "labels": [
+      "ai",
+      "opensource"
+    ],
+    "mentionsByteveda": false
+  },
+  {
     "id": "rss:GitHub Blog:3571a14eebcb",
     "kind": "article",
     "source": "rss",
@@ -428,14 +533,33 @@
     "source": "lobsters",
     "title": "The geometric model of maintenance",
     "url": "https://entropicthoughts.com/geometric-model-of-maintenance",
-    "excerpt": "17 points · programming",
+    "excerpt": "19 points · programming",
     "author": "lcapaldo",
     "publishedAt": "2026-10-15T05:48:58.656-05:00",
-    "score": 17,
+    "score": 19,
     "tags": [
       "programming"
     ],
     "labels": [],
+    "mentionsByteveda": false
+  },
+  {
+    "id": "rss:Hugging Face:e3c36d4422c6",
+    "kind": "article",
+    "source": "rss",
+    "title": "Apertus 1.5 Release Notes",
+    "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+    "excerpt": null,
+    "author": "Hugging Face",
+    "publishedAt": "2026-10-15T09:08:45.000Z",
+    "score": 0,
+    "tags": [
+      "Hugging Face"
+    ],
+    "labels": [
+      "ai",
+      "ml"
+    ],
     "mentionsByteveda": false
   },
   {
@@ -447,7 +571,7 @@
     "excerpt": "When an AI agent commits a change to code, it makes a claim about what it changed: \"fixed typos\" or...",
     "author": "Daniel Nwaneri",
     "publishedAt": "2026-10-15T08:48:27Z",
-    "score": 32,
+    "score": 37,
     "tags": [
       "ai",
       "cloudflare",
@@ -465,10 +589,10 @@
     "source": "lobsters",
     "title": "Haxy on Haxy",
     "url": "https://try.haxy.net/haxy:haxy",
-    "excerpt": "51 points · practices, vcs, zig",
+    "excerpt": "54 points · practices, vcs, zig",
     "author": "krig",
     "publishedAt": "2026-10-15T02:58:35.798-05:00",
-    "score": 51,
+    "score": 54,
     "tags": [
       "practices",
       "vcs",
@@ -486,7 +610,7 @@
     "excerpt": "Do you also hate upgrading Angular versions? Because I do. I maintain a few open-source projects, and...",
     "author": "Daniel Balcarek",
     "publishedAt": "2026-10-15T07:10:18Z",
-    "score": 46,
+    "score": 79,
     "tags": [
       "ai",
       "vibecoding",
@@ -504,25 +628,6 @@
     "source": "rss",
     "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
     "url": "https://huggingface.co/blog/meta-muse-spark-open",
-    "excerpt": null,
-    "author": "Hugging Face",
-    "publishedAt": "2026-10-15T00:00:00.000Z",
-    "score": 0,
-    "tags": [
-      "Hugging Face"
-    ],
-    "labels": [
-      "ai",
-      "ml"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "rss:Hugging Face:3733c75a28bf",
-    "kind": "article",
-    "source": "rss",
-    "title": "Welcome FLUX.3 Image Klein in Diffusers",
-    "url": "https://huggingface.co/blog/flux-3",
     "excerpt": null,
     "author": "Hugging Face",
     "publishedAt": "2026-10-15T00:00:00.000Z",
@@ -593,7 +698,7 @@
     "excerpt": "Hoi hoi! 👋 I'm @nyaomaru, a frontend engineer who is obsessed with gamba. 😸🦐 Recently, I was...",
     "author": "nyaomaru",
     "publishedAt": "2026-10-14T15:35:25Z",
-    "score": 63,
+    "score": 71,
     "tags": [
       "typescript",
       "opensource",
@@ -637,7 +742,7 @@
     "excerpt": "The biggest design shift of the AI era isn’t about who writes the code. It’s about how long the code...",
     "author": "Ben Halpern",
     "publishedAt": "2026-10-14T12:03:29Z",
-    "score": 48,
+    "score": 50,
     "tags": [
       "aie",
       "design",
@@ -650,110 +755,6 @@
     "mentionsByteveda": false
   },
   {
-    "id": "lobsters:cc46a81a742e",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "OpenFatigue™ — Open is the new closed",
-    "url": "https://openfatigue.ai/",
-    "excerpt": "26 points · ai, satire, vibecoding",
-    "author": "kngl",
-    "publishedAt": "2026-10-14T06:24:24.996-05:00",
-    "score": 26,
-    "tags": [
-      "ai",
-      "satire",
-      "vibecoding"
-    ],
-    "labels": [
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:f0cca5d023f3",
-    "kind": "article",
-    "source": "devto",
-    "title": "AI Avatar v25 (Avatar Run, Voxel Avatar, Muscle Brain)💪",
-    "url": "https://dev.to/webdeveloperhyper/ai-avatar-v25-avatar-run-voxel-avatar-muscle-brain-5gi3",
-    "excerpt": "Intro AI Avatar is a free app where your VRoid (VRM) avatar cheers you with all its...",
-    "author": "Web Developer Hyper",
-    "publishedAt": "2026-10-14T11:12:17Z",
-    "score": 57,
-    "tags": [
-      "ai",
-      "webdev",
-      "productivity",
-      "discuss"
-    ],
-    "labels": [
-      "ai",
-      "webdev"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:231631ecdecb",
-    "kind": "article",
-    "source": "devto",
-    "title": "Your Browser Can Do WHAT?! 5 AI Features That Actually Work",
-    "url": "https://dev.to/sylwia-lask/your-browser-can-do-what-5-ai-features-that-actually-work-1blb",
-    "excerpt": "Are AI models running directly in the browser finally good enough to use in production? Let's find...",
-    "author": "Sylwia Laskowska",
-    "publishedAt": "2026-10-14T07:05:48Z",
-    "score": 149,
-    "tags": [
-      "ai",
-      "react",
-      "javascript",
-      "webdev"
-    ],
-    "labels": [
-      "ai",
-      "webdev",
-      "typescript"
-    ],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "lobsters:cf1793a6e056",
-    "kind": "article",
-    "source": "lobsters",
-    "title": "The 2026 Maintainers Summit",
-    "url": "https://lwn.net/SubscriberLink/1099594/fba1c2268c3e2fb5/",
-    "excerpt": "15 points · linux, practices, vibecoding",
-    "author": "calvin",
-    "publishedAt": "2026-10-13T17:25:00.766-05:00",
-    "score": 15,
-    "tags": [
-      "linux",
-      "practices",
-      "vibecoding"
-    ],
-    "labels": [],
-    "mentionsByteveda": false
-  },
-  {
-    "id": "devto:1abd9f3cc4b6",
-    "kind": "article",
-    "source": "devto",
-    "title": "Someone hacked the freezers at 400 French supermarkets",
-    "url": "https://dev.to/peter/someone-hacked-the-freezers-at-400-french-supermarkets-5flm",
-    "excerpt": "Friends ask me some version of this a lot: how would a bad actor with super powerful AI actually hurt...",
-    "author": "Peter Kim Frank",
-    "publishedAt": "2026-10-13T18:25:56Z",
-    "score": 29,
-    "tags": [
-      "news",
-      "security",
-      "ai"
-    ],
-    "labels": [
-      "security",
-      "ai"
-    ],
-    "mentionsByteveda": false
-  },
-  {
     "id": "github-trending:9e3fdce04716",
     "kind": "trending",
     "source": "github",
@@ -761,8 +762,8 @@
     "url": "https://github.com/public-apis/public-apis",
     "excerpt": "A collective list of free APIs",
     "author": "public-apis",
-    "publishedAt": "2026-10-15T18:31:49Z",
-    "score": 489530,
+    "publishedAt": "2026-10-19T12:30:00Z",
+    "score": 490332,
     "tags": [
       "Python",
       "api",
@@ -793,8 +794,8 @@
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "excerpt": ":books: Freely available programming books",
     "author": "EbookFoundation",
-    "publishedAt": "2026-10-16T01:18:57Z",
-    "score": 399241,
+    "publishedAt": "2026-10-18T00:26:58Z",
+    "score": 399551,
     "tags": [
       "Python",
       "books",
@@ -816,8 +817,8 @@
     "url": "https://github.com/vinta/awesome-python",
     "excerpt": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
     "author": "vinta",
-    "publishedAt": "2026-10-16T17:25:26Z",
-    "score": 328012,
+    "publishedAt": "2026-10-19T05:39:01Z",
+    "score": 328619,
     "tags": [
       "Python",
       "awesome",
@@ -840,8 +841,8 @@
     "url": "https://github.com/practical-tutorials/project-based-learning",
     "excerpt": "Curated list of project-based tutorials",
     "author": "practical-tutorials",
-    "publishedAt": "2026-10-12T07:22:00Z",
-    "score": 286941,
+    "publishedAt": "2026-10-19T07:12:30Z",
+    "score": 287255,
     "tags": [
       "Python",
       "beginner-project",
@@ -868,8 +869,8 @@
     "url": "https://github.com/NousResearch/hermes-agent",
     "excerpt": "The agent that grows with you",
     "author": "NousResearch",
-    "publishedAt": "2026-10-17T04:17:27Z",
-    "score": 254468,
+    "publishedAt": "2026-10-19T12:49:09Z",
+    "score": 255140,
     "tags": [
       "Python",
       "ai",
@@ -901,7 +902,7 @@
     "excerpt": "All Algorithms implemented in Python",
     "author": "TheAlgorithms",
     "publishedAt": "2026-10-16T20:23:44Z",
-    "score": 225320,
+    "score": 225394,
     "tags": [
       "Python",
       "algorithm",
@@ -932,8 +933,8 @@
     "url": "https://github.com/ultraworkers/claw-code",
     "excerpt": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
     "author": "ultraworkers",
-    "publishedAt": "2026-10-13T08:57:11Z",
-    "score": 194930,
+    "publishedAt": "2026-10-19T04:07:34Z",
+    "score": 194909,
     "tags": [
       "Rust"
     ],
@@ -950,8 +951,8 @@
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "excerpt": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "author": "Significant-Gravitas",
-    "publishedAt": "2026-10-17T04:15:50Z",
-    "score": 187617,
+    "publishedAt": "2026-10-19T12:58:06Z",
+    "score": 187649,
     "tags": [
       "Python",
       "agentic-ai",
@@ -980,8 +981,8 @@
     "url": "https://github.com/huggingface/transformers",
     "excerpt": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
     "author": "huggingface",
-    "publishedAt": "2026-10-17T03:07:59Z",
-    "score": 167771,
+    "publishedAt": "2026-10-19T12:50:56Z",
+    "score": 167851,
     "tags": [
       "Python",
       "audio",
@@ -1019,8 +1020,8 @@
     "url": "https://github.com/clash-verge-rev/clash-verge-rev",
     "excerpt": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
     "author": "clash-verge-rev",
-    "publishedAt": "2026-10-17T02:33:08Z",
-    "score": 151916,
+    "publishedAt": "2026-10-19T12:02:17Z",
+    "score": 152470,
     "tags": [
       "Rust",
       "clash",
@@ -1045,8 +1046,8 @@
     "url": "https://github.com/farion1231/cc-switch",
     "excerpt": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
     "author": "farion1231",
-    "publishedAt": "2026-10-17T03:44:39Z",
-    "score": 145266,
+    "publishedAt": "2026-10-19T10:26:56Z",
+    "score": 146229,
     "tags": [
       "Rust",
       "ai-tools",
@@ -1084,8 +1085,8 @@
     "url": "https://github.com/openai/codex",
     "excerpt": "Lightweight coding agent that runs in your terminal",
     "author": "openai",
-    "publishedAt": "2026-10-17T04:02:39Z",
-    "score": 129552,
+    "publishedAt": "2026-10-19T12:57:31Z",
+    "score": 129889,
     "tags": [
       "Rust"
     ],
@@ -1103,7 +1104,7 @@
     "excerpt": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
     "author": "rustdesk",
     "publishedAt": "2026-10-16T03:18:22Z",
-    "score": 126047,
+    "score": 126307,
     "tags": [
       "Rust",
       "android",
@@ -1139,8 +1140,8 @@
     "url": "https://github.com/rust-lang/rust",
     "excerpt": "Empowering everyone to build reliable and efficient software.",
     "author": "rust-lang",
-    "publishedAt": "2026-10-17T04:10:48Z",
-    "score": 120419,
+    "publishedAt": "2026-10-19T12:18:35Z",
+    "score": 120579,
     "tags": [
       "Rust",
       "compiler",
@@ -1160,8 +1161,8 @@
     "url": "https://github.com/tauri-apps/tauri",
     "excerpt": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
     "author": "tauri-apps",
-    "publishedAt": "2026-10-15T20:53:23Z",
-    "score": 111956,
+    "publishedAt": "2026-10-19T13:00:10Z",
+    "score": 112012,
     "tags": [
       "Rust",
       "desktop-app",
@@ -1186,8 +1187,8 @@
     "url": "https://github.com/ruvnet/RuView",
     "excerpt": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
     "author": "ruvnet",
-    "publishedAt": "2026-10-17T00:37:30Z",
-    "score": 98371,
+    "publishedAt": "2026-10-19T12:24:00Z",
+    "score": 98740,
     "tags": [
       "Rust",
       "awesome",
@@ -1226,8 +1227,8 @@
     "url": "https://github.com/NationalSecurityAgency/ghidra",
     "excerpt": "Ghidra is a software reverse engineering (SRE) framework",
     "author": "NationalSecurityAgency",
-    "publishedAt": "2026-10-16T16:52:06Z",
-    "score": 89724,
+    "publishedAt": "2026-10-19T09:56:54Z",
+    "score": 91285,
     "tags": [
       "Java",
       "disassembler",
@@ -1247,8 +1248,8 @@
     "url": "https://github.com/spring-projects/spring-boot",
     "excerpt": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
     "author": "spring-projects",
-    "publishedAt": "2026-10-17T04:09:40Z",
-    "score": 81703,
+    "publishedAt": "2026-10-18T22:46:57Z",
+    "score": 81778,
     "tags": [
       "Java",
       "framework",
